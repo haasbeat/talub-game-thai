@@ -32,6 +32,12 @@ const gameRoutes = {
   'Inazuma Eleven GO: Wildfire': 'inazuma-go-wildfire',
   'Dragon Quest VII: Isan Edition': 'dragon-quest-vii-isan',
   'SaGa 2: Hihou Densetsu': 'saga2-hihou-densetsu',
+  'Tales of Hearts': 'tales-of-hearts',
+  'Dragon Quest VI': 'dragon-quest-vi',
+  'Suikoden Tierkreis': 'suikoden-tierkreis',
+  'Monster Hunter 3': 'monster-hunter-3',
+  'Dragon Quest V': 'dragon-quest-v',
+  'Time Travelers': 'time-travelers',
 };
 
 document.querySelectorAll('.game-card').forEach((card) => {
@@ -72,6 +78,14 @@ const platformLabel = document.querySelector('#platform-label');
 const platformCount = document.querySelector('#platform-count');
 const platformEmpty = document.querySelector('#platform-empty');
 const gameSort = document.querySelector('#game-sort');
+
+platformTabs.forEach((tab) => {
+  const platform = tab.dataset.platform;
+  const count = platform === 'all'
+    ? gameCards.length
+    : [...gameCards].filter((card) => card.dataset.platform === platform).length;
+  tab.querySelector('em').textContent = count;
+});
 
 const applyPlatformFilter = (platform, updateUrl = true) => {
   const selected = platformLabels[platform] ? platform : 'all';

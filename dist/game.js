@@ -1,56 +1,56 @@
 const games = {
   'the-world-ends-with-you': {
-    index: '001', title: 'The World Ends with You', platform: 'NDS', cover: './assets/covers/the-world-ends-with-you.jpg',
+    index: 'NDS | 001 / 006', title: 'The World Ends with You', platform: 'NDS', cover: './assets/covers/the-world-ends-with-you.jpg',
     version: 'Preview', format: 'xdelta', status: 'Frontend Preview', accept: '.nds', fileTypes: 'NDS ROM',
     description: 'รายละเอียดม็อดภาษาไทยและพื้นที่เตรียมแพตช์สำหรับ The World Ends with You โดยเฉพาะ',
   },
   'etrian-odyssey-untold': {
-    index: '002', title: 'Etrian Odyssey Untold', platform: '3DS', cover: './assets/covers/etrian-odyssey-untold.jpg',
+    index: '3DS | 001 / 011', title: 'Etrian Odyssey Untold', platform: '3DS', cover: './assets/covers/etrian-odyssey-untold.jpg',
     version: 'Preview', format: 'xdelta', status: 'Frontend Preview', accept: '.3ds,.cia', fileTypes: '3DS / CIA',
     description: 'หน้ารวมข้อมูลเวอร์ชันภาษาไทยและพื้นที่แพตช์ของ The Millennium Girl โดยไม่ปะปนกับเกมอื่น',
   },
   'inazuma-eleven-123': {
-    index: '003', title: 'Inazuma Eleven 1-2-3', platform: '3DS', cover: './assets/covers/inazuma-eleven-123.jpg',
+    index: '3DS | 002 / 011', title: 'Inazuma Eleven 1-2-3', platform: '3DS', cover: './assets/covers/inazuma-eleven-123.jpg',
     version: 'Preview', format: 'xdelta', status: 'Frontend Preview', accept: '.3ds,.cia', fileTypes: '3DS / CIA',
     description: 'รายละเอียดชุดรวมสามภาคและพื้นที่แพตช์ภาษาไทยประจำเกม Inazuma Eleven 1-2-3',
   },
   'bravely-default': {
-    index: '004', title: 'Bravely Default', platform: '3DS', cover: './assets/covers/bravely-default.jpg',
+    index: '3DS | 003 / 011', title: 'Bravely Default', platform: '3DS', cover: './assets/covers/bravely-default.jpg',
     version: 'Preview', format: 'xdelta', status: 'Frontend Preview', accept: '.3ds,.cia', fileTypes: '3DS / CIA',
     description: 'หน้ารายละเอียดม็อดไทยของ Bravely Default พร้อมพื้นที่ตรวจและเลือกไฟล์ต้นฉบับเฉพาะเกม',
   },
   'final-fantasy-explorers': {
-    index: '005', title: 'Final Fantasy Explorers', platform: '3DS', cover: './assets/covers/final-fantasy-explorers.jpg',
+    index: '3DS | 004 / 011', title: 'Final Fantasy Explorers', platform: '3DS', cover: './assets/covers/final-fantasy-explorers.jpg',
     version: 'Preview', format: 'xdelta', status: 'Frontend Preview', accept: '.3ds,.cia', fileTypes: '3DS / CIA',
     description: 'ข้อมูลแพตช์ภาษาไทยและพื้นที่ทำงานของ Final Fantasy Explorers ที่แยกจากเกมอื่นอย่างชัดเจน',
   },
   'dragon-ball-fusions': {
-    index: '006', title: 'Dragon Ball Fusions', platform: '3DS', cover: './assets/covers/dragon-ball-fusions.jpg',
+    index: '3DS | 005 / 011', title: 'Dragon Ball Fusions', platform: '3DS', cover: './assets/covers/dragon-ball-fusions.jpg',
     version: 'Preview', format: 'xdelta', status: 'Frontend Preview', accept: '.3ds,.cia', fileTypes: '3DS / CIA',
     description: 'รายละเอียดฉบับภาษาไทยและพื้นที่แพตช์เฉพาะ Dragon Ball Fusions พร้อมสถานะไฟล์ที่อ่านง่าย',
   },
   'shin-megami-tensei-iv': {
-    index: '007', title: 'Shin Megami Tensei IV', platform: '3DS', cover: './assets/covers/shin-megami-tensei-iv.jpg',
+    index: '3DS | 006 / 011', title: 'Shin Megami Tensei IV', platform: '3DS', cover: './assets/covers/shin-megami-tensei-iv.jpg',
     version: 'Preview', format: 'xdelta', status: 'Frontend Preview', accept: '.3ds,.cia', fileTypes: '3DS / CIA',
     description: 'หน้าข้อมูลและพื้นที่แพตช์ภาษาไทยของ Shin Megami Tensei IV โดยไม่ต้องเลือกชื่อเกมซ้ำ',
   },
   'yo-kai-watch': {
-    index: '008', title: 'Yo-kai Watch', platform: '3DS', cover: './assets/covers/yo-kai-watch.jpg',
+    index: '3DS | 007 / 011', title: 'Yo-kai Watch', platform: '3DS', cover: './assets/covers/yo-kai-watch.jpg',
     version: 'Preview', format: 'xdelta', status: 'Frontend Preview', accept: '.3ds,.cia', fileTypes: '3DS / CIA',
     description: 'รายละเอียดม็อดไทยของ Yo-kai Watch และพื้นที่เลือก ROM ที่ผูกกับเกมนี้โดยตรง',
   },
   'inazuma-go-wildfire': {
-    index: '009', title: 'Inazuma Eleven GO: Wildfire', platform: '3DS', cover: './assets/covers/inazuma-go-wildfire.jpg',
+    index: '3DS | 008 / 011', title: 'Inazuma Eleven GO: Wildfire', platform: '3DS', cover: './assets/covers/inazuma-go-wildfire.jpg',
     version: 'Preview', format: 'xdelta', status: 'Frontend Preview', accept: '.3ds,.cia', fileTypes: '3DS / CIA',
     description: 'ข้อมูลเวอร์ชัน Wildfire และพื้นที่แพตช์ภาษาไทยเฉพาะเกม พร้อมขั้นตอนเตรียมไฟล์ต้นฉบับ',
   },
   'dragon-quest-vii-isan': {
-    index: '010', title: 'Dragon Quest VII: Isan Edition', platform: '3DS', cover: './assets/covers/dragon-quest-vii-isan.jpg',
+    index: '3DS | 009 / 011', title: 'Dragon Quest VII: Isan Edition', platform: '3DS', cover: './assets/covers/dragon-quest-vii-isan.jpg',
     version: 'Preview', format: 'xdelta', status: 'Frontend Preview', accept: '.3ds,.cia', fileTypes: '3DS / CIA',
     description: 'หน้ารายละเอียดฉบับภาษาอีสานของ Dragon Quest VII และพื้นที่แพตช์ที่แยกเฉพาะเวอร์ชันนี้',
   },
   'saga2-hihou-densetsu': {
-    index: '011', title: 'SaGa 2: Hihou Densetsu - Goddess of Destiny', platform: 'Nintendo DS', cover: './assets/covers/saga2-thai-v1.0.1.jpg',
+    index: 'NDS | 002 / 006', title: 'SaGa 2: Hihou Densetsu - Goddess of Destiny', platform: 'NDS', cover: './assets/covers/saga2-thai-v1.0.1.jpg',
     version: 'v1.0.1', format: 'xdelta3', status: 'พร้อมติดตั้งบนเว็บ', accept: '.nds', fileTypes: 'CLEAN JAPAN NDS · 128 MB',
     description: 'ฉบับแปลภาษาไทยเต็มรูปแบบของเกม RPG คลาสสิกฉบับรีเมกบน Nintendo DS พร้อมระบบตรวจไฟล์ต้นฉบับและสร้าง ROM ภาษาไทยภายในเบราว์เซอร์',
     details: {
@@ -78,6 +78,42 @@ const games = {
       outputHash: '04445c1c8ee0c95c55a5105db8597216de1ec55808c91e1586edbd96f9fe5fc1',
     },
     manifest: './assets/patches/saga2/v1.0.1/manifest.json',
+  },
+  'tales-of-hearts': {
+    index: 'NDS | 003 / 006', title: 'Tales of Hearts', platform: 'NDS', cover: './assets/covers/tales-of-hearts.jpg',
+    version: 'Preview', format: 'xdelta', status: 'Frontend Preview', accept: '.nds', fileTypes: 'NDS ROM',
+    description: 'หน้ารายละเอียดฉบับภาษาไทยของ Tales of Hearts และพื้นที่เตรียมแพตช์สำหรับ Nintendo DS โดยเฉพาะ',
+    details: { thaiTitle: 'เทลส์ออฟฮาร์ทส์ ฉบับภาษาไทย', originalTitle: 'Tales of Hearts', studio: 'Namco', genre: 'Action role-playing game' },
+  },
+  'dragon-quest-vi': {
+    index: 'NDS | 004 / 006', title: 'Dragon Quest VI', platform: 'NDS', cover: './assets/covers/dragon-quest-vi.jpg',
+    version: 'Preview', format: 'xdelta', status: 'Frontend Preview', accept: '.nds', fileTypes: 'NDS ROM',
+    description: 'รายละเอียด Dragon Quest VI มายาแห่งแดนฝัน ฉบับภาษาไทย พร้อมพื้นที่เลือกไฟล์ต้นฉบับเฉพาะเกม',
+    details: { thaiTitle: 'ดราก้อนเควสต์ VI มายาแห่งแดนฝัน', originalTitle: 'Dragon Quest VI: Realms of Revelation', studio: 'Square Enix', genre: 'Role-playing game' },
+  },
+  'suikoden-tierkreis': {
+    index: 'NDS | 005 / 006', title: 'Suikoden Tierkreis', platform: 'NDS', cover: './assets/covers/suikoden-tierkreis.jpg',
+    version: 'Preview', format: 'xdelta', status: 'Frontend Preview', accept: '.nds', fileTypes: 'NDS ROM',
+    description: 'หน้ารวมข้อมูล Suikoden Tierkreis ฉบับภาษาไทยและพื้นที่เตรียมแพตช์สำหรับ Nintendo DS',
+    details: { thaiTitle: 'ซุยโคเด็น เทียร์ไครส์ ฉบับภาษาไทย', originalTitle: 'Suikoden Tierkreis', studio: 'Konami', genre: 'Role-playing game' },
+  },
+  'monster-hunter-3': {
+    index: '3DS | 010 / 011', title: 'Monster Hunter 3', platform: '3DS', cover: './assets/covers/monster-hunter-3.jpg',
+    version: 'Preview', format: 'xdelta', status: 'Frontend Preview', accept: '.3ds,.cia', fileTypes: '3DS / CIA',
+    description: 'รายละเอียดมอนสเตอร์ฮันเตอร์ 3 เศษเสี้ยวแห่งมังกร ฉบับภาษาไทย พร้อมพื้นที่เตรียมแพตช์เฉพาะเกม',
+    details: { thaiTitle: 'มอนสเตอร์ฮันเตอร์ 3 เศษเสี้ยวแห่งมังกร', originalTitle: 'Monster Hunter 3', studio: 'Capcom', genre: 'Action role-playing game' },
+  },
+  'dragon-quest-v': {
+    index: 'NDS | 006 / 006', title: 'Dragon Quest V', platform: 'NDS', cover: './assets/covers/dragon-quest-v.jpg',
+    version: 'Preview', format: 'xdelta', status: 'Frontend Preview', accept: '.nds', fileTypes: 'NDS ROM',
+    description: 'หน้ารายละเอียด Dragon Quest V เจ้าสาวแห่งสวรรค์ ฉบับภาษาไทยและพื้นที่เตรียมแพตช์สำหรับ Nintendo DS',
+    details: { thaiTitle: 'ดราก้อนเควสต์ V เจ้าสาวแห่งสวรรค์', originalTitle: 'Dragon Quest V: Hand of the Heavenly Bride', studio: 'Square Enix', genre: 'Role-playing game' },
+  },
+  'time-travelers': {
+    index: '3DS | 011 / 011', title: 'Time Travelers', platform: '3DS', cover: './assets/covers/time-travelers.jpg',
+    version: 'Preview', format: 'xdelta', status: 'Frontend Preview', accept: '.3ds,.cia', fileTypes: '3DS / CIA',
+    description: 'รายละเอียดไทม์ทราเวลเลอร์ส กลไกแห่งกาลเวลา ฉบับภาษาไทย พร้อมพื้นที่เตรียมแพตช์เฉพาะเกม',
+    details: { thaiTitle: 'ไทม์ทราเวลเลอร์ส กลไกแห่งกาลเวลา', originalTitle: 'Time Travelers', studio: 'Level-5', genre: 'Adventure game' },
   },
 };
 
@@ -112,7 +148,7 @@ document.querySelector('#detail-japanese-title').textContent = details.japaneseT
 document.querySelector('#detail-description').textContent = game.description;
 document.querySelector('#detail-cover').src = game.cover;
 document.querySelector('#detail-cover').alt = `ปกเกม ${game.title} ฉบับภาษาไทย`;
-document.querySelector('#detail-index').textContent = `${game.index} / ${game.platform}`;
+document.querySelector('#detail-index').textContent = game.index;
 document.querySelector('#detail-platform').textContent = game.platform;
 document.querySelector('#detail-version').textContent = game.version;
 document.querySelector('#detail-format').textContent = game.format;
@@ -142,6 +178,40 @@ document.querySelector('#detail-features').replaceChildren(...details.features.m
   item.querySelector('strong').textContent = feature;
   return item;
 }));
+
+const detailPanels = {
+  about: document.querySelector('#about'),
+  patcher: document.querySelector('#patcher'),
+};
+const detailViewTabs = document.querySelectorAll('.detail-view-tab');
+const detailViewTriggers = document.querySelectorAll('[data-detail-view]');
+const detailViewSwitch = document.querySelector('.detail-view-switch');
+
+const setDetailView = (view, scroll = false) => {
+  const selected = detailPanels[view] ? view : 'about';
+
+  Object.entries(detailPanels).forEach(([name, panel]) => {
+    panel.hidden = name !== selected;
+  });
+
+  detailViewTabs.forEach((tab) => {
+    const isActive = tab.dataset.detailView === selected;
+    tab.classList.toggle('is-active', isActive);
+    tab.setAttribute('aria-selected', String(isActive));
+  });
+
+  window.history.replaceState({}, '', `#${selected}`);
+  if (scroll) detailViewSwitch.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
+
+detailViewTriggers.forEach((trigger) => {
+  trigger.addEventListener('click', (event) => {
+    event.preventDefault();
+    setDetailView(trigger.dataset.detailView, true);
+  });
+});
+
+setDetailView(window.location.hash === '#patcher' ? 'patcher' : 'about');
 
 const cursor = document.querySelector('.cursor');
 const hoverTargets = document.querySelectorAll('.hover-target, a, button');
