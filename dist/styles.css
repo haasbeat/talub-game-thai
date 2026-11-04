@@ -75,7 +75,10 @@ button, a, .drop-zone { -webkit-tap-highlight-color: transparent; }
   -webkit-backdrop-filter: blur(18px) saturate(1.25);
   backdrop-filter: blur(18px) saturate(1.25);
 }
-.brand { display: flex; align-items: center; gap: 12px; white-space: nowrap; }
+.brand { display: flex; align-items: center; gap: 11px; white-space: nowrap; }
+.brand-logo-frame { width: 40px; height: 40px; flex: 0 0 40px; overflow: hidden; border: 1px solid rgba(0,0,0,.14); border-radius: 50%; background: #1238b3; }
+.brand-logo { width: 100%; height: 100%; display: block; object-fit: cover; transform: scale(1.55); transform-origin: 50% 38%; }
+.brand-copy { display: flex; align-items: baseline; gap: 12px; }
 .brand-mark { display: block; font-size: 20px; font-weight: 700; letter-spacing: -0.04em; line-height: 1; }
 .brand-sub { display: block; font-size: 11px; letter-spacing: 0; line-height: 1.2; opacity: 0.75; }
 .desktop-nav { display: flex; gap: 28px; font-size: 13px; }
