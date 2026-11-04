@@ -67,3 +67,54 @@ document.querySelectorAll('.game-card').forEach((card) => {
     }
   });
 });
+
+const platformLabels = {
+  all: 'รวมทุกเครื่อง',
+  '3ds': 'Nintendo 3DS',
+  nds: 'Nintendo DS',
+  psp: 'PSP',
+  ps2: 'PlayStation 2',
+  switch: 'Nintendo Switch',
+};
+
+const platformTabs = document.querySelectorAll('.platform-tab');
+const gameCards = document.querySelectorAll('.game-card');
+const platformLabel = document.querySelector('#platform-label');
+const platformCount = document.querySelector('#platform-count');
+const platformEmpty = document.querySelector('#platform-empty');
+
+const applyPlatformFilter = (platform, updateUrl = true) => {
+  const selected = platformLabels[platform] ? platform : 'all';
+  let visibleCount = 0;
+
+  gameCards.forEach((card) => {
+    const isVisible = selected === 'all' || card.dataset.platform === selected;
+    card.hidden = !isVisible;
+    if (isVisible) visibleCount += 1;
+  });
+
+  platformTabs.forEach((tab) => {
+    const isActive = tab.dataset.platform === selected;
+    tab.classList.toggle('is-active', isActive);
+    tab.setAttribute('aria-selected', String(isActive));
+  });
+
+  platformLabel.textContent = platformLabels[selected];
+  platformCount.textContent = `${visibleCount} เกม`;
+  platformEmpty.hidden = visibleCount !== 0;
+
+  if (updateUrl) {
+    const url = new URL(window.location.href);
+    if (selected === 'all') url.searchParams.delete('platform');
+    else url.searchParams.set('platform', selected);
+    url.hash = 'games';
+    window.history.replaceState({}, '', url);
+  }
+};
+
+platformTabs.forEach((tab) => {
+  tab.addEventListener('click', () => applyPlatformFilter(tab.dataset.platform));
+});
+
+const initialPlatform = new URLSearchParams(window.location.search).get('platform') || 'all';
+applyPlatformFilter(initialPlatform, false);

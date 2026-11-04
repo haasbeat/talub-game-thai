@@ -75,8 +75,34 @@
           <p class="section-note">เลือกเกมเพื่อเปิดหน้ารายละเอียดและพื้นที่แพตช์เฉพาะเกม<br />ข้อมูล patch engine จริงจะเชื่อมภายหลัง</p>
         </div>
 
+        <div class="platform-filter" role="tablist" aria-label="เลือกดูเกมตามเครื่อง">
+          <button class="platform-tab hover-target is-active" type="button" data-platform="all" role="tab" aria-selected="true">
+            <span class="mono">ALL</span><strong>รวมทั้งหมด</strong><em>10</em>
+          </button>
+          <button class="platform-tab hover-target" type="button" data-platform="3ds" role="tab" aria-selected="false">
+            <span class="mono">NINTENDO</span><strong>3DS</strong><em>9</em>
+          </button>
+          <button class="platform-tab hover-target" type="button" data-platform="nds" role="tab" aria-selected="false">
+            <span class="mono">NINTENDO</span><strong>DS</strong><em>1</em>
+          </button>
+          <button class="platform-tab hover-target" type="button" data-platform="psp" role="tab" aria-selected="false">
+            <span class="mono">SONY</span><strong>PSP</strong><em>0</em>
+          </button>
+          <button class="platform-tab hover-target" type="button" data-platform="ps2" role="tab" aria-selected="false">
+            <span class="mono">SONY</span><strong>PS2</strong><em>0</em>
+          </button>
+          <button class="platform-tab hover-target" type="button" data-platform="switch" role="tab" aria-selected="false">
+            <span class="mono">NINTENDO</span><strong>SWITCH</strong><em>0</em>
+          </button>
+        </div>
+
+        <div class="platform-result mono" aria-live="polite">
+          <span id="platform-label">รวมทุกเครื่อง</span>
+          <span id="platform-count">10 เกม</span>
+        </div>
+
         <div class="game-grid">
-          <article class="game-card hover-target" data-game="The World Ends with You">
+          <article class="game-card hover-target" data-game="The World Ends with You" data-platform="nds">
             <div class="poster cover-poster poster-a">
               <img src="./assets/covers/the-world-ends-with-you.jpg" alt="ปกเกม The World Ends with You ฉบับภาษาไทย" loading="lazy" />
               <span class="poster-index mono">001 / NDS</span>
@@ -89,7 +115,7 @@
             </div>
           </article>
 
-          <article class="game-card hover-target" data-game="Etrian Odyssey Untold">
+          <article class="game-card hover-target" data-game="Etrian Odyssey Untold" data-platform="3ds">
             <div class="poster cover-poster poster-b">
               <img src="./assets/covers/etrian-odyssey-untold.jpg" alt="ปกเกม Etrian Odyssey Untold The Millennium Girl ฉบับภาษาไทย" loading="lazy" />
               <span class="poster-index mono">002 / 3DS</span>
@@ -102,7 +128,7 @@
             </div>
           </article>
 
-          <article class="game-card hover-target" data-game="Inazuma Eleven 1-2-3">
+          <article class="game-card hover-target" data-game="Inazuma Eleven 1-2-3" data-platform="3ds">
             <div class="poster cover-poster poster-c">
               <img src="./assets/covers/inazuma-eleven-123.jpg" alt="ปกเกม Inazuma Eleven 1-2-3 ฉบับภาษาไทย" loading="lazy" />
               <span class="poster-index mono">003 / 3DS</span>
@@ -115,7 +141,7 @@
             </div>
           </article>
 
-          <article class="game-card hover-target" data-game="Bravely Default">
+          <article class="game-card hover-target" data-game="Bravely Default" data-platform="3ds">
             <div class="poster cover-poster poster-d">
               <img src="./assets/covers/bravely-default.jpg" alt="ปกเกม Bravely Default ฉบับภาษาไทย" loading="lazy" />
               <span class="poster-index mono">004 / 3DS</span>
@@ -128,7 +154,7 @@
             </div>
           </article>
 
-          <article class="game-card hover-target" data-game="Final Fantasy Explorers">
+          <article class="game-card hover-target" data-game="Final Fantasy Explorers" data-platform="3ds">
             <div class="poster cover-poster poster-e">
               <img src="./assets/covers/final-fantasy-explorers.jpg" alt="ปกเกม Final Fantasy Explorers ฉบับภาษาไทย" loading="lazy" />
               <span class="poster-index mono">005 / 3DS</span>
@@ -141,7 +167,7 @@
             </div>
           </article>
 
-          <article class="game-card hover-target" data-game="Dragon Ball Fusions">
+          <article class="game-card hover-target" data-game="Dragon Ball Fusions" data-platform="3ds">
             <div class="poster cover-poster poster-a">
               <img src="./assets/covers/dragon-ball-fusions.jpg" alt="ปกเกม Dragon Ball Fusions ฉบับภาษาไทย" loading="lazy" />
               <span class="poster-index mono">006 / 3DS</span>
@@ -154,7 +180,7 @@
             </div>
           </article>
 
-          <article class="game-card hover-target" data-game="Shin Megami Tensei IV">
+          <article class="game-card hover-target" data-game="Shin Megami Tensei IV" data-platform="3ds">
             <div class="poster cover-poster poster-b">
               <img src="./assets/covers/shin-megami-tensei-iv.jpg" alt="ปกเกม Shin Megami Tensei IV ฉบับภาษาไทย" loading="lazy" />
               <span class="poster-index mono">007 / 3DS</span>
@@ -167,7 +193,7 @@
             </div>
           </article>
 
-          <article class="game-card hover-target" data-game="Yo-kai Watch">
+          <article class="game-card hover-target" data-game="Yo-kai Watch" data-platform="3ds">
             <div class="poster cover-poster poster-c">
               <img src="./assets/covers/yo-kai-watch.jpg" alt="ปกเกม Yo-kai Watch ฉบับภาษาไทย" loading="lazy" />
               <span class="poster-index mono">008 / 3DS</span>
@@ -180,7 +206,7 @@
             </div>
           </article>
 
-          <article class="game-card hover-target" data-game="Inazuma Eleven GO: Wildfire">
+          <article class="game-card hover-target" data-game="Inazuma Eleven GO: Wildfire" data-platform="3ds">
             <div class="poster cover-poster poster-d">
               <img src="./assets/covers/inazuma-go-wildfire.jpg" alt="ปกเกม Inazuma Eleven GO Chrono Stones Wildfire ฉบับภาษาไทย" loading="lazy" />
               <span class="poster-index mono">009 / 3DS</span>
@@ -193,7 +219,7 @@
             </div>
           </article>
 
-          <article class="game-card hover-target" data-game="Dragon Quest VII: Isan Edition">
+          <article class="game-card hover-target" data-game="Dragon Quest VII: Isan Edition" data-platform="3ds">
             <div class="poster cover-poster poster-e">
               <img src="./assets/covers/dragon-quest-vii-isan.jpg" alt="ปกเกม Dragon Quest VII ฉบับภาษาไทยเวอร์ชันอีสาน" loading="lazy" />
               <span class="poster-index mono">010 / 3DS</span>
@@ -205,6 +231,11 @@
               <span class="mono">3DS</span>
             </div>
           </article>
+        </div>
+        <div id="platform-empty" class="platform-empty" hidden>
+          <span class="mono">COMING NEXT</span>
+          <h3>กำลังเตรียมเกม<br />สำหรับเครื่องนี้</h3>
+          <p>เมื่อมีผลงานพร้อม รายการเกมและหน้าสำหรับแพตช์จะปรากฏในหมวดนี้</p>
         </div>
       </section>
 
