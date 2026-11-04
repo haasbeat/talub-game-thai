@@ -101,31 +101,42 @@ button, a, .drop-zone { -webkit-tap-highlight-color: transparent; }
 .menu-toggle span:last-child { transform: rotate(90deg); }
 
 .hero {
-  min-height: 92vh;
+  position: relative;
+  isolation: isolate;
+  min-height: clamp(560px, 46vw, 820px);
   display: grid;
   grid-template-rows: auto 1fr auto;
   padding: 116px var(--pad) 42px;
   overflow: hidden;
+  color: #fff;
 }
-.hero-kicker { align-self: start; }
+.hero::after { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(5,12,32,.58) 0%, rgba(5,12,32,.12) 48%, rgba(5,12,32,.05) 70%), linear-gradient(0deg, rgba(4,9,23,.55) 0%, transparent 42%); }
+.hero-cover { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.hero-kicker { align-self: start; color: rgba(255,255,255,.82); text-shadow: 0 2px 14px rgba(0,0,0,.55); }
 .hero-title {
-  margin: auto 0;
-  font-size: clamp(70px, 11.5vw, 178px);
+  align-self: start;
+  margin: clamp(16px, 2.2vw, 34px) 0 0;
+  max-width: 1000px;
+  font-size: clamp(50px, 5.8vw, 88px);
   font-weight: 700;
-  letter-spacing: -0.075em;
-  line-height: 0.8;
+  letter-spacing: -0.065em;
+  line-height: 1;
+  text-wrap: balance;
+  text-shadow: 0 5px 0 rgba(7,29,76,.9), 0 14px 34px rgba(0,0,0,.45);
 }
 .hero-line { display: block; overflow: hidden; padding: 0 0.07em 0.09em 0; }
-.hero-line > span { display: block; transform: translateY(115%); animation: rise 1.25s var(--ease) forwards; }
+.hero-line > span { display: block; transform: none; }
 .hero-line:nth-child(2) > span { animation-delay: 80ms; }
 .hero-line:nth-child(3) > span { animation-delay: 160ms; }
 .hero-line-offset { text-align: right; }
 .hero-foot { display: flex; align-items: end; justify-content: space-between; opacity: 0; animation: fade 1s 700ms var(--ease) forwards; }
-.hero-foot p { margin: 0; color: var(--muted); font-size: clamp(16px, 1.5vw, 22px); line-height: 1.35; }
+.hero-foot p { margin: 0; color: #fff; font-size: clamp(16px, 1.5vw, 22px); line-height: 1.35; text-shadow: 0 2px 14px rgba(0,0,0,.72); }
 .circle-link {
   width: 78px;
   height: 78px;
-  border: 1px solid var(--ink);
+  color: var(--ink);
+  background: rgba(255,255,255,.92);
+  border: 1px solid rgba(255,255,255,.95);
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -345,19 +356,30 @@ button, a, .drop-zone { -webkit-tap-highlight-color: transparent; }
 @media (pointer: fine) { body, a, button, select, .drop-zone { cursor: none; } }
 @media (pointer: coarse) { .cursor { display: none; } }
 
+@media (max-width: 1180px) {
+  .platform-filter {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 4px;
+    overflow: visible;
+    border-radius: 42px;
+  }
+  .platform-tab { min-width: 0; }
+}
+
 @media (max-width: 860px) {
   .desktop-nav { display: none; }
   .menu-toggle { display: block; }
   .detail-page .menu-toggle { display: none; }
   .detail-back { display: grid; }
-  .hero { min-height: 780px; padding-top: 110px; }
-  .hero-title { font-size: clamp(62px, 18vw, 112px); line-height: .84; }
+  .hero { min-height: 660px; padding-top: 110px; }
+  .hero-cover { object-position: center; }
+  .hero-title { max-width: 760px; font-size: clamp(48px, 8vw, 72px); line-height: 1; }
   .manifesto-copy span { display: inline; }
   .manifesto-meta { grid-template-columns: 1fr; gap: 30px; }
   .manifesto-meta p:last-child { justify-self: start; text-align: left; }
   .section-head { display: block; }
   .section-note { margin-top: 36px; }
-  .platform-filter { grid-template-columns: repeat(6, 152px); border-radius: 38px; }
+  .platform-filter { grid-template-columns: repeat(2, minmax(0, 1fr)); border-radius: 38px; }
   .platform-result { align-items: stretch; flex-direction: column; }
   .sort-control { width: 100%; min-width: 0; }
   .game-grid { grid-template-columns: 1fr; gap: 70px; }
@@ -390,11 +412,15 @@ button, a, .drop-zone { -webkit-tap-highlight-color: transparent; }
 @media (max-width: 560px) {
   .site-header { top: 10px; left: 12px; right: 12px; min-height: 52px; padding: 8px 12px 8px 16px; }
   .brand-sub { display: none; }
-  .hero { min-height: 700px; }
+  .hero { min-height: 620px; }
+  .hero-cover { object-position: 34% center; }
+  .hero-title { font-size: clamp(42px, 12vw, 58px); line-height: 1.08; }
   .hero-foot { align-items: end; }
   .circle-link { width: 60px; height: 60px; }
   .games, .patcher-intro, .process { padding-top: 100px; }
   .section-label { margin-bottom: 38px; }
+  .platform-filter { gap: 3px; padding: 5px; border-radius: 32px; }
+  .platform-tab { min-height: 68px; padding-inline: 14px; }
   .game-meta { grid-template-columns: 1fr auto; }
   .game-meta span:nth-of-type(1) { display: none; }
   .drop-zone { padding-inline: 18px; }
