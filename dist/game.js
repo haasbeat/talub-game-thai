@@ -642,7 +642,23 @@ if (game.manifest) {
       ? 'XDELTA3 VERIFIED'
       : 'XDELTA3 READY · VERIFYING';
 
-    if (manifest.output.size >= 512 * 1024 * 1024) {
+    const downloadPatchLink = document.querySelector('#download-patch-file');
+    if (downloadPatchLink && manifest.patch) {
+      let patchFileUrl = manifest.patch.url;
+      if (!patchFileUrl || patchFileUrl.includes('chatgpt.site')) {
+        patchFileUrl = new URL(manifest.patch.filename, new URL(game.manifest, window.location.href)).href;
+      }
+      downloadPatchLink.href = patchFileUrl;
+      downloadPatchLink.download = manifest.patch.filename;
+      downloadPatchLink.hidden = false;
+    }
+
+    if (manifest.output.size >= 1500 * 1024 * 1024) {
+      workspaceNote.insertAdjacentHTML(
+        'beforeend',
+        '<br /><span>คำแนะนำ</span> เนื่องจาก ROM มีขนาด ' + formatBytes(manifest.output.size) + ' หากเบราว์เซอร์หน่วยความจำไม่พอหรือแพตช์ไม่สำเร็จ สามารถกดปุ่ม <b>"ดาวน์โหลดไฟล์ Patch (.xdelta)"</b> ด้านล่าง แล้วนำไปแพตช์ด้วยโปรแกรม <b>xdelta UI</b> บนคอมพิวเตอร์ได้ทันที',
+      );
+    } else if (manifest.output.size >= 512 * 1024 * 1024) {
       workspaceNote.insertAdjacentHTML(
         'beforeend',
         '<br /><span>ไฟล์ขนาดใหญ่</span> รุ่นนี้อาจต้องใช้หน่วยความจำมากในขั้นสร้างไฟล์ผลลัพธ์ ควรใช้ Chrome/Edge บนคอมพิวเตอร์และปิดโปรแกรมที่ไม่จำเป็น',
