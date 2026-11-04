@@ -4,7 +4,7 @@
   --muted: #666;
   --line: rgba(0, 0, 0, 0.12);
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
-  --pad: clamp(24px, 5vw, 76px);
+  --pad: 10vw;
 }
 
 * { box-sizing: border-box; }
@@ -164,6 +164,17 @@ button, a, .drop-zone { -webkit-tap-highlight-color: transparent; }
 .manifesto-meta p { margin: 0; color: var(--muted); line-height: 1.55; }
 .manifesto-meta p:last-child { justify-self: end; text-align: right; color: var(--ink); }
 
+.support-section { display: grid; grid-template-columns: minmax(0, 1fr) minmax(360px, .82fr); gap: clamp(48px, 8vw, 128px); align-items: center; padding-top: 110px; padding-bottom: 110px; color: #fff; background: #0a0a0a; }
+.support-copy h2 { margin: 0; max-width: 760px; font-size: clamp(50px, 6.2vw, 96px); font-weight: 600; line-height: 1.02; letter-spacing: -.06em; }
+.support-copy > p:not(.section-label) { max-width: 600px; margin: 38px 0 0; color: #aaa; font-size: clamp(16px, 1.25vw, 20px); line-height: 1.7; }
+.support-note { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 42px; }
+.support-note span { padding: 9px 12px; color: #d8d8d8; border: 1px solid rgba(255,255,255,.22); border-radius: 999px; }
+.support-qr-card { width: min(100%, 620px); justify-self: end; margin: 0; padding: 16px; color: var(--ink); background: #fff; border-radius: 10px 72px 10px 10px; }
+.support-qr-card img { width: 100%; display: block; border-radius: 6px 58px 6px 6px; image-rendering: auto; }
+.support-qr-card figcaption { display: grid; gap: 6px; padding: 20px 10px 8px; }
+.support-qr-card figcaption strong { font-size: clamp(19px, 1.6vw, 26px); font-weight: 600; }
+.support-qr-card figcaption span { color: var(--muted); font-size: 13px; line-height: 1.55; }
+
 .games { padding-top: 110px; padding-bottom: 160px; background: #f3f3f1; }
 .section-head { display: flex; justify-content: space-between; align-items: end; margin-bottom: 80px; }
 .section-head h2, .patcher-intro h2, .process h2 {
@@ -210,6 +221,12 @@ button, a, .drop-zone { -webkit-tap-highlight-color: transparent; }
 .game-meta { border-top: 1px solid var(--line); margin-top: 16px; padding-top: 14px; display: grid; grid-template-columns: 1fr auto; gap: 9px 16px; align-items: baseline; }
 .game-meta h3 { grid-column: 1 / -1; margin: 0; font-size: 18px; font-weight: 500; line-height: 1.25; }
 .game-meta span { color: var(--muted); }
+.game-more-wrap { display: flex; justify-content: center; padding-top: 64px; }
+.game-more-wrap[hidden] { display: none; }
+.game-more { min-width: min(100%, 380px); display: flex; align-items: center; justify-content: space-between; gap: 28px; padding: 18px 22px; color: #fff; background: var(--ink); border: 1px solid var(--ink); border-radius: 999px; }
+.game-more small { color: #aaa; }
+.game-more:hover { color: var(--ink); background: transparent; }
+.game-more:hover small { color: var(--muted); }
 .platform-empty { min-height: 460px; display: grid; place-content: center; text-align: center; border: 1px solid var(--line); border-radius: 120px 8px 120px 8px; background: #ecece8; }
 .platform-empty[hidden] { display: none; }
 .platform-empty .mono { color: var(--muted); }
@@ -400,6 +417,7 @@ button, a, .drop-zone { -webkit-tap-highlight-color: transparent; }
 }
 
 @media (max-width: 860px) {
+  :root { --pad: 5vw; }
   .desktop-nav { display: none; }
   .menu-toggle { display: block; }
   .detail-page .menu-toggle { display: none; }
@@ -412,6 +430,8 @@ button, a, .drop-zone { -webkit-tap-highlight-color: transparent; }
   .manifesto-meta p:last-child { justify-self: start; text-align: left; }
   .section-head { display: block; }
   .section-note { margin-top: 36px; }
+  .support-section { grid-template-columns: 1fr; gap: 56px; }
+  .support-qr-card { justify-self: center; width: min(100%, 560px); }
   .platform-filter { grid-template-columns: repeat(2, minmax(0, 1fr)); border-radius: 38px; }
   .platform-result { align-items: stretch; flex-direction: column; }
   .sort-control { width: 100%; min-width: 0; }
@@ -443,6 +463,7 @@ button, a, .drop-zone { -webkit-tap-highlight-color: transparent; }
 }
 
 @media (max-width: 560px) {
+  :root { --pad: 18px; }
   .site-header { top: 10px; left: 12px; right: 12px; min-height: 52px; padding: 8px 12px 8px 16px; }
   .brand-sub { display: none; }
   .hero { min-height: 620px; }
