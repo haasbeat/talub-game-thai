@@ -79,9 +79,12 @@ const platformLabels = {
 
 const platformTabs = document.querySelectorAll('.platform-tab');
 const gameCards = document.querySelectorAll('.game-card');
+const gameGrid = document.querySelector('.game-grid');
+const originalGameOrder = new Map([...gameCards].map((card, index) => [card, index]));
 const platformLabel = document.querySelector('#platform-label');
 const platformCount = document.querySelector('#platform-count');
 const platformEmpty = document.querySelector('#platform-empty');
+const gameSort = document.querySelector('#game-sort');
 
 const applyPlatformFilter = (platform, updateUrl = true) => {
   const selected = platformLabels[platform] ? platform : 'all';
@@ -116,5 +119,33 @@ platformTabs.forEach((tab) => {
   tab.addEventListener('click', () => applyPlatformFilter(tab.dataset.platform));
 });
 
-const initialPlatform = new URLSearchParams(window.location.search).get('platform') || 'all';
+const sortModes = ['default', 'newest', 'name-asc', 'name-desc'];
+
+const applyGameSort = (mode, updateUrl = true) => {
+  const selected = sortModes.includes(mode) ? mode : 'default';
+  const sortedCards = [...gameCards].sort((left, right) => {
+    if (selected === 'newest') return originalGameOrder.get(right) - originalGameOrder.get(left);
+    if (selected === 'name-asc') return left.dataset.game.localeCompare(right.dataset.game, 'en');
+    if (selected === 'name-desc') return right.dataset.game.localeCompare(left.dataset.game, 'en');
+    return originalGameOrder.get(left) - originalGameOrder.get(right);
+  });
+
+  sortedCards.forEach((card) => gameGrid.appendChild(card));
+  gameSort.value = selected;
+
+  if (updateUrl) {
+    const url = new URL(window.location.href);
+    if (selected === 'default') url.searchParams.delete('sort');
+    else url.searchParams.set('sort', selected);
+    url.hash = 'games';
+    window.history.replaceState({}, '', url);
+  }
+};
+
+gameSort.addEventListener('change', () => applyGameSort(gameSort.value));
+
+const initialParams = new URLSearchParams(window.location.search);
+const initialPlatform = initialParams.get('platform') || 'all';
+const initialSort = initialParams.get('sort') || 'default';
 applyPlatformFilter(initialPlatform, false);
+applyGameSort(initialSort, false);

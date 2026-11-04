@@ -170,7 +170,13 @@ button, a, .drop-zone { -webkit-tap-highlight-color: transparent; }
 .platform-tab em { align-self: center; font-style: normal; font-size: 10px; color: var(--muted); }
 .platform-tab.is-active { color: #fff; background: var(--ink); }
 .platform-tab.is-active span, .platform-tab.is-active em { color: #aaa; }
-.platform-result { display: flex; justify-content: space-between; margin-bottom: 34px; color: var(--muted); }
+.platform-result { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 34px; color: var(--muted); }
+.platform-result-copy { display: flex; gap: 22px; }
+.sort-control { position: relative; display: flex; align-items: center; gap: 12px; min-width: 260px; padding: 7px 14px 7px 16px; color: var(--ink); background: #fff; border: 1px solid var(--line); border-radius: 999px; }
+.sort-control > .mono { flex: 0 0 auto; color: var(--muted); font-size: 9px; }
+.sort-control select { width: 100%; padding: 5px 24px 5px 0; color: var(--ink); background: transparent; border: 0; outline: none; appearance: none; font-size: 13px; }
+.sort-control:focus-within { border-color: var(--ink); }
+.sort-arrow { position: absolute; right: 14px; pointer-events: none; color: var(--ink); }
 .game-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 72px 20px; }
 .game-card { display: block; outline: none; }
 .game-card[hidden] { display: none; }
@@ -313,6 +319,8 @@ button, a, .drop-zone { -webkit-tap-highlight-color: transparent; }
   .section-head { display: block; }
   .section-note { margin-top: 36px; }
   .platform-filter { grid-template-columns: repeat(6, 152px); border-radius: 38px; }
+  .platform-result { align-items: stretch; flex-direction: column; }
+  .sort-control { width: 100%; min-width: 0; }
   .game-grid { grid-template-columns: 1fr; gap: 70px; }
   .patcher-facts { justify-content: flex-start; flex-wrap: wrap; gap: 18px 30px; }
   .field-row { grid-template-columns: 1fr; gap: 18px; }

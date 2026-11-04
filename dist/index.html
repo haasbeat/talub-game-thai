@@ -96,9 +96,21 @@
           </button>
         </div>
 
-        <div class="platform-result mono" aria-live="polite">
-          <span id="platform-label">รวมทุกเครื่อง</span>
-          <span id="platform-count">10 เกม</span>
+        <div class="platform-result" aria-live="polite">
+          <div class="platform-result-copy mono">
+            <span id="platform-label">รวมทุกเครื่อง</span>
+            <span id="platform-count">10 เกม</span>
+          </div>
+          <label class="sort-control" for="game-sort">
+            <span class="mono">จัดเรียงตาม</span>
+            <select id="game-sort" class="hover-target">
+              <option value="default">ลำดับแนะนำ</option>
+              <option value="newest">เพิ่มล่าสุด</option>
+              <option value="name-asc">ชื่อ A–Z</option>
+              <option value="name-desc">ชื่อ Z–A</option>
+            </select>
+            <span class="sort-arrow" aria-hidden="true">↓</span>
+          </label>
         </div>
 
         <div class="game-grid">
