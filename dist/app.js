@@ -34,59 +34,36 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal-on-scroll').forEach((element) => observer.observe(element));
 
-const dropZone = document.querySelector('#drop-zone');
-const romInput = document.querySelector('#rom-input');
-const fileName = document.querySelector('#file-name');
-const fileSize = document.querySelector('#file-size');
-const fileHash = document.querySelector('#file-hash');
-const toast = document.querySelector('#toast');
-
-const formatBytes = (bytes) => {
-  if (!bytes) return '0 B';
-  const units = ['B', 'KB', 'MB', 'GB'];
-  const index = Math.min(Math.floor(Math.log(bytes) / Math.log(1024)), units.length - 1);
-  return `${(bytes / (1024 ** index)).toFixed(index > 1 ? 2 : 0)} ${units[index]}`;
+const gameRoutes = {
+  'The World Ends with You': 'the-world-ends-with-you',
+  'Etrian Odyssey Untold': 'etrian-odyssey-untold',
+  'Inazuma Eleven 1-2-3': 'inazuma-eleven-123',
+  'Bravely Default': 'bravely-default',
+  'Final Fantasy Explorers': 'final-fantasy-explorers',
+  'Dragon Ball Fusions': 'dragon-ball-fusions',
+  'Shin Megami Tensei IV': 'shin-megami-tensei-iv',
+  'Yo-kai Watch': 'yo-kai-watch',
+  'Inazuma Eleven GO: Wildfire': 'inazuma-go-wildfire',
+  'Dragon Quest VII: Isan Edition': 'dragon-quest-vii-isan',
 };
-
-const handleFile = (file) => {
-  if (!file) return;
-  fileName.textContent = file.name;
-  fileSize.textContent = formatBytes(file.size);
-  fileHash.textContent = 'พร้อมตรวจเมื่อเชื่อม patch engine';
-  dropZone.querySelector('h3').textContent = 'เลือกไฟล์แล้ว';
-  dropZone.querySelector('p').innerHTML = 'ไฟล์ยังอยู่ในอุปกรณ์ของคุณ<br />ไม่มีการอัปโหลดเกิดขึ้น';
-};
-
-dropZone.addEventListener('click', () => romInput.click());
-dropZone.addEventListener('keydown', (event) => {
-  if (event.key === 'Enter' || event.key === ' ') {
-    event.preventDefault();
-    romInput.click();
-  }
-});
-romInput.addEventListener('change', () => handleFile(romInput.files[0]));
-
-['dragenter', 'dragover'].forEach((type) => {
-  dropZone.addEventListener(type, (event) => {
-    event.preventDefault();
-    dropZone.classList.add('is-dragging');
-  });
-});
-['dragleave', 'drop'].forEach((type) => {
-  dropZone.addEventListener(type, (event) => {
-    event.preventDefault();
-    dropZone.classList.remove('is-dragging');
-  });
-});
-dropZone.addEventListener('drop', (event) => handleFile(event.dataTransfer.files[0]));
-
-document.querySelector('#patch-button').addEventListener('click', () => {
-  toast.classList.add('show');
-  window.setTimeout(() => toast.classList.remove('show'), 2600);
-});
 
 document.querySelectorAll('.game-card').forEach((card) => {
-  card.addEventListener('click', () => {
-    document.querySelector('#patcher').scrollIntoView({ behavior: 'smooth' });
+  const slug = gameRoutes[card.dataset.game];
+  if (!slug) return;
+
+  card.setAttribute('role', 'link');
+  card.setAttribute('tabindex', '0');
+  card.setAttribute('aria-label', `ดูรายละเอียดและแพตช์ ${card.dataset.game}`);
+
+  const openGame = () => {
+    window.location.href = `./game.html?game=${encodeURIComponent(slug)}`;
+  };
+
+  card.addEventListener('click', openGame);
+  card.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      openGame();
+    }
   });
 });

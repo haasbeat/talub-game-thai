@@ -22,7 +22,7 @@
       </a>
       <nav class="desktop-nav" aria-label="เมนูหลัก">
         <a class="hover-target" href="#games">เกมทั้งหมด</a>
-        <a class="hover-target" href="#patcher">แพตช์เกม</a>
+        <a class="hover-target" href="#games">เลือกเกมเพื่อแพตช์</a>
         <a class="hover-target" href="#how-it-works">วิธีใช้งาน</a>
       </nav>
       <button class="menu-toggle hover-target" type="button" aria-label="เปิดเมนู" aria-expanded="false">
@@ -40,7 +40,7 @@
         </h1>
         <div class="hero-foot reveal">
           <p>แพตช์เกมภาษาไทย<br />ง่าย ปลอดภัย และโปร่งใส</p>
-          <a class="circle-link hover-target" href="#patcher" aria-label="เริ่มแพตช์เกม">
+          <a class="circle-link hover-target" href="#games" aria-label="เลือกเกมเพื่อเริ่มแพตช์">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
           </a>
         </div>
@@ -72,7 +72,7 @@
             <p class="section-label mono">02 / คลังเกม</p>
             <h2>เลือกโลก<br />ที่อยากเข้าไป</h2>
           </div>
-          <p class="section-note">ตัวอย่างหน้ารายการเกมในเฟส frontend<br />ข้อมูลดาวน์โหลดจริงจะเชื่อมภายหลัง</p>
+          <p class="section-note">เลือกเกมเพื่อเปิดหน้ารายละเอียดและพื้นที่แพตช์เฉพาะเกม<br />ข้อมูล patch engine จริงจะเชื่อมภายหลัง</p>
         </div>
 
         <div class="game-grid">
@@ -208,79 +208,10 @@
         </div>
       </section>
 
-      <section id="patcher" class="patcher-section">
-        <div class="patcher-intro section-pad">
-          <p class="section-label mono">03 / PATCH WORKSPACE</p>
-          <h2>จากไฟล์เดิม<br />สู่ภาษาไทย</h2>
-          <div class="patcher-facts">
-            <span><b>01</b> เลือกเกม</span>
-            <span><b>02</b> เลือก ROM</span>
-            <span><b>03</b> ตรวจและแพตช์</span>
-          </div>
-        </div>
-
-        <div class="workspace-wrap section-pad">
-          <div class="workspace">
-            <div class="workspace-top">
-              <div>
-                <span class="status-dot"></span>
-                <span class="mono">FRONTEND PROTOTYPE</span>
-              </div>
-              <span class="mono">FILES STAY LOCAL</span>
-            </div>
-
-            <div class="field-row">
-              <label for="game-select">เกมที่ต้องการแพตช์</label>
-              <div class="select-wrap">
-                <select id="game-select">
-                  <option>Yo-kai Watch 3 — USA / 3DS</option>
-                  <option disabled>เกมอื่น ๆ — กำลังเตรียมข้อมูล</option>
-                </select>
-                <span>↓</span>
-              </div>
-            </div>
-
-            <div id="drop-zone" class="drop-zone hover-target" tabindex="0" role="button" aria-label="เลือกไฟล์ ROM">
-              <input id="rom-input" type="file" accept=".3ds,.cia,.nds,.iso,.bin,.rom" hidden />
-              <div class="drop-number mono">STEP 02</div>
-              <div class="drop-icon" aria-hidden="true">
-                <svg viewBox="0 0 32 32"><path d="M16 3v18M9 14l7 7 7-7M5 24v5h22v-5" /></svg>
-              </div>
-              <h3>วางไฟล์ ROM ที่นี่</h3>
-              <p>หรือคลิกเพื่อเลือกไฟล์จากอุปกรณ์<br />ไฟล์จะไม่ถูกอัปโหลดออกจากเครื่อง</p>
-              <span class="file-types mono">3DS / CIA / NDS / ISO</span>
-            </div>
-
-            <div id="file-summary" class="file-summary" aria-live="polite">
-              <div>
-                <span class="summary-label mono">SELECTED FILE</span>
-                <strong id="file-name">ยังไม่ได้เลือกไฟล์</strong>
-              </div>
-              <div>
-                <span class="summary-label mono">SIZE</span>
-                <strong id="file-size">—</strong>
-              </div>
-              <div>
-                <span class="summary-label mono">SHA-256</span>
-                <strong id="file-hash">รอเชื่อมโมดูลตรวจสอบ</strong>
-              </div>
-            </div>
-
-            <div class="workspace-actions">
-              <p><span>หมายเหตุ</span> เวอร์ชันนี้เป็นหน้า frontend สำหรับตรวจรูปแบบและประสบการณ์ใช้งาน ยังไม่ดำเนินการแพตช์ไฟล์จริง</p>
-              <button id="patch-button" class="patch-button hover-target" type="button" disabled>
-                <span>เริ่มแพตช์เกม</span>
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section id="how-it-works" class="process section-pad">
         <div class="section-head">
           <div>
-            <p class="section-label mono">04 / วิธีทำงาน</p>
+            <p class="section-label mono">03 / วิธีทำงาน</p>
             <h2>สามขั้นตอน<br />ไม่มีความลับ</h2>
           </div>
         </div>
@@ -322,7 +253,7 @@
         <div class="footer-col">
           <span class="mono">NAVIGATE</span>
           <a class="hover-target" href="#games">คลังเกม</a>
-          <a class="hover-target" href="#patcher">Web Patcher</a>
+          <a class="hover-target" href="#games">เลือกเกมเพื่อแพตช์</a>
           <a class="hover-target" href="#how-it-works">วิธีใช้งาน</a>
         </div>
         <div class="footer-col">
@@ -339,7 +270,6 @@
       </div>
     </footer>
 
-    <div id="toast" class="toast" role="status" aria-live="polite">ระบบแพตช์จริงจะเชื่อมในเฟสถัดไป</div>
     <script src="./app.js"></script>
   </body>
 </html>

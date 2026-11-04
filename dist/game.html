@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="รายละเอียดเกมและพื้นที่แพตช์ภาษาไทยเฉพาะเกม" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>รายละเอียดเกม — ตลับเกมภาษาไทย</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="detail-page">
+    <div class="cursor" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand hover-target" href="./index.html" aria-label="กลับหน้าหลัก">
+        <span class="brand-mark">ตลับ</span>
+        <span class="brand-sub">เกมภาษาไทย</span>
+      </a>
+      <nav class="desktop-nav" aria-label="เมนูหลัก">
+        <a class="hover-target" href="./index.html#games">เกมทั้งหมด</a>
+        <a class="hover-target" href="#patcher">แพตช์เกมนี้</a>
+        <a class="hover-target" href="#requirements">สิ่งที่ต้องเตรียม</a>
+      </nav>
+      <a class="detail-back hover-target" href="./index.html#games" aria-label="กลับคลังเกม">←</a>
+    </header>
+
+    <main id="top">
+      <section class="detail-hero section-pad">
+        <div class="detail-cover-wrap">
+          <span id="detail-index" class="detail-index mono">001 / NDS</span>
+          <img id="detail-cover" class="detail-cover" src="./assets/covers/the-world-ends-with-you.jpg" alt="ปกเกม" />
+        </div>
+
+        <div class="detail-copy">
+          <a class="detail-breadcrumb mono hover-target" href="./index.html#games">← กลับคลังเกม</a>
+          <p class="detail-eyebrow mono">GAME DETAIL / PATCH PAGE</p>
+          <h1 id="detail-title">The World Ends with You</h1>
+          <p id="detail-description" class="detail-description">หน้ารายละเอียดและพื้นที่แพตช์ภาษาไทยเฉพาะเกม</p>
+
+          <div class="detail-meta">
+            <div><span class="mono">PLATFORM</span><strong id="detail-platform">NDS</strong></div>
+            <div><span class="mono">PATCH VERSION</span><strong id="detail-version">Preview</strong></div>
+            <div><span class="mono">PATCH FORMAT</span><strong id="detail-format">xdelta</strong></div>
+            <div><span class="mono">STATUS</span><strong id="detail-status">Frontend Preview</strong></div>
+          </div>
+
+          <a class="detail-cta hover-target" href="#patcher">
+            <span>ไปยังพื้นที่แพตช์เกมนี้</span>
+            <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="patcher" class="patcher-section detail-patcher">
+        <div class="patcher-intro section-pad">
+          <p class="section-label mono">PATCH WORKSPACE / GAME SPECIFIC</p>
+          <h2>แพตช์เกมนี้<br />ในหน้านี้</h2>
+          <div class="patcher-facts">
+            <span><b>01</b> ตรวจชื่อเกม</span>
+            <span><b>02</b> เลือก ROM</span>
+            <span><b>03</b> ตรวจและแพตช์</span>
+          </div>
+        </div>
+
+        <div class="workspace-wrap section-pad">
+          <div class="workspace">
+            <div class="workspace-top">
+              <div>
+                <span class="status-dot"></span>
+                <span class="mono">FRONTEND PROTOTYPE</span>
+              </div>
+              <span class="mono">FILES STAY LOCAL</span>
+            </div>
+
+            <div class="selected-game-row">
+              <span class="mono">SELECTED GAME</span>
+              <strong id="workspace-game">The World Ends with You</strong>
+              <span id="workspace-platform" class="selected-platform mono">NDS</span>
+            </div>
+
+            <div id="drop-zone" class="drop-zone hover-target" tabindex="0" role="button" aria-label="เลือกไฟล์ ROM สำหรับเกมนี้">
+              <input id="rom-input" type="file" accept=".nds" hidden />
+              <div class="drop-number mono">STEP 02</div>
+              <div class="drop-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M16 3v18M9 14l7 7 7-7M5 24v5h22v-5" /></svg>
+              </div>
+              <h3>วางไฟล์ ROM ของเกมนี้</h3>
+              <p>หรือคลิกเพื่อเลือกไฟล์จากอุปกรณ์<br />ไฟล์จะไม่ถูกอัปโหลดออกจากเครื่อง</p>
+              <span id="file-types" class="file-types mono">NDS ROM</span>
+            </div>
+
+            <div class="file-summary" aria-live="polite">
+              <div>
+                <span class="summary-label mono">SELECTED FILE</span>
+                <strong id="file-name">ยังไม่ได้เลือกไฟล์</strong>
+              </div>
+              <div>
+                <span class="summary-label mono">SIZE</span>
+                <strong id="file-size">—</strong>
+              </div>
+              <div>
+                <span class="summary-label mono">SOURCE CHECK</span>
+                <strong id="file-hash">รอเลือกไฟล์</strong>
+              </div>
+            </div>
+
+            <div class="workspace-actions">
+              <p><span>หมายเหตุ</span> หน้าเกมและการเลือกไฟล์พร้อมแล้ว แต่เวอร์ชันนี้ยังไม่แก้ไข ROM จริงจนกว่าจะเชื่อม patch engine และรายการ SHA-256 ที่รองรับ</p>
+              <button id="patch-button" class="patch-button hover-target" type="button" disabled>
+                <span>เลือก ROM ก่อน</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="requirements" class="requirements section-pad">
+        <div class="section-head">
+          <div>
+            <p class="section-label mono">BEFORE PATCHING</p>
+            <h2>สิ่งที่ต้อง<br />เตรียมไว้</h2>
+          </div>
+        </div>
+        <div class="requirement-grid">
+          <article><span class="mono">01 / CLEAN SOURCE</span><h3>ไฟล์เกมต้นฉบับ</h3><p>ใช้สำเนาเกมที่คุณเป็นเจ้าของ และต้องตรงกับ region/revision ที่หน้ารองรับ</p></article>
+          <article><span class="mono">02 / LOCAL ONLY</span><h3>พื้นที่ว่างในเครื่อง</h3><p>การอ่านและสร้างไฟล์ใหม่เกิดขึ้นในอุปกรณ์ของคุณ ROM จะไม่ถูกส่งขึ้นเซิร์ฟเวอร์</p></article>
+          <article><span class="mono">03 / VERIFY</span><h3>ตรวจผลลัพธ์</h3><p>ระบบจริงจะตรวจ source hash และ target hash ก่อนอนุญาตให้ดาวน์โหลดไฟล์ที่แพตช์แล้ว</p></article>
+        </div>
+      </section>
+
+      <section class="legal-strip">
+        <div class="legal-track mono">
+          <span>แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่าย</span><i>↗</i>
+          <span>USE YOUR OWN LEGALLY OBTAINED GAME COPY</span><i>↗</i>
+          <span>NO ROM FILES ARE HOSTED</span><i>↗</i>
+          <span>แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่าย</span><i>↗</i>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section-pad">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <span class="mono">TALUB GAME THAI</span>
+          <h2>เกมนี้<br />ในภาษาของเรา</h2>
+        </div>
+        <div class="footer-col">
+          <span class="mono">NAVIGATE</span>
+          <a class="hover-target" href="./index.html#games">คลังเกม</a>
+          <a class="hover-target" href="#patcher">พื้นที่แพตช์</a>
+          <a class="hover-target" href="#requirements">สิ่งที่ต้องเตรียม</a>
+        </div>
+        <div class="footer-col">
+          <span class="mono">STATUS</span>
+          <p>Frontend Preview</p>
+          <p>Backend: Later phase</p>
+          <p>Files stay local</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 ตลับเกมภาษาไทย</span>
+        <span>แจกฟรี · ห้ามจำหน่าย</span>
+        <a class="hover-target" href="#top">กลับด้านบน ↑</a>
+      </div>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite">ระบบแพตช์จริงจะเชื่อมในเฟสหลังบ้าน</div>
+    <script src="./game.js"></script>
+  </body>
+</html>
