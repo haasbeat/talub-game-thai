@@ -22,7 +22,8 @@
       </a>
       <nav class="desktop-nav" aria-label="เมนูหลัก">
         <a class="hover-target" href="./index.html#games">เกมทั้งหมด</a>
-        <a class="hover-target" href="#patcher">แพตช์เกมนี้</a>
+        <a class="hover-target" href="#about">รายละเอียดเกม</a>
+        <a class="hover-target" href="#patcher">ติดตั้งภาษาไทย</a>
         <a class="hover-target" href="#requirements">สิ่งที่ต้องเตรียม</a>
       </nav>
       <a class="detail-back hover-target" href="./index.html#games" aria-label="กลับคลังเกม">←</a>
@@ -37,21 +38,67 @@
 
         <div class="detail-copy">
           <a class="detail-breadcrumb mono hover-target" href="./index.html#games">← กลับคลังเกม</a>
-          <p class="detail-eyebrow mono">GAME DETAIL / PATCH PAGE</p>
+          <p class="detail-eyebrow mono">THAI EDITION / GAME ARCHIVE</p>
           <h1 id="detail-title">The World Ends with You</h1>
+          <p id="detail-japanese-title" class="detail-original-title">Original title</p>
           <p id="detail-description" class="detail-description">หน้ารายละเอียดและพื้นที่แพตช์ภาษาไทยเฉพาะเกม</p>
 
           <div class="detail-meta">
             <div><span class="mono">PLATFORM</span><strong id="detail-platform">NDS</strong></div>
-            <div><span class="mono">PATCH VERSION</span><strong id="detail-version">Preview</strong></div>
-            <div><span class="mono">PATCH FORMAT</span><strong id="detail-format">xdelta</strong></div>
+            <div><span class="mono">THAI VERSION</span><strong id="detail-version">Preview</strong></div>
+            <div><span class="mono">INSTALL FORMAT</span><strong id="detail-format">xdelta</strong></div>
             <div><span class="mono">STATUS</span><strong id="detail-status">Frontend Preview</strong></div>
           </div>
 
           <a class="detail-cta hover-target" href="#patcher">
-            <span>ไปยังพื้นที่แพตช์เกมนี้</span>
+            <span>ติดตั้งฉบับภาษาไทย</span>
             <span aria-hidden="true">↓</span>
           </a>
+        </div>
+      </section>
+
+      <section id="about" class="game-overview section-pad">
+        <div class="overview-heading">
+          <p class="section-label mono">GAME ARCHIVE / รายละเอียดเกม</p>
+          <h2 id="detail-thai-title">ชื่อเกมภาษาไทย</h2>
+          <p id="detail-overview" class="overview-lead">รายละเอียดเกมและฉบับแปลภาษาไทย</p>
+        </div>
+
+        <div class="game-fact-grid">
+          <article><span class="mono">ORIGINAL TITLE</span><strong id="detail-original-title">—</strong></article>
+          <article><span class="mono">PUBLISHER</span><strong id="detail-studio">—</strong></article>
+          <article><span class="mono">ORIGINAL RELEASE</span><strong id="detail-release">—</strong></article>
+          <article><span class="mono">REGION / GAME CODE</span><strong id="detail-game-code">—</strong></article>
+          <article><span class="mono">GENRE</span><strong id="detail-genre">—</strong></article>
+          <article><span class="mono">THAI EDITION</span><strong id="detail-edition">—</strong></article>
+        </div>
+
+        <div class="story-grid">
+          <div>
+            <span class="mono">STORY / เรื่องย่อ</span>
+            <p id="detail-story">กำลังจัดเตรียมข้อมูลเนื้อเรื่อง</p>
+          </div>
+          <div>
+            <span class="mono">LOCALIZATION / ฉบับภาษาไทย</span>
+            <p id="detail-localization">กำลังจัดเตรียมรายละเอียดงานแปล</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="release-detail section-pad">
+        <div class="release-summary">
+          <p class="section-label mono">THAI RELEASE / สถานะฉบับภาษาไทย</p>
+          <strong id="detail-coverage" class="coverage-number">ข้อมูลกำลังจัดเตรียม</strong>
+          <p id="detail-coverage-note" class="coverage-note">รายละเอียดจะเพิ่มเมื่อรีลีสผ่านการตรวจสอบ</p>
+        </div>
+        <div class="release-feature-wrap">
+          <span class="mono">INCLUDED IN THIS VERSION</span>
+          <ul id="detail-features" class="release-features"></ul>
+        </div>
+        <div class="source-identity">
+          <div><span class="mono">SUPPORTED CLEAN SOURCE</span><strong id="detail-source-name">—</strong></div>
+          <div><span class="mono">SOURCE SHA-256</span><code id="detail-source-hash">—</code></div>
+          <div><span class="mono">VERIFIED OUTPUT SHA-256</span><code id="detail-output-hash">—</code></div>
         </div>
       </section>
 
@@ -73,7 +120,7 @@
                 <span class="status-dot"></span>
                 <span id="workspace-status" class="mono">FRONTEND PROTOTYPE</span>
               </div>
-              <span class="mono">FILES STAY LOCAL</span>
+              <a class="engine-credit mono hover-target" href="./assets/engine/xdelta/THIRD_PARTY_NOTICES.txt" target="_blank" rel="noopener">POWERED BY XDELTA3 ↗</a>
             </div>
 
             <div class="selected-game-row">
@@ -166,14 +213,15 @@
         <div class="footer-col">
           <span class="mono">NAVIGATE</span>
           <a class="hover-target" href="./index.html#games">คลังเกม</a>
-          <a class="hover-target" href="#patcher">พื้นที่แพตช์</a>
+          <a class="hover-target" href="#about">รายละเอียดเกม</a>
+          <a class="hover-target" href="#patcher">ติดตั้งภาษาไทย</a>
           <a class="hover-target" href="#requirements">สิ่งที่ต้องเตรียม</a>
         </div>
         <div class="footer-col">
           <span class="mono">STATUS</span>
-          <p>Frontend Preview</p>
-          <p>Backend: Later phase</p>
-          <p>Files stay local</p>
+          <p>Browser processing</p>
+          <p>ROM stays on device</p>
+          <p>Powered by xdelta3</p>
         </div>
       </div>
       <div class="footer-bottom">

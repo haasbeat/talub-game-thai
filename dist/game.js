@@ -50,9 +50,33 @@ const games = {
     description: 'หน้ารายละเอียดฉบับภาษาอีสานของ Dragon Quest VII และพื้นที่แพตช์ที่แยกเฉพาะเวอร์ชันนี้',
   },
   'saga2-hihou-densetsu': {
-    index: '011', title: 'SaGa 2: Hihou Densetsu', platform: 'NDS', cover: './assets/covers/saga2-thai-v1.0.1.jpg',
-    version: 'v1.0.1', format: 'xdelta3', status: 'Web Patcher Pilot', accept: '.nds', fileTypes: 'CLEAN JAPAN NDS · 128 MB',
-    description: 'เกมนำร่องสำหรับระบบแพตช์จริงในเบราว์เซอร์ ตรวจ SHA-256 ของ ROM ต้นฉบับก่อนสร้างไฟล์ภาษาไทย v1.0.1 โดย ROM ไม่ออกจากอุปกรณ์',
+    index: '011', title: 'SaGa 2: Hihou Densetsu - Goddess of Destiny', platform: 'Nintendo DS', cover: './assets/covers/saga2-thai-v1.0.1.jpg',
+    version: 'v1.0.1', format: 'xdelta3', status: 'พร้อมติดตั้งบนเว็บ', accept: '.nds', fileTypes: 'CLEAN JAPAN NDS · 128 MB',
+    description: 'ฉบับแปลภาษาไทยเต็มรูปแบบของเกม RPG คลาสสิกฉบับรีเมกบน Nintendo DS พร้อมระบบตรวจไฟล์ต้นฉบับและสร้าง ROM ภาษาไทยภายในเบราว์เซอร์',
+    details: {
+      thaiTitle: 'ซากะ 2 ตำนานสมบัติแห่งโชคชะตา',
+      japaneseTitle: 'サガ2 秘宝伝説 GODDESS OF DESTINY',
+      originalTitle: 'サガ2 秘宝伝説 GODDESS OF DESTINY',
+      studio: 'Square Enix',
+      release: '17 กันยายน 2009',
+      gameCode: 'Japan · CSGJ',
+      genre: 'Role-playing game',
+      edition: 'ตลับเกมภาษาไทย v1.0.1',
+      overview: 'เกมรีเมกสามมิติของ SaGa 2 บน Game Boy ที่ขยายระบบการต่อสู้ เนื้อเรื่อง และโลกแห่งโชคชะตาสำหรับ Nintendo DS โดยฉบับนี้แปลเนื้อหาในเกมเป็นภาษาไทยทั้งระบบ',
+      story: 'ออกเดินทางตามหาพ่อที่หายตัวไป ผ่านโลกต่าง ๆ ซึ่งเชื่อมถึงกันด้วยเสาค้ำฟ้า พร้อมรวบรวมมหาสมบัติ 77 ชิ้นที่เหล่าเทพยุคใหม่ต่างแย่งชิง อำนาจของสมบัติเหล่านี้จะนำคณะเดินทางไปพบเทพีแห่งโชคชะตาและความจริงที่อาจทำให้ทุกโลกพังทลาย',
+      localization: 'แปลเนื้อเรื่อง เหตุการณ์ย่อย NPC เมนู ระบบต่อสู้ ไอเทม สกิล มอนสเตอร์ และฐานข้อมูลทั้งหมด พร้อมฟอนต์ไทยหลายขนาด ระบบจัดสระวรรณยุกต์ และลายน้ำยืนยันเวอร์ชันภายในเกม',
+      coverage: '19,225 / 19,225',
+      coverageNote: 'เนื้อเรื่องหลัก 15 โลก โลกมิวส์ เหตุการณ์ย่อย ระบบ UI และฐานข้อมูลทั้งหมด 100.00% · ผ่านการอ่านกลับจาก ROM ครบทุกระเบียน',
+      features: [
+        'บทสนทนาและเนื้อเรื่อง 10,670 ระเบียน',
+        'ฐานข้อมูลไอเทม สกิล มอนสเตอร์ และระบบช่วยเหลือ 6,908 ระเบียน',
+        'ข้อความภาคสนาม ระบบต่อสู้ เมนู และเหตุการณ์ย่อยครบทุกโมดูล',
+        'ฟอนต์ไทยและลายน้ำ ตลับเกมภาษาไทย v1.0.1 ภายในเกม',
+      ],
+      sourceName: 'SaGa 2 - Hihou Densetsu - Goddess of Destiny (Japan).nds · 134,217,728 bytes',
+      sourceHash: 'a896e7596b0b5cc4eb3740dd566d32b75c0ff943129f55b67885dd95b9f703c3',
+      outputHash: '04445c1c8ee0c95c55a5105db8597216de1ec55808c91e1586edbd96f9fe5fc1',
+    },
     manifest: './assets/patches/saga2/v1.0.1/manifest.json',
   },
 };
@@ -61,9 +85,30 @@ const params = new URLSearchParams(window.location.search);
 const requestedSlug = params.get('game');
 const slug = games[requestedSlug] ? requestedSlug : 'the-world-ends-with-you';
 const game = games[slug];
+const details = {
+  thaiTitle: `${game.title} ฉบับภาษาไทย`,
+  japaneseTitle: game.title,
+  originalTitle: game.title,
+  studio: 'กำลังรวบรวมข้อมูล',
+  release: 'กำลังรวบรวมข้อมูล',
+  gameCode: `${game.platform} · รอยืนยันรุ่นเกม`,
+  genre: 'Video game',
+  edition: game.version,
+  overview: game.description,
+  story: 'หน้ารายละเอียดเชิงลึกของเกมนี้กำลังอยู่ระหว่างการจัดเตรียม',
+  localization: 'ข้อมูลขอบเขตงานแปลและรุ่นไฟล์ที่รองรับจะประกาศหลังผ่านการตรวจสอบรีลีส',
+  coverage: 'รายละเอียดกำลังจัดเตรียม',
+  coverageNote: 'ยังไม่ประกาศตัวเลขความครอบคลุมจนกว่าจะตรวจจากไฟล์เกมฉบับสุดท้าย',
+  features: ['รายละเอียดงานแปลกำลังจัดเตรียม', 'ข้อมูลไฟล์ต้นฉบับจะประกาศหลังตรวจสอบ', 'ไม่เผยแพร่ ROM ต้นฉบับหรือ ROM ที่แก้ไขแล้ว'],
+  sourceName: 'ยังไม่เปิดให้ติดตั้งผ่านเว็บ',
+  sourceHash: '—',
+  outputHash: '—',
+  ...(game.details || {}),
+};
 
 document.title = `${game.title} — ตลับเกมภาษาไทย`;
 document.querySelector('#detail-title').textContent = game.title;
+document.querySelector('#detail-japanese-title').textContent = details.japaneseTitle;
 document.querySelector('#detail-description').textContent = game.description;
 document.querySelector('#detail-cover').src = game.cover;
 document.querySelector('#detail-cover').alt = `ปกเกม ${game.title} ฉบับภาษาไทย`;
@@ -76,6 +121,27 @@ document.querySelector('#workspace-game').textContent = game.title;
 document.querySelector('#workspace-platform').textContent = game.platform;
 document.querySelector('#file-types').textContent = game.fileTypes;
 document.querySelector('#rom-input').accept = game.accept;
+document.querySelector('#detail-thai-title').textContent = details.thaiTitle;
+document.querySelector('#detail-overview').textContent = details.overview;
+document.querySelector('#detail-original-title').textContent = details.originalTitle;
+document.querySelector('#detail-studio').textContent = details.studio;
+document.querySelector('#detail-release').textContent = details.release;
+document.querySelector('#detail-game-code').textContent = details.gameCode;
+document.querySelector('#detail-genre').textContent = details.genre;
+document.querySelector('#detail-edition').textContent = details.edition;
+document.querySelector('#detail-story').textContent = details.story;
+document.querySelector('#detail-localization').textContent = details.localization;
+document.querySelector('#detail-coverage').textContent = details.coverage;
+document.querySelector('#detail-coverage-note').textContent = details.coverageNote;
+document.querySelector('#detail-source-name').textContent = details.sourceName;
+document.querySelector('#detail-source-hash').textContent = details.sourceHash;
+document.querySelector('#detail-output-hash').textContent = details.outputHash;
+document.querySelector('#detail-features').replaceChildren(...details.features.map((feature, index) => {
+  const item = document.createElement('li');
+  item.innerHTML = `<span class="mono">${String(index + 1).padStart(2, '0')}</span><strong></strong>`;
+  item.querySelector('strong').textContent = feature;
+  return item;
+}));
 
 const cursor = document.querySelector('.cursor');
 const hoverTargets = document.querySelectorAll('.hover-target, a, button');
@@ -130,7 +196,7 @@ const manifestPromise = game.manifest
   : Promise.resolve(null);
 
 if (game.manifest) {
-  workspaceStatus.textContent = 'XDELTA3 WEB PILOT';
+  workspaceStatus.textContent = 'XDELTA3 READY';
   workspaceNote.innerHTML = '<span>แพตช์จริง</span> ระบบจะตรวจขนาดและ SHA-256 ของ ROM ต้นฉบับ จากนั้นรัน xdelta3 ภายในเบราว์เซอร์ ไฟล์ ROM จะไม่ถูกอัปโหลดออกจากเครื่อง แนะนำให้ทดสอบบนคอมพิวเตอร์ก่อน';
 }
 
