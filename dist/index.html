@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="เว็บแพตช์เกมภาษาไทย — ไฟล์เกมประมวลผลภายในอุปกรณ์ของผู้ใช้" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>ตลับเกมภาษาไทย — Web Patcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="cursor" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand hover-target" href="#top" aria-label="กลับด้านบน">
+        <span class="brand-mark">ตลับ</span>
+        <span class="brand-sub">เกมภาษาไทย</span>
+      </a>
+      <nav class="desktop-nav" aria-label="เมนูหลัก">
+        <a class="hover-target" href="#games">เกมทั้งหมด</a>
+        <a class="hover-target" href="#patcher">แพตช์เกม</a>
+        <a class="hover-target" href="#how-it-works">วิธีใช้งาน</a>
+      </nav>
+      <button class="menu-toggle hover-target" type="button" aria-label="เปิดเมนู" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-kicker mono reveal">WEB PATCHER / FRONTEND PREVIEW 01</div>
+        <h1 id="hero-title" class="hero-title" aria-label="Patch Play Thai">
+          <span class="hero-line"><span>PATCH</span></span>
+          <span class="hero-line hero-line-offset"><span>PLAY</span></span>
+          <span class="hero-line"><span>THAI.</span></span>
+        </h1>
+        <div class="hero-foot reveal">
+          <p>แพตช์เกมภาษาไทย<br />ง่าย ปลอดภัย และโปร่งใส</p>
+          <a class="circle-link hover-target" href="#patcher" aria-label="เริ่มแพตช์เกม">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="แพลตฟอร์มที่รองรับในอนาคต">
+        <div class="ticker-track">
+          <span>NINTENDO 3DS</span><i>●</i><span>NINTENDO DS</span><i>●</i><span>PSP</span><i>●</i><span>PLAYSTATION 2</span><i>●</i><span>NINTENDO SWITCH</span><i>●</i>
+          <span>NINTENDO 3DS</span><i>●</i><span>NINTENDO DS</span><i>●</i><span>PSP</span><i>●</i><span>PLAYSTATION 2</span><i>●</i><span>NINTENDO SWITCH</span><i>●</i>
+        </div>
+      </section>
+
+      <section class="manifesto section-pad">
+        <p class="section-label mono">01 / แนวคิด</p>
+        <div class="manifesto-copy reveal-on-scroll">
+          <span>เราไม่ได้ส่งไฟล์เกมของคุณ</span>
+          <span>ไปที่เซิร์ฟเวอร์ — ทุกอย่าง</span>
+          <span>เกิดขึ้นบนอุปกรณ์ของคุณเอง</span>
+        </div>
+        <div class="manifesto-meta">
+          <p>เลือก ROM ที่ถูกต้อง ตรวจ SHA-256<br />แล้วสร้างเกมภาษาไทยจาก patch ที่ผ่านการยืนยัน</p>
+          <p class="mono">LOCAL PROCESSING<br />NO ROM UPLOAD</p>
+        </div>
+      </section>
+
+      <section id="games" class="games section-pad">
+        <div class="section-head">
+          <div>
+            <p class="section-label mono">02 / คลังเกม</p>
+            <h2>เลือกโลก<br />ที่อยากเข้าไป</h2>
+          </div>
+          <p class="section-note">ตัวอย่างหน้ารายการเกมในเฟส frontend<br />ข้อมูลดาวน์โหลดจริงจะเชื่อมภายหลัง</p>
+        </div>
+
+        <div class="game-grid">
+          <article class="game-card hover-target" data-game="Yo-kai Watch 3">
+            <div class="poster poster-a">
+              <span class="poster-index mono">001 / 3DS</span>
+              <span class="poster-title">YKW<br />03</span>
+              <span class="poster-orbit"></span>
+              <span class="poster-arrow">↗</span>
+            </div>
+            <div class="game-meta">
+              <h3>Yo-kai Watch 3</h3>
+              <span class="mono">UI PREVIEW</span>
+              <span class="mono">v1.0.1</span>
+            </div>
+          </article>
+
+          <article class="game-card hover-target" data-game="Rune Factory 4">
+            <div class="poster poster-b">
+              <span class="poster-index mono">002 / 3DS</span>
+              <span class="poster-title">RF<br />04</span>
+              <span class="poster-grid"></span>
+              <span class="poster-arrow">↗</span>
+            </div>
+            <div class="game-meta">
+              <h3>Rune Factory 4</h3>
+              <span class="mono">CATALOG DEMO</span>
+              <span class="mono">—</span>
+            </div>
+          </article>
+
+          <article class="game-card hover-target" data-game="Dragon Quest VII">
+            <div class="poster poster-c">
+              <span class="poster-index mono">003 / 3DS</span>
+              <span class="poster-title">DQ<br />VII</span>
+              <span class="poster-sun"></span>
+              <span class="poster-arrow">↗</span>
+            </div>
+            <div class="game-meta">
+              <h3>Dragon Quest VII</h3>
+              <span class="mono">CATALOG DEMO</span>
+              <span class="mono">—</span>
+            </div>
+          </article>
+
+          <article class="game-card hover-target" data-game="New Love Plus+">
+            <div class="poster poster-d">
+              <span class="poster-index mono">004 / 3DS</span>
+              <span class="poster-title">NLP<br />＋</span>
+              <span class="poster-wave"></span>
+              <span class="poster-arrow">↗</span>
+            </div>
+            <div class="game-meta">
+              <h3>New Love Plus+</h3>
+              <span class="mono">CATALOG DEMO</span>
+              <span class="mono">—</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="patcher" class="patcher-section">
+        <div class="patcher-intro section-pad">
+          <p class="section-label mono">03 / PATCH WORKSPACE</p>
+          <h2>จากไฟล์เดิม<br />สู่ภาษาไทย</h2>
+          <div class="patcher-facts">
+            <span><b>01</b> เลือกเกม</span>
+            <span><b>02</b> เลือก ROM</span>
+            <span><b>03</b> ตรวจและแพตช์</span>
+          </div>
+        </div>
+
+        <div class="workspace-wrap section-pad">
+          <div class="workspace">
+            <div class="workspace-top">
+              <div>
+                <span class="status-dot"></span>
+                <span class="mono">FRONTEND PROTOTYPE</span>
+              </div>
+              <span class="mono">FILES STAY LOCAL</span>
+            </div>
+
+            <div class="field-row">
+              <label for="game-select">เกมที่ต้องการแพตช์</label>
+              <div class="select-wrap">
+                <select id="game-select">
+                  <option>Yo-kai Watch 3 — USA / 3DS</option>
+                  <option disabled>เกมอื่น ๆ — กำลังเตรียมข้อมูล</option>
+                </select>
+                <span>↓</span>
+              </div>
+            </div>
+
+            <div id="drop-zone" class="drop-zone hover-target" tabindex="0" role="button" aria-label="เลือกไฟล์ ROM">
+              <input id="rom-input" type="file" accept=".3ds,.cia,.nds,.iso,.bin,.rom" hidden />
+              <div class="drop-number mono">STEP 02</div>
+              <div class="drop-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M16 3v18M9 14l7 7 7-7M5 24v5h22v-5" /></svg>
+              </div>
+              <h3>วางไฟล์ ROM ที่นี่</h3>
+              <p>หรือคลิกเพื่อเลือกไฟล์จากอุปกรณ์<br />ไฟล์จะไม่ถูกอัปโหลดออกจากเครื่อง</p>
+              <span class="file-types mono">3DS / CIA / NDS / ISO</span>
+            </div>
+
+            <div id="file-summary" class="file-summary" aria-live="polite">
+              <div>
+                <span class="summary-label mono">SELECTED FILE</span>
+                <strong id="file-name">ยังไม่ได้เลือกไฟล์</strong>
+              </div>
+              <div>
+                <span class="summary-label mono">SIZE</span>
+                <strong id="file-size">—</strong>
+              </div>
+              <div>
+                <span class="summary-label mono">SHA-256</span>
+                <strong id="file-hash">รอเชื่อมโมดูลตรวจสอบ</strong>
+              </div>
+            </div>
+
+            <div class="workspace-actions">
+              <p><span>หมายเหตุ</span> เวอร์ชันนี้เป็นหน้า frontend สำหรับตรวจรูปแบบและประสบการณ์ใช้งาน ยังไม่ดำเนินการแพตช์ไฟล์จริง</p>
+              <button id="patch-button" class="patch-button hover-target" type="button" disabled>
+                <span>เริ่มแพตช์เกม</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="process section-pad">
+        <div class="section-head">
+          <div>
+            <p class="section-label mono">04 / วิธีทำงาน</p>
+            <h2>สามขั้นตอน<br />ไม่มีความลับ</h2>
+          </div>
+        </div>
+        <div class="process-list">
+          <article>
+            <span class="mono">01</span>
+            <h3>ตรวจต้นฉบับ</h3>
+            <p>ตรวจ edition, region, revision, ขนาด และ SHA-256 ให้ตรงกับ source ที่รองรับ</p>
+          </article>
+          <article>
+            <span class="mono">02</span>
+            <h3>แพตช์ในเครื่อง</h3>
+            <p>เบราว์เซอร์ประมวลผล patch ภายในอุปกรณ์ของผู้ใช้ โดยไม่ส่ง ROM มาที่เรา</p>
+          </article>
+          <article>
+            <span class="mono">03</span>
+            <h3>ยืนยันผลลัพธ์</h3>
+            <p>ตรวจขนาดและ SHA-256 ของผลลัพธ์ก่อนเปิดให้ดาวน์โหลดไฟล์เกมภาษาไทย</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="legal-strip">
+        <div class="legal-track mono">
+          <span>แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่าย</span><i>↗</i>
+          <span>USE YOUR OWN LEGALLY OBTAINED GAME COPY</span><i>↗</i>
+          <span>NO ROM FILES ARE HOSTED</span><i>↗</i>
+          <span>แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่าย</span><i>↗</i>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section-pad">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <span class="mono">TALUB GAME THAI</span>
+          <h2>เกมที่รัก<br />ในภาษาของเรา</h2>
+        </div>
+        <div class="footer-col">
+          <span class="mono">NAVIGATE</span>
+          <a class="hover-target" href="#games">คลังเกม</a>
+          <a class="hover-target" href="#patcher">Web Patcher</a>
+          <a class="hover-target" href="#how-it-works">วิธีใช้งาน</a>
+        </div>
+        <div class="footer-col">
+          <span class="mono">STATUS</span>
+          <p>Frontend Preview</p>
+          <p>Backend: Later phase</p>
+          <p>Audience: Private</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 ตลับเกมภาษาไทย</span>
+        <span>แจกฟรี · ห้ามจำหน่าย</span>
+        <a class="hover-target" href="#top">กลับด้านบน ↑</a>
+      </div>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite">ระบบแพตช์จริงจะเชื่อมในเฟสถัดไป</div>
+    <script src="./app.js"></script>
+  </body>
+</html>
