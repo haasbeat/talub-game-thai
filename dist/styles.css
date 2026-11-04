@@ -58,16 +58,22 @@ button, a, .drop-zone { -webkit-tap-highlight-color: transparent; }
 
 .site-header {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 16px;
+  left: var(--pad);
+  right: var(--pad);
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 22px var(--pad);
-  color: #fff;
-  mix-blend-mode: difference;
+  min-height: 58px;
+  padding: 11px 22px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 999px;
+  box-shadow: 0 12px 38px rgba(0, 0, 0, 0.09);
+  -webkit-backdrop-filter: blur(18px) saturate(1.25);
+  backdrop-filter: blur(18px) saturate(1.25);
 }
 .brand { display: flex; align-items: center; gap: 12px; white-space: nowrap; }
 .brand-mark { display: block; font-size: 20px; font-weight: 700; letter-spacing: -0.04em; line-height: 1; }
@@ -260,6 +266,7 @@ button, a, .drop-zone { -webkit-tap-highlight-color: transparent; }
 }
 
 @media (max-width: 560px) {
+  .site-header { top: 10px; left: 12px; right: 12px; min-height: 52px; padding: 8px 12px 8px 16px; }
   .brand-sub { display: none; }
   .hero { min-height: 700px; }
   .hero-foot { align-items: end; }
