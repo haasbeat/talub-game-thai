@@ -16,7 +16,7 @@
   ],
   "patch": {
     "filename": "Inazuma_Eleven_GO_Chrono_Stones_Wildfire_Thai_v1.0.0.xdelta",
-    "url": "./assets/patches/inazuma-go-wildfire/v1.0.0/Inazuma_Eleven_GO_Chrono_Stones_Wildfire_Thai_v1.0.0.xdelta",
+    "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/inazuma-go-wildfire/v1.0.0/Inazuma_Eleven_GO_Chrono_Stones_Wildfire_Thai_v1.0.0.xdelta",
     "size": 4122424,
     "sha256": "2ea94a2889275d84e1cc10a24db3db29dd3f2565045c4c4ddd2b43642bc15557"
   },
@@ -31,5 +31,11 @@
     "critical_freeze": 0,
     "errors": 0
   },
-  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-04T22:40:00+07:00",
+    "method": "owner_reported_xdelta_patcher_test",
+    "patcher_test_passed": true,
+    "patch_sha256_verified": true
+  }
 }

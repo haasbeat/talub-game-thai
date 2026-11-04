@@ -16,7 +16,7 @@
   ],
   "patch": {
     "filename": "Inazuma_Eleven_GO_Chrono_Stones_Thunderflash_Thai_v1.0.1.xdelta",
-    "url": "./assets/patches/inazuma-go-thunderflash/v1.0.1/Inazuma_Eleven_GO_Chrono_Stones_Thunderflash_Thai_v1.0.1.xdelta",
+    "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/inazuma-go-thunderflash/v1.0.1/Inazuma_Eleven_GO_Chrono_Stones_Thunderflash_Thai_v1.0.1.xdelta",
     "size": 4086028,
     "sha256": "e71408bbbc80940974711c661464c4bcd84108261b85928e4f87e405f0e4324b"
   },
@@ -31,5 +31,11 @@
     "critical_freeze": 0,
     "errors": 0
   },
-  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-04T22:40:00+07:00",
+    "method": "owner_reported_xdelta_patcher_test",
+    "patcher_test_passed": true,
+    "patch_sha256_verified": true
+  }
 }

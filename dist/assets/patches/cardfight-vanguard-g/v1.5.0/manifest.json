@@ -16,7 +16,7 @@
   ],
   "patch": {
     "filename": "CardFight_Vanguard_G_Thai_v1.5.0.xdelta",
-    "url": "./assets/patches/cardfight-vanguard-g/v1.5.0/CardFight_Vanguard_G_Thai_v1.5.0.xdelta",
+    "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/cardfight-vanguard-g/v1.5.0/CardFight_Vanguard_G_Thai_v1.5.0.xdelta",
     "size": 11460149,
     "sha256": "b488cdbb07c9fa1166e6c3abf0b607933a7cb4f398581ae3f841eb5e75c305d3"
   },
@@ -31,5 +31,11 @@
     "critical_freeze": 0,
     "errors": 0
   },
-  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-04T22:40:00+07:00",
+    "method": "owner_reported_xdelta_patcher_test",
+    "patcher_test_passed": true,
+    "patch_sha256_verified": true
+  }
 }

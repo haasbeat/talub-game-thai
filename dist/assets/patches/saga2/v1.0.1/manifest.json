@@ -16,7 +16,7 @@
   ],
   "patch": {
     "filename": "SaGa_2_Hihou_Densetsu_Thai_v1.0.1.xdelta",
-    "url": "./assets/patches/saga2/v1.0.1/SaGa_2_Hihou_Densetsu_Thai_v1.0.1.xdelta",
+    "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/saga2-hihou-densetsu/v1.0.1/SaGa_2_Hihou_Densetsu_Thai_v1.0.1.xdelta",
     "size": 403276,
     "sha256": "17e67de66190705b1f1fe6e5fa79988225c20f8c2701fcb728050dd3b4ea3adc"
   },
@@ -30,6 +30,14 @@
     "whole_game_census": "19,225/19,225 บรรทัด = 100.00%",
     "critical_freeze": 0,
     "errors": 0
+  },
+  "verification": {
+    "verified_at": "2026-11-04T22:08:37+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
 }

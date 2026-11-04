@@ -624,6 +624,34 @@ const manifestPromise = game.manifest
 if (game.manifest) {
   workspaceStatus.textContent = 'XDELTA3 READY';
   workspaceNote.innerHTML = '<span>แพตช์จริง</span> ระบบจะตรวจขนาดและ SHA-256 ของ ROM ต้นฉบับ จากนั้นรัน xdelta3 ภายในเบราว์เซอร์ ไฟล์ ROM จะไม่ถูกอัปโหลดออกจากเครื่อง แนะนำให้ทดสอบบนคอมพิวเตอร์ก่อน';
+  void manifestPromise.then((manifest) => {
+    const verification = manifest.verification;
+    const roundtripVerified = Boolean(
+      verification?.source_sha256_verified &&
+      verification?.patch_sha256_verified &&
+      verification?.output_sha256_verified &&
+      verification?.output_matches_release_target
+    );
+    const patcherTestPassed = verification?.patcher_test_passed === true;
+    document.querySelector('#detail-status').textContent = roundtripVerified
+      ? 'ผ่านการทดสอบบนเว็บ'
+      : patcherTestPassed
+        ? 'ผ่านการทดสอบ xdelta'
+        : 'พร้อมทดลอง · รอยืนยันรอบจริง';
+    workspaceStatus.textContent = roundtripVerified || patcherTestPassed
+      ? 'XDELTA3 VERIFIED'
+      : 'XDELTA3 READY · VERIFYING';
+
+    if (manifest.output.size >= 512 * 1024 * 1024) {
+      workspaceNote.insertAdjacentHTML(
+        'beforeend',
+        '<br /><span>ไฟล์ขนาดใหญ่</span> รุ่นนี้อาจต้องใช้หน่วยความจำมากในขั้นสร้างไฟล์ผลลัพธ์ ควรใช้ Chrome/Edge บนคอมพิวเตอร์และปิดโปรแกรมที่ไม่จำเป็น',
+      );
+    }
+  }).catch(() => {
+    document.querySelector('#detail-status').textContent = 'โหลดข้อมูลแพตช์ไม่สำเร็จ';
+    workspaceStatus.textContent = 'MANIFEST ERROR';
+  });
 }
 
 const formatBytes = (bytes) => {
@@ -647,10 +675,21 @@ const setProgress = (label, percent) => {
   patchProgressBar.style.width = `${safePercent}%`;
 };
 
-const sha256Blob = async (blob) => {
-  const buffer = await blob.arrayBuffer();
-  const digest = await crypto.subtle.digest('SHA-256', buffer);
-  return [...new Uint8Array(digest)].map((byte) => byte.toString(16).padStart(2, '0')).join('');
+const sha256Blob = async (blob, onProgress = () => {}) => {
+  const hasher = new IncrementalSHA256();
+  const reader = blob.stream().getReader();
+  let processed = 0;
+
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    hasher.update(value);
+    processed += value.byteLength;
+    onProgress(processed, blob.size);
+    await new Promise((resolve) => window.setTimeout(resolve, 0));
+  }
+
+  return hasher.digestHex();
 };
 
 const resetOutput = () => {
@@ -680,19 +719,23 @@ const handleFile = async (file) => {
 
   try {
     const manifest = await manifestPromise;
-    const source = manifest.accepted_sources[0];
-    if (file.size !== source.size) {
-      fileHash.textContent = `ขนาดไม่ตรง — ต้องเป็น ${formatBytes(source.size)}`;
+    const sizeCandidates = manifest.accepted_sources.filter((source) => file.size === source.size);
+    if (sizeCandidates.length === 0) {
+      const supportedSizes = [...new Set(manifest.accepted_sources.map((source) => formatBytes(source.size)))].join(' / ');
+      fileHash.textContent = `ขนาดไม่ตรง — รองรับ ${supportedSizes}`;
       dropZone.classList.add('is-invalid');
       patchButton.querySelector('span').textContent = 'ROM ไม่ตรงรุ่น';
-      showToast('ROM มีขนาดไม่ตรงกับ Clean Japan ที่รองรับ');
+      showToast(`ROM มีขนาดไม่ตรงกับ ${manifest.region || 'รุ่น'} ที่รองรับ`);
       return;
     }
 
     setProgress('กำลังตรวจ SHA-256 ของ ROM ต้นฉบับ', 2);
     fileHash.textContent = 'กำลังคำนวณ SHA-256…';
-    const sourceHash = await sha256Blob(file);
-    if (sourceHash !== source.sha256) {
+    const sourceHash = await sha256Blob(file, (processed, total) => {
+      setProgress('กำลังตรวจ SHA-256 ของ ROM ต้นฉบับ', 2 + (processed / total) * 3);
+    });
+    const matchedSource = sizeCandidates.find((source) => source.sha256 === sourceHash);
+    if (!matchedSource) {
       fileHash.textContent = `${sourceHash.slice(0, 16)}… — ไม่ตรงรุ่น`;
       dropZone.classList.add('is-invalid');
       patchButton.querySelector('span').textContent = 'SHA-256 ไม่ตรง';
@@ -749,7 +792,9 @@ const applyVerifiedPatch = async () => {
     if (!response.ok) throw new Error(`ดาวน์โหลด patch ไม่สำเร็จ (${response.status})`);
     const patchBlob = await response.blob();
     if (patchBlob.size !== manifest.patch.size) throw new Error('ขนาดไฟล์ patch ไม่ตรงกับ manifest');
-    const patchHash = await sha256Blob(patchBlob);
+    const patchHash = await sha256Blob(patchBlob, (processed, total) => {
+      setProgress('กำลังตรวจ SHA-256 ของไฟล์ patch', 7 + (processed / total) * 3);
+    });
     if (patchHash !== manifest.patch.sha256) throw new Error('SHA-256 ของไฟล์ patch ไม่ถูกต้อง');
 
     setProgress('กำลังสร้าง ROM ภาษาไทยด้วย xdelta3', 10);
@@ -787,7 +832,9 @@ const applyVerifiedPatch = async () => {
     if (outputBlob.size !== manifest.output.size) throw new Error('ขนาด ROM ผลลัพธ์ไม่ตรงกับ manifest');
 
     setProgress('กำลังตรวจ SHA-256 ของ ROM ผลลัพธ์', 92);
-    const outputHash = await sha256Blob(outputBlob);
+    const outputHash = await sha256Blob(outputBlob, (processed, total) => {
+      setProgress('กำลังตรวจ SHA-256 ของ ROM ผลลัพธ์', 92 + (processed / total) * 7);
+    });
     if (outputHash !== manifest.output.sha256) throw new Error('SHA-256 ของ ROM ผลลัพธ์ไม่ถูกต้อง');
 
     outputUrl = URL.createObjectURL(outputBlob);
@@ -797,7 +844,7 @@ const applyVerifiedPatch = async () => {
     patchButton.querySelector('span').textContent = 'แพตช์สำเร็จ';
     fileHash.textContent = `${outputHash.slice(0, 16)}… — ผลลัพธ์ถูกต้อง`;
     setProgress('แพตช์และตรวจผลลัพธ์สำเร็จ', 100);
-    showToast('แพตช์สำเร็จและ SHA-256 ตรงกับ release v1.0.1');
+    showToast(`แพตช์สำเร็จและ SHA-256 ตรงกับ release ${manifest.patch_version}`);
   } catch (error) {
     patchButton.disabled = false;
     patchButton.querySelector('span').textContent = 'ลองแพตช์อีกครั้ง';

@@ -16,7 +16,7 @@
   ],
   "patch": {
     "filename": "Dragon_Quest_VII_Thai_v1.6.6.xdelta",
-    "url": "./assets/patches/dragon-quest-vii/v1.6.6/Dragon_Quest_VII_Thai_v1.6.6.xdelta",
+    "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/dragon-quest-vii/v1.6.6/Dragon_Quest_VII_Thai_v1.6.6.xdelta",
     "size": 20389076,
     "sha256": "6129499263b51e5724800604cd0fe7fbf7cae2cec97e521484ada4887caa30f8"
   },
@@ -31,5 +31,11 @@
     "critical_freeze": 0,
     "errors": 0
   },
-  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-04T22:40:00+07:00",
+    "method": "owner_reported_xdelta_patcher_test",
+    "patcher_test_passed": true,
+    "patch_sha256_verified": true
+  }
 }

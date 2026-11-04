@@ -16,7 +16,7 @@
   ],
   "patch": {
     "filename": "Yo-kai_Watch_3_Thai_v1.0.1.xdelta",
-    "url": "./assets/patches/yo-kai-watch-3/v1.0.1/Yo-kai_Watch_3_Thai_v1.0.1.xdelta",
+    "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/yo-kai-watch-3/v1.0.1/Yo-kai_Watch_3_Thai_v1.0.1.xdelta",
     "size": 14524626,
     "sha256": "44345ebfd8f04adbf3464282f319ba3fe62f0508b053c651064b1bb78c593bde"
   },
@@ -31,5 +31,11 @@
     "critical_freeze": 0,
     "errors": 0
   },
-  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-04T22:40:00+07:00",
+    "method": "owner_reported_xdelta_patcher_test",
+    "patcher_test_passed": true,
+    "patch_sha256_verified": true
+  }
 }

@@ -16,7 +16,7 @@
   ],
   "patch": {
     "filename": "Final_Fantasy_Explorers_USA_TH_v1.0.0.xdelta",
-    "url": "./assets/patches/final-fantasy-explorers/v1.0.0/Final_Fantasy_Explorers_USA_TH_v1.0.0.xdelta",
+    "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/final-fantasy-explorers/v1.0.0/Final_Fantasy_Explorers_USA_TH_v1.0.0.xdelta",
     "size": 23471515,
     "sha256": "220774787d7a1ded05f7791d93bd9342abb1a7f886a0ad47c05ca504e7299434"
   },
@@ -31,5 +31,11 @@
     "critical_freeze": 0,
     "errors": 0
   },
-  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-04T22:40:00+07:00",
+    "method": "owner_reported_xdelta_patcher_test",
+    "patcher_test_passed": true,
+    "patch_sha256_verified": true
+  }
 }

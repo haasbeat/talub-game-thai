@@ -16,7 +16,7 @@
   ],
   "patch": {
     "filename": "Yokai_Watch_2_Psychic_Specters_Thai_v1.2.0_USA.xdelta",
-    "url": "./assets/patches/yo-kai-watch-2/v1.2.0/Yokai_Watch_2_Psychic_Specters_Thai_v1.2.0_USA.xdelta",
+    "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/yo-kai-watch-2/v1.2.0/Yokai_Watch_2_Psychic_Specters_Thai_v1.2.0_USA.xdelta",
     "size": 13211638,
     "sha256": "9a1269844cb1844a07188664e4bb9c2f57b17fd1a989d135b29bf5902c4c3530"
   },
@@ -31,5 +31,11 @@
     "critical_freeze": 0,
     "errors": 0
   },
-  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-04T22:40:00+07:00",
+    "method": "owner_reported_xdelta_patcher_test",
+    "patcher_test_passed": true,
+    "patch_sha256_verified": true
+  }
 }

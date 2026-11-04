@@ -16,7 +16,7 @@
   ],
   "patch": {
     "filename": "Dragon Quest VII (Isan).xdelta",
-    "url": "./assets/patches/dragon-quest-vii-isan/v1.0.0/Dragon Quest VII (Isan).xdelta",
+    "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/dragon-quest-vii-isan/v1.0.0/Dragon%20Quest%20VII%20(Isan).xdelta",
     "size": 7663584,
     "sha256": "fdbe35ac03fbe3e4baac79f2757d3aa9f3f61ef8fc4a6e1bbbf9a97797e57e95"
   },
@@ -31,5 +31,11 @@
     "critical_freeze": 0,
     "errors": 0
   },
-  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-04T22:40:00+07:00",
+    "method": "owner_reported_xdelta_patcher_test",
+    "patcher_test_passed": true,
+    "patch_sha256_verified": true
+  }
 }

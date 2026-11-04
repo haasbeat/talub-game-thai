@@ -16,7 +16,7 @@
   ],
   "patch": {
     "filename": "Bravely_Default_USA_TH_v1.0.2.xdelta",
-    "url": "./assets/patches/bravely-default/v1.0.2/Bravely_Default_USA_TH_v1.0.2.xdelta",
+    "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/bravely-default/v1.0.2/Bravely_Default_USA_TH_v1.0.2.xdelta",
     "size": 3492453,
     "sha256": "491944bf2c1b84791c8e45e8c0fbc364c6fc7ae86873bac76102377ac3e0e675"
   },
@@ -31,5 +31,11 @@
     "critical_freeze": 0,
     "errors": 0
   },
-  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-04T22:40:00+07:00",
+    "method": "owner_reported_xdelta_patcher_test",
+    "patcher_test_passed": true,
+    "patch_sha256_verified": true
+  }
 }

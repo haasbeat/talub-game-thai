@@ -16,7 +16,7 @@
   ],
   "patch": {
     "filename": "Etrian_Odyssey_Untold_Thai_v1.0.0.xdelta",
-    "url": "./assets/patches/etrian-odyssey-untold/v1.0.0/Etrian_Odyssey_Untold_Thai_v1.0.0.xdelta",
+    "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/etrian-odyssey-untold/v1.0.0/Etrian_Odyssey_Untold_Thai_v1.0.0.xdelta",
     "size": 47784013,
     "sha256": "89c5bfa3dd1ab498fe06fb7eb9a1150b3af855e4fdfee887310095995eae8999"
   },
@@ -31,5 +31,11 @@
     "critical_freeze": 0,
     "errors": 0
   },
-  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-04T22:40:00+07:00",
+    "method": "owner_reported_xdelta_patcher_test",
+    "patcher_test_passed": true,
+    "patch_sha256_verified": true
+  }
 }

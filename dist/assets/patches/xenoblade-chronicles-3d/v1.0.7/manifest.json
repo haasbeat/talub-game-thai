@@ -16,7 +16,7 @@
   ],
   "patch": {
     "filename": "Xenoblade_Chronicles_3D_Thai_v1.0.7.xdelta",
-    "url": "./assets/patches/xenoblade-chronicles-3d/v1.0.7/Xenoblade_Chronicles_3D_Thai_v1.0.7.xdelta",
+    "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/xenoblade-chronicles-3d/v1.0.7/Xenoblade_Chronicles_3D_Thai_v1.0.7.xdelta",
     "size": 3949345,
     "sha256": "3f53cb3121f6c6ab84adf5bae51149feb9f3e0dd15eefd497e51c53359c73e9c"
   },
@@ -31,5 +31,11 @@
     "critical_freeze": 0,
     "errors": 0
   },
-  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-04T22:40:00+07:00",
+    "method": "owner_reported_xdelta_patcher_test",
+    "patcher_test_passed": true,
+    "patch_sha256_verified": true
+  }
 }

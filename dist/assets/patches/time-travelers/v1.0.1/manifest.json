@@ -16,7 +16,7 @@
   ],
   "patch": {
     "filename": "Time_Travelers_Thai_v1.0.1.xdelta",
-    "url": "./assets/patches/time-travelers/v1.0.1/Time_Travelers_Thai_v1.0.1.xdelta",
+    "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/time-travelers/v1.0.1/Time_Travelers_Thai_v1.0.1.xdelta",
     "size": 8194825,
     "sha256": "aec6ff83bc8fd55cdf6388fb9c9f1fc87edffce5f1497dcc51b04799e1be825d"
   },
@@ -31,5 +31,11 @@
     "critical_freeze": 0,
     "errors": 0
   },
-  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-04T22:40:00+07:00",
+    "method": "owner_reported_xdelta_patcher_test",
+    "patcher_test_passed": true,
+    "patch_sha256_verified": true
+  }
 }

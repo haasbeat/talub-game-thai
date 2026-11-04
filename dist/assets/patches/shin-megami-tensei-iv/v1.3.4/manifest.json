@@ -16,7 +16,7 @@
   ],
   "patch": {
     "filename": "Shin_Megami_Tensei_IV_USA_Thai_v1.3.4.xdelta",
-    "url": "./assets/patches/shin-megami-tensei-iv/v1.3.4/Shin_Megami_Tensei_IV_USA_Thai_v1.3.4.xdelta",
+    "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/shin-megami-tensei-iv/v1.3.4/Shin_Megami_Tensei_IV_USA_Thai_v1.3.4.xdelta",
     "size": 4278409,
     "sha256": "fe2cc3ed2fb0775dab67ab68e398cdadb67ceb171a4d9aa8f31ddaf459615322"
   },
@@ -31,5 +31,11 @@
     "critical_freeze": 0,
     "errors": 0
   },
-  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-04T22:40:00+07:00",
+    "method": "owner_reported_xdelta_patcher_test",
+    "patcher_test_passed": true,
+    "patch_sha256_verified": true
+  }
 }
