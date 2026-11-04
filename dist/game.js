@@ -788,8 +788,20 @@ const applyVerifiedPatch = async () => {
 
   try {
     setProgress('กำลังดาวน์โหลดและตรวจไฟล์ patch', 7);
-    const response = await fetch(manifest.patch.url, { cache: 'no-store' });
-    if (!response.ok) throw new Error(`ดาวน์โหลด patch ไม่สำเร็จ (${response.status})`);
+    let patchUrl = manifest.patch.url;
+    if (!patchUrl || patchUrl.includes('chatgpt.site')) {
+      patchUrl = new URL(manifest.patch.filename, new URL(game.manifest, window.location.href)).href;
+    }
+    let response;
+    try {
+      response = await fetch(patchUrl, { cache: 'no-store' });
+    } catch (e) {
+      response = null;
+    }
+    if ((!response || !response.ok) && manifest.patch.url && patchUrl !== manifest.patch.url) {
+      response = await fetch(manifest.patch.url, { cache: 'no-store' });
+    }
+    if (!response || !response.ok) throw new Error(`ดาวน์โหลด patch ไม่สำเร็จ (${response?.status || 'Network error'})`);
     const patchBlob = await response.blob();
     if (patchBlob.size !== manifest.patch.size) throw new Error('ขนาดไฟล์ patch ไม่ตรงกับ manifest');
     const patchHash = await sha256Blob(patchBlob, (processed, total) => {
