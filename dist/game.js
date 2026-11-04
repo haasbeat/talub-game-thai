@@ -25,7 +25,7 @@ const games = {
       ],
       sourceName: 'World Ends with You, The (USA).nds · 134,217,728 bytes',
       sourceHash: '3129ce0d35f082eb37e53de1e454a1ff12c98787a93037f2351084e377e1d74d',
-      outputHash: '6ff59787e9140fbafb83b32ea704b4c74070a7b489d81fe0f12c8b7463f25ddf',
+      outputHash: 'da438c23022b12711dc0f88981f40ef3f679510a607e39491f79f11cdaffe74d',
     },
     manifest: './assets/patches/the-world-ends-with-you/v1.0.4/manifest.json',
   },
@@ -55,7 +55,7 @@ const games = {
       ],
       sourceName: 'Etrian Odyssey Untold - The Millennium Girl (USA).3ds · 1,073,741,824 bytes',
       sourceHash: '09ac2bd4ab0e5709734d1e2cbf3547cc8decf08b89b618085e986d2b089ff6d4',
-      outputHash: 'e62a1ba2e15bc99b2c3a50d2bbd76b1f237ef344c214c5c2fc93258c7367c34b',
+      outputHash: '23dae2cc38a94575bdc8ca5a2633f567cfa9223ebdded0570bca5df0cfe89f3b',
     },
     manifest: './assets/patches/etrian-odyssey-untold/v1.0.0/manifest.json',
   },
@@ -205,7 +205,7 @@ const games = {
       ],
       sourceName: 'Shin Megami Tensei IV (USA) Decrypted.3ds · 2,147,483,648 bytes',
       sourceHash: '162356342f2a0459b3d1b53dfa4bb45d0edca960a750eaae950aab3de5bd542b',
-      outputHash: 'd861fbcbbd387f3b5eb7c8d9be7f918903c7ea519c72c1c69ba1e35a165682b1',
+      outputHash: 'df1e9207600c31d5a4b5260ccfc745bf09bbb6a508cb9d323e8e3fec31430dcb',
     },
     manifest: './assets/patches/shin-megami-tensei-iv/v1.3.4/manifest.json',
   },
@@ -235,7 +235,7 @@ const games = {
       ],
       sourceName: 'Yo-Kai Watch (USA) Decrypted.3ds · 869,330,944 bytes',
       sourceHash: '39afb3ebcc5d5472248499ce71a8a77024e893a2dd1c404cabb2a19a24e3c49c',
-      outputHash: '041a79fcfd74656ca895055375eb0173bcda87ce274e0d7c71ba7635c43d0fb3',
+      outputHash: 'c1e251d9d0ab02f001199a7cbc7f3b4efacecb2331f674e50ffaaf628a1256cd',
     },
     manifest: './assets/patches/yo-kai-watch/v2.8.0/manifest.json',
   },
@@ -265,7 +265,7 @@ const games = {
       ],
       sourceName: 'Inazuma Eleven GO - Chrono Stones - Wildfire (Europe) (En,Fr,De,Es,It).3ds · 4,294,967,296 bytes',
       sourceHash: '53a7a094f4aa7d0d09c6c2968e21a53a133380468a89f50295976c32af1534e8',
-      outputHash: 'f99aa8d867c293779e51ea5642d96ae184db4a39bfe8f98ec4dcbb8c5a2c270d',
+      outputHash: '710ae9cfcf8df993b3c09d5313d642f4d2df3595d82c2c10485a772724b53510',
     },
     manifest: './assets/patches/inazuma-go-wildfire/v1.0.0/manifest.json',
   },
@@ -295,7 +295,7 @@ const games = {
       ],
       sourceName: 'Dragon Quest VII - Fragments of the Forgotten Past (USA).3ds · 2,147,483,648 bytes',
       sourceHash: 'e1ed3a5f31822102622d057b70d22dda51f076a7944b6aceb9fc00897873b6bd',
-      outputHash: 'e7fa4ebae33eb5a438e83344c8cff44e5033bc6f4078864700aeeb8be71a7d65',
+      outputHash: '8ba24586a3306fb7b0fc742d44f360c433afb92d0e72cbd4ece608a1d82c0b96',
     },
     manifest: './assets/patches/dragon-quest-vii-isan/v1.0.0/manifest.json',
   },
@@ -355,7 +355,7 @@ const games = {
       ],
       sourceName: 'Tales of Hearts - Anime Movie Edition (Japan).nds · 268,435,456 bytes',
       sourceHash: '15bd0063173989cab81d2d1aeb21b4bd6d51d81347a15d2c1a98562de08f32d4',
-      outputHash: 'ca1bdfeea003666fe547147ca4864fe28205fbc087e2264560731f24d770fef0',
+      outputHash: '3c1c307fd8d3c60a1fc3a7b01a3664e92bee6cf58b44994c954b10945d7dc850',
     },
     manifest: './assets/patches/tales-of-hearts/v1.0.1/manifest.json',
   },
@@ -385,7 +385,7 @@ const games = {
       ],
       sourceName: 'Dragon Quest VI - Realms of Revelation .nds · 134,217,728 bytes',
       sourceHash: '66b9f6d3c7eb1f2bbbf09b3004d46b86b08f87d3c1674a37f8246d2d544a3f33',
-      outputHash: '8e27c19623e1f0e4fcb439c09aa475e533e5065c71db9dfbc3516ff258100652',
+      outputHash: 'fb9aa975ed9ed4a1bfc2a95f8c2e0e653427c1a70ff9ea2c0a408fd16548bb90',
     },
     manifest: './assets/patches/dragon-quest-vi/v1.1.0/manifest.json',
   },
@@ -415,7 +415,7 @@ const games = {
       ],
       sourceName: 'Suikoden Tierkreis (Undub).nds · 255,426,932 bytes',
       sourceHash: 'cfb25b40e91f6b1fcb3026c6432c1a6b8a73e5d19758bc64b776b0a976edf9dc',
-      outputHash: '463fdfcead79440ea3125e1a3bc845c490a0740924976c67efbe56fa1e174b0c',
+      outputHash: 'dfd105537686552523b174a018e1e5df77e01a04b4f20c0a655f904fc6f4f026',
     },
     manifest: './assets/patches/suikoden-tierkreis/v1.0.0/manifest.json',
   },
@@ -451,7 +451,7 @@ const games = {
       ],
       sourceName: 'Dragon Quest V - Hand of the Heavenly Bride (US)(M3)(XenoPhobia).nds · 134,217,728 bytes',
       sourceHash: 'c042d82f33e7b0a8a58f72ff8534a9444cee67bdbd383cf6c6b2942de46dd974',
-      outputHash: '90e4f3a9e6ea3db4fbc7c9be9e71ec26ca78683525287e0255a8220f133bc4e7',
+      outputHash: '8128a984da3a55ed44ad1909485b284f4a314c65c9213027e7ee33bbec65a289',
     },
     manifest: './assets/patches/dragon-quest-v/v1.6.3/manifest.json',
   },
@@ -486,6 +486,58 @@ const games = {
     manifest: './assets/patches/time-travelers/v1.0.1/manifest.json',
   },
 };
+
+// Keep the hand-written archive entries above, then fill every additional game
+// from the generated release catalog. Catalog values also refresh cover, index,
+// version and manifest paths for existing entries.
+for (const item of (window.GAME_CATALOG || [])) {
+  const catalogEntry = {
+    index: item.index,
+    title: item.title,
+    platform: item.platformLabel,
+    cover: item.cover,
+    version: item.version,
+    format: item.format,
+    status: item.verified ? 'ผ่านการทดสอบ xdelta' : 'พร้อมทดลอง',
+    accept: item.accept,
+    fileTypes: item.fileTypes,
+    description: `รายละเอียดฉบับภาษาไทยและระบบแพตช์ผ่านเว็บเฉพาะ ${item.title} โดยไฟล์เกมจะประมวลผลภายในอุปกรณ์ของผู้ใช้`,
+    details: {
+      thaiTitle: `${item.title} ฉบับภาษาไทย`,
+      japaneseTitle: item.title,
+      originalTitle: item.title,
+      studio: 'ดูข้อมูลผู้พัฒนาและผู้จัดจำหน่ายจากเกมต้นฉบับ',
+      release: 'ดูวันที่วางจำหน่ายจากเกมต้นฉบับ',
+      gameCode: `${item.region} · ${item.gameCode}`,
+      genre: 'Video game',
+      edition: `ตลับเกมภาษาไทย ${item.version}`,
+      overview: `ฉบับภาษาไทย ${item.version} สำหรับ ${item.title} พร้อมระบบตรวจ ROM ต้นฉบับและสร้างไฟล์ผลลัพธ์ด้วย xdelta3 ภายในเบราว์เซอร์`,
+      story: 'หน้านี้เน้นข้อมูลรีลีสและการติดตั้ง ข้อมูลเนื้อเรื่องเชิงลึกจะเพิ่มหลังผ่านการตรวจทานแหล่งอ้างอิงของเกมฉบับนี้',
+      localization: item.moduleStatus,
+      coverage: item.wholeGameCensus,
+      coverageNote: `${item.moduleStatus} · สถานะนี้แยกจากผลการเล่นทดสอบบนอุปกรณ์จริง`,
+      features: [
+        `แพตช์ ${item.format} รุ่น ${item.version}`,
+        `รองรับไฟล์ต้นฉบับตาม SHA-256 ที่ระบุใน manifest`,
+        'ประมวลผล ROM ภายในอุปกรณ์และไม่อัปโหลดไฟล์เกม',
+      ],
+      sourceName: item.sourceName,
+      sourceHash: item.sourceHash,
+      outputHash: item.outputHash,
+    },
+    manifest: item.manifest,
+  };
+
+  if (games[item.slug]) {
+    games[item.slug] = {
+      ...games[item.slug],
+      ...catalogEntry,
+      details: games[item.slug].details || catalogEntry.details,
+    };
+  } else {
+    games[item.slug] = catalogEntry;
+  }
+}
 
 const params = new URLSearchParams(window.location.search);
 const requestedSlug = params.get('game');
@@ -642,23 +694,7 @@ if (game.manifest) {
       ? 'XDELTA3 VERIFIED'
       : 'XDELTA3 READY · VERIFYING';
 
-    const downloadPatchLink = document.querySelector('#download-patch-file');
-    if (downloadPatchLink && manifest.patch) {
-      let patchFileUrl = manifest.patch.url;
-      if (!patchFileUrl || patchFileUrl.includes('chatgpt.site')) {
-        patchFileUrl = new URL(manifest.patch.filename, new URL(game.manifest, window.location.href)).href;
-      }
-      downloadPatchLink.href = patchFileUrl;
-      downloadPatchLink.download = manifest.patch.filename;
-      downloadPatchLink.hidden = false;
-    }
-
-    if (manifest.output.size >= 1500 * 1024 * 1024) {
-      workspaceNote.insertAdjacentHTML(
-        'beforeend',
-        '<br /><span>คำแนะนำ</span> เนื่องจาก ROM มีขนาด ' + formatBytes(manifest.output.size) + ' หากเบราว์เซอร์หน่วยความจำไม่พอหรือแพตช์ไม่สำเร็จ สามารถกดปุ่ม <b>"ดาวน์โหลดไฟล์ Patch (.xdelta)"</b> ด้านล่าง แล้วนำไปแพตช์ด้วยโปรแกรม <b>xdelta UI</b> บนคอมพิวเตอร์ได้ทันที',
-      );
-    } else if (manifest.output.size >= 512 * 1024 * 1024) {
+    if (manifest.output.size >= 512 * 1024 * 1024) {
       workspaceNote.insertAdjacentHTML(
         'beforeend',
         '<br /><span>ไฟล์ขนาดใหญ่</span> รุ่นนี้อาจต้องใช้หน่วยความจำมากในขั้นสร้างไฟล์ผลลัพธ์ ควรใช้ Chrome/Edge บนคอมพิวเตอร์และปิดโปรแกรมที่ไม่จำเป็น',
@@ -804,10 +840,7 @@ const applyVerifiedPatch = async () => {
 
   try {
     setProgress('กำลังดาวน์โหลดและตรวจไฟล์ patch', 7);
-    let patchUrl = manifest.patch.url;
-    if (!patchUrl || patchUrl.includes('chatgpt.site')) {
-      patchUrl = new URL(manifest.patch.filename, new URL(game.manifest, window.location.href)).href;
-    }
+    let patchUrl = manifest.patch.url || new URL(manifest.patch.filename, new URL(game.manifest, window.location.href)).href;
     let response;
     try {
       response = await fetch(patchUrl, { cache: 'no-store' });

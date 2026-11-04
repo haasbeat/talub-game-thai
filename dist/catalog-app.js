@@ -1,0 +1,273 @@
+const catalog = Array.isArray(window.GAME_CATALOG) ? window.GAME_CATALOG : [];
+const cursor = document.querySelector('.cursor');
+
+const bindHoverTargets = (root = document) => {
+  if (!window.matchMedia('(pointer: fine)').matches) return;
+  root.querySelectorAll('.hover-target, a, button, select').forEach((target) => {
+    if (target.dataset.cursorBound) return;
+    target.dataset.cursorBound = 'true';
+    target.addEventListener('mouseenter', () => cursor.classList.add('is-hovering'));
+    target.addEventListener('mouseleave', () => cursor.classList.remove('is-hovering'));
+  });
+};
+
+if (window.matchMedia('(pointer: fine)').matches) {
+  window.addEventListener('pointermove', (event) => {
+    cursor.style.transform = `translate3d(${event.clientX}px, ${event.clientY}px, 0)`;
+  }, { passive: true });
+}
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) entry.target.classList.add('is-visible');
+  });
+}, { threshold: 0.16 });
+
+document.querySelectorAll('.reveal-on-scroll').forEach((element) => observer.observe(element));
+
+const platformDefinitions = [
+  { key: 'all', eyebrow: 'ALL', label: 'รวมทั้งหมด' },
+  { key: '3ds', eyebrow: 'NINTENDO', label: '3DS' },
+  { key: 'nds', eyebrow: 'NINTENDO', label: 'DS' },
+  { key: 'ps2', eyebrow: 'SONY', label: 'PS2' },
+  { key: 'snes', eyebrow: 'NINTENDO', label: 'SNES' },
+  { key: 'psp', eyebrow: 'SONY', label: 'PSP' },
+  { key: 'switch', eyebrow: 'NINTENDO', label: 'SWITCH' },
+];
+
+const platformLabels = {
+  all: 'รวมทุกเครื่อง',
+  '3ds': 'Nintendo 3DS',
+  nds: 'Nintendo DS',
+  ps2: 'PlayStation 2',
+  snes: 'Super Nintendo',
+  psp: 'PSP',
+  switch: 'Nintendo Switch',
+};
+
+const platformFilter = document.querySelector('.platform-filter');
+const gameGrid = document.querySelector('.game-grid');
+const platformLabel = document.querySelector('#platform-label');
+const platformCount = document.querySelector('#platform-count');
+const platformEmpty = document.querySelector('#platform-empty');
+const gameSort = document.querySelector('#game-sort');
+const posterShapes = ['poster-a', 'poster-b', 'poster-c', 'poster-d', 'poster-e'];
+
+const params = new URLSearchParams(window.location.search);
+const requestedPlatform = params.get('platform');
+const requestedSort = params.get('sort');
+const state = {
+  platform: platformLabels[requestedPlatform] ? requestedPlatform : 'all',
+  sort: ['default', 'newest', 'name-asc', 'name-desc'].includes(requestedSort) ? requestedSort : 'default',
+  page: Math.max(1, Number.parseInt(params.get('page') || '1', 10) || 1),
+};
+
+const countForPlatform = (platform) => platform === 'all'
+  ? catalog.length
+  : catalog.filter((game) => game.platform === platform).length;
+
+const createPlatformTabs = () => {
+  platformFilter.replaceChildren(...platformDefinitions.map((definition) => {
+    const button = document.createElement('button');
+    button.className = `platform-tab hover-target${definition.key === state.platform ? ' is-active' : ''}`;
+    button.type = 'button';
+    button.dataset.platform = definition.key;
+    button.setAttribute('role', 'tab');
+    button.setAttribute('aria-selected', String(definition.key === state.platform));
+    button.innerHTML = '<span class="mono"></span><strong></strong><em></em>';
+    button.querySelector('span').textContent = definition.eyebrow;
+    button.querySelector('strong').textContent = definition.label;
+    button.querySelector('em').textContent = countForPlatform(definition.key);
+    button.addEventListener('click', () => {
+      state.platform = definition.key;
+      state.page = 1;
+      renderCatalog(true);
+    });
+    return button;
+  }));
+};
+
+const columnsForViewport = () => {
+  if (window.innerWidth <= 560) return 1;
+  if (window.innerWidth <= 860) return 2;
+  if (window.innerWidth <= 1180) return 3;
+  return 5;
+};
+
+const pageSize = () => columnsForViewport() * 5;
+
+const sortedGames = () => {
+  const filtered = state.platform === 'all'
+    ? [...catalog]
+    : catalog.filter((game) => game.platform === state.platform);
+
+  return filtered.sort((left, right) => {
+    if (state.sort === 'newest') return right.order - left.order;
+    if (state.sort === 'name-asc') return left.title.localeCompare(right.title, 'en');
+    if (state.sort === 'name-desc') return right.title.localeCompare(left.title, 'en');
+    return left.order - right.order;
+  });
+};
+
+const createGameCard = (game, index) => {
+  const card = document.createElement('article');
+  card.className = 'game-card hover-target';
+  card.dataset.game = game.title;
+  card.dataset.slug = game.slug;
+  card.dataset.platform = game.platform;
+  card.setAttribute('role', 'link');
+  card.setAttribute('tabindex', '0');
+  card.setAttribute('aria-label', `ดูรายละเอียดและแพตช์ ${game.title}`);
+
+  const poster = document.createElement('div');
+  poster.className = `poster cover-poster ${posterShapes[index % posterShapes.length]}`;
+
+  const cover = document.createElement('img');
+  cover.src = game.cover;
+  cover.alt = `ปกเกม ${game.title} ฉบับภาษาไทย`;
+  cover.loading = 'lazy';
+  cover.decoding = 'async';
+
+  const gameIndex = document.createElement('span');
+  gameIndex.className = 'poster-index mono';
+  gameIndex.textContent = game.index;
+
+  const arrow = document.createElement('span');
+  arrow.className = 'poster-arrow';
+  arrow.textContent = '↗';
+  arrow.setAttribute('aria-hidden', 'true');
+
+  poster.append(cover, gameIndex, arrow);
+
+  const meta = document.createElement('div');
+  meta.className = 'game-meta';
+  meta.innerHTML = '<h3></h3><span class="mono"></span><span class="mono"></span>';
+  meta.querySelector('h3').textContent = game.title;
+  meta.querySelectorAll('span')[0].textContent = game.version;
+  meta.querySelectorAll('span')[1].textContent = game.platformLabel;
+
+  const openGame = () => {
+    window.location.href = `./game.html?game=${encodeURIComponent(game.slug)}`;
+  };
+  card.addEventListener('click', openGame);
+  card.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      openGame();
+    }
+  });
+
+  card.append(poster, meta);
+  return card;
+};
+
+const pagination = document.createElement('nav');
+pagination.className = 'game-pagination';
+pagination.setAttribute('aria-label', 'หน้ารายการเกม');
+gameGrid.insertAdjacentElement('afterend', pagination);
+
+const updateUrl = () => {
+  const url = new URL(window.location.href);
+  state.platform === 'all' ? url.searchParams.delete('platform') : url.searchParams.set('platform', state.platform);
+  state.sort === 'default' ? url.searchParams.delete('sort') : url.searchParams.set('sort', state.sort);
+  state.page === 1 ? url.searchParams.delete('page') : url.searchParams.set('page', String(state.page));
+  url.hash = 'games';
+  window.history.replaceState({}, '', url);
+};
+
+const renderPagination = (totalPages) => {
+  pagination.hidden = totalPages <= 1;
+  if (pagination.hidden) {
+    pagination.replaceChildren();
+    return;
+  }
+
+  const previous = document.createElement('button');
+  previous.type = 'button';
+  previous.className = 'pagination-arrow hover-target';
+  previous.textContent = '← ก่อนหน้า';
+  previous.disabled = state.page === 1;
+  previous.addEventListener('click', () => {
+    state.page -= 1;
+    renderCatalog(true, true);
+  });
+
+  const pages = document.createElement('div');
+  pages.className = 'pagination-pages';
+  for (let page = 1; page <= totalPages; page += 1) {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = `pagination-page hover-target${page === state.page ? ' is-active' : ''}`;
+    button.textContent = String(page).padStart(2, '0');
+    button.setAttribute('aria-label', `ไปหน้าที่ ${page}`);
+    button.setAttribute('aria-current', page === state.page ? 'page' : 'false');
+    button.addEventListener('click', () => {
+      state.page = page;
+      renderCatalog(true, true);
+    });
+    pages.append(button);
+  }
+
+  const next = document.createElement('button');
+  next.type = 'button';
+  next.className = 'pagination-arrow hover-target';
+  next.textContent = 'ถัดไป →';
+  next.disabled = state.page === totalPages;
+  next.addEventListener('click', () => {
+    state.page += 1;
+    renderCatalog(true, true);
+  });
+
+  pagination.replaceChildren(previous, pages, next);
+};
+
+function renderCatalog(shouldUpdateUrl = false, shouldScroll = false) {
+  const games = sortedGames();
+  const totalPages = Math.max(1, Math.ceil(games.length / pageSize()));
+  state.page = Math.min(state.page, totalPages);
+  const start = (state.page - 1) * pageSize();
+  const visible = games.slice(start, start + pageSize());
+
+  gameGrid.replaceChildren(...visible.map(createGameCard));
+  platformEmpty.hidden = games.length !== 0;
+  platformLabel.textContent = platformLabels[state.platform];
+  platformCount.textContent = games.length
+    ? `${games.length} เกม · หน้า ${state.page}/${totalPages}`
+    : '0 เกม';
+  gameSort.value = state.sort;
+
+  platformFilter.querySelectorAll('.platform-tab').forEach((tab) => {
+    const active = tab.dataset.platform === state.platform;
+    tab.classList.toggle('is-active', active);
+    tab.setAttribute('aria-selected', String(active));
+    if (active) tab.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+  });
+
+  renderPagination(totalPages);
+  bindHoverTargets(document);
+  if (shouldUpdateUrl) updateUrl();
+  if (shouldScroll) document.querySelector('.platform-result').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+gameSort.addEventListener('change', () => {
+  state.sort = gameSort.value;
+  state.page = 1;
+  renderCatalog(true);
+});
+
+let resizeTimer = 0;
+let previousColumns = columnsForViewport();
+window.addEventListener('resize', () => {
+  window.clearTimeout(resizeTimer);
+  resizeTimer = window.setTimeout(() => {
+    const currentColumns = columnsForViewport();
+    if (currentColumns === previousColumns) return;
+    previousColumns = currentColumns;
+    state.page = 1;
+    renderCatalog(true);
+  }, 160);
+});
+
+createPlatformTabs();
+renderCatalog(false);
+bindHoverTargets(document);
