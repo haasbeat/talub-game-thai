@@ -52,7 +52,8 @@ button, a, .drop-zone { -webkit-tap-highlight-color: transparent; }
   mix-blend-mode: difference;
   pointer-events: none;
   transform: translate3d(-100px, -100px, 0);
-  transition: width 500ms var(--ease), height 500ms var(--ease), margin 500ms var(--ease);
+  will-change: transform;
+  transition: width 180ms var(--ease), height 180ms var(--ease), margin 180ms var(--ease);
 }
 .cursor.is-hovering { width: 48px; height: 48px; margin: -24px 0 0 -24px; }
 

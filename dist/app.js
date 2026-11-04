@@ -2,23 +2,9 @@ const cursor = document.querySelector('.cursor');
 const hoverTargets = document.querySelectorAll('.hover-target, a, button, select');
 
 if (window.matchMedia('(pointer: fine)').matches) {
-  let targetX = -100;
-  let targetY = -100;
-  let currentX = -100;
-  let currentY = -100;
-
-  window.addEventListener('mousemove', (event) => {
-    targetX = event.clientX;
-    targetY = event.clientY;
-  });
-
-  const renderCursor = () => {
-    currentX += (targetX - currentX) * 0.16;
-    currentY += (targetY - currentY) * 0.16;
-    cursor.style.transform = `translate3d(${currentX}px, ${currentY}px, 0)`;
-    requestAnimationFrame(renderCursor);
-  };
-  requestAnimationFrame(renderCursor);
+  window.addEventListener('pointermove', (event) => {
+    cursor.style.transform = `translate3d(${event.clientX}px, ${event.clientY}px, 0)`;
+  }, { passive: true });
 
   hoverTargets.forEach((target) => {
     target.addEventListener('mouseenter', () => cursor.classList.add('is-hovering'));
