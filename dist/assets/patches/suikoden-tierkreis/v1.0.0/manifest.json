@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game_slug": "suikoden-tierkreis",
+  "game_title": "Suikoden Tierkreis",
+  "platform": "NDS",
+  "region": "USA",
+  "game_code": "CSKJ",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Suikoden Tierkreis (Undub).nds",
+      "size": 255426932,
+      "sha256": "cfb25b40e91f6b1fcb3026c6432c1a6b8a73e5d19758bc64b776b0a976edf9dc"
+    }
+  ],
+  "patch": {
+    "filename": "Suikoden_Tierkreis_Thai_v1.0.0.xdelta",
+    "url": "./assets/patches/suikoden-tierkreis/v1.0.0/Suikoden_Tierkreis_Thai_v1.0.0.xdelta",
+    "size": 7000223,
+    "sha256": "6fb4ef2cca93978869c7e3009f7c38b5c765aad1374083fdab331a55eda7bb45"
+  },
+  "output": {
+    "filename": "Suikoden_Tierkreis_Thai_v1.0.0.nds",
+    "size": 255426932,
+    "sha256": "463fdfcead79440ea3125e1a3bc845c490a0740924976c67efbe56fa1e174b0c"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่อง 108 ดวงดาวแห่งโชคชะตา+เควสต์กิลด์+เมนูและระบบต่อสู้ 100%",
+    "whole_game_census": "26,300/26,300 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game_slug": "inazuma-go-thunderflash",
+  "game_title": "Inazuma Eleven GO: Chrono Stones - Thunderflash",
+  "platform": "3DS",
+  "region": "Europe",
+  "game_code": "BG8P",
+  "patch_version": "v1.0.1",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Inazuma Eleven GO - Chrono Stones - Thunderflash (Europe) (En,Fr,De,Es,It).3ds",
+      "size": 4294967296,
+      "sha256": "b2256cb7980e15ea39485bbd1f945625bf21bb3bbbe8ca575d5a9d18ce528859"
+    }
+  ],
+  "patch": {
+    "filename": "Inazuma_Eleven_GO_Chrono_Stones_Thunderflash_Thai_v1.0.1.xdelta",
+    "url": "./assets/patches/inazuma-go-thunderflash/v1.0.1/Inazuma_Eleven_GO_Chrono_Stones_Thunderflash_Thai_v1.0.1.xdelta",
+    "size": 4086028,
+    "sha256": "e71408bbbc80940974711c661464c4bcd84108261b85928e4f87e405f0e4324b"
+  },
+  "output": {
+    "filename": "Inazuma_Eleven_GO_Chrono_Stones_Thunderflash_Thai_v1.0.1.3ds",
+    "size": 4294967296,
+    "sha256": "133d5964f7b60e6bb6056345ecb549303530e1eb84ef0c9b68fa70db2b1b3699"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องสายทันเดอร์แฟลช+ท่าประสานเฉพาะเวอร์ชัน 100%",
+    "whole_game_census": "22,400/22,400 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}

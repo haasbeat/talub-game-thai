@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game_slug": "the-world-ends-with-you",
+  "game_title": "The World Ends with You",
+  "platform": "NDS",
+  "region": "USA",
+  "game_code": "AWLE",
+  "patch_version": "v1.0.4",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "World Ends with You, The (USA).nds",
+      "size": 134217728,
+      "sha256": "3129ce0d35f082eb37e53de1e454a1ff12c98787a93037f2351084e377e1d74d"
+    }
+  ],
+  "patch": {
+    "filename": "The_World_Ends_with_You_Thai_v1.0.4.xdelta",
+    "url": "./assets/patches/the-world-ends-with-you/v1.0.4/The_World_Ends_with_You_Thai_v1.0.4.xdelta",
+    "size": 1066901,
+    "sha256": "4c284fc2819f04511fb609d8d1ed7cdc974702b86852596df0247f5cfdb5e00b"
+  },
+  "output": {
+    "filename": "The_World_Ends_with_You_TH_v1.0.4.nds",
+    "size": 134217728,
+    "sha256": "6ff59787e9140fbafb83b32ea704b4c74070a7b489d81fe0f12c8b7463f25ddf"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก 7 วัน 3 สัปดาห์+บทเสริม Another Day+ระบบเข็มกลัด 100%",
+    "whole_game_census": "14,810/14,810 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}

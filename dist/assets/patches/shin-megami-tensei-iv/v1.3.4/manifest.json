@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game_slug": "shin-megami-tensei-iv",
+  "game_title": "Shin Megami Tensei IV",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "B4EE",
+  "patch_version": "v1.3.4",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Shin Megami Tensei IV (USA) Decrypted.3ds",
+      "size": 2147483648,
+      "sha256": "162356342f2a0459b3d1b53dfa4bb45d0edca960a750eaae950aab3de5bd542b"
+    }
+  ],
+  "patch": {
+    "filename": "Shin_Megami_Tensei_IV_USA_Thai_v1.3.4.xdelta",
+    "url": "./assets/patches/shin-megami-tensei-iv/v1.3.4/Shin_Megami_Tensei_IV_USA_Thai_v1.3.4.xdelta",
+    "size": 4278409,
+    "sha256": "fe2cc3ed2fb0775dab67ab68e398cdadb67ceb171a4d9aa8f31ddaf459615322"
+  },
+  "output": {
+    "filename": "Shin_Megami_Tensei_IV_USA_TH_v1.3.4.3ds",
+    "size": 2147483648,
+    "sha256": "d861fbcbbd387f3b5eb7c8d9be7f918903c7ea519c72c1c69ba1e35a165682b1"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลักทั้ง 4 รูท+เควสต์ท้าทาย+ระบบรวมร่างปีศาจ+เมนู 100%",
+    "whole_game_census": "24,190/24,190 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}

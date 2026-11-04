@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game_slug": "inazuma-go-wildfire",
+  "game_title": "Inazuma Eleven GO: Chrono Stones - Wildfire",
+  "platform": "3DS",
+  "region": "Europe",
+  "game_code": "BG9P",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Inazuma Eleven GO - Chrono Stones - Wildfire (Europe) (En,Fr,De,Es,It).3ds",
+      "size": 4294967296,
+      "sha256": "53a7a094f4aa7d0d09c6c2968e21a53a133380468a89f50295976c32af1534e8"
+    }
+  ],
+  "patch": {
+    "filename": "Inazuma_Eleven_GO_Chrono_Stones_Wildfire_Thai_v1.0.0.xdelta",
+    "url": "./assets/patches/inazuma-go-wildfire/v1.0.0/Inazuma_Eleven_GO_Chrono_Stones_Wildfire_Thai_v1.0.0.xdelta",
+    "size": 4122424,
+    "sha256": "2ea94a2889275d84e1cc10a24db3db29dd3f2565045c4c4ddd2b43642bc15557"
+  },
+  "output": {
+    "filename": "Inazuma_Eleven_GO_Chrono_Stones_Wildfire_Thai_v1.0.0.3ds",
+    "size": 4294967296,
+    "sha256": "f99aa8d867c293779e51ea5642d96ae184db4a39bfe8f98ec4dcbb8c5a2c270d"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องไทม์แทรเวลครบทุกยุค+ระบบมิกซีแมกซ์+อาร์เมอร์ฟอร์ม 100%",
+    "whole_game_census": "22,400/22,400 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}

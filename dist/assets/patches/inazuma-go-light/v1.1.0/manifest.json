@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game_slug": "inazuma-go-light",
+  "game_title": "Inazuma Eleven GO: Light",
+  "platform": "3DS",
+  "region": "Europe",
+  "game_code": "ANLP",
+  "patch_version": "v1.1.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Inazuma Eleven GO - Light (Europe) (En,Fr,De,Es,It).3ds",
+      "size": 4294967296,
+      "sha256": "80795c643bfa99b49bdf546ec007ce4590209e99c8f2ba7c617eb04dc4400e93"
+    }
+  ],
+  "patch": {
+    "filename": "Inazuma_Eleven_GO_Light_Thai_v1.1.0.xdelta",
+    "url": "./assets/patches/inazuma-go-light/v1.1.0/Inazuma_Eleven_GO_Light_Thai_v1.1.0.xdelta",
+    "size": 8247425,
+    "sha256": "2993607495819303188c2f2647f03fe3bc379d1703a10d7d5aad10adac02d4bf"
+  },
+  "output": {
+    "filename": "Inazuma_Eleven_GO_Light_Thai_v1.1.0.3ds",
+    "size": 4294967296,
+    "sha256": "5b8b9cb0f5cb7468165cf459cb0735a4d952e50ab5f381fbb49293145453000b"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องฟุตบอลฟรอนเทียร์ดับเบิลยูเอส+ระบบอวตาร 100%",
+    "whole_game_census": "19,500/19,500 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game_slug": "dragon-quest-iv",
+  "game_title": "Dragon Quest IV: Chapters of the Chosen",
+  "platform": "NDS",
+  "region": "USA",
+  "game_code": "YIVE",
+  "patch_version": "v2.5.1",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Dragon Quest IV - Chapters of the Chosen (USA) (En,Fr,Es).nds",
+      "size": 134217728,
+      "sha256": "7f25b79cf9e8feca0aacf6f12f3ddd9ae5b7f4b00ed01d2173853d33869bd24f"
+    }
+  ],
+  "patch": {
+    "filename": "Dragon Quest IV - Chapters of the Chosen (Thai) v2.5.1.xdelta",
+    "url": "./assets/patches/dragon-quest-iv/v2.5.1/Dragon Quest IV - Chapters of the Chosen (Thai) v2.5.1.xdelta",
+    "size": 484208,
+    "sha256": "a4bff257d6d130aa2531803eb417d654ce176bbfe75a5a496eacc60ed3f3f964"
+  },
+  "output": {
+    "filename": "Dragon Quest IV - Thai.nds",
+    "size": 134217728,
+    "sha256": "ff4bc0b809111ca116d3385321aac9b7ff545dc0a087c897db65eb08f85ddb88"
+  },
+  "release_status": {
+    "module_status": "บทที่ 1-5 ครบ 5 ผู้กล้า+บทที่ 6 ปลายทางแห่งความหวัง+ปาร์ตี้ทอล์ก 100%",
+    "whole_game_census": "16,920/16,920 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}

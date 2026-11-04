@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game_slug": "inazuma-eleven-123",
+  "game_title": "Inazuma Eleven 1-2-3!! - Endou Mamoru Densetsu",
+  "platform": "3DS",
+  "region": "Japan",
+  "game_code": "AEEJ",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Inazuma Eleven 1-2-3!! - Endou Mamoru Densetsu (Japan).3ds",
+      "size": 2147483648,
+      "sha256": "35f7497051fd84740e019d40d3632d5943bd265d0a8a9bc77c01112b1b2bfd8d"
+    }
+  ],
+  "patch": {
+    "filename": "Inazuma_Eleven_123_Thai_v1.0.0.xdelta",
+    "url": "./assets/patches/inazuma-eleven-123/v1.0.0/Inazuma_Eleven_123_Thai_v1.0.0.xdelta",
+    "size": 296176592,
+    "sha256": "9c7487ff8d9dd37e18cc5e78585150bb07318dd19a5e11398697f0f49be8ec5b"
+  },
+  "output": {
+    "filename": "ie123_thai_v1.0.0.3ds",
+    "size": 2147483648,
+    "sha256": "6e7929670d04b447578766c0c11b7d1c5249c0afa05fd09b764af9efc2bf6f1f"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องไตรภาค 1-2-3+ระบบท่าไม้ตาย+ระบบแข่งขัน 100%",
+    "whole_game_census": "38,920/38,920 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}

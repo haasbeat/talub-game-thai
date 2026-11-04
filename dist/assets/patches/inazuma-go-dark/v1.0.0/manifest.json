@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game_slug": "inazuma-go-dark",
+  "game_title": "Inazuma Eleven GO: Dark",
+  "platform": "3DS",
+  "region": "Japan",
+  "game_code": "ANDJ",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Inazuma Eleven GO - Dark (Japan).3ds",
+      "size": 2147483648,
+      "sha256": "a5b48cf492cf573b98c39db545f47053075b9815456247c4ba98d9735a5cbfa0"
+    }
+  ],
+  "patch": {
+    "filename": "Inazuma_Eleven_GO_Dark_Thai_v1.0.0.xdelta",
+    "url": "./assets/patches/inazuma-go-dark/v1.0.0/Inazuma_Eleven_GO_Dark_Thai_v1.0.0.xdelta",
+    "size": 4040399,
+    "sha256": "4dc7bfc454e952ecfa90d8902d55d59a9d30554b1425f8f83127370d7eac9f9c"
+  },
+  "output": {
+    "filename": "Inazuma_Eleven_GO_Dark_Thai_v1.0.0.3ds",
+    "size": 2147483648,
+    "sha256": "c5980075a342410a0f8bfdfb40a58a74ecff54cb37953284d720235b84c83e20"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องสายดาร์ก+ทีมอันลิมิเต็ดไชน์นิ่ง 100%",
+    "whole_game_census": "19,500/19,500 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}

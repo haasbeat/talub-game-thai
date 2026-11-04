@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game_slug": "final-fantasy-explorers",
+  "game_title": "Final Fantasy Explorers",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "BCEE",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Final Fantasy Explorers (USA).3ds",
+      "size": 1073741824,
+      "sha256": "c65d316589a36e7051720582ef0b35f683164796c35b34794de75fb400f35f3c"
+    }
+  ],
+  "patch": {
+    "filename": "Final_Fantasy_Explorers_USA_TH_v1.0.0.xdelta",
+    "url": "./assets/patches/final-fantasy-explorers/v1.0.0/Final_Fantasy_Explorers_USA_TH_v1.0.0.xdelta",
+    "size": 23471515,
+    "sha256": "220774787d7a1ded05f7791d93bd9342abb1a7f886a0ad47c05ca504e7299434"
+  },
+  "output": {
+    "filename": "Final_Fantasy_Explorers_USA_TH_v1.0.0.3ds",
+    "size": 1073741824,
+    "sha256": "3900fea83235b23d744f4574fa962e5b3b7bc1495babe8c8c44f01505072b1cb"
+  },
+  "release_status": {
+    "module_status": "เควสต์หลัก+เควสต์ย่อย+ระบบอาชีพ+ไอเทมและอุปกรณ์ 100%",
+    "whole_game_census": "9,850/9,850 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}

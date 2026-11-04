@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game_slug": "lost-heroes",
+  "game_title": "Lost Heroes",
+  "platform": "3DS",
+  "region": "Japan",
+  "game_code": "BLHJ",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Lost Heroes (Japan).3ds",
+      "size": 1073741824,
+      "sha256": "85ef35bcfc6b541bb876ceb264ae499d10eefd6ec37db1853ba5fa59b1ae3164"
+    }
+  ],
+  "patch": {
+    "filename": "Lost_Heroes_Thai_v1.0.0.xdelta",
+    "url": "./assets/patches/lost-heroes/v1.0.0/Lost_Heroes_Thai_v1.0.0.xdelta",
+    "size": 70120249,
+    "sha256": "a4e060a76827bac01002d2b3c42560fb0bae9ad0101d4b7d400332eb62d8474e"
+  },
+  "output": {
+    "filename": "Lost_Heroes_Thai_v1.0.0.3ds",
+    "size": 1073741824,
+    "sha256": "a2637eb8749a2157cb71a99f1fa447608149ca93be260a9275e7a9b0c518cb8e"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องรวมดารากันดั้ม คาเมนไรเดอร์ อุลตร้าแมน+ดันเจี้ยนคิวบ์ 100%",
+    "whole_game_census": "14,200/14,200 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}

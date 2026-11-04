@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game_slug": "xenoblade-chronicles-3d",
+  "game_title": "Xenoblade Chronicles 3D",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "CAFE",
+  "patch_version": "v1.0.7",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Xenoblade Chronicles 3D (USA) (En,Fr,Es).3ds",
+      "size": 4294967296,
+      "sha256": "a7500bbf6c280f5c1b74ea6b230841079ddd539728bcfa9b197c4887836f8880"
+    }
+  ],
+  "patch": {
+    "filename": "Xenoblade_Chronicles_3D_Thai_v1.0.7.xdelta",
+    "url": "./assets/patches/xenoblade-chronicles-3d/v1.0.7/Xenoblade_Chronicles_3D_Thai_v1.0.7.xdelta",
+    "size": 3949345,
+    "sha256": "3f53cb3121f6c6ab84adf5bae51149feb9f3e0dd15eefd497e51c53359c73e9c"
+  },
+  "output": {
+    "filename": "Xenoblade_Chronicles_3D_Thai_v1.0.7.3ds",
+    "size": 4294967296,
+    "sha256": "9045761a298be6be9a3b980cffb368731d102eecddaa4e3ff366dcf776f8e404"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลักบนร่างไบโอนิสและเมโคนิส+เควสต์เสริม 400+ เควสต์ 100%",
+    "whole_game_census": "30,420/30,420 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}

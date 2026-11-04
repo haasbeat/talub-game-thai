@@ -1,0 +1,3 @@
+# GitHub file size limit is 100MB; files > 100MB hosted via GitHub Releases
+dist/assets/patches/inazuma-eleven-123/v1.0.0/*.xdelta
+.DS_Store

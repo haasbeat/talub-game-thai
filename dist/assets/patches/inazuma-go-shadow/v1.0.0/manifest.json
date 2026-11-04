@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game_slug": "inazuma-go-shadow",
+  "game_title": "Inazuma Eleven GO: Shadow",
+  "platform": "3DS",
+  "region": "Europe",
+  "game_code": "ANSP",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Inazuma Eleven GO - Shadow (Europe) (En,Fr,De,Es,It).3ds",
+      "size": 4294967296,
+      "sha256": "b2123896504a43b185b37651a5c602052445e998a44d70ef24b2f29b4fa4cb10"
+    }
+  ],
+  "patch": {
+    "filename": "Inazuma_Eleven_GO_Shadow_Thai_v1.0.0.xdelta",
+    "url": "./assets/patches/inazuma-go-shadow/v1.0.0/Inazuma_Eleven_GO_Shadow_Thai_v1.0.0.xdelta",
+    "size": 8247357,
+    "sha256": "6a272aab737bebedbc1742aa6d5cd59ece517f5bbbc73e0f9926e1c6ca41b3a5"
+  },
+  "output": {
+    "filename": "Inazuma_Eleven_GO_Shadow_Thai_v1.0.0.3ds",
+    "size": 4294967296,
+    "sha256": "133d5964f7b60e6bb6056345ecb549303530e1eb84ef0c9b68fa70db2b1b3699"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องสายชาโดว์+เควสต์ลับชู 100%",
+    "whole_game_census": "19,500/19,500 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}

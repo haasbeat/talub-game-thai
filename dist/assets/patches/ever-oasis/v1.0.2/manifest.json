@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game_slug": "ever-oasis",
+  "game_title": "Ever Oasis",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "BEGE",
+  "patch_version": "v1.0.2",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Ever Oasis (USA) Decrypted.3ds",
+      "size": 1073741824,
+      "sha256": "778a6ff60f1b29a25b3641b590e8a8ff8782bb525413ad7ff30198c253457a15"
+    }
+  ],
+  "patch": {
+    "filename": "Ever_Oasis_Thai_v1.0.2.xdelta",
+    "url": "./assets/patches/ever-oasis/v1.0.2/Ever_Oasis_Thai_v1.0.2.xdelta",
+    "size": 551559,
+    "sha256": "a1fca9a54cd3269c1417b632ff54fe5f11caad8a8293a059d8b1e1b5e9eb768b"
+  },
+  "output": {
+    "filename": "Ever_Oasis_Thai_v1.0.2.3ds",
+    "size": 1073741824,
+    "sha256": "e96c567845318dbcf2ba5e098a58e5e7ec45b4104044991206103ff255b991ab"
+  },
+  "release_status": {
+    "module_status": "การสร้างโอเอซิส+ดันเจี้ยนทะเลทราย+เควสต์ผู้อยู่อาศัย 100%",
+    "whole_game_census": "13,100/13,100 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}

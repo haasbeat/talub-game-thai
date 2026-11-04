@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game_slug": "professor-layton-miracle-mask",
+  "game_title": "Professor Layton and the Miracle Mask",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "AKKE",
+  "patch_version": "v1.3.2",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Professor Layton and the Miracle Mask (USA).3ds",
+      "size": 1073741824,
+      "sha256": "ebc2d5480c1be7373a029f7f740d86cd398df6b75fae4bd2b366cd2abe71ba52"
+    }
+  ],
+  "patch": {
+    "filename": "Professor_Layton_Miracle_Mask_Thai_v1.3.2.xdelta",
+    "url": "./assets/patches/professor-layton-miracle-mask/v1.3.2/Professor_Layton_Miracle_Mask_Thai_v1.3.2.xdelta",
+    "size": 1913164,
+    "sha256": "d9f06a5bdaafb9026504c5f78a8de842a0bd741d84bdb00b3dc32d9048800f68"
+  },
+  "output": {
+    "filename": "Professor Layton and the Miracle Mask (USA) (Thai v1.3.2).3ds",
+    "size": 1073741824,
+    "sha256": "4bd6c6dd8c306aa04ae99ac8f6cf5e0a14acdbbcccba7aeda236e1fb71d0f899"
+  },
+  "release_status": {
+    "module_status": "ปริศนาทั้งหมด 150 ข้อ+ปริศนารายวัน 365 ข้อ+เนื้อเรื่องปาฏิหาริย์แห่งหน้ากาก 100%",
+    "whole_game_census": "11,280/11,280 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}

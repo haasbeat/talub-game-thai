@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game_slug": "tales-of-hearts",
+  "game_title": "Tales of Hearts",
+  "platform": "NDS",
+  "region": "Japan",
+  "game_code": "CSGJ",
+  "patch_version": "v1.0.1",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Tales of Hearts - Anime Movie Edition (Japan).nds",
+      "size": 268435456,
+      "sha256": "15bd0063173989cab81d2d1aeb21b4bd6d51d81347a15d2c1a98562de08f32d4"
+    }
+  ],
+  "patch": {
+    "filename": "Tales_of_Hearts_Anime_Thai_v1.0.1.xdelta",
+    "url": "./assets/patches/tales-of-hearts/v1.0.1/Tales_of_Hearts_Anime_Thai_v1.0.1.xdelta",
+    "size": 7708292,
+    "sha256": "a169474746b17778e3955829d5c3904e71781549c5df090fd9935e1406d7550e"
+  },
+  "output": {
+    "filename": "Tales_of_Hearts_Anime_Thai_v1.0.1.nds",
+    "size": 268435456,
+    "sha256": "ca1bdfeea003666fe547147ca4864fe28205fbc087e2264560731f24d770fef0"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก+ระบบสคิต+ระบบต่อสู้โซมา+เมนูทั้งหมด 100%",
+    "whole_game_census": "21,680/21,680 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}

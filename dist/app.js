@@ -78,11 +78,6 @@ const platformLabel = document.querySelector('#platform-label');
 const platformCount = document.querySelector('#platform-count');
 const platformEmpty = document.querySelector('#platform-empty');
 const gameSort = document.querySelector('#game-sort');
-const gameMore = document.querySelector('#game-more');
-const gameMoreWrap = gameMore.parentElement;
-let activePlatform = 'all';
-let isGameListExpanded = false;
-let resizeFrame;
 
 platformTabs.forEach((tab) => {
   const platform = tab.dataset.platform;
@@ -92,36 +87,15 @@ platformTabs.forEach((tab) => {
   tab.querySelector('em').textContent = count;
 });
 
-const getVisibleCardLimit = () => {
-  const columns = window.getComputedStyle(gameGrid).gridTemplateColumns.split(' ').filter(Boolean).length || 1;
-  return columns * 5;
-};
-
-const renderGameCards = () => {
-  const orderedCards = [...gameGrid.querySelectorAll('.game-card')];
-  const filteredCards = orderedCards.filter((card) => activePlatform === 'all' || card.dataset.platform === activePlatform);
-  const visibleLimit = getVisibleCardLimit();
-
-  orderedCards.forEach((card) => {
-    const filteredIndex = filteredCards.indexOf(card);
-    const isWithinLimit = isGameListExpanded || filteredIndex < visibleLimit;
-    card.hidden = filteredIndex === -1 || !isWithinLimit;
-  });
-
-  const hasOverflow = filteredCards.length > visibleLimit;
-  gameMore.hidden = !hasOverflow;
-  gameMoreWrap.hidden = !hasOverflow;
-  gameMore.setAttribute('aria-expanded', String(hasOverflow && isGameListExpanded));
-  gameMore.querySelector('span').textContent = isGameListExpanded ? 'แสดง 5 แถวแรก' : `ดูเกมเพิ่มเติม (${filteredCards.length - visibleLimit})`;
-  gameMore.querySelector('small').textContent = isGameListExpanded ? `${filteredCards.length} เกม` : 'แสดงสูงสุด 5 แถว';
-};
-
 const applyPlatformFilter = (platform, updateUrl = true) => {
   const selected = platformLabels[platform] ? platform : 'all';
-  const visibleCount = [...gameCards].filter((card) => selected === 'all' || card.dataset.platform === selected).length;
-  activePlatform = selected;
-  isGameListExpanded = false;
-  renderGameCards();
+  let visibleCount = 0;
+
+  gameCards.forEach((card) => {
+    const isVisible = selected === 'all' || card.dataset.platform === selected;
+    card.hidden = !isVisible;
+    if (isVisible) visibleCount += 1;
+  });
 
   platformTabs.forEach((tab) => {
     const isActive = tab.dataset.platform === selected;
@@ -159,8 +133,6 @@ const applyGameSort = (mode, updateUrl = true) => {
 
   sortedCards.forEach((card) => gameGrid.appendChild(card));
   gameSort.value = selected;
-  isGameListExpanded = false;
-  renderGameCards();
 
   if (updateUrl) {
     const url = new URL(window.location.href);
@@ -172,17 +144,6 @@ const applyGameSort = (mode, updateUrl = true) => {
 };
 
 gameSort.addEventListener('change', () => applyGameSort(gameSort.value));
-
-gameMore.addEventListener('click', () => {
-  isGameListExpanded = !isGameListExpanded;
-  renderGameCards();
-  if (!isGameListExpanded) gameGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
-});
-
-window.addEventListener('resize', () => {
-  cancelAnimationFrame(resizeFrame);
-  resizeFrame = requestAnimationFrame(renderGameCards);
-});
 
 const initialParams = new URLSearchParams(window.location.search);
 const initialPlatform = initialParams.get('platform') || 'all';

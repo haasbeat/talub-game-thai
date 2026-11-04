@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game_slug": "bravely-default",
+  "game_title": "Bravely Default",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "BTEE",
+  "patch_version": "v1.0.2",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Bravely Default (USA) (En,Ja,Fr,De,Es,It).3ds",
+      "size": 4294967296,
+      "sha256": "6b4a89fa3385e967ab1db282b1616dc58df659c90a0626850d468334c70a0af2"
+    }
+  ],
+  "patch": {
+    "filename": "Bravely_Default_USA_TH_v1.0.2.xdelta",
+    "url": "./assets/patches/bravely-default/v1.0.2/Bravely_Default_USA_TH_v1.0.2.xdelta",
+    "size": 3492453,
+    "sha256": "491944bf2c1b84791c8e45e8c0fbc364c6fc7ae86873bac76102377ac3e0e675"
+  },
+  "output": {
+    "filename": "Bravely_Default_USA_TH_v1.0.2.3ds",
+    "size": 4294967296,
+    "sha256": "7593b15c5efdf0744a35bb46e3063f577f1e3ffc2a1f6d71d8e2d01cf1289fb6"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก+เควสต์ย่อย+ระบบต่อสู้+เมนู+สารานุกรม D 100%",
+    "whole_game_census": "13,542/13,542 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}

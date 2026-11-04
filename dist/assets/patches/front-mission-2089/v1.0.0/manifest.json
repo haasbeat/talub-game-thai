@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game_slug": "front-mission-2089",
+  "game_title": "Front Mission 2089: Border of Madness",
+  "platform": "NDS",
+  "region": "Japan",
+  "game_code": "YFMJ",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Front Mission 2089 - Border of Madness (Japan).nds",
+      "size": 67108864,
+      "sha256": "e78bfd2e8b2b9c3f4e24ef78c853ba5cb942ebba318fc69e25c567e6b7d2f8e9"
+    }
+  ],
+  "patch": {
+    "filename": "Front_Mission_2089_Thai_v1.0.0.xdelta",
+    "url": "./assets/patches/front-mission-2089/v1.0.0/Front_Mission_2089_Thai_v1.0.0.xdelta",
+    "size": 342904,
+    "sha256": "828bb81ea78f082bf484d4601493576ba044f7656d46adf970ca144c37a81b21"
+  },
+  "output": {
+    "filename": "Front_Mission_2089_Thai_v1.0.0.nds",
+    "size": 67108864,
+    "sha256": "4a1b0213567dfec09f4bca578b9ec9580a06ef89ac354cb7b94b0d013e2bf57b"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องทหารรับจ้างบนเกาะฮัฟแมน+ระบบปรับแต่งแวนเซอร์ 100%",
+    "whole_game_census": "12,900/12,900 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}

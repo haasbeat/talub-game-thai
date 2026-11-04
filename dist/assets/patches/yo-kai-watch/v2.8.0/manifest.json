@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game_slug": "yo-kai-watch",
+  "game_title": "Yo-kai Watch",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "AYWE",
+  "patch_version": "v2.8.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Yo-Kai Watch (USA) Decrypted.3ds",
+      "size": 869330944,
+      "sha256": "39afb3ebcc5d5472248499ce71a8a77024e893a2dd1c404cabb2a19a24e3c49c"
+    }
+  ],
+  "patch": {
+    "filename": "Yokai_Watch_Thai_v2.8.0.xdelta",
+    "url": "./assets/patches/yo-kai-watch/v2.8.0/Yokai_Watch_Thai_v2.8.0.xdelta",
+    "size": 11678966,
+    "sha256": "dc5203628b2328ce74501300c1043c2bab3abd4d9dbc80633579d0b179f592f9"
+  },
+  "output": {
+    "filename": "Yokai_Watch_Thai_v2.8.0.3ds",
+    "size": 869330944,
+    "sha256": "041a79fcfd74656ca895055375eb0173bcda87ce274e0d7c71ba7635c43d0fb3"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก+เควสต์เสริมโยไก+ระบบเหรียญโยไก+เมนู 100%",
+    "whole_game_census": "18,720/18,720 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}

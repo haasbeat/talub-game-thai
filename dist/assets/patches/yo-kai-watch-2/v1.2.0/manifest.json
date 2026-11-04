@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game_slug": "yo-kai-watch-2",
+  "game_title": "Yo-kai Watch 2: Psychic Specters",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "BYHE",
+  "patch_version": "v1.2.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Yo-kai Watch 2 - Psychic Specters (USA).3ds",
+      "size": 4294967296,
+      "sha256": "80795c643bfa99b49bdf546ec007ce4590209e99c8f2ba7c617eb04dc4400e93"
+    }
+  ],
+  "patch": {
+    "filename": "Yokai_Watch_2_Psychic_Specters_Thai_v1.2.0_USA.xdelta",
+    "url": "./assets/patches/yo-kai-watch-2/v1.2.0/Yokai_Watch_2_Psychic_Specters_Thai_v1.2.0_USA.xdelta",
+    "size": 13211638,
+    "sha256": "9a1269844cb1844a07188664e4bb9c2f57b17fd1a989d135b29bf5902c4c3530"
+  },
+  "output": {
+    "filename": "Yokai_Watch_2_Psychic_Specters_Thai_v1.2.0.3ds",
+    "size": 4294967296,
+    "sha256": "ac83a65b71946f33cf23a7894a974b260d5bfa17cb1eb9ee6cff81829e06180a"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก+เนื้อหาภาคชินอุจิ+ระบบรถไฟเกระเกระโป 100%",
+    "whole_game_census": "28,940/28,940 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}

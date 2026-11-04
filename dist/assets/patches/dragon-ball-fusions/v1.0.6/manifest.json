@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game_slug": "dragon-ball-fusions",
+  "game_title": "Dragon Ball Fusions",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "BNEE",
+  "patch_version": "v1.0.6",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Dragon Ball Fusions (USA).3ds",
+      "size": 1073741824,
+      "sha256": "3b0fdf5d9062732dbae97ab71c346bd76c77a0ed4d56c68783f18d3c5a7a532d"
+    }
+  ],
+  "patch": {
+    "filename": "Dragon_Ball_Fusions_Thai_v1.0.6.xdelta",
+    "url": "./assets/patches/dragon-ball-fusions/v1.0.6/Dragon_Ball_Fusions_Thai_v1.0.6.xdelta",
+    "size": 1521256,
+    "sha256": "c78cbafb187c2f4bd907c7c7d2407a5934fe16f38226ade2b84e06045a34ce8f"
+  },
+  "output": {
+    "filename": "Dragon Ball Fusions (Thai).3ds",
+    "size": 1073741824,
+    "sha256": "51e5124a608eea58e0118f4b6db5bd6d3cbc5806c2b8cf8db8d8295d874b27dc"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก+อีเวนต์ฟิวชั่น+ระบบต่อสู้+สารานุกรมตัวละคร 100%",
+    "whole_game_census": "12,410/12,410 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}

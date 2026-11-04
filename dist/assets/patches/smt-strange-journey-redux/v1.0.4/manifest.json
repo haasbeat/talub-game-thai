@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game_slug": "smt-strange-journey-redux",
+  "game_title": "Shin Megami Tensei: Strange Journey Redux",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "AJ8E",
+  "patch_version": "v1.0.4",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Shin Megami Tensei - Strange Journey Redux (USA) Decrypted.3ds",
+      "size": 1073741824,
+      "sha256": "d7ad24bb301e7492cffb462c16f3938b816efae812e967aebffaaec1215b2e3f"
+    }
+  ],
+  "patch": {
+    "filename": "SMT_Strange_Journey_Redux_Thai_v1.0.4.xdelta",
+    "url": "./assets/patches/smt-strange-journey-redux/v1.0.4/SMT_Strange_Journey_Redux_Thai_v1.0.4.xdelta",
+    "size": 35742033,
+    "sha256": "b87326fe28aef5d7380521a2ffdaf2e7497524892f61a7903a35cba6d82077e9"
+  },
+  "output": {
+    "filename": "SMT_Strange_Journey_Redux_Thai_v1.0.4.3ds",
+    "size": 1073741824,
+    "sha256": "90f0c05973da24a737f5b3fc8d68fe5dc5f235aa5722fa22ca384910228e932b"
+  },
+  "release_status": {
+    "module_status": "เซ็กเตอร์ A-H ครบทุกภาค+มิติ Womb of Grief+ฉากจบใหม่ 3 สาย 100%",
+    "whole_game_census": "22,800/22,800 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}

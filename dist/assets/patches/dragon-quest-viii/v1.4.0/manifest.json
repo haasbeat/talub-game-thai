@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game_slug": "dragon-quest-viii",
+  "game_title": "Dragon Quest VIII: Journey of the Cursed King",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "BQ8E",
+  "patch_version": "v1.4.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Dragon Quest VIII - Journey of the Cursed King (USA).3ds",
+      "size": 4294967296,
+      "sha256": "589ab3eedfb872136a99c23407c9dff45cd9ce1d31ed24c5ecb196fa8657c4fc"
+    }
+  ],
+  "patch": {
+    "filename": "Dragon_Quest_VIII_Thai_v1.4.0.xdelta",
+    "url": "./assets/patches/dragon-quest-viii/v1.4.0/Dragon_Quest_VIII_Thai_v1.4.0.xdelta",
+    "size": 2305262,
+    "sha256": "331e727e542e8dbb137df8dca874db9dffda84380f5b219462462f9a78f8dbb8"
+  },
+  "output": {
+    "filename": "Dragon Quest VIII - Journey of the Cursed King (Thai).3ds",
+    "size": 4294967296,
+    "sha256": "5421ef8b2d32c4769395eb654e8e7198bfc4651fc112b62c704472eddbe75491"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก+เนื้อหาเสริม Red & Morrie+ดันเจี้ยนลับ 100%",
+    "whole_game_census": "28,450/28,450 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}

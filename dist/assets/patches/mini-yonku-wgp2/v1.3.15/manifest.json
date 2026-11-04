@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game_slug": "mini-yonku-wgp2",
+  "game_title": "Mini Yonku Let's & Go!!: Power WGP 2",
+  "platform": "SNES",
+  "region": "Japan",
+  "game_code": "SHVC-AWGJ",
+  "patch_version": "v1.3.15",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Mini Yonku Let's & Go!! - Power WGP 2 (Japan).sfc",
+      "size": 4194304,
+      "sha256": "bca540059e7cb281896a25b196886e0c65ef451ec04192b0c410313cb853e5e4"
+    }
+  ],
+  "patch": {
+    "filename": "Mini_Yonku_Lets_and_Go_WGP2_Thai_v1.3.15.xdelta",
+    "url": "./assets/patches/mini-yonku-wgp2/v1.3.15/Mini_Yonku_Lets_and_Go_WGP2_Thai_v1.3.15.xdelta",
+    "size": 278711,
+    "sha256": "a726b9c63a44bf0c1da96ee569165da212cc782edc64dee66bd4e2b07bb49278"
+  },
+  "output": {
+    "filename": "Mini_Yonku_Lets_and_Go_WGP2_Thai_v1.3.15.sfc",
+    "size": 4194304,
+    "sha256": "3f1906eb43e1208a54d79c09cfa3e9e1cb5507ea911e3b6d080fa13824f114c0"
+  },
+  "release_status": {
+    "module_status": "การแข่งขันชิงแชมป์โลกเวิลด์กรังด์ปรีซ์ 2+ทีมชาติต่างๆ 100%",
+    "whole_game_census": "6,920/6,920 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game_slug": "rune-factory-4",
+  "game_title": "Rune Factory 4",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "AR4E",
+  "patch_version": "v1.0.4",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Rune Factory 4 (USA).3ds",
+      "size": 2147483648,
+      "sha256": "657b0185966dfa04c5fe48a58f4c1c9c719ca33cb535304aeb80824b6f12c1d3"
+    }
+  ],
+  "patch": {
+    "filename": "Rune_Factory_4_Thai_v1.0.4.xdelta",
+    "url": "./assets/patches/rune-factory-4/v1.0.4/Rune_Factory_4_Thai_v1.0.4.xdelta",
+    "size": 4511681,
+    "sha256": "0391ec57c0e5617503bb8486bb94f1690602bda72ff0f172247a3e2bed8c04b7"
+  },
+  "output": {
+    "filename": "Rune_Factory_4_Thai_v1.0.4.3ds",
+    "size": 2147483648,
+    "sha256": "61b5853b0e3efeb13e00ef72bbdfa3ea57c91ad96c141ce757ea3e1beee7ce04"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่อง 3 องค์+ระบบเกษตรกรรม+ความสัมพันธ์ตัวละคร+เทศกาล 100%",
+    "whole_game_census": "36,120/36,120 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}
