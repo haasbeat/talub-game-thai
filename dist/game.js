@@ -49,6 +49,12 @@ const games = {
     version: 'Preview', format: 'xdelta', status: 'Frontend Preview', accept: '.3ds,.cia', fileTypes: '3DS / CIA',
     description: 'หน้ารายละเอียดฉบับภาษาอีสานของ Dragon Quest VII และพื้นที่แพตช์ที่แยกเฉพาะเวอร์ชันนี้',
   },
+  'saga2-hihou-densetsu': {
+    index: '011', title: 'SaGa 2: Hihou Densetsu', platform: 'NDS', cover: './assets/covers/saga2-thai-v1.0.1.jpg',
+    version: 'v1.0.1', format: 'xdelta3', status: 'Web Patcher Pilot', accept: '.nds', fileTypes: 'CLEAN JAPAN NDS · 128 MB',
+    description: 'เกมนำร่องสำหรับระบบแพตช์จริงในเบราว์เซอร์ ตรวจ SHA-256 ของ ROM ต้นฉบับก่อนสร้างไฟล์ภาษาไทย v1.0.1 โดย ROM ไม่ออกจากอุปกรณ์',
+    manifest: './assets/patches/saga2/v1.0.1/manifest.json',
+  },
 };
 
 const params = new URLSearchParams(window.location.search);
@@ -105,7 +111,28 @@ const fileName = document.querySelector('#file-name');
 const fileSize = document.querySelector('#file-size');
 const fileHash = document.querySelector('#file-hash');
 const patchButton = document.querySelector('#patch-button');
+const downloadButton = document.querySelector('#download-button');
+const workspaceStatus = document.querySelector('#workspace-status');
+const workspaceNote = document.querySelector('#workspace-note');
+const patchProgress = document.querySelector('#patch-progress');
+const patchProgressLabel = document.querySelector('#patch-progress-label');
+const patchProgressPercent = document.querySelector('#patch-progress-percent');
+const patchProgressBar = document.querySelector('#patch-progress-bar');
 const toast = document.querySelector('#toast');
+let selectedSourceFile = null;
+let outputUrl = null;
+
+const manifestPromise = game.manifest
+  ? fetch(game.manifest, { cache: 'no-store' }).then((response) => {
+      if (!response.ok) throw new Error(`โหลด manifest ไม่สำเร็จ (${response.status})`);
+      return response.json();
+    })
+  : Promise.resolve(null);
+
+if (game.manifest) {
+  workspaceStatus.textContent = 'XDELTA3 WEB PILOT';
+  workspaceNote.innerHTML = '<span>แพตช์จริง</span> ระบบจะตรวจขนาดและ SHA-256 ของ ROM ต้นฉบับ จากนั้นรัน xdelta3 ภายในเบราว์เซอร์ ไฟล์ ROM จะไม่ถูกอัปโหลดออกจากเครื่อง แนะนำให้ทดสอบบนคอมพิวเตอร์ก่อน';
+}
 
 const formatBytes = (bytes) => {
   if (!bytes) return '0 B';
@@ -114,15 +141,85 @@ const formatBytes = (bytes) => {
   return `${(bytes / (1024 ** index)).toFixed(index > 1 ? 2 : 0)} ${units[index]}`;
 };
 
-const handleFile = (file) => {
+const showToast = (message) => {
+  toast.textContent = message;
+  toast.classList.add('show');
+  window.setTimeout(() => toast.classList.remove('show'), 3200);
+};
+
+const setProgress = (label, percent) => {
+  const safePercent = Math.max(0, Math.min(100, Math.round(percent)));
+  patchProgress.hidden = false;
+  patchProgressLabel.textContent = label;
+  patchProgressPercent.textContent = `${safePercent}%`;
+  patchProgressBar.style.width = `${safePercent}%`;
+};
+
+const sha256Blob = async (blob) => {
+  const buffer = await blob.arrayBuffer();
+  const digest = await crypto.subtle.digest('SHA-256', buffer);
+  return [...new Uint8Array(digest)].map((byte) => byte.toString(16).padStart(2, '0')).join('');
+};
+
+const resetOutput = () => {
+  if (outputUrl) URL.revokeObjectURL(outputUrl);
+  outputUrl = null;
+  downloadButton.hidden = true;
+  downloadButton.removeAttribute('href');
+};
+
+const handleFile = async (file) => {
   if (!file) return;
+  resetOutput();
+  selectedSourceFile = null;
+  patchButton.disabled = true;
+  dropZone.classList.remove('is-valid', 'is-invalid');
   fileName.textContent = file.name;
   fileSize.textContent = formatBytes(file.size);
-  fileHash.textContent = 'พร้อมตรวจเมื่อเชื่อมรายการ source hash';
   dropZone.querySelector('h3').textContent = 'เลือกไฟล์ของเกมนี้แล้ว';
   dropZone.querySelector('p').innerHTML = 'ไฟล์ยังอยู่ในอุปกรณ์ของคุณ<br />ไม่มีการอัปโหลดเกิดขึ้น';
-  patchButton.disabled = false;
-  patchButton.querySelector('span').textContent = 'ตรวจไฟล์และเริ่มแพตช์';
+
+  if (!game.manifest) {
+    fileHash.textContent = 'พร้อมตรวจเมื่อเชื่อมรายการ source hash';
+    patchButton.disabled = false;
+    patchButton.querySelector('span').textContent = 'ตรวจไฟล์และเริ่มแพตช์';
+    return;
+  }
+
+  try {
+    const manifest = await manifestPromise;
+    const source = manifest.accepted_sources[0];
+    if (file.size !== source.size) {
+      fileHash.textContent = `ขนาดไม่ตรง — ต้องเป็น ${formatBytes(source.size)}`;
+      dropZone.classList.add('is-invalid');
+      patchButton.querySelector('span').textContent = 'ROM ไม่ตรงรุ่น';
+      showToast('ROM มีขนาดไม่ตรงกับ Clean Japan ที่รองรับ');
+      return;
+    }
+
+    setProgress('กำลังตรวจ SHA-256 ของ ROM ต้นฉบับ', 2);
+    fileHash.textContent = 'กำลังคำนวณ SHA-256…';
+    const sourceHash = await sha256Blob(file);
+    if (sourceHash !== source.sha256) {
+      fileHash.textContent = `${sourceHash.slice(0, 16)}… — ไม่ตรงรุ่น`;
+      dropZone.classList.add('is-invalid');
+      patchButton.querySelector('span').textContent = 'SHA-256 ไม่ตรง';
+      setProgress('ROM ต้นฉบับไม่ตรงกับรุ่นที่รองรับ', 0);
+      showToast('SHA-256 ไม่ตรง — ระบบจะไม่แพตช์ไฟล์นี้');
+      return;
+    }
+
+    selectedSourceFile = file;
+    fileHash.textContent = `${sourceHash.slice(0, 16)}… — ถูกต้อง`;
+    dropZone.classList.add('is-valid');
+    patchButton.disabled = false;
+    patchButton.querySelector('span').textContent = `เริ่มแพตช์ ${manifest.patch_version}`;
+    setProgress('ROM ต้นฉบับผ่านการตรวจสอบ', 5);
+  } catch (error) {
+    fileHash.textContent = 'ตรวจไฟล์ไม่สำเร็จ';
+    dropZone.classList.add('is-invalid');
+    showToast(error.message || 'เกิดข้อผิดพลาดขณะตรวจ ROM');
+  }
 };
 
 dropZone.addEventListener('click', () => romInput.click());
@@ -132,7 +229,7 @@ dropZone.addEventListener('keydown', (event) => {
     romInput.click();
   }
 });
-romInput.addEventListener('change', () => handleFile(romInput.files[0]));
+romInput.addEventListener('change', () => void handleFile(romInput.files[0]));
 
 ['dragenter', 'dragover'].forEach((type) => {
   dropZone.addEventListener(type, (event) => {
@@ -146,10 +243,81 @@ romInput.addEventListener('change', () => handleFile(romInput.files[0]));
     dropZone.classList.remove('is-dragging');
   });
 });
-dropZone.addEventListener('drop', (event) => handleFile(event.dataTransfer.files[0]));
+dropZone.addEventListener('drop', (event) => void handleFile(event.dataTransfer.files[0]));
+
+const applyVerifiedPatch = async () => {
+  if (!selectedSourceFile) return;
+  const manifest = await manifestPromise;
+  patchButton.disabled = true;
+  resetOutput();
+
+  try {
+    setProgress('กำลังดาวน์โหลดและตรวจไฟล์ patch', 7);
+    const response = await fetch(manifest.patch.url, { cache: 'no-store' });
+    if (!response.ok) throw new Error(`ดาวน์โหลด patch ไม่สำเร็จ (${response.status})`);
+    const patchBlob = await response.blob();
+    if (patchBlob.size !== manifest.patch.size) throw new Error('ขนาดไฟล์ patch ไม่ตรงกับ manifest');
+    const patchHash = await sha256Blob(patchBlob);
+    if (patchHash !== manifest.patch.sha256) throw new Error('SHA-256 ของไฟล์ patch ไม่ถูกต้อง');
+
+    setProgress('กำลังสร้าง ROM ภาษาไทยด้วย xdelta3', 10);
+    const chunks = [];
+    let outputSize = 0;
+    const worker = new Worker('./assets/engine/xdelta/xdelta3.worker.js', { type: 'module' });
+
+    await new Promise((resolve, reject) => {
+      worker.onerror = (event) => reject(new Error(event.message || 'xdelta worker ทำงานไม่สำเร็จ'));
+      worker.onmessage = (event) => {
+        const message = event.data || {};
+        if (!message.final && message.bytes) {
+          const bytes = message.bytes instanceof Uint8Array ? message.bytes : new Uint8Array(message.bytes);
+          chunks.push(bytes);
+          outputSize += bytes.byteLength;
+          const percent = 10 + (outputSize / manifest.output.size) * 78;
+          setProgress('กำลังสร้าง ROM ภาษาไทยด้วย xdelta3', percent);
+          return;
+        }
+        if (message.final && message.error) {
+          reject(new Error(message.errorMessage || `xdelta error ${message.errorCode || ''}`));
+          return;
+        }
+        if (message.final) resolve();
+      };
+      worker.postMessage({
+        command: 'start',
+        sourceFile: selectedSourceFile,
+        patchFile: patchBlob,
+        disableChecksum: false,
+      });
+    }).finally(() => worker.terminate());
+
+    const outputBlob = new Blob(chunks, { type: 'application/octet-stream' });
+    if (outputBlob.size !== manifest.output.size) throw new Error('ขนาด ROM ผลลัพธ์ไม่ตรงกับ manifest');
+
+    setProgress('กำลังตรวจ SHA-256 ของ ROM ผลลัพธ์', 92);
+    const outputHash = await sha256Blob(outputBlob);
+    if (outputHash !== manifest.output.sha256) throw new Error('SHA-256 ของ ROM ผลลัพธ์ไม่ถูกต้อง');
+
+    outputUrl = URL.createObjectURL(outputBlob);
+    downloadButton.href = outputUrl;
+    downloadButton.download = manifest.output.filename;
+    downloadButton.hidden = false;
+    patchButton.querySelector('span').textContent = 'แพตช์สำเร็จ';
+    fileHash.textContent = `${outputHash.slice(0, 16)}… — ผลลัพธ์ถูกต้อง`;
+    setProgress('แพตช์และตรวจผลลัพธ์สำเร็จ', 100);
+    showToast('แพตช์สำเร็จและ SHA-256 ตรงกับ release v1.0.1');
+  } catch (error) {
+    patchButton.disabled = false;
+    patchButton.querySelector('span').textContent = 'ลองแพตช์อีกครั้ง';
+    setProgress(error.message || 'แพตช์ไม่สำเร็จ', 0);
+    showToast(error.message || 'เกิดข้อผิดพลาดขณะแพตช์');
+  }
+};
 
 patchButton.addEventListener('click', () => {
-  toast.textContent = `ระบบแพตช์ของ ${game.title} จะเชื่อมในเฟสหลังบ้าน`;
-  toast.classList.add('show');
-  window.setTimeout(() => toast.classList.remove('show'), 3000);
+  if (!game.manifest) {
+    showToast(`ระบบแพตช์ของ ${game.title} จะเชื่อมในเฟสหลังบ้าน`);
+    return;
+  }
+  void applyVerifiedPatch();
 });

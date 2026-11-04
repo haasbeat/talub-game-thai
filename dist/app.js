@@ -45,6 +45,7 @@ const gameRoutes = {
   'Yo-kai Watch': 'yo-kai-watch',
   'Inazuma Eleven GO: Wildfire': 'inazuma-go-wildfire',
   'Dragon Quest VII: Isan Edition': 'dragon-quest-vii-isan',
+  'SaGa 2: Hihou Densetsu': 'saga2-hihou-densetsu',
 };
 
 document.querySelectorAll('.game-card').forEach((card) => {

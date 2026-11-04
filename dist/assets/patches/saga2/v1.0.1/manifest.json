@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game_slug": "saga2-hihou-densetsu",
+  "game_title": "SaGa 2: Hihou Densetsu - Goddess of Destiny",
+  "platform": "NDS",
+  "region": "Japan",
+  "game_code": "CSGJ",
+  "patch_version": "v1.0.1",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "SaGa 2 - Hihou Densetsu - Goddess of Destiny (Japan).nds",
+      "size": 134217728,
+      "sha256": "a896e7596b0b5cc4eb3740dd566d32b75c0ff943129f55b67885dd95b9f703c3"
+    }
+  ],
+  "patch": {
+    "filename": "SaGa_2_Hihou_Densetsu_Thai_v1.0.1.xdelta",
+    "url": "./assets/patches/saga2/v1.0.1/SaGa_2_Hihou_Densetsu_Thai_v1.0.1.xdelta",
+    "size": 403276,
+    "sha256": "17e67de66190705b1f1fe6e5fa79988225c20f8c2701fcb728050dd3b4ea3adc"
+  },
+  "output": {
+    "filename": "SaGa2_TH_v1.0.1.nds",
+    "size": 134217728,
+    "sha256": "04445c1c8ee0c95c55a5105db8597216de1ec55808c91e1586edbd96f9fe5fc1"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก 15 โลก+โลกมิวส์+เหตุการณ์ย่อย+ระบบ UI+ฐานข้อมูลทั้งหมด 100%",
+    "whole_game_census": "19,225/19,225 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}

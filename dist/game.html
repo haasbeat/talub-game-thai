@@ -71,7 +71,7 @@
             <div class="workspace-top">
               <div>
                 <span class="status-dot"></span>
-                <span class="mono">FRONTEND PROTOTYPE</span>
+                <span id="workspace-status" class="mono">FRONTEND PROTOTYPE</span>
               </div>
               <span class="mono">FILES STAY LOCAL</span>
             </div>
@@ -108,12 +108,26 @@
               </div>
             </div>
 
+            <div id="patch-progress" class="patch-progress" hidden aria-live="polite">
+              <div class="patch-progress-copy">
+                <span id="patch-progress-label" class="mono">กำลังเตรียมระบบ</span>
+                <strong id="patch-progress-percent">0%</strong>
+              </div>
+              <div class="patch-progress-track"><span id="patch-progress-bar"></span></div>
+            </div>
+
             <div class="workspace-actions">
-              <p><span>หมายเหตุ</span> หน้าเกมและการเลือกไฟล์พร้อมแล้ว แต่เวอร์ชันนี้ยังไม่แก้ไข ROM จริงจนกว่าจะเชื่อม patch engine และรายการ SHA-256 ที่รองรับ</p>
-              <button id="patch-button" class="patch-button hover-target" type="button" disabled>
-                <span>เลือก ROM ก่อน</span>
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
-              </button>
+              <p id="workspace-note"><span>หมายเหตุ</span> หน้าเกมและการเลือกไฟล์พร้อมแล้ว แต่เวอร์ชันนี้ยังไม่แก้ไข ROM จริงจนกว่าจะเชื่อม patch engine และรายการ SHA-256 ที่รองรับ</p>
+              <div class="workspace-buttons">
+                <button id="patch-button" class="patch-button hover-target" type="button" disabled>
+                  <span>เลือก ROM ก่อน</span>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+                </button>
+                <a id="download-button" class="download-button hover-target" href="#" download hidden>
+                  <span>ดาวน์โหลด ROM ภาษาไทย</span>
+                  <span aria-hidden="true">↓</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

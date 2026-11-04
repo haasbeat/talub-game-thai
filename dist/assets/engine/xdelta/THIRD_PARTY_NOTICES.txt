@@ -1,0 +1,16 @@
+xdelta-wasm browser engine
+Source: https://github.com/kotcrab/xdelta-wasm
+License: Apache License 2.0
+
+Xdelta 3
+Source: https://github.com/jmacd/xdelta
+Format: VCDIFF / RFC 3284
+
+The worker is vendored locally so player ROM files remain in the browser.
+The worker file was modified to transfer output buffers without an extra structured-clone copy.
+See LICENSE-xdelta-wasm.txt in this directory.
+
+Vendored asset SHA-256:
+xdelta3.js      94fa3a26bbca784214f4516ee76b4d2d4283432d91acf7c82e75de50d41a404d
+xdelta3.wasm    c03ecdf1220f1901349f1041da49113d668cb70827cba4bcf627feae86acf982
+xdelta3.worker.js 4af75e512ca5e9d635d37c52f5eed097a6ba2158b6b6086d75716c415c2f5c78
