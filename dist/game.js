@@ -916,7 +916,7 @@ const applyVerifiedPatch = async () => {
 
 patchButton.addEventListener('click', () => {
   if (!game.manifest) {
-    showToast(`ระบบแพตช์ของ ${game.title} จะเชื่อมในเฟสหลังบ้าน`);
+    showToast(`ยังไม่พบ manifest สำหรับ ${game.title}`);
     return;
   }
   void applyVerifiedPatch();
