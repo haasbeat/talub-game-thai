@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "game_slug": "love-plus-plus",
+  "game_title": "Love Plus+",
+  "platform": "NDS",
+  "region": "Japan",
+  "game_code": "BOXJ",
+  "patch_version": "v1.0.5",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Love Plus+ (Japan).nds",
+      "size": 536870912,
+      "sha256": "bb610cb0e2fa0a223c8157029375dbb47da86e1fb21b92358b915a268c54d028"
+    }
+  ],
+  "patch": {
+    "filename": "Love_Plus_Plus_Thai_v1.0.5.xdelta",
+    "size": 13927701,
+    "sha256": "fb84648c1870e03bf7ad6f897f08045a359ec76d0f704df15ddfb54e4ece819c"
+  },
+  "output": {
+    "filename": "Love Plus+ (Thailand) v1.0.5.nds",
+    "size": 536870912,
+    "sha256": "bc676bfec53e69ce859e59ed2b7d95c4e6a6578631e4a2bbd031ae70b3a5c7fd"
+  },
+  "release_status": {
+    "module_status": "บทสนทนาอีเวนต์ 100% + เมนู/อีเมล/สถานะแฟน 100% (ตาราง Kana/เสียงคงไว้ตามต้นฉบับ)",
+    "whole_game_census": "59,209/70,257 เรคคอร์ด (ภาพรวมทั้งเกม 84.3%)",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-05T15:07:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean source located by SHA-256 and patched with the site's vendored xdelta3 wasm engine; output matches release/v1.0.5/release_manifest.json.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}
