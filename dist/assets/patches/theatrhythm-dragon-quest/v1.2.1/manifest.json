@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "game_slug": "theatrhythm-dragon-quest",
+  "game_title": "Theatrhythm Dragon Quest",
+  "platform": "3DS",
+  "region": "Japan",
+  "game_code": "BTQJ",
+  "patch_version": "v1.2.1",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Theatrhythm Dragon Quest (Japan) Decrypted.3ds",
+      "size": 1073741824,
+      "sha256": "561fa6082cdcc7834f49daf636d876e4f553d0a0dcce1098c988daee0996044c"
+    }
+  ],
+  "patch": {
+    "filename": "Theatrhythm_Dragon_Quest_TH_v1.2.1.xdelta",
+    "size": 39281934,
+    "sha256": "a7e5c99371e6228365c520f9e2c84ec2b0881af68fa10f2065df3ceb5a61a75f"
+  },
+  "output": {
+    "filename": "Theatrhythm Dragon Quest (Thai v1.2.1).3ds",
+    "size": 951824384,
+    "sha256": "c9b1a59603cf5558c31d5d26f7693fd244914d594e1b5b1a40eee63b2e343662"
+  },
+  "release_status": {
+    "module_status": "บทสนทนา/ข้อความระบบ 2,152 + UI 1,003 + ตารางมอนสเตอร์/ไอเทม/เพลง 2,977 รายการ",
+    "whole_game_census": "6,132/6,132 เรคคอร์ด อ่านกลับจากในรอม (ภาพรวมทั้งเกม 100%)",
+    "census_source": "games/3DS/Theatrhythm Dragon Quest (Japan)/STATE.md + census_manifest.json",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-05T16:28:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean source located by SHA-256 and patched with the site's vendored xdelta3 wasm engine; output matches STATE.md v1.2.1 standalone ROM.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}

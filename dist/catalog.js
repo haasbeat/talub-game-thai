@@ -6,7 +6,7 @@ window.GAME_CATALOG = [
     "title": "7th Dragon III Code: VFD",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 001 / 028",
+    "index": "3DS | 001 / 030",
     "version": "v1.0.4",
     "format": "xdelta3",
     "cover": "./assets/covers/web/7th-dragon-iii-code-vfd.jpg",
@@ -47,7 +47,7 @@ window.GAME_CATALOG = [
     "title": "Bravely Default",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 002 / 028",
+    "index": "3DS | 002 / 030",
     "version": "v1.0.2",
     "format": "xdelta3",
     "cover": "./assets/covers/web/bravely-default.jpg",
@@ -70,7 +70,7 @@ window.GAME_CATALOG = [
     "title": "Dragon Ball Fusions",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 003 / 028",
+    "index": "3DS | 003 / 030",
     "version": "v1.0.6",
     "format": "xdelta3",
     "cover": "./assets/covers/web/dragon-ball-fusions.jpg",
@@ -89,11 +89,52 @@ window.GAME_CATALOG = [
   },
   {
     "order": 3,
+    "slug": "dqm-joker-3-professional",
+    "title": "Dragon Quest Monsters: Joker 3 Professional",
+    "platform": "3ds",
+    "platformLabel": "3DS",
+    "index": "3DS | 004 / 030",
+    "version": "v1.0.3",
+    "format": "xdelta3",
+    "cover": "./assets/covers/web/dqm-joker-3-professional.jpg",
+    "manifest": "./assets/patches/dqm-joker-3-professional/v1.0.3/manifest.json",
+    "accept": ".3ds",
+    "fileTypes": "CLEAN Japan 3DS · 2 GB",
+    "region": "Japan",
+    "gameCode": "BDQJ",
+    "sourceName": "Dragon Quest Monsters - Joker 3 Professional (Japan).3ds · 2,147,483,648 bytes",
+    "sourceHash": "e3e70991c268571d1f4558a4fbc14e72d6ba047a89f98511fb47db0b559cddbb",
+    "outputHash": "799c3067f53aa96adbd38d1a9e6f75828d63c6824d36de6cca759a16aa8924fe",
+    "moduleStatus": "เนื้อเรื่องหลัก + Post-Game + เควสต์ + สกิล + ไอเทม + เนวิแมป 26 แอเรีย (ตาม README v1.0.3)",
+    "wholeGameCensus": "README ระบุ 20,479 รายการ — ยังไม่มีผลสำรวจในรอมที่ตรวจซ้ำได้ (โปรเจกต์ไม่มี STATE.md)",
+    "details": {
+      "thaiTitle": "ดราก้อนเควสต์ มอนสเตอร์ส โจ๊กเกอร์ 3 โปรเฟสชันนัล",
+      "japaneseTitle": "ドラゴンクエストモンスターズ ジョーカー3 プロフェッショナル",
+      "originalTitle": "Dragon Quest Monsters: Joker 3 Professional",
+      "studio": "Square Enix",
+      "release": null,
+      "genre": "Role-playing game",
+      "description": "ม็อดภาษาไทยสำหรับ Dragon Quest Monsters: Joker 3 Professional (3DS โซนญี่ปุ่น) เวอร์ชัน v1.0.3",
+      "overview": "เกมสะสมและผสมมอนสเตอร์ของซีรีส์ดราก้อนเควสต์ ฉบับ Professional ที่มีเนื้อหา Post-Game เพิ่มเติม",
+      "story": null,
+      "localization": "แปลคัตซีนเนื้อเรื่องหลักและ Post-Game (บทที่ 1–8 และดินแดนสัตว์ศักดิ์สิทธิ์) เมนูคำสั่ง HUD ต่อสู้ เนวิแมป 26 แอเรีย ฐานข้อมูลมอนสเตอร์ สกิล ไอเทม ทริเวีย และเกียรติยศ ตาม README (ระบุ 20,479 รายการ) ใช้ฟอนต์ Chakra Petch SemiBold 13/15px",
+      "untranslated": "ยังยืนยันไม่ได้ — โปรเจกต์นี้ยังไม่มีผลสำรวจข้อความในรอมที่ตรวจซ้ำได้ ตัวเลขทั้งหมดมาจาก README ของรีลีส",
+      "features": [
+        "ขยายชื่อมอนสเตอร์ในหน้าเซฟเป็น 8 ตัวอักษร (แพตช์โค้ด ARM)",
+        "ฟอนต์ Chakra Petch SemiBold 13/15px",
+        "จัดหน้าคลังมอนสเตอร์และค่าความต้านทานให้พอดีกรอบ",
+        "เนวิแมปครบ 26 แอเรีย"
+      ]
+    },
+    "verified": true
+  },
+  {
+    "order": 4,
     "slug": "dragon-quest-vii",
     "title": "Dragon Quest VII: Fragments of the Forgotten Past",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 004 / 028",
+    "index": "3DS | 005 / 030",
     "version": "v1.6.6",
     "format": "xdelta3",
     "cover": "./assets/covers/web/dragon-quest-vii.jpg",
@@ -129,12 +170,12 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 4,
+    "order": 5,
     "slug": "dragon-quest-vii-isan",
     "title": "Dragon Quest VII: Fragments of the Forgotten Past (Isan Edition)",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 005 / 028",
+    "index": "3DS | 006 / 030",
     "version": "v1.6.0",
     "format": "xdelta3",
     "cover": "./assets/covers/web/dragon-quest-vii-isan.jpg",
@@ -152,12 +193,12 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 5,
+    "order": 6,
     "slug": "dragon-quest-viii",
     "title": "Dragon Quest VIII: Journey of the Cursed King",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 006 / 028",
+    "index": "3DS | 007 / 030",
     "version": "v1.4.0",
     "format": "xdelta3",
     "cover": "./assets/covers/web/dragon-quest-viii.jpg",
@@ -193,12 +234,12 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 6,
+    "order": 7,
     "slug": "dragon-quest-xi",
     "title": "Dragon Quest XI: Echoes of an Elusive Age",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 007 / 028",
+    "index": "3DS | 008 / 030",
     "version": "v2.4.1",
     "format": "xdelta3",
     "cover": "./assets/covers/web/dragon-quest-xi.jpg",
@@ -234,12 +275,12 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 7,
+    "order": 8,
     "slug": "etrian-odyssey-untold",
     "title": "Etrian Odyssey Untold: The Millennium Girl",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 008 / 028",
+    "index": "3DS | 009 / 030",
     "version": "v1.0.0",
     "format": "xdelta3",
     "cover": "./assets/covers/web/etrian-odyssey-untold.jpg",
@@ -257,12 +298,12 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 8,
+    "order": 9,
     "slug": "ever-oasis",
     "title": "Ever Oasis",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 009 / 028",
+    "index": "3DS | 010 / 030",
     "version": "v1.0.2",
     "format": "xdelta3",
     "cover": "./assets/covers/web/ever-oasis.jpg",
@@ -298,12 +339,12 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 9,
+    "order": 10,
     "slug": "final-fantasy-explorers",
     "title": "Final Fantasy Explorers",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 010 / 028",
+    "index": "3DS | 011 / 030",
     "version": "v1.0.0",
     "format": "xdelta3",
     "cover": "./assets/covers/web/final-fantasy-explorers.jpg",
@@ -321,12 +362,12 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 10,
+    "order": 11,
     "slug": "inazuma-eleven-123",
     "title": "Inazuma Eleven 1-2-3!! - Endou Mamoru Densetsu",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 011 / 028",
+    "index": "3DS | 012 / 030",
     "version": "v1.0.0",
     "format": "xdelta3",
     "cover": "./assets/covers/web/inazuma-eleven-123.jpg",
@@ -344,12 +385,12 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 11,
+    "order": 12,
     "slug": "inazuma-go-thunderflash",
     "title": "Inazuma Eleven GO: Chrono Stones - Thunderflash",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 012 / 028",
+    "index": "3DS | 013 / 030",
     "version": "v1.0.1",
     "format": "xdelta3",
     "cover": "./assets/covers/web/inazuma-go-thunderflash.jpg",
@@ -385,12 +426,12 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 12,
+    "order": 13,
     "slug": "inazuma-go-wildfire",
     "title": "Inazuma Eleven GO: Chrono Stones - Wildfire",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 013 / 028",
+    "index": "3DS | 014 / 030",
     "version": "v1.0.0",
     "format": "xdelta3",
     "cover": "./assets/covers/web/inazuma-go-wildfire.jpg",
@@ -408,12 +449,12 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 13,
+    "order": 14,
     "slug": "inazuma-go-light",
     "title": "Inazuma Eleven GO: Light",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 014 / 028",
+    "index": "3DS | 015 / 030",
     "version": "v1.1.0",
     "format": "xdelta3",
     "cover": "./assets/covers/web/inazuma-go-light.jpg",
@@ -449,12 +490,12 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 14,
+    "order": 15,
     "slug": "inazuma-go-shadow",
     "title": "Inazuma Eleven GO: Shadow",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 015 / 028",
+    "index": "3DS | 016 / 030",
     "version": "v1.0.0",
     "format": "xdelta3",
     "cover": "./assets/covers/web/inazuma-go-shadow.jpg",
@@ -490,12 +531,12 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 15,
+    "order": 16,
     "slug": "lost-heroes",
     "title": "Lost Heroes",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 016 / 028",
+    "index": "3DS | 017 / 030",
     "version": "v1.0.0",
     "format": "xdelta3",
     "cover": "./assets/covers/web/lost-heroes.jpg",
@@ -531,12 +572,12 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 16,
+    "order": 17,
     "slug": "monster-hunter-stories",
     "title": "Monster Hunter Stories",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 017 / 028",
+    "index": "3DS | 018 / 030",
     "version": "v1.0.0",
     "format": "xdelta3",
     "cover": "./assets/covers/web/monster-hunter-stories.jpg",
@@ -572,12 +613,12 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 17,
+    "order": 18,
     "slug": "new-love-plus-plus",
     "title": "New Love Plus+",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 018 / 028",
+    "index": "3DS | 019 / 030",
     "version": "v2.0.0",
     "format": "xdelta3",
     "cover": "./assets/covers/web/new-love-plus-plus.jpg",
@@ -613,12 +654,12 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 18,
+    "order": 19,
     "slug": "phoenix-wright-trilogy",
     "title": "Phoenix Wright: Ace Attorney Trilogy",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 019 / 028",
+    "index": "3DS | 020 / 030",
     "version": "v1.2.3",
     "format": "xdelta3",
     "cover": "./assets/covers/web/phoenix-wright-trilogy.jpg",
@@ -654,12 +695,12 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 19,
+    "order": 20,
     "slug": "professor-layton-miracle-mask",
     "title": "Professor Layton and the Miracle Mask",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 020 / 028",
+    "index": "3DS | 021 / 030",
     "version": "v1.3.2",
     "format": "xdelta3",
     "cover": "./assets/covers/web/professor-layton-miracle-mask.jpg",
@@ -695,12 +736,12 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 20,
+    "order": 21,
     "slug": "rune-factory-4",
     "title": "Rune Factory 4",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 021 / 028",
+    "index": "3DS | 022 / 030",
     "version": "v1.0.4",
     "format": "xdelta3",
     "cover": "./assets/covers/web/rune-factory-4.jpg",
@@ -736,12 +777,12 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 21,
+    "order": 22,
     "slug": "shin-megami-tensei-iv",
     "title": "Shin Megami Tensei IV",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 022 / 028",
+    "index": "3DS | 023 / 030",
     "version": "v1.3.4",
     "format": "xdelta3",
     "cover": "./assets/covers/web/shin-megami-tensei-iv.jpg",
@@ -759,12 +800,12 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 22,
+    "order": 23,
     "slug": "smt-strange-journey-redux",
     "title": "Shin Megami Tensei: Strange Journey Redux",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 023 / 028",
+    "index": "3DS | 024 / 030",
     "version": "v1.0.4",
     "format": "xdelta3",
     "cover": "./assets/covers/web/smt-strange-journey-redux.jpg",
@@ -800,12 +841,53 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 23,
+    "order": 24,
+    "slug": "theatrhythm-dragon-quest",
+    "title": "Theatrhythm Dragon Quest",
+    "platform": "3ds",
+    "platformLabel": "3DS",
+    "index": "3DS | 025 / 030",
+    "version": "v1.2.1",
+    "format": "xdelta3",
+    "cover": "./assets/covers/web/theatrhythm-dragon-quest.jpg",
+    "manifest": "./assets/patches/theatrhythm-dragon-quest/v1.2.1/manifest.json",
+    "accept": ".3ds",
+    "fileTypes": "CLEAN Japan 3DS · 1 GB",
+    "region": "Japan",
+    "gameCode": "BTQJ",
+    "sourceName": "Theatrhythm Dragon Quest (Japan) Decrypted.3ds · 1,073,741,824 bytes",
+    "sourceHash": "561fa6082cdcc7834f49daf636d876e4f553d0a0dcce1098c988daee0996044c",
+    "outputHash": "c9b1a59603cf5558c31d5d26f7693fd244914d594e1b5b1a40eee63b2e343662",
+    "moduleStatus": "บทสนทนา/ข้อความระบบ 2,152 + UI 1,003 + ตารางมอนสเตอร์/ไอเทม/เพลง 2,977 รายการ",
+    "wholeGameCensus": "6,132/6,132 เรคคอร์ด อ่านกลับจากในรอม (ภาพรวมทั้งเกม 100%)",
+    "details": {
+      "thaiTitle": "เธียทริทึม ดราก้อนเควสต์",
+      "japaneseTitle": "シアトリズム ドラゴンクエスト",
+      "originalTitle": "Theatrhythm Dragon Quest",
+      "studio": "Square Enix",
+      "release": null,
+      "genre": "Rhythm game",
+      "description": "ม็อดภาษาไทยสำหรับ Theatrhythm Dragon Quest (3DS โซนญี่ปุ่น) เวอร์ชัน v1.2.1",
+      "overview": "เกมจังหวะดนตรีที่รวมเพลงจากซีรีส์ดราก้อนเควสต์ ให้เล่นตามโน้ตไปพร้อมกับตัวละครในฉบับภาษาไทย",
+      "story": null,
+      "localization": "แปลบทสนทนาและข้อความระบบ 2,152 รายการ ข้อความ UI 1,003 รายการ และตารางมอนสเตอร์ ไอเทม คาถา สกิล ชื่อเพลง อาชีพ 2,977 รายการ (อ่านกลับจากในรอมครบ 6,132/6,132) พร้อมแปลกราฟิกโหมด Challenge ใน v1.2.1",
+      "untranslated": "ไม่มีส่วนที่ค้างแปลตามผลสำรวจในรอม (สัญลักษณ์ตัวเลขโรมัน Ⅰ–Ⅹ และวงเล็บ「」คงไว้ตามต้นฉบับ)",
+      "features": [
+        "แก้อาการค้างตอนเข้าด่าน Challenge Mode (v1.2.1)",
+        "แปลกราฟิกและป้ายเมนูโหมด Challenge",
+        "ข้อความในรอมอ่านกลับครบ 6,132 รายการ",
+        "ลายน้ำเวอร์ชัน v1.2.1 ในเกม"
+      ]
+    },
+    "verified": true
+  },
+  {
+    "order": 25,
     "slug": "time-travelers",
     "title": "Time Travelers",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 024 / 028",
+    "index": "3DS | 026 / 030",
     "version": "v1.0.1",
     "format": "xdelta3",
     "cover": "./assets/covers/web/time-travelers.jpg",
@@ -823,12 +905,12 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 24,
+    "order": 26,
     "slug": "xenoblade-chronicles-3d",
     "title": "Xenoblade Chronicles 3D",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 025 / 028",
+    "index": "3DS | 027 / 030",
     "version": "v1.0.7",
     "format": "xdelta3",
     "cover": "./assets/covers/web/xenoblade-chronicles-3d.jpg",
@@ -864,12 +946,12 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 25,
+    "order": 27,
     "slug": "yo-kai-watch",
     "title": "Yo-kai Watch",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 026 / 028",
+    "index": "3DS | 028 / 030",
     "version": "v2.8.0",
     "format": "xdelta3",
     "cover": "./assets/covers/web/yo-kai-watch.jpg",
@@ -887,12 +969,12 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 26,
+    "order": 28,
     "slug": "yo-kai-watch-2",
     "title": "Yo-kai Watch 2: Psychic Specters",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 027 / 028",
+    "index": "3DS | 029 / 030",
     "version": "v1.2.0",
     "format": "xdelta3",
     "cover": "./assets/covers/web/yo-kai-watch-2.jpg",
@@ -928,12 +1010,12 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 27,
+    "order": 29,
     "slug": "yo-kai-watch-3",
     "title": "Yo-kai Watch 3",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 028 / 028",
+    "index": "3DS | 030 / 030",
     "version": "v1.0.1",
     "format": "xdelta3",
     "cover": "./assets/covers/web/yo-kai-watch-3.jpg",
@@ -969,7 +1051,7 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 28,
+    "order": 30,
     "slug": "dragon-quest-iv",
     "title": "Dragon Quest IV: Chapters of the Chosen",
     "platform": "nds",
@@ -1010,7 +1092,7 @@ window.GAME_CATALOG = [
     "verified": false
   },
   {
-    "order": 29,
+    "order": 31,
     "slug": "dragon-quest-v",
     "title": "Dragon Quest V: Hand of the Heavenly Bride",
     "platform": "nds",
@@ -1033,7 +1115,7 @@ window.GAME_CATALOG = [
     "verified": false
   },
   {
-    "order": 30,
+    "order": 32,
     "slug": "dragon-quest-vi",
     "title": "Dragon Quest VI: Realms of Revelation",
     "platform": "nds",
@@ -1056,7 +1138,7 @@ window.GAME_CATALOG = [
     "verified": false
   },
   {
-    "order": 31,
+    "order": 33,
     "slug": "front-mission-2089",
     "title": "Front Mission 2089: Border of Madness",
     "platform": "nds",
@@ -1097,7 +1179,7 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 32,
+    "order": 34,
     "slug": "lost-in-blue-2",
     "title": "Lost in Blue 2",
     "platform": "nds",
@@ -1138,7 +1220,7 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 33,
+    "order": 35,
     "slug": "love-plus-plus",
     "title": "Love Plus+",
     "platform": "nds",
@@ -1179,7 +1261,7 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 34,
+    "order": 36,
     "slug": "saga2-hihou-densetsu",
     "title": "SaGa 2: Hihou Densetsu - Goddess of Destiny",
     "platform": "nds",
@@ -1202,7 +1284,7 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 35,
+    "order": 37,
     "slug": "suikoden-tierkreis",
     "title": "Suikoden Tierkreis",
     "platform": "nds",
@@ -1225,7 +1307,7 @@ window.GAME_CATALOG = [
     "verified": true
   },
   {
-    "order": 36,
+    "order": 38,
     "slug": "tales-of-hearts",
     "title": "Tales of Hearts",
     "platform": "nds",
@@ -1248,7 +1330,7 @@ window.GAME_CATALOG = [
     "verified": false
   },
   {
-    "order": 37,
+    "order": 39,
     "slug": "the-world-ends-with-you",
     "title": "The World Ends with You",
     "platform": "nds",
@@ -1271,7 +1353,7 @@ window.GAME_CATALOG = [
     "verified": false
   },
   {
-    "order": 38,
+    "order": 40,
     "slug": "mini-yonku-wgp2",
     "title": "Mini Yonku Let's & Go!!: Power WGP 2",
     "platform": "snes",
