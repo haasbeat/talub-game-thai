@@ -271,3 +271,12 @@ window.addEventListener('resize', () => {
 createPlatformTabs();
 renderCatalog(false);
 bindHoverTargets(document);
+
+if (requestedPlatform || window.location.hash === '#games') {
+  setTimeout(() => {
+    const gamesSection = document.querySelector('#games');
+    if (gamesSection) {
+      gamesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, 100);
+}

@@ -572,6 +572,16 @@ document.querySelector('#detail-cover').src = game.cover;
 document.querySelector('#detail-cover').alt = `ปกเกม ${game.title} ฉบับภาษาไทย`;
 document.querySelector('#detail-index').textContent = game.index;
 document.querySelector('#detail-platform').textContent = game.platform;
+const platformKey = (game.platform || '').toLowerCase().trim();
+const platformLink = document.querySelector('#detail-platform-link');
+if (platformLink && platformKey) {
+  platformLink.href = `./index.html?platform=${encodeURIComponent(platformKey)}#games`;
+  platformLink.title = `ดูเกมทั้งหมดในหมวด ${game.platform}`;
+}
+const breadcrumb = document.querySelector('.detail-breadcrumb');
+if (breadcrumb && platformKey) {
+  breadcrumb.href = `./index.html?platform=${encodeURIComponent(platformKey)}#games`;
+}
 document.querySelector('#detail-version').textContent = game.version;
 document.querySelector('#detail-format').textContent = game.format;
 document.querySelector('#detail-status').textContent = game.status;

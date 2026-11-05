@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=37" />
+    <link rel="stylesheet" href="./styles.css?v=38" />
   </head>
   <body class="detail-page">
     <div class="cursor" aria-hidden="true"></div>
@@ -44,7 +44,13 @@
           <p id="detail-description" class="detail-description">หน้ารายละเอียดและพื้นที่แพตช์ภาษาไทยเฉพาะเกม</p>
 
           <div class="detail-meta">
-            <div><span class="mono">PLATFORM</span><strong id="detail-platform">NDS</strong></div>
+            <div>
+              <span class="mono">PLATFORM</span>
+              <a id="detail-platform-link" class="detail-platform-link hover-target" href="./index.html#games" title="ดูเกมทั้งหมดในหมวดนี้">
+                <strong id="detail-platform">3DS</strong>
+                <span class="detail-platform-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
             <div><span class="mono">THAI VERSION</span><strong id="detail-version">Preview</strong></div>
             <div><span class="mono">INSTALL FORMAT</span><strong id="detail-format">xdelta</strong></div>
             <div><span class="mono">STATUS</span><strong id="detail-status">Frontend Preview</strong></div>
@@ -245,8 +251,8 @@
     </footer>
 
     <div id="toast" class="toast" role="status" aria-live="polite">พร้อมประมวลผลภายในอุปกรณ์</div>
-    <script src="./catalog.js?v=37"></script>
+    <script src="./catalog.js?v=38"></script>
     <script src="./assets/engine/hash/sha256.js"></script>
-    <script src="./game.js?v=37"></script>
+    <script src="./game.js?v=38"></script>
   </body>
 </html>

@@ -331,6 +331,33 @@ button, a, .drop-zone { -webkit-tap-highlight-color: transparent; }
 .detail-meta > div { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--line); }
 .detail-meta span { color: var(--muted); }
 .detail-meta strong { font-size: 13px; font-weight: 500; text-align: right; }
+.detail-platform-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--ink);
+  text-decoration: none;
+  transition: opacity 180ms var(--ease), transform 180ms var(--ease);
+}
+.detail-platform-link:hover {
+  opacity: 0.7;
+  transform: translateX(2px);
+}
+.detail-platform-link strong {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+.detail-platform-arrow {
+  font-size: 12px;
+  line-height: 1;
+  color: var(--muted);
+  transition: transform 180ms var(--ease), color 180ms var(--ease);
+}
+.detail-platform-link:hover .detail-platform-arrow {
+  transform: translateX(3px);
+  color: var(--ink);
+}
 .detail-cta { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 20px; padding: 13px 18px; color: #fff; background: var(--ink); border: 1px solid var(--ink); transition: color 500ms var(--ease), background 500ms var(--ease); }
 .detail-cta:hover { color: var(--ink); background: transparent; }
 .detail-view-switch { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; padding-top: 0; padding-bottom: 0; }
