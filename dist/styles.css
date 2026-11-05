@@ -164,6 +164,16 @@ button, a, .drop-zone { -webkit-tap-highlight-color: transparent; }
 .manifesto-meta { margin-top: 32px; display: grid; grid-template-columns: 1fr 1fr; align-items: end; }
 .manifesto-meta p { margin: 0; color: var(--muted); line-height: 1.55; }
 .manifesto-meta p:last-child { justify-self: end; text-align: right; color: var(--ink); }
+.manifesto-notice { margin-top: 40px; padding: clamp(20px, 2.6vw, 32px); background: #f3f3f1; border: 1px solid var(--line); border-radius: 8px 40px 8px 8px; }
+.notice-head { display: grid; gap: 10px; padding-bottom: 18px; border-bottom: 1px solid var(--line); }
+.notice-head .mono { color: var(--muted); }
+.notice-head h3 { margin: 0; font-size: clamp(18px, 1.8vw, 24px); font-weight: 600; line-height: 1.35; letter-spacing: -.02em; }
+.notice-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 32px; margin: 0; padding: 0; list-style: none; }
+.notice-list li { display: grid; grid-template-columns: 32px 1fr; gap: 12px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+.notice-list li .mono { color: var(--muted); padding-top: 3px; }
+.notice-list p { margin: 0; color: #333; font-size: 14px; line-height: 1.65; }
+.notice-list strong { color: var(--ink); font-weight: 600; }
+.notice-en { margin: 16px 0 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
 
 .support-section { display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, 360px); gap: clamp(24px, 4vw, 48px); align-items: center; padding-top: 48px; padding-bottom: 48px; color: #fff; background: #0a0a0a; scroll-margin-top: 96px; }
 .support-copy h2 { margin: 0; max-width: 680px; font-size: clamp(24px, 2.8vw, 38px); font-weight: 600; line-height: 1.15; letter-spacing: -.04em; }
@@ -459,6 +469,7 @@ button, a, .drop-zone { -webkit-tap-highlight-color: transparent; }
   .manifesto-copy span { display: inline; }
   .manifesto-meta { grid-template-columns: 1fr; gap: 20px; }
   .manifesto-meta p:last-child { justify-self: start; text-align: left; }
+  .notice-list { grid-template-columns: 1fr; }
   .section-head { display: block; }
   .section-note { margin-top: 20px; }
   .support-section { grid-template-columns: 1fr; gap: 36px; }
