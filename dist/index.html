@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=41" />
+    <link rel="stylesheet" href="./styles.css?v=47" />
   </head>
   <body>
     <div class="cursor" aria-hidden="true"></div>
@@ -139,8 +139,13 @@
         <div class="platform-result" aria-live="polite">
           <div class="platform-result-copy mono">
             <span id="platform-label">รวมทุกเครื่อง</span>
-            <span id="platform-count">17 เกม</span>
+            <span id="platform-count">— เกม</span>
           </div>
+          <div class="catalog-controls">
+            <label class="search-control" for="game-search">
+              <span class="mono">ค้นหา</span>
+              <input id="game-search" type="search" placeholder="ชื่อเกม เช่น Yo-kai หรือ ดราก้อนเควสต์" autocomplete="off" enterkeyhint="search" />
+            </label>
           <label class="sort-control" for="game-sort">
             <span class="mono">จัดเรียงตาม</span>
             <select id="game-sort" class="hover-target">
@@ -151,229 +156,51 @@
             </select>
             <span class="sort-arrow" aria-hidden="true">↓</span>
           </label>
+          </div>
         </div>
 
         <div class="game-grid">
-          <article class="game-card hover-target" data-game="The World Ends with You" data-platform="nds">
-            <div class="poster cover-poster poster-a">
-              <img src="./assets/covers/the-world-ends-with-you.jpg" alt="ปกเกม The World Ends with You ฉบับภาษาไทย" loading="lazy" />
-              <span class="poster-index mono">NDS | 001 / 006</span>
-              <span class="poster-arrow">↗</span>
-            </div>
-            <div class="game-meta">
-              <h3>The World Ends with You</h3>
-              <span class="mono">COVER PREVIEW</span>
-              <span class="mono">NDS</span>
-            </div>
-          </article>
-
-          <article class="game-card hover-target" data-game="Etrian Odyssey Untold" data-platform="3ds">
-            <div class="poster cover-poster poster-b">
-              <img src="./assets/covers/etrian-odyssey-untold.jpg" alt="ปกเกม Etrian Odyssey Untold The Millennium Girl ฉบับภาษาไทย" loading="lazy" />
-              <span class="poster-index mono">3DS | 001 / 011</span>
-              <span class="poster-arrow">↗</span>
-            </div>
-            <div class="game-meta">
-              <h3>Etrian Odyssey Untold</h3>
-              <span class="mono">COVER PREVIEW</span>
-              <span class="mono">3DS</span>
-            </div>
-          </article>
-
-          <article class="game-card hover-target" data-game="Inazuma Eleven 1-2-3" data-platform="3ds">
-            <div class="poster cover-poster poster-c">
-              <img src="./assets/covers/inazuma-eleven-123.jpg" alt="ปกเกม Inazuma Eleven 1-2-3 ฉบับภาษาไทย" loading="lazy" />
-              <span class="poster-index mono">3DS | 002 / 011</span>
-              <span class="poster-arrow">↗</span>
-            </div>
-            <div class="game-meta">
-              <h3>Inazuma Eleven 1-2-3</h3>
-              <span class="mono">COVER PREVIEW</span>
-              <span class="mono">3DS</span>
-            </div>
-          </article>
-
-          <article class="game-card hover-target" data-game="Bravely Default" data-platform="3ds">
-            <div class="poster cover-poster poster-d">
-              <img src="./assets/covers/bravely-default.jpg" alt="ปกเกม Bravely Default ฉบับภาษาไทย" loading="lazy" />
-              <span class="poster-index mono">3DS | 003 / 011</span>
-              <span class="poster-arrow">↗</span>
-            </div>
-            <div class="game-meta">
-              <h3>Bravely Default</h3>
-              <span class="mono">COVER PREVIEW</span>
-              <span class="mono">3DS</span>
-            </div>
-          </article>
-
-          <article class="game-card hover-target" data-game="Final Fantasy Explorers" data-platform="3ds">
-            <div class="poster cover-poster poster-e">
-              <img src="./assets/covers/final-fantasy-explorers.jpg" alt="ปกเกม Final Fantasy Explorers ฉบับภาษาไทย" loading="lazy" />
-              <span class="poster-index mono">3DS | 004 / 011</span>
-              <span class="poster-arrow">↗</span>
-            </div>
-            <div class="game-meta">
-              <h3>Final Fantasy Explorers</h3>
-              <span class="mono">COVER PREVIEW</span>
-              <span class="mono">3DS</span>
-            </div>
-          </article>
-
-          <article class="game-card hover-target" data-game="Dragon Ball Fusions" data-platform="3ds">
-            <div class="poster cover-poster poster-a">
-              <img src="./assets/covers/dragon-ball-fusions.jpg" alt="ปกเกม Dragon Ball Fusions ฉบับภาษาไทย" loading="lazy" />
-              <span class="poster-index mono">3DS | 005 / 011</span>
-              <span class="poster-arrow">↗</span>
-            </div>
-            <div class="game-meta">
-              <h3>Dragon Ball Fusions</h3>
-              <span class="mono">COVER PREVIEW</span>
-              <span class="mono">3DS</span>
-            </div>
-          </article>
-
-          <article class="game-card hover-target" data-game="Shin Megami Tensei IV" data-platform="3ds">
-            <div class="poster cover-poster poster-b">
-              <img src="./assets/covers/shin-megami-tensei-iv.jpg" alt="ปกเกม Shin Megami Tensei IV ฉบับภาษาไทย" loading="lazy" />
-              <span class="poster-index mono">3DS | 006 / 011</span>
-              <span class="poster-arrow">↗</span>
-            </div>
-            <div class="game-meta">
-              <h3>Shin Megami Tensei IV</h3>
-              <span class="mono">COVER PREVIEW</span>
-              <span class="mono">3DS</span>
-            </div>
-          </article>
-
-          <article class="game-card hover-target" data-game="Yo-kai Watch" data-platform="3ds">
-            <div class="poster cover-poster poster-c">
-              <img src="./assets/covers/yo-kai-watch.jpg" alt="ปกเกม Yo-kai Watch ฉบับภาษาไทย" loading="lazy" />
-              <span class="poster-index mono">3DS | 007 / 011</span>
-              <span class="poster-arrow">↗</span>
-            </div>
-            <div class="game-meta">
-              <h3>Yo-kai Watch</h3>
-              <span class="mono">COVER PREVIEW</span>
-              <span class="mono">3DS</span>
-            </div>
-          </article>
-
-          <article class="game-card hover-target" data-game="Inazuma Eleven GO: Wildfire" data-platform="3ds">
-            <div class="poster cover-poster poster-d">
-              <img src="./assets/covers/inazuma-go-wildfire.jpg" alt="ปกเกม Inazuma Eleven GO Chrono Stones Wildfire ฉบับภาษาไทย" loading="lazy" />
-              <span class="poster-index mono">3DS | 008 / 011</span>
-              <span class="poster-arrow">↗</span>
-            </div>
-            <div class="game-meta">
-              <h3>Inazuma Eleven GO: Wildfire</h3>
-              <span class="mono">COVER PREVIEW</span>
-              <span class="mono">3DS</span>
-            </div>
-          </article>
-
-          <article class="game-card hover-target" data-game="Dragon Quest VII: Isan Edition" data-platform="3ds">
-            <div class="poster cover-poster poster-e">
-              <img src="./assets/covers/dragon-quest-vii-isan.jpg" alt="ปกเกม Dragon Quest VII ฉบับภาษาไทยเวอร์ชันอีสาน" loading="lazy" />
-              <span class="poster-index mono">3DS | 009 / 011</span>
-              <span class="poster-arrow">↗</span>
-            </div>
-            <div class="game-meta">
-              <h3>Dragon Quest VII: Isan Edition</h3>
-              <span class="mono">COVER PREVIEW</span>
-              <span class="mono">3DS</span>
-            </div>
-          </article>
-
-          <article class="game-card hover-target" data-game="SaGa 2: Hihou Densetsu" data-platform="nds">
-            <div class="poster cover-poster poster-a">
-              <img src="./assets/covers/saga2-thai-v1.0.1.jpg" alt="ปกเกม SaGa 2 Goddess of Destiny ฉบับแปลไทย v1.0.1" loading="lazy" />
-              <span class="poster-index mono">NDS | 002 / 006</span>
-              <span class="poster-arrow">↗</span>
-            </div>
-            <div class="game-meta">
-              <h3>SaGa 2: Hihou Densetsu - Goddess of Destiny</h3>
-              <span class="mono">BROWSER PATCH READY</span>
-              <span class="mono">NDS</span>
-            </div>
-          </article>
-
-          <article class="game-card hover-target" data-game="Tales of Hearts" data-platform="nds">
-            <div class="poster cover-poster poster-b">
-              <img src="./assets/covers/tales-of-hearts.jpg" alt="ปกเกม Tales of Hearts ฉบับภาษาไทย" loading="lazy" />
-              <span class="poster-index mono">NDS | 003 / 006</span>
-              <span class="poster-arrow">↗</span>
-            </div>
-            <div class="game-meta">
-              <h3>Tales of Hearts</h3>
-              <span class="mono">COVER PREVIEW</span>
-              <span class="mono">NDS</span>
-            </div>
-          </article>
-
-          <article class="game-card hover-target" data-game="Dragon Quest VI" data-platform="nds">
-            <div class="poster cover-poster poster-c">
-              <img src="./assets/covers/dragon-quest-vi.jpg" alt="ปกเกม Dragon Quest VI มายาแห่งแดนฝัน ฉบับภาษาไทย" loading="lazy" />
-              <span class="poster-index mono">NDS | 004 / 006</span>
-              <span class="poster-arrow">↗</span>
-            </div>
-            <div class="game-meta">
-              <h3>Dragon Quest VI</h3>
-              <span class="mono">COVER PREVIEW</span>
-              <span class="mono">NDS</span>
-            </div>
-          </article>
-
-          <article class="game-card hover-target" data-game="Suikoden Tierkreis" data-platform="nds">
-            <div class="poster cover-poster poster-d">
-              <img src="./assets/covers/suikoden-tierkreis.jpg" alt="ปกเกม Suikoden Tierkreis ฉบับภาษาไทย" loading="lazy" />
-              <span class="poster-index mono">NDS | 005 / 006</span>
-              <span class="poster-arrow">↗</span>
-            </div>
-            <div class="game-meta">
-              <h3>Suikoden Tierkreis</h3>
-              <span class="mono">COVER PREVIEW</span>
-              <span class="mono">NDS</span>
-            </div>
-          </article>
-
-          <article class="game-card hover-target" data-game="Monster Hunter 3" data-platform="3ds">
-            <div class="poster cover-poster poster-e">
-              <img src="./assets/covers/monster-hunter-3.jpg" alt="ปกเกม Monster Hunter 3 เศษเสี้ยวแห่งมังกร ฉบับภาษาไทย" loading="lazy" />
-              <span class="poster-index mono">3DS | 010 / 011</span>
-              <span class="poster-arrow">↗</span>
-            </div>
-            <div class="game-meta">
-              <h3>Monster Hunter 3</h3>
-              <span class="mono">COVER PREVIEW</span>
-              <span class="mono">3DS</span>
-            </div>
-          </article>
-
-          <article class="game-card hover-target" data-game="Dragon Quest V" data-platform="nds">
-            <div class="poster cover-poster poster-a">
-              <img src="./assets/covers/dragon-quest-v.jpg" alt="ปกเกม Dragon Quest V เจ้าสาวแห่งสวรรค์ ฉบับภาษาไทย" loading="lazy" />
-              <span class="poster-index mono">NDS | 006 / 006</span>
-              <span class="poster-arrow">↗</span>
-            </div>
-            <div class="game-meta">
-              <h3>Dragon Quest V</h3>
-              <span class="mono">COVER PREVIEW</span>
-              <span class="mono">NDS</span>
-            </div>
-          </article>
-
-          <article class="game-card hover-target" data-game="Time Travelers" data-platform="3ds">
-            <div class="poster cover-poster poster-b">
-              <img src="./assets/covers/time-travelers.jpg" alt="ปกเกม Time Travelers กลไกแห่งกาลเวลา ฉบับภาษาไทย" loading="lazy" />
-              <span class="poster-index mono">3DS | 011 / 011</span>
-              <span class="poster-arrow">↗</span>
-            </div>
-            <div class="game-meta">
-              <h3>Time Travelers</h3>
-              <span class="mono">COVER PREVIEW</span>
-              <span class="mono">3DS</span>
-            </div>
-          </article>
+          <!-- STATIC-CATALOG:START (generated by tools/build_web_catalog.mjs for no-JS/SEO; replaced at runtime) -->
+          <a class="game-card" href="./game.html?game=7th-dragon-iii-code-vfd"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/7th-dragon-iii-code-vfd.jpg" alt="ปกเกม 7th Dragon III Code: VFD ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>เซเว่นธ์ดราก้อน III โค้ด: VFD ฉบับภาษาไทย</h3><span class="mono">v1.0.4</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=bravely-default"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/bravely-default.jpg" alt="ปกเกม Bravely Default ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>Bravely Default</h3><span class="mono">v1.0.2</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=dragon-ball-fusions"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/dragon-ball-fusions.jpg" alt="ปกเกม Dragon Ball Fusions ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>Dragon Ball Fusions</h3><span class="mono">v1.0.6</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=dragon-quest-vii"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/dragon-quest-vii.jpg" alt="ปกเกม Dragon Quest VII: Fragments of the Forgotten Past ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>ดราก้อนเควสต์ VII เศษเสี้ยวแห่งอดีต</h3><span class="mono">v1.6.6</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=dragon-quest-vii-isan"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/dragon-quest-vii-isan.jpg" alt="ปกเกม Dragon Quest VII: Fragments of the Forgotten Past (Isan Edition) ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>Dragon Quest VII: Fragments of the Forgotten Past (Isan Edition)</h3><span class="mono">v1.6.0</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=dragon-quest-viii"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/dragon-quest-viii.jpg" alt="ปกเกม Dragon Quest VIII: Journey of the Cursed King ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>ดราก้อนเควสต์ VIII ฉบับภาษาไทย</h3><span class="mono">v1.4.0</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=dragon-quest-xi"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/dragon-quest-xi.jpg" alt="ปกเกม Dragon Quest XI: Echoes of an Elusive Age ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>ดราก้อนเควสต์ XI ฉบับภาษาไทย</h3><span class="mono">v2.4.1</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=etrian-odyssey-untold"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/etrian-odyssey-untold.jpg" alt="ปกเกม Etrian Odyssey Untold: The Millennium Girl ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>Etrian Odyssey Untold: The Millennium Girl</h3><span class="mono">v1.0.0</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=ever-oasis"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/ever-oasis.jpg" alt="ปกเกม Ever Oasis ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>เอเวอร์โอเอซิส — โอเอซิสพิทักษ์ชีพทะเลทราย</h3><span class="mono">v1.0.2</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=final-fantasy-explorers"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/final-fantasy-explorers.jpg" alt="ปกเกม Final Fantasy Explorers ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>Final Fantasy Explorers</h3><span class="mono">v1.0.0</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=inazuma-eleven-123"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/inazuma-eleven-123.jpg" alt="ปกเกม Inazuma Eleven 1-2-3!! - Endou Mamoru Densetsu ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>Inazuma Eleven 1-2-3!! - Endou Mamoru Densetsu</h3><span class="mono">v1.0.0</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=inazuma-go-thunderflash"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/inazuma-go-thunderflash.jpg" alt="ปกเกม Inazuma Eleven GO: Chrono Stones - Thunderflash ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>นักเตะแข้งสายฟ้า GO โครโน สโตน: อัสนีบาตฟาดกระหน่ำ</h3><span class="mono">v1.0.1</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=inazuma-go-wildfire"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/inazuma-go-wildfire.jpg" alt="ปกเกม Inazuma Eleven GO: Chrono Stones - Wildfire ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>Inazuma Eleven GO: Chrono Stones - Wildfire</h3><span class="mono">v1.0.0</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=inazuma-go-light"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/inazuma-go-light.jpg" alt="ปกเกม Inazuma Eleven GO: Light ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>นักเตะแข้งสายฟ้า GO ภาคแสงสว่าง</h3><span class="mono">v1.1.0</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=inazuma-go-shadow"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/inazuma-go-shadow.jpg" alt="ปกเกม Inazuma Eleven GO: Shadow ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>นักเตะแข้งสายฟ้า GO ภาคเงามืด</h3><span class="mono">v1.0.0</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=lost-heroes"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/lost-heroes.jpg" alt="ปกเกม Lost Heroes ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>ลอสท์ฮีโร่ส์ ฉบับภาษาไทย</h3><span class="mono">v1.0.0</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=monster-hunter-stories"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/monster-hunter-stories.jpg" alt="ปกเกม Monster Hunter Stories ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>มอนสเตอร์ฮันเตอร์ สตอรีส์ ฉบับภาษาไทย</h3><span class="mono">v1.0.0</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=new-love-plus-plus"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/new-love-plus-plus.jpg" alt="ปกเกม New Love Plus+ ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>นิวเลิฟพลัส+ ฉบับภาษาไทย</h3><span class="mono">v2.0.0</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=phoenix-wright-trilogy"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/phoenix-wright-trilogy.jpg" alt="ปกเกม Phoenix Wright: Ace Attorney Trilogy ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>ยอดทนาย พลิกคดี</h3><span class="mono">v1.2.3</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=professor-layton-miracle-mask"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/professor-layton-miracle-mask.jpg" alt="ปกเกม Professor Layton and the Miracle Mask ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>ศาสตราจารย์เลย์ตันกับหน้ากากปาฏิหาริย์</h3><span class="mono">v1.3.2</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=rune-factory-4"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/rune-factory-4.jpg" alt="ปกเกม Rune Factory 4 ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>รูนแฟคทอรี 4</h3><span class="mono">v1.0.4</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=shin-megami-tensei-iv"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/shin-megami-tensei-iv.jpg" alt="ปกเกม Shin Megami Tensei IV ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>Shin Megami Tensei IV</h3><span class="mono">v1.3.4</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=smt-strange-journey-redux"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/smt-strange-journey-redux.jpg" alt="ปกเกม Shin Megami Tensei: Strange Journey Redux ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>ชินเมกามิเทนเซย์: สเตรนจ์เจอร์นีย์ รีดักซ์ ฉบับภาษาไทย</h3><span class="mono">v1.0.4</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=time-travelers"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/time-travelers.jpg" alt="ปกเกม Time Travelers ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>Time Travelers</h3><span class="mono">v1.0.1</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=xenoblade-chronicles-3d"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/xenoblade-chronicles-3d.jpg" alt="ปกเกม Xenoblade Chronicles 3D ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>ซีโนเบลด โครนิเคิลส์ 3D</h3><span class="mono">v1.0.7</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=yo-kai-watch"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/yo-kai-watch.jpg" alt="ปกเกม Yo-kai Watch ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>Yo-kai Watch</h3><span class="mono">v2.8.0</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=yo-kai-watch-2"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/yo-kai-watch-2.jpg" alt="ปกเกม Yo-kai Watch 2: Psychic Specters ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>โยไควอทช์ 2 ฉบับภาษาไทย</h3><span class="mono">v1.2.0</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=yo-kai-watch-3"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/yo-kai-watch-3.jpg" alt="ปกเกม Yo-kai Watch 3 ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>โยไควอทช์ 3 ฉบับภาษาไทย</h3><span class="mono">v1.0.1</span><span class="mono">3DS</span></div></a>
+          <a class="game-card" href="./game.html?game=dragon-quest-iv"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/dragon-quest-iv.jpg" alt="ปกเกม Dragon Quest IV: Chapters of the Chosen ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>ดราก้อนเควสต์ IV ฉบับภาษาไทย</h3><span class="mono">v2.5.1</span><span class="mono">NDS</span></div></a>
+          <a class="game-card" href="./game.html?game=dragon-quest-v"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/dragon-quest-v.jpg" alt="ปกเกม Dragon Quest V: Hand of the Heavenly Bride ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>Dragon Quest V: Hand of the Heavenly Bride</h3><span class="mono">v1.6.3</span><span class="mono">NDS</span></div></a>
+          <a class="game-card" href="./game.html?game=dragon-quest-vi"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/dragon-quest-vi.jpg" alt="ปกเกม Dragon Quest VI: Realms of Revelation ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>Dragon Quest VI: Realms of Revelation</h3><span class="mono">v1.1.0</span><span class="mono">NDS</span></div></a>
+          <a class="game-card" href="./game.html?game=front-mission-2089"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/front-mission-2089.jpg" alt="ปกเกม Front Mission 2089: Border of Madness ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>ฟรอนต์มิชชัน 2089 ฉบับภาษาไทย</h3><span class="mono">v1.0.0</span><span class="mono">NDS</span></div></a>
+          <a class="game-card" href="./game.html?game=lost-in-blue-2"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/lost-in-blue-2.jpg" alt="ปกเกม Lost in Blue 2 ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>ลอสต์อินบลู 2 ฉบับภาษาไทย</h3><span class="mono">v2.0.2</span><span class="mono">NDS</span></div></a>
+          <a class="game-card" href="./game.html?game=love-plus-plus"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/love-plus-plus.jpg" alt="ปกเกม Love Plus+ ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>เลิฟพลัส+ ฉบับภาษาไทย</h3><span class="mono">v1.0.5</span><span class="mono">NDS</span></div></a>
+          <a class="game-card" href="./game.html?game=saga2-hihou-densetsu"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/saga2-hihou-densetsu.jpg" alt="ปกเกม SaGa 2: Hihou Densetsu - Goddess of Destiny ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>SaGa 2: Hihou Densetsu - Goddess of Destiny</h3><span class="mono">v1.0.1</span><span class="mono">NDS</span></div></a>
+          <a class="game-card" href="./game.html?game=suikoden-tierkreis"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/suikoden-tierkreis.jpg" alt="ปกเกม Suikoden Tierkreis ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>Suikoden Tierkreis</h3><span class="mono">v1.0.0</span><span class="mono">NDS</span></div></a>
+          <a class="game-card" href="./game.html?game=tales-of-hearts"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/tales-of-hearts.jpg" alt="ปกเกม Tales of Hearts ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>Tales of Hearts</h3><span class="mono">v1.0.1</span><span class="mono">NDS</span></div></a>
+          <a class="game-card" href="./game.html?game=the-world-ends-with-you"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/the-world-ends-with-you.jpg" alt="ปกเกม The World Ends with You ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>The World Ends with You</h3><span class="mono">v1.0.4</span><span class="mono">NDS</span></div></a>
+          <a class="game-card" href="./game.html?game=mini-yonku-wgp2"><div class="poster cover-poster poster-a"><img src="./assets/covers/web/mini-yonku-wgp2.jpg" alt="ปกเกม Mini Yonku Let's &amp; Go!!: Power WGP 2 ฉบับภาษาไทย" loading="lazy" /></div><div class="game-meta"><h3>มินิยงคุ เล็ทส์แอนด์โก!! พาวเวอร์ WGP 2 ฉบับภาษาไทย</h3><span class="mono">v1.3.15</span><span class="mono">SNES</span></div></a>
+          <!-- STATIC-CATALOG:END -->
         </div>
         <div id="platform-empty" class="platform-empty" hidden>
           <span class="mono">COMING NEXT</span>
@@ -444,8 +271,8 @@
       </div>
     </footer>
 
-    <script src="./catalog.js?v=46"></script>
+    <script src="./catalog.js?v=47"></script>
     <script src="./patch-stats.js?v=41"></script>
-    <script src="./catalog-app.js?v=46"></script>
+    <script src="./catalog-app.js?v=47"></script>
   </body>
 </html>

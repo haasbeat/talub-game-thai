@@ -16,7 +16,6 @@
   ],
   "patch": {
     "filename": "Xenoblade_Chronicles_3D_Thai_v1.0.7.xdelta",
-    "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/xenoblade-chronicles-3d/v1.0.7/Xenoblade_Chronicles_3D_Thai_v1.0.7.xdelta",
     "size": 3949345,
     "sha256": "3f53cb3121f6c6ab84adf5bae51149feb9f3e0dd15eefd497e51c53359c73e9c"
   },
@@ -26,10 +25,11 @@
     "sha256": "fca525b64f71c55e19cab6ce0a28927039e5946c3410255a0b8ba09e917657e1"
   },
   "release_status": {
-    "module_status": "เนื้อเรื่องหลักบนร่างไบโอนิสและเมโคนิส+เควสต์เสริม 400+ เควสต์ 100%",
-    "whole_game_census": "30,420/30,420 บรรทัด = 100.00%",
+    "module_status": "เนื้อเรื่องหลัก บทสนทนา เควสต์ คัตซีน และเมนูที่ผู้เล่นเห็นครบ (ชื่อศัตรูบน HUD ต่อสู้ยังเป็นภาษาอังกฤษ)",
+    "whole_game_census": "42,953/68,133 เรคคอร์ด (ภาพรวมไบนารีทั้งเกม 63.04%)",
     "critical_freeze": 0,
-    "errors": 0
+    "errors": 0,
+    "census_source": "STATE.md / release notes (2026-11-05 audit)"
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {

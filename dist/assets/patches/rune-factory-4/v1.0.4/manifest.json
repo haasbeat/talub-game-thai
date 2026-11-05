@@ -16,7 +16,6 @@
   ],
   "patch": {
     "filename": "Rune_Factory_4_Thai_v1.0.4.xdelta",
-    "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/rune-factory-4/v1.0.4/Rune_Factory_4_Thai_v1.0.4.xdelta",
     "size": 4511681,
     "sha256": "0391ec57c0e5617503bb8486bb94f1690602bda72ff0f172247a3e2bed8c04b7"
   },
@@ -26,10 +25,11 @@
     "sha256": "09696baba9fb288943c0cfb0480363f23447133937323b78d134a36fd69bb0a3"
   },
   "release_status": {
-    "module_status": "เนื้อเรื่อง 3 องค์+ระบบเกษตรกรรม+ความสัมพันธ์ตัวละคร+เทศกาล 100%",
-    "whole_game_census": "36,120/36,120 บรรทัด = 100.00%",
+    "module_status": "เนื้อเรื่อง 3 องก์ + ระบบเกษตร + ความสัมพันธ์ตัวละคร + เทศกาล (ข้อความที่แปลได้ครบ)",
+    "whole_game_census": "99,755/107,220 ข้อความ (ภาพรวมในรอม 93.04%)",
     "critical_freeze": 0,
-    "errors": 0
+    "errors": 0,
+    "census_source": "STATE.md / release notes (2026-11-05 audit)"
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {

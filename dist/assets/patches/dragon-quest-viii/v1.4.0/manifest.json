@@ -16,7 +16,6 @@
   ],
   "patch": {
     "filename": "Dragon_Quest_VIII_Thai_v1.4.0.xdelta",
-    "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/dragon-quest-viii/v1.4.0/Dragon_Quest_VIII_Thai_v1.4.0.xdelta",
     "size": 2305262,
     "sha256": "331e727e542e8dbb137df8dca874db9dffda84380f5b219462462f9a78f8dbb8"
   },
@@ -26,10 +25,11 @@
     "sha256": "5421ef8b2d32c4769395eb654e8e7198bfc4651fc112b62c704472eddbe75491"
   },
   "release_status": {
-    "module_status": "เนื้อเรื่องหลัก+เนื้อหาเสริม Red & Morrie+ดันเจี้ยนลับ 100%",
-    "whole_game_census": "28,450/28,450 บรรทัด = 100.00%",
+    "module_status": "เนื้อเรื่องหลัก + Red & Morrie + Party Talk + เมนู (ป้ายชื่อผู้พูดในฉากอีเวนต์ยังเป็นภาษาอังกฤษ)",
+    "whole_game_census": "36,576/39,493 บรรทัด (ภาพรวมทั้งเกม 98.37%)",
     "critical_freeze": 0,
-    "errors": 0
+    "errors": 0,
+    "census_source": "STATE.md / release notes (2026-11-05 audit)"
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {

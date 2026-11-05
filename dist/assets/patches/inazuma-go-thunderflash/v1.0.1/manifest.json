@@ -16,7 +16,6 @@
   ],
   "patch": {
     "filename": "Inazuma_Eleven_GO_Chrono_Stones_Thunderflash_Thai_v1.0.1.xdelta",
-    "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/inazuma-go-thunderflash/v1.0.1/Inazuma_Eleven_GO_Chrono_Stones_Thunderflash_Thai_v1.0.1.xdelta",
     "size": 4086028,
     "sha256": "e71408bbbc80940974711c661464c4bcd84108261b85928e4f87e405f0e4324b"
   },
@@ -26,10 +25,11 @@
     "sha256": "bb3fc8fbadbcfb7420446f5ec4c178f5a5feb199ff01bae178f21694d2ebf6eb"
   },
   "release_status": {
-    "module_status": "เนื้อเรื่องสายทันเดอร์แฟลช+ท่าประสานเฉพาะเวอร์ชัน 100%",
-    "whole_game_census": "22,400/22,400 บรรทัด = 100.00%",
+    "module_status": "เนื้อเรื่องบทที่ 1–11 + ไซด์สตอรี่ + NPC 8 ยุค + ฐานข้อมูลครบ",
+    "whole_game_census": "48,662/48,890 ข้อความ (ภาพรวมทั้งเกม 99.53%)",
     "critical_freeze": 0,
-    "errors": 0
+    "errors": 0,
+    "census_source": "STATE.md / release notes (2026-11-05 audit)"
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {

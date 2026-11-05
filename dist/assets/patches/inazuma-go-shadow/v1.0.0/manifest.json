@@ -16,7 +16,6 @@
   ],
   "patch": {
     "filename": "Inazuma_Eleven_GO_Shadow_Thai_v1.0.0.xdelta",
-    "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/inazuma-go-shadow/v1.0.0/Inazuma_Eleven_GO_Shadow_Thai_v1.0.0.xdelta",
     "size": 8247357,
     "sha256": "6a272aab737bebedbc1742aa6d5cd59ece517f5bbbc73e0f9926e1c6ca41b3a5"
   },
@@ -27,9 +26,10 @@
   },
   "release_status": {
     "module_status": "เนื้อเรื่องสายชาโดว์+เควสต์ลับชู 100%",
-    "whole_game_census": "19,500/19,500 บรรทัด = 100.00%",
+    "whole_game_census": "23,699/23,699 ข้อความ (ภาพรวมทั้งเกม 100%)",
     "critical_freeze": 0,
-    "errors": 0
+    "errors": 0,
+    "census_source": "STATE.md / release notes (2026-11-05 audit)"
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {

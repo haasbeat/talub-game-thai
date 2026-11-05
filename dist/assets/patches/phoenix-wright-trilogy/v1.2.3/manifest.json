@@ -16,7 +16,6 @@
   ],
   "patch": {
     "filename": "Phoenix_Wright_Trilogy_Thai_v1.2.3_Decrypted.xdelta",
-    "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/phoenix-wright-trilogy/v1.2.3/Phoenix_Wright_Trilogy_Thai_v1.2.3_Decrypted.xdelta",
     "size": 12308597,
     "sha256": "5da06e2f3faf35f8b85623e581729d5e269568270786d7ef69adfd9c3f4caf27"
   },
@@ -27,9 +26,10 @@
   },
   "release_status": {
     "module_status": "คดีความทั้ง 3 ภาค (14 คดี)+การว่าความในชั้นศาล+สืบสวนภาคสนาม 100%",
-    "whole_game_census": "31,890/31,890 บรรทัด = 100.00%",
+    "whole_game_census": "11,888/11,888 เรคคอร์ด (ภาพรวมทั้งเกม 100%)",
     "critical_freeze": 0,
-    "errors": 0
+    "errors": 0,
+    "census_source": "STATE.md / release notes (2026-11-05 audit)"
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {

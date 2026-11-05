@@ -16,7 +16,6 @@
   ],
   "patch": {
     "filename": "Professor_Layton_Miracle_Mask_Thai_v1.3.2.xdelta",
-    "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/professor-layton-miracle-mask/v1.3.2/Professor_Layton_Miracle_Mask_Thai_v1.3.2.xdelta",
     "size": 1913164,
     "sha256": "d9f06a5bdaafb9026504c5f78a8de842a0bd741d84bdb00b3dc32d9048800f68"
   },
@@ -27,9 +26,10 @@
   },
   "release_status": {
     "module_status": "ปริศนาทั้งหมด 150 ข้อ+ปริศนารายวัน 365 ข้อ+เนื้อเรื่องปาฏิหาริย์แห่งหน้ากาก 100%",
-    "whole_game_census": "11,280/11,280 บรรทัด = 100.00%",
+    "whole_game_census": "12,992/12,992 เรคคอร์ด (ภาพรวมทั้งเกม 100%)",
     "critical_freeze": 0,
-    "errors": 0
+    "errors": 0,
+    "census_source": "STATE.md / release notes (2026-11-05 audit)"
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {

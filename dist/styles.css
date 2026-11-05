@@ -209,6 +209,12 @@ button, a, .drop-zone { -webkit-tap-highlight-color: transparent; }
 .sort-control { position: relative; display: flex; align-items: center; gap: 12px; min-width: 260px; padding: 7px 14px 7px 16px; color: var(--ink); background: #fff; border: 1px solid var(--line); border-radius: 999px; }
 .sort-control > .mono { flex: 0 0 auto; color: var(--muted); font-size: 9px; }
 .sort-control select { width: 100%; padding: 5px 24px 5px 0; color: var(--ink); background: transparent; border: 0; outline: none; appearance: none; font-size: 13px; }
+.catalog-controls { display: flex; align-items: center; gap: 10px; }
+.search-control { display: flex; align-items: center; gap: 12px; min-width: 300px; padding: 7px 16px; color: var(--ink); background: #fff; border: 1px solid var(--line); border-radius: 999px; }
+.search-control > .mono { flex: 0 0 auto; color: var(--muted); font-size: 9px; }
+.search-control input { width: 100%; padding: 5px 0; color: var(--ink); background: transparent; border: 0; outline: none; font-size: 13px; }
+.search-control:focus-within { border-color: var(--ink); }
+.detail-untranslated b { color: #fff; font-weight: 500; }
 .sort-control:focus-within { border-color: var(--ink); }
 .sort-arrow { position: absolute; right: 14px; pointer-events: none; color: var(--ink); }
 .game-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 32px 14px; }
@@ -458,6 +464,8 @@ button, a, .drop-zone { -webkit-tap-highlight-color: transparent; }
 }
 
 @media (max-width: 860px) {
+  .catalog-controls { flex-direction: column; align-items: stretch; width: 100%; }
+  .search-control { min-width: 0; }
   :root { --pad: 24px; }
   .desktop-nav { display: none; }
   .menu-toggle { display: block; }

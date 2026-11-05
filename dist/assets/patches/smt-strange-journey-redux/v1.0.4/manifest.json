@@ -16,7 +16,6 @@
   ],
   "patch": {
     "filename": "SMT_Strange_Journey_Redux_Thai_v1.0.4.xdelta",
-    "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/smt-strange-journey-redux/v1.0.4/SMT_Strange_Journey_Redux_Thai_v1.0.4.xdelta",
     "size": 35742033,
     "sha256": "b87326fe28aef5d7380521a2ffdaf2e7497524892f61a7903a35cba6d82077e9"
   },
@@ -26,10 +25,11 @@
     "sha256": "77eb1d62d42f59ee9f29a11d130ab871d52a7a33ad31c4144d13f3e3cbb36340"
   },
   "release_status": {
-    "module_status": "เซ็กเตอร์ A-H ครบทุกภาค+มิติ Womb of Grief+ฉากจบใหม่ 3 สาย 100%",
-    "whole_game_census": "22,800/22,800 บรรทัด = 100.00%",
+    "module_status": "เนื้อเรื่อง เซ็กเตอร์ทั้งหมด และ Womb of Grief ครบ (ชื่อเผ่าปีศาจคงภาษาอังกฤษ)",
+    "whole_game_census": "26,033/26,159 ข้อความ (ภาพรวมในรอม 99.52%)",
     "critical_freeze": 0,
-    "errors": 0
+    "errors": 0,
+    "census_source": "STATE.md / release notes (2026-11-05 audit)"
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {

@@ -16,7 +16,6 @@
   ],
   "patch": {
     "filename": "Ever_Oasis_Thai_v1.0.2.xdelta",
-    "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/ever-oasis/v1.0.2/Ever_Oasis_Thai_v1.0.2.xdelta",
     "size": 551559,
     "sha256": "a1fca9a54cd3269c1417b632ff54fe5f11caad8a8293a059d8b1e1b5e9eb768b"
   },
@@ -26,10 +25,11 @@
     "sha256": "ce0b5e9400613552b9b33cc38a3e797bce50cfc89a00a866778c525658375cc3"
   },
   "release_status": {
-    "module_status": "การสร้างโอเอซิส+ดันเจี้ยนทะเลทราย+เควสต์ผู้อยู่อาศัย 100%",
-    "whole_game_census": "13,100/13,100 บรรทัด = 100.00%",
+    "module_status": "เนื้อเรื่อง คัตซีน เควสต์ชาวเมือง บลูมบูธ และดันเจี้ยนครบ",
+    "whole_game_census": "8,508/8,515 เรคคอร์ด (ภาพรวมทั้งเกม 99.92%)",
     "critical_freeze": 0,
-    "errors": 0
+    "errors": 0,
+    "census_source": "STATE.md / release notes (2026-11-05 audit)"
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {

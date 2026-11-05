@@ -16,7 +16,6 @@
   ],
   "patch": {
     "filename": "Inazuma_Eleven_GO_Light_Thai_v1.1.0.xdelta",
-    "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/inazuma-go-light/v1.1.0/Inazuma_Eleven_GO_Light_Thai_v1.1.0.xdelta",
     "size": 8247425,
     "sha256": "2993607495819303188c2f2647f03fe3bc379d1703a10d7d5aad10adac02d4bf"
   },
@@ -26,10 +25,11 @@
     "sha256": "010c8ad10ee325051eaf1ef41bb34542b85137821c79293b7f34b1851014b63a"
   },
   "release_status": {
-    "module_status": "เนื้อเรื่องฟุตบอลฟรอนเทียร์ดับเบิลยูเอส+ระบบอวตาร 100%",
-    "whole_game_census": "19,500/19,500 บรรทัด = 100.00%",
+    "module_status": "เนื้อเรื่องสายไลท์ + ระบบอวตาร",
+    "whole_game_census": "ยังไม่มีผลสำมะโนในรอมที่ยืนยันได้ (รอตรวจ)",
     "critical_freeze": 0,
-    "errors": 0
+    "errors": 0,
+    "census_source": "STATE.md / release notes (2026-11-05 audit)"
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {

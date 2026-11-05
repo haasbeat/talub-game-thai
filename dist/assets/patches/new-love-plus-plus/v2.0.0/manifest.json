@@ -16,7 +16,6 @@
   ],
   "patch": {
     "filename": "New_Love_Plus_Plus_Thai_v2.0.0.xdelta",
-    "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/new-love-plus-plus/v2.0.0/New_Love_Plus_Plus_Thai_v2.0.0.xdelta",
     "size": 74640958,
     "sha256": "078428dbe998a0826e472aa0a3f3d590ff611fe25a7e66320f3e6f20203c2e3c"
   },
@@ -27,9 +26,10 @@
   },
   "release_status": {
     "module_status": "เนื้อเรื่องความสัมพันธ์ตัวละครสาวทั้งสามคน+โหมดท่องเที่ยว 100%",
-    "whole_game_census": "42,000/42,000 บรรทัด = 100.00%",
+    "whole_game_census": "สคริปต์ 577/577 ไฟล์ (164,110 ข้อความ) + ข้อความระบบ 17,114 (ภาพรวมทั้งเกม 100%)",
     "critical_freeze": 0,
-    "errors": 0
+    "errors": 0,
+    "census_source": "STATE.md / release notes (2026-11-05 audit)"
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {

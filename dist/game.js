@@ -327,7 +327,7 @@ const games = {
       sourceHash: 'a896e7596b0b5cc4eb3740dd566d32b75c0ff943129f55b67885dd95b9f703c3',
       outputHash: '04445c1c8ee0c95c55a5105db8597216de1ec55808c91e1586edbd96f9fe5fc1',
     },
-    manifest: './assets/patches/saga2/v1.0.1/manifest.json',
+    manifest: './assets/patches/saga2-hihou-densetsu/v1.0.1/manifest.json',
   },
   'tales-of-hearts': {
     index: 'NDS | 003 / 006', title: 'Tales of Hearts', platform: 'NDS', cover: './assets/covers/tales-of-hearts.jpg',
@@ -528,6 +528,15 @@ for (const item of (window.GAME_CATALOG || [])) {
     manifest: item.manifest,
   };
 
+  // Researched copy from tools/web_game_details.json (null fields keep the generic text).
+  if (item.details) {
+    const researched = Object.fromEntries(Object.entries(item.details).filter(([, value]) => value !== null && value !== undefined && value !== ''));
+    if (researched.description) catalogEntry.description = researched.description;
+    delete researched.description;
+    if (researched.features && !researched.features.length) delete researched.features;
+    catalogEntry.details = { ...catalogEntry.details, ...researched };
+  }
+
   if (games[item.slug]) {
     const handDetails = games[item.slug].details;
     games[item.slug] = {
@@ -537,6 +546,9 @@ for (const item of (window.GAME_CATALOG || [])) {
       details: handDetails ? {
         ...handDetails,
         edition: catalogEntry.details.edition,
+        // Coverage must always mirror the verified manifest (AGENTS.md rule 6).
+        coverage: item.wholeGameCensus,
+        coverageNote: `${item.moduleStatus} · สถานะนี้แยกจากผลการเล่นทดสอบบนอุปกรณ์จริง`,
         sourceName: item.sourceName,
         sourceHash: item.sourceHash,
         outputHash: item.outputHash,
@@ -614,6 +626,11 @@ document.querySelector('#detail-story').textContent = details.story;
 document.querySelector('#detail-localization').textContent = details.localization;
 document.querySelector('#detail-coverage').textContent = details.coverage;
 document.querySelector('#detail-coverage-note').textContent = details.coverageNote;
+const untranslatedEl = document.querySelector('#detail-untranslated');
+if (untranslatedEl && details.untranslated) {
+  untranslatedEl.querySelector('span').textContent = details.untranslated;
+  untranslatedEl.hidden = false;
+}
 document.querySelector('#detail-source-name').textContent = details.sourceName;
 document.querySelector('#detail-source-hash').textContent = details.sourceHash;
 document.querySelector('#detail-output-hash').textContent = details.outputHash;

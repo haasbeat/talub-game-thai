@@ -16,7 +16,6 @@
   ],
   "patch": {
     "filename": "Front_Mission_2089_Thai_v1.0.0.xdelta",
-    "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/front-mission-2089/v1.0.0/Front_Mission_2089_Thai_v1.0.0.xdelta",
     "size": 342904,
     "sha256": "828bb81ea78f082bf484d4601493576ba044f7656d46adf970ca144c37a81b21"
   },
@@ -26,10 +25,11 @@
     "sha256": "244ee092ec2093485d82fbcd5c736026e3c77b9ba1b9de99aa583b0623fee041"
   },
   "release_status": {
-    "module_status": "เนื้อเรื่องทหารรับจ้างบนเกาะฮัฟแมน+ระบบปรับแต่งแวนเซอร์ 100%",
-    "whole_game_census": "12,900/12,900 บรรทัด = 100.00%",
+    "module_status": "บทสนทนาเนื้อเรื่อง 6,111/6,111 บรรทัด + ไฟล์ข้อความ .msg 155/155 (เมนู/คำสั่งรบคงภาษาอังกฤษโดยตั้งใจ)",
+    "whole_game_census": "ยังไม่ครบทั้งเกม — ยังมีกราฟิกภาษาญี่ปุ่นบางส่วน (ยังไม่มีตัวเลขสำมะโนทั้งเกม)",
     "critical_freeze": 0,
-    "errors": 0
+    "errors": 0,
+    "census_source": "STATE.md / release notes (2026-11-05 audit)"
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {

@@ -60,7 +60,15 @@ const state = {
   platform: platformLabels[requestedPlatform] ? requestedPlatform : 'all',
   sort: ['default', 'newest', 'name-asc', 'name-desc'].includes(requestedSort) ? requestedSort : 'default',
   page: Math.max(1, Number.parseInt(params.get('page') || '1', 10) || 1),
+  query: (params.get('q') || '').trim(),
 };
+
+// Search across English title, Thai title, original title, slug and platform.
+const normalize = (text) => String(text || '').toLowerCase().normalize('NFKC').replace(/[\s:!?'’.,&\-–—()]+/g, '');
+const searchIndex = new Map(catalog.map((game) => [game.slug, normalize([
+  game.title, game.slug, game.platformLabel, game.details?.thaiTitle, game.details?.originalTitle, game.details?.japaneseTitle,
+].join('|'))]));
+const matchesQuery = (game) => !state.query || searchIndex.get(game.slug).includes(normalize(state.query));
 
 const countForPlatform = (platform) => platform === 'all'
   ? catalog.length
@@ -97,9 +105,9 @@ const columnsForViewport = () => {
 const pageSize = () => columnsForViewport() * 5;
 
 const sortedGames = () => {
-  const filtered = state.platform === 'all'
+  const filtered = (state.platform === 'all'
     ? [...catalog]
-    : catalog.filter((game) => game.platform === state.platform);
+    : catalog.filter((game) => game.platform === state.platform)).filter(matchesQuery);
 
   return filtered.sort((left, right) => {
     if (state.sort === 'newest') return right.order - left.order;
@@ -182,6 +190,7 @@ const updateUrl = () => {
   state.platform === 'all' ? url.searchParams.delete('platform') : url.searchParams.set('platform', state.platform);
   state.sort === 'default' ? url.searchParams.delete('sort') : url.searchParams.set('sort', state.sort);
   state.page === 1 ? url.searchParams.delete('page') : url.searchParams.set('page', String(state.page));
+  state.query ? url.searchParams.set('q', state.query) : url.searchParams.delete('q');
   url.hash = 'games';
   window.history.replaceState({}, '', url);
 };
@@ -241,6 +250,12 @@ function renderCatalog(shouldUpdateUrl = false, shouldScroll = false) {
 
   gameGrid.replaceChildren(...visible.map(createGameCard));
   platformEmpty.hidden = games.length !== 0;
+  if (games.length === 0) {
+    platformEmpty.querySelector('h3').innerHTML = state.query ? 'ไม่พบเกม<br />ที่ตรงกับคำค้นหา' : 'กำลังเตรียมเกม<br />สำหรับเครื่องนี้';
+    platformEmpty.querySelector('p').textContent = state.query
+      ? `ไม่พบ "${state.query}" ${state.platform === 'all' ? '' : `ในหมวด ${platformLabels[state.platform]} `}ลองค้นด้วยชื่ออังกฤษ ชื่อไทย หรือเลือก "รวมทั้งหมด"`
+      : 'เมื่อมีผลงานพร้อม รายการเกมและหน้าสำหรับแพตช์จะปรากฏในหมวดนี้';
+  }
   platformLabel.textContent = platformLabels[state.platform];
   platformCount.textContent = games.length
     ? `${games.length} เกม · หน้า ${state.page}/${totalPages}`
@@ -265,6 +280,20 @@ gameSort.addEventListener('change', () => {
   state.page = 1;
   renderCatalog(true);
 });
+
+const gameSearch = document.querySelector('#game-search');
+if (gameSearch) {
+  gameSearch.value = state.query;
+  let searchTimer = 0;
+  gameSearch.addEventListener('input', () => {
+    window.clearTimeout(searchTimer);
+    searchTimer = window.setTimeout(() => {
+      state.query = gameSearch.value.trim();
+      state.page = 1;
+      renderCatalog(true);
+    }, 150);
+  });
+}
 
 let resizeTimer = 0;
 let previousColumns = columnsForViewport();
