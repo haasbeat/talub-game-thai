@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "game_slug": "monster-hunter-stories",
+  "game_title": "Monster Hunter Stories",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "AAHE",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Monster Hunter Stories (USA).3ds",
+      "size": 2147483648,
+      "sha256": "1bd136e982541d9037800cf62d9af534aef2149633e3bff0026386ce9ca7543f"
+    }
+  ],
+  "patch": {
+    "filename": "Monster_Hunter_Stories_USA_TH_v1.0.0.xdelta",
+    "size": 3799137,
+    "sha256": "796467b8926bc7a35e23e3a97ee148ecf0d555471aa9a0c654ba765eda446d8a"
+  },
+  "output": {
+    "filename": "Monster Hunter Stories (USA) Thai v1.0.0.3ds",
+    "size": 2147483648,
+    "sha256": "b073040f0e8e8c96bde4dedced0ea56b482bbe6ff6ed4fc277911b46b06c7b73"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลักทุกบท + เมนูระบบ + เควสต์ + สารานุกรม + ชาวเมือง 100%",
+    "whole_game_census": "25,908/26,002 รายการ (ภาพรวมไบนารีทั้งเกม 99.64%)",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-05T15:56:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean source (decrypted NCSD) located by SHA-256 and patched with the site's vendored xdelta3 wasm engine; output matches games/3DS/Monster Hunter Stories (USA)/release/v1.0.0/release_manifest.json.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}
