@@ -850,17 +850,23 @@ const applyVerifiedPatch = async () => {
 
   try {
     setProgress('กำลังดาวน์โหลดและตรวจไฟล์ patch', 7);
-    let patchUrl = manifest.patch.url || new URL(manifest.patch.filename, new URL(game.manifest, window.location.href)).href;
-    let response;
-    try {
-      response = await fetch(patchUrl, { cache: 'no-store' });
-    } catch (e) {
+    // Prefer the same-origin copy shipped with the site (GitHub Pages); the
+    // external host is only a fallback because it may block cross-origin reads.
+    const localPatchUrl = new URL(manifest.patch.filename, new URL(game.manifest, window.location.href)).href;
+    const candidates = [localPatchUrl, manifest.patch.url].filter((url, i, all) => url && all.indexOf(url) === i);
+    let response = null;
+    let lastError = 'Network error';
+    for (const url of candidates) {
+      try {
+        response = await fetch(url, { cache: 'no-store' });
+        if (response.ok) break;
+        lastError = `HTTP ${response.status}`;
+      } catch (e) {
+        lastError = 'Network error';
+      }
       response = null;
     }
-    if ((!response || !response.ok) && manifest.patch.url && patchUrl !== manifest.patch.url) {
-      response = await fetch(manifest.patch.url, { cache: 'no-store' });
-    }
-    if (!response || !response.ok) throw new Error(`ดาวน์โหลด patch ไม่สำเร็จ (${response?.status || 'Network error'})`);
+    if (!response) throw new Error(`ดาวน์โหลด patch ไม่สำเร็จ (${lastError}) กรุณาลองใหม่หรือรีเฟรชหน้าเว็บ`);
     const patchBlob = await response.blob();
     if (patchBlob.size !== manifest.patch.size) throw new Error('ขนาดไฟล์ patch ไม่ตรงกับ manifest');
     const patchHash = await sha256Blob(patchBlob, (processed, total) => {
