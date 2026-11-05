@@ -146,6 +146,17 @@ const createGameCard = (game, index) => {
   meta.querySelectorAll('span')[0].textContent = game.version;
   meta.querySelectorAll('span')[1].textContent = game.platformLabel;
 
+  if (window.PatchStats) {
+    const stat = document.createElement('p');
+    stat.className = 'game-patch-count mono';
+    stat.textContent = 'PATCHED —';
+    meta.append(stat);
+    window.PatchStats.get(game.slug).then((value) => {
+      if (value === null) { stat.remove(); return; }
+      stat.textContent = `แพตช์แล้ว ${window.PatchStats.format(value)} ครั้ง`;
+    });
+  }
+
   const openGame = () => {
     window.location.href = `./game.html?game=${encodeURIComponent(game.slug)}`;
   };

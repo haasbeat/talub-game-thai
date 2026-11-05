@@ -583,6 +583,11 @@ if (breadcrumb && platformKey) {
   breadcrumb.href = `./index.html?platform=${encodeURIComponent(platformKey)}#games`;
 }
 document.querySelector('#detail-version').textContent = game.version;
+const patchCountEl = document.querySelector('#detail-patch-count');
+const renderPatchCount = (value) => {
+  if (patchCountEl && window.PatchStats) patchCountEl.textContent = value === null ? '—' : `${window.PatchStats.format(value)} ครั้ง`;
+};
+if (window.PatchStats) window.PatchStats.get(slug).then(renderPatchCount);
 document.querySelector('#detail-format').textContent = game.format;
 document.querySelector('#detail-status').textContent = game.status;
 document.querySelector('#workspace-game').textContent = game.title;
@@ -922,6 +927,8 @@ const applyVerifiedPatch = async () => {
     fileHash.textContent = `${outputHash.slice(0, 16)}… — ผลลัพธ์ถูกต้อง`;
     setProgress('แพตช์และตรวจผลลัพธ์สำเร็จ', 100);
     showToast(`แพตช์สำเร็จและ SHA-256 ตรงกับ release ${manifest.patch_version}`);
+    // Count only verified successes; a stats failure must never affect the patch result.
+    if (window.PatchStats) window.PatchStats.hit(slug).then((value) => { if (value !== null) renderPatchCount(value); });
   } catch (error) {
     patchButton.disabled = false;
     patchButton.querySelector('span').textContent = 'ลองแพตช์อีกครั้ง';
