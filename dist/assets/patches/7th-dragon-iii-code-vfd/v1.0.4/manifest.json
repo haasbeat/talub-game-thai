@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "game_slug": "7th-dragon-iii-code-vfd",
+  "game_title": "7th Dragon III Code: VFD",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "BD7E",
+  "patch_version": "v1.0.4",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "7th Dragon III Code - VFD (USA).3ds",
+      "size": 2147483648,
+      "sha256": "0afb4dd32c861c2137277f5d40930c318c84a2fe0af9f00478414943131a4d3e"
+    }
+  ],
+  "patch": {
+    "filename": "7th_Dragon_III_Code_VFD_USA_Thai_v1.04.xdelta",
+    "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/7th-dragon-iii-code-vfd/v1.0.4/7th_Dragon_III_Code_VFD_USA_Thai_v1.04.xdelta",
+    "size": 1655680,
+    "sha256": "e5b97d6d3c96860e81fe2dcc22061d91958f48d65977c7f5bf6b887ade8c8573"
+  },
+  "output": {
+    "filename": "7th Dragon III Code - VFD (USA) Thai.3ds",
+    "size": 2147483648,
+    "sha256": "8e4684620b3eaf14088ade337f6a61a6b437f8e177da2ece943d4f459657ce22"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก+เควสต์ย่อย+ระบบต่อสู้+ไอเทม+เมนู 100%",
+    "whole_game_census": "สำรวจทั้งเกม In-ROM Census 100.0%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-05T10:15:00+07:00",
+    "method": "bit_identical_clean_source_roundtrip",
+    "patcher_test_passed": true,
+    "patch_sha256_verified": true,
+    "source_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}

@@ -271,7 +271,7 @@ const games = {
   },
   'dragon-quest-vii-isan': {
     index: '3DS | 009 / 011', title: 'Dragon Quest VII: Isan Edition', platform: '3DS', cover: './assets/covers/dragon-quest-vii-isan.jpg',
-    version: 'v1.0.0', format: 'xdelta3', status: 'พร้อมติดตั้งบนเว็บ', accept: '.3ds', fileTypes: 'CLEAN USA 3DS · 2 GB',
+    version: 'v1.6.0', format: 'xdelta3', status: 'พร้อมติดตั้งบนเว็บ', accept: '.3ds', fileTypes: 'CLEAN USA 3DS · 2 GB',
     description: 'หน้ารายละเอียดฉบับภาษาอีสานของ Dragon Quest VII และระบบแพตช์ที่แยกเฉพาะเวอร์ชันนี้',
     details: {
       thaiTitle: 'ดราก้อนเควสต์ VII เศษเสี้ยวแห่งอดีต (ฉบับภาษาอีสาน)',
@@ -281,7 +281,7 @@ const games = {
       release: '16 กันยายน 2016',
       gameCode: 'USA · AD7E',
       genre: 'Role-playing game',
-      edition: 'ตลับเกมภาษาไทย v1.0.0 (Isan)',
+      edition: 'ตลับเกมภาษาไทย v1.6.0 (Isan)',
       overview: 'มหากาพย์กอบกู้แผ่นดินที่สาบสูญ ถ่ายทอดด้วยสำนวนภาษาอีสานแท้ม่วนซื่นตลอดการเดินทาง',
       story: 'ลูกชายชาวประมงเกาะเอสตาร์ดออกไขปริศนาแผ่นศิลาโบราณ นำพาแผ่นดินในอดีตที่จมดิ่งให้กลับคืนสู่โลกปัจจุบัน',
       localization: 'แปลบทพูดสำเนียงอีสานแท้ ระบบแผ่นศิลา ระบบอาชีพดั้งเดิม และปาร์ตี้ทอล์กครบ 100%',
@@ -291,13 +291,13 @@ const games = {
         'บทสนทนาสำนวนอีสานแท้ 32,150 ระเบียน',
         'มุกตลกและวัฒนธรรมอีสานสอดแทรกอย่างลงตัว',
         'ฟอนต์ไทยอ่านง่ายสบายตาบนหน้าจอ 3DS',
-        'ลายน้ำ ตลับเกมภาษาไทย v1.0.0 ภายในเกม',
+        'ลายน้ำ ตลับเกมภาษาไทย v1.6.0 ภายในเกม',
       ],
       sourceName: 'Dragon Quest VII - Fragments of the Forgotten Past (USA).3ds · 2,147,483,648 bytes',
       sourceHash: 'e1ed3a5f31822102622d057b70d22dda51f076a7944b6aceb9fc00897873b6bd',
       outputHash: '8ba24586a3306fb7b0fc742d44f360c433afb92d0e72cbd4ece608a1d82c0b96',
     },
-    manifest: './assets/patches/dragon-quest-vii-isan/v1.0.0/manifest.json',
+    manifest: './assets/patches/dragon-quest-vii-isan/v1.6.0/manifest.json',
   },
   'saga2-hihou-densetsu': {
     index: 'NDS | 002 / 006', title: 'SaGa 2: Hihou Densetsu - Goddess of Destiny', platform: 'NDS', cover: './assets/covers/saga2-thai-v1.0.1.jpg',
