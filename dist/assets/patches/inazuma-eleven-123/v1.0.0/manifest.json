@@ -18,7 +18,29 @@
     "filename": "Inazuma_Eleven_123_Thai_v1.0.0.xdelta",
     "url": "https://talub-game-thai-patches.pastelbeaver.chatgpt.site/patches/inazuma-eleven-123/v1.0.0/Inazuma_Eleven_123_Thai_v1.0.0.xdelta",
     "size": 296176592,
-    "sha256": "9c7487ff8d9dd37e18cc5e78585150bb07318dd19a5e11398697f0f49be8ec5b"
+    "sha256": "9c7487ff8d9dd37e18cc5e78585150bb07318dd19a5e11398697f0f49be8ec5b",
+    "parts": [
+      {
+        "filename": "Inazuma_Eleven_123_Thai_v1.0.0.xdelta.part01",
+        "size": 94371840,
+        "sha256": "1cfb8c8a5204e4a474e7e89d8d3c8e6abc504f6862742a99f19c9d8b76de114c"
+      },
+      {
+        "filename": "Inazuma_Eleven_123_Thai_v1.0.0.xdelta.part02",
+        "size": 94371840,
+        "sha256": "d12e1b56e56551852062d5d0985eea31321263aa3f9f3bc4ef7d8ea48780fe88"
+      },
+      {
+        "filename": "Inazuma_Eleven_123_Thai_v1.0.0.xdelta.part03",
+        "size": 94371840,
+        "sha256": "7a721db22e467f8c43177682936dee050758d65a15ace832561ccc704aa46f19"
+      },
+      {
+        "filename": "Inazuma_Eleven_123_Thai_v1.0.0.xdelta.part04",
+        "size": 13061072,
+        "sha256": "9a27fcd99c333cf050e6852363d314344ecef15702a33983a06f9e9f1a22850a"
+      }
+    ]
   },
   "output": {
     "filename": "ie123_thai_v1.0.0.3ds",

@@ -855,24 +855,40 @@ const applyVerifiedPatch = async () => {
 
   try {
     setProgress('กำลังดาวน์โหลดและตรวจไฟล์ patch', 7);
-    // Prefer the same-origin copy shipped with the site (GitHub Pages); the
-    // external host is only a fallback because it may block cross-origin reads.
-    const localPatchUrl = new URL(manifest.patch.filename, new URL(game.manifest, window.location.href)).href;
-    const candidates = [localPatchUrl, manifest.patch.url].filter((url, i, all) => url && all.indexOf(url) === i);
-    let response = null;
-    let lastError = 'Network error';
-    for (const url of candidates) {
-      try {
-        response = await fetch(url, { cache: 'no-store' });
-        if (response.ok) break;
-        lastError = `HTTP ${response.status}`;
-      } catch (e) {
-        lastError = 'Network error';
+    const manifestBase = new URL(game.manifest, window.location.href);
+    const fetchFirstOk = async (urls) => {
+      let lastError = 'Network error';
+      for (const url of urls.filter((u, i, all) => u && all.indexOf(u) === i)) {
+        try {
+          const res = await fetch(url, { cache: 'no-store' });
+          if (res.ok) return res;
+          lastError = `HTTP ${res.status}`;
+        } catch (e) {
+          lastError = 'Network error';
+        }
       }
-      response = null;
+      throw new Error(`ดาวน์โหลด patch ไม่สำเร็จ (${lastError}) กรุณาลองใหม่หรือรีเฟรชหน้าเว็บ`);
+    };
+
+    let patchBlob;
+    if (Array.isArray(manifest.patch.parts) && manifest.patch.parts.length) {
+      // Patches over GitHub's 100 MB file limit are shipped as same-origin parts.
+      const blobs = [];
+      const parts = manifest.patch.parts;
+      for (let i = 0; i < parts.length; i += 1) {
+        setProgress(`กำลังดาวน์โหลด patch ส่วนที่ ${i + 1}/${parts.length}`, 2 + (i / parts.length) * 5);
+        const res = await fetchFirstOk([new URL(parts[i].filename, manifestBase).href]);
+        const blob = await res.blob();
+        if (blob.size !== parts[i].size) throw new Error(`ขนาด patch ส่วนที่ ${i + 1} ไม่ตรงกับ manifest`);
+        blobs.push(blob);
+      }
+      patchBlob = new Blob(blobs, { type: 'application/octet-stream' });
+    } else {
+      // Prefer the same-origin copy shipped with the site (GitHub Pages); the
+      // external host is only a fallback because it may block cross-origin reads.
+      const response = await fetchFirstOk([new URL(manifest.patch.filename, manifestBase).href, manifest.patch.url]);
+      patchBlob = await response.blob();
     }
-    if (!response) throw new Error(`ดาวน์โหลด patch ไม่สำเร็จ (${lastError}) กรุณาลองใหม่หรือรีเฟรชหน้าเว็บ`);
-    const patchBlob = await response.blob();
     if (patchBlob.size !== manifest.patch.size) throw new Error('ขนาดไฟล์ patch ไม่ตรงกับ manifest');
     const patchHash = await sha256Blob(patchBlob, (processed, total) => {
       setProgress('กำลังตรวจ SHA-256 ของไฟล์ patch', 7 + (processed / total) * 3);
