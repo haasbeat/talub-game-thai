@@ -23,7 +23,7 @@
   "output": {
     "filename": "Xenoblade_Chronicles_3D_Thai_v1.0.7.3ds",
     "size": 4294967296,
-    "sha256": "9045761a298be6be9a3b980cffb368731d102eecddaa4e3ff366dcf776f8e404"
+    "sha256": "fca525b64f71c55e19cab6ce0a28927039e5946c3410255a0b8ba09e917657e1"
   },
   "release_status": {
     "module_status": "เนื้อเรื่องหลักบนร่างไบโอนิสและเมโคนิส+เควสต์เสริม 400+ เควสต์ 100%",
@@ -33,9 +33,12 @@
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {
-    "verified_at": "2026-11-04T22:40:00+07:00",
-    "method": "owner_reported_xdelta_patcher_test",
-    "patcher_test_passed": true,
-    "patch_sha256_verified": true
+    "verified_at": "2026-11-05T15:00:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean source located by SHA-256 and patched with the site's vendored xdelta3 wasm engine; output matches release checksums.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
   }
 }

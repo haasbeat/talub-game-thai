@@ -11,7 +11,7 @@
     {
       "filename": "Inazuma Eleven GO - Chrono Stones - Thunderflash (Europe) (En,Fr,De,Es,It).3ds",
       "size": 4294967296,
-      "sha256": "b2256cb7980e15ea39485bbd1f945625bf21bb3bbbe8ca575d5a9d18ce528859"
+      "sha256": "cc537be70566e328f90d64ea6eae1ba82a65ab39c0174d25e82ed6f234cd88b7"
     }
   ],
   "patch": {
@@ -23,7 +23,7 @@
   "output": {
     "filename": "Inazuma_Eleven_GO_Chrono_Stones_Thunderflash_Thai_v1.0.1.3ds",
     "size": 4294967296,
-    "sha256": "133d5964f7b60e6bb6056345ecb549303530e1eb84ef0c9b68fa70db2b1b3699"
+    "sha256": "bb3fc8fbadbcfb7420446f5ec4c178f5a5feb199ff01bae178f21694d2ebf6eb"
   },
   "release_status": {
     "module_status": "เนื้อเรื่องสายทันเดอร์แฟลช+ท่าประสานเฉพาะเวอร์ชัน 100%",
@@ -33,9 +33,12 @@
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {
-    "verified_at": "2026-11-04T22:40:00+07:00",
-    "method": "owner_reported_xdelta_patcher_test",
-    "patcher_test_passed": true,
-    "patch_sha256_verified": true
+    "verified_at": "2026-11-05T15:00:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean source located by SHA-256 and patched with the site's vendored xdelta3 wasm engine; output matches release checksums.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
   }
 }

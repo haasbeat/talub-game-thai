@@ -9,9 +9,9 @@
   "engine": "xdelta3",
   "accepted_sources": [
     {
-      "filename": "Rune Factory 4 (USA).3ds",
+      "filename": "Rune Factory 4 (USA) Decrypted.3ds",
       "size": 2147483648,
-      "sha256": "657b0185966dfa04c5fe48a58f4c1c9c719ca33cb535304aeb80824b6f12c1d3"
+      "sha256": "709bf7a49c7abd711792543fb7945863493d74d2c23db0f127aef8b7913e8d62"
     }
   ],
   "patch": {
@@ -22,8 +22,8 @@
   },
   "output": {
     "filename": "Rune_Factory_4_Thai_v1.0.4.3ds",
-    "size": 2147483648,
-    "sha256": "61b5853b0e3efeb13e00ef72bbdfa3ea57c91ad96c141ce757ea3e1beee7ce04"
+    "size": 1443942400,
+    "sha256": "09696baba9fb288943c0cfb0480363f23447133937323b78d134a36fd69bb0a3"
   },
   "release_status": {
     "module_status": "เนื้อเรื่อง 3 องค์+ระบบเกษตรกรรม+ความสัมพันธ์ตัวละคร+เทศกาล 100%",
@@ -33,9 +33,12 @@
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {
-    "verified_at": "2026-11-04T22:40:00+07:00",
-    "method": "owner_reported_xdelta_patcher_test",
-    "patcher_test_passed": true,
-    "patch_sha256_verified": true
+    "verified_at": "2026-11-05T15:00:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean source located by SHA-256 and patched with the site's vendored xdelta3 wasm engine; output matches release checksums.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
   }
 }

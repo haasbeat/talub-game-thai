@@ -9,9 +9,9 @@
   "engine": "xdelta3",
   "accepted_sources": [
     {
-      "filename": "New Love Plus+ (Japan) Decrypted.3ds",
+      "filename": "New Love Plus+ (Japan).3ds",
       "size": 2147483648,
-      "sha256": "90b841a2712ee689b25a298db3945c71d604b1236f561ee5d9c79fa2c4b8b6aa"
+      "sha256": "a63c66785d6eb84251d8de24a958503459b1007d865c271809f98122caa85cf2"
     }
   ],
   "patch": {
@@ -23,7 +23,7 @@
   "output": {
     "filename": "New_Love_Plus_Plus_Thai_v2.0.0.3ds",
     "size": 2147483648,
-    "sha256": "f8c057193bd3540b6e3f4214f479d20c3260907aeb7e8ef6e6df6c944eb3a152"
+    "sha256": "62825e0aeb01dbfa624d06002e67cd5965b613cbc0fe506c1ee07b80b85fb9b8"
   },
   "release_status": {
     "module_status": "เนื้อเรื่องความสัมพันธ์ตัวละครสาวทั้งสามคน+โหมดท่องเที่ยว 100%",
@@ -33,9 +33,12 @@
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {
-    "verified_at": "2026-11-04T22:40:00+07:00",
-    "method": "owner_reported_xdelta_patcher_test",
-    "patcher_test_passed": true,
-    "patch_sha256_verified": true
+    "verified_at": "2026-11-05T15:00:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean source located by SHA-256 and patched with the site's vendored xdelta3 wasm engine; output matches release checksums.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
   }
 }

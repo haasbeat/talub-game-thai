@@ -11,7 +11,7 @@
     {
       "filename": "Lost Heroes (Japan).3ds",
       "size": 1073741824,
-      "sha256": "85ef35bcfc6b541bb876ceb264ae499d10eefd6ec37db1853ba5fa59b1ae3164"
+      "sha256": "5a603b88b0f0ea34548d3e78c27af004efe615527dea16d1936e62b80f3b90ea"
     }
   ],
   "patch": {
@@ -23,7 +23,7 @@
   "output": {
     "filename": "Lost_Heroes_Thai_v1.0.0.3ds",
     "size": 1073741824,
-    "sha256": "a2637eb8749a2157cb71a99f1fa447608149ca93be260a9275e7a9b0c518cb8e"
+    "sha256": "422494f358b069d28fbe024c451ee093affb921dc21ddb57985338de58984996"
   },
   "release_status": {
     "module_status": "เนื้อเรื่องรวมดารากันดั้ม คาเมนไรเดอร์ อุลตร้าแมน+ดันเจี้ยนคิวบ์ 100%",
@@ -33,9 +33,12 @@
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {
-    "verified_at": "2026-11-04T22:40:00+07:00",
-    "method": "owner_reported_xdelta_patcher_test",
-    "patcher_test_passed": true,
-    "patch_sha256_verified": true
+    "verified_at": "2026-11-05T15:00:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean source located by SHA-256 and patched with the site's vendored xdelta3 wasm engine; output matches release checksums.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
   }
 }

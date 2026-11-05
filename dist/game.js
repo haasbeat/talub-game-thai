@@ -529,10 +529,18 @@ for (const item of (window.GAME_CATALOG || [])) {
   };
 
   if (games[item.slug]) {
+    const handDetails = games[item.slug].details;
     games[item.slug] = {
       ...games[item.slug],
       ...catalogEntry,
-      details: games[item.slug].details || catalogEntry.details,
+      // Keep hand-written story text, but release identity always comes from the manifest.
+      details: handDetails ? {
+        ...handDetails,
+        edition: catalogEntry.details.edition,
+        sourceName: item.sourceName,
+        sourceHash: item.sourceHash,
+        outputHash: item.outputHash,
+      } : catalogEntry.details,
     };
   } else {
     games[item.slug] = catalogEntry;

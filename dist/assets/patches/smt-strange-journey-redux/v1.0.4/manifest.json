@@ -9,9 +9,9 @@
   "engine": "xdelta3",
   "accepted_sources": [
     {
-      "filename": "Shin Megami Tensei - Strange Journey Redux (USA) Decrypted.3ds",
-      "size": 1073741824,
-      "sha256": "d7ad24bb301e7492cffb462c16f3938b816efae812e967aebffaaec1215b2e3f"
+      "filename": "Shin Megami Tensei - Strange Journey Redux (USA).3ds",
+      "size": 2147483648,
+      "sha256": "de112897602339de5ac6a13029c5414e153e48797f156cf006a8003121df53f8"
     }
   ],
   "patch": {
@@ -22,8 +22,8 @@
   },
   "output": {
     "filename": "SMT_Strange_Journey_Redux_Thai_v1.0.4.3ds",
-    "size": 1073741824,
-    "sha256": "90f0c05973da24a737f5b3fc8d68fe5dc5f235aa5722fa22ca384910228e932b"
+    "size": 2147483648,
+    "sha256": "77eb1d62d42f59ee9f29a11d130ab871d52a7a33ad31c4144d13f3e3cbb36340"
   },
   "release_status": {
     "module_status": "เซ็กเตอร์ A-H ครบทุกภาค+มิติ Womb of Grief+ฉากจบใหม่ 3 สาย 100%",
@@ -33,9 +33,12 @@
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {
-    "verified_at": "2026-11-04T22:40:00+07:00",
-    "method": "owner_reported_xdelta_patcher_test",
-    "patcher_test_passed": true,
-    "patch_sha256_verified": true
+    "verified_at": "2026-11-05T15:00:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean source located by SHA-256 and patched with the site's vendored xdelta3 wasm engine; output matches release checksums.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
   }
 }

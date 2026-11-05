@@ -9,9 +9,9 @@
   "engine": "xdelta3",
   "accepted_sources": [
     {
-      "filename": "Ever Oasis (USA) Decrypted.3ds",
+      "filename": "Ever Oasis (USA) (En,Fr,Es).3ds",
       "size": 1073741824,
-      "sha256": "778a6ff60f1b29a25b3641b590e8a8ff8782bb525413ad7ff30198c253457a15"
+      "sha256": "704a090ff6546a37397a85b2388bff4a98beceb469304d0a68ef83593ac98fdf"
     }
   ],
   "patch": {
@@ -23,7 +23,7 @@
   "output": {
     "filename": "Ever_Oasis_Thai_v1.0.2.3ds",
     "size": 1073741824,
-    "sha256": "e96c567845318dbcf2ba5e098a58e5e7ec45b4104044991206103ff255b991ab"
+    "sha256": "ce0b5e9400613552b9b33cc38a3e797bce50cfc89a00a866778c525658375cc3"
   },
   "release_status": {
     "module_status": "การสร้างโอเอซิส+ดันเจี้ยนทะเลทราย+เควสต์ผู้อยู่อาศัย 100%",
@@ -33,9 +33,12 @@
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {
-    "verified_at": "2026-11-04T22:40:00+07:00",
-    "method": "owner_reported_xdelta_patcher_test",
-    "patcher_test_passed": true,
-    "patch_sha256_verified": true
+    "verified_at": "2026-11-05T15:00:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean source located by SHA-256 and patched with the site's vendored xdelta3 wasm engine; output matches release checksums.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
   }
 }

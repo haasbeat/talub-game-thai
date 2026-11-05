@@ -10,8 +10,8 @@
   "accepted_sources": [
     {
       "filename": "Mini Yonku Let's & Go!! - Power WGP 2 (Japan).sfc",
-      "size": 4194304,
-      "sha256": "bca540059e7cb281896a25b196886e0c65ef451ec04192b0c410313cb853e5e4"
+      "size": 2097152,
+      "sha256": "3a4d8c178b85f75e26193a3c31e88b2a545cc9223ca93cb463e9abb69fd24f2b"
     }
   ],
   "patch": {
@@ -23,7 +23,7 @@
   "output": {
     "filename": "Mini_Yonku_Lets_and_Go_WGP2_Thai_v1.3.15.sfc",
     "size": 4194304,
-    "sha256": "3f1906eb43e1208a54d79c09cfa3e9e1cb5507ea911e3b6d080fa13824f114c0"
+    "sha256": "aa666f575a3a70837f7a044b5f1d24c4cabc268f811c0e526d81a614798b3178"
   },
   "release_status": {
     "module_status": "การแข่งขันชิงแชมป์โลกเวิลด์กรังด์ปรีซ์ 2+ทีมชาติต่างๆ 100%",
@@ -31,5 +31,14 @@
     "critical_freeze": 0,
     "errors": 0
   },
-  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-05T15:00:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean source located by SHA-256 and patched with the site's vendored xdelta3 wasm engine; output matches release checksums.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
 }

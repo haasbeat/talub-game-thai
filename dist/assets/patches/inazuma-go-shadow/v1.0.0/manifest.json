@@ -9,9 +9,9 @@
   "engine": "xdelta3",
   "accepted_sources": [
     {
-      "filename": "Inazuma Eleven GO - Shadow (Europe) (En,Fr,De,Es,It).3ds",
+      "filename": "Inazuma Eleven Go - Shadow (Europe) (En,Fr,De,Es,It).3ds",
       "size": 4294967296,
-      "sha256": "b2123896504a43b185b37651a5c602052445e998a44d70ef24b2f29b4fa4cb10"
+      "sha256": "a26119e9c7e5a9e2cdbcea3bb091b190cc2e037b29ba19f8127a695de6cb42ff"
     }
   ],
   "patch": {
@@ -23,7 +23,7 @@
   "output": {
     "filename": "Inazuma_Eleven_GO_Shadow_Thai_v1.0.0.3ds",
     "size": 4294967296,
-    "sha256": "133d5964f7b60e6bb6056345ecb549303530e1eb84ef0c9b68fa70db2b1b3699"
+    "sha256": "1906ed6a8f3f2f35fe23daa9dc4404b9e0c7a970ab7b5267255036d87835b06f"
   },
   "release_status": {
     "module_status": "เนื้อเรื่องสายชาโดว์+เควสต์ลับชู 100%",
@@ -33,9 +33,12 @@
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {
-    "verified_at": "2026-11-04T22:40:00+07:00",
-    "method": "owner_reported_xdelta_patcher_test",
-    "patcher_test_passed": true,
-    "patch_sha256_verified": true
+    "verified_at": "2026-11-05T15:00:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean source located by SHA-256 and patched with the site's vendored xdelta3 wasm engine; output matches release checksums.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
   }
 }

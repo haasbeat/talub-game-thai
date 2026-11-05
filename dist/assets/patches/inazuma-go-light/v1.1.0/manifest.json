@@ -9,9 +9,9 @@
   "engine": "xdelta3",
   "accepted_sources": [
     {
-      "filename": "Inazuma Eleven GO - Light (Europe) (En,Fr,De,Es,It).3ds",
+      "filename": "Inazuma Eleven Go - Light (Europe) (En,Fr,De,Es,It).3ds",
       "size": 4294967296,
-      "sha256": "80795c643bfa99b49bdf546ec007ce4590209e99c8f2ba7c617eb04dc4400e93"
+      "sha256": "fabfd98e5e8b994ebaa0fb8462acd9e706840375c52cd4707b4efbc205d2d7e4"
     }
   ],
   "patch": {
@@ -23,7 +23,7 @@
   "output": {
     "filename": "Inazuma_Eleven_GO_Light_Thai_v1.1.0.3ds",
     "size": 4294967296,
-    "sha256": "5b8b9cb0f5cb7468165cf459cb0735a4d952e50ab5f381fbb49293145453000b"
+    "sha256": "010c8ad10ee325051eaf1ef41bb34542b85137821c79293b7f34b1851014b63a"
   },
   "release_status": {
     "module_status": "เนื้อเรื่องฟุตบอลฟรอนเทียร์ดับเบิลยูเอส+ระบบอวตาร 100%",
@@ -33,9 +33,12 @@
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {
-    "verified_at": "2026-11-04T22:40:00+07:00",
-    "method": "owner_reported_xdelta_patcher_test",
-    "patcher_test_passed": true,
-    "patch_sha256_verified": true
+    "verified_at": "2026-11-05T15:00:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean source located by SHA-256 and patched with the site's vendored xdelta3 wasm engine; output matches release checksums.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
   }
 }
