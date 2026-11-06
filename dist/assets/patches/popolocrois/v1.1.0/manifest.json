@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "game_slug": "popolocrois",
+  "game_title": "PoPoLoCrois",
+  "platform": "PSP",
+  "region": "USA",
+  "game_code": "ULUS-10018",
+  "patch_version": "v1.1.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "PoPoLoCrois (USA).iso",
+      "size": 1259372544,
+      "sha256": "10a8bd3275d716736a70b63ee308070c52f3b79403d146765dc2e6d50ce89222"
+    }
+  ],
+  "patch": {
+    "filename": "PoPoLoCrois_Thai_v1.1.0_[talubgamethai].xdelta",
+    "size": 5605384,
+    "sha256": "c83b10ac2c179c4663c4a98230d730b13a0c93078a414be32483466493254fc7",
+    "release_date": "2026-09-18",
+    "date_source": "patch_file_mtime"
+  },
+  "output": {
+    "filename": "PoPoLoCrois_Thai_v1.1.0.iso",
+    "size": 1259372544,
+    "sha256": "b8098eec36322efbb0552163b887cffc16d7f267ec68629d7fbddeaf865d50f7"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลักและระบบทั้งหมด 100%",
+    "whole_game_census": "48,199 / 48,199 บรรทัด In-ROM = 100.0%",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "README release v1.10"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ISO ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-06T18:52:00+07:00",
+    "method": "cli_xdelta3_clean_source_roundtrip",
+    "note": "Applied the exact distributed xdelta to the pinned clean source with xdelta3; reconstructed output size and SHA-256 were measured from that artifact. Historical release-guide MD5/SHA1 did not match this web xdelta and were not used.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}

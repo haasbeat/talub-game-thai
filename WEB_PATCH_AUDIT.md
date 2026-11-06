@@ -4,12 +4,12 @@ Updated: 2026-11-06 (Asia/Bangkok)
 
 ## Inventory
 
-- Web manifests: 46 (41 browser xdelta + 5 external Nintendo Switch mod archives)
-- Patch identity checks passed (file size + SHA-256): 41/41
-- Patch dates recorded: 46/46
-- Dates taken directly from patch-file modified time: 39
+- Web manifests: 47 (42 xdelta + 5 external Nintendo Switch mod archives)
+- Patch identity checks passed (file size + SHA-256): 42/42
+- Patch dates recorded: 47/47
+- Dates taken directly from patch-file modified time: 40
 - Dates using release-archive modified time because the patch carried a ZIP epoch timestamp: 2 (`lost-in-blue-2`, `monster-hunter-stories`)
-- Clean-source roundtrip with expected output hash matched: 22
+- Clean-source roundtrip with expected output hash matched: 23
 - Owner-reported xdelta-patcher tests: 13
 - Browser apply-only test without a pinned target hash: 1
 - No current roundtrip evidence recorded in the web manifest: 5
@@ -40,6 +40,6 @@ An identity check proves that a web patch asset matches its manifest. It does no
 
 ## Evidence tiers
 
-The 22 output-matched entries combine 20 browser xdelta3 WASM roundtrips and 2 clean-source bit-identical roundtrips. The 13 owner-reported entries retain that label and are not silently promoted to browser-roundtrip evidence. The apply-only entry is `dqm-joker-3-professional`; it has no pinned release-target hash to compare. The five entries without current verification metadata are `dragon-quest-iv`, `dragon-quest-v`, `dragon-quest-vi`, `tales-of-hearts`, and `the-world-ends-with-you`.
+The 23 output-matched entries combine 20 browser xdelta3 WASM roundtrips and 3 clean-source bit-identical/CLI roundtrips. The PoPoLoCrois web xdelta was applied successfully to its pinned USA ISO with the xdelta3 CLI; its measured output SHA-256 is used because the historical v1.10 guide's MD5/SHA1 describe a different target artifact. The 13 owner-reported entries retain that label and are not silently promoted to browser-roundtrip evidence. The apply-only entry is `dqm-joker-3-professional`; it has no pinned release-target hash to compare. The five entries without current verification metadata are `dragon-quest-iv`, `dragon-quest-v`, `dragon-quest-vi`, `tales-of-hearts`, and `the-world-ends-with-you`.
 
 Large 3DS outputs may still need a disk-streaming output path before browser patching can be considered reliable on devices with limited memory.

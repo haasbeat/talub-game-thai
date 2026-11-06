@@ -814,12 +814,15 @@ if (game.manifest && !isExternalDownload) {
       verification?.output_sha256_verified &&
       verification?.output_matches_release_target
     );
+    const browserRoundtripVerified = roundtripVerified && verification?.method === 'browser_xdelta3_wasm_roundtrip';
     const patcherTestPassed = verification?.patcher_test_passed === true;
-    document.querySelector('#detail-status').textContent = roundtripVerified
+    document.querySelector('#detail-status').textContent = browserRoundtripVerified
       ? 'ผ่านการทดสอบบนเว็บ'
-      : patcherTestPassed
-        ? 'ผ่านการทดสอบ xdelta'
-        : 'พร้อมทดลอง · รอยืนยันรอบจริง';
+      : roundtripVerified
+        ? 'ผ่าน clean-source roundtrip'
+        : patcherTestPassed
+          ? 'ผ่านการทดสอบ xdelta'
+          : 'พร้อมทดลอง · รอยืนยันรอบจริง';
     workspaceStatus.textContent = roundtripVerified || patcherTestPassed
       ? 'XDELTA3 VERIFIED'
       : 'XDELTA3 READY · VERIFYING';

@@ -1660,5 +1660,47 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true
+  },
+  {
+    "order": 46,
+    "slug": "popolocrois",
+    "title": "PoPoLoCrois",
+    "platform": "psp",
+    "platformLabel": "PSP",
+    "index": "PSP | 001 / 001",
+    "version": "v1.1.0",
+    "patchDate": "2026-09-18",
+    "format": "xdelta3",
+    "cover": "./assets/covers/web/popolocrois.jpg",
+    "manifest": "./assets/patches/popolocrois/v1.1.0/manifest.json",
+    "accept": ".iso",
+    "fileTypes": "CLEAN USA PSP ISO · 1.17 GB",
+    "region": "USA",
+    "gameCode": "ULUS-10018",
+    "sourceName": "PoPoLoCrois (USA).iso · 1,259,372,544 bytes",
+    "sourceHash": "10a8bd3275d716736a70b63ee308070c52f3b79403d146765dc2e6d50ce89222",
+    "outputHash": "b8098eec36322efbb0552163b887cffc16d7f267ec68629d7fbddeaf865d50f7",
+    "moduleStatus": "เนื้อเรื่องหลักและระบบทั้งหมด 100%",
+    "wholeGameCensus": "48,199 / 48,199 บรรทัด In-ROM = 100.0%",
+    "details": {
+      "thaiTitle": "โปโปโลครัวส์ เจ้าชายน้อยแห่งอาณาจักรในนิทาน ฉบับภาษาไทย",
+      "japaneseTitle": "ポポロクロイス物語",
+      "originalTitle": "PoPoLoCrois",
+      "studio": "epics / Sony Computer Entertainment / Agetec",
+      "release": "PSP · USA",
+      "genre": "Role-playing game",
+      "description": "แพตช์ภาษาไทย PoPoLoCrois v1.1.0 สำหรับเกม PSP โซน USA รหัส ULUS-10018",
+      "overview": "ออกเดินทางไปกับเจ้าชายปีเอโตรและนาร์เซียในอาณาจักรโปโปโลครัวส์ โลกแฟนตาซีอบอุ่นที่ผสานการสำรวจ เมือง และการต่อสู้แบบ RPG",
+      "story": "เรื่องราวของเจ้าชายปีเอโตร ผู้ต้องเติบโตผ่านการผจญภัยและปกป้องอาณาจักรจากภัยที่คุกคาม พร้อมมิตรภาพกับนาร์เซียและผู้คนระหว่างทาง",
+      "localization": "เนื้อเรื่องหลักและระบบทั้งหมด 100% (ภาพรวมทั้งเกม 48,199 / 48,199 บรรทัด In-ROM = 100.0%) รวมบทสนทนา NPC 54 แผนที่ คัตซีน ไอเทม อุปกรณ์ สกิล เมนู ร้านค้า และระบบบันทึกเกม",
+      "untranslated": "ไม่มีตามบัญชีสำรวจรีลีส 48,199 บรรทัด",
+      "features": [
+        "เนื้อเรื่องและคัตซีน 8,575 บรรทัด",
+        "บทสนทนา NPC 54 แผนที่ 39,624 บรรทัด",
+        "แปลไอเทม 205 รายการ อุปกรณ์ 217 รายการ และสกิล 62 รายการ",
+        "ตรวจ clean-source roundtrip ด้วย xdelta3 จาก ISO ต้นฉบับที่ระบุ"
+      ]
+    },
+    "verified": true
   }
 ];
