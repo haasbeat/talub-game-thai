@@ -112,7 +112,8 @@ const columnsForViewport = () => {
   return 5;
 };
 
-const pageSize = () => columnsForViewport() * 5;
+const rowsForViewport = () => window.innerWidth <= 1366 ? 3 : 5;
+const pageSize = () => columnsForViewport() * rowsForViewport();
 
 const sortedGames = () => {
   const filtered = (state.platform === 'all'
@@ -312,13 +313,13 @@ if (gameSearch) {
 }
 
 let resizeTimer = 0;
-let previousColumns = columnsForViewport();
+let previousPageSize = pageSize();
 window.addEventListener('resize', () => {
   window.clearTimeout(resizeTimer);
   resizeTimer = window.setTimeout(() => {
-    const currentColumns = columnsForViewport();
-    if (currentColumns === previousColumns) return;
-    previousColumns = currentColumns;
+    const currentPageSize = pageSize();
+    if (currentPageSize === previousPageSize) return;
+    previousPageSize = currentPageSize;
     state.page = 1;
     renderCatalog(true);
   }, 160);
