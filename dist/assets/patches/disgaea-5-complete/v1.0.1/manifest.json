@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "game_slug": "disgaea-5-complete",
+  "game_title": "Disgaea 5 Complete",
+  "platform": "Nintendo Switch",
+  "title_id": "01005700031AE000",
+  "patch_version": "v1.0.1",
+  "target_game_version": "Base game v1.0.0 (US / Worldwide)",
+  "distribution": {
+    "type": "external_mod_archive",
+    "filename": "Disgaea_5_Complete_v1.0.1_Mod.zip",
+    "url": "https://drive.google.com/file/d/1NdspdHhafLe8lXd8_zVdL2Q5Kiqlro-v/view?usp=sharing",
+    "size": 970542683,
+    "sha256": "16797cb36b9d5361ccecf8c5dc49578eb7ca3bfd526b0c6d90f93179f26b9c45",
+    "release_date": "2026-11-06",
+    "date_source": "remote_file_modified_time"
+  },
+  "release_status": {
+    "module_status": "เมนู ระบบ ฐานทัพ สกิล ไอเทม เควสต์ เนื้อเรื่องหลัก 1-16 และบทเสริม 100%",
+    "whole_game_census": "63,635 / 84,157 บรรทัด = 75.61%",
+    "untranslated": "แฟล็กดีบักภายในเอนจินและตารางค้นหาไบนารีที่ผู้เล่นไม่พบในการเล่นปกติ"
+  },
+  "verification": {
+    "archive_identity_verified": true,
+    "binary_readback_verified": true,
+    "hardware_verified": false
+  }
+}

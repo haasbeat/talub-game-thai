@@ -491,17 +491,26 @@ const games = {
 // from the generated release catalog. Catalog values also refresh cover, index,
 // version and manifest paths for existing entries.
 for (const item of (window.GAME_CATALOG || [])) {
+  const isExternalDownload = item.distributionType === 'external-download';
   const catalogEntry = {
     index: item.index,
     title: item.title,
     platform: item.platformLabel,
     cover: item.cover,
     version: item.version,
+    patchDate: item.patchDate,
     format: item.format,
-    status: item.verified ? 'ผ่านการทดสอบ xdelta' : 'พร้อมทดลอง',
+    status: isExternalDownload ? 'ชุดดาวน์โหลดพร้อมใช้งาน' : item.verified ? 'ผ่านการทดสอบ xdelta' : 'พร้อมทดลอง',
     accept: item.accept,
     fileTypes: item.fileTypes,
-    description: `รายละเอียดฉบับภาษาไทยและระบบแพตช์ผ่านเว็บเฉพาะ ${item.title} โดยไฟล์เกมจะประมวลผลภายในอุปกรณ์ของผู้ใช้`,
+    distributionType: item.distributionType || 'browser-patcher',
+    downloadUrl: item.downloadUrl,
+    downloadFilename: item.downloadFilename,
+    downloadSize: item.downloadSize,
+    downloadSha256: item.downloadSha256,
+    description: isExternalDownload
+      ? `รายละเอียดฉบับภาษาไทยและชุดดาวน์โหลดสำหรับ ${item.title}`
+      : `รายละเอียดฉบับภาษาไทยและระบบแพตช์ผ่านเว็บเฉพาะ ${item.title} โดยไฟล์เกมจะประมวลผลภายในอุปกรณ์ของผู้ใช้`,
     details: {
       thaiTitle: `${item.title} ฉบับภาษาไทย`,
       japaneseTitle: item.title,
@@ -511,12 +520,18 @@ for (const item of (window.GAME_CATALOG || [])) {
       gameCode: `${item.region} · ${item.gameCode}`,
       genre: 'Video game',
       edition: `ตลับเกมภาษาไทย ${item.version}`,
-      overview: `ฉบับภาษาไทย ${item.version} สำหรับ ${item.title} พร้อมระบบตรวจ ROM ต้นฉบับและสร้างไฟล์ผลลัพธ์ด้วย xdelta3 ภายในเบราว์เซอร์`,
+      overview: isExternalDownload
+        ? `ฉบับภาษาไทย ${item.version} สำหรับ ${item.title} แจกเป็นชุดม็อดพร้อมคู่มือติดตั้ง โดยไม่รวมตัวเกมต้นฉบับ`
+        : `ฉบับภาษาไทย ${item.version} สำหรับ ${item.title} พร้อมระบบตรวจ ROM ต้นฉบับและสร้างไฟล์ผลลัพธ์ด้วย xdelta3 ภายในเบราว์เซอร์`,
       story: 'หน้านี้เน้นข้อมูลรีลีสและการติดตั้ง ข้อมูลเนื้อเรื่องเชิงลึกจะเพิ่มหลังผ่านการตรวจทานแหล่งอ้างอิงของเกมฉบับนี้',
       localization: item.moduleStatus,
       coverage: item.wholeGameCensus,
       coverageNote: `${item.moduleStatus} · สถานะนี้แยกจากผลการเล่นทดสอบบนอุปกรณ์จริง`,
-      features: [
+      features: isExternalDownload ? [
+        `ชุดภาษาไทย ${item.format} รุ่น ${item.version}`,
+        `รองรับ Title ID ${item.gameCode}`,
+        'ดาวน์โหลดเฉพาะไฟล์ม็อด ไม่รวมเกมต้นฉบับ',
+      ] : [
         `แพตช์ ${item.format} รุ่น ${item.version}`,
         `รองรับไฟล์ต้นฉบับตาม SHA-256 ที่ระบุใน manifest`,
         'ประมวลผล ROM ภายในอุปกรณ์และไม่อัปโหลดไฟล์เกม',
@@ -563,6 +578,7 @@ const params = new URLSearchParams(window.location.search);
 const requestedSlug = params.get('game');
 const slug = games[requestedSlug] ? requestedSlug : 'the-world-ends-with-you';
 const game = games[slug];
+const isExternalDownload = game.distributionType === 'external-download';
 const details = {
   thaiTitle: `${game.title} ฉบับภาษาไทย`,
   japaneseTitle: game.title,
@@ -603,6 +619,12 @@ if (breadcrumb && platformKey) {
   breadcrumb.href = `./index.html?platform=${encodeURIComponent(platformKey)}#games`;
 }
 document.querySelector('#detail-version').textContent = game.version;
+const formatBytes = (bytes) => {
+  if (!bytes) return '0 B';
+  const units = ['B', 'KB', 'MB', 'GB'];
+  const index = Math.min(Math.floor(Math.log(bytes) / Math.log(1024)), units.length - 1);
+  return `${(bytes / (1024 ** index)).toFixed(index > 1 ? 2 : 0)} ${units[index]}`;
+};
 const formatPatchDate = (isoDate) => {
   if (!isoDate) return 'ไม่ระบุวันที่';
   return new Intl.DateTimeFormat('th-TH', {
@@ -618,10 +640,19 @@ if (detailPatchDate) {
   detailPatchDate.textContent = formatPatchDate(game.patchDate);
 }
 const patchCountEl = document.querySelector('#detail-patch-count');
+const patchCountLabel = patchCountEl?.parentElement?.querySelector('.mono');
 const renderPatchCount = (value) => {
   if (patchCountEl && window.PatchStats) patchCountEl.textContent = value === null ? '—' : `${window.PatchStats.format(value)} ครั้ง`;
 };
-if (window.PatchStats) window.PatchStats.get(slug).then(renderPatchCount);
+if (isExternalDownload) {
+  if (patchCountLabel) patchCountLabel.textContent = 'FILE SIZE';
+  if (patchCountEl) {
+    patchCountEl.removeAttribute('title');
+    patchCountEl.textContent = formatBytes(game.downloadSize);
+  }
+} else if (window.PatchStats) {
+  window.PatchStats.get(slug).then(renderPatchCount);
+}
 document.querySelector('#detail-format').textContent = game.format;
 document.querySelector('#detail-status').textContent = game.status;
 document.querySelector('#workspace-game').textContent = game.title;
@@ -648,6 +679,38 @@ if (untranslatedEl && details.untranslated) {
 document.querySelector('#detail-source-name').textContent = details.sourceName;
 document.querySelector('#detail-source-hash').textContent = details.sourceHash;
 document.querySelector('#detail-output-hash').textContent = details.outputHash;
+if (isExternalDownload) {
+  const identityLabels = document.querySelectorAll('.source-identity > div > .mono');
+  if (identityLabels[0]) identityLabels[0].textContent = 'SUPPORTED GAME VERSION';
+  if (identityLabels[1]) identityLabels[1].textContent = 'TITLE ID';
+  if (identityLabels[2]) identityLabels[2].textContent = 'DOWNLOAD ARCHIVE SHA-256';
+
+  const installNav = document.querySelector('#detail-install-nav');
+  if (installNav) installNav.textContent = 'ดาวน์โหลด';
+  const installTab = document.querySelector('#detail-install-tab strong');
+  if (installTab) installTab.textContent = 'ดาวน์โหลดชุดภาษาไทย';
+  const installCta = document.querySelector('#detail-install-cta');
+  if (installCta) {
+    installCta.href = game.downloadUrl;
+    installCta.target = '_blank';
+    installCta.rel = 'noopener noreferrer';
+    installCta.removeAttribute('data-detail-view');
+    installCta.querySelector('span:first-child').textContent = 'ดาวน์โหลดชุดภาษาไทย';
+    installCta.querySelector('span:last-child').textContent = '↗';
+  }
+
+  document.querySelectorAll('[data-xdelta-only]').forEach((element) => {
+    element.hidden = true;
+  });
+  const externalPanel = document.querySelector('#external-download-panel');
+  externalPanel.hidden = false;
+  document.querySelector('#external-download-filename').textContent = game.downloadFilename;
+  document.querySelector('#external-download-size').textContent = formatBytes(game.downloadSize);
+  document.querySelector('#external-download-version').textContent = game.version;
+  document.querySelector('#external-download-date').textContent = formatPatchDate(game.patchDate);
+  document.querySelector('#external-download-hash').textContent = game.downloadSha256;
+  document.querySelector('#external-download-link').href = game.downloadUrl;
+}
 document.querySelector('#detail-features').replaceChildren(...details.features.map((feature, index) => {
   const item = document.createElement('li');
   item.innerHTML = `<span class="mono">${String(index + 1).padStart(2, '0')}</span><strong></strong>`;
@@ -727,7 +790,7 @@ const manifestPromise = game.manifest
     })
   : Promise.resolve(null);
 
-if (game.manifest) {
+if (game.manifest && !isExternalDownload) {
   workspaceStatus.textContent = 'XDELTA3 READY';
   workspaceNote.innerHTML = '<span>แพตช์จริง</span> ระบบจะตรวจขนาดและ SHA-256 ของ ROM ต้นฉบับ จากนั้นรัน xdelta3 ภายในเบราว์เซอร์ ไฟล์ ROM จะไม่ถูกอัปโหลดออกจากเครื่อง แนะนำให้ทดสอบบนคอมพิวเตอร์ก่อน';
   void manifestPromise.then((manifest) => {
@@ -758,14 +821,25 @@ if (game.manifest) {
     document.querySelector('#detail-status').textContent = 'โหลดข้อมูลแพตช์ไม่สำเร็จ';
     workspaceStatus.textContent = 'MANIFEST ERROR';
   });
+} else if (game.manifest && isExternalDownload) {
+  workspaceStatus.textContent = 'DOWNLOAD READY';
+  void manifestPromise.then((manifest) => {
+    const distribution = manifest.distribution || {};
+    const identityMatches = (
+      distribution.filename === game.downloadFilename &&
+      distribution.size === game.downloadSize &&
+      distribution.sha256 === game.downloadSha256 &&
+      distribution.url === game.downloadUrl
+    );
+    document.querySelector('#detail-status').textContent = identityMatches
+      ? 'ยืนยันข้อมูลชุดดาวน์โหลดแล้ว'
+      : 'ข้อมูลชุดดาวน์โหลดไม่ตรงกับ manifest';
+    workspaceStatus.textContent = identityMatches ? 'DOWNLOAD VERIFIED' : 'MANIFEST MISMATCH';
+  }).catch(() => {
+    document.querySelector('#detail-status').textContent = 'โหลดข้อมูลชุดดาวน์โหลดไม่สำเร็จ';
+    workspaceStatus.textContent = 'MANIFEST ERROR';
+  });
 }
-
-const formatBytes = (bytes) => {
-  if (!bytes) return '0 B';
-  const units = ['B', 'KB', 'MB', 'GB'];
-  const index = Math.min(Math.floor(Math.log(bytes) / Math.log(1024)), units.length - 1);
-  return `${(bytes / (1024 ** index)).toFixed(index > 1 ? 2 : 0)} ${units[index]}`;
-};
 
 const showToast = (message) => {
   toast.textContent = message;

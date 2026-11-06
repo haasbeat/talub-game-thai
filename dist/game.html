@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=50" />
+    <link rel="stylesheet" href="./styles.css?v=51" />
   </head>
   <body class="detail-page">
     <div class="cursor" aria-hidden="true"></div>
@@ -23,7 +23,7 @@
       <nav class="desktop-nav" aria-label="เมนูหลัก">
         <a class="hover-target" href="./index.html#games">เกมทั้งหมด</a>
         <a class="hover-target" href="#about" data-detail-view="about">รายละเอียดเกม</a>
-        <a class="hover-target" href="#patcher" data-detail-view="patcher">ติดตั้งภาษาไทย</a>
+        <a id="detail-install-nav" class="hover-target" href="#patcher" data-detail-view="patcher">ติดตั้งภาษาไทย</a>
         <a class="hover-target" href="./index.html#support">สนับสนุน</a>
       </nav>
       <a class="detail-back hover-target" href="./index.html#games" aria-label="กลับคลังเกม">←</a>
@@ -58,7 +58,7 @@
             <div><span class="mono">PATCHED</span><strong id="detail-patch-count" title="จำนวนครั้งที่แพตช์สำเร็จบนเว็บนี้">—</strong></div>
           </div>
 
-          <a class="detail-cta hover-target" href="#patcher" data-detail-view="patcher">
+          <a id="detail-install-cta" class="detail-cta hover-target" href="#patcher" data-detail-view="patcher">
             <span>ติดตั้งฉบับภาษาไทย</span>
             <span aria-hidden="true">↓</span>
           </a>
@@ -69,7 +69,7 @@
         <button class="detail-view-tab hover-target is-active" type="button" role="tab" aria-selected="true" aria-controls="about" data-detail-view="about">
           <span class="mono">01</span><strong>รายละเอียดเกม</strong>
         </button>
-        <button class="detail-view-tab hover-target" type="button" role="tab" aria-selected="false" aria-controls="patcher" data-detail-view="patcher">
+        <button id="detail-install-tab" class="detail-view-tab hover-target" type="button" role="tab" aria-selected="false" aria-controls="patcher" data-detail-view="patcher">
           <span class="mono">02</span><strong>ติดตั้งภาษาไทย</strong>
         </button>
       </div>
@@ -142,7 +142,7 @@
                 <span class="status-dot"></span>
                 <span id="workspace-status" class="mono">FRONTEND PROTOTYPE</span>
               </div>
-              <a class="engine-credit mono hover-target" href="./assets/engine/xdelta/THIRD_PARTY_NOTICES.txt" target="_blank" rel="noopener">POWERED BY XDELTA3 ↗</a>
+              <a class="engine-credit mono hover-target" data-xdelta-only href="./assets/engine/xdelta/THIRD_PARTY_NOTICES.txt" target="_blank" rel="noopener">POWERED BY XDELTA3 ↗</a>
             </div>
 
             <div class="selected-game-row">
@@ -151,7 +151,25 @@
               <span id="workspace-platform" class="selected-platform mono">NDS</span>
             </div>
 
-            <div id="drop-zone" class="drop-zone hover-target" tabindex="0" role="button" aria-label="เลือกไฟล์ ROM สำหรับเกมนี้">
+            <div id="external-download-panel" class="external-download-panel" hidden>
+              <p class="external-download-label mono">DOWNLOAD PACKAGE / NINTENDO SWITCH</p>
+              <h3>ดาวน์โหลดชุดภาษาไทย</h3>
+              <p id="external-download-description" class="external-download-description">ดาวน์โหลดไฟล์ม็อดสำหรับเกมนี้ แล้วติดตั้งตามคู่มือภายในชุดดาวน์โหลด ไฟล์นี้ไม่รวมตัวเกมต้นฉบับ</p>
+              <div class="external-file-grid">
+                <div><span class="mono">FILE</span><strong id="external-download-filename">—</strong></div>
+                <div><span class="mono">SIZE</span><strong id="external-download-size">—</strong></div>
+                <div><span class="mono">VERSION</span><strong id="external-download-version">—</strong></div>
+                <div><span class="mono">UPDATED</span><strong id="external-download-date">—</strong></div>
+                <div class="external-file-hash"><span class="mono">ARCHIVE SHA-256</span><code id="external-download-hash">—</code></div>
+              </div>
+              <a id="external-download-link" class="external-download-link hover-target" href="#" target="_blank" rel="noopener noreferrer">
+                <span>ดาวน์โหลดชุดภาษาไทย</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+              <p class="external-download-note">ลิงก์จะเปิดหน้าดาวน์โหลดภายนอก โปรดตรวจชื่อไฟล์และเวอร์ชันก่อนติดตั้ง</p>
+            </div>
+
+            <div id="drop-zone" class="drop-zone hover-target" data-xdelta-only tabindex="0" role="button" aria-label="เลือกไฟล์ ROM สำหรับเกมนี้">
               <input id="rom-input" type="file" accept=".nds" hidden />
               <div class="drop-number mono">STEP 02</div>
               <div class="drop-icon" aria-hidden="true">
@@ -162,7 +180,7 @@
               <span id="file-types" class="file-types mono">NDS ROM</span>
             </div>
 
-            <div class="file-summary" aria-live="polite">
+            <div class="file-summary" data-xdelta-only aria-live="polite">
               <div>
                 <span class="summary-label mono">SELECTED FILE</span>
                 <strong id="file-name">ยังไม่ได้เลือกไฟล์</strong>
@@ -177,7 +195,7 @@
               </div>
             </div>
 
-            <div id="patch-progress" class="patch-progress" hidden aria-live="polite">
+            <div id="patch-progress" class="patch-progress" data-xdelta-only hidden aria-live="polite">
               <div class="patch-progress-copy">
                 <span id="patch-progress-label" class="mono">กำลังเตรียมระบบ</span>
                 <strong id="patch-progress-percent">0%</strong>
@@ -185,7 +203,7 @@
               <div class="patch-progress-track"><span id="patch-progress-bar"></span></div>
             </div>
 
-            <div class="workspace-actions">
+            <div class="workspace-actions" data-xdelta-only>
               <p id="workspace-note"><span>หมายเหตุ</span> หน้าเกมและการเลือกไฟล์พร้อมแล้ว แต่เวอร์ชันนี้ยังไม่แก้ไข ROM จริงจนกว่าจะเชื่อม patch engine และรายการ SHA-256 ที่รองรับ</p>
               <div class="workspace-buttons">
                 <button id="patch-button" class="patch-button hover-target" type="button" disabled>
@@ -254,9 +272,9 @@
     </footer>
 
     <div id="toast" class="toast" role="status" aria-live="polite">พร้อมประมวลผลภายในอุปกรณ์</div>
-    <script src="./catalog.js?v=49"></script>
+    <script src="./catalog.js?v=50"></script>
     <script src="./patch-stats.js?v=41"></script>
     <script src="./assets/engine/hash/sha256.js"></script>
-    <script src="./game.js?v=49"></script>
+    <script src="./game.js?v=50"></script>
   </body>
 </html>
