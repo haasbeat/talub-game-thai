@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=56" />
+    <link rel="stylesheet" href="./styles.css?v=57" />
   </head>
   <body>
     <div class="cursor" aria-hidden="true"></div>
@@ -119,28 +119,37 @@
           <p class="section-note">เลือกม็อดเพื่ออ่านรายละเอียด ตรวจเวอร์ชันเกมต้นฉบับ<br />และติดตั้งด้วยวิธีที่เหมาะกับแต่ละเครื่อง</p>
         </div>
 
-        <div class="platform-filter" role="tablist" aria-label="เลือกดูเกมตามเครื่อง">
-          <button class="platform-tab hover-target is-active" type="button" data-platform="all" role="tab" aria-selected="true">
-            <span class="mono">ALL</span><strong>รวมทั้งหมด</strong><em>47</em>
-          </button>
-          <button class="platform-tab hover-target" type="button" data-platform="3ds" role="tab" aria-selected="false">
-            <span class="mono">NINTENDO</span><strong>3DS</strong><em>30</em>
-          </button>
-          <button class="platform-tab hover-target" type="button" data-platform="nds" role="tab" aria-selected="false">
-            <span class="mono">NINTENDO</span><strong>DS</strong><em>10</em>
-          </button>
-          <button class="platform-tab hover-target" type="button" data-platform="psp" role="tab" aria-selected="false">
-            <span class="mono">SONY</span><strong>PSP</strong><em>1</em>
-          </button>
-          <button class="platform-tab hover-target" type="button" data-platform="ps2" role="tab" aria-selected="false">
-            <span class="mono">SONY</span><strong>PS2</strong><em>0</em>
-          </button>
-          <button class="platform-tab hover-target" type="button" data-platform="snes" role="tab" aria-selected="false">
-            <span class="mono">NINTENDO</span><strong>SNES</strong><em>1</em>
-          </button>
-          <button class="platform-tab hover-target" type="button" data-platform="switch" role="tab" aria-selected="false">
-            <span class="mono">NINTENDO</span><strong>SWITCH</strong><em>5</em>
-          </button>
+        <div class="platform-filter-shell">
+          <div class="platform-filter" role="tablist" aria-label="เลือกดูเกมตามเครื่อง">
+            <button class="platform-tab hover-target is-active" type="button" data-platform="all" role="tab" aria-selected="true">
+              <span class="mono">ALL</span><strong>รวมทั้งหมด</strong><em>47</em>
+            </button>
+            <button class="platform-tab hover-target" type="button" data-platform="3ds" role="tab" aria-selected="false">
+              <span class="mono">NINTENDO</span><strong>3DS</strong><em>30</em>
+            </button>
+            <button class="platform-tab hover-target" type="button" data-platform="nds" role="tab" aria-selected="false">
+              <span class="mono">NINTENDO</span><strong>DS</strong><em>10</em>
+            </button>
+            <button class="platform-tab hover-target" type="button" data-platform="psp" role="tab" aria-selected="false">
+              <span class="mono">SONY</span><strong>PSP</strong><em>1</em>
+            </button>
+            <button class="platform-tab hover-target" type="button" data-platform="ps2" role="tab" aria-selected="false">
+              <span class="mono">SONY</span><strong>PS2</strong><em>0</em>
+            </button>
+            <button class="platform-tab hover-target" type="button" data-platform="snes" role="tab" aria-selected="false">
+              <span class="mono">NINTENDO</span><strong>SNES</strong><em>1</em>
+            </button>
+            <button class="platform-tab hover-target" type="button" data-platform="switch" role="tab" aria-selected="false">
+              <span class="mono">NINTENDO</span><strong>SWITCH</strong><em>5</em>
+            </button>
+          </div>
+          <div class="platform-filter-help">
+            <span class="mono">เลื่อนซ้าย–ขวาเพื่อดูหมวดอื่น</span>
+            <div class="platform-scroll-controls" aria-label="เลื่อนดูหมวดเครื่องเกม">
+              <button id="platform-scroll-prev" class="platform-scroll-button hover-target" type="button" aria-label="ดูหมวดก่อนหน้า">←</button>
+              <button id="platform-scroll-next" class="platform-scroll-button hover-target" type="button" aria-label="ดูหมวดถัดไป">→</button>
+            </div>
+          </div>
         </div>
 
         <div class="platform-result" aria-live="polite">
@@ -279,6 +288,6 @@
 
     <script src="./catalog.js?v=54"></script>
     <script src="./patch-stats.js?v=43"></script>
-    <script src="./catalog-app.js?v=55"></script>
+    <script src="./catalog-app.js?v=56"></script>
   </body>
 </html>

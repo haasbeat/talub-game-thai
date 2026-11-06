@@ -46,6 +46,9 @@ const platformLabels = {
 };
 
 const platformFilter = document.querySelector('.platform-filter');
+const platformFilterShell = document.querySelector('.platform-filter-shell');
+const platformScrollPrev = document.querySelector('#platform-scroll-prev');
+const platformScrollNext = document.querySelector('#platform-scroll-next');
 const gameGrid = document.querySelector('.game-grid');
 const platformLabel = document.querySelector('#platform-label');
 const platformCount = document.querySelector('#platform-count');
@@ -111,6 +114,31 @@ const createPlatformTabs = () => {
     return button;
   }));
 };
+
+const updatePlatformScrollState = () => {
+  if (!platformFilter || !platformFilterShell) return;
+  const maxScroll = Math.max(0, platformFilter.scrollWidth - platformFilter.clientWidth);
+  const hasOverflow = maxScroll > 4;
+  const canScrollLeft = platformFilter.scrollLeft > 4;
+  const canScrollRight = platformFilter.scrollLeft < maxScroll - 4;
+  platformFilterShell.classList.toggle('has-platform-overflow', hasOverflow);
+  platformFilterShell.classList.toggle('can-scroll-left', canScrollLeft);
+  platformFilterShell.classList.toggle('can-scroll-right', canScrollRight);
+  if (platformScrollPrev) platformScrollPrev.disabled = !canScrollLeft;
+  if (platformScrollNext) platformScrollNext.disabled = !canScrollRight;
+};
+
+const scrollPlatformFilter = (direction) => {
+  if (!platformFilter) return;
+  platformFilter.scrollBy({
+    left: direction * Math.max(160, platformFilter.clientWidth * 0.72),
+    behavior: 'smooth',
+  });
+};
+
+platformScrollPrev?.addEventListener('click', () => scrollPlatformFilter(-1));
+platformScrollNext?.addEventListener('click', () => scrollPlatformFilter(1));
+platformFilter?.addEventListener('scroll', () => window.requestAnimationFrame(updatePlatformScrollState), { passive: true });
 
 const columnsForViewport = () => {
   if (window.innerWidth <= 1366) return 3;
@@ -429,6 +457,7 @@ function renderCatalog(shouldUpdateUrl = false, shouldScroll = false) {
 
   renderPagination(totalPages);
   bindHoverTargets(document);
+  window.requestAnimationFrame(updatePlatformScrollState);
   if (shouldUpdateUrl) updateUrl();
   if (shouldScroll) document.querySelector('.platform-result').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
@@ -459,6 +488,7 @@ window.addEventListener('resize', () => {
   window.clearTimeout(resizeTimer);
   resizeTimer = window.setTimeout(() => {
     const currentPageSize = pageSize();
+    updatePlatformScrollState();
     if (currentPageSize === previousPageSize) return;
     previousPageSize = currentPageSize;
     state.page = 1;
@@ -468,6 +498,7 @@ window.addEventListener('resize', () => {
 
 createPlatformTabs();
 renderCatalog(false);
+updatePlatformScrollState();
 renderPopularGames(popularFallback);
 renderLatestGames();
 loadPopularRanking();

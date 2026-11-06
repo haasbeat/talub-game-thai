@@ -202,8 +202,20 @@ button, a, .drop-zone { -webkit-tap-highlight-color: transparent; }
   line-height: 1.15;
 }
 .section-note { margin: 0; color: var(--muted); line-height: 1.5; font-size: 13px; }
-.platform-filter { display: flex; margin-bottom: 22px; padding: 6px; overflow-x: auto; color: var(--ink); background: #fff; border: 1px solid var(--line); border-radius: 999px; scrollbar-width: none; scroll-snap-type: x proximity; overscroll-behavior-inline: contain; }
+.platform-filter-shell { position: relative; margin-bottom: 22px; }
+.platform-filter-shell::before, .platform-filter-shell::after { content: ""; position: absolute; z-index: 2; top: 1px; width: 44px; height: 82px; pointer-events: none; opacity: 0; transition: opacity 180ms ease; }
+.platform-filter-shell::before { left: 1px; background: linear-gradient(90deg, #fff 15%, rgba(255,255,255,0)); border-radius: 999px 0 0 999px; }
+.platform-filter-shell::after { right: 1px; background: linear-gradient(270deg, #fff 15%, rgba(255,255,255,0)); border-radius: 0 999px 999px 0; }
+.platform-filter-shell.can-scroll-left::before, .platform-filter-shell.can-scroll-right::after { opacity: 1; }
+.platform-filter { display: flex; padding: 6px; overflow-x: auto; color: var(--ink); background: #fff; border: 1px solid var(--line); border-radius: 999px; scrollbar-width: none; scroll-snap-type: x proximity; overscroll-behavior-inline: contain; }
 .platform-filter::-webkit-scrollbar { display: none; }
+.platform-filter-help { display: none; }
+.platform-filter-shell.has-platform-overflow .platform-filter-help { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 8px 4px 0 10px; color: var(--muted); }
+.platform-filter-help > .mono { font-size: 9px; }
+.platform-scroll-controls { display: flex; gap: 6px; }
+.platform-scroll-button { width: 34px; height: 34px; display: grid; place-items: center; color: var(--ink); background: #fff; border: 1px solid var(--line); border-radius: 50%; transition: opacity 180ms ease, color 180ms ease, background 180ms ease; }
+.platform-scroll-button:hover { color: #fff; background: var(--ink); }
+.platform-scroll-button:disabled { opacity: .25; }
 .platform-tab { flex: 1 0 145px; min-width: 145px; min-height: 72px; display: grid; grid-template-columns: 1fr auto; gap: 3px 12px; align-content: center; padding: 10px 17px; color: inherit; background: transparent; border: 0; border-radius: 999px; text-align: left; scroll-snap-align: start; transition: color 450ms var(--ease), background 450ms var(--ease); }
 .platform-tab span { grid-column: 1 / -1; color: var(--muted); font-size: 9px; }
 .platform-tab strong { font-size: 14px; font-weight: 500; }
@@ -593,6 +605,9 @@ button, a, .drop-zone { -webkit-tap-highlight-color: transparent; }
   .games, .patcher-intro, .popular-section, .latest-section { padding-top: 40px; }
   .section-label { margin-bottom: 16px; }
   .platform-filter { gap: 3px; padding: 5px; border-radius: 32px; }
+  .platform-filter-shell::before, .platform-filter-shell::after { height: 72px; }
+  .platform-filter-help { padding-top: 7px; }
+  .platform-scroll-button { width: 32px; height: 32px; }
   .platform-tab { min-height: 60px; padding-inline: 12px; }
   .game-pagination { grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 32px; }
   .pagination-pages { grid-column: 1 / -1; grid-row: 1; }
