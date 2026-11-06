@@ -106,14 +106,11 @@ const createPlatformTabs = () => {
 };
 
 const columnsForViewport = () => {
-  if (window.innerWidth <= 560) return 1;
-  if (window.innerWidth <= 860) return 2;
-  if (window.innerWidth <= 1180) return 3;
+  if (window.innerWidth <= 1366) return 3;
   return 5;
 };
 
-const rowsForViewport = () => window.innerWidth <= 1366 ? 3 : 5;
-const pageSize = () => columnsForViewport() * rowsForViewport();
+const pageSize = () => columnsForViewport() * 5;
 
 const sortedGames = () => {
   const filtered = (state.platform === 'all'

@@ -255,7 +255,7 @@ button, a, .drop-zone { -webkit-tap-highlight-color: transparent; }
 .pagination-page { width: 42px; height: 42px; display: grid; place-items: center; border: 1px solid var(--line) !important; border-radius: 50%; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; letter-spacing: .08em; }
 .pagination-page.is-active { color: #fff; background: var(--ink); border-color: var(--ink) !important; }
 
-@media (max-width: 1180px) and (min-width: 861px) {
+@media (max-width: 1366px) and (min-width: 861px) {
   .game-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px 16px; }
 }
 
@@ -487,7 +487,7 @@ button, a, .drop-zone { -webkit-tap-highlight-color: transparent; }
   .platform-filter { border-radius: 999px; }
   .platform-result { align-items: stretch; flex-direction: column; }
   .sort-control { width: 100%; min-width: 0; }
-  .game-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 14px; }
+  .game-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px 10px; }
   .patcher-facts { justify-content: flex-start; flex-wrap: wrap; gap: 14px 24px; }
   .field-row { grid-template-columns: 1fr; gap: 16px; }
   .file-summary { grid-template-columns: 1fr 1fr; }
@@ -530,8 +530,11 @@ button, a, .drop-zone { -webkit-tap-highlight-color: transparent; }
   .game-pagination { grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 32px; }
   .pagination-pages { grid-column: 1 / -1; grid-row: 1; }
   .pagination-arrow { grid-row: 2; }
-  .game-grid { grid-template-columns: 1fr; gap: 28px; }
-  .game-meta { grid-template-columns: 1fr auto; }
+  .game-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px 8px; }
+  .poster-index { top: 6px; left: 6px; padding: 4px 5px; font-size: 7px; }
+  .game-meta { grid-template-columns: 1fr auto; gap: 5px 7px; margin-top: 8px; padding-top: 8px; }
+  .game-meta h3 { font-size: 12px; line-height: 1.3; }
+  .game-patch-date, .game-patch-count { font-size: 8px; letter-spacing: .02em; }
   .game-meta span:nth-of-type(1) { display: none; }
   .drop-zone { padding-inline: 16px; }
   .file-summary { grid-template-columns: 1fr; }
