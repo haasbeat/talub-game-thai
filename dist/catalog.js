@@ -1704,3 +1704,19 @@ window.GAME_CATALOG = [
     "verified": true
   }
 ];
+
+// Required original-game revision, kept separate from the Thai patch version.
+// Cartridge/disc releases without a documented update use their base revision.
+const GAME_VERSION_BY_SLUG = Object.freeze({
+  'fire-emblem-three-houses': 'v1.2.0 (Patch 4)',
+  'fire-emblem-engage': 'v2.0.0 + DLC',
+  'disgaea-5-complete': 'v1.0.0 (Base)',
+  'persona-5-royal': 'v1.0.0 / Revision 0',
+  'village-in-the-shade': 'v1.3.0 แนะนำ / v1.0.0',
+  'popolocrois': 'v1.03',
+});
+
+window.GAME_CATALOG = window.GAME_CATALOG.map((game) => ({
+  ...game,
+  gameVersion: GAME_VERSION_BY_SLUG[game.slug] || 'v1.0.0',
+}));

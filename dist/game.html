@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=53" />
+    <link rel="stylesheet" href="./styles.css?v=54" />
   </head>
   <body class="detail-page">
     <div class="cursor" aria-hidden="true"></div>
@@ -56,7 +56,7 @@
             <div><span class="mono">PATCH DATE</span><strong><time id="detail-patch-date" datetime="">—</time></strong></div>
             <div><span class="mono">INSTALL FORMAT</span><strong id="detail-format">xdelta</strong></div>
             <div><span class="mono">STATUS</span><strong id="detail-status">Frontend Preview</strong></div>
-            <div><span class="mono">PATCHED</span><strong id="detail-patch-count" title="จำนวนครั้งที่แพตช์สำเร็จบนเว็บนี้">—</strong></div>
+            <div><span class="mono">GAME VERSION</span><strong id="detail-game-version">v1.0.0</strong></div>
           </div>
 
           <a id="detail-install-cta" class="detail-cta hover-target" href="#patcher" data-detail-view="patcher">
@@ -149,7 +149,11 @@
             <div class="selected-game-row">
               <span class="mono">SELECTED GAME</span>
               <strong id="workspace-game">The World Ends with You</strong>
-              <span id="workspace-platform" class="selected-platform mono">NDS</span>
+              <div class="selected-game-tags">
+                <span id="workspace-platform" class="selected-platform mono">NDS</span>
+                <span class="selected-version mono">GAME <b id="workspace-game-version">v1.0.0</b></span>
+                <span class="selected-counter"><span class="mono">PATCHED</span><b id="detail-patch-count" title="จำนวนครั้งที่แพตช์สำเร็จบนเว็บนี้">—</b></span>
+              </div>
             </div>
 
             <div id="external-download-panel" class="external-download-panel" hidden>
@@ -170,51 +174,55 @@
               <p class="external-download-note">ลิงก์จะเปิดหน้าดาวน์โหลดภายนอก โปรดตรวจชื่อไฟล์และเวอร์ชันก่อนติดตั้ง · สถิตินับเมื่อกดลิงก์ ไม่ได้ยืนยันว่าติดตั้งสำเร็จ</p>
             </div>
 
-            <div id="drop-zone" class="drop-zone hover-target" data-xdelta-only tabindex="0" role="button" aria-label="เลือกไฟล์ ROM สำหรับเกมนี้">
-              <input id="rom-input" type="file" accept=".nds" hidden />
-              <div class="drop-number mono">STEP 02</div>
-              <div class="drop-icon" aria-hidden="true">
-                <svg viewBox="0 0 32 32"><path d="M16 3v18M9 14l7 7 7-7M5 24v5h22v-5" /></svg>
+            <div class="patcher-grid" data-xdelta-only>
+              <div id="drop-zone" class="drop-zone hover-target" tabindex="0" role="button" aria-label="เลือกไฟล์ ROM สำหรับเกมนี้">
+                <input id="rom-input" type="file" accept=".nds" hidden />
+                <div class="drop-number mono">STEP 02</div>
+                <div class="drop-icon" aria-hidden="true">
+                  <svg viewBox="0 0 32 32"><path d="M16 3v18M9 14l7 7 7-7M5 24v5h22v-5" /></svg>
+                </div>
+                <h3>วางไฟล์ ROM</h3>
+                <p>หรือคลิกเลือกไฟล์จากอุปกรณ์<br />ไฟล์ไม่ถูกอัปโหลดออกจากเครื่อง</p>
+                <span id="file-types" class="file-types mono">NDS ROM</span>
               </div>
-              <h3>วางไฟล์ ROM ของเกมนี้</h3>
-              <p>หรือคลิกเพื่อเลือกไฟล์จากอุปกรณ์<br />ไฟล์จะไม่ถูกอัปโหลดออกจากเครื่อง</p>
-              <span id="file-types" class="file-types mono">NDS ROM</span>
-            </div>
 
-            <div class="file-summary" data-xdelta-only aria-live="polite">
-              <div>
-                <span class="summary-label mono">SELECTED FILE</span>
-                <strong id="file-name">ยังไม่ได้เลือกไฟล์</strong>
-              </div>
-              <div>
-                <span class="summary-label mono">SIZE</span>
-                <strong id="file-size">—</strong>
-              </div>
-              <div>
-                <span class="summary-label mono">SOURCE CHECK</span>
-                <strong id="file-hash">รอเลือกไฟล์</strong>
-              </div>
-            </div>
+              <div class="patcher-side">
+                <div class="file-summary" aria-live="polite">
+                  <div>
+                    <span class="summary-label mono">SELECTED FILE</span>
+                    <strong id="file-name">ยังไม่ได้เลือกไฟล์</strong>
+                  </div>
+                  <div>
+                    <span class="summary-label mono">SIZE</span>
+                    <strong id="file-size">—</strong>
+                  </div>
+                  <div>
+                    <span class="summary-label mono">SOURCE CHECK</span>
+                    <strong id="file-hash">รอเลือกไฟล์</strong>
+                  </div>
+                </div>
 
-            <div id="patch-progress" class="patch-progress" data-xdelta-only hidden aria-live="polite">
-              <div class="patch-progress-copy">
-                <span id="patch-progress-label" class="mono">กำลังเตรียมระบบ</span>
-                <strong id="patch-progress-percent">0%</strong>
-              </div>
-              <div class="patch-progress-track"><span id="patch-progress-bar"></span></div>
-            </div>
+                <div id="patch-progress" class="patch-progress" hidden aria-live="polite">
+                  <div class="patch-progress-copy">
+                    <span id="patch-progress-label" class="mono">กำลังเตรียมระบบ</span>
+                    <strong id="patch-progress-percent">0%</strong>
+                  </div>
+                  <div class="patch-progress-track"><span id="patch-progress-bar"></span></div>
+                </div>
 
-            <div class="workspace-actions" data-xdelta-only>
-              <p id="workspace-note"><span>หมายเหตุ</span> หน้าเกมและการเลือกไฟล์พร้อมแล้ว แต่เวอร์ชันนี้ยังไม่แก้ไข ROM จริงจนกว่าจะเชื่อม patch engine และรายการ SHA-256 ที่รองรับ</p>
-              <div class="workspace-buttons">
-                <button id="patch-button" class="patch-button hover-target" type="button" disabled>
-                  <span>เลือก ROM ก่อน</span>
-                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
-                </button>
-                <a id="download-button" class="download-button hover-target" href="#" download hidden>
-                  <span>ดาวน์โหลด ROM ภาษาไทย</span>
-                  <span aria-hidden="true">↓</span>
-                </a>
+                <div class="workspace-actions">
+                  <p id="workspace-note"><span>หมายเหตุ</span> หน้าเกมและการเลือกไฟล์พร้อมแล้ว แต่เวอร์ชันนี้ยังไม่แก้ไข ROM จริงจนกว่าจะเชื่อม patch engine และรายการ SHA-256 ที่รองรับ</p>
+                  <div class="workspace-buttons">
+                    <button id="patch-button" class="patch-button hover-target" type="button" disabled>
+                      <span>เลือก ROM ก่อน</span>
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+                    </button>
+                    <a id="download-button" class="download-button hover-target" href="#" download hidden>
+                      <span>ดาวน์โหลด ROM ภาษาไทย</span>
+                      <span aria-hidden="true">↓</span>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -274,9 +282,9 @@
     </footer>
 
     <div id="toast" class="toast" role="status" aria-live="polite">พร้อมประมวลผลภายในอุปกรณ์</div>
-    <script src="./catalog.js?v=52"></script>
+    <script src="./catalog.js?v=53"></script>
     <script src="./patch-stats.js?v=42"></script>
     <script src="./assets/engine/hash/sha256.js"></script>
-    <script src="./game.js?v=52"></script>
+    <script src="./game.js?v=53"></script>
   </body>
 </html>

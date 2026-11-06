@@ -498,6 +498,7 @@ for (const item of (window.GAME_CATALOG || [])) {
     platform: item.platformLabel,
     cover: item.cover,
     version: item.version,
+    gameVersion: item.gameVersion,
     patchDate: item.patchDate,
     format: item.format,
     status: isExternalDownload ? 'ชุดดาวน์โหลดพร้อมใช้งาน' : item.verified ? 'ผ่านการทดสอบ xdelta' : 'พร้อมทดลอง',
@@ -588,6 +589,7 @@ const details = {
   gameCode: `${game.platform} · รอยืนยันรุ่นเกม`,
   genre: 'Video game',
   edition: game.version,
+  gameVersion: game.gameVersion || 'v1.0.0',
   overview: game.description,
   story: 'หน้ารายละเอียดเชิงลึกของเกมนี้กำลังอยู่ระหว่างการจัดเตรียม',
   localization: 'ข้อมูลขอบเขตงานแปลและรุ่นไฟล์ที่รองรับจะประกาศหลังผ่านการตรวจสอบรีลีส',
@@ -619,6 +621,7 @@ if (breadcrumb && platformKey) {
   breadcrumb.href = `./index.html?platform=${encodeURIComponent(platformKey)}#games`;
 }
 document.querySelector('#detail-version').textContent = game.version;
+document.querySelector('#detail-game-version').textContent = details.gameVersion;
 const formatBytes = (bytes) => {
   if (!bytes) return '0 B';
   const units = ['B', 'KB', 'MB', 'GB'];
@@ -667,6 +670,7 @@ document.querySelector('#detail-format').textContent = game.format;
 document.querySelector('#detail-status').textContent = game.status;
 document.querySelector('#workspace-game').textContent = game.title;
 document.querySelector('#workspace-platform').textContent = game.platform;
+document.querySelector('#workspace-game-version').textContent = details.gameVersion;
 document.querySelector('#file-types').textContent = game.fileTypes;
 document.querySelector('#rom-input').accept = game.accept;
 document.querySelector('#detail-thai-title').textContent = details.thaiTitle;
