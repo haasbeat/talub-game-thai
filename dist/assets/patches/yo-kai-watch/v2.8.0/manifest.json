@@ -9,22 +9,22 @@
   "engine": "xdelta3",
   "accepted_sources": [
     {
-      "filename": "Yo-Kai Watch (USA) Decrypted.3ds",
-      "size": 869330944,
-      "sha256": "39afb3ebcc5d5472248499ce71a8a77024e893a2dd1c404cabb2a19a24e3c49c"
+      "filename": "Yo-Kai Watch (USA).3ds",
+      "size": 1073741824,
+      "sha256": "85b0d89a8f1d559bcc62a79941c5f272838835176b3d39ece7942bf15fe62cd6"
     }
   ],
   "patch": {
-    "filename": "Yokai_Watch_Thai_v2.8.0.xdelta",
-    "size": 11678966,
-    "sha256": "dc5203628b2328ce74501300c1043c2bab3abd4d9dbc80633579d0b179f592f9",
+    "filename": "Yokai_Watch_Thai_v2.8.0_1GB.xdelta",
+    "size": 11679585,
+    "sha256": "566f6d65a79aa18ab9706f32f95ad9409736e3fce04fea31276a18373789d2dd",
     "release_date": "2026-09-26",
     "date_source": "patch_file_mtime"
   },
   "output": {
-    "filename": "Yokai_Watch_Thai_v2.8.0.3ds",
-    "size": 896052736,
-    "sha256": "c1e251d9d0ab02f001199a7cbc7f3b4efacecb2331f674e50ffaaf628a1256cd"
+    "filename": "Yo-Kai Watch (USA) (Thai v2.8.0 1GB) Decrypted.3ds",
+    "size": 1073741824,
+    "sha256": "c79f7790b176c49d423654528e48d1b63ac6fead8e9287d92116bdf836e102a3"
   },
   "release_status": {
     "module_status": "เนื้อเรื่องหลัก+เควสต์เสริมโยไก+ระบบเหรียญโยไก+เมนู 100%",
@@ -34,12 +34,13 @@
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {
-    "verified_at": "2026-11-05T15:00:00+07:00",
-    "method": "browser_xdelta3_wasm_roundtrip",
-    "note": "Clean source located by SHA-256 and patched with the site's vendored xdelta3 wasm engine; output matches release checksums.",
-    "source_sha256_verified": true,
+    "verified_at": "2026-11-06T22:36:00+07:00",
+    "method": "owner_reported_xdelta_patcher",
+    "note": "The project owner reported a successful xdelta patcher test. Source and output identities were read from the distributed xdelta application header; an independent clean-source roundtrip for this 1 GiB candidate remains pending.",
+    "source_sha256_verified": false,
     "patch_sha256_verified": true,
-    "output_sha256_verified": true,
-    "output_matches_release_target": true
+    "output_sha256_verified": false,
+    "output_matches_release_target": false,
+    "patcher_test_passed": true
   }
 }
