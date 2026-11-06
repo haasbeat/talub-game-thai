@@ -151,16 +151,12 @@ const createGameCard = (game, index) => {
   cover.loading = 'lazy';
   cover.decoding = 'async';
 
-  const gameIndex = document.createElement('span');
-  gameIndex.className = 'poster-index mono';
-  gameIndex.textContent = game.index;
-
   const arrow = document.createElement('span');
   arrow.className = 'poster-arrow';
   arrow.textContent = '↗';
   arrow.setAttribute('aria-hidden', 'true');
 
-  poster.append(cover, gameIndex, arrow);
+  poster.append(cover, arrow);
 
   const meta = document.createElement('div');
   meta.className = 'game-meta';

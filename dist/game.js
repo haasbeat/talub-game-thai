@@ -608,7 +608,6 @@ document.querySelector('#detail-japanese-title').textContent = details.japaneseT
 document.querySelector('#detail-description').textContent = game.description;
 document.querySelector('#detail-cover').src = game.cover;
 document.querySelector('#detail-cover').alt = `ปกเกม ${game.title} ฉบับภาษาไทย`;
-document.querySelector('#detail-index').textContent = game.index;
 document.querySelector('#detail-platform').textContent = game.platform;
 const platformKey = (game.platform || '').toLowerCase().trim();
 const platformLink = document.querySelector('#detail-platform-link');
