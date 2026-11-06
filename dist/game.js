@@ -603,6 +603,20 @@ if (breadcrumb && platformKey) {
   breadcrumb.href = `./index.html?platform=${encodeURIComponent(platformKey)}#games`;
 }
 document.querySelector('#detail-version').textContent = game.version;
+const formatPatchDate = (isoDate) => {
+  if (!isoDate) return 'ไม่ระบุวันที่';
+  return new Intl.DateTimeFormat('th-TH', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+    timeZone: 'Asia/Bangkok',
+  }).format(new Date(`${isoDate}T00:00:00+07:00`));
+};
+const detailPatchDate = document.querySelector('#detail-patch-date');
+if (detailPatchDate) {
+  detailPatchDate.dateTime = game.patchDate || '';
+  detailPatchDate.textContent = formatPatchDate(game.patchDate);
+}
 const patchCountEl = document.querySelector('#detail-patch-count');
 const renderPatchCount = (value) => {
   if (patchCountEl && window.PatchStats) patchCountEl.textContent = value === null ? '—' : `${window.PatchStats.format(value)} ครั้ง`;

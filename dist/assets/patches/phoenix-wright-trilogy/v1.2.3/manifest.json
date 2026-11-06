@@ -17,7 +17,9 @@
   "patch": {
     "filename": "Phoenix_Wright_Trilogy_Thai_v1.2.3_Decrypted.xdelta",
     "size": 12308597,
-    "sha256": "5da06e2f3faf35f8b85623e581729d5e269568270786d7ef69adfd9c3f4caf27"
+    "sha256": "5da06e2f3faf35f8b85623e581729d5e269568270786d7ef69adfd9c3f4caf27",
+    "release_date": "2026-10-28",
+    "date_source": "patch_file_mtime"
   },
   "output": {
     "filename": "Phoenix Wright - Ace Attorney Trilogy (Thai).3ds",

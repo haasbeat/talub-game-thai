@@ -17,7 +17,9 @@
   "patch": {
     "filename": "Dragon_Quest_XI_Thai_v2.4.1_ChakraPetch_Light.xdelta",
     "size": 46725892,
-    "sha256": "af0bad809f0ddd115d4cbcd195cddb5e2dc746a41848ce781e08bcf32ade9079"
+    "sha256": "af0bad809f0ddd115d4cbcd195cddb5e2dc746a41848ce781e08bcf32ade9079",
+    "release_date": "2026-11-02",
+    "date_source": "patch_file_mtime"
   },
   "output": {
     "filename": "Dragon_Quest_XI_3DS_Thai_v2.4.1.3ds",

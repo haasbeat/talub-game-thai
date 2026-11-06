@@ -17,7 +17,9 @@
   "patch": {
     "filename": "Dragon_Quest_VII_Thai_v1.6.6.xdelta",
     "size": 20389076,
-    "sha256": "6129499263b51e5724800604cd0fe7fbf7cae2cec97e521484ada4887caa30f8"
+    "sha256": "6129499263b51e5724800604cd0fe7fbf7cae2cec97e521484ada4887caa30f8",
+    "release_date": "2026-11-02",
+    "date_source": "patch_file_mtime"
   },
   "output": {
     "filename": "Dragon Quest VII - Fragments of the Forgotten Past (Thai).3ds",

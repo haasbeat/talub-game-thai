@@ -17,7 +17,9 @@
   "patch": {
     "filename": "Lost_in_Blue_2_Thai_v2.0.2.xdelta",
     "size": 1078572,
-    "sha256": "4aa3a9c5b9d4932b03b98ccd7cc341ce6c34f531311886cfe874e50ea7ea209a"
+    "sha256": "4aa3a9c5b9d4932b03b98ccd7cc341ce6c34f531311886cfe874e50ea7ea209a",
+    "release_date": "2026-11-01",
+    "date_source": "release_archive_mtime"
   },
   "output": {
     "filename": "Lost in Blue 2 - Thai v2.0.2.nds",

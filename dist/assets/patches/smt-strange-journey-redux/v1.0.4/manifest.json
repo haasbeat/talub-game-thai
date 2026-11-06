@@ -17,7 +17,9 @@
   "patch": {
     "filename": "SMT_Strange_Journey_Redux_Thai_v1.0.4.xdelta",
     "size": 35742033,
-    "sha256": "b87326fe28aef5d7380521a2ffdaf2e7497524892f61a7903a35cba6d82077e9"
+    "sha256": "b87326fe28aef5d7380521a2ffdaf2e7497524892f61a7903a35cba6d82077e9",
+    "release_date": "2026-10-25",
+    "date_source": "patch_file_mtime"
   },
   "output": {
     "filename": "SMT_Strange_Journey_Redux_Thai_v1.0.4.3ds",

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "game_slug": "front-mission-2089",
+  "game_title": "Front Mission 2089: Border of Madness",
+  "platform": "NDS",
+  "region": "Japan",
+  "game_code": "YFLJ",
+  "patch_version": "v1.1.1",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Front Mission 2089 - Border of Madness (Japan).nds",
+      "size": 67108864,
+      "sha256": "f4d6bdda171ac33b065162a5b3028252ab78b32d9926e7154de0b96564ff4ed9"
+    }
+  ],
+  "patch": {
+    "filename": "Front_Mission_2089_Thai_v1.1.1.xdelta",
+    "size": 411425,
+    "sha256": "b37193a35e1c3001af5beddeb94ab50771867374816c6c2ffa2879d2010878de",
+    "release_date": "2026-10-31",
+    "date_source": "patch_file_mtime"
+  },
+  "output": {
+    "filename": "Front_Mission_2089_Thai_v1.1.1.nds",
+    "size": 67108864,
+    "sha256": "11d9bdf7cc54a35e6f719c1b0f93cd3785c735ea84242c67932e970be8193e1b"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก 6,111/6,111 บรรทัด + ข้อความ .msg 155/155 ไฟล์ (เมนูและคำสั่งรบคงภาษาอังกฤษโดยตั้งใจ)",
+    "whole_game_census": "เนื้อเรื่องหลัก 100.0% และข้อความ .msg 155/155 ไฟล์ — ภาพรวมทั้งเกมยังไม่ครบ เพราะยังมีกราฟิกญี่ปุ่นบางส่วน",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "STATE.md v1.1.1 / release notes (2026-10-31)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-10-31T21:25:59+07:00",
+    "method": "bit_identical_clean_source_roundtrip",
+    "note": "Distributed xdelta reconstructed the pinned v1.1.1 target byte-for-byte; patch, source, and output identities match STATE.md and checksums.txt.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}

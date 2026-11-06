@@ -17,7 +17,9 @@
   "patch": {
     "filename": "The_World_Ends_with_You_Thai_v1.0.4.xdelta",
     "size": 1066901,
-    "sha256": "4c284fc2819f04511fb609d8d1ed7cdc974702b86852596df0247f5cfdb5e00b"
+    "sha256": "4c284fc2819f04511fb609d8d1ed7cdc974702b86852596df0247f5cfdb5e00b",
+    "release_date": "2026-11-01",
+    "date_source": "patch_file_mtime"
   },
   "output": {
     "filename": "The_World_Ends_with_You_TH_v1.0.4.nds",

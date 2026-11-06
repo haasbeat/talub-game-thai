@@ -17,7 +17,9 @@
   "patch": {
     "filename": "Monster_Hunter_Stories_USA_TH_v1.0.0.xdelta",
     "size": 3799137,
-    "sha256": "796467b8926bc7a35e23e3a97ee148ecf0d555471aa9a0c654ba765eda446d8a"
+    "sha256": "796467b8926bc7a35e23e3a97ee148ecf0d555471aa9a0c654ba765eda446d8a",
+    "release_date": "2026-11-02",
+    "date_source": "release_archive_mtime"
   },
   "output": {
     "filename": "Monster Hunter Stories (USA) Thai v1.0.0.3ds",

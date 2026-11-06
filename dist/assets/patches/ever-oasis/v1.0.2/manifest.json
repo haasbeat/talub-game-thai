@@ -17,7 +17,9 @@
   "patch": {
     "filename": "Ever_Oasis_Thai_v1.0.2.xdelta",
     "size": 551559,
-    "sha256": "a1fca9a54cd3269c1417b632ff54fe5f11caad8a8293a059d8b1e1b5e9eb768b"
+    "sha256": "a1fca9a54cd3269c1417b632ff54fe5f11caad8a8293a059d8b1e1b5e9eb768b",
+    "release_date": "2026-10-12",
+    "date_source": "patch_file_mtime"
   },
   "output": {
     "filename": "Ever_Oasis_Thai_v1.0.2.3ds",

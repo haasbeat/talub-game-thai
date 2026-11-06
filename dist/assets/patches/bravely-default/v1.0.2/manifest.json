@@ -17,7 +17,9 @@
   "patch": {
     "filename": "Bravely_Default_USA_TH_v1.0.2.xdelta",
     "size": 3492453,
-    "sha256": "491944bf2c1b84791c8e45e8c0fbc364c6fc7ae86873bac76102377ac3e0e675"
+    "sha256": "491944bf2c1b84791c8e45e8c0fbc364c6fc7ae86873bac76102377ac3e0e675",
+    "release_date": "2026-10-27",
+    "date_source": "patch_file_mtime"
   },
   "output": {
     "filename": "Bravely_Default_USA_TH_v1.0.2.3ds",

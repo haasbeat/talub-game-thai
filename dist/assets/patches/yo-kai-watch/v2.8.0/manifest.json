@@ -17,7 +17,9 @@
   "patch": {
     "filename": "Yokai_Watch_Thai_v2.8.0.xdelta",
     "size": 11678966,
-    "sha256": "dc5203628b2328ce74501300c1043c2bab3abd4d9dbc80633579d0b179f592f9"
+    "sha256": "dc5203628b2328ce74501300c1043c2bab3abd4d9dbc80633579d0b179f592f9",
+    "release_date": "2026-09-26",
+    "date_source": "patch_file_mtime"
   },
   "output": {
     "filename": "Yokai_Watch_Thai_v2.8.0.3ds",

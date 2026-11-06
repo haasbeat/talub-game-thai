@@ -17,7 +17,9 @@
   "patch": {
     "filename": "Lost_Heroes_Thai_v1.0.0.xdelta",
     "size": 70120249,
-    "sha256": "a4e060a76827bac01002d2b3c42560fb0bae9ad0101d4b7d400332eb62d8474e"
+    "sha256": "a4e060a76827bac01002d2b3c42560fb0bae9ad0101d4b7d400332eb62d8474e",
+    "release_date": "2026-10-25",
+    "date_source": "patch_file_mtime"
   },
   "output": {
     "filename": "Lost_Heroes_Thai_v1.0.0.3ds",

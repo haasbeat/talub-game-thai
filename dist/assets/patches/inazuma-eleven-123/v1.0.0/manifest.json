@@ -39,7 +39,9 @@
         "size": 13061072,
         "sha256": "9a27fcd99c333cf050e6852363d314344ecef15702a33983a06f9e9f1a22850a"
       }
-    ]
+    ],
+    "release_date": "2026-10-28",
+    "date_source": "patch_file_mtime"
   },
   "output": {
     "filename": "ie123_thai_v1.0.0.3ds",

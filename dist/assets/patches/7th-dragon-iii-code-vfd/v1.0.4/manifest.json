@@ -17,7 +17,9 @@
   "patch": {
     "filename": "7th_Dragon_III_Code_VFD_USA_Thai_v1.04.xdelta",
     "size": 1655680,
-    "sha256": "e5b97d6d3c96860e81fe2dcc22061d91958f48d65977c7f5bf6b887ade8c8573"
+    "sha256": "e5b97d6d3c96860e81fe2dcc22061d91958f48d65977c7f5bf6b887ade8c8573",
+    "release_date": "2026-09-27",
+    "date_source": "patch_file_mtime"
   },
   "output": {
     "filename": "7th Dragon III Code - VFD (USA) Thai.3ds",

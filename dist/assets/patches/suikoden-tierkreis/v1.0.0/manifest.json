@@ -17,7 +17,9 @@
   "patch": {
     "filename": "Suikoden_Tierkreis_Thai_v1.0.0.xdelta",
     "size": 7000223,
-    "sha256": "6fb4ef2cca93978869c7e3009f7c38b5c765aad1374083fdab331a55eda7bb45"
+    "sha256": "6fb4ef2cca93978869c7e3009f7c38b5c765aad1374083fdab331a55eda7bb45",
+    "release_date": "2026-11-01",
+    "date_source": "patch_file_mtime"
   },
   "output": {
     "filename": "Suikoden_Tierkreis_Thai_v1.0.0.nds",

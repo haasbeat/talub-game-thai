@@ -17,7 +17,9 @@
   "patch": {
     "filename": "DQMJ3P_Thai_v1.0.3.xdelta",
     "size": 6441510,
-    "sha256": "d6a7643f15f843befa0b1e8ff95a00ed26b2be629d1d9c6b5ca41ae9f93a714d"
+    "sha256": "d6a7643f15f843befa0b1e8ff95a00ed26b2be629d1d9c6b5ca41ae9f93a714d",
+    "release_date": "2026-09-26",
+    "date_source": "patch_file_mtime"
   },
   "output": {
     "filename": "Dragon Quest Monsters - Joker 3 Professional (Thai v1.0.3).3ds",

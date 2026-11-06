@@ -17,7 +17,9 @@
   "patch": {
     "filename": "New_Love_Plus_Plus_Thai_v2.0.0.xdelta",
     "size": 74640958,
-    "sha256": "078428dbe998a0826e472aa0a3f3d590ff611fe25a7e66320f3e6f20203c2e3c"
+    "sha256": "078428dbe998a0826e472aa0a3f3d590ff611fe25a7e66320f3e6f20203c2e3c",
+    "release_date": "2026-10-14",
+    "date_source": "patch_file_mtime"
   },
   "output": {
     "filename": "New_Love_Plus_Plus_Thai_v2.0.0.3ds",

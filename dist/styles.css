@@ -238,6 +238,7 @@ button, a, .drop-zone { -webkit-tap-highlight-color: transparent; }
 .game-meta { border-top: 1px solid var(--line); margin-top: 14px; padding-top: 12px; display: grid; grid-template-columns: 1fr auto; gap: 8px 14px; align-items: baseline; }
 .game-meta h3 { grid-column: 1 / -1; margin: 0; font-size: 16px; font-weight: 500; line-height: 1.25; }
 .game-meta span { color: var(--muted); }
+.game-patch-date { grid-column: 1 / -1; color: var(--muted); font-size: 10px; letter-spacing: .06em; }
 .game-patch-count { grid-column: 1 / -1; margin: 0; color: var(--muted); font-size: 10px; letter-spacing: .06em; text-transform: none; }
 .platform-empty { min-height: 380px; display: grid; place-content: center; text-align: center; border: 1px solid var(--line); border-radius: 80px 8px 80px 8px; background: #ecece8; }
 .platform-empty[hidden] { display: none; }

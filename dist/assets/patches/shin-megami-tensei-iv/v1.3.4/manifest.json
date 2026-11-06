@@ -17,7 +17,9 @@
   "patch": {
     "filename": "Shin_Megami_Tensei_IV_USA_Thai_v1.3.4.xdelta",
     "size": 4278409,
-    "sha256": "fe2cc3ed2fb0775dab67ab68e398cdadb67ceb171a4d9aa8f31ddaf459615322"
+    "sha256": "fe2cc3ed2fb0775dab67ab68e398cdadb67ceb171a4d9aa8f31ddaf459615322",
+    "release_date": "2026-10-27",
+    "date_source": "patch_file_mtime"
   },
   "output": {
     "filename": "Shin_Megami_Tensei_IV_USA_TH_v1.3.4.3ds",

@@ -53,6 +53,16 @@ const platformEmpty = document.querySelector('#platform-empty');
 const gameSort = document.querySelector('#game-sort');
 const posterShapes = ['poster-a', 'poster-b', 'poster-c', 'poster-d', 'poster-e'];
 
+const formatPatchDate = (isoDate) => {
+  if (!isoDate) return 'ไม่ระบุวันที่';
+  return new Intl.DateTimeFormat('th-TH', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+    timeZone: 'Asia/Bangkok',
+  }).format(new Date(`${isoDate}T00:00:00+07:00`));
+};
+
 const params = new URLSearchParams(window.location.search);
 const requestedPlatform = params.get('platform');
 const requestedSort = params.get('sort');
@@ -153,6 +163,12 @@ const createGameCard = (game, index) => {
   meta.querySelector('h3').textContent = game.title;
   meta.querySelectorAll('span')[0].textContent = game.version;
   meta.querySelectorAll('span')[1].textContent = game.platformLabel;
+
+  const patchDate = document.createElement('time');
+  patchDate.className = 'game-patch-date mono';
+  patchDate.dateTime = game.patchDate || '';
+  patchDate.textContent = `อัปเดตแพตช์ ${formatPatchDate(game.patchDate)}`;
+  meta.append(patchDate);
 
   if (window.PatchStats) {
     const stat = document.createElement('p');

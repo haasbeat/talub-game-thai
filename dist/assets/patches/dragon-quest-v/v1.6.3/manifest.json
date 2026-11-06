@@ -17,7 +17,9 @@
   "patch": {
     "filename": "Dragon_Quest_V_Thai_v1.6.3.xdelta",
     "size": 2094119,
-    "sha256": "348840762e46cc157dc19f0df380d154751b158ce10af2f1d92c57c6ec1b7a5e"
+    "sha256": "348840762e46cc157dc19f0df380d154751b158ce10af2f1d92c57c6ec1b7a5e",
+    "release_date": "2026-11-02",
+    "date_source": "patch_file_mtime"
   },
   "output": {
     "filename": "Dragon_Quest_V_Thai_v1.6.3.nds",

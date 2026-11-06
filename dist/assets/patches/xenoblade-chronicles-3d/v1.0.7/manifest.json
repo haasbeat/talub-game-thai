@@ -17,7 +17,9 @@
   "patch": {
     "filename": "Xenoblade_Chronicles_3D_Thai_v1.0.7.xdelta",
     "size": 3949345,
-    "sha256": "3f53cb3121f6c6ab84adf5bae51149feb9f3e0dd15eefd497e51c53359c73e9c"
+    "sha256": "3f53cb3121f6c6ab84adf5bae51149feb9f3e0dd15eefd497e51c53359c73e9c",
+    "release_date": "2026-10-24",
+    "date_source": "patch_file_mtime"
   },
   "output": {
     "filename": "Xenoblade_Chronicles_3D_Thai_v1.0.7.3ds",
