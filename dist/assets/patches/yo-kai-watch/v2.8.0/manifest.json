@@ -11,7 +11,7 @@
     {
       "filename": "Yo-Kai Watch (USA).3ds",
       "size": 1073741824,
-      "sha256": "85b0d89a8f1d559bcc62a79941c5f272838835176b3d39ece7942bf15fe62cd6"
+      "sha256": "933c8b7e1d37b87e69b7c7aa97636296e9cb788972077a189f5dd2dc489465a5"
     }
   ],
   "patch": {
@@ -24,7 +24,7 @@
   "output": {
     "filename": "Yo-Kai Watch (USA) (Thai v2.8.0 1GB) Decrypted.3ds",
     "size": 1073741824,
-    "sha256": "c79f7790b176c49d423654528e48d1b63ac6fead8e9287d92116bdf836e102a3"
+    "sha256": "e13972ce3b541035ccbae98eba9d0135e97193310b6a9300a904a1b04ebac20a"
   },
   "release_status": {
     "module_status": "เนื้อเรื่องหลัก+เควสต์เสริมโยไก+ระบบเหรียญโยไก+เมนู 100%",
@@ -34,13 +34,13 @@
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {
-    "verified_at": "2026-11-06T22:36:00+07:00",
-    "method": "owner_reported_xdelta_patcher",
-    "note": "The project owner reported a successful xdelta patcher test. Source and output identities were read from the distributed xdelta application header; an independent clean-source roundtrip for this 1 GiB candidate remains pending.",
-    "source_sha256_verified": false,
+    "verified_at": "2026-11-07T00:00:00+07:00",
+    "method": "clean_source_cli_roundtrip",
+    "note": "The distributed 1 GiB xdelta was applied with xdelta3 to the clean ROM stored in the project. The reconstructed 1 GiB output was hashed directly and matches this manifest.",
+    "source_sha256_verified": true,
     "patch_sha256_verified": true,
-    "output_sha256_verified": false,
-    "output_matches_release_target": false,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true,
     "patcher_test_passed": true
   }
 }
