@@ -53,6 +53,13 @@ const platformEmpty = document.querySelector('#platform-empty');
 const gameSort = document.querySelector('#game-sort');
 const posterShapes = ['poster-a', 'poster-b', 'poster-c', 'poster-d', 'poster-e'];
 
+const latestSection = document.querySelector('#latest');
+const popularSection = document.querySelector('#popular');
+const gamesSection = document.querySelector('#games');
+if (latestSection && popularSection && gamesSection) {
+  gamesSection.before(latestSection, popularSection);
+}
+
 const formatPatchDate = (isoDate) => {
   if (!isoDate) return 'ไม่ระบุวันที่';
   return new Intl.DateTimeFormat('th-TH', {
@@ -133,7 +140,7 @@ const createGameCard = (game, index) => {
   card.dataset.platform = game.platform;
   card.setAttribute('role', 'link');
   card.setAttribute('tabindex', '0');
-  card.setAttribute('aria-label', `ดูรายละเอียดและแพตช์ ${game.title}`);
+  card.setAttribute('aria-label', `ดูรายละเอียดม็อดภาษาไทยสำหรับ ${game.title}`);
 
   const poster = document.createElement('div');
   poster.className = `poster cover-poster ${posterShapes[index % posterShapes.length]}`;
@@ -165,7 +172,7 @@ const createGameCard = (game, index) => {
   const patchDate = document.createElement('time');
   patchDate.className = 'game-patch-date mono';
   patchDate.dateTime = game.patchDate || '';
-  patchDate.textContent = `อัปเดตแพตช์ ${formatPatchDate(game.patchDate)}`;
+  patchDate.textContent = `อัปเดตม็อด ${formatPatchDate(game.patchDate)}`;
   meta.append(patchDate);
 
   if (window.PatchStats) {
@@ -215,7 +222,7 @@ const createPopularCard = (game, rank, value, featured = false) => {
   const card = document.createElement('a');
   card.className = `${featured ? 'popular-feature-card' : 'popular-small-card'} hover-target`;
   card.href = gameHref(game);
-  card.setAttribute('aria-label', `อันดับ ${rank} ${displayTitle(game)} — ดูรายละเอียดเกม`);
+  card.setAttribute('aria-label', `ม็อดยอดนิยมอันดับ ${rank} ${displayTitle(game)} — ดูรายละเอียด`);
 
   const media = document.createElement('div');
   media.className = 'popular-card-media';
@@ -301,7 +308,7 @@ const createLatestCard = (game) => {
   const card = document.createElement('a');
   card.className = 'latest-game-card hover-target';
   card.href = gameHref(game);
-  card.setAttribute('aria-label', `ดูรายละเอียด ${displayTitle(game)}`);
+  card.setAttribute('aria-label', `ดูรายละเอียดม็อด ${displayTitle(game)}`);
 
   const imageWrap = document.createElement('div');
   imageWrap.className = 'latest-game-cover';
@@ -322,7 +329,7 @@ const createLatestCard = (game) => {
   const date = document.createElement('time');
   date.className = 'mono';
   date.dateTime = game.patchDate || '';
-  date.textContent = `อัปเดตแพตช์ ${formatPatchDate(game.patchDate)}`;
+  date.textContent = `อัปเดตม็อด ${formatPatchDate(game.patchDate)}`;
   meta.append(platform, title, date);
   card.append(imageWrap, meta);
   return card;
@@ -409,7 +416,7 @@ function renderCatalog(shouldUpdateUrl = false, shouldScroll = false) {
     platformEmpty.querySelector('h3').innerHTML = state.query ? 'ไม่พบเกม<br />ที่ตรงกับคำค้นหา' : 'กำลังเตรียมเกม<br />สำหรับเครื่องนี้';
     platformEmpty.querySelector('p').textContent = state.query
       ? `ไม่พบ "${state.query}" ${state.platform === 'all' ? '' : `ในหมวด ${platformLabels[state.platform]} `}ลองค้นด้วยชื่ออังกฤษ ชื่อไทย หรือเลือก "รวมทั้งหมด"`
-      : 'เมื่อมีผลงานพร้อม รายการเกมและหน้าสำหรับแพตช์จะปรากฏในหมวดนี้';
+      : 'เมื่อมีผลงานพร้อม ม็อดภาษาไทยและหน้าสำหรับติดตั้งจะปรากฏในหมวดนี้';
   }
   platformLabel.textContent = platformLabels[state.platform];
   platformCount.textContent = games.length

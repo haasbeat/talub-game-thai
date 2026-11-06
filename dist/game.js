@@ -700,16 +700,16 @@ if (isExternalDownload) {
   if (identityLabels[2]) identityLabels[2].textContent = 'DOWNLOAD ARCHIVE SHA-256';
 
   const installNav = document.querySelector('#detail-install-nav');
-  if (installNav) installNav.textContent = 'ดาวน์โหลด';
+  if (installNav) installNav.textContent = 'ดาวน์โหลดม็อด';
   const installTab = document.querySelector('#detail-install-tab strong');
-  if (installTab) installTab.textContent = 'ดาวน์โหลดชุดภาษาไทย';
+  if (installTab) installTab.textContent = 'ดาวน์โหลดม็อด';
   const installCta = document.querySelector('#detail-install-cta');
   if (installCta) {
     installCta.href = game.downloadUrl;
     installCta.target = '_blank';
     installCta.rel = 'noopener noreferrer';
     installCta.removeAttribute('data-detail-view');
-    installCta.querySelector('span:first-child').textContent = 'ดาวน์โหลดชุดภาษาไทย';
+    installCta.querySelector('span:first-child').textContent = 'ดาวน์โหลดม็อดภาษาไทย';
     installCta.querySelector('span:last-child').textContent = '↗';
     installCta.addEventListener('click', recordExternalDownload);
   }
