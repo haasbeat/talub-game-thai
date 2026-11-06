@@ -9,22 +9,44 @@
   "engine": "xdelta3",
   "accepted_sources": [
     {
-      "filename": "Phoenix Wright - Ace Attorney Trilogy (USA) Decrypted.3ds",
-      "size": 384315392,
-      "sha256": "1d82457ae676a4dbfee0a6472cf4e64bee5c7539dfb244fbe88622e17802a246"
+      "filename": "Phoenix Wright - Ace Attorney Trilogy (USA) (eShop).3ds",
+      "size": 536870912,
+      "sha256": "1690da8414e468debfc96118833d3752f44f5331acd5c7ef0406af17d3c631d1"
     }
   ],
   "patch": {
-    "filename": "Phoenix_Wright_Trilogy_Thai_v1.2.3_Decrypted.xdelta",
-    "size": 12308597,
-    "sha256": "5da06e2f3faf35f8b85623e581729d5e269568270786d7ef69adfd9c3f4caf27",
+    "filename": "Phoenix_Wright_Trilogy_Thai_v1.2.3.xdelta",
+    "size": 356781961,
+    "sha256": "f0242103d34db42ae95b6e81630cc2b3c65946709d20b227873390073deac6a8",
+    "parts": [
+      {
+        "filename": "Phoenix_Wright_Trilogy_Thai_v1.2.3.xdelta.part00",
+        "size": 94371840,
+        "sha256": "4089983c60014ed8825fd7807171a96838f357c5389cde69d9147a98d042552b"
+      },
+      {
+        "filename": "Phoenix_Wright_Trilogy_Thai_v1.2.3.xdelta.part01",
+        "size": 94371840,
+        "sha256": "3db482feea091433097c8ed0879739f81d1370ffc3297aec93c60e9119bbec69"
+      },
+      {
+        "filename": "Phoenix_Wright_Trilogy_Thai_v1.2.3.xdelta.part02",
+        "size": 94371840,
+        "sha256": "e08b038b3ff4ea8a14fb3306bf29103e13d1262f7bfa1d6735fc3aad9c7ad642"
+      },
+      {
+        "filename": "Phoenix_Wright_Trilogy_Thai_v1.2.3.xdelta.part03",
+        "size": 73666441,
+        "sha256": "a7651406dcd1fd745ca52250ada00ec5e4f047afc364b8f65c28203bf0b54246"
+      }
+    ],
     "release_date": "2026-10-28",
     "date_source": "patch_file_mtime"
   },
   "output": {
     "filename": "Phoenix Wright - Ace Attorney Trilogy (Thai).3ds",
     "size": 398856192,
-    "sha256": "bc88c677757f6c67d4c9dca226664316fa5943b99a32f3db30b713b5397de596"
+    "sha256": "ba2ea48fae81cf129b26a6e920ccdca30bce0c57c27cd9868f7bcc9617cee7d2"
   },
   "release_status": {
     "module_status": "คดีความทั้ง 3 ภาค (14 คดี)+การว่าความในชั้นศาล+สืบสวนภาคสนาม 100%",
@@ -36,11 +58,11 @@
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {
     "verified_at": "2026-11-07T00:00:00+07:00",
-    "method": "xdelta_application_header_identity",
-    "note": "Source and output identities are taken from the application header of the exact distributed xdelta. They replace the stale release-document hashes. An independent clean-source roundtrip for this identity remains pending.",
-    "source_sha256_verified": false,
+    "method": "clean_source_cli_roundtrip",
+    "note": "The exact distributed eShop xdelta reconstructed the release target from the pinned 536,870,912-byte clean USA source with xdelta3. Source, patch, and output were hashed directly.",
+    "source_sha256_verified": true,
     "patch_sha256_verified": true,
-    "output_sha256_verified": false,
-    "output_matches_release_target": false
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
   }
 }

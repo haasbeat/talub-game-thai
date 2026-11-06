@@ -9,10 +9,9 @@ Updated: 2026-11-06 (Asia/Bangkok)
 - Patch dates recorded: 47/47
 - Dates taken directly from patch-file modified time: 40
 - Dates using release-archive modified time because the patch carried a ZIP epoch timestamp: 2 (`lost-in-blue-2`, `monster-hunter-stories`)
-- Clean-source roundtrip with expected output hash matched: 22
+- Clean-source roundtrip with expected output hash matched: 23
 - Owner-reported xdelta-patcher tests: 13
 - Browser apply-only test without a pinned target hash: 1
-- Distributed xdelta application-header identity only: 1 (`phoenix-wright-trilogy`)
 - No current roundtrip evidence recorded in the web manifest: 5
 
 ### Nintendo Switch external downloads
@@ -51,16 +50,16 @@ The web patch now targets the full 1 GiB USA cartridge image instead of the prev
 
 ## Phoenix Wright: Ace Attorney Trilogy
 
-The website previously used source/output hashes from stale release documentation that do not match the application header of the exact distributed decrypted-ROM xdelta.
+The web patch targets the full 536,870,912-byte USA eShop image. The previous 384,315,392-byte decrypted profile was the wrong source profile for the ROM distributed by the project owner.
 
-- Accepted source: `Phoenix Wright - Ace Attorney Trilogy (USA) Decrypted.3ds`, 384,315,392 bytes
-- Source SHA-256: `1d82457ae676a4dbfee0a6472cf4e64bee5c7539dfb244fbe88622e17802a246`
-- Patch SHA-256: `5da06e2f3faf35f8b85623e581729d5e269568270786d7ef69adfd9c3f4caf27`
-- Expected output SHA-256: `bc88c677757f6c67d4c9dca226664316fa5943b99a32f3db30b713b5397de596`
-- Verification: source/output identities come from the distributed xdelta application header. The patch file itself is hash-verified; an independent clean-source roundtrip for this exact source identity remains pending.
+- Accepted source: `Phoenix Wright - Ace Attorney Trilogy (USA) (eShop).3ds`, 536,870,912 bytes
+- Source SHA-256: `1690da8414e468debfc96118833d3752f44f5331acd5c7ef0406af17d3c631d1`
+- Patch SHA-256: `f0242103d34db42ae95b6e81630cc2b3c65946709d20b227873390073deac6a8`
+- Expected output SHA-256: `ba2ea48fae81cf129b26a6e920ccdca30bce0c57c27cd9868f7bcc9617cee7d2`
+- Verification: the exact distributed eShop xdelta reconstructed the release target byte-for-byte from the pinned clean source with xdelta3. The 356,781,961-byte patch is shipped to GitHub Pages as four same-origin parts below GitHub's per-file limit and reassembled in the browser before its full SHA-256 is checked.
 
 ## Evidence tiers
 
-The 22 output-matched entries combine 18 browser xdelta3 WASM roundtrips and 4 clean-source bit-identical/CLI roundtrips. The PoPoLoCrois web xdelta was applied successfully to its pinned USA ISO with the xdelta3 CLI; its measured output SHA-256 is used because the historical v1.10 guide's MD5/SHA1 describe a different target artifact. The 13 owner-reported entries retain that label and are not silently promoted to browser-roundtrip evidence. The application-header-only entry is `phoenix-wright-trilogy`; its stale release-document hashes were removed, but its exact source is not currently available for an independent roundtrip. The apply-only entry is `dqm-joker-3-professional`; it has no pinned release-target hash to compare. The five entries without current verification metadata are `dragon-quest-iv`, `dragon-quest-v`, `dragon-quest-vi`, `tales-of-hearts`, and `the-world-ends-with-you`.
+The 23 output-matched entries combine 18 browser xdelta3 WASM roundtrips and 5 clean-source bit-identical/CLI roundtrips. The PoPoLoCrois web xdelta was applied successfully to its pinned USA ISO with the xdelta3 CLI; its measured output SHA-256 is used because the historical v1.10 guide's MD5/SHA1 describe a different target artifact. The 13 owner-reported entries retain that label and are not silently promoted to browser-roundtrip evidence. The apply-only entry is `dqm-joker-3-professional`; it has no pinned release-target hash to compare. The five entries without current verification metadata are `dragon-quest-iv`, `dragon-quest-v`, `dragon-quest-vi`, `tales-of-hearts`, and `the-world-ends-with-you`.
 
 Large 3DS outputs may still need a disk-streaming output path before browser patching can be considered reliable on devices with limited memory.

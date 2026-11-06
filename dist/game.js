@@ -830,7 +830,8 @@ if (game.manifest && !isExternalDownload) {
       ? 'XDELTA3 VERIFIED'
       : 'XDELTA3 READY · VERIFYING';
 
-    if (manifest.output.size >= 512 * 1024 * 1024) {
+    const handlesLargeInput = manifest.accepted_sources?.some((source) => source.size >= 512 * 1024 * 1024);
+    if (handlesLargeInput || manifest.patch.size >= 256 * 1024 * 1024 || manifest.output.size >= 512 * 1024 * 1024) {
       workspaceNote.insertAdjacentHTML(
         'beforeend',
         '<br /><span>ไฟล์ขนาดใหญ่</span> รุ่นนี้อาจต้องใช้หน่วยความจำมากในขั้นสร้างไฟล์ผลลัพธ์ ควรใช้ Chrome/Edge บนคอมพิวเตอร์และปิดโปรแกรมที่ไม่จำเป็น',
