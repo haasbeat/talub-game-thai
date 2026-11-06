@@ -10,6 +10,7 @@
   const CACHE_KEY = 'talub-patch-stats-v1';
   const CACHE_TTL = 10 * 60 * 1000;
   const MAX_PARALLEL = 4; // service limit is 30 requests / 10 s per IP
+  const MIN_START_INTERVAL = 350;
 
   const readCache = () => {
     try { return JSON.parse(sessionStorage.getItem(CACHE_KEY) || '{}'); } catch { return {}; }
@@ -33,12 +34,21 @@
   const pending = new Map();
   const queue = [];
   let active = 0;
+  let lastStartedAt = 0;
+  let pumpTimer = 0;
   const pump = () => {
-    while (active < MAX_PARALLEL && queue.length) {
-      const job = queue.shift();
-      active += 1;
-      job().finally(() => { active -= 1; pump(); });
+    window.clearTimeout(pumpTimer);
+    if (active >= MAX_PARALLEL || !queue.length) return;
+    const wait = Math.max(0, MIN_START_INTERVAL - (Date.now() - lastStartedAt));
+    if (wait) {
+      pumpTimer = window.setTimeout(pump, wait);
+      return;
     }
+    const job = queue.shift();
+    active += 1;
+    lastStartedAt = Date.now();
+    job().finally(() => { active -= 1; pump(); });
+    pumpTimer = window.setTimeout(pump, MIN_START_INTERVAL);
   };
 
   const getCounter = (key) => {

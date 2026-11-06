@@ -198,6 +198,143 @@ const createGameCard = (game, index) => {
   return card;
 };
 
+const gameHref = (game) => `./game.html?game=${encodeURIComponent(game.slug)}`;
+const displayTitle = (game) => game.details?.thaiTitle || game.title;
+const secondaryTitle = (game) => displayTitle(game) === game.title
+  ? (game.details?.originalTitle || game.details?.japaneseTitle || game.title)
+  : game.title;
+const metricText = (game, value) => {
+  if (value === undefined) return 'กำลังโหลดสถิติ';
+  if (value === null) return game.distributionType === 'external-download' ? 'ดาวน์โหลดโดยตรง' : 'แพตช์ผ่านเว็บ';
+  return game.distributionType === 'external-download'
+    ? `ดาวน์โหลด ${window.PatchStats.format(value)} ครั้ง`
+    : `แพตช์แล้ว ${window.PatchStats.format(value)} ครั้ง`;
+};
+
+const createPopularCard = (game, rank, value, featured = false) => {
+  const card = document.createElement('a');
+  card.className = `${featured ? 'popular-feature-card' : 'popular-small-card'} hover-target`;
+  card.href = gameHref(game);
+  card.setAttribute('aria-label', `อันดับ ${rank} ${displayTitle(game)} — ดูรายละเอียดเกม`);
+
+  const media = document.createElement('div');
+  media.className = 'popular-card-media';
+  const image = document.createElement('img');
+  image.src = game.cover;
+  image.alt = `ปกเกม ${displayTitle(game)} ฉบับภาษาไทย`;
+  image.loading = 'lazy';
+  image.decoding = 'async';
+  const badge = document.createElement('span');
+  badge.className = 'popular-rank mono';
+  badge.textContent = `TOP ${String(rank).padStart(2, '0')}`;
+  media.append(image, badge);
+
+  const copy = document.createElement('div');
+  copy.className = 'popular-card-copy';
+  const meta = document.createElement('p');
+  meta.className = 'popular-card-meta mono';
+  meta.textContent = `${game.platformLabel} / ${game.version}`;
+  const title = document.createElement('h3');
+  title.textContent = displayTitle(game);
+  const detail = document.createElement('p');
+  detail.className = 'popular-card-detail';
+  detail.textContent = secondaryTitle(game);
+  const stat = document.createElement('span');
+  stat.className = 'popular-card-stat mono';
+  stat.textContent = metricText(game, value);
+  copy.append(meta, title, detail, stat);
+
+  card.append(media, copy);
+  return card;
+};
+
+const popularFallbackSlugs = [
+  'dragon-quest-viii',
+  'dragon-quest-vii',
+  'saga2-hihou-densetsu',
+  'fire-emblem-three-houses',
+];
+const popularFallback = popularFallbackSlugs
+  .map((slug) => catalog.find((game) => game.slug === slug))
+  .filter(Boolean);
+const popularGames = document.querySelector('#popular-games');
+
+const renderPopularGames = (games, metrics = new Map()) => {
+  if (!popularGames || !games.length) return;
+  const feature = createPopularCard(games[0], 1, metrics.get(games[0].slug), true);
+  const side = document.createElement('div');
+  side.className = 'popular-side-list';
+  games.slice(1, 4).forEach((game, index) => {
+    side.append(createPopularCard(game, index + 2, metrics.get(game.slug)));
+  });
+  popularGames.replaceChildren(feature, side);
+  bindHoverTargets(popularGames);
+};
+
+const loadPopularRanking = async () => {
+  if (!popularGames || !window.PatchStats) return;
+  const metrics = new Map();
+  await Promise.all(catalog.map(async (game) => {
+    const getStat = game.distributionType === 'external-download'
+      ? window.PatchStats.getDownload
+      : window.PatchStats.get;
+    metrics.set(game.slug, await getStat(game.slug));
+  }));
+
+  const fallbackRank = new Map(popularFallbackSlugs.map((slug, index) => [slug, index]));
+  const ranked = [...catalog].sort((left, right) => {
+    const leftValue = metrics.get(left.slug);
+    const rightValue = metrics.get(right.slug);
+    const leftScore = Number.isFinite(leftValue) ? leftValue : -1;
+    const rightScore = Number.isFinite(rightValue) ? rightValue : -1;
+    if (rightScore !== leftScore) return rightScore - leftScore;
+    const leftFallback = fallbackRank.has(left.slug) ? fallbackRank.get(left.slug) : Number.MAX_SAFE_INTEGER;
+    const rightFallback = fallbackRank.has(right.slug) ? fallbackRank.get(right.slug) : Number.MAX_SAFE_INTEGER;
+    if (leftFallback !== rightFallback) return leftFallback - rightFallback;
+    return right.order - left.order;
+  }).slice(0, 4);
+  renderPopularGames(ranked, metrics);
+};
+
+const latestGames = document.querySelector('#latest-games');
+const createLatestCard = (game) => {
+  const card = document.createElement('a');
+  card.className = 'latest-game-card hover-target';
+  card.href = gameHref(game);
+  card.setAttribute('aria-label', `ดูรายละเอียด ${displayTitle(game)}`);
+
+  const imageWrap = document.createElement('div');
+  imageWrap.className = 'latest-game-cover';
+  const image = document.createElement('img');
+  image.src = game.cover;
+  image.alt = `ปกเกม ${displayTitle(game)} ฉบับภาษาไทย`;
+  image.loading = 'lazy';
+  image.decoding = 'async';
+  imageWrap.append(image);
+
+  const meta = document.createElement('div');
+  meta.className = 'latest-game-copy';
+  const platform = document.createElement('span');
+  platform.className = 'mono';
+  platform.textContent = `${game.platformLabel} / ${game.version}`;
+  const title = document.createElement('h3');
+  title.textContent = displayTitle(game);
+  const date = document.createElement('time');
+  date.className = 'mono';
+  date.dateTime = game.patchDate || '';
+  date.textContent = `อัปเดตแพตช์ ${formatPatchDate(game.patchDate)}`;
+  meta.append(platform, title, date);
+  card.append(imageWrap, meta);
+  return card;
+};
+
+const renderLatestGames = () => {
+  if (!latestGames) return;
+  const latest = [...catalog].sort((left, right) => right.order - left.order).slice(0, 4);
+  latestGames.replaceChildren(...latest.map(createLatestCard));
+  bindHoverTargets(latestGames);
+};
+
 const pagination = document.createElement('nav');
 pagination.className = 'game-pagination';
 pagination.setAttribute('aria-label', 'หน้ารายการเกม');
@@ -328,6 +465,9 @@ window.addEventListener('resize', () => {
 
 createPlatformTabs();
 renderCatalog(false);
+renderPopularGames(popularFallback);
+renderLatestGames();
+loadPopularRanking();
 bindHoverTargets(document);
 
 if (requestedPlatform || window.location.hash === '#games') {

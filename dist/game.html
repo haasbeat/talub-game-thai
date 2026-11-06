@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=54" />
+    <link rel="stylesheet" href="./styles.css?v=55" />
   </head>
   <body class="detail-page">
     <div class="cursor" aria-hidden="true"></div>
@@ -59,10 +59,16 @@
             <div><span class="mono">GAME VERSION</span><strong id="detail-game-version">v1.0.0</strong></div>
           </div>
 
-          <a id="detail-install-cta" class="detail-cta hover-target" href="#patcher" data-detail-view="patcher">
-            <span>ติดตั้งฉบับภาษาไทย</span>
-            <span aria-hidden="true">↓</span>
-          </a>
+          <div class="detail-actions">
+            <a id="detail-install-cta" class="detail-cta hover-target" href="#patcher" data-detail-view="patcher">
+              <span>ติดตั้งฉบับภาษาไทย</span>
+              <span aria-hidden="true">↓</span>
+            </a>
+            <a class="detail-support-cta hover-target" href="./index.html#support">
+              <span>สนับสนุนงานแปล</span>
+              <span aria-hidden="true">♡</span>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -283,7 +289,7 @@
 
     <div id="toast" class="toast" role="status" aria-live="polite">พร้อมประมวลผลภายในอุปกรณ์</div>
     <script src="./catalog.js?v=53"></script>
-    <script src="./patch-stats.js?v=42"></script>
+    <script src="./patch-stats.js?v=43"></script>
     <script src="./assets/engine/hash/sha256.js"></script>
     <script src="./game.js?v=53"></script>
   </body>
