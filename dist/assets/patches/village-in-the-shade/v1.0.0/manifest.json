@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "game_slug": "village-in-the-shade",
+  "game_title": "Village in the Shade",
+  "platform": "Nintendo Switch",
+  "title_id": "0100254027E50000",
+  "patch_version": "v1.0.0",
+  "target_game_version": "Update v1.3.0 (recommended) or Base v1.0.0",
+  "distribution": {
+    "type": "external_mod_archive",
+    "filename": "Village_in_the_Shade_Thai_v1.0.0_Mod.zip",
+    "url": "https://drive.google.com/file/d/1earxRcMhx8umY71M5cZ2F5AR120UaCg8/view?usp=sharing",
+    "size": 8334151,
+    "sha256": "02d3fc91bb9ca5f2e7b86b94a229560792db9f766deae3329ae42208c9d42eae",
+    "release_date": "2026-11-01",
+    "date_source": "remote_file_modified_time"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องและระบบทั้งหมด 100%",
+    "whole_game_census": "52,906 / 52,906 บรรทัด = 100.0%",
+    "untranslated": "ไม่มี — ตรวจครบทั้ง 36 โมดูล"
+  },
+  "verification": {
+    "archive_identity_verified": true,
+    "binary_readback_verified": true,
+    "pre_injection_gate_critical_freeze": 0,
+    "pre_injection_gate_errors": 0,
+    "hardware_verified": false
+  }
+}
