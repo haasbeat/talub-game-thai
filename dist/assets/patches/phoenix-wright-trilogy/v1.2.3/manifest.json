@@ -21,21 +21,25 @@
     "parts": [
       {
         "filename": "Phoenix_Wright_Trilogy_Thai_v1.2.3.xdelta.part00",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/phoenix-wright-trilogy/v1.2.3/Phoenix_Wright_Trilogy_Thai_v1.2.3.xdelta.part00",
         "size": 94371840,
         "sha256": "4089983c60014ed8825fd7807171a96838f357c5389cde69d9147a98d042552b"
       },
       {
         "filename": "Phoenix_Wright_Trilogy_Thai_v1.2.3.xdelta.part01",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/phoenix-wright-trilogy/v1.2.3/Phoenix_Wright_Trilogy_Thai_v1.2.3.xdelta.part01",
         "size": 94371840,
         "sha256": "3db482feea091433097c8ed0879739f81d1370ffc3297aec93c60e9119bbec69"
       },
       {
         "filename": "Phoenix_Wright_Trilogy_Thai_v1.2.3.xdelta.part02",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/phoenix-wright-trilogy/v1.2.3/Phoenix_Wright_Trilogy_Thai_v1.2.3.xdelta.part02",
         "size": 94371840,
         "sha256": "e08b038b3ff4ea8a14fb3306bf29103e13d1262f7bfa1d6735fc3aad9c7ad642"
       },
       {
         "filename": "Phoenix_Wright_Trilogy_Thai_v1.2.3.xdelta.part03",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/phoenix-wright-trilogy/v1.2.3/Phoenix_Wright_Trilogy_Thai_v1.2.3.xdelta.part03",
         "size": 73666441,
         "sha256": "a7651406dcd1fd745ca52250ada00ec5e4f047afc364b8f65c28203bf0b54246"
       }

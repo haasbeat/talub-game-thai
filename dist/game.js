@@ -1010,7 +1010,7 @@ const applyVerifiedPatch = async () => {
       const parts = manifest.patch.parts;
       for (let i = 0; i < parts.length; i += 1) {
         setProgress(`กำลังดาวน์โหลด patch ส่วนที่ ${i + 1}/${parts.length}`, 2 + (i / parts.length) * 5);
-        const res = await fetchFirstOk([new URL(parts[i].filename, manifestBase).href]);
+        const res = await fetchFirstOk([parts[i].url, new URL(parts[i].filename, manifestBase).href]);
         const blob = await res.blob();
         if (blob.size !== parts[i].size) throw new Error(`ขนาด patch ส่วนที่ ${i + 1} ไม่ตรงกับ manifest`);
         blobs.push(blob);
