@@ -169,13 +169,17 @@ const createGameCard = (game, index) => {
   meta.append(patchDate);
 
   if (window.PatchStats) {
+    const isExternalDownload = game.distributionType === 'external-download';
     const stat = document.createElement('p');
     stat.className = 'game-patch-count mono';
-    stat.textContent = 'PATCHED —';
+    stat.textContent = isExternalDownload ? 'DOWNLOADS —' : 'PATCHED —';
     meta.append(stat);
-    window.PatchStats.get(game.slug).then((value) => {
+    const getStat = isExternalDownload ? window.PatchStats.getDownload : window.PatchStats.get;
+    getStat(game.slug).then((value) => {
       if (value === null) { stat.remove(); return; }
-      stat.textContent = `แพตช์แล้ว ${window.PatchStats.format(value)} ครั้ง`;
+      stat.textContent = isExternalDownload
+        ? `ดาวน์โหลด ${window.PatchStats.format(value)} ครั้ง`
+        : `แพตช์แล้ว ${window.PatchStats.format(value)} ครั้ง`;
     });
   }
 

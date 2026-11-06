@@ -644,12 +644,22 @@ const patchCountLabel = patchCountEl?.parentElement?.querySelector('.mono');
 const renderPatchCount = (value) => {
   if (patchCountEl && window.PatchStats) patchCountEl.textContent = value === null ? '—' : `${window.PatchStats.format(value)} ครั้ง`;
 };
+const renderDownloadCount = (value) => {
+  if (patchCountEl && window.PatchStats) patchCountEl.textContent = value === null ? '—' : `${window.PatchStats.format(value)} ครั้ง`;
+};
+const recordExternalDownload = () => {
+  if (!window.PatchStats?.hitDownload) return;
+  window.PatchStats.hitDownload(slug).then((value) => {
+    if (value !== null) renderDownloadCount(value);
+  });
+};
 if (isExternalDownload) {
-  if (patchCountLabel) patchCountLabel.textContent = 'FILE SIZE';
+  if (patchCountLabel) patchCountLabel.textContent = 'DOWNLOADS';
   if (patchCountEl) {
-    patchCountEl.removeAttribute('title');
-    patchCountEl.textContent = formatBytes(game.downloadSize);
+    patchCountEl.title = 'จำนวนครั้งที่กดลิงก์ดาวน์โหลด ไม่ใช่จำนวนติดตั้งสำเร็จ';
+    patchCountEl.textContent = '—';
   }
+  if (window.PatchStats?.getDownload) window.PatchStats.getDownload(slug).then(renderDownloadCount);
 } else if (window.PatchStats) {
   window.PatchStats.get(slug).then(renderPatchCount);
 }
@@ -697,6 +707,7 @@ if (isExternalDownload) {
     installCta.removeAttribute('data-detail-view');
     installCta.querySelector('span:first-child').textContent = 'ดาวน์โหลดชุดภาษาไทย';
     installCta.querySelector('span:last-child').textContent = '↗';
+    installCta.addEventListener('click', recordExternalDownload);
   }
 
   document.querySelectorAll('[data-xdelta-only]').forEach((element) => {
@@ -709,7 +720,9 @@ if (isExternalDownload) {
   document.querySelector('#external-download-version').textContent = game.version;
   document.querySelector('#external-download-date').textContent = formatPatchDate(game.patchDate);
   document.querySelector('#external-download-hash').textContent = game.downloadSha256;
-  document.querySelector('#external-download-link').href = game.downloadUrl;
+  const externalDownloadLink = document.querySelector('#external-download-link');
+  externalDownloadLink.href = game.downloadUrl;
+  externalDownloadLink.addEventListener('click', recordExternalDownload);
 }
 document.querySelector('#detail-features').replaceChildren(...details.features.map((feature, index) => {
   const item = document.createElement('li');
