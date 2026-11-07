@@ -2,7 +2,7 @@
 // xdelta games increment on verified patch success. External Switch packages increment on download-link click.
 (() => {
   const API = 'https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev';
-  const CACHE_KEY = 'talub-patch-stats-d1-v1';
+  const CACHE_KEY = 'talub-patch-stats-d1-v2';
   const VISIT_KEY = 'talub-visit-recorded-session';
   const CACHE_TTL = 3 * 60 * 1000; // 3 minutes cache
 
