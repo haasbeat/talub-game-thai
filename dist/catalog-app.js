@@ -352,8 +352,8 @@ const createLatestCard = (game) => {
   title.textContent = displayTitle(game);
   const date = document.createElement('time');
   date.className = 'mono';
-  date.dateTime = game.patchDate || '';
-  date.textContent = `อัปเดตม็อด ${formatPatchDate(game.patchDate)}`;
+  date.dateTime = game.addedDate || game.patchDate || '';
+  date.textContent = `เพิ่มเข้าคลัง ${formatPatchDate(game.addedDate || game.patchDate)}`;
   meta.append(platform, title, date);
   card.append(imageWrap, meta);
   return card;
@@ -361,7 +361,9 @@ const createLatestCard = (game) => {
 
 const renderLatestGames = () => {
   if (!latestGames) return;
-  const latest = [...catalog].sort((left, right) => right.order - left.order).slice(0, 4);
+  const latest = [...catalog]
+    .sort((left, right) => (right.addedOrder || 0) - (left.addedOrder || 0))
+    .slice(0, 4);
   latestGames.replaceChildren(...latest.map(createLatestCard));
   bindHoverTargets(latestGames);
 };
