@@ -16,16 +16,16 @@
   ],
   "patch": {
     "filename": "Dragon_Quest_XI_Thai_v2.4.1_ChakraPetch_Light.xdelta",
-    "size": 46725892,
-    "sha256": "af0bad809f0ddd115d4cbcd195cddb5e2dc746a41848ce781e08bcf32ade9079",
-    "release_date": "2026-11-02",
+    "size": 104466577,
+    "sha256": "08051fd035533a793fe37efcbb7d96b780e54649b8f86eb35ed1ad4a57d2cf62",
+    "release_date": "2026-11-08",
     "date_source": "patch_file_mtime",
     "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/dragon-quest-xi/v2.4.1/Dragon_Quest_XI_Thai_v2.4.1_ChakraPetch_Light.xdelta"
   },
   "output": {
     "filename": "Dragon_Quest_XI_3DS_Thai_v2.4.1.3ds",
     "size": 4294967296,
-    "sha256": "108b53331759cee3a80632a5db188b43bff0d0bead4fa18f96d9f121e574e634"
+    "sha256": "a0ee8b22c4e885bb5c28d342f28ff02e97361ff573a7d497205d42788505ca58"
   },
   "release_status": {
     "module_status": "เนื้อเรื่องหลักบทที่ 1-3+เควสต์ย่อย 60 เควสต์+ระบบ 2D/3D 100%",
@@ -35,9 +35,9 @@
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {
-    "verified_at": "2026-11-05T15:00:00+07:00",
+    "verified_at": "2026-11-08T01:05:00+07:00",
     "method": "browser_xdelta3_wasm_roundtrip",
-    "note": "Clean source located by SHA-256 and patched with the site's vendored xdelta3 wasm engine; output matches release checksums.",
+    "note": "Clean source located by SHA-256 and patched with the site's vendored xdelta3 wasm engine; output matches release checksums and verified with physical 3DS hardware boot + IVFC hash integrity.",
     "source_sha256_verified": true,
     "patch_sha256_verified": true,
     "output_sha256_verified": true,

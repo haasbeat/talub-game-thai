@@ -276,7 +276,7 @@ window.GAME_CATALOG = [
     "platformLabel": "3DS",
     "index": "3DS | 008 / 033",
     "version": "v2.4.1",
-    "patchDate": "2026-11-02",
+    "patchDate": "2026-11-08",
     "addedDate": "2026-11-04",
     "addedOrder": 6,
     "addedAt": "2026-11-04T21:10:11+07:00",
@@ -289,7 +289,7 @@ window.GAME_CATALOG = [
     "gameCode": "BT3J",
     "sourceName": "Dragon Quest XI - Sugi Sarishi Toki o Motomete (Japan).3ds · 4,294,967,296 bytes",
     "sourceHash": "0f04b51bc6dc145106fb7bc957fa41991cd02d89e0af2c8775db9d12a37a9b74",
-    "outputHash": "108b53331759cee3a80632a5db188b43bff0d0bead4fa18f96d9f121e574e634",
+    "outputHash": "a0ee8b22c4e885bb5c28d342f28ff02e97361ff573a7d497205d42788505ca58",
     "moduleStatus": "เนื้อเรื่องหลักบทที่ 1-3+เควสต์ย่อย 60 เควสต์+ระบบ 2D/3D 100%",
     "wholeGameCensus": "45,200/45,200 บรรทัด = 100.00%",
     "details": {
