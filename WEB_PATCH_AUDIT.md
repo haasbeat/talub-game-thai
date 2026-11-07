@@ -45,13 +45,13 @@ An identity check proves that a web patch asset matches its manifest. It does no
 
 ## Yo-kai Watch
 
-The web patch now targets the full 1 GiB USA cartridge image instead of the previous 869,330,944-byte trimmed/decrypted source.
+The web patch targets the full 1 GiB USA cartridge image (`AYWE`). Updated to `v2.8.1` with crisp 13pt Bravely Default typography.
 
 - Accepted source: `Yo-Kai Watch (USA).3ds`, 1,073,741,824 bytes
 - Source SHA-256: `933c8b7e1d37b87e69b7c7aa97636296e9cb788972077a189f5dd2dc489465a5`
-- Patch SHA-256: `566f6d65a79aa18ab9706f32f95ad9409736e3fce04fea31276a18373789d2dd`
-- Expected output SHA-256: `e13972ce3b541035ccbae98eba9d0135e97193310b6a9300a904a1b04ebac20a`
-- Verification: the exact distributed xdelta reconstructed the 1 GiB target from the clean project source with xdelta3; source, patch, and output were hashed directly.
+- Patch SHA-256: `06efcc786fe61c398d68a3942cf19fa862e9590da619c462a00370084a945640`
+- Expected output SHA-256: `2f1fb0d2a99bc2f6321bc076169b31cbfb57d7eba49536da4237764e37c2f9bf`
+- Verification: browser xdelta3 wasm roundtrip tested and confirmed 100% bit-identical to the release target.
 
 ## Phoenix Wright: Ace Attorney Trilogy
 

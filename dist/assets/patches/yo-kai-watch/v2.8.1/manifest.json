@@ -5,7 +5,7 @@
   "platform": "3DS",
   "region": "USA",
   "game_code": "AYWE",
-  "patch_version": "v2.8.0",
+  "patch_version": "v2.8.1",
   "engine": "xdelta3",
   "accepted_sources": [
     {
@@ -15,29 +15,29 @@
     }
   ],
   "patch": {
-    "filename": "Yokai_Watch_Thai_v2.8.0_1GB.xdelta",
-    "size": 11679585,
-    "sha256": "566f6d65a79aa18ab9706f32f95ad9409736e3fce04fea31276a18373789d2dd",
-    "release_date": "2026-09-26",
+    "filename": "Yokai_Watch_Thai_v2.8.1_1GB.xdelta",
+    "size": 20413698,
+    "sha256": "06efcc786fe61c398d68a3942cf19fa862e9590da619c462a00370084a945640",
+    "release_date": "2026-11-07",
     "date_source": "patch_file_mtime",
-    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/yo-kai-watch/v2.8.0/Yokai_Watch_Thai_v2.8.0_1GB.xdelta"
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/yo-kai-watch/v2.8.1/Yokai_Watch_Thai_v2.8.1_1GB.xdelta"
   },
   "output": {
-    "filename": "Yo-Kai Watch (USA) (Thai v2.8.0 1GB) Decrypted.3ds",
+    "filename": "Yo-Kai Watch (USA) (Thai v2.8.1 1GB) Decrypted.3ds",
     "size": 1073741824,
-    "sha256": "e13972ce3b541035ccbae98eba9d0135e97193310b6a9300a904a1b04ebac20a"
+    "sha256": "2f1fb0d2a99bc2f6321bc076169b31cbfb57d7eba49536da4237764e37c2f9bf"
   },
   "release_status": {
-    "module_status": "เนื้อเรื่องหลัก+เควสต์เสริมโยไก+ระบบเหรียญโยไก+เมนู 100%",
+    "module_status": "เนื้อเรื่องหลัก+เควสต์เสริมโยไก+ระบบเหรียญโยไก+เมนู 100% (ฟอนต์คมชัด 13pt)",
     "whole_game_census": "18,720/18,720 บรรทัด = 100.00%",
     "critical_freeze": 0,
     "errors": 0
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {
-    "verified_at": "2026-11-07T00:00:00+07:00",
-    "method": "clean_source_cli_roundtrip",
-    "note": "The distributed 1 GiB xdelta was applied with xdelta3 to the clean ROM stored in the project. The reconstructed 1 GiB output was hashed directly and matches this manifest.",
+    "verified_at": "2026-11-07T09:32:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean 1 GiB USA source verified with site wasm xdelta3 engine; output matches reconstructed release target byte-for-byte.",
     "source_sha256_verified": true,
     "patch_sha256_verified": true,
     "output_sha256_verified": true,
