@@ -55,12 +55,22 @@ The web patch targets the full 1 GiB USA cartridge image (`BEGE`). Released as `
 
 ## Yo-kai Watch
 
-The web patch targets the full 1 GiB USA cartridge image (`AYWE`). Released as `v2.8.1` official with crisp 13pt Bravely Default typography, in-game VER. 2.8.1 watermark, and full RomFS IVFC hash tree recalculation (preventing real-hardware ErrDisp panic 0xf96047a2 in `nn::fs::MountRom`).
+The web patch targets the full 1 GiB USA cartridge image (`AYWE`). Released as `v2.8.2` official with crisp 13pt Bravely Default typography, in-game VER. 2.8.2 watermark, and full RomFS IVFC hash tree recalculation (preventing real-hardware ErrDisp panic 0xf96047a2 in `nn::fs::MountRom`).
 
 - Accepted source: `Yo-Kai Watch (USA).3ds`, 1,073,741,824 bytes
 - Source SHA-256: `933c8b7e1d37b87e69b7c7aa97636296e9cb788972077a189f5dd2dc489465a5`
-- Patch SHA-256: `2bfb6c9efebac7b8d53981b0e7895c961b9946535ba0bf58dcd93bb43dccc1f5`
-- Expected output SHA-256: `055f038a4d6245208480f72da20c5e12f06e872dd676ebf30885a290a765b94a`
+- Patch SHA-256: `8d08f1a92600d508d09d843cc8d76d797bb15ccbdcb439d655c0110cd6190c29`
+- Expected output SHA-256: `9f58e941b0f32117f30169be176e26eb99292990767b9f272e2a824ef9d37cb1`
+- Verification: browser xdelta3 wasm roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified with `tools/ncch_ivfc_rebuild.py` (L1_bad=0, L2_bad=0, L3_bad=0, PASS=True).
+
+## Yo-kai Watch 3
+
+The web patch targets the full 4 GiB USA cartridge image (`BY3E`). Released as `v1.0.5` official with complete Thai story & 96 battle tutorials, crisp 3-tier Pango typography (Mali SemiBold 12px), in-game watermarks, and full RomFS IVFC hash tree recalculation (preventing real-hardware ErrDisp panic 0xf96047a2 in `nn::fs::MountRom`).
+
+- Accepted source: `Yo-Kai Watch 3 (USA).3ds`, 4,294,967,296 bytes
+- Source SHA-256: `a82ebb005202ac8d427a008191fb341edb306896a312c20fea9bfb7e9d5c6151`
+- Patch SHA-256: `09573ed8108ed103e2605173fba4e53e606700a4a4e322306db01a4a9a138948`
+- Expected output SHA-256: `9fa608b8671d2d614aed115a5c21ff4d6b8d7e536cc3c302b0f9d6597937dfee`
 - Verification: browser xdelta3 wasm roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified with `tools/ncch_ivfc_rebuild.py` (L1_bad=0, L2_bad=0, L3_bad=0, PASS=True).
 
 ## Yo-kai Watch 3

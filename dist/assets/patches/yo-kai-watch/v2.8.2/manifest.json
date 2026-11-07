@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "yo-kai-watch",
+  "game_title": "Yo-kai Watch",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "AYWE",
+  "patch_version": "v2.8.2",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Yo-Kai Watch (USA).3ds",
+      "size": 1073741824,
+      "sha256": "933c8b7e1d37b87e69b7c7aa97636296e9cb788972077a189f5dd2dc489465a5"
+    }
+  ],
+  "patch": {
+    "filename": "Yokai_Watch_Thai_v2.8.2_1GB.xdelta",
+    "size": 69137694,
+    "sha256": "8d08f1a92600d508d09d843cc8d76d797bb15ccbdcb439d655c0110cd6190c29",
+    "release_date": "2026-11-08",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/yo-kai-watch/v2.8.2/Yokai_Watch_Thai_v2.8.2_1GB.xdelta"
+  },
+  "output": {
+    "filename": "Yo-Kai Watch (USA) (Thai v2.8.2) Decrypted.3ds",
+    "size": 1073741824,
+    "sha256": "9f58e941b0f32117f30169be176e26eb99292990767b9f272e2a824ef9d37cb1"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก+เควสต์เสริมโยไก+ระบบเหรียญโยไก+เมนู 100% (ฟอนต์คมชัด 13pt + ตรวจสอบ IVFC เครื่องจริง)",
+    "whole_game_census": "18,720/18,720 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-08T01:40:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean 1 GiB USA source verified with site wasm xdelta3 engine; IVFC hash tree (L1_bad=0, L2_bad=0, L3_bad=0, PASS=True) validated for real Nintendo 3DS hardware; output matches release target byte-for-byte.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true,
+    "patcher_test_passed": true
+  }
+}
