@@ -4,20 +4,20 @@
   "game_title": "Fire Emblem: Three Houses",
   "platform": "Nintendo Switch",
   "title_id": "010055D009F78000",
-  "patch_version": "v1.3.4",
+  "patch_version": "v1.3.5",
   "target_game_version": "Update v1.2.0 (Patch 4)",
   "distribution": {
     "type": "external_mod_archive",
-    "filename": "FE16_Thai_v1.3.4_Mod.zip",
-    "url": "https://drive.google.com/file/d/13JsmO99cRxfC9Dh02IA47ukePZFqyC2R/view?usp=sharing",
-    "size": 284870821,
-    "sha256": "75acf88f263b621e11b2a1c1ed967d6df393e17337065e78569f46a12ffc0514",
-    "release_date": "2026-11-06",
+    "filename": "FE16_Thai_v1.3.5_Mod.zip",
+    "url": "https://drive.google.com/file/d/15yz_dAfE-IMwOTcxuxEpKzzbQHhnP-eg/view?usp=sharing",
+    "size": 316823839,
+    "sha256": "8b3d68b76bcb1b5bbed46a32541530dce1721e258ed09d3b0195ef1489e1b9ba",
+    "release_date": "2026-11-07",
     "date_source": "remote_file_modified_time"
   },
   "release_status": {
     "module_status": "เนื้อเรื่องและเมนูหลัก 100%",
-    "whole_game_census": "78,393 / 77,019 บรรทัด In-ROM (101.78% จากรายการที่ฉีดเพิ่ม)"
+    "whole_game_census": "78,511 / 77,019 บรรทัด In-ROM (101.94% จากรายการที่ฉีดเพิ่ม)"
   },
   "verification": {
     "archive_identity_verified": true,
