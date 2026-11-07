@@ -927,6 +927,7 @@ const resetOutput = () => {
   outputUrl = null;
   downloadButton.hidden = true;
   downloadButton.removeAttribute('href');
+  patchButton.hidden = false;
 };
 
 const handleFile = async (file) => {
@@ -977,9 +978,13 @@ const handleFile = async (file) => {
     selectedSourceFile = file;
     fileHash.textContent = `${sourceHash.slice(0, 16)}… — ถูกต้อง`;
     dropZone.classList.add('is-valid');
+    patchButton.hidden = false;
     patchButton.disabled = false;
     patchButton.querySelector('span').textContent = `เริ่มแพตช์ ${manifest.patch_version}`;
-    setProgress('ROM ต้นฉบับผ่านการตรวจสอบ', 5);
+    setProgress('ROM ต้นฉบับผ่านการตรวจสอบ — กดปุ่มเริ่มแพตช์ด้านล่าง', 5);
+    setTimeout(() => {
+      patchButton.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }, 250);
   } catch (error) {
     fileHash.textContent = 'ตรวจไฟล์ไม่สำเร็จ';
     dropZone.classList.add('is-invalid');
@@ -1101,13 +1106,17 @@ const applyVerifiedPatch = async () => {
     downloadButton.href = outputUrl;
     downloadButton.download = manifest.output.filename;
     downloadButton.hidden = false;
-    patchButton.querySelector('span').textContent = 'แพตช์สำเร็จ';
+    patchButton.hidden = true;
     fileHash.textContent = `${outputHash.slice(0, 16)}… — ผลลัพธ์ถูกต้อง`;
-    setProgress('แพตช์และตรวจผลลัพธ์สำเร็จ', 100);
+    setProgress('แพตช์สำเร็จ 100% — กดปุ่มดาวน์โหลดด้านล่าง', 100);
     showToast(`แพตช์สำเร็จและ SHA-256 ตรงกับ release ${manifest.patch_version}`);
+    setTimeout(() => {
+      downloadButton.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }, 250);
     // Count only verified successes; a stats failure must never affect the patch result.
     if (window.PatchStats) window.PatchStats.hit(slug).then((value) => { if (value !== null) renderPatchCount(value); });
   } catch (error) {
+    patchButton.hidden = false;
     patchButton.disabled = false;
     patchButton.querySelector('span').textContent = 'ลองแพตช์อีกครั้ง';
     setProgress(error.message || 'แพตช์ไม่สำเร็จ', 0);

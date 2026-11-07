@@ -371,7 +371,8 @@ body.has-inapp-banner main { padding-top: 60px; }
 .patch-button svg { width: 22px; fill: none; stroke: currentColor; stroke-width: 1.5; }
 .patch-button:disabled { background: #d8d8d5; border-color: #d8d8d5; color: #777; }
 .workspace-buttons { min-width: 260px; display: grid; gap: 10px; }
-.download-button { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 16px 20px; color: var(--ink); background: #fff; border: 1px solid var(--ink); }
+.download-button { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 18px 22px; color: #fff; background: var(--ink); border: 1px solid var(--ink); font-size: 16px; font-weight: 600; cursor: pointer; transition: 300ms var(--ease); }
+.download-button:hover { background: #222; }
 .download-button[hidden] { display: none; }
 .external-download-panel { padding: clamp(28px, 4vw, 56px) 0 12px; }
 .external-download-panel[hidden] { display: none; }
