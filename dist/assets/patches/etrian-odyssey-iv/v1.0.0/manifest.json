@@ -16,8 +16,8 @@
   ],
   "patch": {
     "filename": "Etrian_Odyssey_IV_USA_TH_v1.0.0.xdelta",
-    "size": 2177305,
-    "sha256": "f3d317666b73407edc3f8b5ba3dc356769aeed4db3f183466c151150a5bc19b4",
+    "size": 2198776,
+    "sha256": "04609e4255596b2e3bc11f4f68d77be82924d232c49ef298bf199b925f5531cb",
     "release_date": "2026-11-07",
     "date_source": "patch_file_mtime",
     "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/etrian-odyssey-iv/v1.0.0/Etrian_Odyssey_IV_USA_TH_v1.0.0.xdelta"
@@ -25,7 +25,7 @@
   "output": {
     "filename": "Etrian_Odyssey_IV_Thai_v1.0.0.3ds",
     "size": 1073741824,
-    "sha256": "f1977cf71392ee23170ca96dbce954113476268e38b316108643e6e7325f7e58"
+    "sha256": "dc383e20c77881c97e886fc45369ea7595be0650d9f21c683eb6ac8aa6f4e2af"
   },
   "release_status": {
     "module_status": "เนื้อเรื่องหลัก+เควสต์+ระบบต่อสู้+สกิล+UI 100%",

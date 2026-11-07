@@ -363,7 +363,7 @@ window.GAME_CATALOG = [
     "gameCode": "ASJE",
     "sourceName": "Etrian Odyssey IV - Legends of the Titan (USA).3ds · 1,073,741,824 bytes",
     "sourceHash": "0705cf12182e933877563e15489429718d22d7868e015fb5081df35899d8d614",
-    "outputHash": "f1977cf71392ee23170ca96dbce954113476268e38b316108643e6e7325f7e58",
+    "outputHash": "dc383e20c77881c97e886fc45369ea7595be0650d9f21c683eb6ac8aa6f4e2af",
     "moduleStatus": "เนื้อเรื่องหลัก+เควสต์+ระบบต่อสู้+สกิล+UI 100%",
     "wholeGameCensus": "13,892/13,892 บรรทัด = 100.00%",
     "details": {
