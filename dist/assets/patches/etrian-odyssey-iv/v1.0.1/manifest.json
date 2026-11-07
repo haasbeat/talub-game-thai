@@ -5,7 +5,7 @@
   "platform": "3DS",
   "region": "USA",
   "game_code": "ASJE",
-  "patch_version": "v1.0.0",
+  "patch_version": "v1.0.1",
   "engine": "xdelta3",
   "accepted_sources": [
     {
@@ -15,17 +15,17 @@
     }
   ],
   "patch": {
-    "filename": "Etrian_Odyssey_IV_USA_TH_v1.0.0.xdelta",
-    "size": 2198776,
-    "sha256": "04609e4255596b2e3bc11f4f68d77be82924d232c49ef298bf199b925f5531cb",
+    "filename": "Etrian_Odyssey_IV_USA_TH_v1.0.1.xdelta",
+    "size": 2198790,
+    "sha256": "4b5967ca7ae3c2f573d172fc8f96513611facc97f8ac06952a53fd425a1eb0c3",
     "release_date": "2026-11-07",
     "date_source": "patch_file_mtime",
-    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/etrian-odyssey-iv/v1.0.0/Etrian_Odyssey_IV_USA_TH_v1.0.0.xdelta"
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/etrian-odyssey-iv/v1.0.1/Etrian_Odyssey_IV_USA_TH_v1.0.1.xdelta"
   },
   "output": {
-    "filename": "Etrian_Odyssey_IV_Thai_v1.0.0.3ds",
+    "filename": "Etrian_Odyssey_IV_Thai_v1.0.1.3ds",
     "size": 1073741824,
-    "sha256": "dc383e20c77881c97e886fc45369ea7595be0650d9f21c683eb6ac8aa6f4e2af"
+    "sha256": "18e5800c54ac9207be0ca7d3013a2b91b212409b499a68a3f85010668b015c0b"
   },
   "release_status": {
     "module_status": "เนื้อเรื่องหลัก+เควสต์+ระบบต่อสู้+สกิล+UI 100%",
@@ -35,9 +35,10 @@
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {
-    "verified_at": "2026-11-07T16:50:00+07:00",
-    "method": "owner_reported_xdelta_patcher_test",
+    "verified_at": "2026-11-07T23:03:00+07:00",
+    "method": "hardware_ivfc_and_xdelta_roundtrip",
     "patcher_test_passed": true,
-    "patch_sha256_verified": true
+    "patch_sha256_verified": true,
+    "hardware_ivfc_verified": true
   }
 }
