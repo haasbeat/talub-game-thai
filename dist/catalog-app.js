@@ -512,3 +512,21 @@ if (requestedPlatform || window.location.hash === '#games') {
     }
   }, 100);
 }
+
+const checkInAppBrowser = () => {
+  const ua = navigator.userAgent || navigator.vendor || window.opera || '';
+  const isInApp = /FBAN|FBAV|Line\/|Instagram|Twitter|MicroMessenger/i.test(ua);
+  if (!isInApp) return;
+  if (sessionStorage.getItem('talub_inapp_dismissed') === '1') return;
+  const banner = document.querySelector('#inapp-warning-banner');
+  if (banner) {
+    banner.hidden = false;
+    document.body.classList.add('has-inapp-banner');
+    document.querySelector('#inapp-dismiss')?.addEventListener('click', () => {
+      banner.hidden = true;
+      document.body.classList.remove('has-inapp-banner');
+      sessionStorage.setItem('talub_inapp_dismissed', '1');
+    });
+  }
+};
+checkInAppBrowser();

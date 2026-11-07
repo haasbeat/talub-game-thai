@@ -19,7 +19,8 @@
     "size": 23471515,
     "sha256": "220774787d7a1ded05f7791d93bd9342abb1a7f886a0ad47c05ca504e7299434",
     "release_date": "2026-11-01",
-    "date_source": "patch_file_mtime"
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/final-fantasy-explorers/v1.0.0/Final_Fantasy_Explorers_USA_TH_v1.0.0.xdelta"
   },
   "output": {
     "filename": "Final_Fantasy_Explorers_USA_TH_v1.0.0.3ds",

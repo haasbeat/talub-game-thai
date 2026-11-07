@@ -19,7 +19,8 @@
     "size": 411425,
     "sha256": "b37193a35e1c3001af5beddeb94ab50771867374816c6c2ffa2879d2010878de",
     "release_date": "2026-10-31",
-    "date_source": "patch_file_mtime"
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/front-mission-2089/v1.1.1/Front_Mission_2089_Thai_v1.1.1.xdelta"
   },
   "output": {
     "filename": "Front_Mission_2089_Thai_v1.1.1.nds",

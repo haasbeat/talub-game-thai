@@ -5,6 +5,7 @@ Updated: 2026-11-07 (Asia/Bangkok)
 ## Inventory
 
 - Web manifests: 49 (44 xdelta + 5 external Nintendo Switch mod archives)
+- Cloudflare R2 storage: 44/44 xdelta patch targets hosted on R2 bucket `talub-patches` and served via CDN Worker
 - Patch identity checks passed (file size + SHA-256): 44/44
 - Patch dates recorded: 49/49
 - Dates taken directly from patch-file modified time: 42
@@ -13,6 +14,10 @@ Updated: 2026-11-07 (Asia/Bangkok)
 - Owner-reported xdelta-patcher tests: 13
 - Browser apply-only test without a pinned target hash: 1
 - No current roundtrip evidence recorded in the web manifest: 5
+
+### Cloudflare R2 CDN Migration
+
+All 44 xdelta patches (including multi-part archives for Inazuma 1-2-3, Ace Attorney Trilogy, Metal Max 4, and E.X. Troopers) are hosted in Cloudflare R2 bucket `talub-patches` and distributed through the Worker CDN (`https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/...`). All objects support CORS (`access-control-allow-origin: https://haasbeat.github.io`), HTTP Range requests (206 Partial Content), ETag verification, and immutable caching. The GitHub Pages repository no longer stores large binary patches, resolving GitHub repository footprint limits.
 
 ### Nintendo Switch external downloads
 

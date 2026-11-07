@@ -19,7 +19,8 @@
     "size": 6441510,
     "sha256": "d6a7643f15f843befa0b1e8ff95a00ed26b2be629d1d9c6b5ca41ae9f93a714d",
     "release_date": "2026-09-26",
-    "date_source": "patch_file_mtime"
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/dqm-joker-3-professional/v1.0.3/DQMJ3P_Thai_v1.0.3.xdelta"
   },
   "output": {
     "filename": "Dragon Quest Monsters - Joker 3 Professional (Thai v1.0.3).3ds",

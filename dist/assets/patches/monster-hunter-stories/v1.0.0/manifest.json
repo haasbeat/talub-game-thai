@@ -19,7 +19,8 @@
     "size": 3799137,
     "sha256": "796467b8926bc7a35e23e3a97ee148ecf0d555471aa9a0c654ba765eda446d8a",
     "release_date": "2026-11-02",
-    "date_source": "release_archive_mtime"
+    "date_source": "release_archive_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/monster-hunter-stories/v1.0.0/Monster_Hunter_Stories_USA_TH_v1.0.0.xdelta"
   },
   "output": {
     "filename": "Monster Hunter Stories (USA) Thai v1.0.0.3ds",

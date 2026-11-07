@@ -19,7 +19,8 @@
     "size": 13211638,
     "sha256": "9a1269844cb1844a07188664e4bb9c2f57b17fd1a989d135b29bf5902c4c3530",
     "release_date": "2026-10-13",
-    "date_source": "patch_file_mtime"
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/yo-kai-watch-2/v1.2.0/Yokai_Watch_2_Psychic_Specters_Thai_v1.2.0_USA.xdelta"
   },
   "output": {
     "filename": "Yokai_Watch_2_Psychic_Specters_Thai_v1.2.0.3ds",

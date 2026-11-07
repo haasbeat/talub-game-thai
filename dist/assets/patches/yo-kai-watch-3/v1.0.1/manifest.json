@@ -19,7 +19,8 @@
     "size": 14524626,
     "sha256": "44345ebfd8f04adbf3464282f319ba3fe62f0508b053c651064b1bb78c593bde",
     "release_date": "2026-10-18",
-    "date_source": "patch_file_mtime"
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/yo-kai-watch-3/v1.0.1/Yo-kai_Watch_3_Thai_v1.0.1.xdelta"
   },
   "output": {
     "filename": "Yo-kai Watch 3 (Thai).3ds",

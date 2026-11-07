@@ -19,7 +19,8 @@
     "size": 13927701,
     "sha256": "fb84648c1870e03bf7ad6f897f08045a359ec76d0f704df15ddfb54e4ece819c",
     "release_date": "2026-10-31",
-    "date_source": "patch_file_mtime"
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/love-plus-plus/v1.0.5/Love_Plus_Plus_Thai_v1.0.5.xdelta"
   },
   "output": {
     "filename": "Love Plus+ (Thailand) v1.0.5.nds",

@@ -19,7 +19,8 @@
     "size": 8194825,
     "sha256": "aec6ff83bc8fd55cdf6388fb9c9f1fc87edffce5f1497dcc51b04799e1be825d",
     "release_date": "2026-10-25",
-    "date_source": "patch_file_mtime"
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/time-travelers/v1.0.1/Time_Travelers_Thai_v1.0.1.xdelta"
   },
   "output": {
     "filename": "Time Travelers (Thai v1.0.1).3ds",

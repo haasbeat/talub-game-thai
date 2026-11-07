@@ -19,7 +19,8 @@
     "size": 35742033,
     "sha256": "b87326fe28aef5d7380521a2ffdaf2e7497524892f61a7903a35cba6d82077e9",
     "release_date": "2026-10-25",
-    "date_source": "patch_file_mtime"
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/smt-strange-journey-redux/v1.0.4/SMT_Strange_Journey_Redux_Thai_v1.0.4.xdelta"
   },
   "output": {
     "filename": "SMT_Strange_Journey_Redux_Thai_v1.0.4.3ds",

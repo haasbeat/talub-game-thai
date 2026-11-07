@@ -19,7 +19,8 @@
     "size": 8247357,
     "sha256": "6a272aab737bebedbc1742aa6d5cd59ece517f5bbbc73e0f9926e1c6ca41b3a5",
     "release_date": "2026-10-12",
-    "date_source": "patch_file_mtime"
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-go-shadow/v1.0.0/Inazuma_Eleven_GO_Shadow_Thai_v1.0.0.xdelta"
   },
   "output": {
     "filename": "Inazuma_Eleven_GO_Shadow_Thai_v1.0.0.3ds",

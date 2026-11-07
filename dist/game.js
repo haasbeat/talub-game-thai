@@ -602,7 +602,37 @@ const details = {
   ...(game.details || {}),
 };
 
-document.title = `${game.title} — ตลับเกมภาษาไทย`;
+document.title = `${game.title} (ภาษาไทย ${game.version}) — ตลับเกมภาษาไทย`;
+try {
+  const pageTitle = document.title;
+  const absoluteCover = new URL(game.cover, window.location.href).href;
+  const shareDesc = `${game.title} ภาษาไทย ${game.version} สำหรับเครื่อง ${game.platformLabel} — ${game.description || 'ระบบตรวจสอบและแพตช์ ROM ภาษาไทยอัตโนมัติบนเบราว์เซอร์'}`;
+  document.querySelector('#meta-og-title')?.setAttribute('content', pageTitle);
+  document.querySelector('#meta-og-desc')?.setAttribute('content', shareDesc);
+  document.querySelector('#meta-og-image')?.setAttribute('content', absoluteCover);
+  document.querySelector('#meta-og-url')?.setAttribute('content', window.location.href);
+  document.querySelector('#meta-tw-title')?.setAttribute('content', pageTitle);
+  document.querySelector('#meta-tw-desc')?.setAttribute('content', shareDesc);
+  document.querySelector('#meta-tw-image')?.setAttribute('content', absoluteCover);
+} catch (e) {}
+
+const checkInAppBrowser = () => {
+  const ua = navigator.userAgent || navigator.vendor || window.opera || '';
+  const isInApp = /FBAN|FBAV|Line\/|Instagram|Twitter|MicroMessenger/i.test(ua);
+  if (!isInApp) return;
+  if (sessionStorage.getItem('talub_inapp_dismissed') === '1') return;
+  const banner = document.querySelector('#inapp-warning-banner');
+  if (banner) {
+    banner.hidden = false;
+    document.body.classList.add('has-inapp-banner');
+    document.querySelector('#inapp-dismiss')?.addEventListener('click', () => {
+      banner.hidden = true;
+      document.body.classList.remove('has-inapp-banner');
+      sessionStorage.setItem('talub_inapp_dismissed', '1');
+    });
+  }
+};
+checkInAppBrowser();
 document.querySelector('#detail-title').textContent = game.title;
 document.querySelector('#detail-japanese-title').textContent = details.japaneseTitle;
 document.querySelector('#detail-description').textContent = game.description;
@@ -1017,9 +1047,8 @@ const applyVerifiedPatch = async () => {
       }
       patchBlob = new Blob(blobs, { type: 'application/octet-stream' });
     } else {
-      // Prefer the same-origin copy shipped with the site (GitHub Pages); the
-      // external host is only a fallback because it may block cross-origin reads.
-      const response = await fetchFirstOk([new URL(manifest.patch.filename, manifestBase).href, manifest.patch.url]);
+      // Prefer Cloudflare R2 CDN for fast, global edge delivery; same-origin is fallback.
+      const response = await fetchFirstOk([manifest.patch.url, new URL(manifest.patch.filename, manifestBase).href]);
       patchBlob = await response.blob();
     }
     if (patchBlob.size !== manifest.patch.size) throw new Error('ขนาดไฟล์ patch ไม่ตรงกับ manifest');

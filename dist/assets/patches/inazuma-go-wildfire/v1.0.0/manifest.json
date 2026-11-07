@@ -19,7 +19,8 @@
     "size": 4122424,
     "sha256": "2ea94a2889275d84e1cc10a24db3db29dd3f2565045c4c4ddd2b43642bc15557",
     "release_date": "2026-10-13",
-    "date_source": "patch_file_mtime"
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-go-wildfire/v1.0.0/Inazuma_Eleven_GO_Chrono_Stones_Wildfire_Thai_v1.0.0.xdelta"
   },
   "output": {
     "filename": "Inazuma_Eleven_GO_Chrono_Stones_Wildfire_Thai_v1.0.0.3ds",

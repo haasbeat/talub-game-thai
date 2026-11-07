@@ -19,7 +19,8 @@
     "size": 11679585,
     "sha256": "566f6d65a79aa18ab9706f32f95ad9409736e3fce04fea31276a18373789d2dd",
     "release_date": "2026-09-26",
-    "date_source": "patch_file_mtime"
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/yo-kai-watch/v2.8.0/Yokai_Watch_Thai_v2.8.0_1GB.xdelta"
   },
   "output": {
     "filename": "Yo-Kai Watch (USA) (Thai v2.8.0 1GB) Decrypted.3ds",

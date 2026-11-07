@@ -19,7 +19,8 @@
     "size": 1913164,
     "sha256": "d9f06a5bdaafb9026504c5f78a8de842a0bd741d84bdb00b3dc32d9048800f68",
     "release_date": "2026-10-24",
-    "date_source": "patch_file_mtime"
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/professor-layton-miracle-mask/v1.3.2/Professor_Layton_Miracle_Mask_Thai_v1.3.2.xdelta"
   },
   "output": {
     "filename": "Professor Layton and the Miracle Mask (USA) (Thai v1.3.2).3ds",

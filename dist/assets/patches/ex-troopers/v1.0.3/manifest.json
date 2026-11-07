@@ -45,7 +45,8 @@
       }
     ],
     "release_date": "2026-10-24",
-    "date_source": "patch_file_mtime"
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/ex-troopers/v1.0.3/E.X._Troopers_Thai_v1.0.3.xdelta"
   },
   "output": {
     "filename": "E.X. Troopers (Japan) (Thai v1.0.3).3ds",

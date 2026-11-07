@@ -1,4 +1,5 @@
-# GitHub file size limit is 100MB; files > 100MB hosted via GitHub Releases
-dist/assets/patches/inazuma-eleven-123/v1.0.0/*.xdelta
+# All patch binaries are hosted on Cloudflare R2 CDN (bucket: talub-patches)
+dist/assets/patches/*/*/*.xdelta
+dist/assets/patches/*/*/*.part*
 .DS_Store
 .wrangler/

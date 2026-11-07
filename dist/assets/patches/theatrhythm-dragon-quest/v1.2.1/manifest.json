@@ -19,7 +19,8 @@
     "size": 39281934,
     "sha256": "a7e5c99371e6228365c520f9e2c84ec2b0881af68fa10f2065df3ceb5a61a75f",
     "release_date": "2026-11-01",
-    "date_source": "patch_file_mtime"
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/theatrhythm-dragon-quest/v1.2.1/Theatrhythm_Dragon_Quest_TH_v1.2.1.xdelta"
   },
   "output": {
     "filename": "Theatrhythm Dragon Quest (Thai v1.2.1).3ds",

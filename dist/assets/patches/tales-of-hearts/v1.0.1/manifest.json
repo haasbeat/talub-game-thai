@@ -19,7 +19,8 @@
     "size": 7708292,
     "sha256": "a169474746b17778e3955829d5c3904e71781549c5df090fd9935e1406d7550e",
     "release_date": "2026-11-03",
-    "date_source": "patch_file_mtime"
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/tales-of-hearts/v1.0.1/Tales_of_Hearts_Anime_Thai_v1.0.1.xdelta"
   },
   "output": {
     "filename": "Tales_of_Hearts_Anime_Thai_v1.0.1.nds",

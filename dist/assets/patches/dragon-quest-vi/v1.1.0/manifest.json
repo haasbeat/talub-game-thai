@@ -19,7 +19,8 @@
     "size": 2604974,
     "sha256": "550bd42ffff162338bccec5bb96c3757af21d5b11525e7f4c59b5b7fd7f4a588",
     "release_date": "2026-11-02",
-    "date_source": "patch_file_mtime"
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/dragon-quest-vi/v1.1.0/Dragon_Quest_VI_Thai_v1.1.0.xdelta"
   },
   "output": {
     "filename": "Dragon_Quest_VI_Thai_v1.1.0.nds",

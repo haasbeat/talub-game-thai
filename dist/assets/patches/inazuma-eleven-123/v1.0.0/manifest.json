@@ -22,26 +22,31 @@
       {
         "filename": "Inazuma_Eleven_123_Thai_v1.0.0.xdelta.part01",
         "size": 94371840,
-        "sha256": "1cfb8c8a5204e4a474e7e89d8d3c8e6abc504f6862742a99f19c9d8b76de114c"
+        "sha256": "1cfb8c8a5204e4a474e7e89d8d3c8e6abc504f6862742a99f19c9d8b76de114c",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-eleven-123/v1.0.0/Inazuma_Eleven_123_Thai_v1.0.0.xdelta.part01"
       },
       {
         "filename": "Inazuma_Eleven_123_Thai_v1.0.0.xdelta.part02",
         "size": 94371840,
-        "sha256": "d12e1b56e56551852062d5d0985eea31321263aa3f9f3bc4ef7d8ea48780fe88"
+        "sha256": "d12e1b56e56551852062d5d0985eea31321263aa3f9f3bc4ef7d8ea48780fe88",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-eleven-123/v1.0.0/Inazuma_Eleven_123_Thai_v1.0.0.xdelta.part02"
       },
       {
         "filename": "Inazuma_Eleven_123_Thai_v1.0.0.xdelta.part03",
         "size": 94371840,
-        "sha256": "7a721db22e467f8c43177682936dee050758d65a15ace832561ccc704aa46f19"
+        "sha256": "7a721db22e467f8c43177682936dee050758d65a15ace832561ccc704aa46f19",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-eleven-123/v1.0.0/Inazuma_Eleven_123_Thai_v1.0.0.xdelta.part03"
       },
       {
         "filename": "Inazuma_Eleven_123_Thai_v1.0.0.xdelta.part04",
         "size": 13061072,
-        "sha256": "9a27fcd99c333cf050e6852363d314344ecef15702a33983a06f9e9f1a22850a"
+        "sha256": "9a27fcd99c333cf050e6852363d314344ecef15702a33983a06f9e9f1a22850a",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-eleven-123/v1.0.0/Inazuma_Eleven_123_Thai_v1.0.0.xdelta.part04"
       }
     ],
     "release_date": "2026-10-28",
-    "date_source": "patch_file_mtime"
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-eleven-123/v1.0.0/Inazuma_Eleven_123_Thai_v1.0.0.xdelta"
   },
   "output": {
     "filename": "ie123_thai_v1.0.0.3ds",

@@ -19,7 +19,8 @@
     "size": 4511681,
     "sha256": "0391ec57c0e5617503bb8486bb94f1690602bda72ff0f172247a3e2bed8c04b7",
     "release_date": "2026-10-24",
-    "date_source": "patch_file_mtime"
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/rune-factory-4/v1.0.4/Rune_Factory_4_Thai_v1.0.4.xdelta"
   },
   "output": {
     "filename": "Rune_Factory_4_Thai_v1.0.4.3ds",

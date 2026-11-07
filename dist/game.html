@@ -6,14 +6,39 @@
     <meta name="description" content="รายละเอียดม็อดภาษาไทยและพื้นที่แพตช์สำหรับแต่ละเกม" />
     <meta name="theme-color" content="#ffffff" />
     <title>รายละเอียดเกม — ตลับเกมภาษาไทย</title>
+    <link rel="icon" type="image/jpeg" href="./assets/talub-logo.jpg" />
+    <link rel="apple-touch-icon" href="./assets/talub-logo.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ตลับเกมภาษาไทย" />
+    <meta id="meta-og-url" property="og:url" content="https://haasbeat.github.io/talub-game-thai/game.html" />
+    <meta id="meta-og-title" property="og:title" content="รายละเอียดเกม — ตลับเกมภาษาไทย" />
+    <meta id="meta-og-desc" property="og:description" content="รายละเอียดม็อดภาษาไทยและระบบแพตช์ ROM อัตโนมัติบนเบราว์เซอร์" />
+    <meta id="meta-og-image" property="og:image" content="https://haasbeat.github.io/talub-game-thai/assets/hero/talub-game-thai-cover.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta id="meta-tw-title" name="twitter:title" content="รายละเอียดเกม — ตลับเกมภาษาไทย" />
+    <meta id="meta-tw-desc" name="twitter:description" content="รายละเอียดม็อดภาษาไทยและระบบแพตช์ ROM อัตโนมัติบนเบราว์เซอร์" />
+    <meta id="meta-tw-image" name="twitter:image" content="https://haasbeat.github.io/talub-game-thai/assets/hero/talub-game-thai-cover.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=57" />
+    <link rel="stylesheet" href="./styles.css?v=60" />
   </head>
   <body class="detail-page">
     <div class="cursor" aria-hidden="true"></div>
     <div class="noise" aria-hidden="true"></div>
+
+    <div id="inapp-warning-banner" class="inapp-banner" hidden>
+      <div class="inapp-banner-content">
+        <span class="inapp-banner-icon" aria-hidden="true">⚠️</span>
+        <div class="inapp-banner-text">
+          <strong>เปิดในแอป Facebook / LINE อาจทำให้เลือกไฟล์ ROM หรือดาวน์โหลดไม่ได้</strong>
+          <span>แนะนำให้แตะที่ปุ่มเมนู <strong>···</strong> (มุมขวาบน) แล้วเลือก <strong>"เปิดในเบราว์เซอร์ภายนอก"</strong> (Chrome / Safari) เพื่อความลื่นไหลในการแพตช์</span>
+        </div>
+        <button type="button" id="inapp-dismiss" class="inapp-banner-close" aria-label="ปิดข้อความ">✕</button>
+      </div>
+    </div>
 
     <header class="site-header">
       <a class="brand hover-target" href="./index.html" aria-label="กลับหน้าหลัก">
@@ -290,6 +315,6 @@
     <script src="./catalog.js?v=59"></script>
     <script src="./patch-stats.js?v=43"></script>
     <script src="./assets/engine/hash/sha256.js"></script>
-    <script src="./game.js?v=58"></script>
+    <script src="./game.js?v=60"></script>
   </body>
 </html>

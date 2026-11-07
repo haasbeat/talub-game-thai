@@ -19,7 +19,8 @@
     "size": 5605384,
     "sha256": "c83b10ac2c179c4663c4a98230d730b13a0c93078a414be32483466493254fc7",
     "release_date": "2026-09-18",
-    "date_source": "patch_file_mtime"
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/popolocrois/v1.1.0/PoPoLoCrois_Thai_v1.1.0_%5Btalubgamethai%5D.xdelta"
   },
   "output": {
     "filename": "PoPoLoCrois_Thai_v1.1.0.iso",

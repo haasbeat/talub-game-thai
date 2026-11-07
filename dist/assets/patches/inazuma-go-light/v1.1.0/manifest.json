@@ -19,7 +19,8 @@
     "size": 8247425,
     "sha256": "2993607495819303188c2f2647f03fe3bc379d1703a10d7d5aad10adac02d4bf",
     "release_date": "2026-10-12",
-    "date_source": "patch_file_mtime"
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-go-light/v1.1.0/Inazuma_Eleven_GO_Light_Thai_v1.1.0.xdelta"
   },
   "output": {
     "filename": "Inazuma_Eleven_GO_Light_Thai_v1.1.0.3ds",
