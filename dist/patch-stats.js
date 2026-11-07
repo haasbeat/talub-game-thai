@@ -1,82 +1,135 @@
-// Per-game patch/download counters backed by the free public Abacus service.
-// xdelta games increment only after verified patch success. External Switch
-// packages increment on an outbound download-link click (not installation).
-// (https://abacus.jasoncameron.dev). Counts are public and best-effort:
-// anyone can call the hit endpoint, and a key expires after ~168 days with
-// no activity. A failed request never blocks patching; it only hides the number.
+// Per-game patch/download counters and site-wide metrics powered by Cloudflare Worker + D1 Database.
+// xdelta games increment on verified patch success. External Switch packages increment on download-link click.
 (() => {
-  const API = 'https://abacus.jasoncameron.dev';
-  const NAMESPACE = 'talub-game-thai';
-  const CACHE_KEY = 'talub-patch-stats-v1';
-  const CACHE_TTL = 10 * 60 * 1000;
-  const MAX_PARALLEL = 4; // service limit is 30 requests / 10 s per IP
-  const MIN_START_INTERVAL = 350;
+  const API = 'https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev';
+  const CACHE_KEY = 'talub-patch-stats-d1-v1';
+  const VISIT_KEY = 'talub-visit-recorded-session';
+  const CACHE_TTL = 3 * 60 * 1000; // 3 minutes cache
 
-  const readCache = () => {
-    try { return JSON.parse(sessionStorage.getItem(CACHE_KEY) || '{}'); } catch { return {}; }
-  };
-  const writeCache = (key, value) => {
+  let inMemoryData = null;
+  let batchPromise = null;
+
+  const readStorage = () => {
     try {
-      const cache = readCache();
-      cache[key] = { value, at: Date.now() };
-      sessionStorage.setItem(CACHE_KEY, JSON.stringify(cache));
-    } catch { /* storage unavailable */ }
+      const raw = localStorage.getItem(CACHE_KEY);
+      if (!raw) return null;
+      const parsed = JSON.parse(raw);
+      if (Date.now() - (parsed.at || 0) < CACHE_TTL) {
+        return parsed.data;
+      }
+    } catch {}
+    return null;
   };
 
-  const request = async (action, key) => {
-    const response = await fetch(`${API}/${action}/${NAMESPACE}/${encodeURIComponent(key)}`, { cache: 'no-store' });
-    if (response.status === 404) return 0; // key is created on the first tracked action
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const data = await response.json();
-    return Number.isFinite(data.value) ? data.value : 0;
+  const writeStorage = (data) => {
+    try {
+      localStorage.setItem(CACHE_KEY, JSON.stringify({ data, at: Date.now() }));
+    } catch {}
   };
 
-  const pending = new Map();
-  const queue = [];
-  let active = 0;
-  let lastStartedAt = 0;
-  let pumpTimer = 0;
-  const pump = () => {
-    window.clearTimeout(pumpTimer);
-    if (active >= MAX_PARALLEL || !queue.length) return;
-    const wait = Math.max(0, MIN_START_INTERVAL - (Date.now() - lastStartedAt));
-    if (wait) {
-      pumpTimer = window.setTimeout(pump, wait);
-      return;
+  const fetchBatch = async () => {
+    if (inMemoryData) return inMemoryData;
+    const cached = readStorage();
+    if (cached) {
+      inMemoryData = cached;
+      return cached;
     }
-    const job = queue.shift();
-    active += 1;
-    lastStartedAt = Date.now();
-    job().finally(() => { active -= 1; pump(); });
-    pumpTimer = window.setTimeout(pump, MIN_START_INTERVAL);
+    if (batchPromise) return batchPromise;
+
+    batchPromise = (async () => {
+      try {
+        const response = await fetch(`${API}/stats`, { cache: 'no-store' });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const json = await response.json();
+        inMemoryData = {
+          counts: json.counts || {},
+          summary: json.summary || {
+            total_patches: 0,
+            total_downloads: 0,
+            total_actions: 0,
+            total_visits: 0,
+            unique_visitors: 0,
+          },
+        };
+        writeStorage(inMemoryData);
+        return inMemoryData;
+      } catch (err) {
+        console.warn('Failed to load stats from Cloudflare D1:', err);
+        return {
+          counts: {},
+          summary: { total_patches: 0, total_downloads: 0, total_actions: 0, total_visits: 0, unique_visitors: 0 },
+        };
+      } finally {
+        batchPromise = null;
+      }
+    })();
+
+    return batchPromise;
   };
 
-  const getCounter = (key) => {
-    const cached = readCache()[key];
-    if (cached && Date.now() - cached.at < CACHE_TTL) return Promise.resolve(cached.value);
-    if (pending.has(key)) return pending.get(key);
-    const promise = new Promise((resolve) => {
-      queue.push(() => request('get', key)
-        .then((value) => { writeCache(key, value); resolve(value); })
-        .catch(() => resolve(null))
-        .finally(() => pending.delete(key)));
-      pump();
-    });
-    pending.set(key, promise);
-    return promise;
+  // Preload batch immediately on script parse
+  fetchBatch();
+
+  const getCounter = async (key) => {
+    const data = await fetchBatch();
+    const val = data.counts[key];
+    return Number.isFinite(val) ? val : 0;
   };
 
-  const hitCounter = (key) => request('hit', key)
-    .then((value) => { writeCache(key, value); return value; })
-    .catch(() => null);
+  const hitCounter = async (key) => {
+    try {
+      const response = await fetch(`${API}/stats/${encodeURIComponent(key)}/hit`, { method: 'POST' });
+      if (!response.ok) return null;
+      const data = await response.json();
+      if (inMemoryData && Number.isFinite(data.count)) {
+        inMemoryData.counts[key] = data.count;
+        if (key.startsWith('download--')) {
+          inMemoryData.summary.total_downloads += 1;
+        } else {
+          inMemoryData.summary.total_patches += 1;
+        }
+        inMemoryData.summary.total_actions += 1;
+        writeStorage(inMemoryData);
+      }
+      return data.count;
+    } catch {
+      return null;
+    }
+  };
+
+  const recordVisit = async () => {
+    try {
+      if (sessionStorage.getItem(VISIT_KEY)) return; // Only count once per session
+      sessionStorage.setItem(VISIT_KEY, '1');
+      const response = await fetch(`${API}/stats/visit`, { method: 'POST' });
+      if (response.ok) {
+        const json = await response.json();
+        if (inMemoryData) {
+          inMemoryData.summary.total_visits = json.total_visits;
+          inMemoryData.summary.unique_visitors = json.unique_visitors;
+          writeStorage(inMemoryData);
+        }
+      }
+    } catch {}
+  };
 
   const downloadKey = (slug) => `download--${slug}`;
   const get = (slug) => getCounter(slug);
   const hit = (slug) => hitCounter(slug);
   const getDownload = (slug) => getCounter(downloadKey(slug));
   const hitDownload = (slug) => hitCounter(downloadKey(slug));
+  const getSummary = async () => {
+    const data = await fetchBatch();
+    return data.summary;
+  };
+  const getAll = () => fetchBatch();
 
   const format = (value) => (value === null || value === undefined ? '—' : Number(value).toLocaleString('th-TH'));
 
-  window.PatchStats = { get, hit, getDownload, hitDownload, format };
+  // Trigger site visit count
+  if (typeof window !== 'undefined') {
+    setTimeout(recordVisit, 500);
+  }
+
+  window.PatchStats = { get, hit, getDownload, hitDownload, getSummary, getAll, format, recordVisit };
 })();

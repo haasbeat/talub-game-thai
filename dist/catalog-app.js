@@ -304,13 +304,12 @@ const renderPopularGames = (games, metrics = new Map()) => {
 
 const loadPopularRanking = async () => {
   if (!popularGames || !window.PatchStats) return;
+  const { counts } = await window.PatchStats.getAll();
   const metrics = new Map();
-  await Promise.all(catalog.map(async (game) => {
-    const getStat = game.distributionType === 'external-download'
-      ? window.PatchStats.getDownload
-      : window.PatchStats.get;
-    metrics.set(game.slug, await getStat(game.slug));
-  }));
+  for (const game of catalog) {
+    const key = game.distributionType === 'external-download' ? `download--${game.slug}` : game.slug;
+    metrics.set(game.slug, counts[key] ?? 0);
+  }
 
   const fallbackRank = new Map(popularFallbackSlugs.map((slug, index) => [slug, index]));
   const ranked = [...catalog].sort((left, right) => {
@@ -325,6 +324,19 @@ const loadPopularRanking = async () => {
     return right.order - left.order;
   }).slice(0, 4);
   renderPopularGames(ranked, metrics);
+};
+
+const renderSiteSummaryStats = async () => {
+  if (!window.PatchStats) return;
+  const summary = await window.PatchStats.getSummary();
+  const totalActionsEl = document.querySelector('#stat-total-actions');
+  const totalVisitsEl = document.querySelector('#stat-total-visits');
+  if (totalActionsEl) {
+    totalActionsEl.textContent = `${window.PatchStats.format(summary.total_actions)} ครั้ง`;
+  }
+  if (totalVisitsEl) {
+    totalVisitsEl.textContent = `${window.PatchStats.format(summary.total_visits)} ครั้ง`;
+  }
 };
 
 const latestGames = document.querySelector('#latest-games');
@@ -504,6 +516,7 @@ updatePlatformScrollState();
 renderPopularGames(popularFallback);
 renderLatestGames();
 loadPopularRanking();
+renderSiteSummaryStats();
 bindHoverTargets(document);
 
 if (requestedPlatform || window.location.hash === '#games') {
