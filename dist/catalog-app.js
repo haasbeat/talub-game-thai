@@ -58,9 +58,10 @@ const posterShapes = ['poster-a', 'poster-b', 'poster-c', 'poster-d', 'poster-e'
 
 const latestSection = document.querySelector('#latest');
 const popularSection = document.querySelector('#popular');
+const supportSection = document.querySelector('#support');
 const gamesSection = document.querySelector('#games');
-if (latestSection && popularSection && gamesSection) {
-  gamesSection.before(latestSection, popularSection);
+if (latestSection && popularSection && supportSection && gamesSection) {
+  gamesSection.before(latestSection, popularSection, supportSection);
 }
 
 const formatPatchDate = (isoDate) => {
