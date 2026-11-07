@@ -3,3 +3,14 @@ dist/assets/patches/*/*/*.xdelta
 dist/assets/patches/*/*/*.part*
 .DS_Store
 .wrangler/
+
+# Ignore large zip mod archives (hosted externally / Google Drive / R2)
+*.zip
+
+# Ignore manual staging folders in patches
+dist/assets/patches/Fire Emblem Engage/
+dist/assets/patches/Fire Emblem Three Houses/
+dist/assets/patches/Persona 5 Royal/
+dist/assets/patches/Disgaea_5_Complete/
+dist/assets/patches/Village_in_the_Shade/
+dist/assets/patches/ex-troopers/v1.0.3/manifest.pending.json
