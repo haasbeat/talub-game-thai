@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "game_slug": "yo-kai-watch-3",
+  "game_title": "Yo-kai Watch 3",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "BY3E",
+  "patch_version": "v1.0.4",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Yo-Kai Watch 3 (USA).3ds",
+      "size": 4294967296,
+      "sha256": "a82ebb005202ac8d427a008191fb341edb306896a312c20fea9bfb7e9d5c6151"
+    }
+  ],
+  "patch": {
+    "filename": "Yo-kai_Watch_3_Thai_v1.0.4.xdelta",
+    "size": 14187242,
+    "sha256": "21ca2cf6c8cbea4ab49c37dc0169cc557f2fc4d09fce6d20c31684505f751b93",
+    "release_date": "2026-11-07",
+    "date_source": "release_build",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/yo-kai-watch-3/v1.0.4/Yo-kai_Watch_3_Thai_v1.0.4.xdelta"
+  },
+  "output": {
+    "filename": "Yo-kai Watch 3 (Thai).3ds",
+    "size": 4294967296,
+    "sha256": "dc1dd7a695269cd30540910ab2d47ab15c15e55f2dff3d11aeef38e5cd63872b"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องคู่เคตะและอินาโฮะ+ระบบสอนต่อสู้ครบถ้วน+บลาสเตอร์สที+แท็กติกส์บอร์ด 100%",
+    "whole_game_census": "137,462/137,462 ข้อความ (ภาพรวมทั้งเกม 100%)",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "STATE.md / audit_yokai3_master.py (2026-11-07 audit)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-07T15:26:59+07:00",
+    "method": "browser_xdelta3_wasm_apply",
+    "note": "Patch applies to clean USA 4GB ROM with browser xdelta3 wasm engine bit-identically matching target SHA-256.",
+    "patcher_test_passed": true,
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}
