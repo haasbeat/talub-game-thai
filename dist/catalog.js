@@ -2,122 +2,13 @@
 window.GAME_CATALOG = [
   {
     "order": 0,
-    "slug": "disgaea-5-complete",
-    "title": "Disgaea 5 Complete",
-    "platform": "nintendo switch",
-    "platformLabel": "Nintendo Switch",
-    "index": "Nintendo Switch | NaN / undefined",
-    "version": "v1.0.1",
-    "cover": "./assets/covers/web/disgaea-5-complete.jpg",
-    "manifest": "./assets/patches/disgaea-5-complete/v1.0.1/manifest.json",
-    "accept": "",
-    "fileTypes": "CLEAN Nintendo Switch · 0 MB",
-    "region": "รอยืนยัน",
-    "gameCode": "—",
-    "sourceName": "ดูรุ่นที่รองรับใน manifest",
-    "sourceHash": "—",
-    "outputHash": "—",
-    "moduleStatus": "เมนู ระบบ ฐานทัพ สกิล ไอเทม เควสต์ เนื้อเรื่องหลัก 1-16 และบทเสริม 100%",
-    "wholeGameCensus": "63,635 / 84,157 บรรทัด = 75.61%",
-    "details": null,
-    "verified": false
-  },
-  {
-    "order": 1,
-    "slug": "fire-emblem-engage",
-    "title": "Fire Emblem Engage",
-    "platform": "nintendo switch",
-    "platformLabel": "Nintendo Switch",
-    "index": "Nintendo Switch | NaN / undefined",
-    "version": "v2.0.5",
-    "cover": "./assets/covers/web/fire-emblem-engage.jpg",
-    "manifest": "./assets/patches/fire-emblem-engage/v2.0.5/manifest.json",
-    "accept": "",
-    "fileTypes": "CLEAN Nintendo Switch · 0 MB",
-    "region": "รอยืนยัน",
-    "gameCode": "—",
-    "sourceName": "ดูรุ่นที่รองรับใน manifest",
-    "sourceHash": "—",
-    "outputHash": "—",
-    "moduleStatus": "เนื้อเรื่อง เมนู DLC Waves 1-4 และระบบหลักผ่านการตรวจ In-ROM",
-    "wholeGameCensus": "41,262 ระเบียนที่ฉีดในรอม / ฐานสำรวจ 39,176 ระเบียน",
-    "details": null,
-    "verified": false
-  },
-  {
-    "order": 2,
-    "slug": "fire-emblem-three-houses",
-    "title": "Fire Emblem: Three Houses",
-    "platform": "nintendo switch",
-    "platformLabel": "Nintendo Switch",
-    "index": "Nintendo Switch | NaN / undefined",
-    "version": "v1.3.5",
-    "cover": "./assets/covers/web/fire-emblem-three-houses.jpg",
-    "manifest": "./assets/patches/fire-emblem-three-houses/v1.3.5/manifest.json",
-    "accept": "",
-    "fileTypes": "CLEAN Nintendo Switch · 0 MB",
-    "region": "รอยืนยัน",
-    "gameCode": "—",
-    "sourceName": "ดูรุ่นที่รองรับใน manifest",
-    "sourceHash": "—",
-    "outputHash": "—",
-    "moduleStatus": "เนื้อเรื่องและเมนูหลัก 100%",
-    "wholeGameCensus": "78,511 / 77,019 บรรทัด In-ROM (101.94% จากรายการที่ฉีดเพิ่ม)",
-    "details": null,
-    "verified": false
-  },
-  {
-    "order": 3,
-    "slug": "persona-5-royal",
-    "title": "Persona 5 Royal",
-    "platform": "nintendo switch",
-    "platformLabel": "Nintendo Switch",
-    "index": "Nintendo Switch | NaN / undefined",
-    "version": "v1.0.4",
-    "cover": "./assets/covers/web/persona-5-royal.jpg",
-    "manifest": "./assets/patches/persona-5-royal/v1.0.4/manifest.json",
-    "accept": "",
-    "fileTypes": "CLEAN Nintendo Switch · 0 MB",
-    "region": "รอยืนยัน",
-    "gameCode": "—",
-    "sourceName": "ดูรุ่นที่รองรับใน manifest",
-    "sourceHash": "—",
-    "outputHash": "—",
-    "moduleStatus": "ครบทั้ง 28 โมดูล 100.00%",
-    "wholeGameCensus": "232,202 / 232,202 ระเบียนใน 7,543 ไฟล์ย่อย = 100.00%",
-    "details": null,
-    "verified": false
-  },
-  {
-    "order": 4,
-    "slug": "village-in-the-shade",
-    "title": "Village in the Shade",
-    "platform": "nintendo switch",
-    "platformLabel": "Nintendo Switch",
-    "index": "Nintendo Switch | NaN / undefined",
-    "version": "v1.0.0",
-    "cover": "./assets/covers/web/village-in-the-shade.jpg",
-    "manifest": "./assets/patches/village-in-the-shade/v1.0.0/manifest.json",
-    "accept": "",
-    "fileTypes": "CLEAN Nintendo Switch · 0 MB",
-    "region": "รอยืนยัน",
-    "gameCode": "—",
-    "sourceName": "ดูรุ่นที่รองรับใน manifest",
-    "sourceHash": "—",
-    "outputHash": "—",
-    "moduleStatus": "เนื้อเรื่องและระบบทั้งหมด 100%",
-    "wholeGameCensus": "52,906 / 52,906 บรรทัด = 100.0%",
-    "details": null,
-    "verified": false
-  },
-  {
-    "order": 5,
     "slug": "7th-dragon-iii-code-vfd",
     "title": "7th Dragon III Code: VFD",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 001 / 033",
     "version": "v1.0.4",
+    "patchDate": "2026-09-27",
     "format": "xdelta3",
     "cover": "./assets/covers/web/7th-dragon-iii-code-vfd.jpg",
     "manifest": "./assets/patches/7th-dragon-iii-code-vfd/v1.0.4/manifest.json",
@@ -149,16 +40,18 @@ window.GAME_CATALOG = [
         "ป้ายเวอร์ชัน Ver. 1.04 บนหน้าไตเติล"
       ]
     },
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 6,
+    "order": 1,
     "slug": "bravely-default",
     "title": "Bravely Default",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 002 / 033",
     "version": "v1.0.2",
+    "patchDate": "2026-10-27",
     "format": "xdelta3",
     "cover": "./assets/covers/web/bravely-default.jpg",
     "manifest": "./assets/patches/bravely-default/v1.0.2/manifest.json",
@@ -172,16 +65,18 @@ window.GAME_CATALOG = [
     "moduleStatus": "เนื้อเรื่องหลัก+เควสต์ย่อย+ระบบต่อสู้+เมนู+สารานุกรม D 100%",
     "wholeGameCensus": "13,542/13,542 บรรทัด = 100.00%",
     "details": null,
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 7,
+    "order": 2,
     "slug": "dragon-ball-fusions",
     "title": "Dragon Ball Fusions",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 003 / 033",
     "version": "v1.0.6",
+    "patchDate": "2026-10-25",
     "format": "xdelta3",
     "cover": "./assets/covers/web/dragon-ball-fusions.jpg",
     "manifest": "./assets/patches/dragon-ball-fusions/v1.0.6/manifest.json",
@@ -195,16 +90,18 @@ window.GAME_CATALOG = [
     "moduleStatus": "เนื้อเรื่องหลัก+อีเวนต์ฟิวชั่น+ระบบต่อสู้+สารานุกรมตัวละคร 100%",
     "wholeGameCensus": "12,410/12,410 บรรทัด = 100.00%",
     "details": null,
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 8,
+    "order": 3,
     "slug": "dqm-joker-3-professional",
     "title": "Dragon Quest Monsters: Joker 3 Professional",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 004 / 033",
     "version": "v1.0.3",
+    "patchDate": "2026-09-26",
     "format": "xdelta3",
     "cover": "./assets/covers/web/dqm-joker-3-professional.jpg",
     "manifest": "./assets/patches/dqm-joker-3-professional/v1.0.3/manifest.json",
@@ -236,16 +133,18 @@ window.GAME_CATALOG = [
         "เนวิแมปครบ 26 แอเรีย"
       ]
     },
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 9,
+    "order": 4,
     "slug": "dragon-quest-vii",
     "title": "Dragon Quest VII: Fragments of the Forgotten Past",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 005 / 033",
     "version": "v1.6.6",
+    "patchDate": "2026-11-02",
     "format": "xdelta3",
     "cover": "./assets/covers/web/dragon-quest-vii.jpg",
     "manifest": "./assets/patches/dragon-quest-vii/v1.6.6/manifest.json",
@@ -277,16 +176,18 @@ window.GAME_CATALOG = [
         "ลายน้ำ ตลับเกมภาษาไทย v1.6.6 บนหน้าไตเติลและหน้าเซฟ"
       ]
     },
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 10,
+    "order": 5,
     "slug": "dragon-quest-vii-isan",
     "title": "Dragon Quest VII: Fragments of the Forgotten Past (Isan Edition)",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 006 / 033",
     "version": "v1.6.0",
+    "patchDate": "2026-10-13",
     "format": "xdelta3",
     "cover": "./assets/covers/web/dragon-quest-vii-isan.jpg",
     "manifest": "./assets/patches/dragon-quest-vii-isan/v1.6.0/manifest.json",
@@ -300,16 +201,18 @@ window.GAME_CATALOG = [
     "moduleStatus": "บทสนทนาภาษาอีสานแท้+ระบบแผ่นศิลา+ระบบอาชีพดั้งเดิม 100%",
     "wholeGameCensus": "32,150/32,150 บรรทัด = 100.00%",
     "details": null,
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 11,
+    "order": 6,
     "slug": "dragon-quest-viii",
     "title": "Dragon Quest VIII: Journey of the Cursed King",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 007 / 033",
     "version": "v1.4.0",
+    "patchDate": "2026-11-02",
     "format": "xdelta3",
     "cover": "./assets/covers/web/dragon-quest-viii.jpg",
     "manifest": "./assets/patches/dragon-quest-viii/v1.4.0/manifest.json",
@@ -341,16 +244,18 @@ window.GAME_CATALOG = [
         "แก้อาการเกมค้าง/เด้งบนเครื่อง 3DS จริง"
       ]
     },
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 12,
+    "order": 7,
     "slug": "dragon-quest-xi",
     "title": "Dragon Quest XI: Echoes of an Elusive Age",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 008 / 033",
     "version": "v2.4.1",
+    "patchDate": "2026-11-02",
     "format": "xdelta3",
     "cover": "./assets/covers/web/dragon-quest-xi.jpg",
     "manifest": "./assets/patches/dragon-quest-xi/v2.4.1/manifest.json",
@@ -382,16 +287,18 @@ window.GAME_CATALOG = [
         "ไอคอนสถานะเควสต์ภาษาไทย"
       ]
     },
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 13,
+    "order": 8,
     "slug": "ex-troopers",
     "title": "E.X. Troopers",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 009 / 033",
     "version": "v1.0.3",
+    "patchDate": "2026-10-24",
     "format": "xdelta3",
     "cover": "./assets/covers/web/ex-troopers.jpg",
     "manifest": "./assets/patches/ex-troopers/v1.0.3/manifest.json",
@@ -405,16 +312,18 @@ window.GAME_CATALOG = [
     "moduleStatus": "ไฟล์ภาษา 96/96 แอสเซ็ต (100.0%)",
     "wholeGameCensus": "21,181/21,181 เรคคอร์ดในรอม (ภาพรวมทั้งเกม 100.0%)",
     "details": null,
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 14,
+    "order": 9,
     "slug": "etrian-odyssey-iv",
     "title": "Etrian Odyssey IV: Legends of the Titan",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 010 / 033",
     "version": "v1.0.0",
+    "patchDate": "2026-11-07",
     "format": "xdelta3",
     "cover": "./assets/covers/web/etrian-odyssey-iv.jpg",
     "manifest": "./assets/patches/etrian-odyssey-iv/v1.0.0/manifest.json",
@@ -447,16 +356,18 @@ window.GAME_CATALOG = [
         "แพตช์ตรงเข้าไฟล์ .3ds แบบ Zero-Mod เล่นได้ทันทีทั้งบนเครื่องจริง 3DS และ Emulator"
       ]
     },
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 15,
+    "order": 10,
     "slug": "etrian-odyssey-untold",
     "title": "Etrian Odyssey Untold: The Millennium Girl",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 011 / 033",
     "version": "v1.0.0",
+    "patchDate": "2026-11-03",
     "format": "xdelta3",
     "cover": "./assets/covers/web/etrian-odyssey-untold.jpg",
     "manifest": "./assets/patches/etrian-odyssey-untold/v1.0.0/manifest.json",
@@ -470,16 +381,18 @@ window.GAME_CATALOG = [
     "moduleStatus": "โหมดเนื้อเรื่องหลัก+ระบบ Grimoire+เควสต์กิลด์+UI 100%",
     "wholeGameCensus": "11,420/11,420 บรรทัด = 100.00%",
     "details": null,
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 16,
+    "order": 11,
     "slug": "ever-oasis",
     "title": "Ever Oasis",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 012 / 033",
     "version": "v1.0.2",
+    "patchDate": "2026-10-12",
     "format": "xdelta3",
     "cover": "./assets/covers/web/ever-oasis.jpg",
     "manifest": "./assets/patches/ever-oasis/v1.0.2/manifest.json",
@@ -511,16 +424,18 @@ window.GAME_CATALOG = [
         "แพตช์ผ่านเว็บเบราว์เซอร์ได้โดยไม่ต้องลงโปรแกรม"
       ]
     },
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 17,
+    "order": 12,
     "slug": "final-fantasy-explorers",
     "title": "Final Fantasy Explorers",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 013 / 033",
     "version": "v1.0.0",
+    "patchDate": "2026-11-01",
     "format": "xdelta3",
     "cover": "./assets/covers/web/final-fantasy-explorers.jpg",
     "manifest": "./assets/patches/final-fantasy-explorers/v1.0.0/manifest.json",
@@ -534,16 +449,18 @@ window.GAME_CATALOG = [
     "moduleStatus": "เควสต์หลัก+เควสต์ย่อย+ระบบอาชีพ+ไอเทมและอุปกรณ์ 100%",
     "wholeGameCensus": "9,850/9,850 บรรทัด = 100.00%",
     "details": null,
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 18,
+    "order": 13,
     "slug": "inazuma-eleven-123",
     "title": "Inazuma Eleven 1-2-3!! - Endou Mamoru Densetsu",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 014 / 033",
     "version": "v1.0.0",
+    "patchDate": "2026-10-28",
     "format": "xdelta3",
     "cover": "./assets/covers/web/inazuma-eleven-123.jpg",
     "manifest": "./assets/patches/inazuma-eleven-123/v1.0.0/manifest.json",
@@ -557,16 +474,18 @@ window.GAME_CATALOG = [
     "moduleStatus": "เนื้อเรื่องไตรภาค 1-2-3+ระบบท่าไม้ตาย+ระบบแข่งขัน 100%",
     "wholeGameCensus": "38,920/38,920 บรรทัด = 100.00%",
     "details": null,
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 19,
+    "order": 14,
     "slug": "inazuma-go-thunderflash",
     "title": "Inazuma Eleven GO: Chrono Stones - Thunderflash",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 015 / 033",
     "version": "v1.0.1",
+    "patchDate": "2026-10-13",
     "format": "xdelta3",
     "cover": "./assets/covers/web/inazuma-go-thunderflash.jpg",
     "manifest": "./assets/patches/inazuma-go-thunderflash/v1.0.1/manifest.json",
@@ -598,16 +517,18 @@ window.GAME_CATALOG = [
         "ฟอนต์ Mali SemiBold มาตรฐาน Yo-kai Watch 1"
       ]
     },
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 20,
+    "order": 15,
     "slug": "inazuma-go-wildfire",
     "title": "Inazuma Eleven GO: Chrono Stones - Wildfire",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 016 / 033",
     "version": "v1.0.0",
+    "patchDate": "2026-10-13",
     "format": "xdelta3",
     "cover": "./assets/covers/web/inazuma-go-wildfire.jpg",
     "manifest": "./assets/patches/inazuma-go-wildfire/v1.0.0/manifest.json",
@@ -621,16 +542,18 @@ window.GAME_CATALOG = [
     "moduleStatus": "เนื้อเรื่องไทม์แทรเวลครบทุกยุค+ระบบมิกซีแมกซ์+อาร์เมอร์ฟอร์ม 100%",
     "wholeGameCensus": "22,400/22,400 บรรทัด = 100.00%",
     "details": null,
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 21,
+    "order": 16,
     "slug": "inazuma-go-light",
     "title": "Inazuma Eleven GO: Light",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 017 / 033",
     "version": "v1.1.0",
+    "patchDate": "2026-10-12",
     "format": "xdelta3",
     "cover": "./assets/covers/web/inazuma-go-light.jpg",
     "manifest": "./assets/patches/inazuma-go-light/v1.1.0/manifest.json",
@@ -662,16 +585,18 @@ window.GAME_CATALOG = [
         "เซฟเดิมเล่นต่อในเวอร์ชันภาษาไทยได้"
       ]
     },
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 22,
+    "order": 17,
     "slug": "inazuma-go-shadow",
     "title": "Inazuma Eleven GO: Shadow",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 018 / 033",
     "version": "v1.0.0",
+    "patchDate": "2026-10-12",
     "format": "xdelta3",
     "cover": "./assets/covers/web/inazuma-go-shadow.jpg",
     "manifest": "./assets/patches/inazuma-go-shadow/v1.0.0/manifest.json",
@@ -703,16 +628,18 @@ window.GAME_CATALOG = [
         "ฟอนต์ Mali Bold ขอบดำคมชัด"
       ]
     },
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 23,
+    "order": 18,
     "slug": "lost-heroes",
     "title": "Lost Heroes",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 019 / 033",
     "version": "v1.0.0",
+    "patchDate": "2026-10-25",
     "format": "xdelta3",
     "cover": "./assets/covers/web/lost-heroes.jpg",
     "manifest": "./assets/patches/lost-heroes/v1.0.0/manifest.json",
@@ -744,16 +671,18 @@ window.GAME_CATALOG = [
         "ระดับภาษาแยกตามบุคลิกฮีโร่แต่ละคน"
       ]
     },
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 24,
+    "order": 19,
     "slug": "metal-max-4",
     "title": "Metal Max 4: Gekkou no Diva",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 020 / 033",
     "version": "v1.3.3",
+    "patchDate": "2026-10-24",
     "format": "xdelta3",
     "cover": "./assets/covers/web/metal-max-4.jpg",
     "manifest": "./assets/patches/metal-max-4/v1.3.3/manifest.json",
@@ -767,16 +696,18 @@ window.GAME_CATALOG = [
     "moduleStatus": "เนื้อเรื่องหลักและระบบเกม 100%",
     "wholeGameCensus": "47,078/81,067 สล็อตไบนารี (58.1%); ข้อความที่ใช้งานจริง 47,078/47,078",
     "details": null,
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 25,
+    "order": 20,
     "slug": "monster-hunter-stories",
     "title": "Monster Hunter Stories",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 021 / 033",
     "version": "v1.0.0",
+    "patchDate": "2026-11-02",
     "format": "xdelta3",
     "cover": "./assets/covers/web/monster-hunter-stories.jpg",
     "manifest": "./assets/patches/monster-hunter-stories/v1.0.0/manifest.json",
@@ -808,16 +739,18 @@ window.GAME_CATALOG = [
         "ตัวเอกเลือกเพศได้ ข้อความระบบใช้ภาษากลางทางเพศ"
       ]
     },
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 26,
+    "order": 21,
     "slug": "new-love-plus-plus",
     "title": "New Love Plus+",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 022 / 033",
     "version": "v2.0.1",
+    "patchDate": "2026-11-07",
     "format": "xdelta3",
     "cover": "./assets/covers/web/new-love-plus-plus.jpg",
     "manifest": "./assets/patches/new-love-plus-plus/v2.0.1/manifest.json",
@@ -849,16 +782,18 @@ window.GAME_CATALOG = [
         "ลายน้ำ ตลับเกมภาษาไทย V2.0.0 บนเมนูหลัก"
       ]
     },
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 27,
+    "order": 22,
     "slug": "phoenix-wright-trilogy",
     "title": "Phoenix Wright: Ace Attorney Trilogy",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 023 / 033",
     "version": "v1.2.3",
+    "patchDate": "2026-10-28",
     "format": "xdelta3",
     "cover": "./assets/covers/web/phoenix-wright-trilogy.jpg",
     "manifest": "./assets/patches/phoenix-wright-trilogy/v1.2.3/manifest.json",
@@ -890,16 +825,18 @@ window.GAME_CATALOG = [
         "ฟอนต์เวกเตอร์ไทยคมชัด ไม่มีสระลอย"
       ]
     },
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 28,
+    "order": 23,
     "slug": "professor-layton-miracle-mask",
     "title": "Professor Layton and the Miracle Mask",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 024 / 033",
     "version": "v1.3.2",
+    "patchDate": "2026-10-24",
     "format": "xdelta3",
     "cover": "./assets/covers/web/professor-layton-miracle-mask.jpg",
     "manifest": "./assets/patches/professor-layton-miracle-mask/v1.3.2/manifest.json",
@@ -931,16 +868,18 @@ window.GAME_CATALOG = [
         "มีทั้งไฟล์ xdelta และ CIA สำหรับติดตั้ง"
       ]
     },
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 29,
+    "order": 24,
     "slug": "rune-factory-4",
     "title": "Rune Factory 4",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 025 / 033",
     "version": "v1.0.4",
+    "patchDate": "2026-10-24",
     "format": "xdelta3",
     "cover": "./assets/covers/web/rune-factory-4.jpg",
     "manifest": "./assets/patches/rune-factory-4/v1.0.4/manifest.json",
@@ -972,16 +911,18 @@ window.GAME_CATALOG = [
         "ฟอนต์ไทยฝังในตลับ ไม่มีกล่องเต้าหู้"
       ]
     },
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 30,
+    "order": 25,
     "slug": "shin-megami-tensei-iv",
     "title": "Shin Megami Tensei IV",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 026 / 033",
     "version": "v1.3.4",
+    "patchDate": "2026-10-27",
     "format": "xdelta3",
     "cover": "./assets/covers/web/shin-megami-tensei-iv.jpg",
     "manifest": "./assets/patches/shin-megami-tensei-iv/v1.3.4/manifest.json",
@@ -995,16 +936,18 @@ window.GAME_CATALOG = [
     "moduleStatus": "เนื้อเรื่องหลักทั้ง 4 รูท+เควสต์ท้าทาย+ระบบรวมร่างปีศาจ+เมนู 100%",
     "wholeGameCensus": "24,190/24,190 บรรทัด = 100.00%",
     "details": null,
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 31,
+    "order": 26,
     "slug": "smt-strange-journey-redux",
     "title": "Shin Megami Tensei: Strange Journey Redux",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 027 / 033",
     "version": "v1.0.4",
+    "patchDate": "2026-10-25",
     "format": "xdelta3",
     "cover": "./assets/covers/web/smt-strange-journey-redux.jpg",
     "manifest": "./assets/patches/smt-strange-journey-redux/v1.0.4/manifest.json",
@@ -1036,16 +979,18 @@ window.GAME_CATALOG = [
         "ฟอนต์ Chakra Petch SemiBold 5 ขนาด"
       ]
     },
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 32,
+    "order": 27,
     "slug": "theatrhythm-dragon-quest",
     "title": "Theatrhythm Dragon Quest",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 028 / 033",
     "version": "v1.2.1",
+    "patchDate": "2026-11-01",
     "format": "xdelta3",
     "cover": "./assets/covers/web/theatrhythm-dragon-quest.jpg",
     "manifest": "./assets/patches/theatrhythm-dragon-quest/v1.2.1/manifest.json",
@@ -1077,16 +1022,18 @@ window.GAME_CATALOG = [
         "ลายน้ำเวอร์ชัน v1.2.1 ในเกม"
       ]
     },
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 33,
+    "order": 28,
     "slug": "time-travelers",
     "title": "Time Travelers",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 029 / 033",
     "version": "v1.0.1",
+    "patchDate": "2026-10-25",
     "format": "xdelta3",
     "cover": "./assets/covers/web/time-travelers.jpg",
     "manifest": "./assets/patches/time-travelers/v1.0.1/manifest.json",
@@ -1100,16 +1047,18 @@ window.GAME_CATALOG = [
     "moduleStatus": "ไทม์ไลน์ 5 ตัวละครหลัก+ระบบ Time Stop+เหตุการณ์ TIP ทั้งหมด 100%",
     "wholeGameCensus": "15,620/15,620 บรรทัด = 100.00%",
     "details": null,
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 34,
+    "order": 29,
     "slug": "xenoblade-chronicles-3d",
     "title": "Xenoblade Chronicles 3D",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 030 / 033",
     "version": "v1.0.7",
+    "patchDate": "2026-10-24",
     "format": "xdelta3",
     "cover": "./assets/covers/web/xenoblade-chronicles-3d.jpg",
     "manifest": "./assets/patches/xenoblade-chronicles-3d/v1.0.7/manifest.json",
@@ -1141,16 +1090,18 @@ window.GAME_CATALOG = [
         "รองรับเฉพาะเครื่อง New Nintendo 3DS ตามต้นฉบับ"
       ]
     },
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 35,
+    "order": 30,
     "slug": "yo-kai-watch",
     "title": "Yo-kai Watch",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 031 / 033",
     "version": "v2.8.1",
+    "patchDate": "2026-11-07",
     "format": "xdelta3",
     "cover": "./assets/covers/web/yo-kai-watch.jpg",
     "manifest": "./assets/patches/yo-kai-watch/v2.8.1/manifest.json",
@@ -1164,16 +1115,18 @@ window.GAME_CATALOG = [
     "moduleStatus": "เนื้อเรื่องหลัก+เควสต์เสริมโยไก+ระบบเหรียญโยไก+เมนู 100% (ฟอนต์คมชัด 13pt)",
     "wholeGameCensus": "18,720/18,720 บรรทัด = 100.00%",
     "details": null,
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 36,
+    "order": 31,
     "slug": "yo-kai-watch-2",
     "title": "Yo-kai Watch 2: Psychic Specters",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 032 / 033",
     "version": "v1.2.0",
+    "patchDate": "2026-10-13",
     "format": "xdelta3",
     "cover": "./assets/covers/web/yo-kai-watch-2.jpg",
     "manifest": "./assets/patches/yo-kai-watch-2/v1.2.0/manifest.json",
@@ -1205,16 +1158,18 @@ window.GAME_CATALOG = [
         "ฟอนต์ Mali Bold 11px"
       ]
     },
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 37,
+    "order": 32,
     "slug": "yo-kai-watch-3",
     "title": "Yo-kai Watch 3",
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 033 / 033",
     "version": "v1.0.4",
+    "patchDate": "2026-11-07",
     "format": "xdelta3",
     "cover": "./assets/covers/web/yo-kai-watch-3.jpg",
     "manifest": "./assets/patches/yo-kai-watch-3/v1.0.4/manifest.json",
@@ -1247,16 +1202,18 @@ window.GAME_CATALOG = [
         "ฟอนต์ Mali SemiBold 12px อ่านง่าย สบายตา คมชัดเต็มตา ไม่ล้นกรอบ"
       ]
     },
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 38,
+    "order": 33,
     "slug": "dragon-quest-iv",
     "title": "Dragon Quest IV: Chapters of the Chosen",
     "platform": "nds",
     "platformLabel": "NDS",
     "index": "NDS | 001 / 010",
     "version": "v2.5.1",
+    "patchDate": "2026-11-02",
     "format": "xdelta3",
     "cover": "./assets/covers/web/dragon-quest-iv.jpg",
     "manifest": "./assets/patches/dragon-quest-iv/v2.5.1/manifest.json",
@@ -1288,16 +1245,18 @@ window.GAME_CATALOG = [
         "ฟอนต์พิกเซลไทยขนาดพอดีช่องฟอนต์เดิม"
       ]
     },
-    "verified": false
+    "verified": false,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 39,
+    "order": 34,
     "slug": "dragon-quest-v",
     "title": "Dragon Quest V: Hand of the Heavenly Bride",
     "platform": "nds",
     "platformLabel": "NDS",
     "index": "NDS | 002 / 010",
     "version": "v1.6.3",
+    "patchDate": "2026-11-02",
     "format": "xdelta3",
     "cover": "./assets/covers/web/dragon-quest-v.jpg",
     "manifest": "./assets/patches/dragon-quest-v/v1.6.3/manifest.json",
@@ -1311,16 +1270,18 @@ window.GAME_CATALOG = [
     "moduleStatus": "เนื้อเรื่องไตรวัย (วัยเด็ก-วัยหนุ่ม-รุ่นลูก)+ทางเลือกเจ้าสาว 3 สาย 100%",
     "wholeGameCensus": "18,500/18,500 บรรทัด = 100.00%",
     "details": null,
-    "verified": false
+    "verified": false,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 40,
+    "order": 35,
     "slug": "dragon-quest-vi",
     "title": "Dragon Quest VI: Realms of Revelation",
     "platform": "nds",
     "platformLabel": "NDS",
     "index": "NDS | 003 / 010",
     "version": "v1.1.0",
+    "patchDate": "2026-11-02",
     "format": "xdelta3",
     "cover": "./assets/covers/web/dragon-quest-vi.jpg",
     "manifest": "./assets/patches/dragon-quest-vi/v1.1.0/manifest.json",
@@ -1334,16 +1295,18 @@ window.GAME_CATALOG = [
     "moduleStatus": "โลกจริงและโลกความฝัน+ระบบอาชีพดาร์มา+ระบบสนทนาปาร์ตี้ 100%",
     "wholeGameCensus": "19,840/19,840 บรรทัด = 100.00%",
     "details": null,
-    "verified": false
+    "verified": false,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 41,
+    "order": 36,
     "slug": "front-mission-2089",
     "title": "Front Mission 2089: Border of Madness",
     "platform": "nds",
     "platformLabel": "NDS",
     "index": "NDS | 004 / 010",
     "version": "v1.1.1",
+    "patchDate": "2026-10-31",
     "format": "xdelta3",
     "cover": "./assets/covers/web/front-mission-2089.jpg",
     "manifest": "./assets/patches/front-mission-2089/V1.1.1/manifest.json",
@@ -1375,16 +1338,18 @@ window.GAME_CATALOG = [
         "ปรับฟอนต์ให้เบาลงเพื่อคืนหน่วยความจำให้ฉากต่อสู้"
       ]
     },
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 42,
+    "order": 37,
     "slug": "lost-in-blue-2",
     "title": "Lost in Blue 2",
     "platform": "nds",
     "platformLabel": "NDS",
     "index": "NDS | 005 / 010",
     "version": "v2.0.2",
+    "patchDate": "2026-11-01",
     "format": "xdelta3",
     "cover": "./assets/covers/web/lost-in-blue-2.jpg",
     "manifest": "./assets/patches/lost-in-blue-2/v2.0.2/manifest.json",
@@ -1416,16 +1381,18 @@ window.GAME_CATALOG = [
         "เปลี่ยนตารางภาษาอื่นในรอมให้แสดงภาษาไทย"
       ]
     },
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 43,
+    "order": 38,
     "slug": "love-plus-plus",
     "title": "Love Plus+",
     "platform": "nds",
     "platformLabel": "NDS",
     "index": "NDS | 006 / 010",
     "version": "v1.0.5",
+    "patchDate": "2026-10-31",
     "format": "xdelta3",
     "cover": "./assets/covers/web/love-plus-plus.jpg",
     "manifest": "./assets/patches/love-plus-plus/v1.0.5/manifest.json",
@@ -1457,16 +1424,18 @@ window.GAME_CATALOG = [
         "ป้ายสถานที่ในเมืองโทวาโนะ 364 ป้าย"
       ]
     },
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 44,
+    "order": 39,
     "slug": "saga2-hihou-densetsu",
     "title": "SaGa 2: Hihou Densetsu - Goddess of Destiny",
     "platform": "nds",
     "platformLabel": "NDS",
     "index": "NDS | 007 / 010",
     "version": "v1.0.1",
+    "patchDate": "2026-11-05",
     "format": "xdelta3",
     "cover": "./assets/covers/web/saga2-hihou-densetsu.jpg",
     "manifest": "./assets/patches/saga2-hihou-densetsu/v1.0.1/manifest.json",
@@ -1480,16 +1449,18 @@ window.GAME_CATALOG = [
     "moduleStatus": "เนื้อเรื่องหลัก 15 โลก+โลกมิวส์+เหตุการณ์ย่อย+ระบบ UI+ฐานข้อมูลทั้งหมด 100%",
     "wholeGameCensus": "19,225/19,225 บรรทัด = 100.00%",
     "details": null,
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 45,
+    "order": 40,
     "slug": "suikoden-tierkreis",
     "title": "Suikoden Tierkreis",
     "platform": "nds",
     "platformLabel": "NDS",
     "index": "NDS | 008 / 010",
     "version": "v1.0.0",
+    "patchDate": "2026-11-01",
     "format": "xdelta3",
     "cover": "./assets/covers/web/suikoden-tierkreis.jpg",
     "manifest": "./assets/patches/suikoden-tierkreis/v1.0.0/manifest.json",
@@ -1503,16 +1474,18 @@ window.GAME_CATALOG = [
     "moduleStatus": "เนื้อเรื่อง 108 ดวงดาวแห่งโชคชะตา+เควสต์กิลด์+เมนูและระบบต่อสู้ 100%",
     "wholeGameCensus": "26,300/26,300 บรรทัด = 100.00%",
     "details": null,
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 46,
+    "order": 41,
     "slug": "tales-of-hearts",
     "title": "Tales of Hearts",
     "platform": "nds",
     "platformLabel": "NDS",
     "index": "NDS | 009 / 010",
     "version": "v1.0.1",
+    "patchDate": "2026-11-03",
     "format": "xdelta3",
     "cover": "./assets/covers/web/tales-of-hearts.jpg",
     "manifest": "./assets/patches/tales-of-hearts/v1.0.1/manifest.json",
@@ -1526,16 +1499,18 @@ window.GAME_CATALOG = [
     "moduleStatus": "เนื้อเรื่องหลัก+ระบบสคิต+ระบบต่อสู้โซมา+เมนูทั้งหมด 100%",
     "wholeGameCensus": "21,680/21,680 บรรทัด = 100.00%",
     "details": null,
-    "verified": false
+    "verified": false,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 47,
+    "order": 42,
     "slug": "the-world-ends-with-you",
     "title": "The World Ends with You",
     "platform": "nds",
     "platformLabel": "NDS",
     "index": "NDS | 010 / 010",
     "version": "v1.0.4",
+    "patchDate": "2026-11-01",
     "format": "xdelta3",
     "cover": "./assets/covers/web/the-world-ends-with-you.jpg",
     "manifest": "./assets/patches/the-world-ends-with-you/v1.0.4/manifest.json",
@@ -1549,16 +1524,18 @@ window.GAME_CATALOG = [
     "moduleStatus": "เนื้อเรื่องหลัก 7 วัน 3 สัปดาห์+บทเสริม Another Day+ระบบเข็มกลัด 100%",
     "wholeGameCensus": "14,810/14,810 บรรทัด = 100.00%",
     "details": null,
-    "verified": false
+    "verified": false,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 48,
+    "order": 43,
     "slug": "mini-yonku-wgp2",
     "title": "Mini Yonku Let's & Go!!: Power WGP 2",
     "platform": "snes",
     "platformLabel": "SNES",
     "index": "SNES | 001 / 001",
     "version": "v1.3.15",
+    "patchDate": "2026-10-25",
     "format": "xdelta3",
     "cover": "./assets/covers/web/mini-yonku-wgp2.jpg",
     "manifest": "./assets/patches/mini-yonku-wgp2/v1.3.15/manifest.json",
@@ -1590,16 +1567,18 @@ window.GAME_CATALOG = [
         "แก้บั๊กหน่วยความจำ WRAM ล้นใน v1.3.15"
       ]
     },
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
   },
   {
-    "order": 49,
+    "order": 44,
     "slug": "popolocrois",
     "title": "PoPoLoCrois",
     "platform": "psp",
     "platformLabel": "PSP",
     "index": "PSP | 001 / 001",
     "version": "v1.1.0",
+    "patchDate": "2026-09-18",
     "format": "xdelta3",
     "cover": "./assets/covers/web/popolocrois.jpg",
     "manifest": "./assets/patches/PoPoLoCrois/v1.1.0/manifest.json",
@@ -1613,6 +1592,157 @@ window.GAME_CATALOG = [
     "moduleStatus": "เนื้อเรื่องหลักและระบบทั้งหมด 100%",
     "wholeGameCensus": "48,199 / 48,199 บรรทัด In-ROM = 100.0%",
     "details": null,
-    "verified": true
+    "verified": true,
+    "gameVersion": "v1.0.0"
+  },
+  {
+    "order": 45,
+    "slug": "disgaea-5-complete",
+    "title": "Disgaea 5 Complete",
+    "platform": "switch",
+    "platformLabel": "SWITCH",
+    "index": "SWITCH | 001 / 005",
+    "version": "v1.0.1",
+    "patchDate": "2026-11-06",
+    "format": "LayeredFS / Atmosphère",
+    "cover": "./assets/covers/web/disgaea-5-complete.jpg",
+    "manifest": "./assets/patches/disgaea-5-complete/v1.0.1/manifest.json",
+    "accept": "",
+    "fileTypes": "ชุดม็อด LayeredFS · 925.58 MB",
+    "region": "Global",
+    "gameCode": "01005700031AE000",
+    "sourceName": "Base game v1.0.0 (US / Worldwide)",
+    "sourceHash": "01005700031AE000",
+    "outputHash": "16797cb36b9d5361ccecf8c5dc49578eb7ca3bfd526b0c6d90f93179f26b9c45",
+    "moduleStatus": "เมนู ระบบ ฐานทัพ สกิล ไอเทม เควสต์ เนื้อเรื่องหลัก 1-16 และบทเสริม 100%",
+    "wholeGameCensus": "63,635 / 84,157 บรรทัด = 75.61%",
+    "details": null,
+    "verified": true,
+    "gameVersion": "Base game v1.0.0 (US / Worldwide)",
+    "distributionType": "external-download",
+    "downloadUrl": "https://drive.google.com/file/d/1NdspdHhafLe8lXd8_zVdL2Q5Kiqlro-v/view?usp=sharing",
+    "downloadFilename": "Disgaea_5_Complete_v1.0.1_Mod.zip",
+    "downloadSize": 970542683,
+    "downloadSha256": "16797cb36b9d5361ccecf8c5dc49578eb7ca3bfd526b0c6d90f93179f26b9c45"
+  },
+  {
+    "order": 46,
+    "slug": "fire-emblem-engage",
+    "title": "Fire Emblem Engage",
+    "platform": "switch",
+    "platformLabel": "SWITCH",
+    "index": "SWITCH | 002 / 005",
+    "version": "v2.0.5",
+    "patchDate": "2026-10-24",
+    "format": "LayeredFS / Atmosphère",
+    "cover": "./assets/covers/web/fire-emblem-engage.jpg",
+    "manifest": "./assets/patches/fire-emblem-engage/v2.0.5/manifest.json",
+    "accept": "",
+    "fileTypes": "ชุดม็อด LayeredFS · 93.06 MB",
+    "region": "Global",
+    "gameCode": "0100A6301214E000",
+    "sourceName": "Update v2.0.0 + DLC Waves 1-4",
+    "sourceHash": "0100A6301214E000",
+    "outputHash": "146bb292a864ebf635119b72cca0ce6ab029737fd1fe30c5fafc49c6400d4087",
+    "moduleStatus": "เนื้อเรื่อง เมนู DLC Waves 1-4 และระบบหลักผ่านการตรวจ In-ROM",
+    "wholeGameCensus": "41,262 ระเบียนที่ฉีดในรอม / ฐานสำรวจ 39,176 ระเบียน",
+    "details": null,
+    "verified": true,
+    "gameVersion": "Update v2.0.0 + DLC Waves 1-4",
+    "distributionType": "external-download",
+    "downloadUrl": "https://drive.google.com/file/d/1uVFtr7M0kQHBFzMA7LNlZC1M47G0RYR_/view?usp=sharing",
+    "downloadFilename": "FE17_Thai_v2.0.5_All_In_One.zip",
+    "downloadSize": 97584355,
+    "downloadSha256": "146bb292a864ebf635119b72cca0ce6ab029737fd1fe30c5fafc49c6400d4087"
+  },
+  {
+    "order": 47,
+    "slug": "fire-emblem-three-houses",
+    "title": "Fire Emblem: Three Houses",
+    "platform": "switch",
+    "platformLabel": "SWITCH",
+    "index": "SWITCH | 003 / 005",
+    "version": "v1.3.5",
+    "patchDate": "2026-11-07",
+    "format": "LayeredFS / Atmosphère",
+    "cover": "./assets/covers/web/fire-emblem-three-houses.jpg",
+    "manifest": "./assets/patches/fire-emblem-three-houses/v1.3.5/manifest.json",
+    "accept": "",
+    "fileTypes": "ชุดม็อด LayeredFS · 302.15 MB",
+    "region": "Global",
+    "gameCode": "010055D009F78000",
+    "sourceName": "Update v1.2.0 (Patch 4)",
+    "sourceHash": "010055D009F78000",
+    "outputHash": "8b3d68b76bcb1b5bbed46a32541530dce1721e258ed09d3b0195ef1489e1b9ba",
+    "moduleStatus": "เนื้อเรื่องและเมนูหลัก 100%",
+    "wholeGameCensus": "78,511 / 77,019 บรรทัด In-ROM (101.94% จากรายการที่ฉีดเพิ่ม)",
+    "details": null,
+    "verified": true,
+    "gameVersion": "Update v1.2.0 (Patch 4)",
+    "distributionType": "external-download",
+    "downloadUrl": "https://drive.google.com/file/d/15yz_dAfE-IMwOTcxuxEpKzzbQHhnP-eg/view?usp=sharing",
+    "downloadFilename": "FE16_Thai_v1.3.5_Mod.zip",
+    "downloadSize": 316823839,
+    "downloadSha256": "8b3d68b76bcb1b5bbed46a32541530dce1721e258ed09d3b0195ef1489e1b9ba"
+  },
+  {
+    "order": 48,
+    "slug": "persona-5-royal",
+    "title": "Persona 5 Royal",
+    "platform": "switch",
+    "platformLabel": "SWITCH",
+    "index": "SWITCH | 004 / 005",
+    "version": "v1.0.4",
+    "patchDate": "2026-11-06",
+    "format": "LayeredFS / Atmosphère",
+    "cover": "./assets/covers/web/persona-5-royal.jpg",
+    "manifest": "./assets/patches/persona-5-royal/v1.0.4/manifest.json",
+    "accept": "",
+    "fileTypes": "ชุดม็อด LayeredFS · 141.55 MB",
+    "region": "Global",
+    "gameCode": "01005CA01580E000",
+    "sourceName": "Nintendo Switch base revision v0 (US / EU)",
+    "sourceHash": "01005CA01580E000",
+    "outputHash": "850b470ea73429aa2830c4ca77563235d1b5fde86bf0ef4893bfea423a697c32",
+    "moduleStatus": "ครบทั้ง 28 โมดูล 100.00%",
+    "wholeGameCensus": "232,202 / 232,202 ระเบียนใน 7,543 ไฟล์ย่อย = 100.00%",
+    "details": null,
+    "verified": true,
+    "gameVersion": "Nintendo Switch base revision v0 (US / EU)",
+    "distributionType": "external-download",
+    "downloadUrl": "https://drive.google.com/file/d/1MXsvsK_YO7IXr_vDvgNzRdG4MqD6Gi75/view?usp=sharing",
+    "downloadFilename": "P5R_Switch_Thai_v1.0.4_Mod.zip",
+    "downloadSize": 148425863,
+    "downloadSha256": "850b470ea73429aa2830c4ca77563235d1b5fde86bf0ef4893bfea423a697c32"
+  },
+  {
+    "order": 49,
+    "slug": "village-in-the-shade",
+    "title": "Village in the Shade",
+    "platform": "switch",
+    "platformLabel": "SWITCH",
+    "index": "SWITCH | 005 / 005",
+    "version": "v1.0.0",
+    "patchDate": "2026-11-01",
+    "format": "LayeredFS / Atmosphère",
+    "cover": "./assets/covers/web/village-in-the-shade.jpg",
+    "manifest": "./assets/patches/village-in-the-shade/v1.0.0/manifest.json",
+    "accept": "",
+    "fileTypes": "ชุดม็อด LayeredFS · 7.95 MB",
+    "region": "Global",
+    "gameCode": "0100254027E50000",
+    "sourceName": "Update v1.3.0 (recommended) or Base v1.0.0",
+    "sourceHash": "0100254027E50000",
+    "outputHash": "02d3fc91bb9ca5f2e7b86b94a229560792db9f766deae3329ae42208c9d42eae",
+    "moduleStatus": "เนื้อเรื่องและระบบทั้งหมด 100%",
+    "wholeGameCensus": "52,906 / 52,906 บรรทัด = 100.0%",
+    "details": null,
+    "verified": true,
+    "gameVersion": "Update v1.3.0 (recommended) or Base v1.0.0",
+    "distributionType": "external-download",
+    "downloadUrl": "https://drive.google.com/file/d/1earxRcMhx8umY71M5cZ2F5AR120UaCg8/view?usp=sharing",
+    "downloadFilename": "Village_in_the_Shade_Thai_v1.0.0_Mod.zip",
+    "downloadSize": 8334151,
+    "downloadSha256": "02d3fc91bb9ca5f2e7b86b94a229560792db9f766deae3329ae42208c9d42eae"
   }
 ];
