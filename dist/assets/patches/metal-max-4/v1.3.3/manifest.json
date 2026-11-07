@@ -49,9 +49,9 @@
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {
-    "verified_at": "2026-11-07T00:00:00+07:00",
-    "method": "clean_source_cli_roundtrip",
-    "note": "ทดสอบ xdelta3 จาก clean ROM SHA-256 c815bff9… แล้วได้ ROM ขนาด 1,073,741,824 ไบต์ SHA-256 fb3716a8… ตรงกับ release target แบบ bit-identical",
+    "verified_at": "2026-11-07T08:00:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "ผ่านการทดสอบสร้าง ROM จริงบนเบราว์เซอร์ (Google Chrome) จาก clean source c815bff9… ได้ผลลัพธ์ fb3716a8… ตรงกับ release target แบบ bit-identical 100% (39.5s)",
     "source_sha256_verified": true,
     "patch_sha256_verified": true,
     "output_sha256_verified": true,

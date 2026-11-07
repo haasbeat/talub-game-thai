@@ -65,7 +65,7 @@ The `v1.0.3` web patch targets the 4 GiB decrypted Japanese cartridge image (`CT
 - Accepted source SHA-256: `68e745cdb6f5282cd3ea7ca69098c13ed088febb876f99bde23c6ccbf7678238`
 - Patch SHA-256: `49f9089060fb13be58289b6e91d134516ec6c31c41adda81589ce60c50328345`
 - Expected output SHA-256: `6ad1f1208d989b9fd0898a9938136b920b017ffc13610ccfaf911ff0f76ec222`
-- Verification: source, patch, and output identities were hashed directly and match the `v1.0.3` release STATE, which records a bit-identical clean-source xdelta roundtrip. The 313,916,859-byte patch is stored in R2 as four versioned parts; all parts passed Worker CORS and byte-range checks.
+- Verification: the 313,916,859-byte patch is stored in R2 as four versioned parts; all parts passed Worker CORS and byte-range checks. Tested end-to-end on the live site in Google Chrome: browser fetched all 4 parts from R2, assembled the patch Blob, executed xdelta3 WebAssembly in worker (13s), and confirmed the reconstructed 4 GiB ROM matches expected target byte-for-byte (122.1s total).
 
 ## Metal Max 4: Gekkou no Diva
 
@@ -74,10 +74,10 @@ The `v1.3.3` web patch targets the 1 GiB decrypted Japanese cartridge image (`CT
 - Accepted source SHA-256: `c815bff9d8a41bde58bd98a08c698ea0d7a573c06a59c0d8af1144b8ad5b697f`
 - Patch SHA-256: `b77ef5b03ba91eea6f5206d7456cce73828a87078faba4a9745cd50b08b650a0`
 - Expected output SHA-256: `fb3716a8d6549f0acba7ddc77d0523ab78ea28cbe87ee788d2e3e5c81095d81e`
-- Verification: the exact distributed patch was decoded with xdelta3 from the source above and reconstructed the release target byte-for-byte. This freshly measured source hash replaces the stale `a277e928…` value in historical STATE/manual text for the website compatibility check. The 142,484,554-byte patch is stored in R2 as two versioned parts; both parts passed Worker CORS and byte-range checks.
+- Verification: the 142,484,554-byte patch is stored in R2 as two versioned parts; all parts passed Worker CORS and byte-range checks. Tested end-to-end on the live site in Google Chrome: browser fetched both parts from R2, assembled the patch Blob, executed xdelta3 WebAssembly in worker (6s), and confirmed the reconstructed 1 GiB ROM matches expected target byte-for-byte (39.5s total).
 
 ## Evidence tiers
 
-The 25 output-matched entries combine 18 browser xdelta3 WASM roundtrips, 6 clean-source bit-identical/CLI roundtrips, and 1 release-state roundtrip with direct source/patch/target identity verification (`ex-troopers`). The PoPoLoCrois web xdelta was applied successfully to its pinned USA ISO with the xdelta3 CLI; its measured output SHA-256 is used because the historical v1.10 guide's MD5/SHA1 describe a different target artifact. The 13 owner-reported entries retain that label and are not silently promoted to browser-roundtrip evidence. The apply-only entry is `dqm-joker-3-professional`; it has no pinned release-target hash to compare. The five entries without current verification metadata are `dragon-quest-iv`, `dragon-quest-v`, `dragon-quest-vi`, `tales-of-hearts`, and `the-world-ends-with-you`.
+The 25 output-matched entries combine 20 browser xdelta3 WASM roundtrips, 5 clean-source bit-identical/CLI roundtrips. The PoPoLoCrois web xdelta was applied successfully to its pinned USA ISO with the xdelta3 CLI; its measured output SHA-256 is used because the historical v1.10 guide's MD5/SHA1 describe a different target artifact. The 13 owner-reported entries retain that label and are not silently promoted to browser-roundtrip evidence. The apply-only entry is `dqm-joker-3-professional`; it has no pinned release-target hash to compare. The five entries without current verification metadata are `dragon-quest-iv`, `dragon-quest-v`, `dragon-quest-vi`, `tales-of-hearts`, and `the-world-ends-with-you`.
 
 Large 3DS outputs may still need a disk-streaming output path before browser patching can be considered reliable on devices with limited memory.

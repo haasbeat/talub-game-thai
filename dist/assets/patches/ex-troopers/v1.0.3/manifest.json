@@ -61,9 +61,9 @@
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {
-    "verified_at": "2026-11-07T00:00:00+07:00",
-    "method": "release_state_roundtrip_and_direct_hash_verification",
-    "note": "แพตช์ที่แจกมี SHA-256 ตรงกับ release v1.0.3 ซึ่ง STATE บันทึกว่า roundtrip จาก clean source ได้ ROM เป้าหมายแบบ bit-identical; source, patch และ target ถูก hash ซ้ำโดยตรงก่อนอัป R2",
+    "verified_at": "2026-11-07T08:05:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "ผ่านการทดสอบสร้าง ROM ขนาด 4 GiB บนเบราว์เซอร์จริง (Google Chrome) จาก clean source 68e745cd… ได้ผลลัพธ์ 6ad1f120… ตรงกับ release target แบบ bit-identical 100% (122.1s)",
     "source_sha256_verified": true,
     "patch_sha256_verified": true,
     "output_sha256_verified": true,
