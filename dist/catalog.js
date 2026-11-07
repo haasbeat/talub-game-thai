@@ -1310,7 +1310,7 @@ window.GAME_CATALOG = [
     "title": "Dragon Quest IV: Chapters of the Chosen",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 001 / 010",
+    "index": "NDS | 001 / 011",
     "version": "v2.5.1",
     "patchDate": "2026-11-02",
     "addedDate": "2026-11-04",
@@ -1356,7 +1356,7 @@ window.GAME_CATALOG = [
     "title": "Dragon Quest V: Hand of the Heavenly Bride",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 002 / 010",
+    "index": "NDS | 002 / 011",
     "version": "v1.6.3",
     "patchDate": "2026-11-02",
     "addedDate": "2026-11-04",
@@ -1384,7 +1384,7 @@ window.GAME_CATALOG = [
     "title": "Dragon Quest VI: Realms of Revelation",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 003 / 010",
+    "index": "NDS | 003 / 011",
     "version": "v1.1.0",
     "patchDate": "2026-11-02",
     "addedDate": "2026-11-04",
@@ -1412,7 +1412,7 @@ window.GAME_CATALOG = [
     "title": "Front Mission 2089: Border of Madness",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 004 / 010",
+    "index": "NDS | 004 / 011",
     "version": "v1.1.1",
     "patchDate": "2026-10-31",
     "addedDate": "2026-11-04",
@@ -1454,11 +1454,59 @@ window.GAME_CATALOG = [
   },
   {
     "order": 37,
+    "slug": "kingdom-hearts-358-2-days",
+    "title": "Kingdom Hearts: 358/2 Days",
+    "platform": "nds",
+    "platformLabel": "NDS",
+    "index": "NDS | 005 / 011",
+    "version": "v1.0.0",
+    "patchDate": "2026-11-07",
+    "addedDate": "2026-11-07",
+    "addedOrder": 51,
+    "addedAt": "2026-11-07T18:58:00+07:00",
+    "format": "xdelta3",
+    "cover": "./assets/covers/web/kingdom-hearts-358-2-days.jpg",
+    "manifest": "./assets/patches/kingdom-hearts-358-2-days/v1.0.0/manifest.json",
+    "accept": ".nds",
+    "fileTypes": "CLEAN USA NDS · 256 MB",
+    "region": "USA",
+    "gameCode": "YKGE",
+    "sourceName": "Kingdom Hearts - 358-2 Days (USA) (En,Fr).nds · 268,435,456 bytes",
+    "sourceHash": "3cbbe3f15b49fc26f43edaf0050899b3cc1091a25e7a496373409c7c8c6fd0cb",
+    "outputHash": "97470303dd3aa8713e7810cf0b4d0ec37b864f9f8712fc131833af5643d85713",
+    "moduleStatus": "เนื้อเรื่อง 8 โลก + คัตซีน Theater 44 เรื่อง + เมนู ฐานข้อมูลครบ",
+    "wholeGameCensus": "313/313 อาร์ไคฟ์ (ภาพรวมทั้งเกม 100.00%)",
+    "details": {
+      "thaiTitle": "คิงดอมฮาร์ตส์: 358/2 เดส์ (อาณาจักรหัวใจ 358/2 วัน)",
+      "japaneseTitle": "キングダム ハーツ 358/2 Days",
+      "originalTitle": "Kingdom Hearts: 358/2 Days",
+      "studio": "Square Enix / h.a.n.d.",
+      "release": "2009-09-29",
+      "genre": "Action role-playing game",
+      "description": "ม็อดภาษาไทยสำหรับ Kingdom Hearts: 358/2 Days (NDS โซน USA) เวอร์ชัน v1.0.0 แปลสมบูรณ์ 100% ทั้งเกม",
+      "overview": "เรื่องราว 358 วันของร็อกซัสในฐานะสมาชิกหมายเลข 13 แห่งองค์กร Organization XIII มิตรภาพริมหอนาฬิกากับแอ็กเซลและซีออน ก่อนนำไปสู่จุดเริ่มต้นของ Kingdom Hearts II",
+      "story": "ร็อกซัส ตื่นขึ้นมาในเมืองทไวไลต์ทาวน์โดยไร้ความทรงจำ และได้รับการชักชวนเข้าเป็นสมาชิกหมายเลข 13 ขององค์กรที่ 13 (Organization XIII) เขาได้รับมอบหมายให้ออกกำจัดฮาร์ตเลสด้วยคีย์เบลดเพื่อรวบรวมหัวใจ ระหว่างปฏิบัติภารกิจข้ามโลกดิสนีย์ต่าง ๆ เขาได้สร้างสายสัมพันธ์กับแอ็กเซลและซีออนผ่านการกินไอศกรีมรสเกลือทะเลบนยอดหอนาฬิกาทุกเย็น ทว่าเมื่อความจริงเกี่ยวกับตัวตนและที่มาของซีออนเริ่มปรากฏ ชะตากรรมอันเจ็บปวดก็ผลักดันให้มิตรภาพของพวกเขาต้องเผชิญกับบททดสอบครั้งสำคัญที่สุด",
+      "localization": "แปลภาษาไทยสมบูรณ์แบบทั้งเกม 100.00% (สำมะโนในรอม 313/313 อาร์ไคฟ์, 12,330 ข้อความ) ครอบคลุมคัตซีนเนื้อเรื่อง 8 โลก, บทพูดในเลานจ์, ไดอารีลับของสมาชิกองค์กร, คำบรรยายเปิดเรื่องและโหมดโรงภาพยนตร์ (Theater 44 ตอน), เมนู ปฏิทิน และฐานข้อมูล Camp ครบถ้วน ใช้ชุดฟอนต์พิกเซล 2005_iannnnnAMD มาตรฐานเดียวกับ Tales of Hearts อ่านสบายตา สระและวรรณยุกต์ซ้อน 3 ชั้นคมชัด ไม่ล้นขอบจอ",
+      "untranslated": "ไม่มีส่วนค้างแปล แปลสมบูรณ์ 100.00% ทั้งเกม",
+      "features": [
+        "แปลเนื้อเรื่องหลัก คัตซีน ไซด์สตอรี่ และบทพูดในองค์กร XIII ครบ 100% (12,330 ข้อความ)",
+        "ซับไตเติลคัตซีนวิดีโอ Opening และฉากประทับใจในโหมด Theater ทั้ง 44 เรื่อง",
+        "ไดอารีลับ Secret Reports ของสมาชิกองค์กร และฐานข้อมูล Camp Database แปลไทยทั้งหมด",
+        "ฟอนต์พิกเซล 2005_iannnnnAMD สระวรรณยุกต์ 3 ชั้น คมชัด ไม่มีตกขอบ พร้อมปรับชดเชยระดับความสูงตัวอักษร -2px",
+        "แพตช์อัปชิฟต์กล่องซับไตเติลในคัตซีน 18 พิกเซล ไม่ชนขอบล่าง Letterbox แบบ 16:9",
+        "ระบบแพตช์รอมผ่านเบราว์เซอร์ เล่นได้ทั้งบนเครื่อง NDS/3DS จริง (R4/TwilightMenu++) และโปรแกรมจำลอง"
+      ]
+    },
+    "verified": true,
+    "gameVersion": "v1.0.0"
+  },
+  {
+    "order": 38,
     "slug": "lost-in-blue-2",
     "title": "Lost in Blue 2",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 005 / 010",
+    "index": "NDS | 006 / 011",
     "version": "v2.0.2",
     "patchDate": "2026-11-01",
     "addedDate": "2026-11-05",
@@ -1499,12 +1547,12 @@ window.GAME_CATALOG = [
     "gameVersion": "v1.0.0"
   },
   {
-    "order": 38,
+    "order": 39,
     "slug": "love-plus-plus",
     "title": "Love Plus+",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 006 / 010",
+    "index": "NDS | 007 / 011",
     "version": "v1.0.5",
     "patchDate": "2026-10-31",
     "addedDate": "2026-11-05",
@@ -1545,12 +1593,12 @@ window.GAME_CATALOG = [
     "gameVersion": "v1.0.0"
   },
   {
-    "order": 39,
+    "order": 40,
     "slug": "saga2-hihou-densetsu",
     "title": "SaGa 2: Hihou Densetsu - Goddess of Destiny",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 007 / 010",
+    "index": "NDS | 008 / 011",
     "version": "v1.0.1",
     "patchDate": "2026-11-05",
     "addedDate": "2026-11-04",
@@ -1573,12 +1621,12 @@ window.GAME_CATALOG = [
     "gameVersion": "v1.0.0"
   },
   {
-    "order": 40,
+    "order": 41,
     "slug": "suikoden-tierkreis",
     "title": "Suikoden Tierkreis",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 008 / 010",
+    "index": "NDS | 009 / 011",
     "version": "v1.0.0",
     "patchDate": "2026-11-01",
     "addedDate": "2026-11-04",
@@ -1601,12 +1649,12 @@ window.GAME_CATALOG = [
     "gameVersion": "v1.0.0"
   },
   {
-    "order": 41,
+    "order": 42,
     "slug": "tales-of-hearts",
     "title": "Tales of Hearts",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 009 / 010",
+    "index": "NDS | 010 / 011",
     "version": "v1.0.1",
     "patchDate": "2026-11-03",
     "addedDate": "2026-11-04",
@@ -1629,12 +1677,12 @@ window.GAME_CATALOG = [
     "gameVersion": "v1.0.0"
   },
   {
-    "order": 42,
+    "order": 43,
     "slug": "the-world-ends-with-you",
     "title": "The World Ends with You",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 010 / 010",
+    "index": "NDS | 011 / 011",
     "version": "v1.0.4",
     "patchDate": "2026-11-01",
     "addedDate": "2026-11-04",
@@ -1657,7 +1705,7 @@ window.GAME_CATALOG = [
     "gameVersion": "v1.0.0"
   },
   {
-    "order": 43,
+    "order": 44,
     "slug": "mini-yonku-wgp2",
     "title": "Mini Yonku Let's & Go!!: Power WGP 2",
     "platform": "snes",
@@ -1703,7 +1751,7 @@ window.GAME_CATALOG = [
     "gameVersion": "v1.0.0"
   },
   {
-    "order": 44,
+    "order": 45,
     "slug": "popolocrois",
     "title": "PoPoLoCrois",
     "platform": "psp",
@@ -1731,7 +1779,7 @@ window.GAME_CATALOG = [
     "gameVersion": "v1.0.0"
   },
   {
-    "order": 45,
+    "order": 46,
     "slug": "disgaea-5-complete",
     "title": "Disgaea 5 Complete",
     "platform": "switch",
@@ -1764,7 +1812,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "16797cb36b9d5361ccecf8c5dc49578eb7ca3bfd526b0c6d90f93179f26b9c45"
   },
   {
-    "order": 46,
+    "order": 47,
     "slug": "fire-emblem-engage",
     "title": "Fire Emblem Engage",
     "platform": "switch",
@@ -1797,7 +1845,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "146bb292a864ebf635119b72cca0ce6ab029737fd1fe30c5fafc49c6400d4087"
   },
   {
-    "order": 47,
+    "order": 48,
     "slug": "fire-emblem-three-houses",
     "title": "Fire Emblem: Three Houses",
     "platform": "switch",
@@ -1830,7 +1878,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "8b3d68b76bcb1b5bbed46a32541530dce1721e258ed09d3b0195ef1489e1b9ba"
   },
   {
-    "order": 48,
+    "order": 49,
     "slug": "persona-5-royal",
     "title": "Persona 5 Royal",
     "platform": "switch",
@@ -1863,7 +1911,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "850b470ea73429aa2830c4ca77563235d1b5fde86bf0ef4893bfea423a697c32"
   },
   {
-    "order": 49,
+    "order": 50,
     "slug": "village-in-the-shade",
     "title": "Village in the Shade",
     "platform": "switch",

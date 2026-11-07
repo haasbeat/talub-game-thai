@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "kingdom-hearts-358-2-days",
+  "game_title": "Kingdom Hearts: 358/2 Days",
+  "platform": "NDS",
+  "region": "USA",
+  "game_code": "YKGE",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Kingdom Hearts - 358-2 Days (USA) (En,Fr).nds",
+      "size": 268435456,
+      "sha256": "3cbbe3f15b49fc26f43edaf0050899b3cc1091a25e7a496373409c7c8c6fd0cb"
+    }
+  ],
+  "patch": {
+    "filename": "Kingdom_Hearts_358_2_Days_Thai_v1.0.0.xdelta",
+    "size": 1280544,
+    "sha256": "78e5f9efa18a8b2e4bd8f0408ba699d0e297430b7dcfcd22a8b9718cf251cb05",
+    "release_date": "2026-11-07",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/kingdom-hearts-358-2-days/v1.0.0/Kingdom_Hearts_358_2_Days_Thai_v1.0.0.xdelta"
+  },
+  "output": {
+    "filename": "Kingdom Hearts 358-2 Days - Thai v1.0.0.nds",
+    "size": 268435456,
+    "sha256": "97470303dd3aa8713e7810cf0b4d0ec37b864f9f8712fc131833af5643d85713"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่อง 8 โลก + คัตซีน Theater 44 เรื่อง + เมนู ฐานข้อมูลครบ",
+    "whole_game_census": "313/313 อาร์ไคฟ์ (ภาพรวมทั้งเกม 100.00%)",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "STATE.md (2026-11-07 audit)"
+  },
+  "verification": {
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true,
+    "patcher_test_passed": true,
+    "binary_readback_verified": true,
+    "verified_at": "2026-11-07T18:32:00+07:00"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}
