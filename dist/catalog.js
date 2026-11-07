@@ -1702,6 +1702,90 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true
+  },
+  {
+    "order": 47,
+    "slug": "ex-troopers",
+    "title": "E.X. Troopers",
+    "platform": "3ds",
+    "platformLabel": "3DS",
+    "index": "3DS | 031 / 032",
+    "version": "v1.0.3",
+    "patchDate": "2026-10-24",
+    "format": "xdelta3",
+    "cover": "./assets/covers/web/ex-troopers.jpg",
+    "manifest": "./assets/patches/ex-troopers/v1.0.3/manifest.json",
+    "accept": ".3ds",
+    "fileTypes": "CLEAN JAPAN DECRYPTED 3DS · 4 GB",
+    "region": "Japan",
+    "gameCode": "ALTJ",
+    "sourceName": "E.X. Troopers (Japan) Decrypted.3ds · 4,294,967,296 bytes",
+    "sourceHash": "68e745cdb6f5282cd3ea7ca69098c13ed088febb876f99bde23c6ccbf7678238",
+    "outputHash": "6ad1f1208d989b9fd0898a9938136b920b017ffc13610ccfaf911ff0f76ec222",
+    "moduleStatus": "ไฟล์ภาษา 96/96 แอสเซ็ต (100.0%)",
+    "wholeGameCensus": "21,181/21,181 เรคคอร์ดในรอม (ภาพรวมทั้งเกม 100.0%)",
+    "details": {
+      "thaiTitle": "เอ็กซ์ทรูเปอร์ส ฉบับภาษาไทย",
+      "japaneseTitle": "エクストルーパーズ",
+      "originalTitle": "E.X. Troopers",
+      "studio": "Capcom",
+      "release": "22 พฤศจิกายน 2012",
+      "genre": "Third-person shooter / Action",
+      "description": "ม็อดภาษาไทย E.X. Troopers v1.0.3 สำหรับ Nintendo 3DS โซนญี่ปุ่น รหัส CTR-P-ALTJ",
+      "overview": "เกมแอ็กชันยิงมุมมองบุคคลที่สามในจักรวาล Lost Planet ถ่ายทอดด้วยภาพเซลเชดและคัตซีนแบบช่องมังงะ พร้อมภารกิจเดี่ยวและการต่อสู้ร่วมกับเพื่อน",
+      "story": "เบรน เทิร์นเนอร์เดินทางจาก EDN-2nd มายังสถาบันฝึกบนดาว EDN-3rd เพื่อไล่ตามความฝันสู่การเป็นดาวเด่นอันดับหนึ่ง เขาต้องร่วมมือกับไวทัลสูทกินกิระและเหล่านักเรียนจากสามฐาน รับมือเอคริด โจรสลัดหิมะ และความลับเบื้องหลังปรากฏการณ์ซับบลิมาตัม",
+      "localization": "แปลไฟล์ภาษา 96/96 แอสเซ็ต ครอบคลุมเนื้อเรื่อง บทสนทนา NPC วิทยุระหว่างภารกิจ เมนู ร้านค้า อุปกรณ์ W.I.Z-Pedia จดหมาย และบทช่วยสอน (สำมะโน 21,181/21,181 เรคคอร์ดในรอม)",
+      "untranslated": "ไม่มีส่วนที่ค้างแปลตามสำมะโน release v1.0.3; ศัพท์เฉพาะและรหัสเทคนิคบางรายการคงรูปแบบต้นฉบับตามบริบทของเกม",
+      "features": [
+        "ซับภาษาไทยครบทั้งเนื้อเรื่องและภารกิจ",
+        "คัตซีนมังงะและวิดีโอพร้อมคำบรรยายไทย",
+        "ฐานข้อมูล W.I.Z-Pedia ไอเทม อาวุธ และเอคริด",
+        "ฝังฟอนต์และโค้ดที่จำเป็นไว้ใน ROM ผลลัพธ์"
+      ]
+    },
+    "verified": true
+  },
+  {
+    "order": 48,
+    "slug": "metal-max-4",
+    "title": "Metal Max 4: Gekkou no Diva",
+    "platform": "3ds",
+    "platformLabel": "3DS",
+    "index": "3DS | 032 / 032",
+    "version": "v1.3.3",
+    "patchDate": "2026-10-24",
+    "format": "xdelta3",
+    "cover": "./assets/covers/web/metal-max-4.jpg",
+    "manifest": "./assets/patches/metal-max-4/v1.3.3/manifest.json",
+    "accept": ".3ds",
+    "fileTypes": "CLEAN JAPAN DECRYPTED 3DS · 1 GB",
+    "region": "Japan",
+    "gameCode": "AX4J",
+    "sourceName": "Metal Max 4 - Gekkou no Diva (Japan).3ds · 1,073,741,824 bytes",
+    "sourceHash": "c815bff9d8a41bde58bd98a08c698ea0d7a573c06a59c0d8af1144b8ad5b697f",
+    "outputHash": "fb3716a8d6549f0acba7ddc77d0523ab78ea28cbe87ee788d2e3e5c81095d81e",
+    "moduleStatus": "เนื้อเรื่องหลักและระบบเกม 100%",
+    "wholeGameCensus": "47,078/81,067 สล็อตไบนารี (58.1%); ข้อความที่ใช้งานจริง 47,078/47,078",
+    "details": {
+      "thaiTitle": "เมทัล แมกซ์ 4 ดีว่าแห่งแสงจันทร์",
+      "japaneseTitle": "メタルマックス4 月光のディーヴァ",
+      "originalTitle": "Metal Max 4: Gekkou no Diva",
+      "studio": "Cattle Call / 24Frame / Kadokawa Games",
+      "release": "7 พฤศจิกายน 2013",
+      "genre": "Open-world role-playing / Turn-based vehicle combat",
+      "description": "ม็อดภาษาไทย Metal Max 4: Gekkou no Diva v1.3.3 สำหรับ Nintendo 3DS โซนญี่ปุ่น รหัส CTR-P-AX4J",
+      "overview": "RPG หลังวันสิ้นโลกที่ให้ออกสำรวจอย่างอิสระ ล่าค่าหัว ปรับแต่งรถถัง และต่อสู้แบบเทิร์นเบสทั้งบนยานพาหนะและด้วยตัวละคร",
+      "story": "ห้าสิบปีหลังมหาวินาศ ฮินาตะใช้ชีวิตกับซาชาและกิบบนเกาะกลางทะเลทราย จนกองกำลังปริศนาบุกโจมตีและจับตัวกิบไป ซาชาเผยว่าตนเป็นแอนดรอยด์ผู้พิทักษ์ และทั้งคู่ต้องออกเดินทางช่วยกิบก่อนศัตรูจะครอบครองป้อมเคลื่อนที่แบล็กโมล",
+      "localization": "แปลเนื้อเรื่องหลัก ระบบเกม บทสนทนา NPC เมนู ไอเทม สกิล ภารกิจ ร้านค้า และคัตซีน ครบ 47,078/47,078 ข้อความที่ใช้งานจริง; ความหนาแน่นทั้งตารางไบนารี 47,078/81,067 สล็อต (58.1%)",
+      "untranslated": "ไม่มีบทสนทนาที่ใช้งานจริงค้างแปล; สล็อตที่เหลือเป็นช่องว่าง 27,318 สล็อตและคิวเสียง/แท็กแผนที่ 6,671 สล็อตซึ่งไม่ใช่ข้อความแสดงผล",
+      "features": [
+        "เนื้อเรื่องและระบบเกมภาษาไทยครบ",
+        "รถถัง อาวุธ ไอเทม สกิล และข้อมูลค่าหัว",
+        "คัตซีนอนิเมะพร้อมซับภาษาไทย",
+        "แก้จุดเสี่ยงค้างและตรวจ pointer/ขนาดบัฟเฟอร์ใน release v1.3.3"
+      ]
+    },
+    "verified": true
   }
 ];
 

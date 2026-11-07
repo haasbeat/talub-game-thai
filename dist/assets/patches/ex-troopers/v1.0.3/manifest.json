@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "game_slug": "ex-troopers",
+  "game_title": "E.X. Troopers",
+  "platform": "3DS",
+  "region": "Japan",
+  "game_code": "ALTJ",
+  "patch_version": "v1.0.3",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "E.X. Troopers (Japan) Decrypted.3ds",
+      "size": 4294967296,
+      "sha256": "68e745cdb6f5282cd3ea7ca69098c13ed088febb876f99bde23c6ccbf7678238"
+    }
+  ],
+  "patch": {
+    "filename": "E.X._Troopers_Thai_v1.0.3.xdelta",
+    "size": 313916859,
+    "sha256": "49f9089060fb13be58289b6e91d134516ec6c31c41adda81589ce60c50328345",
+    "parts": [
+      {
+        "filename": "E.X._Troopers_Thai_v1.0.3.xdelta.part00",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/ex-troopers/v1.0.3/E.X._Troopers_Thai_v1.0.3.xdelta.part00",
+        "size": 94371840,
+        "sha256": "356acc95aee51f0bb33d16ecdeb1ff04c22026060288fa9921cbe9421dc06e7d"
+      },
+      {
+        "filename": "E.X._Troopers_Thai_v1.0.3.xdelta.part01",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/ex-troopers/v1.0.3/E.X._Troopers_Thai_v1.0.3.xdelta.part01",
+        "size": 94371840,
+        "sha256": "48db1f1f59252a7dc398a517ae341e2252878af6004cb3ea0ac3609eae478d21"
+      },
+      {
+        "filename": "E.X._Troopers_Thai_v1.0.3.xdelta.part02",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/ex-troopers/v1.0.3/E.X._Troopers_Thai_v1.0.3.xdelta.part02",
+        "size": 94371840,
+        "sha256": "adaeee93e5bd2ca2aa9718946fcd5ee301982d39bf5e668caf7aab71015cd26c"
+      },
+      {
+        "filename": "E.X._Troopers_Thai_v1.0.3.xdelta.part03",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/ex-troopers/v1.0.3/E.X._Troopers_Thai_v1.0.3.xdelta.part03",
+        "size": 30801339,
+        "sha256": "4fd773fbef5f0592521e7e634815a3baaed180a82afa122f6010edea7ba975c2"
+      }
+    ],
+    "release_date": "2026-10-24",
+    "date_source": "patch_file_mtime"
+  },
+  "output": {
+    "filename": "E.X. Troopers (Japan) (Thai v1.0.3).3ds",
+    "size": 4294967296,
+    "sha256": "6ad1f1208d989b9fd0898a9938136b920b017ffc13610ccfaf911ff0f76ec222"
+  },
+  "release_status": {
+    "module_status": "ไฟล์ภาษา 96/96 แอสเซ็ต (100.0%)",
+    "whole_game_census": "21,181/21,181 เรคคอร์ดในรอม (ภาพรวมทั้งเกม 100.0%)",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "STATE.md และ audit_troopers.py (2026-10-24)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-07T00:00:00+07:00",
+    "method": "release_state_roundtrip_and_direct_hash_verification",
+    "note": "แพตช์ที่แจกมี SHA-256 ตรงกับ release v1.0.3 ซึ่ง STATE บันทึกว่า roundtrip จาก clean source ได้ ROM เป้าหมายแบบ bit-identical; source, patch และ target ถูก hash ซ้ำโดยตรงก่อนอัป R2",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}

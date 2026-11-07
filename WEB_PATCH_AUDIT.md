@@ -1,15 +1,15 @@
 # Web patch audit
 
-Updated: 2026-11-06 (Asia/Bangkok)
+Updated: 2026-11-07 (Asia/Bangkok)
 
 ## Inventory
 
-- Web manifests: 47 (42 xdelta + 5 external Nintendo Switch mod archives)
-- Patch identity checks passed (file size + SHA-256): 42/42
-- Patch dates recorded: 47/47
-- Dates taken directly from patch-file modified time: 40
+- Web manifests: 49 (44 xdelta + 5 external Nintendo Switch mod archives)
+- Patch identity checks passed (file size + SHA-256): 44/44
+- Patch dates recorded: 49/49
+- Dates taken directly from patch-file modified time: 42
 - Dates using release-archive modified time because the patch carried a ZIP epoch timestamp: 2 (`lost-in-blue-2`, `monster-hunter-stories`)
-- Clean-source roundtrip with expected output hash matched: 23
+- Clean-source roundtrip with expected output hash matched: 25
 - Owner-reported xdelta-patcher tests: 13
 - Browser apply-only test without a pinned target hash: 1
 - No current roundtrip evidence recorded in the web manifest: 5
@@ -58,8 +58,26 @@ The web patch targets the full 536,870,912-byte USA eShop image. The previous 38
 - Expected output SHA-256: `ba2ea48fae81cf129b26a6e920ccdca30bce0c57c27cd9868f7bcc9617cee7d2`
 - Verification: the exact distributed eShop xdelta reconstructed the release target byte-for-byte from the pinned clean source with xdelta3. The 356,781,961-byte patch is stored in Cloudflare R2 as four versioned parts, served through the project Worker with CORS and Range support, and reassembled in the browser before its full SHA-256 is checked.
 
+## E.X. Troopers
+
+The `v1.0.3` web patch targets the 4 GiB decrypted Japanese cartridge image (`CTR-P-ALTJ`).
+
+- Accepted source SHA-256: `68e745cdb6f5282cd3ea7ca69098c13ed088febb876f99bde23c6ccbf7678238`
+- Patch SHA-256: `49f9089060fb13be58289b6e91d134516ec6c31c41adda81589ce60c50328345`
+- Expected output SHA-256: `6ad1f1208d989b9fd0898a9938136b920b017ffc13610ccfaf911ff0f76ec222`
+- Verification: source, patch, and output identities were hashed directly and match the `v1.0.3` release STATE, which records a bit-identical clean-source xdelta roundtrip. The 313,916,859-byte patch is stored in R2 as four versioned parts; all parts passed Worker CORS and byte-range checks.
+
+## Metal Max 4: Gekkou no Diva
+
+The `v1.3.3` web patch targets the 1 GiB decrypted Japanese cartridge image (`CTR-P-AX4J`).
+
+- Accepted source SHA-256: `c815bff9d8a41bde58bd98a08c698ea0d7a573c06a59c0d8af1144b8ad5b697f`
+- Patch SHA-256: `b77ef5b03ba91eea6f5206d7456cce73828a87078faba4a9745cd50b08b650a0`
+- Expected output SHA-256: `fb3716a8d6549f0acba7ddc77d0523ab78ea28cbe87ee788d2e3e5c81095d81e`
+- Verification: the exact distributed patch was decoded with xdelta3 from the source above and reconstructed the release target byte-for-byte. This freshly measured source hash replaces the stale `a277e928…` value in historical STATE/manual text for the website compatibility check. The 142,484,554-byte patch is stored in R2 as two versioned parts; both parts passed Worker CORS and byte-range checks.
+
 ## Evidence tiers
 
-The 23 output-matched entries combine 18 browser xdelta3 WASM roundtrips and 5 clean-source bit-identical/CLI roundtrips. The PoPoLoCrois web xdelta was applied successfully to its pinned USA ISO with the xdelta3 CLI; its measured output SHA-256 is used because the historical v1.10 guide's MD5/SHA1 describe a different target artifact. The 13 owner-reported entries retain that label and are not silently promoted to browser-roundtrip evidence. The apply-only entry is `dqm-joker-3-professional`; it has no pinned release-target hash to compare. The five entries without current verification metadata are `dragon-quest-iv`, `dragon-quest-v`, `dragon-quest-vi`, `tales-of-hearts`, and `the-world-ends-with-you`.
+The 25 output-matched entries combine 18 browser xdelta3 WASM roundtrips, 6 clean-source bit-identical/CLI roundtrips, and 1 release-state roundtrip with direct source/patch/target identity verification (`ex-troopers`). The PoPoLoCrois web xdelta was applied successfully to its pinned USA ISO with the xdelta3 CLI; its measured output SHA-256 is used because the historical v1.10 guide's MD5/SHA1 describe a different target artifact. The 13 owner-reported entries retain that label and are not silently promoted to browser-roundtrip evidence. The apply-only entry is `dqm-joker-3-professional`; it has no pinned release-target hash to compare. The five entries without current verification metadata are `dragon-quest-iv`, `dragon-quest-v`, `dragon-quest-vi`, `tales-of-hearts`, and `the-world-ends-with-you`.
 
 Large 3DS outputs may still need a disk-streaming output path before browser patching can be considered reliable on devices with limited memory.

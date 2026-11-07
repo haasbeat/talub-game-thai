@@ -2,6 +2,3 @@
 dist/assets/patches/inazuma-eleven-123/v1.0.0/*.xdelta
 .DS_Store
 .wrangler/
-
-# Waiting for Cloudflare R2 hosting (314 MB > GitHub Pages budget)
-dist/assets/patches/ex-troopers/

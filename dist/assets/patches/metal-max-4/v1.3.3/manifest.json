@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "game_slug": "metal-max-4",
+  "game_title": "Metal Max 4: Gekkou no Diva",
+  "platform": "3DS",
+  "region": "Japan",
+  "game_code": "AX4J",
+  "patch_version": "v1.3.3",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Metal Max 4 - Gekkou no Diva (Japan).3ds",
+      "size": 1073741824,
+      "sha256": "c815bff9d8a41bde58bd98a08c698ea0d7a573c06a59c0d8af1144b8ad5b697f"
+    }
+  ],
+  "patch": {
+    "filename": "Metal_Max_4_Thai_v1.3.3.xdelta",
+    "size": 142484554,
+    "sha256": "b77ef5b03ba91eea6f5206d7456cce73828a87078faba4a9745cd50b08b650a0",
+    "parts": [
+      {
+        "filename": "Metal_Max_4_Thai_v1.3.3.xdelta.part00",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/metal-max-4/v1.3.3/Metal_Max_4_Thai_v1.3.3.xdelta.part00",
+        "size": 94371840,
+        "sha256": "ad07caaf7fa51d71f1e7973dcb10fd86938b31fd88bcb172840db701097dd5ee"
+      },
+      {
+        "filename": "Metal_Max_4_Thai_v1.3.3.xdelta.part01",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/metal-max-4/v1.3.3/Metal_Max_4_Thai_v1.3.3.xdelta.part01",
+        "size": 48112714,
+        "sha256": "c3c3f3ff4ad5cb9ef3a4eba389418aa705ab62d73f0ba98e2a2cada4c41e70c8"
+      }
+    ],
+    "release_date": "2026-10-24",
+    "date_source": "patch_file_mtime"
+  },
+  "output": {
+    "filename": "Metal Max 4 - Gekkou no Diva (Thai v1.3.3).3ds",
+    "size": 1073741824,
+    "sha256": "fb3716a8d6549f0acba7ddc77d0523ab78ea28cbe87ee788d2e3e5c81095d81e"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลักและระบบเกม 100%",
+    "whole_game_census": "47,078/81,067 สล็อตไบนารี (58.1%); ข้อความที่ใช้งานจริง 47,078/47,078",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "STATE.md และ audit_mm4.py (2026-10-24)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-07T00:00:00+07:00",
+    "method": "clean_source_cli_roundtrip",
+    "note": "ทดสอบ xdelta3 จาก clean ROM SHA-256 c815bff9… แล้วได้ ROM ขนาด 1,073,741,824 ไบต์ SHA-256 fb3716a8… ตรงกับ release target แบบ bit-identical",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}
