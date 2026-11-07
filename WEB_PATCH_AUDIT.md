@@ -45,12 +45,12 @@ An identity check proves that a web patch asset matches its manifest. It does no
 
 ## Yo-kai Watch
 
-The web patch targets the full 1 GiB USA cartridge image (`AYWE`). Updated to `v2.8.1` with crisp 13pt Bravely Default typography and full RomFS IVFC hash tree recalculation (preventing real-hardware ErrDisp panic 0xf96047a2 in `nn::fs::MountRom`).
+The web patch targets the full 1 GiB USA cartridge image (`AYWE`). Released as `v2.8.1` official with crisp 13pt Bravely Default typography, in-game VER. 2.8.1 watermark, and full RomFS IVFC hash tree recalculation (preventing real-hardware ErrDisp panic 0xf96047a2 in `nn::fs::MountRom`).
 
 - Accepted source: `Yo-Kai Watch (USA).3ds`, 1,073,741,824 bytes
 - Source SHA-256: `933c8b7e1d37b87e69b7c7aa97636296e9cb788972077a189f5dd2dc489465a5`
-- Patch SHA-256: `6c0f45eac5f21c95edfe841d6dc61935b320f58a0d81883ad61d19feec790100`
-- Expected output SHA-256: `babfc73bfa924c0ee5f1bb6920c4686326c33d95b6ff4873f3067c47e6bb4984`
+- Patch SHA-256: `2bfb6c9efebac7b8d53981b0e7895c961b9946535ba0bf58dcd93bb43dccc1f5`
+- Expected output SHA-256: `055f038a4d6245208480f72da20c5e12f06e872dd676ebf30885a290a765b94a`
 - Verification: browser xdelta3 wasm roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified with `tools/ncch_ivfc_rebuild.py` (L1_bad=0, L2_bad=0, L3_bad=0, PASS=True).
 
 ## Phoenix Wright: Ace Attorney Trilogy

@@ -16,26 +16,26 @@
   ],
   "patch": {
     "filename": "Yokai_Watch_Thai_v2.8.1_1GB.xdelta",
-    "size": 26152746,
-    "sha256": "6c0f45eac5f21c95edfe841d6dc61935b320f58a0d81883ad61d19feec790100",
+    "size": 69174052,
+    "sha256": "2bfb6c9efebac7b8d53981b0e7895c961b9946535ba0bf58dcd93bb43dccc1f5",
     "release_date": "2026-11-08",
     "date_source": "patch_file_mtime",
     "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/yo-kai-watch/v2.8.1/Yokai_Watch_Thai_v2.8.1_1GB.xdelta"
   },
   "output": {
-    "filename": "Yo-Kai Watch (USA) (Thai v2.8.1 1GB) Decrypted.3ds",
+    "filename": "Yo-Kai Watch (USA) (Thai v2.8.1) Decrypted.3ds",
     "size": 1073741824,
-    "sha256": "babfc73bfa924c0ee5f1bb6920c4686326c33d95b6ff4873f3067c47e6bb4984"
+    "sha256": "055f038a4d6245208480f72da20c5e12f06e872dd676ebf30885a290a765b94a"
   },
   "release_status": {
-    "module_status": "เนื้อเรื่องหลัก+เควสต์เสริมโยไก+ระบบเหรียญโยไก+เมนู 100% (ฟอนต์คมชัด 13pt + IVFC สมบูรณ์)",
+    "module_status": "เนื้อเรื่องหลัก+เควสต์เสริมโยไก+ระบบเหรียญโยไก+เมนู 100% (ฟอนต์คมชัด 13pt + ตรวจสอบ IVFC เครื่องจริง)",
     "whole_game_census": "18,720/18,720 บรรทัด = 100.00%",
     "critical_freeze": 0,
     "errors": 0
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {
-    "verified_at": "2026-11-08T01:24:00+07:00",
+    "verified_at": "2026-11-08T01:31:00+07:00",
     "method": "browser_xdelta3_wasm_roundtrip",
     "note": "Clean 1 GiB USA source verified with site wasm xdelta3 engine; IVFC hash tree (L1_bad=0, L2_bad=0, L3_bad=0, PASS=True) validated for real Nintendo 3DS hardware; output matches release target byte-for-byte.",
     "source_sha256_verified": true,
