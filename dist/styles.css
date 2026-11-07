@@ -203,10 +203,10 @@ body.has-inapp-banner main { padding-top: 60px; }
 @keyframes fade { to { opacity: 1; } }
 
 .ticker { overflow: hidden; border-block: 1px solid var(--line); padding-block: 21px; }
-.ticker-track { display: flex; align-items: center; width: max-content; animation: marquee 30s linear infinite; }
+.ticker-track { display: flex; align-items: center; width: max-content; animation: marquee 35s linear infinite; }
 .ticker:hover .ticker-track { animation-play-state: paused; }
-.ticker span { font-size: clamp(24px, 3vw, 48px); font-weight: 600; letter-spacing: -0.055em; white-space: nowrap; }
-.ticker i { font-style: normal; font-size: 9px; margin: 0 30px; }
+.ticker span { font-size: clamp(20px, 2.4vw, 38px); font-weight: 600; letter-spacing: -0.02em; white-space: nowrap; }
+.ticker i { font-style: normal; font-size: 9px; margin: 0 28px; }
 @keyframes marquee { to { transform: translateX(-50%); } }
 
 .manifesto { padding-top: clamp(48px, 5vw, 72px); padding-bottom: clamp(48px, 5vw, 72px); }
