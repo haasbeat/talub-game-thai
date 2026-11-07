@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "game_slug": "etrian-odyssey-iv",
+  "game_title": "Etrian Odyssey IV: Legends of the Titan",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "ASJE",
+  "patch_version": "v1.0.1",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Etrian Odyssey IV - Legends of the Titan (USA).3ds",
+      "size": 1073741824,
+      "sha256": "0705cf12182e933877563e15489429718d22d7868e015fb5081df35899d8d614"
+    }
+  ],
+  "patch": {
+    "filename": "Etrian_Odyssey_IV_USA_TH_v1.0.1.xdelta",
+    "size": 2198790,
+    "sha256": "4b5967ca7ae3c2f573d172fc8f96513611facc97f8ac06952a53fd425a1eb0c3",
+    "release_date": "2026-11-07",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/etrian-odyssey-iv/v1.0.1/Etrian_Odyssey_IV_USA_TH_v1.0.1.xdelta"
+  },
+  "output": {
+    "filename": "Etrian_Odyssey_IV_Thai_v1.0.1.3ds",
+    "size": 1073741824,
+    "sha256": "18e5800c54ac9207be0ca7d3013a2b91b212409b499a68a3f85010668b015c0b"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก+เควสต์+ระบบต่อสู้+สกิล+UI 100%",
+    "whole_game_census": "13,892/13,892 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-07T23:03:00+07:00",
+    "method": "hardware_ivfc_and_xdelta_roundtrip",
+    "patcher_test_passed": true,
+    "patch_sha256_verified": true,
+    "hardware_ivfc_verified": true
+  }
+}
