@@ -45,13 +45,13 @@ An identity check proves that a web patch asset matches its manifest. It does no
 
 ## Yo-kai Watch
 
-The web patch targets the full 1 GiB USA cartridge image (`AYWE`). Updated to `v2.8.1` with crisp 13pt Bravely Default typography.
+The web patch targets the full 1 GiB USA cartridge image (`AYWE`). Updated to `v2.8.1` with crisp 13pt Bravely Default typography and full RomFS IVFC hash tree recalculation (preventing real-hardware ErrDisp panic 0xf96047a2 in `nn::fs::MountRom`).
 
 - Accepted source: `Yo-Kai Watch (USA).3ds`, 1,073,741,824 bytes
 - Source SHA-256: `933c8b7e1d37b87e69b7c7aa97636296e9cb788972077a189f5dd2dc489465a5`
-- Patch SHA-256: `06efcc786fe61c398d68a3942cf19fa862e9590da619c462a00370084a945640`
-- Expected output SHA-256: `2f1fb0d2a99bc2f6321bc076169b31cbfb57d7eba49536da4237764e37c2f9bf`
-- Verification: browser xdelta3 wasm roundtrip tested and confirmed 100% bit-identical to the release target.
+- Patch SHA-256: `6c0f45eac5f21c95edfe841d6dc61935b320f58a0d81883ad61d19feec790100`
+- Expected output SHA-256: `babfc73bfa924c0ee5f1bb6920c4686326c33d95b6ff4873f3067c47e6bb4984`
+- Verification: browser xdelta3 wasm roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified with `tools/ncch_ivfc_rebuild.py` (L1_bad=0, L2_bad=0, L3_bad=0, PASS=True).
 
 ## Phoenix Wright: Ace Attorney Trilogy
 
