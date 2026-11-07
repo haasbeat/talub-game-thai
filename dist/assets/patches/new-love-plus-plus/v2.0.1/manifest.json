@@ -16,29 +16,29 @@
   ],
   "patch": {
     "filename": "New_Love_Plus_Plus_Thai_v2.0.1.xdelta",
-    "size": 74640044,
-    "sha256": "625165e388f272f376b4db25662d9472f0d8be6ad3bc9262f014466e38d70e16",
-    "release_date": "2026-11-07",
+    "size": 88337466,
+    "sha256": "fdd011ec83b63f0f07713ebdd7b94cac3eba745c45a616699085337c11ddefde",
+    "release_date": "2026-11-08",
     "date_source": "patch_file_mtime",
     "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/new-love-plus-plus/v2.0.1/New_Love_Plus_Plus_Thai_v2.0.1.xdelta"
   },
   "output": {
     "filename": "New_Love_Plus_Plus_Thai_v2.0.1.3ds",
     "size": 2147483648,
-    "sha256": "9599b13dd497bf47f54c0f874491168d5301e13093966db04233a7250ae47696"
+    "sha256": "7ebac72955cec7506bee5c5d535bb7d6ba1d1ed00eb9290ea263b6d602f51444"
   },
   "release_status": {
     "module_status": "เนื้อเรื่องความสัมพันธ์ตัวละครสาวทั้งสามคน+โหมดท่องเที่ยว 100%",
     "whole_game_census": "สคริปต์ 577/577 ไฟล์ (164,110 ข้อความ) + ข้อความระบบ 17,114 (ภาพรวมทั้งเกม 100%)",
     "critical_freeze": 0,
     "errors": 0,
-    "census_source": "STATE.md / release notes (2026-11-07 audit)"
+    "census_source": "STATE.md / release notes (2026-11-08 audit)"
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {
-    "verified_at": "2026-11-07T07:48:13+07:00",
+    "verified_at": "2026-11-08T01:23:11+07:00",
     "method": "browser_xdelta3_wasm_roundtrip",
-    "note": "Clean source located by SHA-256 and patched with the site's vendored xdelta3 wasm engine; output matches release checksums.",
+    "note": "Clean source located by SHA-256 and patched with the site's vendored xdelta3 wasm engine; output matches release checksums. IVFC hash tree 100% verified (L1=0, L2=0, L3=0).",
     "source_sha256_verified": true,
     "patch_sha256_verified": true,
     "output_sha256_verified": true,
