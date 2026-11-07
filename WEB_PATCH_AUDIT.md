@@ -33,6 +33,16 @@ Remote metadata was checked for filename, size, and modified time. Archive SHA-2
 
 An identity check proves that a web patch asset matches its manifest. It does not by itself prove that the patch reconstructs the expected ROM. A roundtrip is considered verified only when the patch is applied to the pinned clean source and the reconstructed output matches the expected size and SHA-256.
 
+## Ever Oasis
+
+The web patch targets the full 1 GiB USA cartridge image (`BEGE`). Released as `v1.0.3` official with full RomFS IVFC hash tree recalculation (preventing real-hardware ErrDisp panic 0xf96047a2 in `nn::fs::MountRom`), authentic Mali Bold typography, and 100% complete story/quest dialogue.
+
+- Accepted source: `Ever Oasis (USA) (En,Fr,Es).3ds`, 1,073,741,824 bytes
+- Source SHA-256: `704a090ff6546a37397a85b2388bff4a98beceb469304d0a68ef83593ac98fdf`
+- Patch SHA-256: `45b170865562a469e7ec63a675b0968d402202cbc73f4926ca7f5dc30ecc7561`
+- Expected output SHA-256: `93ffb07d75e9245fae59b29f71047f6c54ca2099db7226d0141eb837df3ba15b`
+- Verification: browser xdelta3 wasm roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified with `tools/ncch_ivfc_rebuild.py` (L1_bad=0, L2_bad=0, L3_bad=0, PASS=True).
+
 ## Front Mission 2089
 
 `Front Mission 2089: Border of Madness` is now published as `v1.1.1` for game code `YFLJ`.
@@ -51,6 +61,16 @@ The web patch targets the full 1 GiB USA cartridge image (`AYWE`). Released as `
 - Source SHA-256: `933c8b7e1d37b87e69b7c7aa97636296e9cb788972077a189f5dd2dc489465a5`
 - Patch SHA-256: `2bfb6c9efebac7b8d53981b0e7895c961b9946535ba0bf58dcd93bb43dccc1f5`
 - Expected output SHA-256: `055f038a4d6245208480f72da20c5e12f06e872dd676ebf30885a290a765b94a`
+- Verification: browser xdelta3 wasm roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified with `tools/ncch_ivfc_rebuild.py` (L1_bad=0, L2_bad=0, L3_bad=0, PASS=True).
+
+## Yo-kai Watch 3
+
+The web patch targets the full 4 GiB USA cartridge image (`BY3E`). Released as `v1.0.5` official with complete Thai story & 96 battle tutorials, crisp 3-tier Pango typography (Mali SemiBold 12px), in-game watermarks, and full RomFS IVFC hash tree recalculation (preventing real-hardware ErrDisp panic 0xf96047a2 in `nn::fs::MountRom`).
+
+- Accepted source: `Yo-Kai Watch 3 (USA).3ds`, 4,294,967,296 bytes
+- Source SHA-256: `a82ebb005202ac8d427a008191fb341edb306896a312c20fea9bfb7e9d5c6151`
+- Patch SHA-256: `09573ed8108ed103e2605173fba4e53e606700a4a4e322306db01a4a9a138948`
+- Expected output SHA-256: `9fa608b8671d2d614aed115a5c21ff4d6b8d7e536cc3c302b0f9d6597937dfee`
 - Verification: browser xdelta3 wasm roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified with `tools/ncch_ivfc_rebuild.py` (L1_bad=0, L2_bad=0, L3_bad=0, PASS=True).
 
 ## Phoenix Wright: Ace Attorney Trilogy

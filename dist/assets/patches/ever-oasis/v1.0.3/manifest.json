@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "ever-oasis",
+  "game_title": "Ever Oasis",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "BEGE",
+  "patch_version": "v1.0.3",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Ever Oasis (USA) (En,Fr,Es).3ds",
+      "size": 1073741824,
+      "sha256": "704a090ff6546a37397a85b2388bff4a98beceb469304d0a68ef83593ac98fdf"
+    }
+  ],
+  "patch": {
+    "filename": "Ever_Oasis_Thai_v1.0.3.xdelta",
+    "size": 568075,
+    "sha256": "45b170865562a469e7ec63a675b0968d402202cbc73f4926ca7f5dc30ecc7561",
+    "release_date": "2026-11-08",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/ever-oasis/v1.0.3/Ever_Oasis_Thai_v1.0.3.xdelta"
+  },
+  "output": {
+    "filename": "Ever_Oasis_Thai_v1.0.3.3ds",
+    "size": 1073741824,
+    "sha256": "93ffb07d75e9245fae59b29f71047f6c54ca2099db7226d0141eb837df3ba15b"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่อง คัตซีน เควสต์ชาวเมือง บลูมบูธ และดันเจี้ยนครบ 100% (IVFC Hardware Anti-Crash)",
+    "whole_game_census": "8,508/8,515 เรคคอร์ด (ภาพรวมทั้งเกม 99.92%)",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "STATE.md / release notes (2026-11-08 audit)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-08T01:38:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean source located by SHA-256 and patched with the site's vendored xdelta3 wasm engine; RomFS IVFC hash tree (L1_bad=0, L2_bad=0, L3_bad=0, PASS=True) validated for real Nintendo 3DS hardware; output matches release checksums.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}
