@@ -262,6 +262,16 @@ The `v1.0.5` web patch targets the full 2 GiB decrypted USA cartridge image (`CT
 - Expected output SHA-256: `39999a0cf1cbb397cfd561f1c8dfb7ca4190a090d8fbf329612e0d9a443206fe`
 - Verification: clean-source xdelta3 roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`); direct In-ROM binary census verified across 26,033/26,159 records (99.52% In-ROM binary census / 100% translatable text, 0 critical freeze).
 
+## Final Fantasy Explorers (USA)
+
+The `v1.0.1` web patch targets the full 1 GiB decrypted USA cartridge dump (`CTR-P-BCEE`, Title ID `000400000016ED00`). Released as `v1.0.1` official with full RomFS IVFC hash tree recalculation (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`) via `tools/ncch_ivfc_rebuild.py`, completely eliminating real Nintendo 3DS hardware ErrDisp `0xf96047a2` crash in `nn::fs::MountRom` / `GetRomRequiredMemorySize` (address `0x0010b67c`), built cleanly from the pinned 1,073,741,824-byte clean decrypted dump, featuring Chakra Petch SemiBold 12.0px typography, PUA diacritic stacking, opening prologue MOFLEX subtitle integration, UI/quest overflow wraps, 4-tier in-game v1.0.1 watermarks, and 100% In-ROM binary census complete (12,198/12,198 records).
+
+- Accepted source: `Final Fantasy Explorers (USA).3ds`, 1,073,741,824 bytes
+- Source SHA-256: `c65d316589a36e7051720582ef0b35f683164796c35b34794de75fb400f35f3c`
+- Patch SHA-256: `b00ce5bfbf26c7ec77d5d610cc51bca2b464bf346a5b523f8534ed1debfb204a`
+- Expected output SHA-256: `292015a4988de803adc3c94714f3a6e6fe9621073dc325d9e39efdd5faba4fc6`
+- Verification: clean-source xdelta3 roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`); direct In-ROM binary census verified across 12,198/12,198 records (100.0% In-ROM ground truth, 0 critical freeze).
+
 ## Evidence tiers
 
 The 28 output-matched entries combine 22 browser xdelta3 WASM roundtrips, 6 clean-source bit-identical/CLI roundtrips. The PoPoLoCrois web xdelta was applied successfully to its pinned USA ISO with the xdelta3 CLI; its measured output SHA-256 is used because the historical v1.10 guide's MD5/SHA1 describe a different target artifact. The 13 owner-reported entries retain that label and are not silently promoted to browser-roundtrip evidence. The five entries without current verification metadata are `dragon-quest-iv`, `dragon-quest-v`, `dragon-quest-vi`, `tales-of-hearts`, and `the-world-ends-with-you`.

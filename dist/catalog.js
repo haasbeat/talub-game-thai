@@ -522,23 +522,23 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 014 / 035",
-    "version": "v1.0.0",
-    "patchDate": "2026-11-01",
+    "version": "v1.0.1",
+    "patchDate": "2026-11-09",
     "addedDate": "2026-11-04",
     "addedOrder": 9,
     "addedAt": "2026-11-04T21:10:11+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/final-fantasy-explorers.jpg",
-    "manifest": "./assets/patches/final-fantasy-explorers/v1.0.0/manifest.json",
+    "manifest": "./assets/patches/final-fantasy-explorers/v1.0.1/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN USA 3DS · 1 GB",
     "region": "USA",
     "gameCode": "BCEE",
     "sourceName": "Final Fantasy Explorers (USA).3ds · 1,073,741,824 bytes",
     "sourceHash": "c65d316589a36e7051720582ef0b35f683164796c35b34794de75fb400f35f3c",
-    "outputHash": "3900fea83235b23d744f4574fa962e5b3b7bc1495babe8c8c44f01505072b1cb",
+    "outputHash": "292015a4988de803adc3c94714f3a6e6fe9621073dc325d9e39efdd5faba4fc6",
     "moduleStatus": "เควสต์หลัก+เควสต์ย่อย+ระบบอาชีพ+ไอเทมและอุปกรณ์ 100%",
-    "wholeGameCensus": "9,850/9,850 บรรทัด = 100.00%",
+    "wholeGameCensus": "12,198/12,198 รายการ = 100.00%",
     "details": null,
     "verified": true,
     "gameVersion": "v1.0.0"
@@ -2161,6 +2161,15 @@ window.GAME_CATALOG = [
 ];
 window.GAME_UPDATES = [
   {
+    "slug": "final-fantasy-explorers",
+    "title": "Final Fantasy Explorers",
+    "platform": "3DS",
+    "version": "v1.0.1",
+    "type": "update",
+    "timestamp": "2026-11-09T02:35:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.1 คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครชจอแดง ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง (L1=0, L2=0, L3=0 bad), ปรับแก้การตัดคำเมนูและค่าสถานะไม่ให้ตกขอบ, และอัปเดต 4-Tier Watermark v1.0.1 ครบถ้วน"
+  },
+  {
     "slug": "7th-dragon-iii-code-vfd",
     "title": "7th Dragon III Code: VFD",
     "platform": "3DS",
@@ -2641,10 +2650,10 @@ window.GAME_UPDATES = [
     "slug": "final-fantasy-explorers",
     "title": "Final Fantasy Explorers",
     "platform": "3DS",
-    "version": "v1.0.0",
+    "version": "v1.0.1",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.1"
   },
   {
     "slug": "inazuma-eleven-123",

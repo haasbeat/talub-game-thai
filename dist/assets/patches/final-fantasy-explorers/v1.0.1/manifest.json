@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "final-fantasy-explorers",
+  "game_title": "Final Fantasy Explorers",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "BCEE",
+  "patch_version": "v1.0.1",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Final Fantasy Explorers (USA).3ds",
+      "size": 1073741824,
+      "sha256": "c65d316589a36e7051720582ef0b35f683164796c35b34794de75fb400f35f3c"
+    }
+  ],
+  "patch": {
+    "filename": "Final_Fantasy_Explorers_USA_TH_v1.0.1.xdelta",
+    "size": 23462171,
+    "sha256": "b00ce5bfbf26c7ec77d5d610cc51bca2b464bf346a5b523f8534ed1debfb204a",
+    "release_date": "2026-11-09",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/final-fantasy-explorers/v1.0.1/Final_Fantasy_Explorers_USA_TH_v1.0.1.xdelta"
+  },
+  "output": {
+    "filename": "Final_Fantasy_Explorers_USA_TH_v1.0.1.3ds",
+    "size": 1073741824,
+    "sha256": "292015a4988de803adc3c94714f3a6e6fe9621073dc325d9e39efdd5faba4fc6"
+  },
+  "release_status": {
+    "module_status": "เควสต์หลัก+เควสต์ย่อย+ระบบอาชีพ+ไอเทมและอุปกรณ์ 100%",
+    "whole_game_census": "12,198/12,198 รายการ = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-09T02:30:00+07:00",
+    "method": "clean_source_roundtrip_verified",
+    "patcher_test_passed": true,
+    "patch_sha256_verified": true,
+    "source_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true,
+    "binary_readback_verified": true
+  }
+}
