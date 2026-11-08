@@ -55,12 +55,12 @@ The web patch targets the full 2,147,483,648-byte USA cartridge image (`CTR-P-B4
 
 ## Time Travelers (Japan)
 
-The `v1.0.2` web patch targets the 2 GiB decrypted Japanese cartridge image (`CTR-P-ATRJ`). Released as `v1.0.2` official with full RomFS IVFC hash tree recalculation (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`) via `tools/ncch_ivfc_rebuild.py`, completely eliminating real Nintendo 3DS hardware ErrDisp `0xf96047a2` crash in `nn::fs::MountRom` / `GetRomRequiredMemorySize` (address `0x0010b67c`), built cleanly from the pinned original Japanese cartridge dump, and featuring 100% complete story across all 6 character routes and climax timeline.
+The `v1.0.3` web patch targets the 2 GiB decrypted Japanese cartridge image (`CTR-P-ATRJ`). Released as `v1.0.3` official with full RomFS IVFC hash tree recalculation (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`) via `tools/ncch_ivfc_rebuild.py`, completely eliminating real Nintendo 3DS hardware ErrDisp `0xf96047a2` crash in `nn::fs::MountRom` / `GetRomRequiredMemorySize` (address `0x0010b67c`), built cleanly from the pinned original Japanese cartridge dump, and featuring 100% complete story across all 6 character routes and climax timeline.
 
 - Accepted source: `Time Travelers (Japan).3ds`, 2,147,483,648 bytes
 - Source SHA-256: `ce9781388f3e5ac2bf41426afe5aee93a171760b10b898939851d998d9538cd7`
-- Patch SHA-256: `c3e897866c4c47719305bcc535a9e7c7133abf9fa302f2a49b8086126a98ac42`
-- Expected output SHA-256: `3abc60e63be2188fe1d23165a29a9faa74482ef4b1007785e17bbdf7d0dd7ebd`
+- Patch SHA-256: `490b8561f3098962209612aa44f13ca7ed3e96323c7716ba69288772683fc5fd`
+- Expected output SHA-256: `f3067e1e618a998128a474bd1445143e8ce4a7b4773457539f27893f80c67cf5`
 - Verification: clean-source xdelta3 roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`); direct In-ROM binary census verified across 12,314/12,578 records (97.9% In-ROM binary census / 100% translatable text, 0 critical freeze).
 
 ## Professor Layton and the Miracle Mask

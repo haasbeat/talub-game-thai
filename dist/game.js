@@ -457,7 +457,7 @@ const games = {
   },
   'time-travelers': {
     index: '3DS | 011 / 011', title: 'Time Travelers', platform: '3DS', cover: './assets/covers/time-travelers.jpg',
-    version: 'v1.0.2', format: 'xdelta3', status: 'พร้อมติดตั้งบนเว็บ', accept: '.3ds', fileTypes: 'CLEAN JAPAN 3DS · 2 GB',
+    version: 'v1.0.3', format: 'xdelta3', status: 'พร้อมติดตั้งบนเว็บ', accept: '.3ds', fileTypes: 'CLEAN JAPAN 3DS · 2 GB',
     description: 'รายละเอียดไทม์ทราเวลเลอร์ส กลไกแห่งกาลเวลา ฉบับภาษาไทย พร้อมระบบแพตช์เฉพาะเกม',
     details: {
       thaiTitle: 'ไทม์ทราเวลเลอร์ส กลไกแห่งกาลเวลา',
@@ -467,7 +467,7 @@ const games = {
       release: '12 กรกฎาคม 2012',
       gameCode: 'Japan · ATRJ',
       genre: 'Adventure game',
-      edition: 'ตลับเกมภาษาไทย v1.0.2',
+      edition: 'ตลับเกมภาษาไทย v1.0.3',
       overview: 'เกมผจญภัยสไตล์ภาพยนตร์ระทึกขวัญ กับเหตุการณ์หายนะในโตเกียวที่เชื่อมโยง 5 ตัวละครข้ามเวลา แปลไทยสมบูรณ์',
       story: '18 ปีหลังเหตุการณ์หลุมยุบโตเกียว เหล่าผู้คนที่มีชะตากรรมต้องพัวพันกับมิโคโตะ สาวน้อยผู้กุมความลับแห่งกาลเวลา',
       localization: 'แปลเนื้อเรื่อง 6 รูท+ไคลแมกซ์+ระบบ Time Stop+เหตุการณ์ TIP+UI ทั้งหมด 100% (สำมะโนในรอม 12,314/12,578 ข้อความ = 97.9%)',
@@ -478,13 +478,13 @@ const games = {
         'ระบบ Time Stop และ Flowchart ภาษาไทยเต็มรูปแบบ',
         'คำอธิบายและเหตุการณ์ TIPs ครบทุกหัวข้อ',
         'คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกัน ErrDisp 0xf96047a2 บน 3DS จริง',
-        'ลายน้ำ ตลับเกมภาษาไทย v1.0.2 ภายในเกม',
+        'ลายน้ำ ตลับเกมภาษาไทย v1.0.3 ภายในเกม',
       ],
       sourceName: 'Time Travelers (Japan).3ds · 2,147,483,648 bytes',
       sourceHash: 'ce9781388f3e5ac2bf41426afe5aee93a171760b10b898939851d998d9538cd7',
-      outputHash: '3abc60e63be2188fe1d23165a29a9faa74482ef4b1007785e17bbdf7d0dd7ebd',
+      outputHash: 'f3067e1e618a998128a474bd1445143e8ce4a7b4773457539f27893f80c67cf5',
     },
-    manifest: './assets/patches/time-travelers/v1.0.2/manifest.json',
+    manifest: './assets/patches/time-travelers/v1.0.3/manifest.json',
   },
 };
 

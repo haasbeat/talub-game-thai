@@ -743,21 +743,21 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 020 / 035",
-    "version": "v1.0.0",
-    "patchDate": "2026-10-25",
+    "version": "v1.0.1",
+    "patchDate": "2026-11-09",
     "addedDate": "2026-11-04",
     "addedOrder": 15,
     "addedAt": "2026-11-04T21:10:11+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/lost-heroes.jpg",
-    "manifest": "./assets/patches/lost-heroes/v1.0.0/manifest.json",
+    "manifest": "./assets/patches/lost-heroes/v1.0.1/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN Japan 3DS · 1 GB",
     "region": "Japan",
     "gameCode": "BLHJ",
     "sourceName": "Lost Heroes (Japan).3ds · 1,073,741,824 bytes",
     "sourceHash": "5a603b88b0f0ea34548d3e78c27af004efe615527dea16d1936e62b80f3b90ea",
-    "outputHash": "422494f358b069d28fbe024c451ee093affb921dc21ddb57985338de58984996",
+    "outputHash": "db048c43a7267b4bd3ada26267878e1ac398583d78acf8ab85b1dea214a2330f",
     "moduleStatus": "เนื้อเรื่องรวมดารากันดั้ม คาเมนไรเดอร์ อุลตร้าแมน+ดันเจี้ยนคิวบ์ 100%",
     "wholeGameCensus": "29,167/29,167 บรรทัด (ภาพรวมทั้งเกม 100%)",
     "details": {
@@ -1215,21 +1215,21 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 031 / 035",
-    "version": "v1.0.2",
+    "version": "v1.0.3",
     "patchDate": "2026-11-09",
     "addedDate": "2026-11-04",
     "addedOrder": 22,
     "addedAt": "2026-11-04T21:10:11+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/time-travelers.jpg",
-    "manifest": "./assets/patches/time-travelers/v1.0.2/manifest.json",
+    "manifest": "./assets/patches/time-travelers/v1.0.3/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN Japan 3DS · 2 GB",
     "region": "Japan",
     "gameCode": "ATRJ",
     "sourceName": "Time Travelers (Japan).3ds · 2,147,483,648 bytes",
     "sourceHash": "ce9781388f3e5ac2bf41426afe5aee93a171760b10b898939851d998d9538cd7",
-    "outputHash": "3abc60e63be2188fe1d23165a29a9faa74482ef4b1007785e17bbdf7d0dd7ebd",
+    "outputHash": "f3067e1e618a998128a474bd1445143e8ce4a7b4773457539f27893f80c67cf5",
     "moduleStatus": "เนื้อเรื่อง 6 รูท+ไคลแมกซ์+ระบบ Time Stop+เหตุการณ์ TIP+UI ทั้งหมด 100%",
     "wholeGameCensus": "12,314/12,578 ข้อความ (97.9%)",
     "details": {
@@ -1239,7 +1239,7 @@ window.GAME_CATALOG = [
       "studio": "Level-5",
       "release": "12 กรกฎาคม 2012",
       "genre": "Cinematic Sci-Fi Adventure / Time Travel",
-      "description": "ม็อดภาษาไทยสำหรับ Time Travelers (3DS โซน Japan) เวอร์ชัน v1.0.2 คำนวณ RomFS IVFC Hash Tree ป้องกัน ErrDisp 0xf96047a2 บน 3DS จริง",
+      "description": "ม็อดภาษาไทยสำหรับ Time Travelers (3DS โซน Japan) เวอร์ชัน v1.0.3 คำนวณ RomFS IVFC Hash Tree ป้องกัน ErrDisp 0xf96047a2 บน 3DS จริง",
       "overview": "สุดยอดเกมผจญภัยสไตล์ภาพยนตร์ไซไฟระทึกขวัญจาก Level-5 เล่าเรื่องราวเหตุการณ์หายนะครั้งใหญ่ในโตเกียวผ่านมุมมอง 5 ตัวละครเอกข้ามมิติเวลา พร้อมระบบ Time Stop และ Flowchart เชื่อมโยงชะตากรรม แปลไทยสมบูรณ์แบบ",
       "story": "18 ปีหลังจากเหตุการณ์การระเบิดครั้งประหลาดใจกลางโตเกียว หรือ 'ปรากฏการณ์หลุมยุบ' ในปี 2031 ตัวละครทั้ง 5 คนที่มีชีวิตและเป้าหมายแตกต่างกัน—นักสืบเอกชน, นักเรียนมัธยม, พิธีกรข่าวชื่อดัง, นักวิทยาศาสตร์, และฮีโร่ผู้พิทักษ์ความยุติธรรม—ต่างต้องเผชิญกับวิกฤตครั้งใหม่ที่เชื่อมโยงกับ 'มิโคโตะ' หญิงสาวลึกลับผู้มีพลังควบคุมและข้ามกาลเวลา",
       "localization": "แปลเนื้อเรื่องครบทุกสาย (ทั้งหมด 6 รูทรวมไคลแมกซ์), ทางเลือกตัดสินใจ, ผังข้ามเวลา (Flowchart), เมนูเซฟ/โหลด, ข้อมูล TIPs และคำสั่งระบบครบ 100% (สำมะโนในรอม 12,314/12,578 ข้อความ = 97.9% ครบทุกข้อความที่ผู้เล่นเข้าถึงได้จริง) ฝังฟอนต์ Master Thai Syllables พร้อมคำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครช ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง",
@@ -1249,7 +1249,7 @@ window.GAME_CATALOG = [
         "ระบบ Time Stop และ Flowchart ภาษาไทยเต็มรูปแบบ",
         "คำอธิบายและเหตุการณ์ TIPs ครบทุกหัวข้อ",
         "คำนวณ RomFS IVFC Hash Tree ระดับ L1/L2/L3 ป้องกันจอแดง ErrDisp 0xf96047a2 บน 3DS จริง 100%",
-        "ลายน้ำ ตลับเกมภาษาไทย v1.0.2 แสดงอย่างถูกต้องในเกม"
+        "ลายน้ำ ตลับเกมภาษาไทย v1.0.3 แสดงอย่างถูกต้องในเกม"
       ]
     },
     "verified": true,
@@ -2159,6 +2159,24 @@ window.GAME_CATALOG = [
 ];
 window.GAME_UPDATES = [
   {
+    "slug": "lost-heroes",
+    "title": "Lost Heroes",
+    "platform": "3DS",
+    "version": "v1.0.1",
+    "type": "update",
+    "timestamp": "2026-11-09T00:46:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.1 คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครช ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง, บิลด์ตรงจาก Original Clean ROM และผ่านการตรวจสอบ Bit-identical Roundtrip 100%"
+  },
+  {
+    "slug": "time-travelers",
+    "title": "Time Travelers",
+    "platform": "3DS",
+    "version": "v1.0.3",
+    "type": "update",
+    "timestamp": "2026-11-09T00:46:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.3 คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครช ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง และบิลด์จาก Original Clean ROM"
+  },
+  {
     "slug": "shin-megami-tensei-iv",
     "title": "Shin Megami Tensei IV",
     "platform": "3DS",
@@ -2193,15 +2211,6 @@ window.GAME_UPDATES = [
     "type": "update",
     "timestamp": "2026-11-09T00:35:00+07:00",
     "note": "อัปเดตแพตช์ v1.2.1 คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครช ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง, บิลด์ตรงจาก Original Clean ROM และผ่านการตรวจสอบ Bit-identical Roundtrip 100%"
-  },
-  {
-    "slug": "time-travelers",
-    "title": "Time Travelers",
-    "platform": "3DS",
-    "version": "v1.0.2",
-    "type": "update",
-    "timestamp": "2026-11-09T00:30:00+07:00",
-    "note": "อัปเดตแพตช์ v1.0.2 คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครช ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง และบิลด์จาก Original Clean ROM"
   },
   {
     "slug": "professor-layton-miracle-mask",
@@ -2639,10 +2648,10 @@ window.GAME_UPDATES = [
     "slug": "lost-heroes",
     "title": "Lost Heroes",
     "platform": "3DS",
-    "version": "v1.0.0",
+    "version": "v1.0.1",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.1"
   },
   {
     "slug": "new-love-plus-plus",
@@ -2702,10 +2711,10 @@ window.GAME_UPDATES = [
     "slug": "time-travelers",
     "title": "Time Travelers",
     "platform": "3DS",
-    "version": "v1.0.2",
+    "version": "v1.0.3",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.2"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.3"
   },
   {
     "slug": "xenoblade-chronicles-3d",

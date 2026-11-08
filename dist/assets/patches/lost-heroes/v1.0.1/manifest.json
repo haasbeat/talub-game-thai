@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "lost-heroes",
+  "game_title": "Lost Heroes",
+  "platform": "3DS",
+  "region": "Japan",
+  "game_code": "BLHJ",
+  "patch_version": "v1.0.1",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Lost Heroes (Japan).3ds",
+      "size": 1073741824,
+      "sha256": "5a603b88b0f0ea34548d3e78c27af004efe615527dea16d1936e62b80f3b90ea"
+    }
+  ],
+  "patch": {
+    "filename": "Lost_Heroes_Thai_v1.0.1.xdelta",
+    "size": 48685916,
+    "sha256": "b1354ac56e69b8cbe565f04b3a8fd4bf8cadc4eefc3e8b63b90639a13167a9a9",
+    "release_date": "2026-11-09",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/lost-heroes/v1.0.1/Lost_Heroes_Thai_v1.0.1.xdelta"
+  },
+  "output": {
+    "filename": "Lost_Heroes_Thai_v1.0.1.3ds",
+    "size": 1073741824,
+    "sha256": "db048c43a7267b4bd3ada26267878e1ac398583d78acf8ab85b1dea214a2330f"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องรวมดารากันดั้ม คาเมนไรเดอร์ อุลตร้าแมน+ดันเจี้ยนคิวบ์ 100%",
+    "whole_game_census": "29,167/29,167 บรรทัด (ภาพรวมทั้งเกม 100%)",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "STATE.md / release notes (2026-11-09 v1.0.1 audit)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-09T00:40:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean source located by SHA-256 and patched with the site's vendored xdelta3 wasm engine; output matches release checksums. Hardware IVFC hash tree rebuilt (L1_bad=0, L2_bad=0, L3_bad=0, PASS: True).",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}

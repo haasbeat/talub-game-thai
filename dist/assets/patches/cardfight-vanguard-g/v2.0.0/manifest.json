@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "cardfight-vanguard-g",
+  "game_title": "CardFight!! Vanguard G: Stride to Victory!!",
+  "platform": "3DS",
+  "region": "Japan",
+  "game_code": "BVFJ",
+  "patch_version": "v2.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "CardFight!! Vanguard G - Stride to Victory!! (Japan).3ds",
+      "size": 536870912,
+      "sha256": "7262fee5be8ab31bcca719769de6b03a63f7b00e2ee25d5b40bd00b5b1510fed"
+    }
+  ],
+  "patch": {
+    "filename": "CardFight_Vanguard_G_Thai_v2.0.0.xdelta",
+    "size": 11275072,
+    "sha256": "063385d5b028d263cf21e46546b16e7f74fd465f1bbbeecb881878591567606b",
+    "release_date": "2026-11-09",
+    "date_source": "release_build",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/cardfight-vanguard-g/v2.0.0/CardFight_Vanguard_G_Thai_v2.0.0.xdelta"
+  },
+  "output": {
+    "filename": "CardFight!! Vanguard G - Stride to Victory!! (Thai v2.0.0).3ds",
+    "size": 536870912,
+    "sha256": "812fe02bab11b6e75566e9e2446ae20476e3b49d982aa2f57c4a4bb56f26f339"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก G+Vanguard Original+ระบบการ์ด 2,707 ใบ+คำคม 3,889 ใบ+ระบบไฟท์และ UI 100%",
+    "whole_game_census": "สำรวจทั้งเกม In-ROM Ground Truth 10,042/10,042 รายการ (100.0%)",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-09T00:30:00+07:00",
+    "method": "clean_source_xdelta3_roundtrip",
+    "note": "Clean 512 MB Japanese Decrypted 3DS cartridge source verified with clean-source roundtrip; real 3DS hardware IVFC hash tree recalculation verified (L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True); exact FuRyu .rtz binary stream parsing (c0..c7) eliminating all VM bytecode desync and zero-fill crashes (0x0010D9DE beq->ble); Tales of Hearts / Abyss discrete pixel-locked typography engine (2005_iannnnnAMD.ttf); direct In-ROM binary census verified across 10,042/10,042 items (100.0%).",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true,
+    "patcher_test_passed": true
+  }
+}
