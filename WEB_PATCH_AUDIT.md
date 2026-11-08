@@ -252,6 +252,16 @@ The `v1.0.5` web patch targets the untrimmed 2.00 GB decrypted USA cartridge dum
 - Expected output SHA-256: `11b5e81df73848c7335302a89eb7b7d85b079acfe743a36732830090598d52df`
 - Verification: clean-source roundtrip tested 100% bit-identical with xdelta3; RomFS IVFC hash tree verified (`L1_bad=0, L2_bad=0, L3_bad=0, PASS=True`); direct In-ROM binary readback verified across 99,755/107,220 records (93.04% In-ROM binary census / 100% translatable text, 0 tag errors, 0 critical freeze).
 
+## Shin Megami Tensei: Strange Journey Redux
+
+The `v1.0.5` web patch targets the full 2 GiB decrypted USA cartridge image (`CTR-P-AJ8E`, Title ID `00040000001CD200`). Released as `v1.0.5` official with full RomFS IVFC hash tree recalculation (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`) via `tools/ncch_ivfc_rebuild.py`, completely eliminating real Nintendo 3DS hardware ErrDisp `0xf96047a2` crash in `nn::fs::MountRom` / `GetRomRequiredMemorySize` (address `0x0010b67c`), fixing multi-section MSG2 slot table shifts in `DungeonGimmic` 02, 03, 07, 10, 11 (100% 1:1 Clean ROM slot parity), in-game v1.0.5 watermarks, and passing 1:1 In-ROM binary forensic readback across all 26,033 translatable records (99.52% whole-game census).
+
+- Accepted source: `Shin Megami Tensei - Strange Journey Redux (USA).3ds`, 2,147,483,648 bytes
+- Source SHA-256: `de112897602339de5ac6a13029c5414e153e48797f156cf006a8003121df53f8`
+- Patch SHA-256: `2194b1e2db1a41a9a0a8df29d0c2d16d6343a71da3992a848b5ca27bdcb71014`
+- Expected output SHA-256: `39999a0cf1cbb397cfd561f1c8dfb7ca4190a090d8fbf329612e0d9a443206fe`
+- Verification: clean-source xdelta3 roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`); direct In-ROM binary census verified across 26,033/26,159 records (99.52% In-ROM binary census / 100% translatable text, 0 critical freeze).
+
 ## Evidence tiers
 
 The 28 output-matched entries combine 22 browser xdelta3 WASM roundtrips, 6 clean-source bit-identical/CLI roundtrips. The PoPoLoCrois web xdelta was applied successfully to its pinned USA ISO with the xdelta3 CLI; its measured output SHA-256 is used because the historical v1.10 guide's MD5/SHA1 describe a different target artifact. The 13 owner-reported entries retain that label and are not silently promoted to browser-roundtrip evidence. The five entries without current verification metadata are `dragon-quest-iv`, `dragon-quest-v`, `dragon-quest-vi`, `tales-of-hearts`, and `the-world-ends-with-you`.

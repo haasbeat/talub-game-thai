@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "smt-strange-journey-redux",
+  "game_title": "Shin Megami Tensei: Strange Journey Redux",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "AJ8E",
+  "patch_version": "v1.0.5",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Shin Megami Tensei - Strange Journey Redux (USA).3ds",
+      "size": 2147483648,
+      "sha256": "de112897602339de5ac6a13029c5414e153e48797f156cf006a8003121df53f8"
+    }
+  ],
+  "patch": {
+    "filename": "SMT_Strange_Journey_Redux_Thai_v1.0.5.xdelta",
+    "size": 35621510,
+    "sha256": "2194b1e2db1a41a9a0a8df29d0c2d16d6343a71da3992a848b5ca27bdcb71014",
+    "release_date": "2026-11-09",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/smt-strange-journey-redux/v1.0.5/SMT_Strange_Journey_Redux_Thai_v1.0.5.xdelta"
+  },
+  "output": {
+    "filename": "SMT_Strange_Journey_Redux_Thai_v1.0.5.3ds",
+    "size": 2147483648,
+    "sha256": "39999a0cf1cbb397cfd561f1c8dfb7ca4190a090d8fbf329612e0d9a443206fe"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก, บทสนทนา, ภารกิจ, เมนู, ฐานทัพ, ฟอร์มา, และบอส 100%",
+    "whole_game_census": "26,033/26,159 ข้อความ (ภาพรวมในรอม 99.52%)",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "STATE.md / release notes (2026-11-09 audit)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-09T02:05:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean source located by SHA-256 and patched with the site vendored xdelta3 wasm engine; output matches release checksums. RomFS IVFC hash tree rebuilt and verified (L1_bad=0, L2_bad=0, L3_bad=0, PASS=True).",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}

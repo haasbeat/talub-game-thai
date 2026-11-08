@@ -1076,22 +1076,22 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 028 / 035",
-    "version": "v1.0.4",
-    "patchDate": "2026-10-25",
+    "version": "v1.0.5",
+    "patchDate": "2026-11-09",
     "addedDate": "2026-11-04",
     "addedOrder": 21,
     "addedAt": "2026-11-04T21:10:11+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/smt-strange-journey-redux.jpg",
-    "manifest": "./assets/patches/smt-strange-journey-redux/v1.0.4/manifest.json",
+    "manifest": "./assets/patches/smt-strange-journey-redux/v1.0.5/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN USA 3DS · 2 GB",
     "region": "USA",
     "gameCode": "AJ8E",
     "sourceName": "Shin Megami Tensei - Strange Journey Redux (USA).3ds · 2,147,483,648 bytes",
     "sourceHash": "de112897602339de5ac6a13029c5414e153e48797f156cf006a8003121df53f8",
-    "outputHash": "77eb1d62d42f59ee9f29a11d130ab871d52a7a33ad31c4144d13f3e3cbb36340",
-    "moduleStatus": "เนื้อเรื่อง เซ็กเตอร์ทั้งหมด และ Womb of Grief ครบ (ชื่อเผ่าปีศาจคงภาษาอังกฤษ)",
+    "outputHash": "39999a0cf1cbb397cfd561f1c8dfb7ca4190a090d8fbf329612e0d9a443206fe",
+    "moduleStatus": "เนื้อเรื่องหลัก, บทสนทนา, ภารกิจ, เมนู, ฐานทัพ, ฟอร์มา, และบอส 100%",
     "wholeGameCensus": "26,033/26,159 ข้อความ (ภาพรวมในรอม 99.52%)",
     "details": {
       "thaiTitle": "ชินเมกามิเทนเซย์: สเตรนจ์เจอร์นีย์ รีดักซ์ ฉบับภาษาไทย",
@@ -2160,6 +2160,24 @@ window.GAME_CATALOG = [
 ];
 window.GAME_UPDATES = [
   {
+    "slug": "smt-strange-journey-redux",
+    "title": "Shin Megami Tensei: Strange Journey Redux",
+    "platform": "3DS",
+    "version": "v1.0.5",
+    "type": "update",
+    "timestamp": "2026-11-09T02:05:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.5 คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครชจอแดง ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง (L1=0, L2=0, L3=0 bad), แก้ไขการจัดเรียง Slot/ID ใน DungeonGimmic ครบทุกมิติ, ลายน้ำ v1.0.5 ในเกม และผ่านการตรวจสอบ Bit-identical Roundtrip 100%"
+  },
+  {
+    "slug": "etrian-odyssey-untold",
+    "title": "Etrian Odyssey Untold: The Millennium Girl",
+    "platform": "3DS",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-09T02:00:00+07:00",
+    "note": "ปล่อยม็อดภาษาไทยตัวเต็ม v1.0.0 แปลครบสมบูรณ์ทุกระบบ, คัทซีนอนิเมะซับไทย 9 ตอน, คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครชจอแดง ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง (L1=0, L2=0, L3=0 bad), ผ่านการทดสอบ 1:1 In-ROM Binary Readback 100%"
+  },
+  {
     "slug": "xenoblade-chronicles-3d",
     "title": "Xenoblade Chronicles 3D",
     "platform": "3DS",
@@ -2592,15 +2610,6 @@ window.GAME_UPDATES = [
     "note": "เพิ่มเข้าคลังม็อดภาษาไทย v2.4.2"
   },
   {
-    "slug": "etrian-odyssey-untold",
-    "title": "Etrian Odyssey Untold: The Millennium Girl",
-    "platform": "3DS",
-    "version": "v1.0.0",
-    "type": "new",
-    "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0"
-  },
-  {
     "slug": "ever-oasis",
     "title": "Ever Oasis",
     "platform": "3DS",
@@ -2721,10 +2730,10 @@ window.GAME_UPDATES = [
     "slug": "smt-strange-journey-redux",
     "title": "Shin Megami Tensei: Strange Journey Redux",
     "platform": "3DS",
-    "version": "v1.0.4",
+    "version": "v1.0.5",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.4"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.5"
   },
   {
     "slug": "time-travelers",
