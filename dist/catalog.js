@@ -744,21 +744,21 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 020 / 035",
-    "version": "v1.0.1",
+    "version": "v1.0.2",
     "patchDate": "2026-11-09",
     "addedDate": "2026-11-04",
     "addedOrder": 15,
     "addedAt": "2026-11-04T21:10:11+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/lost-heroes.jpg",
-    "manifest": "./assets/patches/lost-heroes/v1.0.1/manifest.json",
+    "manifest": "./assets/patches/lost-heroes/v1.0.2/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN Japan 3DS · 1 GB",
     "region": "Japan",
     "gameCode": "BLHJ",
     "sourceName": "Lost Heroes (Japan).3ds · 1,073,741,824 bytes",
     "sourceHash": "5a603b88b0f0ea34548d3e78c27af004efe615527dea16d1936e62b80f3b90ea",
-    "outputHash": "db048c43a7267b4bd3ada26267878e1ac398583d78acf8ab85b1dea214a2330f",
+    "outputHash": "9a9099517734d240b8afee27bcdcacac835e5923410cd8319148a3a39bc7c2b1",
     "moduleStatus": "เนื้อเรื่องรวมดารากันดั้ม คาเมนไรเดอร์ อุลตร้าแมน+ดันเจี้ยนคิวบ์ 100%",
     "wholeGameCensus": "29,167/29,167 บรรทัด (ภาพรวมทั้งเกม 100%)",
     "details": {
@@ -2161,6 +2161,15 @@ window.GAME_CATALOG = [
 ];
 window.GAME_UPDATES = [
   {
+    "slug": "lost-heroes",
+    "title": "Lost Heroes",
+    "platform": "3DS",
+    "version": "v1.0.2",
+    "type": "update",
+    "timestamp": "2026-11-09T02:45:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.2 คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครชจอแดง ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง (L1=0, L2=0, L3=0 bad), บิลด์ตรงจาก Original Clean ROM และผ่านการตรวจสอบ Bit-identical Roundtrip 100%"
+  },
+  {
     "slug": "7th-dragon-iii-code-vfd",
     "title": "7th Dragon III Code: VFD",
     "platform": "3DS",
@@ -2677,10 +2686,10 @@ window.GAME_UPDATES = [
     "slug": "lost-heroes",
     "title": "Lost Heroes",
     "platform": "3DS",
-    "version": "v1.0.1",
+    "version": "v1.0.2",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.1"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.2"
   },
   {
     "slug": "new-love-plus-plus",
