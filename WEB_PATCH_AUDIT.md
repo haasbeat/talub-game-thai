@@ -151,6 +151,16 @@ The web patch targets the full 722 MB PlayStation 1 Mode 2 Form 1 CD-ROM image (
 - Expected output SHA-256: `a8f261d3af1c854c14c9236264d4feca50d28f9065ea83e8a599876f68f3ec84`
 - Verification: WebAssembly xdelta3 engine roundtrip verified in Node (`tools/web_wasm_patch.mjs`: `ok=true`, `a8f261d3...` matched byte-for-byte in 1.4s); In-ROM binary census passed with 9,400/9,400 records (100.00% In-ROM, 0 mismatches, 0 critical freeze); 25,480 Mode 2 Form 1 sectors EDC/ECC verified.
 
+## Theatrhythm Dragon Quest
+
+The `v1.2.2` web patch targets the full 1 GiB decrypted Japanese cartridge image (`CTR-P-BTQJ`, CRC32 `5931AD10`).
+
+- Accepted source: `Theatrhythm Dragon Quest (Japan).3ds`, 1,073,741,824 bytes
+- Source SHA-256: `737962938f78a67a4d158696dcfe696d6615917a911551a754935c59b37858cb`
+- Patch SHA-256: `d834037d494b331b9cd5224890ae74a779745a52d18f59181ef909e479f518b5`
+- Expected output SHA-256: `d464e6d6bbcd576c6011354a6024827d9c5b179e167e4d4ab083add7bfc0441f`
+- Verification: clean source roundtrip tested 100% bit-identical with xdelta3; direct container readback verified across 6,132 records (100.00% In-ROM binary census, 0 mismatches, 0 critical freeze).
+
 ## Evidence tiers
 
 The 28 output-matched entries combine 22 browser xdelta3 WASM roundtrips, 6 clean-source bit-identical/CLI roundtrips. The PoPoLoCrois web xdelta was applied successfully to its pinned USA ISO with the xdelta3 CLI; its measured output SHA-256 is used because the historical v1.10 guide's MD5/SHA1 describe a different target artifact. The 13 owner-reported entries retain that label and are not silently promoted to browser-roundtrip evidence. The five entries without current verification metadata are `dragon-quest-iv`, `dragon-quest-v`, `dragon-quest-vi`, `tales-of-hearts`, and `the-world-ends-with-you`.

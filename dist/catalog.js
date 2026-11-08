@@ -1119,21 +1119,21 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 029 / 034",
-    "version": "v1.2.1",
-    "patchDate": "2026-11-01",
+    "version": "v1.2.2",
+    "patchDate": "2026-11-08",
     "addedDate": "2026-11-05",
     "addedOrder": 41,
     "addedAt": "2026-11-05T16:31:19+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/theatrhythm-dragon-quest.jpg",
-    "manifest": "./assets/patches/theatrhythm-dragon-quest/v1.2.1/manifest.json",
+    "manifest": "./assets/patches/theatrhythm-dragon-quest/v1.2.2/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN Japan 3DS · 1 GB",
     "region": "Japan",
     "gameCode": "BTQJ",
-    "sourceName": "Theatrhythm Dragon Quest (Japan) Decrypted.3ds · 1,073,741,824 bytes",
-    "sourceHash": "561fa6082cdcc7834f49daf636d876e4f553d0a0dcce1098c988daee0996044c",
-    "outputHash": "c9b1a59603cf5558c31d5d26f7693fd244914d594e1b5b1a40eee63b2e343662",
+    "sourceName": "Theatrhythm Dragon Quest (Japan).3ds · 1,073,741,824 bytes (CRC32: 5931AD10)",
+    "sourceHash": "737962938f78a67a4d158696dcfe696d6615917a911551a754935c59b37858cb",
+    "outputHash": "d464e6d6bbcd576c6011354a6024827d9c5b179e167e4d4ab083add7bfc0441f",
     "moduleStatus": "บทสนทนา/ข้อความระบบ 2,152 + UI 1,003 + ตารางมอนสเตอร์/ไอเทม/เพลง 2,977 รายการ",
     "wholeGameCensus": "6,132/6,132 เรคคอร์ด อ่านกลับจากในรอม (ภาพรวมทั้งเกม 100%)",
     "details": {
@@ -1143,16 +1143,17 @@ window.GAME_CATALOG = [
       "studio": "Square Enix",
       "release": null,
       "genre": "Rhythm game",
-      "description": "ม็อดภาษาไทยสำหรับ Theatrhythm Dragon Quest (3DS โซนญี่ปุ่น) เวอร์ชัน v1.2.1",
+      "description": "ม็อดภาษาไทยสำหรับ Theatrhythm Dragon Quest (3DS โซนญี่ปุ่น) เวอร์ชัน v1.2.2",
       "overview": "เกมจังหวะดนตรีที่รวมเพลงจากซีรีส์ดราก้อนเควสต์ ให้เล่นตามโน้ตไปพร้อมกับตัวละครในฉบับภาษาไทย",
       "story": null,
-      "localization": "แปลบทสนทนาและข้อความระบบ 2,152 รายการ ข้อความ UI 1,003 รายการ และตารางมอนสเตอร์ ไอเทม คาถา สกิล ชื่อเพลง อาชีพ 2,977 รายการ (อ่านกลับจากในรอมครบ 6,132/6,132) พร้อมแปลกราฟิกโหมด Challenge ใน v1.2.1",
+      "localization": "แปลบทสนทนาและข้อความระบบ 2,152 รายการ ข้อความ UI 1,003 รายการ และตารางมอนสเตอร์ ไอเทม คาถา สกิล ชื่อเพลง อาชีพ 2,977 รายการ (อ่านกลับจากในรอมครบ 6,132/6,132) พร้อมแปลกราฟิกโหมด Challenge และรองรับ Clean ROM สากล (CRC32: 5931AD10) ใน v1.2.2",
       "untranslated": "ไม่มีส่วนที่ค้างแปลตามผลสำรวจในรอม (สัญลักษณ์ตัวเลขโรมัน Ⅰ–Ⅹ และวงเล็บ「」คงไว้ตามต้นฉบับ)",
       "features": [
-        "แก้อาการค้างตอนเข้าด่าน Challenge Mode (v1.2.1)",
+        "รองรับ Clean Base ROM มาตรฐานสากล (CRC32: 5931AD10) ไม่ต้องแก้ Header (v1.2.2)",
+        "แก้อาการค้างตอนเข้าด่าน Challenge Mode",
         "แปลกราฟิกและป้ายเมนูโหมด Challenge",
         "ข้อความในรอมอ่านกลับครบ 6,132 รายการ",
-        "ลายน้ำเวอร์ชัน v1.2.1 ในเกม"
+        "ลายน้ำเวอร์ชัน v1.2.2 ในเกม"
       ]
     },
     "verified": true,
@@ -2089,6 +2090,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "theatrhythm-dragon-quest",
+    "title": "Theatrhythm Dragon Quest",
+    "platform": "3DS",
+    "version": "v1.2.2",
+    "type": "update",
+    "timestamp": "2026-11-08T20:52:00+07:00",
+    "note": "อัปเดตแพตช์ v1.2.2 รองรับ ROM ต้นฉบับมาตรฐานสากล (CRC32: 5931AD10) รวมร่างผ่านเว็บได้ทันที"
+  },
   {
     "slug": "saga-frontier",
     "title": "SaGa Frontier",

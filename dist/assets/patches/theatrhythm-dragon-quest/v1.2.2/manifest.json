@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "theatrhythm-dragon-quest",
+  "game_title": "Theatrhythm Dragon Quest",
+  "platform": "3DS",
+  "region": "Japan",
+  "game_code": "BTQJ",
+  "patch_version": "v1.2.2",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Theatrhythm Dragon Quest (Japan).3ds",
+      "size": 1073741824,
+      "sha256": "737962938f78a67a4d158696dcfe696d6615917a911551a754935c59b37858cb"
+    }
+  ],
+  "patch": {
+    "filename": "Theatrhythm_Dragon_Quest_TH_v1.2.2.xdelta",
+    "size": 39269002,
+    "sha256": "d834037d494b331b9cd5224890ae74a779745a52d18f59181ef909e479f518b5",
+    "release_date": "2026-11-08",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/theatrhythm-dragon-quest/v1.2.2/Theatrhythm_Dragon_Quest_TH_v1.2.2.xdelta"
+  },
+  "output": {
+    "filename": "Theatrhythm Dragon Quest (Thai v1.2.2).3ds",
+    "size": 951824384,
+    "sha256": "d464e6d6bbcd576c6011354a6024827d9c5b179e167e4d4ab083add7bfc0441f"
+  },
+  "release_status": {
+    "module_status": "บทสนทนา/ข้อความระบบ 2,152 + UI 1,003 + ตารางมอนสเตอร์/ไอเทม/เพลง 2,977 รายการ",
+    "whole_game_census": "6,132/6,132 เรคคอร์ด อ่านกลับจากในรอม (ภาพรวมทั้งเกม 100%)",
+    "census_source": "games/3DS/Theatrhythm Dragon Quest (Japan)/STATE.md + census_manifest.json",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-08T20:52:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean source located by SHA-256 (standard community clean dump CRC32 5931AD10) and patched with the site's vendored xdelta3 wasm engine; output matches STATE.md v1.2.2 standalone ROM.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}
