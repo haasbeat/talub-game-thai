@@ -754,7 +754,7 @@ window.GAME_CATALOG = [
     "gameCode": "AX4J",
     "sourceName": "Metal Max 4 - Gekkou no Diva (Japan).3ds · 1,073,741,824 bytes",
     "sourceHash": "c815bff9d8a41bde58bd98a08c698ea0d7a573c06a59c0d8af1144b8ad5b697f",
-    "outputHash": "b1f130fdf564da68e0d8fca9b3c8cc35d7ad900cde453d3f998cba558ba26501",
+    "outputHash": "c25cfe18a65eb3f84aee84d7d16d606754e9b417fb5188cf3a8236fdfac6db56",
     "moduleStatus": "เนื้อเรื่องหลักและระบบเกม 100%",
     "wholeGameCensus": "47,078/81,067 สล็อตไบนารี (58.1%); ข้อความที่ใช้งานจริง 47,078/47,078",
     "details": null,
@@ -2143,8 +2143,8 @@ window.GAME_UPDATES = [
     "platform": "3DS",
     "version": "v1.3.4",
     "type": "update",
-    "timestamp": "2026-11-08T15:52:53+07:00",
-    "note": "อัปเดตแพตช์ v1.3.4 แก้ไขค่าแฮช NCCH ExHeader/ExeFS สำหรับติดตั้งบนเครื่อง 3DS จริง"
+    "timestamp": "2026-11-08T20:54:00+07:00",
+    "note": "อัปเดตแพตช์ v1.3.4 คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครช ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง และแก้ปัญหาแปลง CIA (res = -12)"
   },
   {
     "slug": "tales-of-the-abyss",
