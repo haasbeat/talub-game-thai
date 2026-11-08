@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "rune-factory-4",
+  "game_title": "Rune Factory 4",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "AR4E",
+  "patch_version": "v1.0.5",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Rune Factory 4 (USA).3ds",
+      "size": 2147483648,
+      "sha256": "2cdb5d995d30c573662d0d31e24619bf5c8cb1e99983d7046c6f71127bdcd029"
+    }
+  ],
+  "patch": {
+    "filename": "Rune_Factory_4_Thai_v1.0.5.xdelta",
+    "size": 4507807,
+    "sha256": "685f654ee861af2f7470de5cd6398e63441476bdcd47b598e8c158a2be833704",
+    "release_date": "2026-11-08",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/rune-factory-4/v1.0.5/Rune_Factory_4_Thai_v1.0.5.xdelta"
+  },
+  "output": {
+    "filename": "Rune Factory 4 (Thai v1.0.5).3ds",
+    "size": 2147483648,
+    "sha256": "11b5e81df73848c7335302a89eb7b7d85b079acfe743a36732830090598d52df"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่อง 3 องก์ + ระบบเกษตร + ความสัมพันธ์ตัวละคร + เทศกาล (ข้อความที่แปลได้ครบ 100%)",
+    "whole_game_census": "99,755/107,220 ข้อความ (ภาพรวมในรอม 93.04%)",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "STATE.md / release notes (2026-11-08 audit)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-08T20:55:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean source located by SHA-256 and patched with the site's vendored xdelta3 wasm engine; output matches release checksums; IVFC hash tree rebuilt and verified (L1_bad=0, L2_bad=0, L3_bad=0, PASS=True); 256-byte AAPCS stack frame verified on real 3DS hardware.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}
