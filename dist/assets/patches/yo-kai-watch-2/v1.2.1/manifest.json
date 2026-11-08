@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "yo-kai-watch-2",
+  "game_title": "Yo-kai Watch 2: Psychic Specters",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "BYHE",
+  "patch_version": "v1.2.1",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Yo-Kai Watch 2 - Psychic Specters (USA) (En,Fr,Es).3ds",
+      "size": 4294967296,
+      "sha256": "fcbae21d7e94e31954bbc1706dcbcdd83b6716deb7048b7112bd9f18963c8295"
+    }
+  ],
+  "patch": {
+    "filename": "Yokai_Watch_2_Psychic_Specters_Thai_v1.2.1_USA.xdelta",
+    "size": 26108439,
+    "sha256": "38709d47a21c69d265775d6122f435f321c4e84c671cc0a081a82c1a0d07dbb8",
+    "release_date": "2026-11-09",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/yo-kai-watch-2/v1.2.1/Yokai_Watch_2_Psychic_Specters_Thai_v1.2.1_USA.xdelta"
+  },
+  "output": {
+    "filename": "Yokai_Watch_2_Psychic_Specters_Thai_v1.2.1.3ds",
+    "size": 2816344064,
+    "sha256": "7c465eebf7b33debd6012adc5de3da42d43d739d02222266b3ba02449f1ced50"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก+เนื้อหาภาคชินอุจิ+ระบบรถไฟเกระเกระโป 100%",
+    "whole_game_census": "104,387/104,387 ข้อความในรอม (ภาพรวมทั้งเกม 100%)",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "STATE.md / tools/ncch_ivfc_rebuild.py (2026-11-09 audit)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-09T00:34:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean source located by SHA-256 and patched with xdelta3; output matches release checksums with RomFS IVFC hash tree fully recalculated.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}

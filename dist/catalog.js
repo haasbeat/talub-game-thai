@@ -1288,23 +1288,23 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 033 / 034",
-    "version": "v1.2.0",
-    "patchDate": "2026-10-13",
+    "version": "v1.2.1",
+    "patchDate": "2026-11-09",
     "addedDate": "2026-11-04",
     "addedOrder": 25,
     "addedAt": "2026-11-04T21:10:11+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/yo-kai-watch-2.jpg",
-    "manifest": "./assets/patches/yo-kai-watch-2/v1.2.0/manifest.json",
+    "manifest": "./assets/patches/yo-kai-watch-2/v1.2.1/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN USA 3DS · 4 GB",
     "region": "USA",
     "gameCode": "BYHE",
     "sourceName": "Yo-Kai Watch 2 - Psychic Specters (USA) (En,Fr,Es).3ds · 4,294,967,296 bytes",
     "sourceHash": "fcbae21d7e94e31954bbc1706dcbcdd83b6716deb7048b7112bd9f18963c8295",
-    "outputHash": "83b598137b8841ea049ac83e29472db24df2a652176f9a1d6135f4b9efb7c8bb",
+    "outputHash": "7c465eebf7b33debd6012adc5de3da42d43d739d02222266b3ba02449f1ced50",
     "moduleStatus": "เนื้อเรื่องหลัก+เนื้อหาภาคชินอุจิ+ระบบรถไฟเกระเกระโป 100%",
-    "wholeGameCensus": "105,466/105,466 ข้อความในรอม (ภาพรวมทั้งเกม 100%)",
+    "wholeGameCensus": "104,387/104,387 ข้อความในรอม (ภาพรวมทั้งเกม 100%)",
     "details": {
       "thaiTitle": "โยไควอทช์ 2 ฉบับภาษาไทย",
       "japaneseTitle": null,
@@ -2111,6 +2111,15 @@ window.GAME_CATALOG = [
 ];
 window.GAME_UPDATES = [
   {
+    "slug": "yo-kai-watch-2",
+    "title": "Yo-kai Watch 2: Psychic Specters",
+    "platform": "3DS",
+    "version": "v1.2.1",
+    "type": "update",
+    "timestamp": "2026-11-09T00:35:00+07:00",
+    "note": "อัปเดตแพตช์ v1.2.1 คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครช ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง, บิลด์ตรงจาก Original Clean ROM และผ่านการตรวจสอบ Bit-identical Roundtrip 100%"
+  },
+  {
     "slug": "time-travelers",
     "title": "Time Travelers",
     "platform": "3DS",
@@ -2645,10 +2654,10 @@ window.GAME_UPDATES = [
     "slug": "yo-kai-watch-2",
     "title": "Yo-kai Watch 2: Psychic Specters",
     "platform": "3DS",
-    "version": "v1.2.0",
+    "version": "v1.2.1",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.2.0"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.2.1"
   },
   {
     "slug": "yo-kai-watch-3",

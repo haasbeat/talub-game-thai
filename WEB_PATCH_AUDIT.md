@@ -103,6 +103,16 @@ The web patch targets the full 1 GiB USA cartridge image (`AYWE`). Released as `
 - Expected output SHA-256: `9f58e941b0f32117f30169be176e26eb99292990767b9f272e2a824ef9d37cb1`
 - Verification: browser xdelta3 wasm roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified with `tools/ncch_ivfc_rebuild.py` (L1_bad=0, L2_bad=0, L3_bad=0, PASS=True).
 
+## Yo-kai Watch 2: Psychic Specters
+
+The web patch targets the full 4,294,967,296-byte USA cartridge image (`BYHE`). Released as `v1.2.1` official with complete Thai story & Shinuchi content 100%, crisp typography, embedded name entry fixes, and full RomFS IVFC hash tree recalculation (fixing real-hardware ErrDisp panic 0xf96047a2 in `nn::fs::MountRom`).
+
+- Accepted source: `Yo-Kai Watch 2 - Psychic Specters (USA) (En,Fr,Es).3ds`, 4,294,967,296 bytes
+- Source SHA-256: `fcbae21d7e94e31954bbc1706dcbcdd83b6716deb7048b7112bd9f18963c8295`
+- Patch SHA-256: `38709d47a21c69d265775d6122f435f321c4e84c671cc0a081a82c1a0d07dbb8`
+- Expected output SHA-256: `7c465eebf7b33debd6012adc5de3da42d43d739d02222266b3ba02449f1ced50`
+- Verification: browser xdelta3 wasm roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified with `tools/ncch_ivfc_rebuild.py` (L1_bad=0, L2_bad=0, L3_bad=0, PASS=True).
+
 ## Yo-kai Watch 3
 
 The web patch targets the full 4 GiB USA cartridge image (`BY3E`). Released as `v1.0.5` official with complete Thai story & 96 battle tutorials, crisp 3-tier Pango typography (Mali SemiBold 12px), in-game watermarks, and full RomFS IVFC hash tree recalculation (preventing real-hardware ErrDisp panic 0xf96047a2 in `nn::fs::MountRom`).
