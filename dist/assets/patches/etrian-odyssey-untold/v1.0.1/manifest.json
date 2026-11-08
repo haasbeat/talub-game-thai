@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "game_slug": "etrian-odyssey-untold",
+  "game_title": "Etrian Odyssey Untold: The Millennium Girl",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "BMGE",
+  "patch_version": "v1.0.1",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Etrian Odyssey Untold - The Millennium Girl (USA).3ds",
+      "size": 1073741824,
+      "sha256": "09ac2bd4ab0e5709734d1e2cbf3547cc8decf08b89b618085e986d2b089ff6d4"
+    }
+  ],
+  "patch": {
+    "filename": "Etrian_Odyssey_Untold_Thai_v1.0.1.xdelta",
+    "size": 47788366,
+    "sha256": "c31856a4a8f45d25ceaf27ce2df432414f596ce18f3e2612dd9692a5e1e42c1e",
+    "release_date": "2026-11-09",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/etrian-odyssey-untold/v1.0.1/Etrian_Odyssey_Untold_Thai_v1.0.1.xdelta"
+  },
+  "output": {
+    "filename": "Etrian_Odyssey_Untold_Thai_v1.0.1.3ds",
+    "size": 1073741824,
+    "sha256": "530eaa931204e73800becc5067470bdfeafefeee850ae0c3dea020c7ba9fac1c"
+  },
+  "release_status": {
+    "module_status": "โหมดเนื้อเรื่องหลัก+ระบบ Grimoire+เควสต์กิลด์+UI 100%",
+    "whole_game_census": "20,870/28,557 รายการ = 73.08%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-09T02:54:00+07:00",
+    "method": "clean_source_roundtrip_and_in_rom_census",
+    "patcher_test_passed": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true,
+    "ivfc_rebuild_verified": true
+  }
+}

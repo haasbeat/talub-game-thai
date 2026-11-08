@@ -447,23 +447,23 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 012 / 035",
-    "version": "v1.0.0",
-    "patchDate": "2026-11-03",
+    "version": "v1.0.1",
+    "patchDate": "2026-11-09",
     "addedDate": "2026-11-04",
     "addedOrder": 7,
     "addedAt": "2026-11-04T21:10:11+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/etrian-odyssey-untold.jpg",
-    "manifest": "./assets/patches/etrian-odyssey-untold/v1.0.0/manifest.json",
+    "manifest": "./assets/patches/etrian-odyssey-untold/v1.0.1/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN USA 3DS · 1 GB",
     "region": "USA",
     "gameCode": "BMGE",
     "sourceName": "Etrian Odyssey Untold - The Millennium Girl (USA).3ds · 1,073,741,824 bytes",
     "sourceHash": "09ac2bd4ab0e5709734d1e2cbf3547cc8decf08b89b618085e986d2b089ff6d4",
-    "outputHash": "23dae2cc38a94575bdc8ca5a2633f567cfa9223ebdded0570bca5df0cfe89f3b",
+    "outputHash": "530eaa931204e73800becc5067470bdfeafefeee850ae0c3dea020c7ba9fac1c",
     "moduleStatus": "โหมดเนื้อเรื่องหลัก+ระบบ Grimoire+เควสต์กิลด์+UI 100%",
-    "wholeGameCensus": "11,420/11,420 บรรทัด = 100.00%",
+    "wholeGameCensus": "20,870/28,557 รายการ = 73.08%",
     "details": null,
     "verified": true,
     "gameVersion": "v1.0.0"
@@ -2161,6 +2161,15 @@ window.GAME_CATALOG = [
 ];
 window.GAME_UPDATES = [
   {
+    "slug": "etrian-odyssey-untold",
+    "title": "Etrian Odyssey Untold: The Millennium Girl",
+    "platform": "3DS",
+    "version": "v1.0.1",
+    "type": "update",
+    "timestamp": "2026-11-09T02:55:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.1 คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครชจอแดง ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง (L1=0, L2=0, L3=0 bad), แก้ไขการตัดคำและข้อความล้นกล่องหน้าเลือกโหมด/ระดับความยาก, ฝังซับไตเติลภาษาไทยคัทซีน 9 ตอน และรองรับระบบ Luma3DS/Citra สมบูรณ์แบบ"
+  },
+  {
     "slug": "lost-heroes",
     "title": "Lost Heroes",
     "platform": "3DS",
@@ -2614,10 +2623,10 @@ window.GAME_UPDATES = [
     "slug": "etrian-odyssey-untold",
     "title": "Etrian Odyssey Untold: The Millennium Girl",
     "platform": "3DS",
-    "version": "v1.0.0",
+    "version": "v1.0.1",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.1"
   },
   {
     "slug": "ever-oasis",

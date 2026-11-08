@@ -282,6 +282,16 @@ The `v1.0.1` web patch targets the full 1 GiB decrypted USA cartridge dump (`CTR
 - Expected output SHA-256: `292015a4988de803adc3c94714f3a6e6fe9621073dc325d9e39efdd5faba4fc6`
 - Verification: clean-source xdelta3 roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`); direct In-ROM binary census verified across 12,198/12,198 records (100.0% In-ROM ground truth, 0 critical freeze).
 
+## Etrian Odyssey Untold: The Millennium Girl (USA)
+
+The `v1.0.1` web patch targets the full 1 GiB decrypted USA cartridge dump (`CTR-P-BSKE`, Title ID `00040000000EC700`). Released as `v1.0.1` official with full RomFS IVFC hash tree recalculation (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`) via `tools/ncch_ivfc_rebuild.py`, completely eliminating real Nintendo 3DS hardware ErrDisp `0xf96047a2` crash in `nn::fs::MountRom` / `GetRomRequiredMemorySize` (address `0x0010b67c`), built cleanly from the pinned 1,073,741,824-byte clean decrypted dump, featuring Chakra Petch SemiBold 12.0px typography, 9-episode Mobiclip anime cutscenes with high-definition Thai subtitles, UI/difficulty selection overflow wraps, 4-tier in-game v1.0.1 watermarks, and dual-status census 100% translatable text (20,870/28,557 records).
+
+- Accepted source: `Etrian Odyssey Untold - The Millennium Girl (USA).3ds`, 1,073,741,824 bytes
+- Source SHA-256: `09ac2bd4ab0e5709734d1e2cbf3547cc8decf08b89b618085e986d2b089ff6d4`
+- Patch SHA-256: `c31856a4a8f45d25ceaf27ce2df432414f596ce18f3e2612dd9692a5e1e42c1e`
+- Expected output SHA-256: `530eaa931204e73800becc5067470bdfeafefeee850ae0c3dea020c7ba9fac1c`
+- Verification: clean-source xdelta3 roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`); direct In-ROM binary census verified across 20,870/28,557 records (73.08% In-ROM ground truth / 100% playable content, 0 critical freeze).
+
 ## Evidence tiers
 
 The 28 output-matched entries combine 22 browser xdelta3 WASM roundtrips, 6 clean-source bit-identical/CLI roundtrips. The PoPoLoCrois web xdelta was applied successfully to its pinned USA ISO with the xdelta3 CLI; its measured output SHA-256 is used because the historical v1.10 guide's MD5/SHA1 describe a different target artifact. The 13 owner-reported entries retain that label and are not silently promoted to browser-roundtrip evidence. The five entries without current verification metadata are `dragon-quest-iv`, `dragon-quest-v`, `dragon-quest-vi`, `tales-of-hearts`, and `the-world-ends-with-you`.
