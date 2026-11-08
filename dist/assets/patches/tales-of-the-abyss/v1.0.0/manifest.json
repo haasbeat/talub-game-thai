@@ -16,8 +16,8 @@
   ],
   "patch": {
     "filename": "Tales_of_the_Abyss_USA_TH_v1.0.0.xdelta",
-    "size": 32269253,
-    "sha256": "f6e5b09b462b7f47641576f06a52b8d8f8904ae9df0f64b2e4b153248b02f779",
+    "size": 32269304,
+    "sha256": "b88a8acda21413631e78ffdc2b8bca7a5c10db82cae399adf57f044322b5e8af",
     "release_date": "2026-11-08",
     "date_source": "patch_file_mtime",
     "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/tales-of-the-abyss/v1.0.0/Tales_of_the_Abyss_USA_TH_v1.0.0.xdelta"
@@ -25,7 +25,7 @@
   "output": {
     "filename": "Tales of the Abyss (USA) (Thai v1.0.0).3ds",
     "size": 2147483648,
-    "sha256": "0e6ea8330b3fc23fb1484726030a25c6b88f62e02fe82f66884b5a80c818a0d7"
+    "sha256": "cfb02e6799f2e5d191784a773009396700f0d93dc0d21e7dcbba5adab9e3171a"
   },
   "release_status": {
     "module_status": "เนื้อเรื่องหลัก+สก็ต+เควสต์+ระบบต่อสู้+เมนู+สารานุกรม 100%",

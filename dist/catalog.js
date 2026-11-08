@@ -952,22 +952,22 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 025 / 034",
-    "version": "v1.0.4",
-    "patchDate": "2026-10-24",
+    "version": "v1.0.5",
+    "patchDate": "2026-11-08",
     "addedDate": "2026-11-04",
     "addedOrder": 19,
     "addedAt": "2026-11-04T21:10:11+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/rune-factory-4.jpg",
-    "manifest": "./assets/patches/rune-factory-4/v1.0.4/manifest.json",
+    "manifest": "./assets/patches/rune-factory-4/v1.0.5/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN USA 3DS · 2 GB",
     "region": "USA",
     "gameCode": "AR4E",
-    "sourceName": "Rune Factory 4 (USA) Decrypted.3ds · 2,147,483,648 bytes",
-    "sourceHash": "709bf7a49c7abd711792543fb7945863493d74d2c23db0f127aef8b7913e8d62",
-    "outputHash": "09696baba9fb288943c0cfb0480363f23447133937323b78d134a36fd69bb0a3",
-    "moduleStatus": "เนื้อเรื่อง 3 องก์ + ระบบเกษตร + ความสัมพันธ์ตัวละคร + เทศกาล (ข้อความที่แปลได้ครบ)",
+    "sourceName": "Rune Factory 4 (USA).3ds · 2,147,483,648 bytes",
+    "sourceHash": "2cdb5d995d30c573662d0d31e24619bf5c8cb1e99983d7046c6f71127bdcd029",
+    "outputHash": "11b5e81df73848c7335302a89eb7b7d85b079acfe743a36732830090598d52df",
+    "moduleStatus": "เนื้อเรื่อง 3 องก์ + ระบบเกษตร + ความสัมพันธ์ตัวละคร + เทศกาล (ข้อความที่แปลได้ครบ 100%)",
     "wholeGameCensus": "99,755/107,220 ข้อความ (ภาพรวมในรอม 93.04%)",
     "details": {
       "thaiTitle": "รูนแฟคทอรี 4",
@@ -976,13 +976,15 @@ window.GAME_CATALOG = [
       "studio": "Neverland / XSEED Games (Marvelous USA)",
       "release": null,
       "genre": "Farming simulation / Action role-playing game",
-      "description": "ม็อดภาษาไทยสำหรับ Rune Factory 4 (3DS โซน USA) เวอร์ชัน v1.0.4",
+      "description": "ม็อดภาษาไทยสำหรับ Rune Factory 4 (3DS โซน USA) เวอร์ชัน v1.0.5",
       "overview": "ปลูกผัก ผจญภัยในดันเจี้ยน และสร้างสายสัมพันธ์กับชาวเมืองเซลเฟีย แปลครบทั้ง 3 องก์จนถึงฉากจบแท้",
       "story": "ตัวเอก (เลสต์หรือเฟรย์) กำลังเดินทางด้วยเรือเหาะเพื่อนำของกำนัลไปถวายมังกรลมเวนทัสวิลล์ แต่ถูกทหารจักรวรรดิเซคส์ลอบโจมตีจนความจำเสื่อมและตกจากเรือ มาตกทับเวนทัสวิลล์ที่ปราสาทเซลเฟียพอดี เวนทัสวิลล์เข้าใจผิดว่าตัวเอกคือเจ้าชายที่เมืองรอต้อนรับ แม้เจ้าชายอาร์เธอร์ตัวจริงจะมาถึงในภายหลัง แต่เขากลับมอบหน้าที่เจ้าเมืองตัวแทนให้ตัวเอกดูแลเซลเฟียต่อ",
-      "localization": "แปลเนื้อเรื่อง 3 องก์ ระบบเกษตร ความสัมพันธ์ตัวละคร และเทศกาล (ส่วนที่แปลได้ 100% + สำมะโนในรอม 93.04% หรือ 99,755/107,220 ข้อความ) ฝังฟอนต์ไทยลงในตลับเกมโดยตรง",
+      "localization": "แปลเนื้อเรื่อง 3 องก์ ระบบเกษตร ความสัมพันธ์ตัวละคร และเทศกาล (ส่วนที่แปลได้ 100% + สำมะโนในรอม 93.04% หรือ 99,755/107,220 ข้อความ) พร้อมแก้ไขปัญหาแครชเครื่องจริงและคำนวณ IVFC Tree ใหม่หมดใน v1.0.5",
       "untranslated": "ข้อความที่เหลือ 7,465 รายการ (6.96%) เป็นโทเค็นภายใน เช่น รหัสวาร์ปฉาก ข้อความดัมมี่/ตัวจองช่อง และตัวย่อค่าพลังอย่าง HP/RP ที่คงเป็นอักษรอังกฤษ ไม่ได้แสดงเป็นบทพูดให้ผู้เล่นเห็น",
       "features": [
-        "เนื้อเรื่องและอีเวนต์ 92,951 บรรทัด",
+        "แก้ปัญหาแครช Prefetch abort (PC=0x190) บนเครื่อง 3DS จริงทุกรุ่น (v1.0.5)",
+        "คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกัน ErrDisp 0xf96047a2",
+        "เนื้อเรื่องและอีเวนต์ครบ 92,951 บรรทัด",
         "ฐานข้อมูลไอเทม 1,108 ชิ้นพร้อมคำอธิบาย",
         "บทสนทนาประจำวัน เทศกาล และอีเวนต์แต่งงาน",
         "ฟอนต์ไทยฝังในตลับ ไม่มีกล่องเต้าหู้"
@@ -1086,7 +1088,7 @@ window.GAME_CATALOG = [
     "gameCode": "AABE",
     "sourceName": "Tales of the Abyss (USA) (decrypted).3ds · 2,147,483,648 bytes",
     "sourceHash": "b5d96e539bd9d4504e53b5f0d4f1c67c6a2d67928e9602ac87d9fd60cf90a807",
-    "outputHash": "0e6ea8330b3fc23fb1484726030a25c6b88f62e02fe82f66884b5a80c818a0d7",
+    "outputHash": "cfb02e6799f2e5d191784a773009396700f0d93dc0d21e7dcbba5adab9e3171a",
     "moduleStatus": "เนื้อเรื่องหลัก+สก็ต+เควสต์+ระบบต่อสู้+เมนู+สารานุกรม 100%",
     "wholeGameCensus": "สำรวจทั้งเกม In-ROM Census 100.0%",
     "details": {
@@ -2090,6 +2092,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "rune-factory-4",
+    "title": "Rune Factory 4",
+    "platform": "3DS",
+    "version": "v1.0.5",
+    "type": "update",
+    "timestamp": "2026-11-08T20:55:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.5 รองรับ ROM ต้นฉบับมาตรฐาน (2.00 GB) แก้ปัญหาแครชบนเครื่อง 3DS จริง และคำนวณ IVFC Tree สมบูรณ์"
+  },
   {
     "slug": "theatrhythm-dragon-quest",
     "title": "Theatrhythm Dragon Quest",
