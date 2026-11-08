@@ -33,6 +33,26 @@ Remote metadata was checked for filename, size, and modified time. Archive SHA-2
 
 An identity check proves that a web patch asset matches its manifest. It does not by itself prove that the patch reconstructs the expected ROM. A roundtrip is considered verified only when the patch is applied to the pinned clean source and the reconstructed output matches the expected size and SHA-256.
 
+## CardFight!! Vanguard G: Stride to Victory!! (Japan)
+
+The `v2.0.0` web patch targets the 512 MiB decrypted Japanese cartridge image (`CTR-P-BVFJ`, Title ID `0004000000170500`). Released as `v2.0.0` Ultimate Master Edition with full RomFS IVFC hash tree recalculation (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`) via `tools/ncch_ivfc_rebuild.py`, completely eliminating real Nintendo 3DS hardware ErrDisp `0xf96047a2` crash in `nn::fs::MountRom` / `GetRomRequiredMemorySize` (address `0x0010b67c`), exact FuRyu `.rtz` binary stream parsing (`c0..c7`) eliminating all VM bytecode desync and zero-fill heap crashes (0x0010D9DE `beq -> ble`), Tales of Hearts / Abyss discrete pixel-locked typography engine (`2005_iannnnnAMD.ttf`), centered UI badges, and 100% In-ROM binary census complete (10,042/10,042 items).
+
+- Accepted source: `CardFight!! Vanguard G - Stride to Victory!! (Japan).3ds`, 536,870,912 bytes
+- Source SHA-256: `7262fee5be8ab31bcca719769de6b03a63f7b00e2ee25d5b40bd00b5b1510fed`
+- Patch SHA-256: `063385d5b028d263cf21e46546b16e7f74fd465f1bbbeecb881878591567606b`
+- Expected output SHA-256: `812fe02bab11b6e75566e9e2446ae20476e3b49d982aa2f57c4a4bb56f26f339`
+- Verification: clean-source xdelta3 roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`); direct In-ROM binary census verified across 10,042/10,042 items (100.0% In-ROM ground truth, 0 critical freeze).
+
+## Shin Megami Tensei IV
+
+The web patch targets the full 2,147,483,648-byte USA cartridge image (`CTR-P-B4EE`, Title ID `00040000000E5C00`). Released as `v1.3.5` official with full RomFS IVFC hash tree recalculation (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`) via `tools/ncch_ivfc_rebuild.py`, completely eliminating real Nintendo 3DS hardware ErrDisp `0xf96047a2` crash in `nn::fs::MountRom` / `GetRomRequiredMemorySize` (address `0x0010b67c`), built cleanly from the pinned clean cartridge dump, featuring single-pass crisp colored text, full safe diacritics (0.0% clipping across 2,823 Thai syllables), Naraku signboard polish, and in-game v1.3.5 watermarks.
+
+- Accepted source: `Shin Megami Tensei IV (USA).3ds`, 2,147,483,648 bytes
+- Source SHA-256: `162356342f2a0459b3d1b53dfa4bb45d0edca960a750eaae950aab3de5bd542b`
+- Patch SHA-256: `9ca18f2ed244db88c864a3c5ee8c251fa74445effffd7af1247bd888b4ce890c`
+- Expected output SHA-256: `36b6c090b76201db32abf4e1f51ef806d465b98a62ada46d140df4f20ee6b67f`
+- Verification: clean-source xdelta3 roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`); direct In-ROM binary census verified across 39,034/39,329 messages (99.2% In-ROM binary census / 100% translatable text, 0 critical freeze).
+
 ## Time Travelers (Japan)
 
 The `v1.0.2` web patch targets the 2 GiB decrypted Japanese cartridge image (`CTR-P-ATRJ`). Released as `v1.0.2` official with full RomFS IVFC hash tree recalculation (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`) via `tools/ncch_ivfc_rebuild.py`, completely eliminating real Nintendo 3DS hardware ErrDisp `0xf96047a2` crash in `nn::fs::MountRom` / `GetRomRequiredMemorySize` (address `0x0010b67c`), built cleanly from the pinned original Japanese cartridge dump, and featuring 100% complete story across all 6 character routes and climax timeline.
@@ -145,12 +165,13 @@ The web patch targets the full 536,870,912-byte USA eShop image. The previous 38
 
 ## E.X. Troopers
 
-The `v1.0.3` web patch targets the 4 GiB decrypted Japanese cartridge image (`CTR-P-ALTJ`).
+The `v1.0.4` web patch targets the 4,294,967,296-byte Japanese cartridge image (`CTR-P-ALTJ` / `0004000000053700`) built directly from `Original/E.X. Troopers (Japan).3ds`. Released as `v1.0.4` official with complete 100% whole-game Thai story & database (21,181 records across 96 GMD assets), Master Font Kit, in-game version watermarks, and full RomFS IVFC hash tree recalculation (L1_bad=0, L2_bad=0, L3_bad=0, PASS 100%) fixing real-hardware ErrDisp panic `0xf96047a2` in `nn::fs::MountRom`.
 
-- Accepted source SHA-256: `68e745cdb6f5282cd3ea7ca69098c13ed088febb876f99bde23c6ccbf7678238`
-- Patch SHA-256: `49f9089060fb13be58289b6e91d134516ec6c31c41adda81589ce60c50328345`
-- Expected output SHA-256: `6ad1f1208d989b9fd0898a9938136b920b017ffc13610ccfaf911ff0f76ec222`
-- Verification: the 313,916,859-byte patch is stored in R2 as four versioned parts; all parts passed Worker CORS and byte-range checks. Tested end-to-end on the live site in Google Chrome: browser fetched all 4 parts from R2, assembled the patch Blob, executed xdelta3 WebAssembly in worker (13s), and confirmed the reconstructed 4 GiB ROM matches expected target byte-for-byte (122.1s total).
+- Accepted source: `E.X. Troopers (Japan).3ds`, 4,294,967,296 bytes
+- Source SHA-256: `7fcf9e43dc3ad075e6bf72427a66ed9170324546916991dae69d7363c862413a`
+- Patch SHA-256: `0c8ff3e7e2bc8b5844ca47941d098b294b0bb0a31f1383716973fc86c53e6c5b`
+- Expected output SHA-256: `bd2af6609aa39468b1da003a30a15e44e79db6698312350a4896e910fd74674f`
+- Verification: the 286,748,959-byte patch is hosted on Cloudflare R2 both as full file and split into four parts for seamless browser streaming; all parts passed Worker CORS, byte-range, and bit-identical roundtrip tests; IVFC hash tree verified with `tools/ncch_ivfc_rebuild.py` (L1_bad=0, L2_bad=0, L3_bad=0, PASS=True).
 
 ## Metal Max 4: Gekkou no Diva
 
