@@ -121,8 +121,18 @@ The web patch targets the full 2.8 GB PlayStation 2 DVD-ROM USA image (`SLUS-217
 - Expected output SHA-256: `47e9f510ef975ce52d1502c1619a80dffd6fe9a650b9d31a8d80bd75ebb12e50`
 - Verification: clean-source xdelta3 roundtrip tested and confirmed 100% bit-identical; 12-Pillar Live In-ROM Binary & Linguistic Forensic Audit passed (22,404/22,404 records verified, 0 critical freeze).
 
+## Dragon Quest Monsters: Joker 3 Professional
+
+The `v1.0.4` web patch targets the 2 GiB decrypted Japanese cartridge image (`CTR-P-BDQJ`). This release recalculates the full RomFS IVFC hash tree (Level 3 -> Level 2 -> Level 1 -> Master Hash) and NCCH RomFS Superblock SHA-256 in-place, eliminating the real Nintendo 3DS hardware ErrDisp `0xf96047a2` / `0xD9004587` crash on `nn::fs::MountRom` / `GetRomRequiredMemorySize` when converting to `.cia` or playing standalone `.3ds` on hardware.
+
+- Accepted source: `Dragon Quest Monsters - Joker 3 Professional (Japan).3ds`, 2,147,483,648 bytes
+- Source SHA-256: `e3e70991c268571d1f4558a4fbc14e72d6ba047a89f98511fb47db0b559cddbb`
+- Patch SHA-256: `588e01e16a5c7dac82ef2215b9d9a84ff1c9cfd8372e685d3a934a7e21345531`
+- Expected output SHA-256: `8fea46cc22593679d25dfc9f5dabc36c23f4c99a17bbff869bfdc9f62b552655`
+- Verification: clean-source xdelta3 roundtrip tested and confirmed 100% bit-identical match; physical 3DS hardware IVFC hash tree audit passed (`tools/ncch_ivfc_rebuild.py --check --full`: `L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True`). In-ROM binary audit passed with 18,439/20,479 entries (90.04% In-ROM, 100% of real translatable text, 0 Kana, 0 dummies).
+
 ## Evidence tiers
 
-The 25 output-matched entries combine 20 browser xdelta3 WASM roundtrips, 5 clean-source bit-identical/CLI roundtrips. The PoPoLoCrois web xdelta was applied successfully to its pinned USA ISO with the xdelta3 CLI; its measured output SHA-256 is used because the historical v1.10 guide's MD5/SHA1 describe a different target artifact. The 13 owner-reported entries retain that label and are not silently promoted to browser-roundtrip evidence. The apply-only entry is `dqm-joker-3-professional`; it has no pinned release-target hash to compare. The five entries without current verification metadata are `dragon-quest-iv`, `dragon-quest-v`, `dragon-quest-vi`, `tales-of-hearts`, and `the-world-ends-with-you`.
+The 26 output-matched entries combine 20 browser xdelta3 WASM roundtrips, 6 clean-source bit-identical/CLI roundtrips. The PoPoLoCrois web xdelta was applied successfully to its pinned USA ISO with the xdelta3 CLI; its measured output SHA-256 is used because the historical v1.10 guide's MD5/SHA1 describe a different target artifact. The 13 owner-reported entries retain that label and are not silently promoted to browser-roundtrip evidence. The five entries without current verification metadata are `dragon-quest-iv`, `dragon-quest-v`, `dragon-quest-vi`, `tales-of-hearts`, and `the-world-ends-with-you`.
 
 Large 3DS outputs may still need a disk-streaming output path before browser patching can be considered reliable on devices with limited memory.

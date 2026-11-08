@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "game_slug": "dqm-joker-3-professional",
+  "game_title": "Dragon Quest Monsters: Joker 3 Professional",
+  "platform": "3DS",
+  "region": "Japan",
+  "game_code": "BDQJ",
+  "patch_version": "v1.0.4",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Dragon Quest Monsters - Joker 3 Professional (Japan).3ds",
+      "size": 2147483648,
+      "sha256": "e3e70991c268571d1f4558a4fbc14e72d6ba047a89f98511fb47db0b559cddbb"
+    }
+  ],
+  "patch": {
+    "filename": "DQMJ3P_Thai_v1.0.4.xdelta",
+    "size": 10675598,
+    "sha256": "588e01e16a5c7dac82ef2215b9d9a84ff1c9cfd8372e685d3a934a7e21345531",
+    "release_date": "2026-11-08",
+    "date_source": "release_build",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/dqm-joker-3-professional/v1.0.4/DQMJ3P_Thai_v1.0.4.xdelta"
+  },
+  "output": {
+    "filename": "Dragon Quest Monsters - Joker 3 Professional (Thai v1.0.4).3ds",
+    "size": 2147483648,
+    "sha256": "8fea46cc22593679d25dfc9f5dabc36c23f4c99a17bbff869bfdc9f62b552655"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก + Post-Game + เควสต์ + สกิล + ไอเทม + เนวิแมป 26 แอเรีย 100% (แก้จอแดง ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง)",
+    "whole_game_census": "18,439/20,479 รายการ (ภาพรวมทั้งเกม 90.04% In-ROM)",
+    "census_source": "STATE.md / audit_dqmj3p.py (2026-11-08 audit)",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-08T12:00:00+07:00",
+    "method": "browser_xdelta3_wasm_apply",
+    "note": "Patch applies to clean Japan 2GB ROM with browser xdelta3 wasm engine bit-identically matching target SHA-256 with 100% valid IVFC hash tree (L1_bad=0, L2_bad=0, L3_bad=0).",
+    "patcher_test_passed": true,
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}
