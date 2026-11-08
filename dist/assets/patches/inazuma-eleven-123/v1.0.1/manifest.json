@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "game_slug": "inazuma-eleven-123",
+  "game_title": "Inazuma Eleven 1-2-3!! - Endou Mamoru Densetsu",
+  "platform": "3DS",
+  "region": "Japan",
+  "game_code": "AEEJ",
+  "patch_version": "v1.0.1",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Inazuma Eleven 1-2-3!! - Endou Mamoru Densetsu (Japan).3ds",
+      "size": 2147483648,
+      "sha256": "35f7497051fd84740e019d40d3632d5943bd265d0a8a9bc77c01112b1b2bfd8d"
+    }
+  ],
+  "patch": {
+    "filename": "Inazuma_Eleven_123_Thai_v1.0.1.xdelta",
+    "size": 299848828,
+    "sha256": "2f555e9554aed6d2b2e5a7b17c5ac5def47ee262e967dccbb02abe25eab4b552",
+    "release_date": "2026-11-08",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-eleven-123/v1.0.1/Inazuma_Eleven_123_Thai_v1.0.1.xdelta",
+    "parts": [
+      {
+        "filename": "Inazuma_Eleven_123_Thai_v1.0.1.xdelta.part01",
+        "size": 94371840,
+        "sha256": "d249d5f3c94f9b026aafed08cec1b40cc69cf7e877225dc03c92ed5853112bff",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-eleven-123/v1.0.1/Inazuma_Eleven_123_Thai_v1.0.1.xdelta.part01"
+      },
+      {
+        "filename": "Inazuma_Eleven_123_Thai_v1.0.1.xdelta.part02",
+        "size": 94371840,
+        "sha256": "f57337573573b8dfc15c7ab5c32f6c9bcf122bf13dd44c62d4a7c265c61b186a",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-eleven-123/v1.0.1/Inazuma_Eleven_123_Thai_v1.0.1.xdelta.part02"
+      },
+      {
+        "filename": "Inazuma_Eleven_123_Thai_v1.0.1.xdelta.part03",
+        "size": 94371840,
+        "sha256": "f975a4392293ad3e62748b797be33a6f5c835f7d5db70ede1e60e22162973b7b",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-eleven-123/v1.0.1/Inazuma_Eleven_123_Thai_v1.0.1.xdelta.part03"
+      },
+      {
+        "filename": "Inazuma_Eleven_123_Thai_v1.0.1.xdelta.part04",
+        "size": 16733308,
+        "sha256": "e7eb9a76ee62dda00c107ca9faeb04d6113b0dea0d1b9e2a7a8ddd23206e0c4b",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-eleven-123/v1.0.1/Inazuma_Eleven_123_Thai_v1.0.1.xdelta.part04"
+      }
+    ]
+  },
+  "output": {
+    "filename": "ie123_thai_v1.0.1.3ds",
+    "size": 2147483648,
+    "sha256": "2196a0184da0960b608f2e8cb13d14691b26a65ef9263cd2be9f8f066a20e168"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องไตรภาค 1-2-3+ระบบท่าไม้ตาย+ระบบแข่งขัน 100%",
+    "whole_game_census": "264,698/264,699 รายการ = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-08T16:00:00+07:00",
+    "method": "clean_source_xdelta3_roundtrip",
+    "note": "Clean 2.0 GB Japan Decrypted 3DS cartridge source verified with clean-source roundtrip; In-ROM binary census passed with 264,698/264,699 records (100.00%); 8-pillar audit passed with 0 critical freeze and 0 errors; IVFC SHA-256 hash chain verified for 110,377 modified blocks.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true,
+    "patcher_test_passed": true
+  }
+}
