@@ -33,6 +33,16 @@ Remote metadata was checked for filename, size, and modified time. Archive SHA-2
 
 An identity check proves that a web patch asset matches its manifest. It does not by itself prove that the patch reconstructs the expected ROM. A roundtrip is considered verified only when the patch is applied to the pinned clean source and the reconstructed output matches the expected size and SHA-256.
 
+## Dragon Ball Fusions
+
+The `v1.0.7` web patch targets the 1 GiB decrypted USA cartridge image (`CTR-P-BDLE`). Released as `v1.0.7` official with full RomFS IVFC hash tree recalculation (`L1_bad=0, L2_bad=0, L3_bad=0, PASS=True`) via `tools/ncch_ivfc_rebuild.py`, completely eliminating real 3DS hardware ErrDisp `0xf96047a2` crash in `nn::fs::MountRom` / `GetRomRequiredMemorySize` (address `0x0010b67c`), enforcing standard "Skill Names in English, Descriptions in Thai" (619 skills), eradicating battle UI `????` callouts, and providing flawless CIA package conversion.
+
+- Accepted source: `Dragon Ball Fusions (USA).3ds`, 1,073,741,824 bytes
+- Source SHA-256: `3b0fdf5d9062732dbae97ab71c346bd76c77a0ed4d56c68783f18d3c5a7a532d`
+- Patch SHA-256: `6fba336acc277bc9ced03bc60a2bf7825ea48759936d8081fe9a2b11420c0d67`
+- Expected output SHA-256: `23989b1e0a65d13e5d007fab368d8e301343c1c16ae2648982340d0aced0c40c`
+- Verification: clean-source xdelta3 roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified (`L1_bad=0, L2_bad=0, L3_bad=0, PASS=True`).
+
 ## Ever Oasis
 
 The web patch targets the full 1 GiB USA cartridge image (`BEGE`). Released as `v1.0.3` official with full RomFS IVFC hash tree recalculation (preventing real-hardware ErrDisp panic 0xf96047a2 in `nn::fs::MountRom`), authentic Mali Bold typography, and 100% complete story/quest dialogue.

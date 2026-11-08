@@ -81,23 +81,23 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 003 / 034",
-    "version": "v1.0.6",
-    "patchDate": "2026-10-25",
+    "version": "v1.0.7",
+    "patchDate": "2026-11-08",
     "addedDate": "2026-11-04",
     "addedOrder": 2,
     "addedAt": "2026-11-04T21:10:11+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/dragon-ball-fusions.jpg",
-    "manifest": "./assets/patches/dragon-ball-fusions/v1.0.6/manifest.json",
+    "manifest": "./assets/patches/dragon-ball-fusions/v1.0.7/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN USA 3DS · 1 GB",
     "region": "USA",
     "gameCode": "BNEE",
     "sourceName": "Dragon Ball Fusions (USA).3ds · 1,073,741,824 bytes",
     "sourceHash": "3b0fdf5d9062732dbae97ab71c346bd76c77a0ed4d56c68783f18d3c5a7a532d",
-    "outputHash": "51e5124a608eea58e0118f4b6db5bd6d3cbc5806c2b8cf8db8d8295d874b27dc",
-    "moduleStatus": "เนื้อเรื่องหลัก+อีเวนต์ฟิวชั่น+ระบบต่อสู้+สารานุกรมตัวละคร 100%",
-    "wholeGameCensus": "12,410/12,410 บรรทัด = 100.00%",
+    "outputHash": "23989b1e0a65d13e5d007fab368d8e301343c1c16ae2648982340d0aced0c40c",
+    "moduleStatus": "เนื้อเรื่องและภารกิจ 95.0%",
+    "wholeGameCensus": "14,290/18,100 ข้อความ (78.95%)",
     "details": null,
     "verified": true,
     "gameVersion": "v1.0.0"
@@ -2090,6 +2090,15 @@ window.GAME_CATALOG = [
 ];
 window.GAME_UPDATES = [
   {
+    "slug": "dragon-ball-fusions",
+    "title": "Dragon Ball Fusions",
+    "platform": "3DS",
+    "version": "v1.0.7",
+    "type": "update",
+    "timestamp": "2026-11-08T21:20:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.7 คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครช ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง และจัดมาตรฐานชื่อสกิลภาษาอังกฤษ คำอธิบายภาษาไทย 100%"
+  },
+  {
     "slug": "tales-of-the-abyss",
     "title": "Tales of the Abyss",
     "platform": "3DS",
@@ -2381,10 +2390,10 @@ window.GAME_UPDATES = [
     "slug": "dragon-ball-fusions",
     "title": "Dragon Ball Fusions",
     "platform": "3DS",
-    "version": "v1.0.6",
+    "version": "v1.0.7",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.6"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.7"
   },
   {
     "slug": "dragon-quest-vii",
