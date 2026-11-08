@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "game_slug": "persona-5-royal",
+  "game_title": "Persona 5 Royal",
+  "platform": "Nintendo Switch",
+  "title_id": "01005CA01580E000",
+  "patch_version": "v1.0.5",
+  "target_game_version": "Nintendo Switch base revision v0 (US / EU)",
+  "distribution": {
+    "type": "external_mod_archive",
+    "filename": "P5R_Switch_Thai_v1.0.5_Mod.zip",
+    "url": "https://drive.google.com/file/d/1_XFr_lHYOiVXOEVk6yr7_vRzyD8Lytc0/view?usp=sharing",
+    "size": 148516197,
+    "sha256": "ae68cf2866e6fd49d06e4245af0cf64f463bafc15be6885a06d360ea83556f1f",
+    "release_date": "2026-11-08",
+    "date_source": "remote_file_modified_time"
+  },
+  "release_status": {
+    "module_status": "ครบทั้ง 28 โมดูล 100.00%",
+    "whole_game_census": "232,202 / 232,202 ระเบียนใน 7,543 ไฟล์ย่อย = 100.00%"
+  },
+  "verification": {
+    "archive_identity_verified": true,
+    "binary_readback_verified": true,
+    "hardware_verified": false
+  }
+}

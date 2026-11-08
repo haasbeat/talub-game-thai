@@ -26,7 +26,7 @@ The Switch catalog does not run xdelta in the browser. Each game opens a verifie
 - `fire-emblem-three-houses` — `FE16_Thai_v1.3.5_Mod.zip`, 316,823,839 bytes, remote modified date 2026-11-07
 - `fire-emblem-engage` — `FE17_Thai_v2.0.5_All_In_One.zip`, 97,584,355 bytes, remote modified date 2026-10-24
 - `disgaea-5-complete` — `Disgaea_5_Complete_v1.0.1_Mod.zip`, 970,542,683 bytes, remote modified date 2026-11-06
-- `persona-5-royal` — `P5R_Switch_Thai_v1.0.4_Mod.zip`, 148,425,863 bytes, remote modified date 2026-11-06
+- `persona-5-royal` — `P5R_Switch_Thai_v1.0.5_Mod.zip`, 148,516,197 bytes, remote modified date 2026-11-08
 - `village-in-the-shade` — `Village_in_the_Shade_Thai_v1.0.0_Mod.zip`, 8,334,151 bytes, remote modified date 2026-11-01
 
 Remote metadata was checked for filename, size, and modified time. Archive SHA-256 values come from the verified release records and are displayed on each game page so users can check the downloaded file independently.
