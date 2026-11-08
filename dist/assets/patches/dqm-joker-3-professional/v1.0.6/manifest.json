@@ -5,7 +5,7 @@
   "platform": "3DS",
   "region": "Japan",
   "game_code": "BDQJ",
-  "patch_version": "v1.0.5",
+  "patch_version": "v1.0.6",
   "engine": "xdelta3",
   "accepted_sources": [
     {
@@ -15,15 +15,15 @@
     }
   ],
   "patch": {
-    "filename": "DQMJ3P_Thai_v1.0.5.xdelta",
+    "filename": "DQMJ3P_Thai_v1.0.6.xdelta",
     "size": 10585165,
-    "sha256": "d69b1022dd0cfd31489cc136d6e969b9cb861a7b4ce62d72740afeb9e20114e9",
-    "release_date": "2026-11-08",
+    "sha256": "ccae77105f74491d352d249f49ddd27944b04ddbfd816fc9d657fb7950267986",
+    "release_date": "2026-11-09",
     "date_source": "release_build",
-    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/dqm-joker-3-professional/v1.0.5/DQMJ3P_Thai_v1.0.5.xdelta"
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/dqm-joker-3-professional/v1.0.6/DQMJ3P_Thai_v1.0.6.xdelta"
   },
   "output": {
-    "filename": "Dragon Quest Monsters - Joker 3 Professional (Thai v1.0.5).3ds",
+    "filename": "Dragon Quest Monsters - Joker 3 Professional (Thai v1.0.6).3ds",
     "size": 2147483648,
     "sha256": "43f64bad09332105356cdf1aaa053dd40dc50c0d04a7ab3b88da69c6156d11f9"
   },
@@ -36,7 +36,7 @@
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {
-    "verified_at": "2026-11-08T23:53:00+07:00",
+    "verified_at": "2026-11-09T00:07:00+07:00",
     "method": "browser_xdelta3_wasm_apply",
     "note": "Patch applies to clean Japan 2GB ROM with browser xdelta3 wasm engine bit-identically matching target SHA-256 with 100% valid IVFC hash tree (L1_bad=0, L2_bad=0, L3_bad=0) and dropped overwritten auxiliary partitions (partitions_valid=True) to prevent FBI 0xD8E08025 Invalid NCCH installation error.",
     "patcher_test_passed": true,
