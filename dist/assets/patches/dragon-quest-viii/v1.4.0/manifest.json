@@ -16,29 +16,31 @@
   ],
   "patch": {
     "filename": "Dragon_Quest_VIII_Thai_v1.4.0.xdelta",
-    "size": 2305262,
-    "sha256": "331e727e542e8dbb137df8dca874db9dffda84380f5b219462462f9a78f8dbb8",
-    "release_date": "2026-11-02",
+    "size": 2371171,
+    "sha256": "11936bac4307e293256f8cc4d75f41aa13e69ce818c2ef0de0c96ac5cb170e07",
+    "release_date": "2026-11-08",
     "date_source": "patch_file_mtime",
     "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/dragon-quest-viii/v1.4.0/Dragon_Quest_VIII_Thai_v1.4.0.xdelta"
   },
   "output": {
     "filename": "Dragon Quest VIII - Journey of the Cursed King (Thai).3ds",
     "size": 4294967296,
-    "sha256": "5421ef8b2d32c4769395eb654e8e7198bfc4651fc112b62c704472eddbe75491"
+    "sha256": "6c7e6c052a2991b9746a54d896f05901b6369a5d85e632d104fb2bc6aef4d633"
   },
   "release_status": {
-    "module_status": "เนื้อเรื่องหลัก + Red & Morrie + Party Talk + เมนู (ป้ายชื่อผู้พูดในฉากอีเวนต์ยังเป็นภาษาอังกฤษ)",
+    "module_status": "เนื้อเรื่องหลัก 100% + ปรับปรุงเวท/สกิลมาตรฐานญี่ปุ่น + ฟอนต์ป้องกันล้นขอบจอ + คำนวณ RomFS IVFC สมบูรณ์",
     "whole_game_census": "36,576/39,493 บรรทัด (ภาพรวมทั้งเกม 98.37%)",
     "critical_freeze": 0,
     "errors": 0,
-    "census_source": "STATE.md / release notes (2026-11-05 audit)"
+    "census_source": "STATE.md / release notes (2026-11-08 audit)"
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {
-    "verified_at": "2026-11-04T22:40:00+07:00",
+    "verified_at": "2026-11-08T21:30:00+07:00",
     "method": "owner_reported_xdelta_patcher_test",
     "patcher_test_passed": true,
-    "patch_sha256_verified": true
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "ivfc_verified": true
   }
 }

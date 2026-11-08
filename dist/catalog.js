@@ -231,7 +231,7 @@ window.GAME_CATALOG = [
     "platformLabel": "3DS",
     "index": "3DS | 007 / 034",
     "version": "v1.4.0",
-    "patchDate": "2026-11-02",
+    "patchDate": "2026-11-08",
     "addedDate": "2026-11-04",
     "addedOrder": 5,
     "addedAt": "2026-11-04T21:10:11+07:00",
@@ -244,8 +244,8 @@ window.GAME_CATALOG = [
     "gameCode": "BQ8E",
     "sourceName": "Dragon Quest VIII - Journey of the Cursed King (USA).3ds · 4,294,967,296 bytes",
     "sourceHash": "589ab3eedfb872136a99c23407c9dff45cd9ce1d31ed24c5ecb196fa8657c4fc",
-    "outputHash": "5421ef8b2d32c4769395eb654e8e7198bfc4651fc112b62c704472eddbe75491",
-    "moduleStatus": "เนื้อเรื่องหลัก + Red & Morrie + Party Talk + เมนู (ป้ายชื่อผู้พูดในฉากอีเวนต์ยังเป็นภาษาอังกฤษ)",
+    "outputHash": "6c7e6c052a2991b9746a54d896f05901b6369a5d85e632d104fb2bc6aef4d633",
+    "moduleStatus": "เนื้อเรื่องหลัก 100% + ปรับปรุงเวท/สกิลมาตรฐานญี่ปุ่น + ฟอนต์ป้องกันล้นขอบจอ + คำนวณ RomFS IVFC สมบูรณ์",
     "wholeGameCensus": "36,576/39,493 บรรทัด (ภาพรวมทั้งเกม 98.37%)",
     "details": {
       "thaiTitle": "ดราก้อนเควสต์ VIII ฉบับภาษาไทย",
@@ -2089,6 +2089,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "dragon-quest-viii",
+    "title": "Dragon Quest VIII: Journey of the Cursed King",
+    "platform": "3DS",
+    "version": "v1.4.0",
+    "type": "update",
+    "timestamp": "2026-11-08T21:30:00+07:00",
+    "note": "อัปเดตแพตช์ v1.4.0 คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครช ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง, จัดมาตรฐานชื่อคาถาทับศัพท์ญี่ปุ่น และตัดบรรทัดตามพิกเซลจริงไม่ล้นกล่อง"
+  },
   {
     "slug": "dragon-ball-fusions",
     "title": "Dragon Ball Fusions",

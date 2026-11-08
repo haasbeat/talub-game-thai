@@ -33,6 +33,16 @@ Remote metadata was checked for filename, size, and modified time. Archive SHA-2
 
 An identity check proves that a web patch asset matches its manifest. It does not by itself prove that the patch reconstructs the expected ROM. A roundtrip is considered verified only when the patch is applied to the pinned clean source and the reconstructed output matches the expected size and SHA-256.
 
+## Dragon Quest VIII: Journey of the Cursed King
+
+The `v1.4.0` web patch targets the 4 GiB decrypted USA cartridge image (`CTR-P-BQ8E`). Released as `v1.4.0` official with full RomFS IVFC hash tree recalculation (`L1_bad=0, L2_bad=0, L3_bad=0, PASS=True`) via `tools/ncch_ivfc_rebuild.py`, completely eliminating real 3DS hardware ErrDisp `0xf96047a2` crash in `nn::fs::MountRom` / `GetRomRequiredMemorySize` (address `0x0010b67c`), standardizing all magic spells/skills to canonical Japanese Katakana transliteration across 581 files, and applying pixel-accurate Thai typography wrapping (`FontDefault_13.bffnt`) with zero box overflow (`critical=0, width_warnings=0`) across 39,141 pages.
+
+- Accepted source: `Dragon Quest VIII - Journey of the Cursed King (USA).3ds`, 4,294,967,296 bytes
+- Source SHA-256: `589ab3eedfb872136a99c23407c9dff45cd9ce1d31ed24c5ecb196fa8657c4fc`
+- Patch SHA-256: `11936bac4307e293256f8cc4d75f41aa13e69ce818c2ef0de0c96ac5cb170e07`
+- Expected output SHA-256: `6c7e6c052a2991b9746a54d896f05901b6369a5d85e632d104fb2bc6aef4d633`
+- Verification: clean-source xdelta3 roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified (`L1_bad=0, L2_bad=0, L3_bad=0, PASS=True`); release guard passed (`artifact_roundtrip_verified`).
+
 ## Dragon Ball Fusions
 
 The `v1.0.7` web patch targets the 1 GiB decrypted USA cartridge image (`CTR-P-BDLE`). Released as `v1.0.7` official with full RomFS IVFC hash tree recalculation (`L1_bad=0, L2_bad=0, L3_bad=0, PASS=True`) via `tools/ncch_ivfc_rebuild.py`, completely eliminating real 3DS hardware ErrDisp `0xf96047a2` crash in `nn::fs::MountRom` / `GetRomRequiredMemorySize` (address `0x0010b67c`), enforcing standard "Skill Names in English, Descriptions in Thai" (619 skills), eradicating battle UI `????` callouts, and providing flawless CIA package conversion.
