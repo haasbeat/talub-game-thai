@@ -104,12 +104,12 @@ The `v1.0.3` web patch targets the 4 GiB decrypted Japanese cartridge image (`CT
 
 ## Metal Max 4: Gekkou no Diva
 
-The `v1.3.3` web patch targets the 1 GiB decrypted Japanese cartridge image (`CTR-P-AX4J`).
+The `v1.3.4` web patch targets the 1 GiB decrypted Japanese cartridge image (`CTR-P-AX4J`). Released as `v1.3.4` official fixing NCCH ExHeader (`0x160`), ExeFS Superblock (`0x1C0`), and RomFS Superblock (`0x1E0`) hash alignments required for flawless CIA package conversion via `makerom` / `3DS CIA Patcher` (`Content 0 Is Corrupt res = -12` resolved), and full 4-tier watermark parity (Tier 1 Title/Header, Tier 2 Memory Center, Tier 3 .rodata & code.ips, Tier 4 Manual).
 
 - Accepted source SHA-256: `c815bff9d8a41bde58bd98a08c698ea0d7a573c06a59c0d8af1144b8ad5b697f`
-- Patch SHA-256: `b77ef5b03ba91eea6f5206d7456cce73828a87078faba4a9745cd50b08b650a0`
-- Expected output SHA-256: `fb3716a8d6549f0acba7ddc77d0523ab78ea28cbe87ee788d2e3e5c81095d81e`
-- Verification: the 142,484,554-byte patch is stored in R2 as two versioned parts; all parts passed Worker CORS and byte-range checks. Tested end-to-end on the live site in Google Chrome: browser fetched both parts from R2, assembled the patch Blob, executed xdelta3 WebAssembly in worker (6s), and confirmed the reconstructed 1 GiB ROM matches expected target byte-for-byte (39.5s total).
+- Patch SHA-256: `af251c89e6ea8302cb524728e516afda5cf8f8b66fb186931fce2466d03efe12`
+- Expected output SHA-256: `b1f130fdf564da68e0d8fca9b3c8cc35d7ad900cde453d3f998cba558ba26501`
+- Verification: the 142,484,590-byte patch is stored in R2 as two versioned parts; all parts passed Worker CORS and byte-range checks. Tested end-to-end: clean-source roundtrip verified 100% bit-identical, and CIA conversion via `tools/makerom/makerom -f cia -ignoresign` verified with returncode 0 without corruption errors.
 
 ## Mana Khemia: Alchemists of Al-Revis
 

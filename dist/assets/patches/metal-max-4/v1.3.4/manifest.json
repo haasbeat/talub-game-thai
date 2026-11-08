@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "game_slug": "metal-max-4",
+  "game_title": "Metal Max 4: Gekkou no Diva",
+  "platform": "3DS",
+  "region": "Japan",
+  "game_code": "AX4J",
+  "patch_version": "v1.3.4",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Metal Max 4 - Gekkou no Diva (Japan).3ds",
+      "size": 1073741824,
+      "sha256": "c815bff9d8a41bde58bd98a08c698ea0d7a573c06a59c0d8af1144b8ad5b697f"
+    }
+  ],
+  "patch": {
+    "filename": "Metal_Max_4_Thai_v1.3.4.xdelta",
+    "size": 142484590,
+    "sha256": "af251c89e6ea8302cb524728e516afda5cf8f8b66fb186931fce2466d03efe12",
+    "parts": [
+      {
+        "filename": "Metal_Max_4_Thai_v1.3.4.xdelta.part00",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/metal-max-4/v1.3.4/Metal_Max_4_Thai_v1.3.4.xdelta.part00",
+        "size": 94371840,
+        "sha256": "8e9dc992c737604cc4e25a620e8ac7db1f7611c569067789df58ee5da71f06de"
+      },
+      {
+        "filename": "Metal_Max_4_Thai_v1.3.4.xdelta.part01",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/metal-max-4/v1.3.4/Metal_Max_4_Thai_v1.3.4.xdelta.part01",
+        "size": 48112750,
+        "sha256": "6bf376b388b1eeccb221409140de6e1237dc6fa73551098cc055584d5acf58d0"
+      }
+    ],
+    "release_date": "2026-11-08",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/metal-max-4/v1.3.4/Metal_Max_4_Thai_v1.3.4.xdelta"
+  },
+  "output": {
+    "filename": "Metal Max 4 - Gekkou no Diva (Thai v1.3.4).3ds",
+    "size": 1073741824,
+    "sha256": "b1f130fdf564da68e0d8fca9b3c8cc35d7ad900cde453d3f998cba558ba26501"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลักและระบบเกม 100%",
+    "whole_game_census": "47,078/81,067 สล็อตไบนารี (58.1%); ข้อความที่ใช้งานจริง 47,078/47,078",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "STATE.md และ audit_mm4.py (2026-11-08)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-08T15:48:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "ผ่านการตรวจสอบ Roundtrip บิตต่อบิต 100% จาก clean source c815bff9… ได้ผลลัพธ์ b1f130fd… ตรงกับ release target และแก้ไขปัญหาแปลง CIA (res = -12) ใน makerom เรียบร้อย",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}
