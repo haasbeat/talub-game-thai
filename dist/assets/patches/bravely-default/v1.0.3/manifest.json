@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "game_slug": "bravely-default",
+  "game_title": "Bravely Default",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "BTEE",
+  "patch_version": "v1.0.3",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Bravely Default (USA) (En,Ja,Fr,De,Es,It).3ds",
+      "size": 4294967296,
+      "sha256": "6b4a89fa3385e967ab1db282b1616dc58df659c90a0626850d468334c70a0af2"
+    }
+  ],
+  "patch": {
+    "filename": "Bravely_Default_USA_TH_v1.0.3.xdelta",
+    "size": 3485234,
+    "sha256": "e80184a59db84a6dd6779a6c941a55e719de77fedc252e78d07dab7ba00f0c3e",
+    "release_date": "2026-11-09",
+    "date_source": "release_build",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/bravely-default/v1.0.3/Bravely_Default_USA_TH_v1.0.3.xdelta"
+  },
+  "output": {
+    "filename": "Bravely_Default_USA_TH_v1.0.3.3ds",
+    "size": 4294967296,
+    "sha256": "dac3ce8857b077fa098c1fcf0954cbcdd40ff6a9abcf6162bfa02b204c3c74af"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก+ปาร์ตี้แช็ต+ระบบต่อสู้+เมนู+ไดอารีดี 100% ครบทั้ง 14 หมวดหมู่",
+    "whole_game_census": "39,379/39,379 เรคคอร์ด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-09T00:52:00+07:00",
+    "method": "clean_source_xdelta3_roundtrip",
+    "patcher_test_passed": true,
+    "patch_sha256_verified": true
+  }
+}

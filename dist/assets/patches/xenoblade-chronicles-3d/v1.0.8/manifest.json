@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "xenoblade-chronicles-3d",
+  "game_title": "Xenoblade Chronicles 3D",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "CAFE",
+  "patch_version": "v1.0.8",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Xenoblade Chronicles 3D (USA) (En,Fr,Es).3ds",
+      "size": 4294967296,
+      "sha256": "a7500bbf6c280f5c1b74ea6b230841079ddd539728bcfa9b197c4887836f8880"
+    }
+  ],
+  "patch": {
+    "filename": "Xenoblade_Chronicles_3D_Thai_v1.0.8.xdelta",
+    "size": 3253394,
+    "sha256": "777cf4102efbc528ca51a8d07e5108a796fa9eea8eaeba4512ae553ed97c7f63",
+    "release_date": "2026-11-09",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/xenoblade-chronicles-3d/v1.0.8/Xenoblade_Chronicles_3D_Thai_v1.0.8.xdelta"
+  },
+  "output": {
+    "filename": "Xenoblade_Chronicles_3D_Thai_v1.0.8.3ds",
+    "size": 4294967296,
+    "sha256": "ccf8ccb4297e1ed761563e32b505db9de074e1f60d85103b7b846a4b26d3392b"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก บทสนทนา เควสต์ คัตซีน และเมนูที่ผู้เล่นเห็นครบ 100% (แก้จอแดง ErrDisp 0xf96047a2 บน 3DS จริง)",
+    "whole_game_census": "42,953/68,133 เรคคอร์ด (ภาพรวมไบนารีทั้งเกม 63.04%)",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "STATE.md / release notes (2026-11-09 IVFC hash tree rebuild)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-09T00:51:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean source located by SHA-256 and patched with xdelta3; output matches release checksums and verified IVFC L1=0, L2=0, L3=0.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}

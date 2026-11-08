@@ -33,6 +33,16 @@ Remote metadata was checked for filename, size, and modified time. Archive SHA-2
 
 An identity check proves that a web patch asset matches its manifest. It does not by itself prove that the patch reconstructs the expected ROM. A roundtrip is considered verified only when the patch is applied to the pinned clean source and the reconstructed output matches the expected size and SHA-256.
 
+## Bravely Default (USA)
+
+The `v1.0.3` web patch targets the full 4 GiB retail cartridge dump (`CTR-P-BTRE`, Title ID `00040000000FC500`). Released as `v1.0.3` official Whole-Game Complete Edition with full RomFS IVFC hash tree recalculation (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`) via `tools/ncch_ivfc_rebuild.py`, completely eliminating real Nintendo 3DS hardware ErrDisp `0xf96047a2` crash in `nn::fs::MountRom` / `GetRomRequiredMemorySize` (address `0x0010b67c`), built cleanly from the pinned 4 GiB clean retail cartridge dump, featuring Chakra Petch SemiBold 12.0px pixel-perfect typography, PUA diacritic stacking, Knuth-Plass dynamic programming line-wrap balance (113 records polished, 0 remaining issues), and 100% In-ROM binary census complete (39,379/39,379 records across all 14 modules).
+
+- Accepted source: `Bravely Default (USA) (En,Ja,Fr,De,Es,It).3ds`, 4,294,967,296 bytes
+- Source SHA-256: `6b4a89fa3385e967ab1db282b1616dc58df659c90a0626850d468334c70a0af2`
+- Patch SHA-256: `e80184a59db84a6dd6779a6c941a55e719de77fedc252e78d07dab7ba00f0c3e`
+- Expected output SHA-256: `dac3ce8857b077fa098c1fcf0954cbcdd40ff6a9abcf6162bfa02b204c3c74af`
+- Verification: clean-source xdelta3 roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`); direct In-ROM binary census verified across 39,379/39,379 records (100.0% In-ROM ground truth, 0 critical freeze).
+
 ## CardFight!! Vanguard G: Stride to Victory!! (Japan)
 
 The `v2.0.0` web patch targets the 512 MiB decrypted Japanese cartridge image (`CTR-P-BVFJ`, Title ID `0004000000170500`). Released as `v2.0.0` Ultimate Master Edition with full RomFS IVFC hash tree recalculation (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`) via `tools/ncch_ivfc_rebuild.py`, completely eliminating real Nintendo 3DS hardware ErrDisp `0xf96047a2` crash in `nn::fs::MountRom` / `GetRomRequiredMemorySize` (address `0x0010b67c`), exact FuRyu `.rtz` binary stream parsing (`c0..c7`) eliminating all VM bytecode desync and zero-fill heap crashes (0x0010D9DE `beq -> ble`), Tales of Hearts / Abyss discrete pixel-locked typography engine (`2005_iannnnnAMD.ttf`), centered UI badges, and 100% In-ROM binary census complete (10,042/10,042 items).
