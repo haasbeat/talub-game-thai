@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "time-travelers",
+  "game_title": "Time Travelers",
+  "platform": "3DS",
+  "region": "Japan",
+  "game_code": "ATRJ",
+  "patch_version": "v1.0.2",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Time Travelers (Japan).3ds",
+      "size": 2147483648,
+      "sha256": "ce9781388f3e5ac2bf41426afe5aee93a171760b10b898939851d998d9538cd7"
+    }
+  ],
+  "patch": {
+    "filename": "Time_Travelers_Thai_v1.0.2.xdelta",
+    "size": 4792297,
+    "sha256": "c3e897866c4c47719305bcc535a9e7c7133abf9fa302f2a49b8086126a98ac42",
+    "release_date": "2026-11-09",
+    "date_source": "release_build",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/time-travelers/v1.0.2/Time_Travelers_Thai_v1.0.2.xdelta"
+  },
+  "output": {
+    "filename": "Time Travelers (Thai v1.0.2).3ds",
+    "size": 2147483648,
+    "sha256": "3abc60e63be2188fe1d23165a29a9faa74482ef4b1007785e17bbdf7d0dd7ebd"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่อง 6 รูท+ไคลแมกซ์+ระบบ Time Stop+เหตุการณ์ TIP+UI ทั้งหมด 100%",
+    "whole_game_census": "12,314/12,578 ข้อความ (97.9%)",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-09T00:25:00+07:00",
+    "method": "owner_reported_xdelta_patcher_test",
+    "patcher_test_passed": true,
+    "patch_sha256_verified": true,
+    "source_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true,
+    "ivfc_verified": true
+  }
+}

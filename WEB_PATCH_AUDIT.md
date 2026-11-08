@@ -1,6 +1,6 @@
 # Web patch audit
 
-Updated: 2026-11-08 (Asia/Bangkok)
+Updated: 2026-11-09 (Asia/Bangkok)
 
 ## Inventory
 
@@ -32,6 +32,16 @@ The Switch catalog does not run xdelta in the browser. Each game opens a verifie
 Remote metadata was checked for filename, size, and modified time. Archive SHA-256 values come from the verified release records and are displayed on each game page so users can check the downloaded file independently.
 
 An identity check proves that a web patch asset matches its manifest. It does not by itself prove that the patch reconstructs the expected ROM. A roundtrip is considered verified only when the patch is applied to the pinned clean source and the reconstructed output matches the expected size and SHA-256.
+
+## Time Travelers (Japan)
+
+The `v1.0.2` web patch targets the 2 GiB decrypted Japanese cartridge image (`CTR-P-ATRJ`). Released as `v1.0.2` official with full RomFS IVFC hash tree recalculation (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`) via `tools/ncch_ivfc_rebuild.py`, completely eliminating real Nintendo 3DS hardware ErrDisp `0xf96047a2` crash in `nn::fs::MountRom` / `GetRomRequiredMemorySize` (address `0x0010b67c`), built cleanly from the pinned original Japanese cartridge dump, and featuring 100% complete story across all 6 character routes and climax timeline.
+
+- Accepted source: `Time Travelers (Japan).3ds`, 2,147,483,648 bytes
+- Source SHA-256: `ce9781388f3e5ac2bf41426afe5aee93a171760b10b898939851d998d9538cd7`
+- Patch SHA-256: `c3e897866c4c47719305bcc535a9e7c7133abf9fa302f2a49b8086126a98ac42`
+- Expected output SHA-256: `3abc60e63be2188fe1d23165a29a9faa74482ef4b1007785e17bbdf7d0dd7ebd`
+- Verification: clean-source xdelta3 roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`); direct In-ROM binary census verified across 12,314/12,578 records (97.9% In-ROM binary census / 100% translatable text, 0 critical freeze).
 
 ## Professor Layton and the Miracle Mask
 

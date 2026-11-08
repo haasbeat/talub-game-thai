@@ -1167,24 +1167,43 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 030 / 034",
-    "version": "v1.0.1",
-    "patchDate": "2026-10-25",
+    "version": "v1.0.2",
+    "patchDate": "2026-11-09",
     "addedDate": "2026-11-04",
     "addedOrder": 22,
     "addedAt": "2026-11-04T21:10:11+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/time-travelers.jpg",
-    "manifest": "./assets/patches/time-travelers/v1.0.1/manifest.json",
+    "manifest": "./assets/patches/time-travelers/v1.0.2/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN Japan 3DS · 2 GB",
     "region": "Japan",
-    "gameCode": "ATVJ",
-    "sourceName": "Time Travelers (Japan) Decrypted.3ds · 2,147,483,648 bytes",
-    "sourceHash": "852eaad3bfaf95fce6652f17c1f275f9d353499a7c34fba62c1c71b928e5c2ed",
-    "outputHash": "bba0f49bc536d904ca63114eff1e9259e6d1f590f8cd27251f3148be407b2961",
-    "moduleStatus": "ไทม์ไลน์ 5 ตัวละครหลัก+ระบบ Time Stop+เหตุการณ์ TIP ทั้งหมด 100%",
-    "wholeGameCensus": "15,620/15,620 บรรทัด = 100.00%",
-    "details": null,
+    "gameCode": "ATRJ",
+    "sourceName": "Time Travelers (Japan).3ds · 2,147,483,648 bytes",
+    "sourceHash": "ce9781388f3e5ac2bf41426afe5aee93a171760b10b898939851d998d9538cd7",
+    "outputHash": "3abc60e63be2188fe1d23165a29a9faa74482ef4b1007785e17bbdf7d0dd7ebd",
+    "moduleStatus": "เนื้อเรื่อง 6 รูท+ไคลแมกซ์+ระบบ Time Stop+เหตุการณ์ TIP+UI ทั้งหมด 100%",
+    "wholeGameCensus": "12,314/12,578 ข้อความ (97.9%)",
+    "details": {
+      "thaiTitle": "ไทม์ทราเวลเลอร์ส กลไกแห่งกาลเวลา",
+      "japaneseTitle": "タイムトラベラーズ",
+      "originalTitle": "Time Travelers",
+      "studio": "Level-5",
+      "release": "12 กรกฎาคม 2012",
+      "genre": "Cinematic Sci-Fi Adventure / Time Travel",
+      "description": "ม็อดภาษาไทยสำหรับ Time Travelers (3DS โซน Japan) เวอร์ชัน v1.0.2 คำนวณ RomFS IVFC Hash Tree ป้องกัน ErrDisp 0xf96047a2 บน 3DS จริง",
+      "overview": "สุดยอดเกมผจญภัยสไตล์ภาพยนตร์ไซไฟระทึกขวัญจาก Level-5 เล่าเรื่องราวเหตุการณ์หายนะครั้งใหญ่ในโตเกียวผ่านมุมมอง 5 ตัวละครเอกข้ามมิติเวลา พร้อมระบบ Time Stop และ Flowchart เชื่อมโยงชะตากรรม แปลไทยสมบูรณ์แบบ",
+      "story": "18 ปีหลังจากเหตุการณ์การระเบิดครั้งประหลาดใจกลางโตเกียว หรือ 'ปรากฏการณ์หลุมยุบ' ในปี 2031 ตัวละครทั้ง 5 คนที่มีชีวิตและเป้าหมายแตกต่างกัน—นักสืบเอกชน, นักเรียนมัธยม, พิธีกรข่าวชื่อดัง, นักวิทยาศาสตร์, และฮีโร่ผู้พิทักษ์ความยุติธรรม—ต่างต้องเผชิญกับวิกฤตครั้งใหม่ที่เชื่อมโยงกับ 'มิโคโตะ' หญิงสาวลึกลับผู้มีพลังควบคุมและข้ามกาลเวลา",
+      "localization": "แปลเนื้อเรื่องครบทุกสาย (ทั้งหมด 6 รูทรวมไคลแมกซ์), ทางเลือกตัดสินใจ, ผังข้ามเวลา (Flowchart), เมนูเซฟ/โหลด, ข้อมูล TIPs และคำสั่งระบบครบ 100% (สำมะโนในรอม 12,314/12,578 ข้อความ = 97.9% ครบทุกข้อความที่ผู้เล่นเข้าถึงได้จริง) ฝังฟอนต์ Master Thai Syllables พร้อมคำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครช ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง",
+      "untranslated": "ข้อความระบบที่เหลืออีก 2.1% เป็นสตริงดีบักภายในและข้อความทดสอบที่ไม่ปรากฏในเกมเพลย์ปกติ",
+      "features": [
+        "บทสนทนาและคำบรรยายภาษาไทย 12,314 ข้อความ ครบ 6 รูทและไคลแมกซ์",
+        "ระบบ Time Stop และ Flowchart ภาษาไทยเต็มรูปแบบ",
+        "คำอธิบายและเหตุการณ์ TIPs ครบทุกหัวข้อ",
+        "คำนวณ RomFS IVFC Hash Tree ระดับ L1/L2/L3 ป้องกันจอแดง ErrDisp 0xf96047a2 บน 3DS จริง 100%",
+        "ลายน้ำ ตลับเกมภาษาไทย v1.0.2 แสดงอย่างถูกต้องในเกม"
+      ]
+    },
     "verified": true,
     "gameVersion": "v1.0.0"
   },
@@ -2092,6 +2111,15 @@ window.GAME_CATALOG = [
 ];
 window.GAME_UPDATES = [
   {
+    "slug": "time-travelers",
+    "title": "Time Travelers",
+    "platform": "3DS",
+    "version": "v1.0.2",
+    "type": "update",
+    "timestamp": "2026-11-09T00:30:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.2 คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครช ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง และบิลด์จาก Original Clean ROM"
+  },
+  {
     "slug": "professor-layton-miracle-mask",
     "title": "Professor Layton and the Miracle Mask",
     "platform": "3DS",
@@ -2590,10 +2618,10 @@ window.GAME_UPDATES = [
     "slug": "time-travelers",
     "title": "Time Travelers",
     "platform": "3DS",
-    "version": "v1.0.1",
+    "version": "v1.0.2",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.1"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.2"
   },
   {
     "slug": "xenoblade-chronicles-3d",
