@@ -262,6 +262,16 @@ The `v1.0.5` web patch targets the full 2 GiB decrypted USA cartridge image (`CT
 - Expected output SHA-256: `39999a0cf1cbb397cfd561f1c8dfb7ca4190a090d8fbf329612e0d9a443206fe`
 - Verification: clean-source xdelta3 roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`); direct In-ROM binary census verified across 26,033/26,159 records (99.52% In-ROM binary census / 100% translatable text, 0 critical freeze).
 
+## 7th Dragon III Code: VFD (USA)
+
+The `v1.0.5` web patch targets the full 2 GiB decrypted USA cartridge dump (`CTR-P-BD7E`, Title ID `000400000018F800`). Released as `v1.0.5` official with full RomFS IVFC hash tree recalculation (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`) via `tools/ncch_ivfc_rebuild.py`, completely eliminating real Nintendo 3DS hardware ErrDisp `0xf96047a2` crash in `nn::fs::MountRom` / `GetRomRequiredMemorySize` (address `0x0010b67c`), built cleanly from the pinned 2,147,483,648-byte clean decrypted dump, featuring Chakra Petch Medium 12.0px typography, 744 Thai glyphs & Master PUA syllables, Title Screen `Ver. 1.05` watermark stamp, item description bounds limits (<= 300 px), and 100% In-ROM binary census complete (42,688/42,688 records).
+
+- Accepted source: `7th Dragon III Code - VFD (USA).3ds`, 2,147,483,648 bytes
+- Source SHA-256: `0afb4dd32c861c2137277f5d40930c318c84a2fe0af9f00478414943131a4d3e`
+- Patch SHA-256: `f9e2a112496554cfff5ed473a0c2b5f599538e7ed3de60038c8321d247864694`
+- Expected output SHA-256: `a32800ec27966e9ccd5563945e42a925f882b84b647245dc262d88f7e0f52814`
+- Verification: clean-source xdelta3 roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`); direct In-ROM binary census verified across 42,688/42,688 records (100.0% In-ROM ground truth, 0 critical freeze).
+
 ## Final Fantasy Explorers (USA)
 
 The `v1.0.1` web patch targets the full 1 GiB decrypted USA cartridge dump (`CTR-P-BCEE`, Title ID `000400000016ED00`). Released as `v1.0.1` official with full RomFS IVFC hash tree recalculation (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`) via `tools/ncch_ivfc_rebuild.py`, completely eliminating real Nintendo 3DS hardware ErrDisp `0xf96047a2` crash in `nn::fs::MountRom` / `GetRomRequiredMemorySize` (address `0x0010b67c`), built cleanly from the pinned 1,073,741,824-byte clean decrypted dump, featuring Chakra Petch SemiBold 12.0px typography, PUA diacritic stacking, opening prologue MOFLEX subtitle integration, UI/quest overflow wraps, 4-tier in-game v1.0.1 watermarks, and 100% In-ROM binary census complete (12,198/12,198 records).

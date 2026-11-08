@@ -2161,6 +2161,15 @@ window.GAME_CATALOG = [
 ];
 window.GAME_UPDATES = [
   {
+    "slug": "7th-dragon-iii-code-vfd",
+    "title": "7th Dragon III Code: VFD",
+    "platform": "3DS",
+    "version": "v1.0.5",
+    "type": "update",
+    "timestamp": "2026-11-09T02:38:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.5 คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครชจอแดง ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง (L1=0, L2=0, L3=0 bad), ป้ายเวอร์ชัน Ver. 1.05 บนหน้าแรกของเกม และโครงสร้าง ZIP มาตรฐานข้ามแพลตฟอร์ม"
+  },
+  {
     "slug": "final-fantasy-explorers",
     "title": "Final Fantasy Explorers",
     "platform": "3DS",
