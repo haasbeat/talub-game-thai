@@ -292,6 +292,16 @@ The `v1.0.1` web patch targets the full 1 GiB decrypted USA cartridge dump (`CTR
 - Expected output SHA-256: `530eaa931204e73800becc5067470bdfeafefeee850ae0c3dea020c7ba9fac1c`
 - Verification: clean-source xdelta3 roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`); direct In-ROM binary census verified across 20,870/28,557 records (73.08% In-ROM ground truth / 100% playable content, 0 critical freeze).
 
+## Monster Hunter Stories (USA)
+
+The `v1.0.1` web patch targets the full 2 GiB decrypted USA cartridge dump (`CTR-P-AAHE`, Title ID `00040000001BC500`). Released as `v1.0.1` official with full RomFS IVFC hash tree recalculation (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`) via `core/ctr_romfs.py` and `tools/ncch_ivfc_rebuild.py`, completely eliminating real Nintendo 3DS hardware ErrDisp `0xf96047a2` crash in `nn::fs::MountRom` / `GetRomRequiredMemorySize` (address `0x0010b67c`), built cleanly from the pinned 2,147,483,648-byte clean decrypted dump, featuring Chakra Petch SemiBold 2x Hi-Res typography, +1px dialogue font enlargement (16px/17px) and 1px-larger speaker nameplates (17px/18px) vertically centered, expanded 3-line dialogue line spacing, +25% tutorial/rider note font enlargement (15px) with Japanese furigana line-height bit 30 cleared, 35 pre-rendered movie and mural cutscene subtitles in pure white with soft dark outline, 4-tier in-game v1.0.1 watermarks, and dual-status census 100% playable content (25,908/26,002 In-ROM records / 99.64% binary ground truth).
+
+- Accepted source: `Monster Hunter Stories (USA).3ds`, 2,147,483,648 bytes
+- Source SHA-256: `1bd136e982541d9037800cf62d9af534aef2149633e3bff0026386ce9ca7543f`
+- Patch SHA-256: `4f4c3342256d5d60f7fea913a3bfff707e7d8639bd1718b3128383900df2eeae`
+- Expected output SHA-256: `0fb2bf5c475951bca5f6db96a588d636d609e85f192e7b0569b0e95754183f01`
+- Verification: clean-source xdelta3 roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`); direct In-ROM binary census verified across 25,908/26,002 records (99.64% In-ROM ground truth, 0 critical freeze).
+
 ## Evidence tiers
 
 The 28 output-matched entries combine 22 browser xdelta3 WASM roundtrips, 6 clean-source bit-identical/CLI roundtrips. The PoPoLoCrois web xdelta was applied successfully to its pinned USA ISO with the xdelta3 CLI; its measured output SHA-256 is used because the historical v1.10 guide's MD5/SHA1 describe a different target artifact. The 13 owner-reported entries retain that label and are not silently promoted to browser-roundtrip evidence. The five entries without current verification metadata are `dragon-quest-iv`, `dragon-quest-v`, `dragon-quest-vi`, `tales-of-hearts`, and `the-world-ends-with-you`.

@@ -818,21 +818,21 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 022 / 035",
-    "version": "v1.0.0",
-    "patchDate": "2026-11-02",
+    "version": "v1.0.1",
+    "patchDate": "2026-11-09",
     "addedDate": "2026-11-05",
     "addedOrder": 39,
     "addedAt": "2026-11-05T15:55:56+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/monster-hunter-stories.jpg",
-    "manifest": "./assets/patches/monster-hunter-stories/v1.0.0/manifest.json",
+    "manifest": "./assets/patches/monster-hunter-stories/v1.0.1/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN USA 3DS · 2 GB",
     "region": "USA",
     "gameCode": "AAHE",
     "sourceName": "Monster Hunter Stories (USA).3ds · 2,147,483,648 bytes",
     "sourceHash": "1bd136e982541d9037800cf62d9af534aef2149633e3bff0026386ce9ca7543f",
-    "outputHash": "b073040f0e8e8c96bde4dedced0ea56b482bbe6ff6ed4fc277911b46b06c7b73",
+    "outputHash": "0fb2bf5c475951bca5f6db96a588d636d609e85f192e7b0569b0e95754183f01",
     "moduleStatus": "เนื้อเรื่องหลักทุกบท + เมนูระบบ + เควสต์ + สารานุกรม + ชาวเมือง 100%",
     "wholeGameCensus": "25,908/26,002 รายการ (ภาพรวมไบนารีทั้งเกม 99.64%)",
     "details": {
@@ -842,15 +842,17 @@ window.GAME_CATALOG = [
       "studio": "Capcom",
       "release": null,
       "genre": "Role-playing game",
-      "description": "ม็อดภาษาไทยสำหรับ Monster Hunter Stories (3DS โซน USA) เวอร์ชัน v1.0.0",
+      "description": "ม็อดภาษาไทยสำหรับ Monster Hunter Stories (3DS โซน USA) เวอร์ชัน v1.0.1 ปรับขนาดฟอนต์บทสนทนาและคำแนะนำอ่านสบายตาบน 3DS จริง และคำนวณ RomFS IVFC Hash Tree ป้องกัน ErrDisp 0xf96047a2",
       "overview": "ภาคแยกของ Monster Hunter ที่ผู้เล่นเป็นไรเดอร์ ฟักไข่และผูกสายสัมพันธ์กับมอนสเตอร์คู่ใจ แทนการออกล่า",
       "story": "ที่หมู่บ้านฮาคัม เหล่าไรเดอร์ไม่ล่ามอนสเตอร์ แต่ฟักไข่และสร้างสายสัมพันธ์กับมอนสตีผ่านศิลาสายสัมพันธ์ ตัวเอกกับเพื่อนสมัยเด็กอย่างเชอวาลและลิเลียแอบเข้าป่าต้องห้าม และพบไข่ที่ฟักออกมาเป็นลูกราธาลอสชื่อราธา ต่อมาเมื่อพิษทมิฬเริ่มแพร่ระบาดทั่วโลก ตัวเอกที่ผ่านพิธีสานสายสัมพันธ์แล้วจึงออกเดินทางพร้อมนาวิรู และได้พบกับเหล่าฮันเตอร์ที่มองมอนสเตอร์ต่างออกไป",
-      "localization": "แปลคัตซีนเนื้อเรื่อง บทสนทนาชาวเมืองทุกหมู่บ้าน เมนู ร้านค้า พิธีกรรม สารานุกรม เควสต์ย่อย และระบบต่อสู้ (แปลครบ 100% + สำมะโนไบนารีทั้งเกม 99.64% หรือ 25,908/26,002 รายการ) ใช้ฟอนต์ Chakra Petch SemiBold ความละเอียด 2 เท่า",
+      "localization": "แปลคัตซีนเนื้อเรื่อง บทสนทนาชาวเมืองทุกหมู่บ้าน เมนู ร้านค้า พิธีกรรม สารานุกรม เควสต์ย่อย และระบบต่อสู้ (แปลครบ 100% + สำมะโนไบนารีทั้งเกม 99.64% หรือ 25,908/26,002 รายการ) ปรับขยายขนาดฟอนต์บทสนทนาและป้ายชื่อ ขยับตำแหน่งบรรทัดตามพิกเซลจริง และคำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครช ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง",
       "untranslated": "อีก 94 รายการ (0.36%) คงเป็นอักษรละติน ได้แก่ รหัสไฟล์ภาพระบบ (dlc_*_ID) และตัวย่อสากลบน UI เช่น z, HP, EXP, RP, HR, ชื่อปุ่ม A/B/X/Y/L/R/START, แรงก์ E–S++, QR Code, StreetPass และ amiibo",
       "features": [
         "คัตซีนเนื้อเรื่อง 195 ไฟล์ 2,976 รายการ",
         "บทสนทนาชาวเมือง 7,660 รายการ",
-        "ฟอนต์ Chakra Petch SemiBold 2x Hi-Res",
+        "ฟอนต์ Chakra Petch SemiBold 2x Hi-Res คมชัด",
+        "ปรับขยายฟอนต์บทสนทนาและป้ายชื่อ ให้อ่านสบายตาบนเครื่อง 3DS จริง",
+        "คำนวณ RomFS IVFC Hash Tree ป้องกัน ErrDisp 0xf96047a2 100%",
         "ตัวเอกเลือกเพศได้ ข้อความระบบใช้ภาษากลางทางเพศ"
       ]
     },
@@ -2161,6 +2163,15 @@ window.GAME_CATALOG = [
 ];
 window.GAME_UPDATES = [
   {
+    "slug": "monster-hunter-stories",
+    "title": "Monster Hunter Stories",
+    "platform": "3DS",
+    "version": "v1.0.1",
+    "type": "update",
+    "timestamp": "2026-11-09T03:12:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.1 ปรับขยายขนาดฟอนต์บทสนทนาและป้ายชื่อ ขยับตำแหน่งบรรทัดอ่านสบายตาบน 3DS จริง และคำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครช ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง (L1=0, L2=0, L3=0 bad)"
+  },
+  {
     "slug": "etrian-odyssey-untold",
     "title": "Etrian Odyssey Untold: The Millennium Girl",
     "platform": "3DS",
@@ -2533,10 +2544,10 @@ window.GAME_UPDATES = [
     "slug": "monster-hunter-stories",
     "title": "Monster Hunter Stories",
     "platform": "3DS",
-    "version": "v1.0.0",
+    "version": "v1.0.1",
     "type": "new",
     "timestamp": "2026-11-05T15:55:56+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.1"
   },
   {
     "slug": "love-plus-plus",

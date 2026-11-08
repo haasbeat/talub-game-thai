@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "game_slug": "monster-hunter-stories",
+  "game_title": "Monster Hunter Stories",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "AAHE",
+  "patch_version": "v1.0.1",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Monster Hunter Stories (USA).3ds",
+      "size": 2147483648,
+      "sha256": "1bd136e982541d9037800cf62d9af534aef2149633e3bff0026386ce9ca7543f"
+    }
+  ],
+  "patch": {
+    "filename": "Monster_Hunter_Stories_USA_TH_v1.0.1.xdelta",
+    "size": 3799206,
+    "sha256": "4f4c3342256d5d60f7fea913a3bfff707e7d8639bd1718b3128383900df2eeae",
+    "release_date": "2026-11-09",
+    "date_source": "release_archive_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/monster-hunter-stories/v1.0.1/Monster_Hunter_Stories_USA_TH_v1.0.1.xdelta"
+  },
+  "output": {
+    "filename": "Monster Hunter Stories (USA) Thai v1.0.1.3ds",
+    "size": 2147483648,
+    "sha256": "0fb2bf5c475951bca5f6db96a588d636d609e85f192e7b0569b0e95754183f01"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลักทุกบท + เมนูระบบ + เควสต์ + สารานุกรม + ชาวเมือง 100%",
+    "whole_game_census": "25,908/26,002 รายการ (ภาพรวมไบนารีทั้งเกม 99.64%)",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-09T03:10:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean source (decrypted NCSD) located by SHA-256 and patched with the site's vendored xdelta3 wasm engine; output matches games/3ds/Monster Hunter Stories (USA)/release/v1.0.1/release_manifest.json.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}
