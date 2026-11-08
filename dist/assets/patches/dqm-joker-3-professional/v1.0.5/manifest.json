@@ -5,7 +5,7 @@
   "platform": "3DS",
   "region": "Japan",
   "game_code": "BDQJ",
-  "patch_version": "v1.0.4",
+  "patch_version": "v1.0.5",
   "engine": "xdelta3",
   "accepted_sources": [
     {
@@ -15,20 +15,20 @@
     }
   ],
   "patch": {
-    "filename": "DQMJ3P_Thai_v1.0.4.xdelta",
-    "size": 10675598,
-    "sha256": "588e01e16a5c7dac82ef2215b9d9a84ff1c9cfd8372e685d3a934a7e21345531",
+    "filename": "DQMJ3P_Thai_v1.0.5.xdelta",
+    "size": 10585165,
+    "sha256": "d69b1022dd0cfd31489cc136d6e969b9cb861a7b4ce62d72740afeb9e20114e9",
     "release_date": "2026-11-08",
     "date_source": "release_build",
-    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/dqm-joker-3-professional/v1.0.4/DQMJ3P_Thai_v1.0.4.xdelta"
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/dqm-joker-3-professional/v1.0.5/DQMJ3P_Thai_v1.0.5.xdelta"
   },
   "output": {
-    "filename": "Dragon Quest Monsters - Joker 3 Professional (Thai v1.0.4).3ds",
+    "filename": "Dragon Quest Monsters - Joker 3 Professional (Thai v1.0.5).3ds",
     "size": 2147483648,
-    "sha256": "8fea46cc22593679d25dfc9f5dabc36c23f4c99a17bbff869bfdc9f62b552655"
+    "sha256": "43f64bad09332105356cdf1aaa053dd40dc50c0d04a7ab3b88da69c6156d11f9"
   },
   "release_status": {
-    "module_status": "เนื้อเรื่องหลัก + Post-Game + เควสต์ + สกิล + ไอเทม + เนวิแมป 26 แอเรีย 100% (แก้จอแดง ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง)",
+    "module_status": "เนื้อเรื่องหลัก + Post-Game + เควสต์ + สกิล + ไอเทม + เนวิแมป 26 แอเรีย 100% (แก้จอแดง ErrDisp 0xf96047a2 และแก้ FBI Error 0xD8E08025 Invalid NCCH)",
     "whole_game_census": "18,439/20,479 รายการ (ภาพรวมทั้งเกม 90.04% In-ROM)",
     "census_source": "STATE.md / audit_dqmj3p.py (2026-11-08 audit)",
     "critical_freeze": 0,
@@ -36,9 +36,9 @@
   },
   "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
   "verification": {
-    "verified_at": "2026-11-08T12:00:00+07:00",
+    "verified_at": "2026-11-08T23:53:00+07:00",
     "method": "browser_xdelta3_wasm_apply",
-    "note": "Patch applies to clean Japan 2GB ROM with browser xdelta3 wasm engine bit-identically matching target SHA-256 with 100% valid IVFC hash tree (L1_bad=0, L2_bad=0, L3_bad=0).",
+    "note": "Patch applies to clean Japan 2GB ROM with browser xdelta3 wasm engine bit-identically matching target SHA-256 with 100% valid IVFC hash tree (L1_bad=0, L2_bad=0, L3_bad=0) and dropped overwritten auxiliary partitions (partitions_valid=True) to prevent FBI 0xD8E08025 Invalid NCCH installation error.",
     "patcher_test_passed": true,
     "source_sha256_verified": true,
     "patch_sha256_verified": true,
