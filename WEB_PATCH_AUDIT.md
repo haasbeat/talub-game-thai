@@ -4,13 +4,13 @@ Updated: 2026-11-08 (Asia/Bangkok)
 
 ## Inventory
 
-- Web manifests: 50 (45 xdelta + 5 external Nintendo Switch mod archives)
-- Cloudflare R2 storage: 45/45 xdelta patch targets hosted on R2 bucket `talub-patches` and served via CDN Worker
-- Patch identity checks passed (file size + SHA-256): 45/45
-- Patch dates recorded: 50/50
-- Dates taken directly from patch-file modified time: 43
+- Web manifests: 51 (46 xdelta + 5 external Nintendo Switch mod archives)
+- Cloudflare R2 storage: 46/46 xdelta patch targets hosted on R2 bucket `talub-patches` and served via CDN Worker
+- Patch identity checks passed (file size + SHA-256): 46/46
+- Patch dates recorded: 51/51
+- Dates taken directly from patch-file modified time: 44
 - Dates using release-archive modified time because the patch carried a ZIP epoch timestamp: 2 (`lost-in-blue-2`, `monster-hunter-stories`)
-- Clean-source roundtrip with expected output hash matched: 26
+- Clean-source roundtrip with expected output hash matched: 27
 - Owner-reported xdelta-patcher tests: 13
 - Browser apply-only test without a pinned target hash: 1
 - No current roundtrip evidence recorded in the web manifest: 5
@@ -131,8 +131,18 @@ The `v1.0.4` web patch targets the 2 GiB decrypted Japanese cartridge image (`CT
 - Expected output SHA-256: `8fea46cc22593679d25dfc9f5dabc36c23f4c99a17bbff869bfdc9f62b552655`
 - Verification: clean-source xdelta3 roundtrip tested and confirmed 100% bit-identical match; physical 3DS hardware IVFC hash tree audit passed (`tools/ncch_ivfc_rebuild.py --check --full`: `L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True`). In-ROM binary audit passed with 18,439/20,479 entries (90.04% In-ROM, 100% of real translatable text, 0 Kana, 0 dummies).
 
+## Tales of the Abyss (USA)
+
+The `v1.0.0` web patch targets the 2 GiB decrypted USA cartridge image (`CTR-P-AABE`). Released as `v1.0.0` official with 100% complete story, all 518 skits (5,591 dialogues), sidequests, battle tutorials, menu databases, Luke's Diary synopsis arena, and crisp 2x .moflex cutscene subtitles across 46 cues. Features the Tales of Hearts Regular font with seamless 3-tier vertical mark stacking and an updated physical 3DS hardware IVFC hash tree preventing black-screen / ErrDisp freezes.
+
+- Accepted source: `Tales of the Abyss (USA) (decrypted).3ds`, 2,147,483,648 bytes
+- Source SHA-256: `b5d96e539bd9d4504e53b5f0d4f1c67c6a2d67928e9602ac87d9fd60cf90a807`
+- Patch SHA-256: `f6e5b09b462b7f47641576f06a52b8d8f8904ae9df0f64b2e4b153248b02f779`
+- Expected output SHA-256: `0e6ea8330b3fc23fb1484726030a25c6b88f62e02fe82f66884b5a80c818a0d7`
+- Verification: WebAssembly xdelta3 engine roundtrip verified in Node (`tools/web_wasm_patch.mjs`: `ok=true`, `0e6ea833...` matched byte-for-byte in 4.1s); physical 3DS hardware IVFC hash tree audit passed (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True`). In-ROM binary census passed with 32,510/32,510 entries (100.00% In-ROM, 0 mismatches, 0 critical freeze).
+
 ## Evidence tiers
 
-The 26 output-matched entries combine 20 browser xdelta3 WASM roundtrips, 6 clean-source bit-identical/CLI roundtrips. The PoPoLoCrois web xdelta was applied successfully to its pinned USA ISO with the xdelta3 CLI; its measured output SHA-256 is used because the historical v1.10 guide's MD5/SHA1 describe a different target artifact. The 13 owner-reported entries retain that label and are not silently promoted to browser-roundtrip evidence. The five entries without current verification metadata are `dragon-quest-iv`, `dragon-quest-v`, `dragon-quest-vi`, `tales-of-hearts`, and `the-world-ends-with-you`.
+The 27 output-matched entries combine 21 browser xdelta3 WASM roundtrips, 6 clean-source bit-identical/CLI roundtrips. The PoPoLoCrois web xdelta was applied successfully to its pinned USA ISO with the xdelta3 CLI; its measured output SHA-256 is used because the historical v1.10 guide's MD5/SHA1 describe a different target artifact. The 13 owner-reported entries retain that label and are not silently promoted to browser-roundtrip evidence. The five entries without current verification metadata are `dragon-quest-iv`, `dragon-quest-v`, `dragon-quest-vi`, `tales-of-hearts`, and `the-world-ends-with-you`.
 
 Large 3DS outputs may still need a disk-streaming output path before browser patching can be considered reliable on devices with limited memory.
