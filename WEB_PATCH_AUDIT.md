@@ -4,10 +4,10 @@ Updated: 2026-11-09 (Asia/Bangkok)
 
 ## Inventory
 
-- Web manifests: 52 (47 xdelta + 5 external Nintendo Switch mod archives)
-- Cloudflare R2 storage: 47/47 xdelta patch targets hosted on R2 bucket `talub-patches` and served via CDN Worker
-- Patch identity checks passed (file size + SHA-256): 47/47
-- Patch dates recorded: 52/52
+- Web manifests: 53 (48 xdelta + 5 external Nintendo Switch mod archives)
+- Cloudflare R2 storage: 48/48 xdelta patch targets hosted on R2 bucket `talub-patches` and served via CDN Worker
+- Patch identity checks passed (file size + SHA-256): 48/48
+- Patch dates recorded: 53/53
 - Dates taken directly from patch-file modified time: 45
 - Dates using release-archive modified time because the patch carried a ZIP epoch timestamp: 2 (`lost-in-blue-2`, `monster-hunter-stories`)
 - Clean-source roundtrip with expected output hash matched: 29
@@ -143,14 +143,14 @@ The web patch targets the full 4 GiB USA cartridge image (`BY3E`). Released as `
 - Expected output SHA-256: `9fa608b8671d2d614aed115a5c21ff4d6b8d7e536cc3c302b0f9d6597937dfee`
 - Verification: browser xdelta3 wasm roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified with `tools/ncch_ivfc_rebuild.py` (L1_bad=0, L2_bad=0, L3_bad=0, PASS=True).
 
-## Yo-kai Watch 3
+## Shin Megami Tensei IV
 
-The web patch targets the full 4 GiB USA cartridge image (`BY3E`). Released as `v1.0.5` official with complete Thai story & 96 battle tutorials, crisp 3-tier Pango typography (Mali SemiBold 12px), in-game watermarks, and full RomFS IVFC hash tree recalculation (preventing real-hardware ErrDisp panic 0xf96047a2 in `nn::fs::MountRom`).
+The web patch targets the full 2 GiB USA cartridge image (`B4EE`). Released as `v1.3.5` official with 99.2% In-ROM coverage (39,034/39,329 messages across 1,190 MBM files and 19 TBB tables), safe 3-tier Thai typography (11.5px/13.0px), and full RomFS IVFC hash tree recalculation (fixing real-hardware ErrDisp panic 0xf96047a2 in `nn::fs::MountRom` / `nn::fs::GetRomRequiredMemorySize`).
 
-- Accepted source: `Yo-Kai Watch 3 (USA).3ds`, 4,294,967,296 bytes
-- Source SHA-256: `a82ebb005202ac8d427a008191fb341edb306896a312c20fea9bfb7e9d5c6151`
-- Patch SHA-256: `09573ed8108ed103e2605173fba4e53e606700a4a4e322306db01a4a9a138948`
-- Expected output SHA-256: `9fa608b8671d2d614aed115a5c21ff4d6b8d7e536cc3c302b0f9d6597937dfee`
+- Accepted source: `Shin Megami Tensei IV (USA).3ds`, 2,147,483,648 bytes
+- Source SHA-256: `162356342f2a0459b3d1b53dfa4bb45d0edca960a750eaae950aab3de5bd542b`
+- Patch SHA-256: `9ca18f2ed244db88c864a3c5ee8c251fa74445effffd7af1247bd888b4ce890c`
+- Expected output SHA-256: `36b6c090b76201db32abf4e1f51ef806d465b98a62ada46d140df4f20ee6b67f`
 - Verification: browser xdelta3 wasm roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified with `tools/ncch_ivfc_rebuild.py` (L1_bad=0, L2_bad=0, L3_bad=0, PASS=True).
 
 ## Phoenix Wright: Ace Attorney Trilogy

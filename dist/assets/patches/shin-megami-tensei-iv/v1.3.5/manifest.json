@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "shin-megami-tensei-iv",
+  "game_title": "Shin Megami Tensei IV",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "B4EE",
+  "patch_version": "v1.3.5",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Shin Megami Tensei IV (USA).3ds",
+      "size": 2147483648,
+      "sha256": "162356342f2a0459b3d1b53dfa4bb45d0edca960a750eaae950aab3de5bd542b"
+    }
+  ],
+  "patch": {
+    "filename": "Shin_Megami_Tensei_IV_USA_Thai_v1.3.5.xdelta",
+    "size": 3638188,
+    "sha256": "9ca18f2ed244db88c864a3c5ee8c251fa74445effffd7af1247bd888b4ce890c",
+    "release_date": "2026-11-09",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/shin-megami-tensei-iv/v1.3.5/Shin_Megami_Tensei_IV_USA_Thai_v1.3.5.xdelta"
+  },
+  "output": {
+    "filename": "Shin_Megami_Tensei_IV_USA_TH_v1.3.5.3ds",
+    "size": 2147483648,
+    "sha256": "36b6c090b76201db32abf4e1f51ef806d465b98a62ada46d140df4f20ee6b67f"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก 4 รูท+เควสต์+ระบบเจรจา+ไดอะล็อกปีศาจ 99.2%",
+    "whole_game_census": "39,034/39,329 ข้อความในรอม (ภาพรวมทั้งเกม 99.2%)",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "STATE.md / tools/ncch_ivfc_rebuild.py (2026-11-09 audit)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-09T00:36:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean source located by SHA-256 and patched with xdelta3; output matches release checksums with RomFS IVFC hash tree fully recalculated (fixing real-hardware ErrDisp panic 0xf96047a2 in nn::fs::MountRom).",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}

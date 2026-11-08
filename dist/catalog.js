@@ -2159,6 +2159,15 @@ window.GAME_CATALOG = [
 ];
 window.GAME_UPDATES = [
   {
+    "slug": "shin-megami-tensei-iv",
+    "title": "Shin Megami Tensei IV",
+    "platform": "3DS",
+    "version": "v1.3.5",
+    "type": "update",
+    "timestamp": "2026-11-09T00:45:00+07:00",
+    "note": "อัปเดตแพตช์ v1.3.5 คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครช ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง, บิลด์ตรงจาก Original Clean ROM และผ่านการตรวจสอบ Bit-identical Roundtrip 100%"
+  },
+  {
     "slug": "cardfight-vanguard-g",
     "title": "CardFight!! Vanguard G: Stride to Victory!!",
     "platform": "3DS",
