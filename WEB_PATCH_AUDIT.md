@@ -104,12 +104,12 @@ The `v1.0.3` web patch targets the 4 GiB decrypted Japanese cartridge image (`CT
 
 ## Metal Max 4: Gekkou no Diva
 
-The `v1.3.4` web patch targets the 1 GiB decrypted Japanese cartridge image (`CTR-P-AX4J`). Released as `v1.3.4` official completely recalculating RomFS IVFC Hash Tree (Level 3 -> Level 2 -> Level 1 -> Master Hash) via `tools/ncch_ivfc_rebuild.py` (L1_bad=0, L2_bad=0, L3_bad=0, PASS 100%), eliminating real 3DS hardware ErrDisp `0xf96047a2` crash in `nn::fs::MountRom` / `GetRomRequiredMemorySize` (address `0x0010b67c`), fixing NCCH ExHeader (`0x160`), ExeFS Superblock (`0x1C0`), and RomFS Superblock (`0x1E0`) hash alignments required for flawless CIA package conversion via `makerom` / `3DS CIA Patcher` (`Content 0 Is Corrupt res = -12` resolved), and full 4-tier watermark parity (Tier 1 Title/Header, Tier 2 Memory Center, Tier 3 .rodata & code.ips, Tier 4 Manual).
+The `v1.3.5` web patch targets the 1 GiB decrypted Japanese cartridge image (`CTR-P-AX4J`). Released as `v1.3.5` official completely recalculating RomFS IVFC Hash Tree (Level 3 -> Level 2 -> Level 1 -> Master Hash) via `tools/ncch_ivfc_rebuild.py` (L1_bad=0, L2_bad=0, L3_bad=0, PASS 100%), eliminating real 3DS hardware ErrDisp `0xf96047a2` crash in `nn::fs::MountRom` / `GetRomRequiredMemorySize` (address `0x0010b67c`), fixing NCCH ExHeader (`0x160`), ExeFS Superblock (`0x1C0`), and RomFS Superblock (`0x1E0`) hash alignments required for flawless CIA package conversion via `makerom` / `3DS CIA Patcher` (`Content 0 Is Corrupt res = -12` resolved), and full 4-tier watermark parity (Tier 1 Title/Header, Tier 2 Memory Center, Tier 3 .rodata & code.ips, Tier 4 Manual).
 
 - Accepted source SHA-256: `c815bff9d8a41bde58bd98a08c698ea0d7a573c06a59c0d8af1144b8ad5b697f`
-- Patch SHA-256: `48602293adb34caa06982f52e250e669062d85bbde2a9ea6e5130b5ac31e5580`
-- Expected output SHA-256: `c25cfe18a65eb3f84aee84d7d16d606754e9b417fb5188cf3a8236fdfac6db56`
-- Verification: the 148,318,862-byte patch is stored in R2 as two versioned parts; all parts passed Worker CORS and byte-range checks. Tested end-to-end: clean-source roundtrip verified 100% bit-identical, IVFC hash tree verified (`PASS=True`), and CIA conversion via `tools/makerom/makerom -f cia -ignoresign` verified with returncode 0 without corruption errors.
+- Patch SHA-256: `984e99461e3a29b85260e7c02892e4bc6ec3847a982df344110d4cd94dc4ff76`
+- Expected output SHA-256: `f8e9906d90216f4464612a26d22e38cd25a36ab8b6e9a9bc245a38a3bf09c646`
+- Verification: the 148,318,863-byte patch is stored in R2 as two versioned parts; all parts passed Worker CORS and byte-range checks. Tested end-to-end: clean-source roundtrip verified 100% bit-identical, IVFC hash tree verified (`PASS=True`), and CIA conversion via `tools/makerom/makerom -f cia -ignoresign` verified with returncode 0 without corruption errors.
 
 ## Mana Khemia: Alchemists of Al-Revis
 
