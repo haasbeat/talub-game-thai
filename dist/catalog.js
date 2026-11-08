@@ -7,21 +7,21 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 001 / 035",
-    "version": "v1.0.4",
-    "patchDate": "2026-09-27",
+    "version": "v1.0.5",
+    "patchDate": "2026-11-09",
     "addedDate": "2026-11-05",
     "addedOrder": 36,
     "addedAt": "2026-11-05T10:32:58+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/7th-dragon-iii-code-vfd.jpg",
-    "manifest": "./assets/patches/7th-dragon-iii-code-vfd/v1.0.4/manifest.json",
+    "manifest": "./assets/patches/7th-dragon-iii-code-vfd/v1.0.5/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN USA 3DS · 2 GB",
     "region": "USA",
     "gameCode": "BD7E",
     "sourceName": "7th Dragon III Code - VFD (USA).3ds · 2,147,483,648 bytes",
     "sourceHash": "0afb4dd32c861c2137277f5d40930c318c84a2fe0af9f00478414943131a4d3e",
-    "outputHash": "8e4684620b3eaf14088ade337f6a61a6b437f8e177da2ece943d4f459657ce22",
+    "outputHash": "a32800ec27966e9ccd5563945e42a925f882b84b647245dc262d88f7e0f52814",
     "moduleStatus": "เนื้อเรื่องหลัก+เควสต์ย่อย+ระบบต่อสู้+ไอเทม+เมนู 100%",
     "wholeGameCensus": "สำรวจทั้งเกม In-ROM Census 100.0%",
     "details": {
@@ -2170,15 +2170,6 @@ window.GAME_UPDATES = [
     "note": "อัปเดตแพตช์ v1.0.1 คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครชจอแดง ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง (L1=0, L2=0, L3=0 bad), ปรับแก้การตัดคำเมนูและค่าสถานะไม่ให้ตกขอบ, และอัปเดต 4-Tier Watermark v1.0.1 ครบถ้วน"
   },
   {
-    "slug": "7th-dragon-iii-code-vfd",
-    "title": "7th Dragon III Code: VFD",
-    "platform": "3DS",
-    "version": "v1.0.5",
-    "type": "update",
-    "timestamp": "2026-11-09T02:30:00+07:00",
-    "note": "อัปเดตแพตช์ v1.0.5 คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครชจอแดง ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง (L1=0, L2=0, L3=0 bad), ป้ายเวอร์ชัน Ver. 1.05 บนหน้าแรกของเกม และโครงสร้าง ZIP มาตรฐานข้ามแพลตฟอร์ม"
-  },
-  {
     "slug": "smt-strange-journey-redux",
     "title": "Shin Megami Tensei: Strange Journey Redux",
     "platform": "3DS",
@@ -2188,15 +2179,6 @@ window.GAME_UPDATES = [
     "note": "อัปเดตแพตช์ v1.0.5 คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครชจอแดง ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง (L1=0, L2=0, L3=0 bad), แก้ไขการจัดเรียง Slot/ID ใน DungeonGimmic ครบทุกมิติ, ลายน้ำ v1.0.5 ในเกม และผ่านการตรวจสอบ Bit-identical Roundtrip 100%"
   },
   {
-    "slug": "etrian-odyssey-untold",
-    "title": "Etrian Odyssey Untold: The Millennium Girl",
-    "platform": "3DS",
-    "version": "v1.0.0",
-    "type": "update",
-    "timestamp": "2026-11-09T02:00:00+07:00",
-    "note": "อัปเดตแพตช์ v1.0.0 คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครชจอแดง ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง (L1=0, L2=0, L3=0 bad), คัทซีนอนิเมะซับไทย 9 ตอน, ผ่านการทดสอบ 1:1 In-ROM Binary Readback 100%"
-  },
-  {
     "slug": "xenoblade-chronicles-3d",
     "title": "Xenoblade Chronicles 3D",
     "platform": "3DS",
@@ -2204,24 +2186,6 @@ window.GAME_UPDATES = [
     "type": "update",
     "timestamp": "2026-11-09T00:55:00+07:00",
     "note": "อัปเดตแพตช์ v1.0.8 คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครชจอแดง ErrDisp 0xf96047a2 บนเครื่อง New 3DS จริง (L1=0, L2=0, L3=0 bad), โครงสร้าง ZIP มาตรฐานข้ามแพลตฟอร์ม, รวมการแก้พอยน์เตอร์ BDAT 398 จุดและฟอนต์ 27x25 พอดีกรอบ"
-  },
-  {
-    "slug": "bravely-default",
-    "title": "Bravely Default",
-    "platform": "3DS",
-    "version": "v1.0.3",
-    "type": "update",
-    "timestamp": "2026-11-09T00:54:00+07:00",
-    "note": "อัปเดตแพตช์ v1.0.3 บิลด์ตรงจาก Original 4GB Clean Retail Cartridge, คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครช ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง, ปรับปรุงบาลานซ์ตัดคำ 113 จุด ครบ 39,379 เรคคอร์ด (100.00%)"
-  },
-  {
-    "slug": "lost-heroes",
-    "title": "Lost Heroes",
-    "platform": "3DS",
-    "version": "v1.0.1",
-    "type": "update",
-    "timestamp": "2026-11-09T00:46:00+07:00",
-    "note": "อัปเดตแพตช์ v1.0.1 คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครช ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง, บิลด์ตรงจาก Original Clean ROM และผ่านการตรวจสอบ Bit-identical Roundtrip 100%"
   },
   {
     "slug": "time-travelers",
@@ -2569,10 +2533,10 @@ window.GAME_UPDATES = [
     "slug": "7th-dragon-iii-code-vfd",
     "title": "7th Dragon III Code: VFD",
     "platform": "3DS",
-    "version": "v1.0.4",
+    "version": "v1.0.5",
     "type": "new",
     "timestamp": "2026-11-05T10:32:58+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.4"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.5"
   },
   {
     "slug": "bravely-default",
