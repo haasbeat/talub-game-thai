@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "mana-khemia",
+  "game_title": "Mana Khemia: Alchemists of Al-Revis",
+  "platform": "PS2",
+  "region": "USA",
+  "game_code": "SLUS-21735",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Mana Khemia - Alchemists of Al-Revis (USA).iso",
+      "size": 2801958912,
+      "sha256": "26d7d83a358e9135b9217a456f97d77e7a5d1cc06f49bf8ee705f241e18216f0"
+    }
+  ],
+  "patch": {
+    "filename": "Mana_Khemia_Thai_v1.0.0.xdelta",
+    "size": 10086623,
+    "sha256": "5e97e7325841f4fe9f6d188783b2820b09f85f144c02727f08ce868cdc54a9bb",
+    "release_date": "2026-11-08",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/mana-khemia/v1.0.0/Mana_Khemia_Thai_v1.0.0.xdelta"
+  },
+  "output": {
+    "filename": "Mana Khemia - Alchemists of Al-Revis (USA) (Thai v1.0.0).iso",
+    "size": 2801958912,
+    "sha256": "47e9f510ef975ce52d1502c1619a80dffd6fe9a650b9d31a8d80bd75ebb12e50"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก+เควสต์+ระบบปรุงยา+สกิล+เมนู 100% (Yo-kai Watch 1 3-Tier Font Parity)",
+    "whole_game_census": "22,404 / 22,404 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-08T08:30:00+07:00",
+    "method": "clean_source_xdelta3_roundtrip",
+    "note": "Clean 2.8 GB USA DVD-ROM source verified with clean-source roundtrip; 12-Pillar Live In-ROM Binary & Linguistic Forensic Audit passed; output matches release target byte-for-byte.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true,
+    "patcher_test_passed": true
+  }
+}

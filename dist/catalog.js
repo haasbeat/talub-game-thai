@@ -1708,6 +1708,53 @@ window.GAME_CATALOG = [
   },
   {
     "order": 44,
+    "slug": "mana-khemia",
+    "title": "Mana Khemia: Alchemists of Al-Revis",
+    "platform": "ps2",
+    "platformLabel": "PS2",
+    "index": "PS2 | 001 / 001",
+    "version": "v1.0.0",
+    "patchDate": "2026-11-08",
+    "addedDate": "2026-11-08",
+    "addedOrder": 52,
+    "addedAt": "2026-11-08T08:35:00+07:00",
+    "format": "xdelta3",
+    "cover": "./assets/covers/web/mana-khemia.jpg",
+    "manifest": "./assets/patches/mana-khemia/v1.0.0/manifest.json",
+    "accept": ".iso",
+    "fileTypes": "CLEAN USA PS2 · 2.61 GB",
+    "region": "USA",
+    "gameCode": "SLUS-21735",
+    "sourceName": "Mana Khemia - Alchemists of Al-Revis (USA).iso · 2,801,958,912 bytes",
+    "sourceHash": "26d7d83a358e9135b9217a456f97d77e7a5d1cc06f49bf8ee705f241e18216f0",
+    "outputHash": "47e9f510ef975ce52d1502c1619a80dffd6fe9a650b9d31a8d80bd75ebb12e50",
+    "moduleStatus": "เนื้อเรื่องหลัก+เควสต์+ระบบปรุงยา+สกิล+เมนู 100% (Yo-kai Watch 1 3-Tier Font Parity)",
+    "wholeGameCensus": "22,404 / 22,404 บรรทัด = 100.00%",
+    "details": {
+      "thaiTitle": "มานา เคเมีย: นักเล่นแร่แปรธาตุแห่งอัล-เรวิส",
+      "japaneseTitle": "マナケミア 〜学園の錬金術士たち〜",
+      "originalTitle": "Mana Khemia: Alchemists of Al-Revis",
+      "studio": "Gust / NIS America",
+      "release": "21 มิถุนายน 2007 (JP) / 31 มีนาคม 2008 (NA)",
+      "genre": "Role-playing game",
+      "description": "ม็อดภาษาไทยสำหรับ Mana Khemia: Alchemists of Al-Revis (PS2 โซน USA) เวอร์ชัน v1.0.0",
+      "overview": "เรื่องราวชีวิตวัยเรียน การปรุงยา และการต่อสู้ในสถาบันการเล่นแร่แปรธาตุอัล-เรวิส ฉบับแปลไทยสมบูรณ์แบบ 100% ทุกตัวอักษร",
+      "story": "เวย์น ออเรอุส เด็กหนุ่มผู้ใช้ชีวิตเงียบสงบในป่าลึกกับซัลเฟอร์ แมวพูดได้ ได้รับคำเชิญให้เข้าเรียนที่โรงเรียนการเล่นแร่แปรธาตุชื่อดังอัล-เรวิส เขาได้พบเพื่อนร่วมชั้นหลากสไตล์ ทำการบ้านภาคปฏิบัติ ร่วมปรุงยา และค้นพบความลับเบื้องหลังชาติกำเนิดและพลังที่แท้จริงของตนเอง",
+      "localization": "แปลเนื้อเรื่องหลัก เควสต์ตัวละคร วิชาเรียน บทลงโทษกักบริเวณ ฐานข้อมูลไอเทม สกิล มอนสเตอร์ ระบบ Grow Book และสารานุกรมครบถ้วน 100% (สำมะโนในรอม 22,404/22,404 บรรทัด = 100.00%) วิศวกรรมฟอนต์ Chakra Petch SemiBold คมชัดสูงระดับ Yo-kai Watch 1 3-Tier Parity สระไม่ลอย ไม่ซ้อนทับ ไม่จมเส้นบรรทัด และฝังซับไตเติลภาษาไทยในวิดีโอเปิดเรื่องทั้งเสียงพากย์อังกฤษและญี่ปุ่น",
+      "untranslated": "ไม่มีส่วนที่ค้างแปลตามผลสำรวจในรอม (100.00% readback verified)",
+      "features": [
+        "บทสนทนาและคำอธิบายภาษาไทยสมบูรณ์ 22,404 รายการ (100.00%)",
+        "ฟอนต์ Chakra Petch SemiBold ระบบ 3 ชั้น ไม่ลอย ไม่ซ้อนทับ",
+        "จัดหน้าและระยะบรรทัด 14px ตรงเส้นบรรทัดสมุดโน้ตเป๊ะ",
+        "ซับไตเติลภาษาไทยฝังในวิดีโอเปิดเรื่อง MOVIE/AVAN.SFD และ AVANJ.SFD",
+        "ผ่านการตรวจ 12-Pillar Forensic Audit และ PreInjectionGate ป้องกันเกมค้าง 100%"
+      ]
+    },
+    "verified": true,
+    "gameVersion": "v1.0.0"
+  },
+  {
+    "order": 45,
     "slug": "mini-yonku-wgp2",
     "title": "Mini Yonku Let's & Go!!: Power WGP 2",
     "platform": "snes",
@@ -1753,7 +1800,7 @@ window.GAME_CATALOG = [
     "gameVersion": "v1.0.0"
   },
   {
-    "order": 45,
+    "order": 46,
     "slug": "popolocrois",
     "title": "PoPoLoCrois",
     "platform": "psp",
@@ -1781,7 +1828,7 @@ window.GAME_CATALOG = [
     "gameVersion": "v1.0.0"
   },
   {
-    "order": 46,
+    "order": 47,
     "slug": "disgaea-5-complete",
     "title": "Disgaea 5 Complete",
     "platform": "switch",
@@ -1814,7 +1861,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "16797cb36b9d5361ccecf8c5dc49578eb7ca3bfd526b0c6d90f93179f26b9c45"
   },
   {
-    "order": 47,
+    "order": 48,
     "slug": "fire-emblem-engage",
     "title": "Fire Emblem Engage",
     "platform": "switch",
@@ -1836,7 +1883,7 @@ window.GAME_CATALOG = [
     "sourceHash": "0100A6301214E000",
     "outputHash": "e4307cd633f16bee961d86d678bcacf24c1cc0ab3c73140c59f0d94771c39d54",
     "moduleStatus": "เนื้อเรื่องหลัก เมนู DLC Waves 1-4 และบทที่ 22 ซิงก์เสียงพากย์ 1:1 ผ่านการตรวจ In-ROM 100%",
-    "wholeGameCensus": "41,265 ระเบียนที่ฉีดในรอม / ฐานสำรวจ 39,176 ระเบียน",
+    "wholeGameCensus": "41,265 ระเบียนที่ฉีดในรอม / ฐานสำรวจ 39,176 ระเบียน (105.33%)",
     "details": null,
     "verified": true,
     "gameVersion": "Update v2.0.0 + DLC Waves 1-4",
@@ -1847,7 +1894,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "e4307cd633f16bee961d86d678bcacf24c1cc0ab3c73140c59f0d94771c39d54"
   },
   {
-    "order": 48,
+    "order": 49,
     "slug": "fire-emblem-three-houses",
     "title": "Fire Emblem: Three Houses",
     "platform": "switch",
@@ -1880,7 +1927,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "8b3d68b76bcb1b5bbed46a32541530dce1721e258ed09d3b0195ef1489e1b9ba"
   },
   {
-    "order": 49,
+    "order": 50,
     "slug": "persona-5-royal",
     "title": "Persona 5 Royal",
     "platform": "switch",
@@ -1913,7 +1960,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "ae68cf2866e6fd49d06e4245af0cf64f463bafc15be6885a06d360ea83556f1f"
   },
   {
-    "order": 50,
+    "order": 51,
     "slug": "village-in-the-shade",
     "title": "Village in the Shade",
     "platform": "switch",

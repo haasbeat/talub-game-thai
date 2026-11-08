@@ -1,23 +1,23 @@
 # Web patch audit
 
-Updated: 2026-11-07 (Asia/Bangkok)
+Updated: 2026-11-08 (Asia/Bangkok)
 
 ## Inventory
 
-- Web manifests: 49 (44 xdelta + 5 external Nintendo Switch mod archives)
-- Cloudflare R2 storage: 44/44 xdelta patch targets hosted on R2 bucket `talub-patches` and served via CDN Worker
-- Patch identity checks passed (file size + SHA-256): 44/44
-- Patch dates recorded: 49/49
-- Dates taken directly from patch-file modified time: 42
+- Web manifests: 50 (45 xdelta + 5 external Nintendo Switch mod archives)
+- Cloudflare R2 storage: 45/45 xdelta patch targets hosted on R2 bucket `talub-patches` and served via CDN Worker
+- Patch identity checks passed (file size + SHA-256): 45/45
+- Patch dates recorded: 50/50
+- Dates taken directly from patch-file modified time: 43
 - Dates using release-archive modified time because the patch carried a ZIP epoch timestamp: 2 (`lost-in-blue-2`, `monster-hunter-stories`)
-- Clean-source roundtrip with expected output hash matched: 25
+- Clean-source roundtrip with expected output hash matched: 26
 - Owner-reported xdelta-patcher tests: 13
 - Browser apply-only test without a pinned target hash: 1
 - No current roundtrip evidence recorded in the web manifest: 5
 
 ### Cloudflare R2 CDN Migration
 
-All 44 xdelta patches (including multi-part archives for Inazuma 1-2-3, Ace Attorney Trilogy, Metal Max 4, and E.X. Troopers) are hosted in Cloudflare R2 bucket `talub-patches` and distributed through the Worker CDN (`https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/...`). All objects support CORS (`access-control-allow-origin: https://haasbeat.github.io`), HTTP Range requests (206 Partial Content), ETag verification, and immutable caching. The GitHub Pages repository no longer stores large binary patches, resolving GitHub repository footprint limits.
+All 45 xdelta patches (including multi-part archives for Inazuma 1-2-3, Ace Attorney Trilogy, Metal Max 4, and E.X. Troopers) are hosted in Cloudflare R2 bucket `talub-patches` and distributed through the Worker CDN (`https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/...`). All objects support CORS (`access-control-allow-origin: https://haasbeat.github.io`), HTTP Range requests (206 Partial Content), ETag verification, and immutable caching. The GitHub Pages repository no longer stores large binary patches, resolving GitHub repository footprint limits.
 
 ### Nintendo Switch external downloads
 
@@ -110,6 +110,16 @@ The `v1.3.3` web patch targets the 1 GiB decrypted Japanese cartridge image (`CT
 - Patch SHA-256: `b77ef5b03ba91eea6f5206d7456cce73828a87078faba4a9745cd50b08b650a0`
 - Expected output SHA-256: `fb3716a8d6549f0acba7ddc77d0523ab78ea28cbe87ee788d2e3e5c81095d81e`
 - Verification: the 142,484,554-byte patch is stored in R2 as two versioned parts; all parts passed Worker CORS and byte-range checks. Tested end-to-end on the live site in Google Chrome: browser fetched both parts from R2, assembled the patch Blob, executed xdelta3 WebAssembly in worker (6s), and confirmed the reconstructed 1 GiB ROM matches expected target byte-for-byte (39.5s total).
+
+## Mana Khemia: Alchemists of Al-Revis
+
+The web patch targets the full 2.8 GB PlayStation 2 DVD-ROM USA image (`SLUS-21735`). Released as `v1.0.0` official with 100% complete story, character quests, courses, alchemy recipes, and battle UI, featuring crisp Yo-kai Watch 1 3-Tier Pango typography (Chakra Petch SemiBold 24px/19px) and in-stream localized prologue movies (`MOVIE/AVAN.SFD` and `AVANJ.SFD`).
+
+- Accepted source: `Mana Khemia - Alchemists of Al-Revis (USA).iso`, 2,801,958,912 bytes
+- Source SHA-256: `26d7d83a358e9135b9217a456f97d77e7a5d1cc06f49bf8ee705f241e18216f0`
+- Patch SHA-256: `5e97e7325841f4fe9f6d188783b2820b09f85f144c02727f08ce868cdc54a9bb`
+- Expected output SHA-256: `47e9f510ef975ce52d1502c1619a80dffd6fe9a650b9d31a8d80bd75ebb12e50`
+- Verification: clean-source xdelta3 roundtrip tested and confirmed 100% bit-identical; 12-Pillar Live In-ROM Binary & Linguistic Forensic Audit passed (22,404/22,404 records verified, 0 critical freeze).
 
 ## Evidence tiers
 
