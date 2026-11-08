@@ -31,16 +31,17 @@ window.GAME_CATALOG = [
       "studio": "SEGA",
       "release": null,
       "genre": "Role-playing game",
-      "description": "ม็อดภาษาไทยสำหรับ 7th Dragon III Code: VFD (3DS โซน USA) เวอร์ชัน v1.0.4",
+      "description": "ม็อดภาษาไทยสำหรับ 7th Dragon III Code: VFD (3DS โซน USA) เวอร์ชัน v1.0.5 คำนวณ RomFS IVFC Hash Tree ป้องกัน ErrDisp 0xf96047a2 บน 3DS จริง",
       "overview": "ศึกล่ามังกรข้ามกาลเวลาที่ปิดฉากซีรีส์ 7th Dragon โดยผู้เล่นต้องเดินทางผ่านสามยุคเพื่อเผชิญหน้ากับมังกรแท้ตัวสุดท้าย",
       "story": "ในโตเกียวปี 2100 ซึ่งฟื้นตัวมาได้ 80 ปีหลังหายนะครั้งก่อน ผู้เล่นสร้างทีม 3 คนในนาม \"ยูนิต 13\" และต้องเดินทางข้ามสามยุค ได้แก่ โตเกียวปัจจุบัน แอตแลนติสเมื่อ 12,000 ปีก่อน และเอเดนในปี 7100 ภารกิจคือรวบรวมตัวอย่างพันธุกรรมมังกรใน Dragon Chronicle เพื่อสร้างอาวุธปราบ VFD มังกรแท้ตัวที่ 7 ทุกยุคมีดอกพิษ Dragonsbane ที่แพร่ตามการปรากฏตัวของมังกรและทำให้เกิดโรคมังกร",
-      "localization": "แปลเนื้อเรื่องหลัก เควสต์ย่อย ระบบต่อสู้ ไอเทม และเมนู (สถานะโมดูล 100% + สำมะโนในรอม 100.0% ตามแมนิเฟสต์ v1.0.4) ฝังฟอนต์ Chakra Petch Medium และโค้ดโหลดฟอนต์ไว้ในไฟล์ .3ds ทำให้เล่นได้โดยไม่ต้องใช้ LayeredFS",
+      "localization": "แปลเนื้อเรื่องหลัก เควสต์ย่อย ระบบต่อสู้ ไอเทม และเมนู (สถานะโมดูล 100% + สำมะโนในรอม 100.0% ตามแมนิเฟสต์ v1.0.5) ฝังฟอนต์ Chakra Petch Medium และโค้ดโหลดฟอนต์ไว้ในไฟล์ .3ds คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครชจอแดง ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง 100%",
       "untranslated": "ไม่มีส่วนที่ค้างแปลตามผลสำรวจในรอม (ตัวย่อค่าสถานะ เช่น ATK/MAT/SPD ยังเป็นอักษรอังกฤษตามต้นฉบับ)",
       "features": [
         "บทสนทนาภาษาไทย 19,709 ข้อความ",
         "ฟอนต์ Chakra Petch Medium รองรับสระและวรรณยุกต์ซ้อน",
         "แก้คำอธิบายไอเทม 461 ชิ้นไม่ให้เกินขอบจอ",
-        "ป้ายเวอร์ชัน Ver. 1.04 บนหน้าไตเติล"
+        "ป้ายเวอร์ชัน Ver. 1.05 บนหน้าไตเติล",
+        "คำนวณ RomFS IVFC Hash Tree ระดับ L1/L2/L3 ป้องกันจอแดง ErrDisp 0xf96047a2 บน 3DS จริง 100%"
       ]
     },
     "verified": true,
@@ -2160,6 +2161,15 @@ window.GAME_CATALOG = [
 ];
 window.GAME_UPDATES = [
   {
+    "slug": "7th-dragon-iii-code-vfd",
+    "title": "7th Dragon III Code: VFD",
+    "platform": "3DS",
+    "version": "v1.0.5",
+    "type": "update",
+    "timestamp": "2026-11-09T02:30:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.5 คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครชจอแดง ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง (L1=0, L2=0, L3=0 bad), ป้ายเวอร์ชัน Ver. 1.05 บนหน้าแรกของเกม และโครงสร้าง ZIP มาตรฐานข้ามแพลตฟอร์ม"
+  },
+  {
     "slug": "smt-strange-journey-redux",
     "title": "Shin Megami Tensei: Strange Journey Redux",
     "platform": "3DS",
@@ -2173,9 +2183,9 @@ window.GAME_UPDATES = [
     "title": "Etrian Odyssey Untold: The Millennium Girl",
     "platform": "3DS",
     "version": "v1.0.0",
-    "type": "new",
+    "type": "update",
     "timestamp": "2026-11-09T02:00:00+07:00",
-    "note": "ปล่อยม็อดภาษาไทยตัวเต็ม v1.0.0 แปลครบสมบูรณ์ทุกระบบ, คัทซีนอนิเมะซับไทย 9 ตอน, คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครชจอแดง ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง (L1=0, L2=0, L3=0 bad), ผ่านการทดสอบ 1:1 In-ROM Binary Readback 100%"
+    "note": "อัปเดตแพตช์ v1.0.0 คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครชจอแดง ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง (L1=0, L2=0, L3=0 bad), คัทซีนอนิเมะซับไทย 9 ตอน, ผ่านการทดสอบ 1:1 In-ROM Binary Readback 100%"
   },
   {
     "slug": "xenoblade-chronicles-3d",
@@ -2608,6 +2618,15 @@ window.GAME_UPDATES = [
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
     "note": "เพิ่มเข้าคลังม็อดภาษาไทย v2.4.2"
+  },
+  {
+    "slug": "etrian-odyssey-untold",
+    "title": "Etrian Odyssey Untold: The Millennium Girl",
+    "platform": "3DS",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0"
   },
   {
     "slug": "ever-oasis",
