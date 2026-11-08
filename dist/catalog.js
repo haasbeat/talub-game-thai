@@ -230,14 +230,14 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 007 / 034",
-    "version": "v1.4.0",
+    "version": "v1.5.0",
     "patchDate": "2026-11-08",
     "addedDate": "2026-11-04",
     "addedOrder": 5,
     "addedAt": "2026-11-04T21:10:11+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/dragon-quest-viii.jpg",
-    "manifest": "./assets/patches/dragon-quest-viii/v1.4.0/manifest.json",
+    "manifest": "./assets/patches/dragon-quest-viii/v1.5.0/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN USA 3DS · 4 GB",
     "region": "USA",
@@ -254,7 +254,7 @@ window.GAME_CATALOG = [
       "studio": null,
       "release": null,
       "genre": "Role-playing game",
-      "description": "ม็อดภาษาไทยสำหรับ Dragon Quest VIII: Journey of the Cursed King (3DS โซน USA) เวอร์ชัน v1.4.0",
+      "description": "ม็อดภาษาไทยสำหรับ Dragon Quest VIII: Journey of the Cursed King (3DS โซน USA) เวอร์ชัน v1.5.0",
       "overview": "ออกเดินทางไปกับกษัตริย์ผู้ถูกสาปและเหล่าเพื่อนร่วมทาง เพื่อตามล่าตัวตลกผู้นำหายนะมาสู่อาณาจักรทรอเดน",
       "story": "ตัวตลก Dhoulmagus ขโมยคทาที่ผนึกจ้าวแห่งความมืด Rhapthorne และสาปอาณาจักรทรอเดน จนกษัตริย์ Trode กลายร่างคล้ายก็อบลิน ส่วนเจ้าหญิง Medea กลายเป็นม้าขาว ผู้กล้าออกเดินทางพร้อมกษัตริย์ Trode และเพื่อนร่วมทางอย่าง Yangus อดีตโจร Angelo อัศวินเทมพลาร์ และ Jessica นักเวทผู้ใจเด็ด เพื่อตามล่า Dhoulmagus ที่กำลังไล่สังหารทายาทของเจ็ดปราชญ์",
       "localization": "แปลเนื้อเรื่องหลัก เนื้อหาเสริม Red & Morrie บทสนทนา Party Talk และ NPC ทั่วโลก พร้อมเมนู สกิล คาถา และมอนสเตอร์ สำมะโนใน STATE ระบุ 36,576/39,493 บรรทัด (98.37%) ส่วนที่เหลือเป็นโทเค็นเทคนิค ใช้ฟอนต์ Chakra Petch SemiBold 15/13 พร้อมขอบดำ",
@@ -2093,10 +2093,10 @@ window.GAME_UPDATES = [
     "slug": "dragon-quest-viii",
     "title": "Dragon Quest VIII: Journey of the Cursed King",
     "platform": "3DS",
-    "version": "v1.4.0",
+    "version": "v1.5.0",
     "type": "update",
-    "timestamp": "2026-11-08T21:30:00+07:00",
-    "note": "อัปเดตแพตช์ v1.4.0 คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครช ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง, จัดมาตรฐานชื่อคาถาทับศัพท์ญี่ปุ่น และตัดบรรทัดตามพิกเซลจริงไม่ล้นกล่อง"
+    "timestamp": "2026-11-08T21:45:00+07:00",
+    "note": "อัปเดตแพตช์ v1.5.0 คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครช ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง, จัดมาตรฐานชื่อคาถาทับศัพท์ญี่ปุ่น และตัดบรรทัดตามพิกเซลจริงไม่ล้นกล่อง"
   },
   {
     "slug": "dragon-ball-fusions",
@@ -2426,10 +2426,10 @@ window.GAME_UPDATES = [
     "slug": "dragon-quest-viii",
     "title": "Dragon Quest VIII: Journey of the Cursed King",
     "platform": "3DS",
-    "version": "v1.4.0",
+    "version": "v1.5.0",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.4.0"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.5.0"
   },
   {
     "slug": "dragon-quest-xi",

@@ -35,7 +35,7 @@ An identity check proves that a web patch asset matches its manifest. It does no
 
 ## Dragon Quest VIII: Journey of the Cursed King
 
-The `v1.4.0` web patch targets the 4 GiB decrypted USA cartridge image (`CTR-P-BQ8E`). Released as `v1.4.0` official with full RomFS IVFC hash tree recalculation (`L1_bad=0, L2_bad=0, L3_bad=0, PASS=True`) via `tools/ncch_ivfc_rebuild.py`, completely eliminating real 3DS hardware ErrDisp `0xf96047a2` crash in `nn::fs::MountRom` / `GetRomRequiredMemorySize` (address `0x0010b67c`), standardizing all magic spells/skills to canonical Japanese Katakana transliteration across 581 files, and applying pixel-accurate Thai typography wrapping (`FontDefault_13.bffnt`) with zero box overflow (`critical=0, width_warnings=0`) across 39,141 pages.
+The `v1.5.0` web patch targets the 4 GiB decrypted USA cartridge image (`CTR-P-BQ8E`). Released as `v1.5.0` official with full RomFS IVFC hash tree recalculation (`L1_bad=0, L2_bad=0, L3_bad=0, PASS=True`) via `tools/ncch_ivfc_rebuild.py`, completely eliminating real 3DS hardware ErrDisp `0xf96047a2` crash in `nn::fs::MountRom` / `GetRomRequiredMemorySize` (address `0x0010b67c`), standardizing all magic spells/skills to canonical Japanese Katakana transliteration across 581 files, and applying pixel-accurate Thai typography wrapping (`FontDefault_13.bffnt`) with zero box overflow (`critical=0, width_warnings=0`) across 39,141 pages.
 
 - Accepted source: `Dragon Quest VIII - Journey of the Cursed King (USA).3ds`, 4,294,967,296 bytes
 - Source SHA-256: `589ab3eedfb872136a99c23407c9dff45cd9ce1d31ed24c5ecb196fa8657c4fc`

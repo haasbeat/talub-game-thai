@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "game_slug": "dragon-quest-viii",
+  "game_title": "Dragon Quest VIII: Journey of the Cursed King",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "BQ8E",
+  "patch_version": "v1.5.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Dragon Quest VIII - Journey of the Cursed King (USA).3ds",
+      "size": 4294967296,
+      "sha256": "589ab3eedfb872136a99c23407c9dff45cd9ce1d31ed24c5ecb196fa8657c4fc"
+    }
+  ],
+  "patch": {
+    "filename": "Dragon_Quest_VIII_Thai_v1.5.0.xdelta",
+    "size": 2371171,
+    "sha256": "11936bac4307e293256f8cc4d75f41aa13e69ce818c2ef0de0c96ac5cb170e07",
+    "release_date": "2026-11-08",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/dragon-quest-viii/v1.5.0/Dragon_Quest_VIII_Thai_v1.5.0.xdelta"
+  },
+  "output": {
+    "filename": "Dragon Quest VIII - Journey of the Cursed King (Thai).3ds",
+    "size": 4294967296,
+    "sha256": "6c7e6c052a2991b9746a54d896f05901b6369a5d85e632d104fb2bc6aef4d633"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก 100% + ปรับปรุงเวท/สกิลมาตรฐานญี่ปุ่น + ฟอนต์ป้องกันล้นขอบจอ + คำนวณ RomFS IVFC สมบูรณ์",
+    "whole_game_census": "36,576/39,493 บรรทัด (ภาพรวมทั้งเกม 98.37%)",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "STATE.md / release notes (2026-11-08 audit)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-08T21:45:00+07:00",
+    "method": "owner_reported_xdelta_patcher_test",
+    "patcher_test_passed": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "ivfc_verified": true
+  }
+}
