@@ -1756,6 +1756,53 @@ window.GAME_CATALOG = [
   },
   {
     "order": 45,
+    "slug": "saga-frontier",
+    "title": "SaGa Frontier",
+    "platform": "ps1",
+    "platformLabel": "PS1",
+    "index": "PS1 | 001 / 001",
+    "version": "v1.0.0",
+    "patchDate": "2026-11-08",
+    "addedDate": "2026-11-08",
+    "addedOrder": 54,
+    "addedAt": "2026-11-08T18:55:00+07:00",
+    "format": "xdelta3",
+    "cover": "./assets/covers/web/saga-frontier.jpg",
+    "manifest": "./assets/patches/saga-frontier/v1.0.0/manifest.json",
+    "accept": ".bin",
+    "fileTypes": "CLEAN USA PS1 · 689 MB",
+    "region": "USA",
+    "gameCode": "SCUS-94230",
+    "sourceName": "SaGa Frontier (USA).bin · 722,635,536 bytes",
+    "sourceHash": "0c69e1fba5901ad87a5cfc8dd9121bb73c313a1bf877aa554d9b20e6b96a3eb9",
+    "outputHash": "a8f261d3af1c854c14c9236264d4feca50d28f9065ea83e8a599876f68f3ec84",
+    "moduleStatus": "เมนูระบบ/ไอเทม/สกิล/มอนสเตอร์/ฉากต่อสู้/บทพูดบอส/บทพูดทั้งเกม 100%",
+    "wholeGameCensus": "สำรวจทั้งเกม In-ROM Census 100.0% (9,400 / 9,400 บรรทัด)",
+    "details": {
+      "thaiTitle": "ซาก้า ฟรอนเทียร์ ฉบับภาษาไทย",
+      "japaneseTitle": "サガ フロンティア",
+      "originalTitle": "SaGa Frontier",
+      "studio": "Square (Square Enix)",
+      "release": "11 กรกฎาคม 1997 (JP) / 25 มีนาคม 1998 (NA)",
+      "genre": "Role-playing game (Free Scenario System)",
+      "description": "ม็อดภาษาไทยสำหรับ SaGa Frontier (PS1 โซน USA) เวอร์ชัน v1.0.0 แปลสมบูรณ์ 100% ทั้ง 7 ตัวเอก",
+      "overview": "มหากาพย์เกม RPG ระดับตำนานบนเครื่อง PlayStation 1 ที่ปฏิวัติวงการด้วยระบบ Free Scenario System และ Glimmer System เล่าเรื่องราวการผจญภัยของ 7 ตัวเอกท่ามกลางพหุจักรวาล The Regions ฉบับแปลไทยสมบูรณ์แบบ 100% ทุกบทสนทนา",
+      "story": "ในจักรวาลอันกว้างใหญ่ที่เชื่อมต่อกันด้วยเรือเหาะข้ามมิติ แต่ละดินแดน (Region) มีวัฒนธรรมและเทคโนโลยีที่แตกต่างกันอย่างสิ้นเชิง 7 ผู้กล้าที่มีภูมิหลัง เป้าหมาย และโชคชะตาที่ไม่เกี่ยวข้องกัน—ไม่ว่าจะเป็น บลู จอมเวทอัจฉริยะที่ต้องกำจัดพี่น้องฝาแฝด, เรด เด็กหนุ่มผู้ได้รับพลังแปลงร่างเป็นซูเปอร์ฮีโร่อัลไคเซอร์, เอมิเลีย นางแบบสาวที่ถูกป้ายสีจนต้องแหกคุกตามล่าฆาตกรตัวจริง, แอสเซลลัส หญิงสาวผู้ได้รับเลือดขุนนางมายาจนกลายเป็นครึ่งมนุษย์ครึ่งมายา, ริกกี้ มอนสเตอร์น้อยที่ออกตามหาแหวนวิเศษเพื่อกอบกู้บ้านเกิด, ทีทูซิกส์จี (T260G) หุ่นยนต์โบราณความจำเสื่อมที่ต้องค้นหาภารกิจดั้งเดิมของตัวเอง, และ ลูท ชายหนุ่มรักอิสระผู้ก้าวออกจากบ้านเพื่อตามหาความหมายของชีวิต",
+      "localization": "แปลภาษาไทยสมบูรณ์แบบ 100% ครอบคลุมทั้ง 7 ตัวเอก เควสต์ย่อย เมนูระบบ สกิล อาวุธ ชุดเกราะ มอนสเตอร์ บทพูดบอส และ Developer Room (สำมะโนในรอม 9,400/9,400 บรรทัด = 100.0%) พัฒนาระบบฟอนต์ Crisp 1bpp Master Font Kit แบบ VWF สระและวรรณยุกต์ซ้อนระดับพิกเซลคมชัด 1:1 พร้อมลายน้ำดิจิทัลป้องกันการขายต่อและระบบตรวจสอบความสมบูรณ์ Mode 2 Form 1 EDC/ECC ผ่านเกณฑ์ Release Guard 100%",
+      "untranslated": "ไม่มีส่วนค้างแปลตามผลสำรวจในรอม (100.0% In-ROM readback verified)",
+      "features": [
+        "บทสนทนาและข้อความภาษาไทยสมบูรณ์ครบ 9,400 บรรทัด (100.0%)",
+        "เนื้อเรื่องและฉากจบสมบูรณ์ครบทั้ง 7 ตัวเอก + Developer Room",
+        "ระบบสกิล/เวทมนตร์ (Techs/Spells) 512 ท่า, อาวุธ/ไอเทม 248 ชิ้น, มอนสเตอร์ 255 ชนิด ครบ 100%",
+        "ระบบฟอนต์ Crisp 1bpp VWF ความละเอียดสูง สระไม่ลอย วรรณยุกต์ไม่ซ้อนทับ",
+        "ผ่านการตรวจสอบ EDC/ECC Mode 2 Form 1 ครบทั้ง 25,480 เซกเตอร์ เล่นได้ราบรื่นบนอีมูเลเตอร์และเครื่องจริง"
+      ]
+    },
+    "verified": true,
+    "gameVersion": "v1.0.0"
+  },
+  {
+    "order": 46,
     "slug": "mana-khemia",
     "title": "Mana Khemia: Alchemists of Al-Revis",
     "platform": "ps2",
@@ -1802,7 +1849,7 @@ window.GAME_CATALOG = [
     "gameVersion": "v1.0.0"
   },
   {
-    "order": 46,
+    "order": 47,
     "slug": "mini-yonku-wgp2",
     "title": "Mini Yonku Let's & Go!!: Power WGP 2",
     "platform": "snes",
@@ -1848,7 +1895,7 @@ window.GAME_CATALOG = [
     "gameVersion": "v1.0.0"
   },
   {
-    "order": 47,
+    "order": 48,
     "slug": "popolocrois",
     "title": "PoPoLoCrois",
     "platform": "psp",
@@ -1876,7 +1923,7 @@ window.GAME_CATALOG = [
     "gameVersion": "v1.0.0"
   },
   {
-    "order": 48,
+    "order": 49,
     "slug": "disgaea-5-complete",
     "title": "Disgaea 5 Complete",
     "platform": "switch",
@@ -1909,7 +1956,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "16797cb36b9d5361ccecf8c5dc49578eb7ca3bfd526b0c6d90f93179f26b9c45"
   },
   {
-    "order": 49,
+    "order": 50,
     "slug": "fire-emblem-engage",
     "title": "Fire Emblem Engage",
     "platform": "switch",
@@ -1942,7 +1989,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "e4307cd633f16bee961d86d678bcacf24c1cc0ab3c73140c59f0d94771c39d54"
   },
   {
-    "order": 50,
+    "order": 51,
     "slug": "fire-emblem-three-houses",
     "title": "Fire Emblem: Three Houses",
     "platform": "switch",
@@ -1975,7 +2022,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "db2c7925d591576c501f831a3efae0273678a0bfdff2c4d32c2b8e182170ef42"
   },
   {
-    "order": 51,
+    "order": 52,
     "slug": "persona-5-royal",
     "title": "Persona 5 Royal",
     "platform": "switch",
@@ -2008,7 +2055,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "ae68cf2866e6fd49d06e4245af0cf64f463bafc15be6885a06d360ea83556f1f"
   },
   {
-    "order": 52,
+    "order": 53,
     "slug": "village-in-the-shade",
     "title": "Village in the Shade",
     "platform": "switch",
@@ -2042,6 +2089,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "saga-frontier",
+    "title": "SaGa Frontier",
+    "platform": "PS1",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-08T18:55:00+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0 แปลครบทั้ง 7 ตัวเอก สำรวจทั้งเกม 100% (9,400 บรรทัด)"
+  },
   {
     "slug": "fire-emblem-three-houses",
     "title": "Fire Emblem: Three Houses",

@@ -4,13 +4,13 @@ Updated: 2026-11-08 (Asia/Bangkok)
 
 ## Inventory
 
-- Web manifests: 51 (46 xdelta + 5 external Nintendo Switch mod archives)
-- Cloudflare R2 storage: 46/46 xdelta patch targets hosted on R2 bucket `talub-patches` and served via CDN Worker
-- Patch identity checks passed (file size + SHA-256): 46/46
-- Patch dates recorded: 51/51
-- Dates taken directly from patch-file modified time: 44
+- Web manifests: 52 (47 xdelta + 5 external Nintendo Switch mod archives)
+- Cloudflare R2 storage: 46/47 xdelta patch targets hosted on R2 bucket `talub-patches` and served via CDN Worker
+- Patch identity checks passed (file size + SHA-256): 47/47
+- Patch dates recorded: 52/52
+- Dates taken directly from patch-file modified time: 45
 - Dates using release-archive modified time because the patch carried a ZIP epoch timestamp: 2 (`lost-in-blue-2`, `monster-hunter-stories`)
-- Clean-source roundtrip with expected output hash matched: 27
+- Clean-source roundtrip with expected output hash matched: 28
 - Owner-reported xdelta-patcher tests: 13
 - Browser apply-only test without a pinned target hash: 1
 - No current roundtrip evidence recorded in the web manifest: 5
@@ -141,8 +141,18 @@ The `v1.0.0` web patch targets the 2 GiB decrypted USA cartridge image (`CTR-P-A
 - Expected output SHA-256: `0e6ea8330b3fc23fb1484726030a25c6b88f62e02fe82f66884b5a80c818a0d7`
 - Verification: WebAssembly xdelta3 engine roundtrip verified in Node (`tools/web_wasm_patch.mjs`: `ok=true`, `0e6ea833...` matched byte-for-byte in 4.1s); physical 3DS hardware IVFC hash tree audit passed (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True`). In-ROM binary census passed with 32,510/32,510 entries (100.00% In-ROM, 0 mismatches, 0 critical freeze).
 
+## SaGa Frontier (USA)
+
+The web patch targets the full 722 MB PlayStation 1 Mode 2 Form 1 CD-ROM image (`SCUS-94230`). Released as `v1.0.0` official with 100% complete story across all 7 protagonists (Blue, Red, Asellus, Lute, Emelia, Riki, T260G), system menus, items, skills, monster absorbs, battle UI, and boss dialogues. Features proportional monoline Thai typography with 20 recycled single-byte glyph slots, true combining tone mark clusters (including custom-inked `ง้` glyph without spacing drift), and compact 1px monoline punctuation (`!`, `?`).
+
+- Accepted source: `SaGa Frontier (USA).bin`, 722,635,536 bytes
+- Source SHA-256: `0c69e1fba5901ad87a5cfc8dd9121bb73c313a1bf877aa554d9b20e6b96a3eb9`
+- Patch SHA-256: `956b6eb9cec093642ba260383941458458c3188bfb01d9d5bf62dcbeec262f80`
+- Expected output SHA-256: `a8f261d3af1c854c14c9236264d4feca50d28f9065ea83e8a599876f68f3ec84`
+- Verification: WebAssembly xdelta3 engine roundtrip verified in Node (`tools/web_wasm_patch.mjs`: `ok=true`, `a8f261d3...` matched byte-for-byte in 1.4s); In-ROM binary census passed with 9,400/9,400 records (100.00% In-ROM, 0 mismatches, 0 critical freeze); 25,480 Mode 2 Form 1 sectors EDC/ECC verified.
+
 ## Evidence tiers
 
-The 27 output-matched entries combine 21 browser xdelta3 WASM roundtrips, 6 clean-source bit-identical/CLI roundtrips. The PoPoLoCrois web xdelta was applied successfully to its pinned USA ISO with the xdelta3 CLI; its measured output SHA-256 is used because the historical v1.10 guide's MD5/SHA1 describe a different target artifact. The 13 owner-reported entries retain that label and are not silently promoted to browser-roundtrip evidence. The five entries without current verification metadata are `dragon-quest-iv`, `dragon-quest-v`, `dragon-quest-vi`, `tales-of-hearts`, and `the-world-ends-with-you`.
+The 28 output-matched entries combine 22 browser xdelta3 WASM roundtrips, 6 clean-source bit-identical/CLI roundtrips. The PoPoLoCrois web xdelta was applied successfully to its pinned USA ISO with the xdelta3 CLI; its measured output SHA-256 is used because the historical v1.10 guide's MD5/SHA1 describe a different target artifact. The 13 owner-reported entries retain that label and are not silently promoted to browser-roundtrip evidence. The five entries without current verification metadata are `dragon-quest-iv`, `dragon-quest-v`, `dragon-quest-vi`, `tales-of-hearts`, and `the-world-ends-with-you`.
 
 Large 3DS outputs may still need a disk-streaming output path before browser patching can be considered reliable on devices with limited memory.

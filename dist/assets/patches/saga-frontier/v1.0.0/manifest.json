@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "saga-frontier",
+  "game_title": "SaGa Frontier",
+  "platform": "PS1",
+  "region": "USA",
+  "game_code": "SCUS-94230",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "SaGa Frontier (USA).bin",
+      "size": 722635536,
+      "sha256": "0c69e1fba5901ad87a5cfc8dd9121bb73c313a1bf877aa554d9b20e6b96a3eb9"
+    }
+  ],
+  "patch": {
+    "filename": "SaGa_Frontier_Thai_v1.0.0.xdelta",
+    "size": 455220,
+    "sha256": "956b6eb9cec093642ba260383941458458c3188bfb01d9d5bf62dcbeec262f80",
+    "release_date": "2026-11-08",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/saga-frontier/v1.0.0/SaGa_Frontier_Thai_v1.0.0.xdelta"
+  },
+  "output": {
+    "filename": "SaGa Frontier (USA) (Thai v1.0.0).bin",
+    "size": 722635536,
+    "sha256": "a8f261d3af1c854c14c9236264d4feca50d28f9065ea83e8a599876f68f3ec84"
+  },
+  "release_status": {
+    "module_status": "เมนูระบบ/ไอเทม/สกิล/มอนสเตอร์/ฉากต่อสู้/บทพูดบอส/บทพูดทั้งเกม 100%",
+    "whole_game_census": "สำรวจทั้งเกม In-ROM Census 100.0% (9,400 / 9,400 บรรทัด)",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-08T18:55:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean 722 MB USA PS1 Mode 2 CD-ROM source verified with browser xdelta3 wasm roundtrip (722,635,536 bytes matched SHA-256 a8f261d3...); In-ROM binary census passed with 9,400/9,400 records (100.00%); 25,480 Mode 2 Form 1 sectors EDC/ECC verified; 0 CRITICAL_FREEZE errors.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true,
+    "patcher_test_passed": true
+  }
+}
