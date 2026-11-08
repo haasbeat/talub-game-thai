@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "game_slug": "professor-layton-miracle-mask",
+  "game_title": "Professor Layton and the Miracle Mask",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "AKKE",
+  "patch_version": "v1.3.3",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Professor Layton and the Miracle Mask (USA).3ds",
+      "size": 1073741824,
+      "sha256": "ebc2d5480c1be7373a029f7f740d86cd398df6b75fae4bd2b366cd2abe71ba52"
+    }
+  ],
+  "patch": {
+    "filename": "Professor_Layton_Miracle_Mask_Thai_v1.3.3.xdelta",
+    "size": 8385633,
+    "sha256": "437b4b2d812bc70e0ba5e0b309916acb9f14ccb694ecdd65a6ec359ac5a4c147",
+    "release_date": "2026-11-08",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/professor-layton-miracle-mask/v1.3.3/Professor_Layton_Miracle_Mask_Thai_v1.3.3.xdelta"
+  },
+  "output": {
+    "filename": "Professor Layton and the Miracle Mask (USA) (Thai v1.3.3).3ds",
+    "size": 1073741824,
+    "sha256": "b2d780e7b100dcaa40525a0ac11756871002cdc3e70d6b62bdb02e1186f68327"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก 100% + ปริศนาทั้งหมด 150 ข้อ + ปริศนารายวัน 365 ข้อ + คำนวณ RomFS IVFC สมบูรณ์",
+    "whole_game_census": "12,992/12,992 เรคคอร์ด (ภาพรวมทั้งเกม 100%)",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "STATE.md / audit_layton.py (2026-11-08)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-08T23:05:00+07:00",
+    "method": "clean_source_xdelta_roundtrip_and_ncch_ivfc_verification",
+    "patcher_test_passed": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "ivfc_verified": true
+  }
+}

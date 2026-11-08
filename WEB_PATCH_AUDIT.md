@@ -33,6 +33,16 @@ Remote metadata was checked for filename, size, and modified time. Archive SHA-2
 
 An identity check proves that a web patch asset matches its manifest. It does not by itself prove that the patch reconstructs the expected ROM. A roundtrip is considered verified only when the patch is applied to the pinned clean source and the reconstructed output matches the expected size and SHA-256.
 
+## Professor Layton and the Miracle Mask
+
+The `v1.3.3` web patch targets the 1 GiB decrypted USA cartridge image (`CTR-P-AKKE`, Title ID `00040000000A8500`). Released as `v1.3.3` official with full RomFS IVFC hash tree recalculation (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, PASS=True`) via `tools/ncch_ivfc_rebuild.py`, completely eliminating real 3DS hardware ErrDisp `0xf96047a2` crash in `nn::fs::MountRom` / `GetRomRequiredMemorySize` (address `0x0010b67c`), expanding Master Font CMAP to 2,819 Thai syllables, and passing all 5 forensic audit pillars across 12,992 dialogue/puzzle records (100.00%).
+
+- Accepted source: `Professor Layton and the Miracle Mask (USA).3ds`, 1,073,741,824 bytes
+- Source SHA-256: `ebc2d5480c1be7373a029f7f740d86cd398df6b75fae4bd2b366cd2abe71ba52`
+- Patch SHA-256: `437b4b2d812bc70e0ba5e0b309916acb9f14ccb694ecdd65a6ec359ac5a4c147`
+- Expected output SHA-256: `b2d780e7b100dcaa40525a0ac11756871002cdc3e70d6b62bdb02e1186f68327`
+- Verification: clean-source xdelta3 roundtrip tested and confirmed 100% bit-identical; IVFC hash tree verified (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, PASS=True`); CIA conversion verified; release guard passed (`artifact_roundtrip_verified`).
+
 ## Dragon Quest VIII: Journey of the Cursed King
 
 The `v1.5.0` web patch targets the 4 GiB decrypted USA cartridge image (`CTR-P-BQ8E`). Released as `v1.5.0` official with full RomFS IVFC hash tree recalculation (`L1_bad=0, L2_bad=0, L3_bad=0, PASS=True`) via `tools/ncch_ivfc_rebuild.py`, completely eliminating real 3DS hardware ErrDisp `0xf96047a2` crash in `nn::fs::MountRom` / `GetRomRequiredMemorySize` (address `0x0010b67c`), standardizing all magic spells/skills to canonical Japanese Katakana transliteration across 581 files, and applying pixel-accurate Thai typography wrapping (`FontDefault_13.bffnt`) with zero box overflow (`critical=0, width_warnings=0`) across 39,141 pages.

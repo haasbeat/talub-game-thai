@@ -906,22 +906,22 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 024 / 034",
-    "version": "v1.3.2",
-    "patchDate": "2026-10-24",
+    "version": "v1.3.3",
+    "patchDate": "2026-11-08",
     "addedDate": "2026-11-04",
     "addedOrder": 18,
     "addedAt": "2026-11-04T21:10:11+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/professor-layton-miracle-mask.jpg",
-    "manifest": "./assets/patches/professor-layton-miracle-mask/v1.3.2/manifest.json",
+    "manifest": "./assets/patches/professor-layton-miracle-mask/v1.3.3/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN USA 3DS · 1 GB",
     "region": "USA",
     "gameCode": "AKKE",
     "sourceName": "Professor Layton and the Miracle Mask (USA).3ds · 1,073,741,824 bytes",
     "sourceHash": "ebc2d5480c1be7373a029f7f740d86cd398df6b75fae4bd2b366cd2abe71ba52",
-    "outputHash": "4bd6c6dd8c306aa04ae99ac8f6cf5e0a14acdbbcccba7aeda236e1fb71d0f899",
-    "moduleStatus": "ปริศนาทั้งหมด 150 ข้อ+ปริศนารายวัน 365 ข้อ+เนื้อเรื่องปาฏิหาริย์แห่งหน้ากาก 100%",
+    "outputHash": "b2d780e7b100dcaa40525a0ac11756871002cdc3e70d6b62bdb02e1186f68327",
+    "moduleStatus": "เนื้อเรื่องหลัก 100% + ปริศนาทั้งหมด 150 ข้อ + ปริศนารายวัน 365 ข้อ + คำนวณ RomFS IVFC สมบูรณ์",
     "wholeGameCensus": "12,992/12,992 เรคคอร์ด (ภาพรวมทั้งเกม 100%)",
     "details": {
       "thaiTitle": "ศาสตราจารย์เลย์ตันกับหน้ากากปาฏิหาริย์",
@@ -930,15 +930,16 @@ window.GAME_CATALOG = [
       "studio": "Level-5",
       "release": null,
       "genre": "Puzzle adventure",
-      "description": "ม็อดภาษาไทยสำหรับ Professor Layton and the Miracle Mask (3DS โซน USA) เวอร์ชัน v1.3.2",
+      "description": "ม็อดภาษาไทยสำหรับ Professor Layton and the Miracle Mask (3DS โซน USA) เวอร์ชัน v1.3.3",
       "overview": "ไขคดีสุภาพบุรุษสวมหน้ากากในเมืองแห่งแสงสีมงเตดอร์ พร้อมปริศนาหลักกว่า 150 ข้อ ภาคแรกของซีรีส์บน 3DS",
       "story": "เมืองมงเตดอร์กลางทะเลทรายถูกคุกคามโดย \"สุภาพบุรุษสวมหน้ากาก\" ผู้อ้างพลังของหน้ากากแห่งความโกลาหล และสร้างปาฏิหาริย์ชวนสะพรึง เช่น เปลี่ยนผู้คนให้เป็นหิน ศาสตราจารย์เลย์ตัน ลุค และเอ็มมี่จึงต้องสืบหาความจริง เรื่องราวยังสลับไปเล่าอดีตเมื่อ 18 ปีก่อน สมัยที่เลย์ตันวัย 17 ปีได้พบแรนดัล แอสคอต เพื่อนรักผู้หลงใหลโบราณคดี",
-      "localization": "แปลเนื้อเรื่อง ปริศนาและคำใบ้ครบทั้ง 4 ระดับ (สำมะโนใน STATE ระบุ 12,992/12,992 เรคคอร์ด = 100%) ใช้ฟอนต์ไทย Sukhumvit Text",
+      "localization": "แปลเนื้อเรื่อง ปริศนาและคำใบ้ครบทั้ง 4 ระดับ (สำมะโนใน STATE ระบุ 12,992/12,992 เรคคอร์ด = 100%) ใช้ฟอนต์ไทย Sukhumvit Text พร้อมคำนวณ RomFS IVFC Hash Tree สมบูรณ์ป้องกันอาการแครชบนเครื่องจริง",
       "untranslated": "ไม่มีส่วนที่ค้างแปลตามผลสำรวจในรอม",
       "features": [
         "ปริศนาหลัก 150 ข้อเป็นภาษาไทย",
         "คำใบ้ครบ 4 ระดับรวมสุดยอดคำใบ้",
-        "ฟอนต์ Sukhumvit Text คมชัด",
+        "ฟอนต์ Sukhumvit Text คมชัด ครอบคลุม 2,819 พยางค์",
+        "แก้ปัญหาแครช ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง 100%",
         "มีทั้งไฟล์ xdelta และ CIA สำหรับติดตั้ง"
       ]
     },
@@ -2090,6 +2091,15 @@ window.GAME_CATALOG = [
 ];
 window.GAME_UPDATES = [
   {
+    "slug": "professor-layton-miracle-mask",
+    "title": "Professor Layton and the Miracle Mask",
+    "platform": "3DS",
+    "version": "v1.3.3",
+    "type": "update",
+    "timestamp": "2026-11-08T23:05:00+07:00",
+    "note": "อัปเดตแพตช์ v1.3.3 คำนวณ RomFS IVFC Hash Tree ใหม่หมด ป้องกันอาการแครช ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง, ขยาย Master Font CMAP ครบ 2,819 พยางค์ และปรับปรุงความปลอดภัยของแท็ก/ตัวแปร 100%"
+  },
+  {
     "slug": "dragon-quest-viii",
     "title": "Dragon Quest VIII: Journey of the Cursed King",
     "platform": "3DS",
@@ -2543,10 +2553,10 @@ window.GAME_UPDATES = [
     "slug": "professor-layton-miracle-mask",
     "title": "Professor Layton and the Miracle Mask",
     "platform": "3DS",
-    "version": "v1.3.2",
+    "version": "v1.3.3",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.3.2"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.3.3"
   },
   {
     "slug": "rune-factory-4",
