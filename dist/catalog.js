@@ -1957,7 +1957,7 @@ window.GAME_CATALOG = [
     "cover": "./assets/covers/web/fire-emblem-three-houses.jpg",
     "manifest": "./assets/patches/fire-emblem-three-houses/v1.3.6/manifest.json",
     "accept": "",
-    "fileTypes": "ชุดม็อด LayeredFS · 302.05 MB",
+    "fileTypes": "ชุดม็อด LayeredFS · 302.06 MB",
     "region": "Global",
     "gameCode": "010055D009F78000",
     "sourceName": "Update v1.2.0 (Patch 4)",
@@ -2039,5 +2039,556 @@ window.GAME_CATALOG = [
     "downloadFilename": "Village_in_the_Shade_Thai_v1.0.0_Mod.zip",
     "downloadSize": 8334151,
     "downloadSha256": "02d3fc91bb9ca5f2e7b86b94a229560792db9f766deae3329ae42208c9d42eae"
+  }
+];
+window.GAME_UPDATES = [
+  {
+    "slug": "fire-emblem-three-houses",
+    "title": "Fire Emblem: Three Houses",
+    "platform": "SWITCH",
+    "version": "v1.3.6",
+    "type": "update",
+    "timestamp": "2026-11-08T16:09:49+07:00",
+    "note": "อัปเดตชุดม็อด v1.3.6 ปรับปรุงสถาปัตยกรรมฟอนต์ Tall-Safe ป้องกันสระลอยและ Strip Guard"
+  },
+  {
+    "slug": "inazuma-eleven-123",
+    "title": "Inazuma Eleven 1·2·3!! Endou Mamoru Densetsu",
+    "platform": "3DS",
+    "version": "v1.0.1",
+    "type": "update",
+    "timestamp": "2026-11-08T16:06:22+07:00",
+    "note": "อัปเดตแพตช์ v1.0.1 แก้ไขฟรีซท่าไม้ตาย 3D ภาค 3, UV บอลลูนสนทนา และป้ายกราฟิก 2,900+ รายการ"
+  },
+  {
+    "slug": "metal-max-4",
+    "title": "Metal Max 4: Gekkou no Diva",
+    "platform": "3DS",
+    "version": "v1.3.4",
+    "type": "update",
+    "timestamp": "2026-11-08T15:52:53+07:00",
+    "note": "อัปเดตแพตช์ v1.3.4 แก้ไขค่าแฮช NCCH ExHeader/ExeFS สำหรับติดตั้งบนเครื่อง 3DS จริง"
+  },
+  {
+    "slug": "tales-of-the-abyss",
+    "title": "Tales of the Abyss",
+    "platform": "3DS",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-08T14:00:39+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0 แปลเนื้อเรื่องหลัก 100%, Skits 518 เรื่อง, ซับไตเติลคัตซีน Moflex"
+  },
+  {
+    "slug": "dragon-quest-monsters-joker-3-professional",
+    "title": "Dragon Quest Monsters: Joker 3 Professional",
+    "platform": "3DS",
+    "version": "v1.0.4",
+    "type": "update",
+    "timestamp": "2026-11-08T12:02:06+07:00",
+    "note": "อัปเดตแพตช์ v1.0.4 คำนวณตารางแฮช IVFC RomFS ใหม่ ป้องกันอาการเครื่องจริงแครช ErrDisp"
+  },
+  {
+    "slug": "mana-khemia",
+    "title": "Mana Khemia: Alchemists of Al-Revis",
+    "platform": "PS2",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-08T08:39:19+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0 พร้อมระบบแพตช์แผ่นแท้ PS2 และซับไตเติลมูฟวี่อินสตรีม"
+  },
+  {
+    "slug": "fire-emblem-engage",
+    "title": "Fire Emblem Engage",
+    "platform": "SWITCH",
+    "version": "v2.0.6",
+    "type": "update",
+    "timestamp": "2026-11-08T08:25:24+07:00",
+    "note": "อัปเดตชุดม็อด v2.0.6 ปรับปรุงบทสนทนาเนื้อเรื่อง Ch.22 และความต่อเนื่องเสียงพากย์"
+  },
+  {
+    "slug": "persona-5-royal",
+    "title": "Persona 5 Royal",
+    "platform": "SWITCH",
+    "version": "v1.0.5",
+    "type": "update",
+    "timestamp": "2026-11-08T08:22:09+07:00",
+    "note": "อัปเดตชุดม็อด v1.0.5 แก้ไขบทสนทนา Mementos/Jose และเพิ่มม็อดปลดล็อก 60 FPS"
+  },
+  {
+    "slug": "yo-kai-watch",
+    "title": "Yo-kai Watch",
+    "platform": "3DS",
+    "version": "v2.8.2",
+    "type": "update",
+    "timestamp": "2026-11-08T01:42:55+07:00",
+    "note": "อัปเดตแพตช์ v2.8.2 ฟอนต์คมชัด 13pt สระไม่ลอย ลายน้ำ Ver. 2.8.2 และแก้ปัญหา IVFC"
+  },
+  {
+    "slug": "yo-kai-watch-3",
+    "title": "Yo-kai Watch 3",
+    "platform": "3DS",
+    "version": "v1.0.5",
+    "type": "update",
+    "timestamp": "2026-11-08T01:42:32+07:00",
+    "note": "อัปเดตแพตช์ v1.0.5 คำนวณโครงสร้าง IVFC แก้ปัญหาการติดตั้งบนเครื่อง New 3DS จริง"
+  },
+  {
+    "slug": "kingdom-hearts-358-2-days",
+    "title": "Kingdom Hearts: 358/2 Days",
+    "platform": "NDS",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-07T18:58:00+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0 แปลครบทั้ง 8 โลกและคัตซีน Theater 44 เรื่อง"
+  },
+  {
+    "slug": "etrian-odyssey-iv",
+    "title": "Etrian Odyssey IV: Legends of the Titan",
+    "platform": "3DS",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-07T17:01:57+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0 แปลเควสต์และสารานุกรมครบถ้วน"
+  },
+  {
+    "slug": "ex-troopers",
+    "title": "Ex-Troopers",
+    "platform": "3DS",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-07T07:29:45+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0 แปลการ์ตูนมังงะและบทสนทนาครบ"
+  },
+  {
+    "slug": "metal-max-4",
+    "title": "Metal Max 4: Gekkou no Diva",
+    "platform": "3DS",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-07T07:29:45+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0 ผจญภัยดินแดนรกร้างฉบับภาษาไทย"
+  },
+  {
+    "slug": "popolocrois",
+    "title": "PoPoLoCrois",
+    "platform": "PSP",
+    "version": "v1.1.0",
+    "type": "new",
+    "timestamp": "2026-11-06T19:21:05+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.1.0 แปลเนื้อเรื่องเจ้าชายปิเอโตรครบถ้วน"
+  },
+  {
+    "slug": "front-mission-2089",
+    "title": "Front Mission 2089: Border of Madness",
+    "platform": "NDS",
+    "version": "v1.1.1",
+    "type": "new",
+    "timestamp": "2026-11-06T15:16:04+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.1.1 แปลเนื้อเรื่องหุ่นรบแวนเซอร์ครบทุกมิชชัน"
+  },
+  {
+    "slug": "village-in-the-shade",
+    "title": "Village in the Shade",
+    "platform": "SWITCH",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-06T15:16:04+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0 ชุดม็อดสำหรับ Nintendo Switch"
+  },
+  {
+    "slug": "disgaea-5-complete",
+    "title": "Disgaea 5 Complete",
+    "platform": "SWITCH",
+    "version": "v1.0.1",
+    "type": "new",
+    "timestamp": "2026-11-06T14:30:36+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.1"
+  },
+  {
+    "slug": "fire-emblem-engage",
+    "title": "Fire Emblem Engage",
+    "platform": "SWITCH",
+    "version": "v2.0.6",
+    "type": "new",
+    "timestamp": "2026-11-06T14:30:36+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v2.0.6"
+  },
+  {
+    "slug": "fire-emblem-three-houses",
+    "title": "Fire Emblem: Three Houses",
+    "platform": "SWITCH",
+    "version": "v1.3.6",
+    "type": "new",
+    "timestamp": "2026-11-06T14:30:36+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.3.6"
+  },
+  {
+    "slug": "persona-5-royal",
+    "title": "Persona 5 Royal",
+    "platform": "SWITCH",
+    "version": "v1.0.5",
+    "type": "new",
+    "timestamp": "2026-11-06T14:30:36+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.5"
+  },
+  {
+    "slug": "dqm-joker-3-professional",
+    "title": "Dragon Quest Monsters: Joker 3 Professional",
+    "platform": "3DS",
+    "version": "v1.0.4",
+    "type": "new",
+    "timestamp": "2026-11-05T16:31:19+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.4"
+  },
+  {
+    "slug": "theatrhythm-dragon-quest",
+    "title": "Theatrhythm Dragon Quest",
+    "platform": "3DS",
+    "version": "v1.2.1",
+    "type": "new",
+    "timestamp": "2026-11-05T16:31:19+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.2.1"
+  },
+  {
+    "slug": "monster-hunter-stories",
+    "title": "Monster Hunter Stories",
+    "platform": "3DS",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-05T15:55:56+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0"
+  },
+  {
+    "slug": "love-plus-plus",
+    "title": "Love Plus+",
+    "platform": "NDS",
+    "version": "v1.0.5",
+    "type": "new",
+    "timestamp": "2026-11-05T15:08:17+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.5"
+  },
+  {
+    "slug": "lost-in-blue-2",
+    "title": "Lost in Blue 2",
+    "platform": "NDS",
+    "version": "v2.0.2",
+    "type": "new",
+    "timestamp": "2026-11-05T15:06:09+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v2.0.2"
+  },
+  {
+    "slug": "7th-dragon-iii-code-vfd",
+    "title": "7th Dragon III Code: VFD",
+    "platform": "3DS",
+    "version": "v1.0.4",
+    "type": "new",
+    "timestamp": "2026-11-05T10:32:58+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.4"
+  },
+  {
+    "slug": "bravely-default",
+    "title": "Bravely Default",
+    "platform": "3DS",
+    "version": "v1.0.2",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.2"
+  },
+  {
+    "slug": "dragon-ball-fusions",
+    "title": "Dragon Ball Fusions",
+    "platform": "3DS",
+    "version": "v1.0.6",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.6"
+  },
+  {
+    "slug": "dragon-quest-vii",
+    "title": "Dragon Quest VII: Fragments of the Forgotten Past",
+    "platform": "3DS",
+    "version": "v1.6.6",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.6.6"
+  },
+  {
+    "slug": "dragon-quest-vii-isan",
+    "title": "Dragon Quest VII: Fragments of the Forgotten Past (Isan Edition)",
+    "platform": "3DS",
+    "version": "v1.6.0",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.6.0"
+  },
+  {
+    "slug": "dragon-quest-viii",
+    "title": "Dragon Quest VIII: Journey of the Cursed King",
+    "platform": "3DS",
+    "version": "v1.4.0",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.4.0"
+  },
+  {
+    "slug": "dragon-quest-xi",
+    "title": "Dragon Quest XI: Echoes of an Elusive Age",
+    "platform": "3DS",
+    "version": "v2.4.2",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v2.4.2"
+  },
+  {
+    "slug": "etrian-odyssey-untold",
+    "title": "Etrian Odyssey Untold: The Millennium Girl",
+    "platform": "3DS",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0"
+  },
+  {
+    "slug": "ever-oasis",
+    "title": "Ever Oasis",
+    "platform": "3DS",
+    "version": "v1.0.3",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.3"
+  },
+  {
+    "slug": "final-fantasy-explorers",
+    "title": "Final Fantasy Explorers",
+    "platform": "3DS",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0"
+  },
+  {
+    "slug": "inazuma-eleven-123",
+    "title": "Inazuma Eleven 1-2-3!! - Endou Mamoru Densetsu",
+    "platform": "3DS",
+    "version": "v1.0.1",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.1"
+  },
+  {
+    "slug": "inazuma-go-thunderflash",
+    "title": "Inazuma Eleven GO: Chrono Stones - Thunderflash",
+    "platform": "3DS",
+    "version": "v1.0.1",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.1"
+  },
+  {
+    "slug": "inazuma-go-wildfire",
+    "title": "Inazuma Eleven GO: Chrono Stones - Wildfire",
+    "platform": "3DS",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0"
+  },
+  {
+    "slug": "inazuma-go-light",
+    "title": "Inazuma Eleven GO: Light",
+    "platform": "3DS",
+    "version": "v1.1.0",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.1.0"
+  },
+  {
+    "slug": "inazuma-go-shadow",
+    "title": "Inazuma Eleven GO: Shadow",
+    "platform": "3DS",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0"
+  },
+  {
+    "slug": "lost-heroes",
+    "title": "Lost Heroes",
+    "platform": "3DS",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0"
+  },
+  {
+    "slug": "new-love-plus-plus",
+    "title": "New Love Plus+",
+    "platform": "3DS",
+    "version": "v2.0.2",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v2.0.2"
+  },
+  {
+    "slug": "phoenix-wright-trilogy",
+    "title": "Phoenix Wright: Ace Attorney Trilogy",
+    "platform": "3DS",
+    "version": "v1.2.3",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.2.3"
+  },
+  {
+    "slug": "professor-layton-miracle-mask",
+    "title": "Professor Layton and the Miracle Mask",
+    "platform": "3DS",
+    "version": "v1.3.2",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.3.2"
+  },
+  {
+    "slug": "rune-factory-4",
+    "title": "Rune Factory 4",
+    "platform": "3DS",
+    "version": "v1.0.4",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.4"
+  },
+  {
+    "slug": "shin-megami-tensei-iv",
+    "title": "Shin Megami Tensei IV",
+    "platform": "3DS",
+    "version": "v1.3.4",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.3.4"
+  },
+  {
+    "slug": "smt-strange-journey-redux",
+    "title": "Shin Megami Tensei: Strange Journey Redux",
+    "platform": "3DS",
+    "version": "v1.0.4",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.4"
+  },
+  {
+    "slug": "time-travelers",
+    "title": "Time Travelers",
+    "platform": "3DS",
+    "version": "v1.0.1",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.1"
+  },
+  {
+    "slug": "xenoblade-chronicles-3d",
+    "title": "Xenoblade Chronicles 3D",
+    "platform": "3DS",
+    "version": "v1.0.7",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.7"
+  },
+  {
+    "slug": "yo-kai-watch",
+    "title": "Yo-kai Watch",
+    "platform": "3DS",
+    "version": "v2.8.2",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v2.8.2"
+  },
+  {
+    "slug": "yo-kai-watch-2",
+    "title": "Yo-kai Watch 2: Psychic Specters",
+    "platform": "3DS",
+    "version": "v1.2.0",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.2.0"
+  },
+  {
+    "slug": "yo-kai-watch-3",
+    "title": "Yo-kai Watch 3",
+    "platform": "3DS",
+    "version": "v1.0.5",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.5"
+  },
+  {
+    "slug": "dragon-quest-iv",
+    "title": "Dragon Quest IV: Chapters of the Chosen",
+    "platform": "NDS",
+    "version": "v2.5.1",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v2.5.1"
+  },
+  {
+    "slug": "dragon-quest-v",
+    "title": "Dragon Quest V: Hand of the Heavenly Bride",
+    "platform": "NDS",
+    "version": "v1.6.3",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.6.3"
+  },
+  {
+    "slug": "dragon-quest-vi",
+    "title": "Dragon Quest VI: Realms of Revelation",
+    "platform": "NDS",
+    "version": "v1.1.0",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.1.0"
+  },
+  {
+    "slug": "saga2-hihou-densetsu",
+    "title": "SaGa 2: Hihou Densetsu - Goddess of Destiny",
+    "platform": "NDS",
+    "version": "v1.0.1",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.1"
+  },
+  {
+    "slug": "suikoden-tierkreis",
+    "title": "Suikoden Tierkreis",
+    "platform": "NDS",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0"
+  },
+  {
+    "slug": "tales-of-hearts",
+    "title": "Tales of Hearts",
+    "platform": "NDS",
+    "version": "v1.0.1",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.1"
+  },
+  {
+    "slug": "the-world-ends-with-you",
+    "title": "The World Ends with You",
+    "platform": "NDS",
+    "version": "v1.0.4",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.4"
+  },
+  {
+    "slug": "mini-yonku-wgp2",
+    "title": "Mini Yonku Let's & Go!!: Power WGP 2",
+    "platform": "SNES",
+    "version": "v1.3.15",
+    "type": "new",
+    "timestamp": "2026-11-04T21:10:11+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.3.15"
   }
 ];

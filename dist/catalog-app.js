@@ -56,12 +56,13 @@ const platformEmpty = document.querySelector('#platform-empty');
 const gameSort = document.querySelector('#game-sort');
 const posterShapes = ['poster-a', 'poster-b', 'poster-c', 'poster-d', 'poster-e'];
 
+const updatesSection = document.querySelector('#updates');
 const latestSection = document.querySelector('#latest');
 const popularSection = document.querySelector('#popular');
 const supportSection = document.querySelector('#support');
 const gamesSection = document.querySelector('#games');
-if (latestSection && popularSection && supportSection && gamesSection) {
-  gamesSection.before(latestSection, popularSection, supportSection);
+if (updatesSection && latestSection && popularSection && supportSection && gamesSection) {
+  gamesSection.before(updatesSection, latestSection, popularSection, supportSection);
 }
 
 const formatPatchDate = (isoDate) => {
@@ -381,6 +382,133 @@ const renderLatestGames = () => {
   bindHoverTargets(latestGames);
 };
 
+const updatesFeed = document.querySelector('#updates-feed');
+
+const renderDailyUpdates = () => {
+  if (!updatesFeed) return;
+  const updates = window.GAME_UPDATES || [];
+  if (!updates.length) return;
+
+  const now = new Date();
+  const todayKey = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Bangkok' }).format(now);
+  const yesterdayKey = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Bangkok' }).format(new Date(now.getTime() - 86400000));
+
+  const formatThaiDate = (d) => new Intl.DateTimeFormat('th-TH', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+    timeZone: 'Asia/Bangkok',
+  }).format(d);
+
+  const formatTime = (d) => new Intl.DateTimeFormat('th-TH', {
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false,
+    timeZone: 'Asia/Bangkok',
+  }).format(d);
+
+  const groups = new Map();
+  for (const item of updates.slice(0, 16)) {
+    const d = new Date(item.timestamp);
+    const dateKey = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Bangkok' }).format(d);
+    if (!groups.has(dateKey)) groups.set(dateKey, { date: d, items: [] });
+    groups.get(dateKey).items.push(item);
+  }
+
+  const fragment = document.createDocumentFragment();
+
+  for (const [key, group] of groups) {
+    const isToday = key === todayKey;
+    const isYesterday = key === yesterdayKey;
+    const badgeLabel = isToday ? 'TODAY · วันนี้' : isYesterday ? 'YESTERDAY · เมื่อวานนี้' : 'DAILY LOG';
+
+    const groupEl = document.createElement('div');
+    groupEl.className = 'update-day-group';
+
+    const headerEl = document.createElement('div');
+    headerEl.className = 'update-day-header';
+
+    const badge = document.createElement('span');
+    badge.className = `update-day-badge mono ${isToday ? 'is-today' : ''}`;
+    badge.textContent = badgeLabel;
+
+    const title = document.createElement('h3');
+    title.className = 'update-day-title';
+    title.textContent = formatThaiDate(group.date);
+
+    const count = document.createElement('span');
+    count.className = 'update-day-count mono';
+    count.textContent = `${group.items.length} รายการ`;
+
+    headerEl.append(badge, title, count);
+
+    const listEl = document.createElement('div');
+    listEl.className = 'update-day-list';
+
+    for (const item of group.items) {
+      const row = document.createElement('a');
+      row.className = 'update-row hover-target';
+      row.href = `./game.html?game=${encodeURIComponent(item.slug)}`;
+      row.setAttribute('aria-label', `${item.title} — ${item.note}`);
+
+      const leadEl = document.createElement('div');
+      leadEl.className = 'update-lead';
+
+      const timeEl = document.createElement('time');
+      timeEl.className = 'update-time mono';
+      timeEl.dateTime = item.timestamp;
+      timeEl.textContent = formatTime(new Date(item.timestamp));
+
+      const platformEl = document.createElement('span');
+      platformEl.className = 'update-platform mono';
+      platformEl.textContent = item.platform;
+
+      const typeEl = document.createElement('span');
+      const isUpdate = item.type === 'update';
+      typeEl.className = `update-type ${isUpdate ? 'is-update' : 'is-new'} mono`;
+      typeEl.textContent = isUpdate ? 'อัปเดต' : 'เพิ่มใหม่';
+
+      leadEl.append(timeEl, platformEl, typeEl);
+
+      const infoEl = document.createElement('div');
+      infoEl.className = 'update-info';
+
+      const gameTitle = document.createElement('strong');
+      gameTitle.className = 'update-game-title';
+      gameTitle.textContent = item.title;
+
+      const descEl = document.createElement('span');
+      descEl.className = 'update-desc';
+      descEl.textContent = item.note;
+
+      infoEl.append(gameTitle, descEl);
+
+      const trailEl = document.createElement('div');
+      trailEl.className = 'update-trail';
+
+      const versionEl = document.createElement('span');
+      versionEl.className = 'update-version mono';
+      versionEl.textContent = item.version;
+
+      const arrowEl = document.createElement('span');
+      arrowEl.className = 'update-arrow mono';
+      arrowEl.setAttribute('aria-hidden', 'true');
+      arrowEl.textContent = '↗';
+
+      trailEl.append(versionEl, arrowEl);
+
+      row.append(leadEl, infoEl, trailEl);
+      listEl.append(row);
+    }
+
+    groupEl.append(headerEl, listEl);
+    fragment.append(groupEl);
+  }
+
+  updatesFeed.replaceChildren(fragment);
+  bindHoverTargets(updatesFeed);
+};
+
 const pagination = document.createElement('nav');
 pagination.className = 'game-pagination';
 pagination.setAttribute('aria-label', 'หน้ารายการเกม');
@@ -515,6 +643,7 @@ createPlatformTabs();
 renderCatalog(false);
 updatePlatformScrollState();
 renderPopularGames(popularFallback);
+renderDailyUpdates();
 renderLatestGames();
 loadPopularRanking();
 renderSiteSummaryStats();

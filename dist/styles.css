@@ -409,6 +409,32 @@ body.has-inapp-banner main { padding-top: 60px; }
 .popular-small-card .popular-card-stat { margin-top: 12px; color: var(--muted); font-size: 9px; }
 .popular-small-card .popular-rank { top: 8px; left: 8px; padding: 5px 7px; font-size: 8px; }
 
+.updates-section { padding-top: 52px; padding-bottom: 64px; scroll-margin-top: 96px; border-top: 1px solid var(--line); }
+.updates-feed { display: grid; gap: 28px; margin-top: 24px; }
+.update-day-group { display: grid; gap: 10px; }
+.update-day-header { display: flex; align-items: center; gap: 12px; padding-bottom: 10px; border-bottom: 2px solid var(--ink); }
+.update-day-badge { display: inline-flex; align-items: center; gap: 6px; padding: 3px 8px; font-size: 10px; font-weight: 600; color: #fff; background: var(--ink); border-radius: 4px; }
+.update-day-badge.is-today { background: #0066cc; }
+.update-day-badge.is-today::before { content: ''; display: inline-block; width: 6px; height: 6px; background: #fff; border-radius: 50%; box-shadow: 0 0 6px #fff; }
+.update-day-title { margin: 0; font-size: clamp(16px, 1.6vw, 20px); font-weight: 600; letter-spacing: -0.02em; color: var(--ink); }
+.update-day-count { margin-left: auto; color: var(--muted); font-size: 11px; }
+.update-day-list { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.update-row { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 18px; align-items: center; padding: 13px 18px; background: #fff; color: var(--ink); text-decoration: none; transition: background 160ms var(--ease), padding-left 160ms var(--ease); }
+.update-row:hover { background: #f8f8f5; padding-left: 22px; }
+.update-lead { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.update-time { color: var(--muted); font-size: 12px; font-weight: 600; min-width: 42px; }
+.update-platform { display: inline-block; padding: 2px 7px; font-size: 10px; font-weight: 700; letter-spacing: 0.05em; border-radius: 4px; background: #f0f0ed; color: #222; border: 1px solid rgba(0, 0, 0, 0.08); }
+.update-type { display: inline-block; padding: 2px 7px; font-size: 10px; font-weight: 600; border-radius: 4px; white-space: nowrap; }
+.update-type.is-new { background: #050505; color: #fff; }
+.update-type.is-update { background: #eaf2ff; color: #0055bb; border: 1px solid #c2daff; }
+.update-info { display: flex; align-items: center; gap: 12px; min-width: 0; overflow: hidden; }
+.update-game-title { font-size: 15px; font-weight: 600; letter-spacing: -0.015em; color: var(--ink); white-space: nowrap; flex-shrink: 0; }
+.update-desc { color: #555; font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.update-trail { display: flex; align-items: center; gap: 10px; flex-shrink: 0; margin-left: auto; }
+.update-version { color: var(--muted); font-size: 11px; white-space: nowrap; }
+.update-arrow { color: var(--muted); font-size: 14px; transition: transform 180ms var(--ease), color 180ms var(--ease); }
+.update-row:hover .update-arrow { transform: translate(2px, -2px); color: var(--ink); }
+
 .latest-section { padding-top: 52px; padding-bottom: 64px; background: #f3f3f1; scroll-margin-top: 96px; }
 .latest-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
 .latest-game-card { min-width: 0; display: block; }
@@ -701,7 +727,13 @@ body.has-inapp-banner main { padding-top: 60px; }
   .hero-title { font-size: clamp(22px, 6.5vw, 30px); line-height: 1.2; }
   .hero-foot { align-items: end; }
   .circle-link { width: 52px; height: 52px; }
-  .games, .patcher-intro, .popular-section, .latest-section { padding-top: 40px; }
+  .games, .patcher-intro, .popular-section, .latest-section, .updates-section { padding-top: 40px; }
+  .update-row { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; padding: 13px 14px; }
+  .update-row:hover { padding-left: 14px; }
+  .update-info { flex-direction: column; align-items: flex-start; gap: 4px; width: 100%; }
+  .update-game-title { white-space: normal; line-height: 1.25; font-size: 15px; }
+  .update-desc { white-space: normal; font-size: 12px; line-height: 1.4; }
+  .update-trail { width: 100%; justify-content: space-between; padding-top: 6px; border-top: 1px dashed var(--line); margin-left: 0; }
   .section-label { margin-bottom: 16px; }
   .platform-filter { gap: 3px; padding: 5px; border-radius: 32px; }
   .platform-filter-shell::before, .platform-filter-shell::after { height: 72px; }
