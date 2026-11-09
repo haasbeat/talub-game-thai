@@ -165,13 +165,13 @@ The web patch targets the full 2 GiB USA cartridge image (`B4EE`). Released as `
 
 ## Phoenix Wright: Ace Attorney Trilogy
 
-The web patch targets the full 536,870,912-byte USA eShop image. The previous 384,315,392-byte decrypted profile was the wrong source profile for the ROM distributed by the project owner.
+The `v1.2.4` web patch targets the full 536,870,912-byte USA eShop image (`CTR-N-BHDE`, Title ID `0004000000138F00`). Released as `v1.2.4` official with full RomFS IVFC hash tree recalculation (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`) via `tools/ncch_ivfc_rebuild.py`, completely eliminating real Nintendo 3DS hardware ErrDisp `0xf96047a2` crash in `nn::fs::MountRom` / `GetRomRequiredMemorySize` (address `0x0010b67c`), built cleanly from the pinned clean eShop source, featuring 4-tier in-game v1.2.4 watermarks, and dual-status census 100% playable content across all 3 games / 14 cases (11,888/11,888 In-ROM records / 100% binary ground truth, 0 critical freeze).
 
 - Accepted source: `Phoenix Wright - Ace Attorney Trilogy (USA) (eShop).3ds`, 536,870,912 bytes
 - Source SHA-256: `1690da8414e468debfc96118833d3752f44f5331acd5c7ef0406af17d3c631d1`
-- Patch SHA-256: `f0242103d34db42ae95b6e81630cc2b3c65946709d20b227873390073deac6a8`
-- Expected output SHA-256: `ba2ea48fae81cf129b26a6e920ccdca30bce0c57c27cd9868f7bcc9617cee7d2`
-- Verification: the exact distributed eShop xdelta reconstructed the release target byte-for-byte from the pinned clean source with xdelta3. The 356,781,961-byte patch is stored in Cloudflare R2 as four versioned parts, served through the project Worker with CORS and Range support, and reassembled in the browser before its full SHA-256 is checked.
+- Patch SHA-256: `a17fde91918c5f5f676bb3a65ab3dfe560d2e8b1086314a85e026c96be5e9177`
+- Expected output SHA-256: `c1e12131470b32b767c3ff46cf8fb8590013baf447cefee1468f0186d3a98e79`
+- Verification: the exact distributed eShop xdelta reconstructed the release target byte-for-byte from the pinned clean source with xdelta3; IVFC hash tree verified (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`); direct In-ROM binary census verified across 11,888/11,888 records (100.00% In-ROM ground truth, 0 critical freeze). The 356,716,546-byte patch is stored in Cloudflare R2 as four versioned parts, served through the project Worker with CORS and Range support, and reassembled in the browser before its full SHA-256 is checked.
 
 ## E.X. Troopers
 

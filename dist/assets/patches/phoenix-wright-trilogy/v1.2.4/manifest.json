@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "game_slug": "phoenix-wright-trilogy",
+  "game_title": "Phoenix Wright: Ace Attorney Trilogy",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "BHDE",
+  "patch_version": "v1.2.4",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Phoenix Wright - Ace Attorney Trilogy (USA) (eShop).3ds",
+      "size": 536870912,
+      "sha256": "1690da8414e468debfc96118833d3752f44f5331acd5c7ef0406af17d3c631d1"
+    }
+  ],
+  "patch": {
+    "filename": "Phoenix_Wright_Trilogy_Thai_v1.2.4.xdelta",
+    "size": 356716546,
+    "sha256": "a17fde91918c5f5f676bb3a65ab3dfe560d2e8b1086314a85e026c96be5e9177",
+    "release_date": "2026-11-09",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/phoenix-wright-trilogy/v1.2.4/Phoenix_Wright_Trilogy_Thai_v1.2.4.xdelta",
+    "parts": [
+      {
+        "filename": "Phoenix_Wright_Trilogy_Thai_v1.2.4.xdelta.part01",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/phoenix-wright-trilogy/v1.2.4/Phoenix_Wright_Trilogy_Thai_v1.2.4.xdelta.part01",
+        "size": 94371840,
+        "sha256": "1d9e7b00422c880e5dc0af51f1f62ce6ea28c0a42ee5a7b4ec8463d1bd891ae7"
+      },
+      {
+        "filename": "Phoenix_Wright_Trilogy_Thai_v1.2.4.xdelta.part02",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/phoenix-wright-trilogy/v1.2.4/Phoenix_Wright_Trilogy_Thai_v1.2.4.xdelta.part02",
+        "size": 94371840,
+        "sha256": "9724e48060b24c8e7e16b0bd4ef4a2700cb9157e6dfb9b48c7c88fa700efe6b5"
+      },
+      {
+        "filename": "Phoenix_Wright_Trilogy_Thai_v1.2.4.xdelta.part03",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/phoenix-wright-trilogy/v1.2.4/Phoenix_Wright_Trilogy_Thai_v1.2.4.xdelta.part03",
+        "size": 94371840,
+        "sha256": "28bf7b4c2fdcf12853957679ecfecb0353cdd3b9743850758f3ef90abc43afc7"
+      },
+      {
+        "filename": "Phoenix_Wright_Trilogy_Thai_v1.2.4.xdelta.part04",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/phoenix-wright-trilogy/v1.2.4/Phoenix_Wright_Trilogy_Thai_v1.2.4.xdelta.part04",
+        "size": 73601026,
+        "sha256": "57d28dd34fa7f559ec14192c216635632965ec4848199e0f3d488f74ad1b338e"
+      }
+    ]
+  },
+  "output": {
+    "filename": "Phoenix Wright - Ace Attorney Trilogy (Thai).3ds",
+    "size": 398835712,
+    "sha256": "c1e12131470b32b767c3ff46cf8fb8590013baf447cefee1468f0186d3a98e79"
+  },
+  "release_status": {
+    "module_status": "คดีความทั้ง 3 ภาค (14 คดี)+การว่าความในชั้นศาล+สืบสวนภาคสนาม 100%",
+    "whole_game_census": "11,888/11,888 เรคคอร์ด (ภาพรวมทั้งเกม 100%)",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "STATE.md / release notes (2026-11-09 audit)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-09T11:25:00+07:00",
+    "method": "clean_source_cli_roundtrip",
+    "note": "The exact distributed eShop xdelta reconstructed the release target from the pinned 536,870,912-byte clean USA source with xdelta3. Source, patch, and output were hashed directly.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true,
+    "ivfc_rebuild_verified": true
+  }
+}
