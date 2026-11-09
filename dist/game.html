@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=122" />
+    <link rel="stylesheet" href="./styles.css?v=123" />
   </head>
   <body class="detail-page">
     <div class="cursor" aria-hidden="true"></div>
@@ -58,7 +58,7 @@
     <main id="top">
       <section class="detail-hero section-pad">
         <div class="detail-cover-wrap">
-          <img id="detail-cover" class="detail-cover" src="./assets/covers/the-world-ends-with-you.jpg" alt="ปกเกม" />
+          <img id="detail-cover" class="detail-cover" src="./assets/covers/the-world-ends-with-you.jpg" alt="ปกเกม" fetchpriority="high" decoding="async" />
         </div>
 
         <div class="detail-copy">
@@ -329,9 +329,9 @@
     </footer>
 
     <div id="toast" class="toast" role="status" aria-live="polite">พร้อมประมวลผลภายในอุปกรณ์</div>
-    <script src="./catalog.js?v=122"></script>
-    <script src="./patch-stats.js?v=122"></script>
-    <script src="./assets/engine/hash/sha256.js"></script>
-    <script src="./game.js?v=122"></script>
+    <script defer src="./catalog.js?v=123"></script>
+    <script defer src="./patch-stats.js?v=123"></script>
+    <script defer src="./assets/engine/hash/sha256.js"></script>
+    <script defer src="./game.js?v=123"></script>
   </body>
 </html>

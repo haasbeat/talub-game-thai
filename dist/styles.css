@@ -57,6 +57,10 @@ button, a, .drop-zone { -webkit-tap-highlight-color: transparent; }
 }
 .cursor.is-hovering { width: 48px; height: 48px; margin: -24px 0 0 -24px; }
 
+@media (hover: none) or (pointer: coarse) {
+  .cursor, .noise { display: none !important; }
+}
+
 .inapp-banner {
   position: fixed;
   top: 0;

@@ -12,8 +12,19 @@ const bindHoverTargets = (root = document) => {
 };
 
 if (window.matchMedia('(pointer: fine)').matches) {
+  let mouseX = -100;
+  let mouseY = -100;
+  let rafPending = false;
   window.addEventListener('pointermove', (event) => {
-    cursor.style.transform = `translate3d(${event.clientX}px, ${event.clientY}px, 0)`;
+    mouseX = event.clientX;
+    mouseY = event.clientY;
+    if (!rafPending) {
+      rafPending = true;
+      requestAnimationFrame(() => {
+        cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+        rafPending = false;
+      });
+    }
   }, { passive: true });
 }
 
