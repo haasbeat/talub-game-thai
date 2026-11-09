@@ -443,7 +443,31 @@ const updatesFeed = document.querySelector('#updates-feed');
 
 const renderDailyUpdates = () => {
   if (!updatesFeed) return;
-  const updates = window.GAME_UPDATES || [];
+  const rawUpdates = window.GAME_UPDATES || [];
+  const updates = [...rawUpdates];
+  const seenUpdateKeys = new Set(updates.map((u) => `${u.slug}@${u.version}`));
+
+  // Fail-safe: Automatically detect any game in GAME_CATALOG whose current version is not in GAME_UPDATES
+  if (Array.isArray(window.GAME_CATALOG)) {
+    for (const game of window.GAME_CATALOG) {
+      if (game.version && !seenUpdateKeys.has(`${game.slug}@${game.version}`)) {
+        const ts = game.patchDate ? `${game.patchDate}T12:00:00+07:00` : (game.addedAt || new Date().toISOString());
+        updates.push({
+          slug: game.slug,
+          title: game.title,
+          platform: game.platformLabel || '3DS',
+          version: game.version,
+          type: 'update',
+          timestamp: ts,
+          note: `อัปเดตแพตช์/ม็อด ${game.version}`,
+        });
+        seenUpdateKeys.add(`${game.slug}@${game.version}`);
+      }
+    }
+  }
+
+  // Always ensure chronological sorting descending regardless of entry order
+  updates.sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime());
   if (!updates.length) return;
 
   const now = new Date();

@@ -2526,6 +2526,15 @@ window.GAME_UPDATES = [
     "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0 แปลเควสต์และสารานุกรมครบถ้วน"
   },
   {
+    "slug": "etrian-odyssey-iv",
+    "title": "Etrian Odyssey IV: Legends of the Titan",
+    "platform": "3DS",
+    "version": "v1.0.1",
+    "type": "update",
+    "timestamp": "2026-11-07T12:00:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.1"
+  },
+  {
     "slug": "ex-troopers",
     "title": "Ex-Troopers",
     "platform": "3DS",
