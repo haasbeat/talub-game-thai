@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "game_slug": "fire-emblem-engage",
+  "game_title": "Fire Emblem Engage",
+  "platform": "Nintendo Switch",
+  "title_id": "0100A6301214E000",
+  "patch_version": "v2.0.7",
+  "target_game_version": "Update v2.0.0 + DLC Waves 1-4",
+  "distribution": {
+    "type": "external_mod_archive",
+    "filename": "FE17_Thai_v2.0.7_All_In_One.zip",
+    "url": "https://drive.google.com/file/d/13xtPMq0fpZO1VTPWftrzOaFXC-5avUiD/view?usp=sharing",
+    "size": 107594408,
+    "sha256": "0a55df8c842133b7668e281af95cc9cf8060c0563969aca8912cdeefff83cf1e",
+    "release_date": "2026-11-09",
+    "date_source": "remote_file_modified_time"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก เมนู DLC Waves 1-4 และ Dual-Region US/EU Switch ผ่านการตรวจ In-ROM 100%",
+    "whole_game_census": "41,265 ระเบียนที่ฉีดในรอม / ฐานสำรวจ 39,176 ระเบียน (105.33%)"
+  },
+  "verification": {
+    "archive_identity_verified": true,
+    "binary_readback_verified": true,
+    "hardware_verified": false
+  }
+}
