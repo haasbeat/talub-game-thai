@@ -82,7 +82,7 @@ const requestedPlatform = params.get('platform');
 const requestedSort = params.get('sort');
 const state = {
   platform: platformLabels[requestedPlatform] ? requestedPlatform : 'all',
-  sort: ['default', 'newest', 'name-asc', 'name-desc'].includes(requestedSort) ? requestedSort : 'default',
+  sort: ['default', 'popular', 'updated', 'newest', 'name-asc', 'name-desc'].includes(requestedSort) ? requestedSort : 'default',
   page: Math.max(1, Number.parseInt(params.get('page') || '1', 10) || 1),
   query: (params.get('q') || '').trim(),
 };
@@ -151,13 +151,61 @@ const columnsForViewport = () => {
 
 const pageSize = () => columnsForViewport() * 5;
 
+let popularityMetrics = new Map();
+
+const latestUpdateMap = new Map();
+const getLatestGameUpdateTime = (game) => {
+  if (!latestUpdateMap.size && Array.isArray(window.GAME_UPDATES)) {
+    for (const u of window.GAME_UPDATES) {
+      const t = new Date(u.timestamp).getTime();
+      if (!Number.isNaN(t)) {
+        const existing = latestUpdateMap.get(u.slug) || 0;
+        if (t > existing) latestUpdateMap.set(u.slug, t);
+      }
+    }
+  }
+  if (latestUpdateMap.has(game.slug)) return latestUpdateMap.get(game.slug);
+  if (game.patchDate) {
+    const t = new Date(`${game.patchDate}T00:00:00+07:00`).getTime();
+    if (!Number.isNaN(t)) return t;
+  }
+  if (game.addedAt) {
+    const t = new Date(game.addedAt).getTime();
+    if (!Number.isNaN(t)) return t;
+  }
+  return 0;
+};
+
 const sortedGames = () => {
   const filtered = (state.platform === 'all'
     ? [...catalog]
     : catalog.filter((game) => game.platform === state.platform)).filter(matchesQuery);
 
   return filtered.sort((left, right) => {
-    if (state.sort === 'newest') return right.order - left.order;
+    if (state.sort === 'popular') {
+      const leftVal = popularityMetrics.get(left.slug);
+      const rightVal = popularityMetrics.get(right.slug);
+      const leftScore = Number.isFinite(leftVal) ? leftVal : -1;
+      const rightScore = Number.isFinite(rightVal) ? rightVal : -1;
+      if (rightScore !== leftScore) return rightScore - leftScore;
+      const fallbackRank = new Map(popularFallbackSlugs.map((slug, index) => [slug, index]));
+      const leftFallback = fallbackRank.has(left.slug) ? fallbackRank.get(left.slug) : Number.MAX_SAFE_INTEGER;
+      const rightFallback = fallbackRank.has(right.slug) ? fallbackRank.get(right.slug) : Number.MAX_SAFE_INTEGER;
+      if (leftFallback !== rightFallback) return leftFallback - rightFallback;
+      return (right.addedOrder || 0) - (left.addedOrder || 0);
+    }
+    if (state.sort === 'updated') {
+      const leftTime = getLatestGameUpdateTime(left);
+      const rightTime = getLatestGameUpdateTime(right);
+      if (rightTime !== leftTime) return rightTime - leftTime;
+      return (right.addedOrder || 0) - (left.addedOrder || 0);
+    }
+    if (state.sort === 'newest') {
+      const leftOrder = left.addedOrder ?? left.order ?? 0;
+      const rightOrder = right.addedOrder ?? right.order ?? 0;
+      if (rightOrder !== leftOrder) return rightOrder - leftOrder;
+      return left.title.localeCompare(right.title, 'en');
+    }
     if (state.sort === 'name-asc') return left.title.localeCompare(right.title, 'en');
     if (state.sort === 'name-desc') return right.title.localeCompare(left.title, 'en');
     return left.order - right.order;
@@ -307,27 +355,34 @@ const renderPopularGames = (games, metrics = new Map()) => {
 };
 
 const loadPopularRanking = async () => {
-  if (!popularGames || !window.PatchStats) return;
+  if (!window.PatchStats) return;
   const { counts } = await window.PatchStats.getAll();
   const metrics = new Map();
   for (const game of catalog) {
     const key = game.distributionType === 'external-download' ? `download--${game.slug}` : game.slug;
     metrics.set(game.slug, counts[key] ?? 0);
   }
+  popularityMetrics = metrics;
 
-  const fallbackRank = new Map(popularFallbackSlugs.map((slug, index) => [slug, index]));
-  const ranked = [...catalog].sort((left, right) => {
-    const leftValue = metrics.get(left.slug);
-    const rightValue = metrics.get(right.slug);
-    const leftScore = Number.isFinite(leftValue) ? leftValue : -1;
-    const rightScore = Number.isFinite(rightValue) ? rightValue : -1;
-    if (rightScore !== leftScore) return rightScore - leftScore;
-    const leftFallback = fallbackRank.has(left.slug) ? fallbackRank.get(left.slug) : Number.MAX_SAFE_INTEGER;
-    const rightFallback = fallbackRank.has(right.slug) ? fallbackRank.get(right.slug) : Number.MAX_SAFE_INTEGER;
-    if (leftFallback !== rightFallback) return leftFallback - rightFallback;
-    return right.order - left.order;
-  }).slice(0, 4);
-  renderPopularGames(ranked, metrics);
+  if (popularGames) {
+    const fallbackRank = new Map(popularFallbackSlugs.map((slug, index) => [slug, index]));
+    const ranked = [...catalog].sort((left, right) => {
+      const leftValue = metrics.get(left.slug);
+      const rightValue = metrics.get(right.slug);
+      const leftScore = Number.isFinite(leftValue) ? leftValue : -1;
+      const rightScore = Number.isFinite(rightValue) ? rightValue : -1;
+      if (rightScore !== leftScore) return rightScore - leftScore;
+      const leftFallback = fallbackRank.has(left.slug) ? fallbackRank.get(left.slug) : Number.MAX_SAFE_INTEGER;
+      const rightFallback = fallbackRank.has(right.slug) ? fallbackRank.get(right.slug) : Number.MAX_SAFE_INTEGER;
+      if (leftFallback !== rightFallback) return leftFallback - rightFallback;
+      return right.order - left.order;
+    }).slice(0, 4);
+    renderPopularGames(ranked, metrics);
+  }
+
+  if (state.sort === 'popular') {
+    renderCatalog();
+  }
 };
 
 const renderSiteSummaryStats = async () => {
