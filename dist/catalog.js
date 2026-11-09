@@ -912,21 +912,21 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 024 / 035",
-    "version": "v1.2.4",
+    "version": "v1.2.5",
     "patchDate": "2026-11-09",
     "addedDate": "2026-11-04",
     "addedOrder": 17,
     "addedAt": "2026-11-04T21:10:11+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/phoenix-wright-trilogy.jpg",
-    "manifest": "./assets/patches/phoenix-wright-trilogy/v1.2.4/manifest.json",
+    "manifest": "./assets/patches/phoenix-wright-trilogy/v1.2.5/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN USA 3DS · 512 MB",
     "region": "USA",
     "gameCode": "BHDE",
     "sourceName": "Phoenix Wright - Ace Attorney Trilogy (USA) (eShop).3ds · 536,870,912 bytes",
     "sourceHash": "1690da8414e468debfc96118833d3752f44f5331acd5c7ef0406af17d3c631d1",
-    "outputHash": "c1e12131470b32b767c3ff46cf8fb8590013baf447cefee1468f0186d3a98e79",
+    "outputHash": "9b121e0f2d49fea8a48bf0dd8f210c07970a5541ac605f159104124783333bdb",
     "moduleStatus": "คดีความทั้ง 3 ภาค (14 คดี)+การว่าความในชั้นศาล+สืบสวนภาคสนาม 100%",
     "wholeGameCensus": "11,888/11,888 เรคคอร์ด (ภาพรวมทั้งเกม 100%)",
     "details": {
@@ -2211,6 +2211,15 @@ window.GAME_CATALOG = [
 ];
 window.GAME_UPDATES = [
   {
+    "slug": "phoenix-wright-trilogy",
+    "title": "Phoenix Wright: Ace Attorney Trilogy",
+    "platform": "3DS",
+    "version": "v1.2.5",
+    "type": "update",
+    "timestamp": "2026-11-09T19:45:00+07:00",
+    "note": "อัปเดตแพตช์ v1.2.5 ปลดล็อกอาการค้างช่วงท้ายคดีที่ 4 (Turnabout Goodbyes), ตรวจสอบความถูกต้องของคัตซีนอัตโนมัติครบ 11,888 เรคคอร์ดทั้ง 3 ภาค, จัดบรรทัดใหม่ และป้องกันแครชบนเครื่อง 3DS จริง 100%"
+  },
+  {
     "slug": "tales-of-the-abyss",
     "title": "Tales of the Abyss",
     "platform": "3DS",
@@ -2835,10 +2844,10 @@ window.GAME_UPDATES = [
     "slug": "phoenix-wright-trilogy",
     "title": "Phoenix Wright: Ace Attorney Trilogy",
     "platform": "3DS",
-    "version": "v1.2.4",
+    "version": "v1.2.5",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.2.4"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.2.5"
   },
   {
     "slug": "professor-layton-miracle-mask",
