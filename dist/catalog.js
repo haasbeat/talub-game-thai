@@ -2211,6 +2211,15 @@ window.GAME_CATALOG = [
 ];
 window.GAME_UPDATES = [
   {
+    "slug": "fire-emblem-engage",
+    "title": "Fire Emblem Engage",
+    "platform": "SWITCH",
+    "version": "v2.0.7",
+    "type": "update",
+    "timestamp": "2026-11-09T18:49:00+07:00",
+    "note": "อัปเดตชุดม็อด v2.0.7 รองรับเครื่อง Switch ทุกโซน (US/EU) และปรับโครงสร้างโฟลเดอร์ All-In-One"
+  },
+  {
     "slug": "tales-of-the-abyss",
     "title": "Tales of the Abyss",
     "platform": "3DS",
@@ -2466,10 +2475,10 @@ window.GAME_UPDATES = [
     "slug": "fire-emblem-engage",
     "title": "Fire Emblem Engage",
     "platform": "SWITCH",
-    "version": "v2.0.7",
+    "version": "v2.0.6",
     "type": "update",
-    "timestamp": "2026-11-09T18:49:00+07:00",
-    "note": "อัปเดตชุดม็อด v2.0.7 รองรับเครื่อง Switch ทุกโซน (US/EU) และปรับโครงสร้างโฟลเดอร์ All-In-One"
+    "timestamp": "2026-11-08T08:25:24+07:00",
+    "note": "อัปเดตชุดม็อด v2.0.6 ปรับปรุงบทสนทนาเนื้อเรื่อง Ch.22 และความต่อเนื่องเสียงพากย์"
   },
   {
     "slug": "persona-5-royal",
