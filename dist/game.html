@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=123" />
+    <link rel="stylesheet" href="./styles.css?v=124" />
   </head>
   <body class="detail-page">
     <div class="cursor" aria-hidden="true"></div>
@@ -217,6 +217,14 @@
               </div>
 
               <div class="patcher-side">
+                <div id="ios-warning-banner" class="ios-warning-banner" hidden>
+                  <div class="ios-warning-icon" aria-hidden="true">⚠️</div>
+                  <div class="ios-warning-text">
+                    <strong>ข้อจำกัดสำหรับผู้ใช้ iOS (iPhone / iPad):</strong>
+                    <span>ระบบปฏิบัติการ iOS ไม่อนุญาตให้เบราว์เซอร์ทุกตัว (รวมถึง Safari, Chrome, Edge) บันทึกไฟล์ ROM ขนาดใหญ่ลงเครื่อง แนะนำให้แพตช์ผ่าน <b>คอมพิวเตอร์ (PC / Mac)</b> หรือ <b>มือถือระบบ Android</b> แทนครับ</span>
+                  </div>
+                </div>
+
                 <div class="file-summary" aria-live="polite">
                   <div>
                     <span class="summary-label mono">SELECTED FILE</span>
@@ -329,9 +337,9 @@
     </footer>
 
     <div id="toast" class="toast" role="status" aria-live="polite">พร้อมประมวลผลภายในอุปกรณ์</div>
-    <script defer src="./catalog.js?v=123"></script>
-    <script defer src="./patch-stats.js?v=123"></script>
+    <script defer src="./catalog.js?v=124"></script>
+    <script defer src="./patch-stats.js?v=124"></script>
     <script defer src="./assets/engine/hash/sha256.js"></script>
-    <script defer src="./game.js?v=123"></script>
+    <script defer src="./game.js?v=124"></script>
   </body>
 </html>

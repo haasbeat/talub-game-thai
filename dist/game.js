@@ -887,6 +887,19 @@ const manifestPromise = game.manifest
     })
   : Promise.resolve(null);
 
+const isIOS = (() => {
+  if (typeof navigator === 'undefined') return false;
+  const ua = navigator.userAgent || '';
+  if (/iPad|iPhone|iPod/.test(ua)) return true;
+  if (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1) return true;
+  return new URLSearchParams(window.location.search).has('ios');
+})();
+
+const iosWarningBanner = document.querySelector('#ios-warning-banner');
+if (iosWarningBanner && isIOS && !isExternalDownload) {
+  iosWarningBanner.hidden = false;
+}
+
 if (game.manifest && !isExternalDownload) {
   workspaceStatus.textContent = 'XDELTA3 READY';
   workspaceNote.innerHTML = '<span>แพตช์จริง</span> ระบบจะตรวจขนาดและ SHA-256 ของ ROM ต้นฉบับ จากนั้นรัน xdelta3 ภายในเบราว์เซอร์ ไฟล์ ROM จะไม่ถูกอัปโหลดออกจากเครื่อง แนะนำให้ทดสอบบนคอมพิวเตอร์ก่อน';
