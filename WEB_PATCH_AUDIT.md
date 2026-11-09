@@ -204,13 +204,13 @@ The web patch targets the full 2.8 GB PlayStation 2 DVD-ROM USA image (`SLUS-217
 
 ## Mana Khemia: Student Alliance
 
-The web patch targets the full 1,085,833,216-byte PlayStation Portable UMD USA image (`ULUS-10408`, Disc v1.01). Released as `v1.0.0` official with 100% complete story, character quests, courses, alchemy recipes, campus/field NPC chatter (Qv.bin overlay), PSP-exclusive Multiplayer Arena, Jump Start install prompts, and battle UI, featuring 24x24 TrueType Vector Calibrated typography (Chakra Petch SemiBold 24px) with Subpixel FPU Float quad rendering and localized in-stream prologue movie (`MOVIE/AVAN.PMF`).
+The web patch targets the full 1,085,833,216-byte PlayStation Portable UMD USA image (`ULUS-10408`, Disc v1.01). Released as `v1.0.1` official with 100% complete story, character quests, courses, alchemy recipes, campus/field NPC chatter (Qv.bin overlay), PSP-exclusive Multiplayer Arena, Jump Start install prompts, and battle UI, featuring 24x24 TrueType Vector Calibrated typography (Chakra Petch SemiBold 24px) with Subpixel FPU Float quad rendering, localized in-stream prologue movie (`MOVIE/AVAN.PMF`), and real-PSP hardware single-PT_LOAD ELF Loader with uncached GE DMA texture coherency.
 
 - Accepted source: `Mana Khemia - Student Alliance (USA).iso`, 1,085,833,216 bytes
 - Source SHA-256: `e98ed4c8498c3a48e1ec2f04b4a6641e85c57b8245ddf3e51443f7158a882081`
-- Patch SHA-256: `088eebfb39ac7017fa307824499e61f528a58d959e48ac29ed5bd22d9880c1d7`
-- Expected output SHA-256: `42f3ddc68745b80c141613c8fa3c2dd969023a3b7fcfb4b74efd0b0a8caebbe1`
-- Verification: clean-source xdelta3 roundtrip tested and confirmed 100% bit-identical; PreInjectionGate & 1:1 Live In-ROM Binary Readback Audit passed (21,896/21,896 records verified, 0 critical freeze).
+- Patch SHA-256: `68d389f69606fa2cf04315ef02a4773719bb1ab8f07bb795125f62324fddf11b`
+- Expected output SHA-256: `c68a624499435b5c3c9e85224f3d82df25f4b41ac98bc2d9f7485b8ec2a1e023`
+- Verification: clean-source xdelta3 roundtrip tested and confirmed 100% bit-identical; PreInjectionGate & 1:1 Live In-ROM Binary Readback Audit passed (21,896/21,896 records verified, 0 critical freeze); Sony loadcore single-PT_LOAD and uncached GE DMA hardware verified.
 
 ## Dragon Quest Monsters: Joker 3 Professional
 
