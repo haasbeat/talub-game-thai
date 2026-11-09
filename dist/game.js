@@ -633,6 +633,14 @@ const checkInAppBrowser = () => {
     });
   }
 };
+const isIOS = (() => {
+  if (typeof navigator === 'undefined') return false;
+  const ua = navigator.userAgent || '';
+  if (/iPad|iPhone|iPod/.test(ua)) return true;
+  if (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1) return true;
+  return new URLSearchParams(window.location.search).has('ios');
+})();
+
 checkInAppBrowser();
 document.querySelector('#detail-title').textContent = game.title;
 document.querySelector('#detail-japanese-title').textContent = details.japaneseTitle;
@@ -702,7 +710,7 @@ document.querySelector('#workspace-game').textContent = game.title;
 document.querySelector('#workspace-platform').textContent = game.platform;
 document.querySelector('#workspace-game-version').textContent = details.gameVersion;
 document.querySelector('#file-types').textContent = game.fileTypes;
-document.querySelector('#rom-input').accept = game.accept;
+document.querySelector('#rom-input').accept = isIOS ? '*/*' : game.accept;
 document.querySelector('#detail-thai-title').textContent = details.thaiTitle;
 document.querySelector('#detail-overview').textContent = details.overview;
 document.querySelector('#detail-original-title').textContent = details.originalTitle;
@@ -886,14 +894,6 @@ const manifestPromise = game.manifest
       return response.json();
     })
   : Promise.resolve(null);
-
-const isIOS = (() => {
-  if (typeof navigator === 'undefined') return false;
-  const ua = navigator.userAgent || '';
-  if (/iPad|iPhone|iPod/.test(ua)) return true;
-  if (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1) return true;
-  return new URLSearchParams(window.location.search).has('ios');
-})();
 
 const iosWarningBanner = document.querySelector('#ios-warning-banner');
 if (iosWarningBanner && isIOS && !isExternalDownload) {
@@ -1091,6 +1091,14 @@ modeRadios.forEach((radio) => {
   radio.addEventListener('change', updateModePills);
 });
 
+if (isIOS) {
+  const lowRamRadio = document.querySelector('input[name="patch-mode"][value="lowram"]');
+  if (lowRamRadio) {
+    lowRamRadio.checked = true;
+    updateModePills();
+  }
+}
+
 const applyVerifiedPatch = async () => {
   if (!selectedSourceFile) return;
   const manifest = await manifestPromise;
@@ -1204,7 +1212,8 @@ const applyVerifiedPatch = async () => {
     let outputBlob = null;
     if (opfsWritable) {
       await opfsWritable.close();
-      outputBlob = await opfsFileHandle.getFile();
+      const rawFile = await opfsFileHandle.getFile();
+      outputBlob = new Blob([rawFile], { type: 'application/octet-stream' });
     } else {
       outputBlob = new Blob(chunks, { type: 'application/octet-stream' });
     }
