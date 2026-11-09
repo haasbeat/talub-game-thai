@@ -1125,21 +1125,21 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 029 / 035",
-    "version": "v1.0.2",
+    "version": "v1.0.3",
     "patchDate": "2026-11-09",
     "addedDate": "2026-11-08",
     "addedOrder": 53,
     "addedAt": "2026-11-08T13:50:00+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/tales-of-the-abyss.jpg",
-    "manifest": "./assets/patches/tales-of-the-abyss/v1.0.2/manifest.json",
+    "manifest": "./assets/patches/tales-of-the-abyss/v1.0.3/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN USA 3DS · 2 GB",
     "region": "USA",
     "gameCode": "AABE",
     "sourceName": "Tales of the Abyss (USA) (decrypted).3ds · 2,147,483,648 bytes",
     "sourceHash": "b5d96e539bd9d4504e53b5f0d4f1c67c6a2d67928e9602ac87d9fd60cf90a807",
-    "outputHash": "b3d39803d16b1239b342df57df7f95d7dfad085e623eabaf216eccc85d673dbd",
+    "outputHash": "055ccf8a9187aca6ac8d3aaf84a053cdad580a87b7e8ddfd68baa96b402bb6e3",
     "moduleStatus": "เนื้อเรื่องหลัก+สก็ต+เควสต์+ระบบต่อสู้+เมนู+สารานุกรม 100%",
     "wholeGameCensus": "สำรวจทั้งเกม In-ROM Census 100.0%",
     "details": {
@@ -2210,6 +2210,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "tales-of-the-abyss",
+    "title": "Tales of the Abyss",
+    "platform": "3DS",
+    "version": "v1.0.3",
+    "type": "update",
+    "timestamp": "2026-11-09T19:35:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.3 ครอบคลุมการแพ็กไฟล์ PKB ทั่วทั้งเกม 609 ไฟล์ (0 ข้อความตกหล่น), แปลชื่อตัวละครและฝัง ARM Save-RAM Upgrade Hook อัปเกรดชื่อไทยทันทีแม้โหลดจากเซฟเดิม"
+  },
   {
     "slug": "tales-of-hearts",
     "title": "Tales of Hearts",
