@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "ever-oasis",
+  "game_title": "Ever Oasis",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "CTR-P-BAGE",
+  "patch_version": "v1.0.4",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Ever Oasis (USA) (En,Fr,Es).3ds",
+      "size": 1073741824,
+      "sha256": "704a090ff6546a37397a85b2388bff4a98beceb469304d0a68ef83593ac98fdf"
+    }
+  ],
+  "patch": {
+    "filename": "Ever_Oasis_Thai_v1.0.4.xdelta",
+    "size": 568225,
+    "sha256": "2ea7a1242fbc37448e9bce14639ed0a3c92fe9ebe7d18d07c17fc8442e670a12",
+    "release_date": "2026-11-10",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/ever-oasis/v1.0.4/Ever_Oasis_Thai_v1.0.4.xdelta"
+  },
+  "output": {
+    "filename": "Ever_Oasis_Thai_v1.0.4.3ds",
+    "size": 1073741824,
+    "sha256": "d7a4d3dfbaa74d1e40c67b50ad8e16505ccbb297718d6ff9ef81e18a8662c475"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก คัตซีน เควสต์ชาวเมือง บูธบุปผา และดันเจี้ยนครบ 100% (รองรับแปลง .3ds -> .cia ตรง + IVFC Hardware Fix)",
+    "whole_game_census": "8,508/8,515 เรคคอร์ด (ภาพรวมทั้งเกม 99.92%)",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "audit_game_progress.py / STATE.md (2026-11-10 audit)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-10T00:49:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean source located by SHA-256 and patched with the site's vendored xdelta3 wasm engine; all 4 NCSD partitions (P0 Game, P1 Manual CFA, P6/P7 Update CFAs) + RomFS IVFC hash tree (L1_bad=0, L2_bad=0, L3_bad=0, partitions_valid=True, PASS=True) + direct 3dsconv CIA conversion verified.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}

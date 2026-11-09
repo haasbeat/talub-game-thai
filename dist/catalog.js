@@ -475,22 +475,22 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 013 / 035",
-    "version": "v1.0.3",
-    "patchDate": "2026-11-08",
+    "version": "v1.0.4",
+    "patchDate": "2026-11-10",
     "addedDate": "2026-11-04",
     "addedOrder": 8,
     "addedAt": "2026-11-04T21:10:11+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/ever-oasis.jpg",
-    "manifest": "./assets/patches/ever-oasis/v1.0.3/manifest.json",
+    "manifest": "./assets/patches/ever-oasis/v1.0.4/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN USA 3DS · 1 GB",
     "region": "USA",
-    "gameCode": "BEGE",
+    "gameCode": "CTR-P-BAGE",
     "sourceName": "Ever Oasis (USA) (En,Fr,Es).3ds · 1,073,741,824 bytes",
     "sourceHash": "704a090ff6546a37397a85b2388bff4a98beceb469304d0a68ef83593ac98fdf",
-    "outputHash": "93ffb07d75e9245fae59b29f71047f6c54ca2099db7226d0141eb837df3ba15b",
-    "moduleStatus": "เนื้อเรื่อง คัตซีน เควสต์ชาวเมือง บลูมบูธ และดันเจี้ยนครบ 100% (IVFC Hardware Anti-Crash)",
+    "outputHash": "d7a4d3dfbaa74d1e40c67b50ad8e16505ccbb297718d6ff9ef81e18a8662c475",
+    "moduleStatus": "เนื้อเรื่องหลัก คัตซีน เควสต์ชาวเมือง บูธบุปผา และดันเจี้ยนครบ 100% (รองรับแปลง .3ds -> .cia ตรง + IVFC Hardware Fix)",
     "wholeGameCensus": "8,508/8,515 เรคคอร์ด (ภาพรวมทั้งเกม 99.92%)",
     "details": {
       "thaiTitle": "เอเวอร์โอเอซิส — โอเอซิสพิทักษ์ชีพทะเลทราย",
@@ -499,17 +499,17 @@ window.GAME_CATALOG = [
       "studio": "Grezzo / Nintendo",
       "release": null,
       "genre": "Action role-playing game / Town building",
-      "description": "ม็อดภาษาไทยสำหรับ Ever Oasis (3DS โซน USA) เวอร์ชัน v1.0.3",
+      "description": "ม็อดภาษาไทยสำหรับ Ever Oasis (3DS โซน USA) เวอร์ชัน v1.0.4",
       "overview": "สร้างโอเอซิสแห่งสุดท้ายกลางทะเลทราย ชวนผู้คนหลายเผ่ามาอยู่อาศัย และออกสำรวจดันเจี้ยนเพื่อต้านพลังเคออส ผลงานของโคอิจิ อิชิอิ ผู้ให้กำเนิดซีรีส์ Mana",
       "story": "พลังมืดเคออสกวาดไปทั่วทะเลทรายวิสตราดา ทำลายโอเอซิสทีละแห่ง ตัวเอกซึ่งเป็นน้องของนูร์ หัวหน้าโอเอซิส ถูกพี่ส่งหนีไปกับสายลมในวันที่เคออสบุกบ้านเกิด เมื่อฟื้นขึ้นมากลางทะเลทราย ตัวเอกได้พบเอสน่า ภูตน้ำตนสุดท้าย ทั้งสองจึงทำสัญญาร่วมกันสร้างโอเอซิสแห่งสุดท้ายขึ้นมาใหม่",
-      "localization": "แปลเนื้อเรื่องหลัก คัตซีน บทสนทนาและเควสต์ของชาวเมืองทุกเผ่า บลูมบูธ 30 ชนิด ดันเจี้ยน และฉากจบ สำมะโนใน STATE ระบุ 8,508/8,515 เรคคอร์ด (99.92%) ใช้ฟอนต์ไทย Mali Bold พร้อมตรวจสอบความถูกต้องของโครงสร้าง IVFC Hash Tree สำหรับรันบนเครื่อง Nintendo 3DS จริง 100%",
+      "localization": "แปลเนื้อเรื่องหลัก คัตซีน บทสนทนาและเควสต์ของชาวเมืองทุกเผ่า บลูมบูธ 30 ชนิด ดันเจี้ยน และฉากจบครบ 100% (ภาพรวมทั้งเกม 8,508/8,515 เรคคอร์ด = 99.92%) ใช้ฟอนต์ไทย Mali Bold พร้อมคำนวณตารางแฮช IVFC ครบ 4 ระดับ และรักษาพาร์ทิชันเสริม NCSD (Manual/Update CFA) ให้สมบูรณ์ รองรับการแปลง .3ds เป็น .cia ผ่าน GodMode9 / 3dsconv และติดตั้งด้วย FBI ได้โดยตรง",
       "untranslated": "ไม่มีบทสนทนาที่ค้างแปล 7 จาก 8,515 เรคคอร์ดที่ไม่ได้แปลเป็นสตริงว่าง เครื่องหมาย ... / ??? หรือรหัสควบคุม",
       "features": [
-        "คำนวณและสร้างตาราง RomFS IVFC Hash Tree ป้องกันอาการ ErrDisp 0xf96047a2 บนเครื่องจริง",
-        "ร้านบลูมบูธทั้ง 30 ชนิดเป็นภาษาไทย",
-        "บทสนทนาชาวเมืองครบทุกเผ่า: ซีดลิง นุต ดราวก์ เซอร์คาห์ ลาโกรา",
-        "ฟอนต์ Mali Bold หัวกลมอ่านง่าย",
-        "แพตช์ผ่านเว็บเบราว์เซอร์ได้โดยไม่ต้องลงโปรแกรม"
+        "รองรับการแปลง .3ds เป็น .cia ผ่าน GodMode9 / 3dsconv และติดตั้งด้วย FBI ได้โดยตรง (ไม่ต้องแกะรอมเอง)",
+        "คำนวณตารางแฮช RomFS IVFC ครบ 4 ระดับ ป้องกันอาการจอแดง ErrDisp 0xf96047a2 บนเครื่อง 3DS จริง",
+        "ร้านบลูมบูธทั้ง 30 ชนิด และบทสนทนาชาวเมืองครบทุกเผ่าเป็นภาษาไทย",
+        "ฟอนต์ Mali Bold หัวกลมอ่านง่าย พร้อมลายน้ำตลับเกมภาษาไทย v1.0.4",
+        "แพตช์ผ่านเว็บเบราว์เซอร์ได้ทันทีโดยไม่ต้องลงโปรแกรม"
       ]
     },
     "verified": true,
@@ -2212,6 +2212,15 @@ window.GAME_CATALOG = [
 ];
 window.GAME_UPDATES = [
   {
+    "slug": "ever-oasis",
+    "title": "Ever Oasis",
+    "platform": "3DS",
+    "version": "v1.0.4",
+    "type": "update",
+    "timestamp": "2026-11-10T00:50:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.4 แก้ไขการรักษาตารางพาร์ทิชันเสริม NCSD (Manual/Update CFA) ให้แปลงไฟล์ .3ds เป็น .cia ผ่าน GodMode9 / 3dsconv แล้วติดตั้งด้วย FBI ได้โดยตรงไม่ต้องแกะรอมเอง พร้อมคงตารางแฮช IVFC ครบ 4 ระดับ"
+  },
+  {
     "slug": "mana-khemia-student-alliance",
     "title": "Mana Khemia: Student Alliance",
     "platform": "PSP",
@@ -2773,10 +2782,10 @@ window.GAME_UPDATES = [
     "slug": "ever-oasis",
     "title": "Ever Oasis",
     "platform": "3DS",
-    "version": "v1.0.3",
+    "version": "v1.0.4",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.3"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.4"
   },
   {
     "slug": "final-fantasy-explorers",
