@@ -1778,25 +1778,25 @@ window.GAME_CATALOG = [
     "platform": "nds",
     "platformLabel": "NDS",
     "index": "NDS | 010 / 011",
-    "version": "v1.0.1",
-    "patchDate": "2026-11-03",
+    "version": "v1.0.2",
+    "patchDate": "2026-11-09",
     "addedDate": "2026-11-04",
     "addedOrder": 33,
     "addedAt": "2026-11-04T21:10:11+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/tales-of-hearts.jpg",
-    "manifest": "./assets/patches/tales-of-hearts/v1.0.1/manifest.json",
+    "manifest": "./assets/patches/tales-of-hearts/v1.0.2/manifest.json",
     "accept": ".nds",
     "fileTypes": "CLEAN Japan NDS · 256 MB",
     "region": "Japan",
     "gameCode": "CSGJ",
     "sourceName": "Tales of Hearts - Anime Movie Edition (Japan).nds · 268,435,456 bytes",
     "sourceHash": "15bd0063173989cab81d2d1aeb21b4bd6d51d81347a15d2c1a98562de08f32d4",
-    "outputHash": "3c1c307fd8d3c60a1fc3a7b01a3664e92bee6cf58b44994c954b10945d7dc850",
-    "moduleStatus": "เนื้อเรื่องหลัก+ระบบสคิต+ระบบต่อสู้โซมา+เมนูทั้งหมด 100%",
-    "wholeGameCensus": "21,680/21,680 บรรทัด = 100.00%",
+    "outputHash": "6e9afb7056f4cc180f9b8344c6840343c4d51d2a1febf3280363546ba42dcf80",
+    "moduleStatus": "เนื้อเรื่องหลัก+ระบบสคิต+ระบบต่อสู้โซมา+เมนูทั้งหมด 100% + ฝังซับไทยคัทซีนอนิเมะครบทุกฉาก",
+    "wholeGameCensus": "32,662/32,662 บรรทัด = 100.00%",
     "details": null,
-    "verified": false,
+    "verified": true,
     "gameVersion": "v1.0.0"
   },
   {
@@ -2210,6 +2210,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "tales-of-hearts",
+    "title": "Tales of Hearts",
+    "platform": "NDS",
+    "version": "v1.0.2",
+    "type": "update",
+    "timestamp": "2026-11-09T19:30:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.2 ฝังคำบรรยายภาษาไทยในคัทซีนอนิเมะครบทุกฉากแบบตรงจังหวะปาก (Lip-Sync)"
+  },
   {
     "slug": "fire-emblem-engage",
     "title": "Fire Emblem Engage",
@@ -2952,10 +2961,10 @@ window.GAME_UPDATES = [
     "slug": "tales-of-hearts",
     "title": "Tales of Hearts",
     "platform": "NDS",
-    "version": "v1.0.1",
+    "version": "v1.0.2",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.1"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.2"
   },
   {
     "slug": "the-world-ends-with-you",

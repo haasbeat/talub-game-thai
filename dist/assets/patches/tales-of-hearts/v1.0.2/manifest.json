@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "tales-of-hearts",
+  "game_title": "Tales of Hearts",
+  "platform": "NDS",
+  "region": "Japan",
+  "game_code": "CSGJ",
+  "patch_version": "v1.0.2",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Tales of Hearts - Anime Movie Edition (Japan).nds",
+      "size": 268435456,
+      "sha256": "15bd0063173989cab81d2d1aeb21b4bd6d51d81347a15d2c1a98562de08f32d4"
+    }
+  ],
+  "patch": {
+    "filename": "Tales_of_Hearts_Anime_Thai_v1.0.2.xdelta",
+    "size": 10659222,
+    "sha256": "79e253652e4393a54bff6cbff003012e48d287e35ead532e08ad926ec9db0bb0",
+    "release_date": "2026-11-09",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/tales-of-hearts/v1.0.2/Tales_of_Hearts_Anime_Thai_v1.0.2.xdelta"
+  },
+  "output": {
+    "filename": "Tales_of_Hearts_Anime_Thai_v1.0.2.nds",
+    "size": 268435456,
+    "sha256": "6e9afb7056f4cc180f9b8344c6840343c4d51d2a1febf3280363546ba42dcf80"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก+ระบบสคิต+ระบบต่อสู้โซมา+เมนูทั้งหมด 100% + ฝังซับไทยคัทซีนอนิเมะครบทุกฉาก",
+    "whole_game_census": "32,662/32,662 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-09T19:30:00+07:00",
+    "method": "clean_source_xdelta3_roundtrip",
+    "note": "Clean 256MB NDS cartridge source verified with clean-source roundtrip; PreInjectionGate & In-ROM binary census passed with 32,662/32,662 records (100.00%); 4-tier watermark verified; OV03/12/13 safe save/load header clamped; all 4 anime cutscenes with spoken dialogue hardsubbed with frame-accurate lip-sync and verified in OV21 unicorn.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true,
+    "patcher_test_passed": true
+  }
+}
