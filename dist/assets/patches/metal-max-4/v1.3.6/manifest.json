@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "game_slug": "metal-max-4",
+  "game_title": "Metal Max 4: Gekkou no Diva",
+  "platform": "3DS",
+  "region": "Japan",
+  "game_code": "AX4J",
+  "patch_version": "v1.3.6",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Metal Max 4 - Gekkou no Diva (Japan).3ds",
+      "size": 1073741824,
+      "sha256": "c815bff9d8a41bde58bd98a08c698ea0d7a573c06a59c0d8af1144b8ad5b697f"
+    }
+  ],
+  "patch": {
+    "filename": "Metal_Max_4_Thai_v1.3.6.xdelta",
+    "size": 149889624,
+    "sha256": "684aefe79c5f9adca5e351746a3e2e3ef7d052d260f8e6e3dceb8420a09ba826",
+    "parts": [
+      {
+        "filename": "Metal_Max_4_Thai_v1.3.6.xdelta.part00",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/metal-max-4/v1.3.6/Metal_Max_4_Thai_v1.3.6.xdelta.part00",
+        "size": 94371840,
+        "sha256": "0f05652b50ba0cf38583c103015bc3862d1be2ff6b62d014d3271ef642cfeb5d"
+      },
+      {
+        "filename": "Metal_Max_4_Thai_v1.3.6.xdelta.part01",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/metal-max-4/v1.3.6/Metal_Max_4_Thai_v1.3.6.xdelta.part01",
+        "size": 55517784,
+        "sha256": "ae21786010a784805031c60f82f530d83da7bd6f1d9f21f4886dfacb9b0bafef"
+      }
+    ],
+    "release_date": "2026-11-10",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/metal-max-4/v1.3.6/Metal_Max_4_Thai_v1.3.6.xdelta"
+  },
+  "output": {
+    "filename": "Metal Max 4 - Gekkou no Diva (Thai v1.3.6).3ds",
+    "size": 1073741824,
+    "sha256": "65bf8ee0e11fc394bf54930ebcb4deb15234926d490ca6b165a1daa97764a68f"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลักและระบบเกม 100% (รองรับแปลง .3ds -> .cia ตรง + IVFC Hardware Fix)",
+    "whole_game_census": "47,078/81,067 สล็อตไบนารี (58.1%); ข้อความที่ใช้งานจริง 47,078/47,078",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "STATE.md และ audit_mm4.py (2026-11-10)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-10T01:09:30+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "ผ่านการตรวจสอบ Roundtrip บิตต่อบิต 100% ด้วยเอนจิ้น xdelta3.wasm ของหน้าเว็บจาก clean source c815bff9… ได้ผลลัพธ์ 65bf8ee0… ตรงกับ release target, ย้ายและรักษาพาร์ทิชันเสริม NCSD (P1 Manual CFA & P7 Update CFA + CardInfoHeader) ให้แปลง .3ds เป็น .cia ผ่าน 3dsconv / GodMode9 / makerom แล้วติดตั้งด้วย FBI ได้โดยตรงไม่ต้องแกะรอม พร้อมตารางแฮช IVFC ครบสมบูรณ์ (L1_bad=0, L2_bad=0, L3_bad=0, partitions_valid=True, PASS=True)",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}

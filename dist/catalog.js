@@ -790,22 +790,22 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 021 / 035",
-    "version": "v1.3.5",
-    "patchDate": "2026-11-08",
+    "version": "v1.3.6",
+    "patchDate": "2026-11-10",
     "addedDate": "2026-11-07",
     "addedOrder": 49,
     "addedAt": "2026-11-07T07:29:45+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/metal-max-4.jpg",
-    "manifest": "./assets/patches/metal-max-4/v1.3.5/manifest.json",
+    "manifest": "./assets/patches/metal-max-4/v1.3.6/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN Japan 3DS · 1 GB",
     "region": "Japan",
     "gameCode": "AX4J",
     "sourceName": "Metal Max 4 - Gekkou no Diva (Japan).3ds · 1,073,741,824 bytes",
     "sourceHash": "c815bff9d8a41bde58bd98a08c698ea0d7a573c06a59c0d8af1144b8ad5b697f",
-    "outputHash": "f8e9906d90216f4464612a26d22e38cd25a36ab8b6e9a9bc245a38a3bf09c646",
-    "moduleStatus": "เนื้อเรื่องหลักและระบบเกม 100%",
+    "outputHash": "65bf8ee0e11fc394bf54930ebcb4deb15234926d490ca6b165a1daa97764a68f",
+    "moduleStatus": "เนื้อเรื่องหลักและระบบเกม 100% (รองรับแปลง .3ds -> .cia ตรง + IVFC Hardware Fix)",
     "wholeGameCensus": "47,078/81,067 สล็อตไบนารี (58.1%); ข้อความที่ใช้งานจริง 47,078/47,078",
     "details": null,
     "verified": true,
@@ -2211,6 +2211,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "metal-max-4",
+    "title": "Metal Max 4: Gekkou no Diva",
+    "platform": "3DS",
+    "version": "v1.3.6",
+    "type": "update",
+    "timestamp": "2026-11-10T01:09:00+07:00",
+    "note": "อัปเดตแพตช์ v1.3.6 แก้ไขการย้ายและรักษาตารางพาร์ทิชันเสริม NCSD (P1 Manual CFA & P7 Update CFA + CardInfoHeader) ให้แปลงไฟล์ .3ds เป็น .cia ผ่าน 3dsconv / GodMode9 / makerom แล้วติดตั้งด้วย FBI ได้โดยตรงไม่ต้องแกะรอมเอง พร้อมตารางแฮช IVFC ครบ 4 ระดับ"
+  },
   {
     "slug": "ever-oasis",
     "title": "Ever Oasis",
