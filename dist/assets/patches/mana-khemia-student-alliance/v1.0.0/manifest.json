@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "game_slug": "mana-khemia-student-alliance",
+  "game_title": "Mana Khemia: Student Alliance",
+  "platform": "PSP",
+  "region": "USA",
+  "game_code": "ULUS-10408",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Mana Khemia - Student Alliance (USA).iso",
+      "size": 1085833216,
+      "sha256": "e98ed4c8498c3a48e1ec2f04b4a6641e85c57b8245ddf3e51443f7158a882081"
+    }
+  ],
+  "patch": {
+    "filename": "Mana_Khemia_PSP_TH_v1.0.0.xdelta",
+    "size": 5394742,
+    "sha256": "088eebfb39ac7017fa307824499e61f528a58d959e48ac29ed5bd22d9880c1d7",
+    "release_date": "2026-11-09",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/mana-khemia-student-alliance/v1.0.0/Mana_Khemia_PSP_TH_v1.0.0.xdelta"
+  },
+  "output": {
+    "filename": "Mana Khemia - Student Alliance (USA) (Thai v1.0.0).iso",
+    "size": 1085833216,
+    "sha256": "42f3ddc68745b80c141613c8fa3c2dd969023a3b7fcfb4b74efd0b0a8caebbe1"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องและระบบ 100.0%",
+    "whole_game_census": "21,896 / 21,896 บรรทัด In-ROM = 100.0%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ISO ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-09T00:30:00+07:00",
+    "method": "cli_xdelta3_clean_source_roundtrip",
+    "note": "Applied the exact distributed xdelta to the pinned clean source with xdelta3; reconstructed output size and SHA-256 were measured from that artifact; 1:1 In-ROM readback audit passed 100%.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}

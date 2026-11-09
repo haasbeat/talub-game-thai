@@ -1969,11 +1969,59 @@ window.GAME_CATALOG = [
   },
   {
     "order": 49,
+    "slug": "mana-khemia-student-alliance",
+    "title": "Mana Khemia: Student Alliance",
+    "platform": "psp",
+    "platformLabel": "PSP",
+    "index": "PSP | 001 / 002",
+    "version": "v1.0.0",
+    "patchDate": "2026-11-09",
+    "addedDate": "2026-11-09",
+    "addedOrder": 56,
+    "addedAt": "2026-11-09T13:00:00+07:00",
+    "format": "xdelta3",
+    "cover": "./assets/covers/web/mana-khemia-student-alliance.jpg",
+    "manifest": "./assets/patches/mana-khemia-student-alliance/v1.0.0/manifest.json",
+    "accept": ".iso",
+    "fileTypes": "CLEAN USA PSP · 1.01 GB",
+    "region": "USA",
+    "gameCode": "ULUS-10408",
+    "sourceName": "Mana Khemia - Student Alliance (USA).iso · 1,085,833,216 bytes",
+    "sourceHash": "e98ed4c8498c3a48e1ec2f04b4a6641e85c57b8245ddf3e51443f7158a882081",
+    "outputHash": "42f3ddc68745b80c141613c8fa3c2dd969023a3b7fcfb4b74efd0b0a8caebbe1",
+    "moduleStatus": "เนื้อเรื่องและระบบ 100.0%",
+    "wholeGameCensus": "21,896 / 21,896 บรรทัด In-ROM = 100.0%",
+    "details": {
+      "thaiTitle": "มานา เคเมีย: สติวเดนต์ อัลลิอันซ์",
+      "japaneseTitle": "マナケミア 〜学園の錬金術士たち〜 Portable+",
+      "originalTitle": "Mana Khemia: Student Alliance",
+      "studio": "Gust / NIS America",
+      "release": "25 กันยายน 2008 (JP) / 10 มีนาคม 2009 (NA)",
+      "genre": "Role-playing game",
+      "description": "ม็อดภาษาไทยสำหรับ Mana Khemia: Student Alliance (PSP โซน USA) เวอร์ชัน v1.0.0",
+      "overview": "เรื่องราวชีวิตวัยเรียน การปรุงยา และการต่อสู้ในสถาบันอัล-เรวิสบนเครื่อง PSP พร้อมโหมด Multiplayer Arena และระบบ Jump Start แปลไทยสมบูรณ์แบบ 100% ทุกตัวอักษร",
+      "story": "เวย์น ออเรอุส เด็กหนุ่มผู้ใช้ชีวิตเงียบสงบในป่าลึกกับซัลเฟอร์ แมวพูดได้ ได้รับคำเชิญให้เข้าเรียนที่โรงเรียนการเล่นแร่แปรธาตุชื่อดังอัล-เรวิส เขาได้พบเพื่อนร่วมชั้นหลากสไตล์ ทำการบ้านภาคปฏิบัติ ร่วมปรุงยา และค้นพบความลับเบื้องหลังชาติกำเนิดและพลังที่แท้จริงของตนเอง",
+      "localization": "แปลเนื้อเรื่องหลัก เควสต์ตัวละคร วิชาเรียน บทลงโทษกักบริเวณ ฐานข้อมูลไอเทม สกิล มอนสเตอร์ บทสนทนา NPC ในโรงเรียน (Qv.bin) โหมด Multiplayer Arena และระบบ Jump Start ครบถ้วน 100% (สำมะโนในรอม 21,896/21,896 บรรทัด = 100.00%) วิศวกรรมฟอนต์ Chakra Petch SemiBold 24x24 TrueType Vector Calibrated สระไม่ลอย ไม่ซ้อนทับ ระบบ Subpixel FPU Float ช่องไฟสม่ำเสมอ และฝังซับไตเติลภาษาไทยในวิดีโอเปิดเรื่อง MOVIE/AVAN.PMF",
+      "untranslated": "ไม่มีส่วนที่ค้างแปลตามผลสำรวจในรอม (100.00% readback verified)",
+      "features": [
+        "บทสนทนาและคำอธิบายภาษาไทยสมบูรณ์ 21,896 รายการ (100.00%)",
+        "ฟอนต์ 24x24 TrueType Vector Calibrated ระบบสระ 3 ชั้น ไม่ลอย ไม่ซ้อนทับ",
+        "ระบบ Subpixel FPU Float Rendering ควบคุมช่องไฟเรียบเนียนระดับซับพิกเซล",
+        "แปลครอบคลุมโหมด Multiplayer Arena และระบบติดตั้งข้อมูล Jump Start",
+        "ซับไตเติลภาษาไทยฝังในวิดีโอเปิดเรื่อง MOVIE/AVAN.PMF",
+        "ผ่านการตรวจ PreInjectionGate และ 1:1 In-ROM Readback ป้องกันเกมค้าง 100%"
+      ]
+    },
+    "verified": true,
+    "gameVersion": "v1.0.0"
+  },
+  {
+    "order": 50,
     "slug": "popolocrois",
     "title": "PoPoLoCrois",
     "platform": "psp",
     "platformLabel": "PSP",
-    "index": "PSP | 001 / 001",
+    "index": "PSP | 002 / 002",
     "version": "v1.1.0",
     "patchDate": "2026-09-18",
     "addedDate": "2026-11-06",
@@ -1996,7 +2044,7 @@ window.GAME_CATALOG = [
     "gameVersion": "v1.0.0"
   },
   {
-    "order": 50,
+    "order": 51,
     "slug": "disgaea-5-complete",
     "title": "Disgaea 5 Complete",
     "platform": "switch",
@@ -2029,7 +2077,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "16797cb36b9d5361ccecf8c5dc49578eb7ca3bfd526b0c6d90f93179f26b9c45"
   },
   {
-    "order": 51,
+    "order": 52,
     "slug": "fire-emblem-engage",
     "title": "Fire Emblem Engage",
     "platform": "switch",
@@ -2062,7 +2110,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "e4307cd633f16bee961d86d678bcacf24c1cc0ab3c73140c59f0d94771c39d54"
   },
   {
-    "order": 52,
+    "order": 53,
     "slug": "fire-emblem-three-houses",
     "title": "Fire Emblem: Three Houses",
     "platform": "switch",
@@ -2095,7 +2143,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "db2c7925d591576c501f831a3efae0273678a0bfdff2c4d32c2b8e182170ef42"
   },
   {
-    "order": 53,
+    "order": 54,
     "slug": "persona-5-royal",
     "title": "Persona 5 Royal",
     "platform": "switch",
@@ -2128,7 +2176,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "ae68cf2866e6fd49d06e4245af0cf64f463bafc15be6885a06d360ea83556f1f"
   },
   {
-    "order": 54,
+    "order": 55,
     "slug": "village-in-the-shade",
     "title": "Village in the Shade",
     "platform": "switch",
@@ -2162,6 +2210,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "mana-khemia-student-alliance",
+    "title": "Mana Khemia: Student Alliance",
+    "platform": "PSP",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-09T13:00:00+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0"
+  },
   {
     "slug": "phoenix-wright-trilogy",
     "title": "Phoenix Wright: Ace Attorney Trilogy",

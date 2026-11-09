@@ -202,6 +202,16 @@ The web patch targets the full 2.8 GB PlayStation 2 DVD-ROM USA image (`SLUS-217
 - Expected output SHA-256: `47e9f510ef975ce52d1502c1619a80dffd6fe9a650b9d31a8d80bd75ebb12e50`
 - Verification: clean-source xdelta3 roundtrip tested and confirmed 100% bit-identical; 12-Pillar Live In-ROM Binary & Linguistic Forensic Audit passed (22,404/22,404 records verified, 0 critical freeze).
 
+## Mana Khemia: Student Alliance
+
+The web patch targets the full 1,085,833,216-byte PlayStation Portable UMD USA image (`ULUS-10408`, Disc v1.01). Released as `v1.0.0` official with 100% complete story, character quests, courses, alchemy recipes, campus/field NPC chatter (Qv.bin overlay), PSP-exclusive Multiplayer Arena, Jump Start install prompts, and battle UI, featuring 24x24 TrueType Vector Calibrated typography (Chakra Petch SemiBold 24px) with Subpixel FPU Float quad rendering and localized in-stream prologue movie (`MOVIE/AVAN.PMF`).
+
+- Accepted source: `Mana Khemia - Student Alliance (USA).iso`, 1,085,833,216 bytes
+- Source SHA-256: `e98ed4c8498c3a48e1ec2f04b4a6641e85c57b8245ddf3e51443f7158a882081`
+- Patch SHA-256: `088eebfb39ac7017fa307824499e61f528a58d959e48ac29ed5bd22d9880c1d7`
+- Expected output SHA-256: `42f3ddc68745b80c141613c8fa3c2dd969023a3b7fcfb4b74efd0b0a8caebbe1`
+- Verification: clean-source xdelta3 roundtrip tested and confirmed 100% bit-identical; PreInjectionGate & 1:1 Live In-ROM Binary Readback Audit passed (21,896/21,896 records verified, 0 critical freeze).
+
 ## Dragon Quest Monsters: Joker 3 Professional
 
 The `v1.0.6` web patch targets the 2 GiB decrypted Japanese cartridge image (`CTR-P-BDQJ`). This release recalculates the full RomFS IVFC hash tree (Level 3 -> Level 2 -> Level 1 -> Master Hash) and NCCH RomFS Superblock SHA-256 in-place, eliminating the real Nintendo 3DS hardware ErrDisp `0xf96047a2` / `0xD9004587` crash on `nn::fs::MountRom` / `GetRomRequiredMemorySize`. Furthermore, `v1.0.6` drops overwritten auxiliary partitions in the NCSD partition table, resolving the FBI installation crash `0xD8E08025` (`Result code: 0xD8E08025 / Level: Permanent (27) / Summary: Invalid argument (7) / Module: AM (32) / Desc: Invalid NCCH (37)`) when converting the `.3ds` to `.cia` using GodMode9.
