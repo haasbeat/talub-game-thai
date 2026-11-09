@@ -865,7 +865,7 @@ if (game.manifest && !isExternalDownload) {
     if (handlesLargeInput || manifest.patch.size >= 256 * 1024 * 1024 || manifest.output.size >= 512 * 1024 * 1024) {
       workspaceNote.insertAdjacentHTML(
         'beforeend',
-        '<br /><span>ไฟล์ขนาดใหญ่</span> รุ่นนี้อาจต้องใช้หน่วยความจำมากในขั้นสร้างไฟล์ผลลัพธ์ ควรใช้ Chrome/Edge บนคอมพิวเตอร์และปิดโปรแกรมที่ไม่จำเป็น',
+        '<br /><span>ไฟล์ขนาดใหญ่</span> หากพบปัญหาหน่วยความจำหรือเบราว์เซอร์รีโหลด แนะนำให้สลับเป็น <b>โหมดประหยัดแรม</b> ด้านล่าง',
       );
     }
   }).catch(() => {
@@ -1016,6 +1016,17 @@ romInput.addEventListener('change', () => void handleFile(romInput.files[0]));
 });
 dropZone.addEventListener('drop', (event) => void handleFile(event.dataTransfer.files[0]));
 
+const modeRadios = document.querySelectorAll('input[name="patch-mode"]');
+const updateModePills = () => {
+  document.querySelectorAll('.mode-pill').forEach((pill) => {
+    const radio = pill.querySelector('input[type="radio"]');
+    pill.classList.toggle('is-active', Boolean(radio && radio.checked));
+  });
+};
+modeRadios.forEach((radio) => {
+  radio.addEventListener('change', updateModePills);
+});
+
 const applyVerifiedPatch = async () => {
   if (!selectedSourceFile) return;
   const manifest = await manifestPromise;
@@ -1063,21 +1074,52 @@ const applyVerifiedPatch = async () => {
     });
     if (patchHash !== manifest.patch.sha256) throw new Error('SHA-256 ของไฟล์ patch ไม่ถูกต้อง');
 
-    setProgress('กำลังสร้าง ROM ภาษาไทยด้วย xdelta3', 10);
+    const selectedMode = document.querySelector('input[name="patch-mode"]:checked')?.value || 'ram';
+    const isLowRamMode = selectedMode === 'lowram';
+
+    let opfsFileHandle = null;
+    let opfsWritable = null;
+    let opfsTempName = null;
+
+    if (isLowRamMode) {
+      if (typeof navigator !== 'undefined' && navigator.storage && typeof navigator.storage.getDirectory === 'function') {
+        try {
+          const opfsRoot = await navigator.storage.getDirectory();
+          opfsTempName = `talub_${Date.now()}_${Math.random().toString(36).slice(2, 7)}.bin`;
+          opfsFileHandle = await opfsRoot.getFileHandle(opfsTempName, { create: true });
+          opfsWritable = await opfsFileHandle.createWritable();
+        } catch (opfsErr) {
+          console.warn('[OPFS] Not available or permission denied, falling back to RAM mode:', opfsErr);
+          opfsWritable = null;
+        }
+      }
+    }
+
+    setProgress(opfsWritable ? 'กำลังสร้าง ROM ภาษาไทย (โหมดประหยัดแรม)' : 'กำลังสร้าง ROM ภาษาไทยด้วย xdelta3', 10);
     const chunks = [];
     let outputSize = 0;
     const worker = new Worker('./assets/engine/xdelta/xdelta3.worker.js', { type: 'module' });
 
     await new Promise((resolve, reject) => {
       worker.onerror = (event) => reject(new Error(event.message || 'xdelta worker ทำงานไม่สำเร็จ'));
-      worker.onmessage = (event) => {
+      worker.onmessage = async (event) => {
         const message = event.data || {};
         if (!message.final && message.bytes) {
           const bytes = message.bytes instanceof Uint8Array ? message.bytes : new Uint8Array(message.bytes);
-          chunks.push(bytes);
+          if (opfsWritable) {
+            try {
+              await opfsWritable.write(bytes);
+            } catch (writeErr) {
+              reject(new Error(writeErr.name === 'QuotaExceededError' ? 'พื้นที่จัดเก็บในเครื่องไม่เพียงพอ กรุณาเคลียร์พื้นที่ว่างในเครื่องแล้วลองใหม่อีกครั้ง' : writeErr.message));
+              return;
+            }
+          } else {
+            chunks.push(bytes);
+          }
           outputSize += bytes.byteLength;
           const percent = 10 + (outputSize / manifest.output.size) * 78;
-          setProgress('กำลังสร้าง ROM ภาษาไทยด้วย xdelta3', percent);
+          const modeTag = opfsWritable ? ' (โหมดประหยัดแรม)' : '';
+          setProgress(`กำลังสร้าง ROM ภาษาไทยด้วย xdelta3${modeTag}`, percent);
           return;
         }
         if (message.final && message.error) {
@@ -1094,7 +1136,14 @@ const applyVerifiedPatch = async () => {
       });
     }).finally(() => worker.terminate());
 
-    const outputBlob = new Blob(chunks, { type: 'application/octet-stream' });
+    let outputBlob = null;
+    if (opfsWritable) {
+      await opfsWritable.close();
+      outputBlob = await opfsFileHandle.getFile();
+    } else {
+      outputBlob = new Blob(chunks, { type: 'application/octet-stream' });
+    }
+
     if (outputBlob.size !== manifest.output.size) throw new Error('ขนาด ROM ผลลัพธ์ไม่ตรงกับ manifest');
 
     setProgress('กำลังตรวจ SHA-256 ของ ROM ผลลัพธ์', 92);
@@ -1120,7 +1169,16 @@ const applyVerifiedPatch = async () => {
     patchButton.hidden = false;
     patchButton.disabled = false;
     patchButton.querySelector('span').textContent = 'ลองแพตช์อีกครั้ง';
-    setProgress(error.message || 'แพตช์ไม่สำเร็จ', 0);
+    if (error.name === 'RangeError' || error.message?.includes('allocation') || error.message?.includes('memory')) {
+      setProgress('หน่วยความจำในเบราว์เซอร์ไม่พอ แนะนำให้เลือก "โหมดประหยัดแรม" ด้านล่าง', 0);
+      const lowRamRadio = document.querySelector('input[name="patch-mode"][value="lowram"]');
+      if (lowRamRadio) {
+        lowRamRadio.checked = true;
+        updateModePills();
+      }
+    } else {
+      setProgress(error.message || 'แพตช์ไม่สำเร็จ', 0);
+    }
     showToast(error.message || 'เกิดข้อผิดพลาดขณะแพตช์');
   }
 };

@@ -374,6 +374,18 @@ body.has-inapp-banner main { padding-top: 60px; }
 .download-button { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 18px 22px; color: #fff; background: var(--ink); border: 1px solid var(--ink); font-size: 16px; font-weight: 600; cursor: pointer; transition: 300ms var(--ease); }
 .download-button:hover { background: #222; }
 .download-button[hidden] { display: none; }
+.workspace-sub-panel { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; margin-top: 20px; padding-top: 16px; border-top: 1px dashed var(--line); }
+.workspace-sub-panel[hidden] { display: none; }
+.sub-panel-mode { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.sub-panel-title { color: var(--muted); font-size: 11px; letter-spacing: 0.04em; }
+.mode-pill { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; background: transparent; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); font-size: 11px; cursor: pointer; transition: all 180ms ease; user-select: none; }
+.mode-pill input[type="radio"] { appearance: none; -webkit-appearance: none; width: 11px; height: 11px; border: 1px solid currentColor; border-radius: 50%; margin: 0; display: inline-grid; place-content: center; cursor: pointer; }
+.mode-pill input[type="radio"]::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: currentColor; transform: scale(0); transition: transform 120ms ease; }
+.mode-pill input[type="radio"]:checked::before { transform: scale(1); }
+.mode-pill:hover { border-color: var(--ink); color: var(--ink); }
+.mode-pill.is-active { background: #f0f0ee; border-color: var(--ink); color: var(--ink); font-weight: 500; }
+.sub-panel-hint { width: 100%; margin: 4px 0 0; color: var(--muted); font-size: 11px; line-height: 1.55; }
+.sub-panel-hint span { color: var(--ink); font-weight: 500; }
 .external-download-panel { padding: clamp(28px, 4vw, 56px) 0 12px; }
 .external-download-panel[hidden] { display: none; }
 .external-download-label { color: var(--muted); }
@@ -587,6 +599,7 @@ body.has-inapp-banner main { padding-top: 60px; }
 .detail-page .detail-patcher .workspace-actions p { max-width: none; }
 .detail-page .detail-patcher .workspace-buttons { width: 100%; min-width: 0; }
 .detail-page .detail-patcher .patch-button, .detail-page .detail-patcher .download-button { width: 100%; }
+.detail-page .detail-patcher .workspace-sub-panel { flex-direction: column; align-items: flex-start; gap: 12px; }
 .detail-page .requirements, .detail-page .legal-strip, .detail-page > .footer { display: none; }
 .requirements { padding-top: 52px; padding-bottom: 64px; scroll-margin-top: 90px; }
 .requirement-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }

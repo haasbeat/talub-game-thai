@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=120" />
+    <link rel="stylesheet" href="./styles.css?v=121" />
   </head>
   <body class="detail-page">
     <div class="cursor" aria-hidden="true"></div>
@@ -253,6 +253,23 @@
                     </a>
                   </div>
                 </div>
+
+                <div class="workspace-sub-panel" data-xdelta-only>
+                  <div class="sub-panel-mode">
+                    <span class="sub-panel-title mono">โหมดแพตช์:</span>
+                    <label class="mode-pill is-active hover-target">
+                      <input type="radio" name="patch-mode" value="ram" checked />
+                      <span>⚡ ความเร็วสูง (ค่าเริ่มต้น)</span>
+                    </label>
+                    <label class="mode-pill hover-target">
+                      <input type="radio" name="patch-mode" value="lowram" />
+                      <span>🍃 ประหยัดแรม (สำหรับมือถือ / สเปกต่ำ)</span>
+                    </label>
+                  </div>
+                  <p class="sub-panel-hint">
+                    <span>คำแนะนำ:</span> โหมดประหยัดแรมช่วยป้องกันเบราว์เซอร์เด้งบนมือถือ แต่อาจใช้เวลาแพตช์นานขึ้น และต้องมีพื้นที่จัดเก็บว่างในเครื่องเพิ่มขึ้นสำหรับพักไฟล์ชั่วคราว
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -312,9 +329,9 @@
     </footer>
 
     <div id="toast" class="toast" role="status" aria-live="polite">พร้อมประมวลผลภายในอุปกรณ์</div>
-    <script src="./catalog.js?v=120"></script>
-    <script src="./patch-stats.js?v=120"></script>
+    <script src="./catalog.js?v=121"></script>
+    <script src="./patch-stats.js?v=121"></script>
     <script src="./assets/engine/hash/sha256.js"></script>
-    <script src="./game.js?v=120"></script>
+    <script src="./game.js?v=121"></script>
   </body>
 </html>
