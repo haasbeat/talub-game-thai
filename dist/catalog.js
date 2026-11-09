@@ -1125,21 +1125,21 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 029 / 035",
-    "version": "v1.0.1",
-    "patchDate": "2026-11-08",
+    "version": "v1.0.2",
+    "patchDate": "2026-11-09",
     "addedDate": "2026-11-08",
     "addedOrder": 53,
     "addedAt": "2026-11-08T13:50:00+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/tales-of-the-abyss.jpg",
-    "manifest": "./assets/patches/tales-of-the-abyss/v1.0.1/manifest.json",
+    "manifest": "./assets/patches/tales-of-the-abyss/v1.0.2/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN USA 3DS · 2 GB",
     "region": "USA",
     "gameCode": "AABE",
     "sourceName": "Tales of the Abyss (USA) (decrypted).3ds · 2,147,483,648 bytes",
     "sourceHash": "b5d96e539bd9d4504e53b5f0d4f1c67c6a2d67928e9602ac87d9fd60cf90a807",
-    "outputHash": "078e36a7e269242c48c43cc2e157ee7448a7a3d07b292fe5480567c5579d4a05",
+    "outputHash": "b3d39803d16b1239b342df57df7f95d7dfad085e623eabaf216eccc85d673dbd",
     "moduleStatus": "เนื้อเรื่องหลัก+สก็ต+เควสต์+ระบบต่อสู้+เมนู+สารานุกรม 100%",
     "wholeGameCensus": "สำรวจทั้งเกม In-ROM Census 100.0%",
     "details": {
@@ -1149,10 +1149,10 @@ window.GAME_CATALOG = [
       "studio": "Bandai Namco Games",
       "release": "30 มิถุนายน 2011 (JP) / 14 กุมภาพันธ์ 2012 (NA)",
       "genre": "Action Role-playing game",
-      "description": "ม็อดภาษาไทยสำหรับ Tales of the Abyss (3DS โซน USA) เวอร์ชัน v1.0.1 แปลสมบูรณ์ 100% ทั้งเกม",
+      "description": "ม็อดภาษาไทยสำหรับ Tales of the Abyss (3DS โซน USA) เวอร์ชัน v1.0.2 แปลสมบูรณ์ 100% ทั้งเกม",
       "overview": "การเดินทางของลุค ฟอน ฟาเบร เพื่อค้นหาความหมายของการมีชีวิตและการชดใช้ความผิดพลาด ท่ามกลางสงครามระหว่างสองมหาอำนาจและการพยากรณ์แห่งลอเรไล ฉบับแปลไทยสมบูรณ์แบบ 100% ทุกตัวอักษร",
       "story": "ลุค ฟอน ฟาเบร บุตรชายแห่งดยุคผู้สูญเสียความทรงจำเมื่อ 7 ปีก่อน ถูกกักบริเวณอยู่ในคฤหาสน์ จนกระทั่งเกิดเหตุการณ์ที่เทียร์ เด็กสาวลึกลับบุกเข้ามาและเกิดปรากฏการณ์ไฮเปอร์เรโซแนนซ์ส่งทั้งสองไปยังดินแดนห่างไกล ลุคต้องเผชิญกับโลกภายนอก ความจริงอันโหดร้ายเกี่ยวกับตัวตนของเขา และบทเรียนราคาแพงที่จะเปลี่ยนชีวิตเขาไปตลอดกาล",
-      "localization": "แปลเนื้อเรื่องหลัก สก็ตสนทนา (Skits 518 ตอน) เควสต์ย่อย ระบบต่อสู้ เมนู ไอเทม สารานุกรม ไดอารี่เรื่องย่อของลุค และฝังซับไตเติลภาษาไทยความคมชัดสูงในคัตซีน .moflex ทั้งหมด 46 ช่วงเวลาครบถ้วน 100% (สำมะโนในรอม 32,510/32,510 รายการ = 100.00%) วิศวกรรมฟอนต์ Tales of Hearts Regular ปรับระยะสระและวรรณยุกต์ 3 ชั้นไร้รอยต่อ ขยาย Partition 0 ExHeader BSS ครอบคลุม Text Hook State ป้องกันอาการ ARM11 Data Abort บนเครื่อง 3DS จริง และสร้างโครงสร้าง IVFC Hash Tree รองรับทั้ง .3ds และ .cia 100%",
+      "localization": "แปลเนื้อเรื่องหลัก สก็ตสนทนา (Skits 518 ตอน) เควสต์ย่อย ระบบต่อสู้ เมนู ไอเทม สารานุกรม ไดอารี่เรื่องย่อของลุค และฝังซับไตเติลภาษาไทยความคมชัดสูงในคัตซีน .moflex ทั้งหมด 46 ช่วงเวลาครบถ้วน 100% (สำมะโนในรอม 32,510/32,510 รายการ = 100.00%) วิศวกรรมฟอนต์ Tales of Hearts Regular ปรับระยะสระและวรรณยุกต์ 3 ชั้นไร้รอยต่อ ขยาย Partition 0 ExHeader BSS ป้องกันอาการ ARM11 Data Abort บนเครื่อง 3DS จริง แก้ไขและล็อกเกตความสมบูรณ์ของ Bytecode คำสั่งควบคุมในฉากฝึกสอนต่อสู้ (BTSC 103 รายการ) และสร้างโครงสร้าง IVFC Hash Tree รองรับทั้ง .3ds และ .cia 100%",
       "untranslated": "ไม่มีส่วนค้างแปลตามผลสำรวจในรอม (100.00% In-ROM readback verified)",
       "features": [
         "บทสนทนาและข้อความภาษาไทยสมบูรณ์ 32,510 รายการ (100.00%)",
@@ -2210,6 +2210,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "tales-of-the-abyss",
+    "title": "Tales of the Abyss",
+    "platform": "3DS",
+    "version": "v1.0.2",
+    "type": "update",
+    "timestamp": "2026-11-09T14:07:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.2 แก้ไขปัญหาค้างในฉากฝึกสอนต่อสู้ (BTSC Bytecode) และรักษาคำสั่งควบคุม 100%"
+  },
   {
     "slug": "mana-khemia-student-alliance",
     "title": "Mana Khemia: Student Alliance",

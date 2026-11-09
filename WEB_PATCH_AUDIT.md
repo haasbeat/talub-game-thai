@@ -224,13 +224,13 @@ The `v1.0.6` web patch targets the 2 GiB decrypted Japanese cartridge image (`CT
 
 ## Tales of the Abyss (USA)
 
-The `v1.0.1` web patch targets the 2 GiB decrypted USA cartridge image (`CTR-P-AABE`). Released as `v1.0.1` official with 100% complete story, all 518 skits (5,591 dialogues), sidequests, battle tutorials, menu databases, Luke's Diary synopsis arena, and crisp 2x .moflex cutscene subtitles across 46 cues. Features the Tales of Hearts Regular font with seamless 3-tier vertical mark stacking, Partition 0 ExHeader BSS expansion (`0x000AABA8`, 250 pages RW) resolving the physical 3DS ARM11 MMU Data Abort (`Translation - Page`) crash on real hardware, and recalculated IVFC RomFS Hash Tree preventing ErrDisp 0xf96047a2 freezes on .3ds and .cia.
+The `v1.0.2` web patch targets the 2 GiB decrypted USA cartridge image (`CTR-P-AABE`). Released as `v1.0.2` official with 100% complete story, all 518 skits (5,591 dialogues), sidequests, battle tutorials, menu databases, Luke's Diary synopsis arena, and crisp 2x .moflex cutscene subtitles across 46 cues. Features the Tales of Hearts Regular font with seamless 3-tier vertical mark stacking, Partition 0 ExHeader BSS expansion (`0x000AABA8`, 250 pages RW) resolving the physical 3DS ARM11 MMU Data Abort (`Translation - Page`) crash, 100% preserved BTSC battle tutorial wait/voice/branch bytecode opcodes eliminating the training dummy dialogue freeze, and recalculated IVFC RomFS Hash Tree preventing ErrDisp 0xf96047a2 freezes on .3ds and .cia.
 
 - Accepted source: `Tales of the Abyss (USA) (decrypted).3ds`, 2,147,483,648 bytes
 - Source SHA-256: `b5d96e539bd9d4504e53b5f0d4f1c67c6a2d67928e9602ac87d9fd60cf90a807`
-- Patch SHA-256: `5fd878620e4181d0a294b0e632779fbaec4d0cf8dc7379a00520bc6d252ddc99`
-- Expected output SHA-256: `078e36a7e269242c48c43cc2e157ee7448a7a3d07b292fe5480567c5579d4a05`
-- Verification: WebAssembly xdelta3 engine roundtrip verified in Node (`tools/web_wasm_patch.mjs`: `ok=true`, `078e36a7...` matched byte-for-byte); physical 3DS hardware MMU BSS mapping fix verified (`0x000AABA8`, 250 pages RW `0x004CF000 .. 0x005C9000`); physical 3DS hardware IVFC hash tree audit passed (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True`). In-ROM binary census passed with 32,510/32,510 entries (100.00% In-ROM, 0 mismatches, 0 critical freeze).
+- Patch SHA-256: `e9e2ed162abb4b4b77a45efc73084f4f82475ae3290e7e11b355672ed3a3ab01`
+- Expected output SHA-256: `b3d39803d16b1239b342df57df7f95d7dfad085e623eabaf216eccc85d673dbd`
+- Verification: WebAssembly xdelta3 engine roundtrip verified in Node (`tools/web_wasm_patch.mjs`: `ok=true`, `b3d39803...` matched byte-for-byte); BTSC battle tutorial bytecode integrity verified (103/103 tutorial records, 100% wait/voice/branch opcodes preserved bit-identical); physical 3DS hardware MMU BSS mapping fix verified (`0x000AABA8`, 250 pages RW `0x004CF000 .. 0x005C9000`); physical 3DS hardware IVFC hash tree audit passed (`L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True`). In-ROM binary census passed with 32,510/32,510 entries (100.00% In-ROM, 0 mismatches, 0 critical freeze).
 
 ## SaGa Frontier (USA)
 
