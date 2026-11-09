@@ -829,6 +829,45 @@ const patchProgressBar = document.querySelector('#patch-progress-bar');
 const toast = document.querySelector('#toast');
 let selectedSourceFile = null;
 let outputUrl = null;
+let activeOpfsTempName = null;
+
+const cleanupOpfsTemp = async (targetName) => {
+  const nameToRemove = targetName || activeOpfsTempName;
+  if (!nameToRemove) return;
+  try {
+    if (typeof navigator !== 'undefined' && navigator.storage && typeof navigator.storage.getDirectory === 'function') {
+      const opfsRoot = await navigator.storage.getDirectory();
+      await opfsRoot.removeEntry(nameToRemove).catch(() => {});
+    }
+  } catch {
+    // Best-effort cleanup
+  }
+  if (!targetName || targetName === activeOpfsTempName) {
+    activeOpfsTempName = null;
+  }
+};
+
+const cleanupAllOrphanedOpfs = async () => {
+  try {
+    if (typeof navigator !== 'undefined' && navigator.storage && typeof navigator.storage.getDirectory === 'function') {
+      const opfsRoot = await navigator.storage.getDirectory();
+      if (typeof opfsRoot.entries === 'function') {
+        for await (const [name] of opfsRoot.entries()) {
+          if (name && name.startsWith('talub_')) {
+            await opfsRoot.removeEntry(name).catch(() => {});
+          }
+        }
+      }
+    }
+  } catch {
+    // Best-effort cleanup
+  }
+};
+void cleanupAllOrphanedOpfs();
+
+window.addEventListener('pagehide', () => {
+  if (activeOpfsTempName) void cleanupOpfsTemp();
+});
 
 const manifestPromise = game.manifest
   ? fetch(game.manifest, { cache: 'no-store' }).then((response) => {
@@ -929,6 +968,7 @@ const resetOutput = () => {
   downloadButton.hidden = true;
   downloadButton.removeAttribute('href');
   patchButton.hidden = false;
+  if (activeOpfsTempName) void cleanupOpfsTemp();
 };
 
 const handleFile = async (file) => {
@@ -1088,6 +1128,7 @@ const applyVerifiedPatch = async () => {
           opfsTempName = `talub_${Date.now()}_${Math.random().toString(36).slice(2, 7)}.bin`;
           opfsFileHandle = await opfsRoot.getFileHandle(opfsTempName, { create: true });
           opfsWritable = await opfsFileHandle.createWritable();
+          activeOpfsTempName = opfsTempName;
         } catch (opfsErr) {
           console.warn('[OPFS] Not available or permission denied, falling back to RAM mode:', opfsErr);
           opfsWritable = null;
@@ -1166,6 +1207,7 @@ const applyVerifiedPatch = async () => {
     // Count only verified successes; a stats failure must never affect the patch result.
     if (window.PatchStats) window.PatchStats.hit(slug).then((value) => { if (value !== null) renderPatchCount(value); });
   } catch (error) {
+    if (activeOpfsTempName) void cleanupOpfsTemp();
     patchButton.hidden = false;
     patchButton.disabled = false;
     patchButton.querySelector('span').textContent = 'ลองแพตช์อีกครั้ง';
@@ -1182,6 +1224,15 @@ const applyVerifiedPatch = async () => {
     showToast(error.message || 'เกิดข้อผิดพลาดขณะแพตช์');
   }
 };
+
+downloadButton.addEventListener('click', () => {
+  if (activeOpfsTempName) {
+    const tempToClean = activeOpfsTempName;
+    setTimeout(() => {
+      void cleanupOpfsTemp(tempToClean);
+    }, 25000);
+  }
+});
 
 patchButton.addEventListener('click', () => {
   if (!game.manifest) {
