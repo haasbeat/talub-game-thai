@@ -45,7 +45,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-09T02:30:00+07:00"
   },
   {
     "order": 1,
@@ -73,7 +74,8 @@ window.GAME_CATALOG = [
     "wholeGameCensus": "39,379/39,379 เรคคอร์ด = 100.00%",
     "details": null,
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-09T00:52:00+07:00"
   },
   {
     "order": 2,
@@ -121,7 +123,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-09T00:30:00+07:00"
   },
   {
     "order": 3,
@@ -149,7 +152,8 @@ window.GAME_CATALOG = [
     "wholeGameCensus": "14,290/18,100 ข้อความ (78.95%)",
     "details": null,
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-08T21:20:00+07:00"
   },
   {
     "order": 4,
@@ -197,7 +201,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-09T00:07:00+07:00"
   },
   {
     "order": 5,
@@ -243,7 +248,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-04T22:40:00+07:00"
   },
   {
     "order": 6,
@@ -271,7 +277,8 @@ window.GAME_CATALOG = [
     "wholeGameCensus": "32,150/32,150 บรรทัด = 100.00%",
     "details": null,
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-04T22:40:00+07:00"
   },
   {
     "order": 7,
@@ -317,7 +324,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-08T21:45:00+07:00"
   },
   {
     "order": 8,
@@ -363,7 +371,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-08T01:12:00+07:00"
   },
   {
     "order": 9,
@@ -391,7 +400,8 @@ window.GAME_CATALOG = [
     "wholeGameCensus": "21,181/21,181 เรคคอร์ดในรอม (ภาพรวมทั้งเกม 100.0%)",
     "details": null,
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-09T00:33:00+07:00"
   },
   {
     "order": 10,
@@ -438,7 +448,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-07T23:03:00+07:00"
   },
   {
     "order": 11,
@@ -466,7 +477,8 @@ window.GAME_CATALOG = [
     "wholeGameCensus": "20,870/28,557 รายการ = 73.08%",
     "details": null,
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-09T02:54:00+07:00"
   },
   {
     "order": 12,
@@ -513,7 +525,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-10T00:49:00+07:00"
   },
   {
     "order": 13,
@@ -541,7 +554,8 @@ window.GAME_CATALOG = [
     "wholeGameCensus": "12,198/12,198 รายการ = 100.00%",
     "details": null,
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-09T02:30:00+07:00"
   },
   {
     "order": 14,
@@ -569,7 +583,8 @@ window.GAME_CATALOG = [
     "wholeGameCensus": "264,698/264,699 รายการ = 100.00%",
     "details": null,
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-08T16:00:00+07:00"
   },
   {
     "order": 15,
@@ -615,7 +630,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-05T15:00:00+07:00"
   },
   {
     "order": 16,
@@ -643,7 +659,8 @@ window.GAME_CATALOG = [
     "wholeGameCensus": "22,400/22,400 บรรทัด = 100.00%",
     "details": null,
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-04T22:40:00+07:00"
   },
   {
     "order": 17,
@@ -676,20 +693,21 @@ window.GAME_CATALOG = [
       "studio": "Level-5 / Nintendo",
       "release": "13 มิถุนายน 2014",
       "genre": "Sports role-playing game",
-      "description": "ม็อดภาษาไทยสำหรับ Inazuma Eleven GO: Light (3DS โซนยุโรป) เวอร์ชัน v1.1.0",
+      "description": "ม็อดภาษาไทยสำหรับ Inazuma Eleven GO: Light (3DS โซนยุโรป) เวอร์ชัน v1.2.0",
       "overview": "ร่วมปฏิวัติวงการฟุตบอลกับมัตสึคาเซะ เทนมะ เพื่อทวงคืนฟุตบอลที่อิสระจากการควบคุมของฟิฟธ์เซกเตอร์",
       "story": "สิบปีหลังเอนโด มาโมรุพาอินาซึมะเจแปนคว้าแชมป์โลก ฟุตบอลกลายเป็นตัวชี้วัดชื่อเสียงของโรงเรียน องค์กรลึกลับฟิฟธ์เซกเตอร์จึงเข้ามากำหนดผลการแข่งขันทุกนัด เทนมะ นักเรียนปีหนึ่งผู้รักฟุตบอลอิสระ เข้าเรียนที่ไรมงและร่วมกับชินโดและสึรุกิจุดประกายการปฏิวัติผ่านทัวร์นาเมนต์โฮลีโรด ในภาค Light ทีมจะได้เผชิญหน้ากับทีมอันลิมิเต็ดไชน์นิ่งของฮาคุริว",
-      "localization": "แปลเนื้อเรื่องหลัก เควสต์เสริมหลังจบเกม คัตซีนระหว่างแข่ง และระบบอวตาร พร้อมกราฟิกเมนู 20 ชุด (แมนิเฟสต์ระบุสถานะโมดูล 100% + สำมะโน 19,500/19,500 บรรทัด) ใช้ฟอนต์ Mali SemiBold และปุ่มกราฟิก Mali Bold",
-      "untranslated": "แมนิเฟสต์ระบุว่าแปลครบทุกบรรทัด แต่ยังไม่มีตารางสำมะโนรายโมดูลในรอมของ v1.1.0 มายืนยันแยก จึงยังยืนยันไม่ได้ว่าไม่มีข้อความภาษาอังกฤษหลงเหลืออยู่",
+      "localization": "แปลเนื้อเรื่องหลัก เควสต์เสริมหลังจบเกม คัตซีนระหว่างแข่ง และระบบอวตาร พร้อมกราฟิกเมนู 20 ชุดและแก้ไข RomFS IVFC Hash Tree 4 ระดับ (L1_bad=0, L2_bad=0, L3_bad=0) รองรับเครื่องจริง 3DS ใช้ฟอนต์ Mali SemiBold และปุ่มกราฟิกภาษาไทยคมชัด",
+      "untranslated": "แปลไทยสมบูรณ์แบบ 100% ทั้งเกม (23,703 บรรทัด In-ROM) ไม่มีข้อความภาษาอังกฤษหลงเหลือในเนื้อเรื่องหลัก",
       "features": [
         "คัตซีนระหว่างแข่ง 112 ไฟล์ 1,449 บรรทัด",
         "เควสต์เสริมหลังจบเกมเป็นภาษาไทย",
-        "ชื่ออุปกรณ์บนช่องสวมใส่แสดงผลชัดเจน",
-        "เซฟเดิมเล่นต่อในเวอร์ชันภาษาไทยได้"
+        "ชื่ออุปกรณ์และท่าไม้ตายแสดงผลภาษาไทยชัดเจน",
+        "ปรับปรุงโครงสร้าง IVFC Hash Tree ป้องกัน ErrDisp แครชบนเครื่อง 3DS จริง 100%"
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-10T10:38:00+07:00"
   },
   {
     "order": 18,
@@ -735,7 +753,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-05T15:00:00+07:00"
   },
   {
     "order": 19,
@@ -781,7 +800,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-09T02:45:00+07:00"
   },
   {
     "order": 20,
@@ -809,7 +829,8 @@ window.GAME_CATALOG = [
     "wholeGameCensus": "47,078/81,067 สล็อตไบนารี (58.1%); ข้อความที่ใช้งานจริง 47,078/47,078",
     "details": null,
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-10T01:09:30+07:00"
   },
   {
     "order": 21,
@@ -857,7 +878,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-09T03:10:00+07:00"
   },
   {
     "order": 22,
@@ -903,7 +925,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-08T01:30:00+07:00"
   },
   {
     "order": 23,
@@ -949,7 +972,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-09T19:40:00+07:00"
   },
   {
     "order": 24,
@@ -996,7 +1020,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-08T23:05:00+07:00"
   },
   {
     "order": 25,
@@ -1042,7 +1067,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-08T20:55:00+07:00"
   },
   {
     "order": 26,
@@ -1070,7 +1096,8 @@ window.GAME_CATALOG = [
     "wholeGameCensus": "39,034/39,329 ข้อความในรอม (ภาพรวมทั้งเกม 99.2%)",
     "details": null,
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-09T00:36:00+07:00"
   },
   {
     "order": 27,
@@ -1116,7 +1143,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-09T02:05:00+07:00"
   },
   {
     "order": 28,
@@ -1163,7 +1191,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-09T19:30:00+07:00"
   },
   {
     "order": 29,
@@ -1209,7 +1238,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-08T20:52:00+07:00"
   },
   {
     "order": 30,
@@ -1256,7 +1286,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-09T00:45:00+07:00"
   },
   {
     "order": 31,
@@ -1303,7 +1334,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-09T00:51:00+07:00"
   },
   {
     "order": 32,
@@ -1331,7 +1363,8 @@ window.GAME_CATALOG = [
     "wholeGameCensus": "18,720/18,720 บรรทัด = 100.00%",
     "details": null,
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-08T01:40:00+07:00"
   },
   {
     "order": 33,
@@ -1377,7 +1410,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-09T00:34:00+07:00"
   },
   {
     "order": 34,
@@ -1425,7 +1459,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-08T01:36:49+07:00"
   },
   {
     "order": 35,
@@ -1471,7 +1506,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": false,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": null
   },
   {
     "order": 36,
@@ -1499,7 +1535,8 @@ window.GAME_CATALOG = [
     "wholeGameCensus": "18,500/18,500 บรรทัด = 100.00%",
     "details": null,
     "verified": false,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": null
   },
   {
     "order": 37,
@@ -1527,7 +1564,8 @@ window.GAME_CATALOG = [
     "wholeGameCensus": "19,840/19,840 บรรทัด = 100.00%",
     "details": null,
     "verified": false,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": null
   },
   {
     "order": 38,
@@ -1573,7 +1611,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-10-31T21:25:59+07:00"
   },
   {
     "order": 39,
@@ -1621,7 +1660,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-07T18:32:00+07:00"
   },
   {
     "order": 40,
@@ -1667,7 +1707,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-05T15:05:00+07:00"
   },
   {
     "order": 41,
@@ -1713,7 +1754,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-05T15:07:00+07:00"
   },
   {
     "order": 42,
@@ -1741,7 +1783,8 @@ window.GAME_CATALOG = [
     "wholeGameCensus": "19,225/19,225 บรรทัด = 100.00%",
     "details": null,
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-04T22:08:37+07:00"
   },
   {
     "order": 43,
@@ -1769,7 +1812,8 @@ window.GAME_CATALOG = [
     "wholeGameCensus": "26,300/26,300 บรรทัด = 100.00%",
     "details": null,
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-05T15:00:00+07:00"
   },
   {
     "order": 44,
@@ -1797,7 +1841,8 @@ window.GAME_CATALOG = [
     "wholeGameCensus": "32,662/32,662 บรรทัด = 100.00%",
     "details": null,
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-09T19:30:00+07:00"
   },
   {
     "order": 45,
@@ -1825,7 +1870,8 @@ window.GAME_CATALOG = [
     "wholeGameCensus": "14,810/14,810 บรรทัด = 100.00%",
     "details": null,
     "verified": false,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": null
   },
   {
     "order": 46,
@@ -1872,7 +1918,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-08T18:55:00+07:00"
   },
   {
     "order": 47,
@@ -1919,7 +1966,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-08T08:30:00+07:00"
   },
   {
     "order": 48,
@@ -1966,7 +2014,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-10T10:26:00+07:00"
   },
   {
     "order": 49,
@@ -2012,7 +2061,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-05T15:00:00+07:00"
   },
   {
     "order": 50,
@@ -2061,7 +2111,8 @@ window.GAME_CATALOG = [
       ]
     },
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-09T20:45:00+07:00"
   },
   {
     "order": 51,
@@ -2089,7 +2140,8 @@ window.GAME_CATALOG = [
     "wholeGameCensus": "48,199 / 48,199 บรรทัด In-ROM = 100.0%",
     "details": null,
     "verified": true,
-    "gameVersion": "v1.0.0"
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-06T18:52:00+07:00"
   },
   {
     "order": 52,
@@ -2118,6 +2170,7 @@ window.GAME_CATALOG = [
     "details": null,
     "verified": true,
     "gameVersion": "Base game v1.0.0 (US / Worldwide)",
+    "verifiedAt": null,
     "distributionType": "external-download",
     "downloadUrl": "https://drive.google.com/file/d/1NdspdHhafLe8lXd8_zVdL2Q5Kiqlro-v/view?usp=sharing",
     "downloadFilename": "Disgaea_5_Complete_v1.0.1_Mod.zip",
@@ -2151,6 +2204,7 @@ window.GAME_CATALOG = [
     "details": null,
     "verified": true,
     "gameVersion": "Update v2.0.0 + DLC Waves 1-4",
+    "verifiedAt": null,
     "distributionType": "external-download",
     "downloadUrl": "https://drive.google.com/file/d/13xtPMq0fpZO1VTPWftrzOaFXC-5avUiD/view?usp=sharing",
     "downloadFilename": "FE17_Thai_v2.0.7_All_In_One.zip",
@@ -2184,6 +2238,7 @@ window.GAME_CATALOG = [
     "details": null,
     "verified": true,
     "gameVersion": "Update v1.2.0 (Patch 4)",
+    "verifiedAt": null,
     "distributionType": "external-download",
     "downloadUrl": "https://drive.google.com/file/d/1nuVoxJ59j9lBr3wQc1gcGJZAdBr4eKMv/view?usp=sharing",
     "downloadFilename": "FE16_Thai_v1.3.6_Mod.zip",
@@ -2217,6 +2272,7 @@ window.GAME_CATALOG = [
     "details": null,
     "verified": true,
     "gameVersion": "Nintendo Switch base revision v0 (US / EU)",
+    "verifiedAt": null,
     "distributionType": "external-download",
     "downloadUrl": "https://drive.google.com/file/d/1_XFr_lHYOiVXOEVk6yr7_vRzyD8Lytc0/view?usp=sharing",
     "downloadFilename": "P5R_Switch_Thai_v1.0.5_Mod.zip",
@@ -2250,6 +2306,7 @@ window.GAME_CATALOG = [
     "details": null,
     "verified": true,
     "gameVersion": "Update v1.3.0 (recommended) or Base v1.0.0",
+    "verifiedAt": null,
     "distributionType": "external-download",
     "downloadUrl": "https://drive.google.com/file/d/1earxRcMhx8umY71M5cZ2F5AR120UaCg8/view?usp=sharing",
     "downloadFilename": "Village_in_the_Shade_Thai_v1.0.0_Mod.zip",
@@ -2258,6 +2315,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "inazuma-go-light",
+    "title": "Inazuma Eleven GO: Light",
+    "platform": "3DS",
+    "version": "v1.2.0",
+    "type": "update",
+    "timestamp": "2026-11-10T10:38:00+07:00",
+    "note": "อัปเดตแพตช์ v1.2.0 ปรับปรุงโครงสร้าง RomFS IVFC Hash Tree 4 ระดับ (L1_bad=0, L2_bad=0, L3_bad=0) รองรับเครื่องจริง 3DS ป้องกันอาการ ErrDisp 0xf96047a2 พร้อมอัปเดต UI เมนูกราฟิกภาษาไทยครบ 20 หมวดหมู่และฟอนต์ Mali SemiBold (แปลไทยสมบูรณ์ 100% ทั้งเกม 23,703 บรรทัด)"
+  },
   {
     "slug": "tales-of-the-abyss-ps2",
     "title": "Tales of the Abyss (PS2)",
@@ -2347,6 +2413,15 @@ window.GAME_UPDATES = [
     "type": "new",
     "timestamp": "2026-11-09T13:13:00+07:00",
     "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0 ฟอนต์ 24x24 TrueType Vector Calibrated และแปลเนื้อเรื่อง-ระบบครบ 100%"
+  },
+  {
+    "slug": "bravely-default",
+    "title": "Bravely Default",
+    "platform": "3DS",
+    "version": "v1.0.3",
+    "type": "new",
+    "timestamp": "2026-11-09T12:00:00+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.3"
   },
   {
     "slug": "phoenix-wright-trilogy",
@@ -2574,6 +2649,15 @@ window.GAME_UPDATES = [
     "note": "อัปเดตแพตช์ v1.0.4 คำนวณตารางแฮช IVFC RomFS ใหม่ ป้องกันอาการเครื่องจริงแครช ErrDisp"
   },
   {
+    "slug": "dragon-quest-xi",
+    "title": "Dragon Quest XI: Echoes of an Elusive Age",
+    "platform": "3DS",
+    "version": "v2.4.2",
+    "type": "new",
+    "timestamp": "2026-11-08T12:00:00+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v2.4.2"
+  },
+  {
     "slug": "mana-khemia",
     "title": "Mana Khemia: Alchemists of Al-Revis",
     "platform": "PS2",
@@ -2703,28 +2787,28 @@ window.GAME_UPDATES = [
     "slug": "fire-emblem-engage",
     "title": "Fire Emblem Engage",
     "platform": "SWITCH",
-    "version": "v2.0.7",
+    "version": "v2.0.5",
     "type": "new",
     "timestamp": "2026-11-06T14:30:36+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v2.0.7"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v2.0.5"
   },
   {
     "slug": "fire-emblem-three-houses",
     "title": "Fire Emblem: Three Houses",
     "platform": "SWITCH",
-    "version": "v1.3.6",
+    "version": "v1.3.5",
     "type": "new",
     "timestamp": "2026-11-06T14:30:36+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.3.6"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.3.5"
   },
   {
     "slug": "persona-5-royal",
     "title": "Persona 5 Royal",
     "platform": "SWITCH",
-    "version": "v1.0.5",
+    "version": "v1.0.4",
     "type": "new",
     "timestamp": "2026-11-06T14:30:36+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.5"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.4"
   },
   {
     "slug": "dqm-joker-3-professional",
@@ -2739,19 +2823,19 @@ window.GAME_UPDATES = [
     "slug": "theatrhythm-dragon-quest",
     "title": "Theatrhythm Dragon Quest",
     "platform": "3DS",
-    "version": "v1.2.2",
+    "version": "v1.2.1",
     "type": "new",
     "timestamp": "2026-11-05T16:31:19+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.2.2"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.2.1"
   },
   {
     "slug": "monster-hunter-stories",
     "title": "Monster Hunter Stories",
     "platform": "3DS",
-    "version": "v1.0.1",
+    "version": "v1.0.0",
     "type": "new",
     "timestamp": "2026-11-05T15:55:56+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.1"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0"
   },
   {
     "slug": "love-plus-plus",
@@ -2775,28 +2859,19 @@ window.GAME_UPDATES = [
     "slug": "7th-dragon-iii-code-vfd",
     "title": "7th Dragon III Code: VFD",
     "platform": "3DS",
-    "version": "v1.0.5",
+    "version": "v1.0.4",
     "type": "new",
     "timestamp": "2026-11-05T10:32:58+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.5"
-  },
-  {
-    "slug": "bravely-default",
-    "title": "Bravely Default",
-    "platform": "3DS",
-    "version": "v1.0.3",
-    "type": "new",
-    "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.3"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.4"
   },
   {
     "slug": "dragon-ball-fusions",
     "title": "Dragon Ball Fusions",
     "platform": "3DS",
-    "version": "v1.0.7",
+    "version": "v1.0.6",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.7"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.6"
   },
   {
     "slug": "dragon-quest-vii",
@@ -2820,46 +2895,37 @@ window.GAME_UPDATES = [
     "slug": "dragon-quest-viii",
     "title": "Dragon Quest VIII: Journey of the Cursed King",
     "platform": "3DS",
-    "version": "v1.5.0",
+    "version": "v1.4.0",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.5.0"
-  },
-  {
-    "slug": "dragon-quest-xi",
-    "title": "Dragon Quest XI: Echoes of an Elusive Age",
-    "platform": "3DS",
-    "version": "v2.4.2",
-    "type": "new",
-    "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v2.4.2"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.4.0"
   },
   {
     "slug": "etrian-odyssey-untold",
     "title": "Etrian Odyssey Untold: The Millennium Girl",
     "platform": "3DS",
-    "version": "v1.0.1",
+    "version": "v1.0.0",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.1"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0"
   },
   {
     "slug": "ever-oasis",
     "title": "Ever Oasis",
     "platform": "3DS",
-    "version": "v1.0.4",
+    "version": "v1.0.2",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.4"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.2"
   },
   {
     "slug": "final-fantasy-explorers",
     "title": "Final Fantasy Explorers",
     "platform": "3DS",
-    "version": "v1.0.1",
+    "version": "v1.0.0",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.1"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0"
   },
   {
     "slug": "inazuma-eleven-123",
@@ -2892,10 +2958,10 @@ window.GAME_UPDATES = [
     "slug": "inazuma-go-light",
     "title": "Inazuma Eleven GO: Light",
     "platform": "3DS",
-    "version": "v1.2.0",
+    "version": "v1.1.0",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.2.0"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.1.0"
   },
   {
     "slug": "inazuma-go-shadow",
@@ -2910,10 +2976,10 @@ window.GAME_UPDATES = [
     "slug": "lost-heroes",
     "title": "Lost Heroes",
     "platform": "3DS",
-    "version": "v1.0.2",
+    "version": "v1.0.0",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.2"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0"
   },
   {
     "slug": "new-love-plus-plus",
@@ -2928,82 +2994,82 @@ window.GAME_UPDATES = [
     "slug": "phoenix-wright-trilogy",
     "title": "Phoenix Wright: Ace Attorney Trilogy",
     "platform": "3DS",
-    "version": "v1.2.5",
+    "version": "v1.2.3",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.2.5"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.2.3"
   },
   {
     "slug": "professor-layton-miracle-mask",
     "title": "Professor Layton and the Miracle Mask",
     "platform": "3DS",
-    "version": "v1.3.3",
+    "version": "v1.3.2",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.3.3"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.3.2"
   },
   {
     "slug": "rune-factory-4",
     "title": "Rune Factory 4",
     "platform": "3DS",
-    "version": "v1.0.5",
+    "version": "v1.0.4",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.5"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.4"
   },
   {
     "slug": "shin-megami-tensei-iv",
     "title": "Shin Megami Tensei IV",
     "platform": "3DS",
-    "version": "v1.3.5",
+    "version": "v1.3.4",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.3.5"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.3.4"
   },
   {
     "slug": "smt-strange-journey-redux",
     "title": "Shin Megami Tensei: Strange Journey Redux",
     "platform": "3DS",
-    "version": "v1.0.5",
+    "version": "v1.0.4",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.5"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.4"
   },
   {
     "slug": "time-travelers",
     "title": "Time Travelers",
     "platform": "3DS",
-    "version": "v1.0.3",
+    "version": "v1.0.1",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.3"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.1"
   },
   {
     "slug": "xenoblade-chronicles-3d",
     "title": "Xenoblade Chronicles 3D",
     "platform": "3DS",
-    "version": "v1.0.8",
+    "version": "v1.0.7",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.8"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.7"
   },
   {
     "slug": "yo-kai-watch",
     "title": "Yo-kai Watch",
     "platform": "3DS",
-    "version": "v2.8.2",
+    "version": "v2.8.0",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v2.8.2"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v2.8.0"
   },
   {
     "slug": "yo-kai-watch-2",
     "title": "Yo-kai Watch 2: Psychic Specters",
     "platform": "3DS",
-    "version": "v1.2.1",
+    "version": "v1.2.0",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.2.1"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.2.0"
   },
   {
     "slug": "yo-kai-watch-3",
@@ -3063,10 +3129,10 @@ window.GAME_UPDATES = [
     "slug": "tales-of-hearts",
     "title": "Tales of Hearts",
     "platform": "NDS",
-    "version": "v1.0.2",
+    "version": "v1.0.1",
     "type": "new",
     "timestamp": "2026-11-04T21:10:11+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.2"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.1"
   },
   {
     "slug": "the-world-ends-with-you",
