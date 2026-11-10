@@ -1824,27 +1824,27 @@ window.GAME_CATALOG = [
     "platform": "nds",
     "platformLabel": "NDS",
     "index": "NDS | 009 / 011",
-    "version": "v1.0.0",
-    "patchDate": "2026-11-01",
+    "version": "v1.0.1",
+    "patchDate": "2026-11-11",
     "addedDate": "2026-11-04",
     "addedOrder": 32,
     "addedAt": "2026-11-04T21:10:11+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/suikoden-tierkreis.jpg",
-    "manifest": "./assets/patches/suikoden-tierkreis/v1.0.0/manifest.json",
+    "manifest": "./assets/patches/suikoden-tierkreis/v1.0.1/manifest.json",
     "accept": ".nds",
     "fileTypes": "CLEAN USA NDS · 244 MB",
     "region": "USA",
     "gameCode": "CSKJ",
     "sourceName": "Suikoden Tierkreis (Undub).nds · 255,426,932 bytes",
     "sourceHash": "cfb25b40e91f6b1fcb3026c6432c1a6b8a73e5d19758bc64b776b0a976edf9dc",
-    "outputHash": "dfd105537686552523b174a018e1e5df77e01a04b4f20c0a655f904fc6f4f026",
-    "moduleStatus": "เนื้อเรื่อง 108 ดวงดาวแห่งโชคชะตา+เควสต์กิลด์+เมนูและระบบต่อสู้ 100%",
-    "wholeGameCensus": "26,300/26,300 บรรทัด = 100.00%",
+    "outputHash": "1902b258a15c0ef4c3ae4cb0fe78eb7fef39637a28c9a68c60a9a1b16ddb9cff",
+    "moduleStatus": "เนื้อเรื่องหลัก+เควสต์เสริม 108 ดวงดารา+เมนูระบบ 100%",
+    "wholeGameCensus": "33,787/33,787 บรรทัด = 100.00%",
     "details": null,
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-05T15:00:00+07:00"
+    "verifiedAt": "2026-11-11T01:51:00+07:00"
   },
   {
     "order": 45,
@@ -2360,6 +2360,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "suikoden-tierkreis",
+    "title": "Suikoden Tierkreis",
+    "platform": "NDS",
+    "version": "v1.0.1",
+    "type": "update",
+    "timestamp": "2026-11-11T02:00:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.1 สู่มาตรฐาน First-Party Studio Gold Standard (คะแนน 100/100): แก้ไขปัญหากิ่งบทสนทนาและเมนูทางเลือกสลับบรรทัดในเควสต์ยูร่า (s027.sbin), แก้ไขระดับภาษาขัดแย้ง (Register Collision) 9 จุด, ปรับบทสนทนาให้ตรงกับบุคลิกตัวละครหลัก (ลิ่ว, เจล, โครเดอไชลด์, ดิอูลฟ์), ขจัดสำนวนแปลตรงตัว (Translationese), ซ่อมสระซ้อนและบรรทัดตกหล่นด้วย PreInjectionGate Firewall พร้อมผ่านการตรวจสอบ 1:1 In-ROM Readback ครบ 33,787 บรรทัด 100.00% ไร้จุดค้าง"
+  },
   {
     "slug": "dragon-quest-vi",
     "title": "Dragon Quest VI: Realms of Revelation",

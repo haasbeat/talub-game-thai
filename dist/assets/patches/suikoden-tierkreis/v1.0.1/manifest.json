@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "game_slug": "suikoden-tierkreis",
+  "game_title": "Suikoden Tierkreis",
+  "platform": "NDS",
+  "region": "USA",
+  "game_code": "CSKJ",
+  "patch_version": "v1.0.1",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Suikoden Tierkreis (Undub).nds",
+      "size": 255426932,
+      "sha256": "cfb25b40e91f6b1fcb3026c6432c1a6b8a73e5d19758bc64b776b0a976edf9dc"
+    }
+  ],
+  "patch": {
+    "filename": "Suikoden_Tierkreis_Thai_v1.0.1.xdelta",
+    "size": 7000845,
+    "sha256": "396cb72de86fc9fff7ccdd0eed3c687df8709c8ec3b700ede423351e64a4853a",
+    "release_date": "2026-11-11",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/suikoden-tierkreis/v1.0.1/Suikoden_Tierkreis_Thai_v1.0.1.xdelta"
+  },
+  "output": {
+    "filename": "Suikoden_Tierkreis_Thai_v1.0.1.nds",
+    "size": 264855136,
+    "sha256": "1902b258a15c0ef4c3ae4cb0fe78eb7fef39637a28c9a68c60a9a1b16ddb9cff"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก+เควสต์เสริม 108 ดวงดารา+เมนูระบบ 100%",
+    "whole_game_census": "33,787/33,787 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-11T01:51:00+07:00",
+    "method": "clean_source_xdelta3_roundtrip",
+    "note": "Clean source verified by SHA-256 and patched; output bit-identical to target ROM; 1:1 In-ROM readback 0 critical freeze 0 errors.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}
