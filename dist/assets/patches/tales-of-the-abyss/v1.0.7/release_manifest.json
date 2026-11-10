@@ -1,0 +1,70 @@
+{
+  "game_title": "Tales of the Abyss (USA)",
+  "product_code": "CTR-P-AABE",
+  "title_id": "0004000000061300",
+  "patch_version": "v1.0.7",
+  "watermark_version": "ตลับเกมภาษาไทย v1.0.7",
+  "watermark_disclaimer": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่าย",
+  "provenance": {
+    "clean_retail_encrypted": {
+      "filename": "Tales_of_the_Abyss_USA.3ds",
+      "sha256": "6a7e832dd01ed1d33cf11546b2e8410bfc0fd398a082613c978f56d9171855c6",
+      "size": 2147483648
+    },
+    "clean_decrypted_base": {
+      "filename": "Tales_of_the_Abyss_USA_decrypted.3ds",
+      "sha256": "b5d96e539bd9d4504e53b5f0d4f1c67c6a2d67928e9602ac87d9fd60cf90a807",
+      "size": 2147483648
+    },
+    "target_rebuilt_standalone": {
+      "filename": "Tales_of_the_Abyss_USA_TH_v1.0.7.3ds",
+      "sha256": "42c8008baa7ec4ed856b0b7933884baca52bee5ce67b011217fe016162d1613e",
+      "size": 2147483648
+    },
+    "xdelta_patch": {
+      "filename": "Tales_of_the_Abyss_USA_TH_v1.0.7.xdelta",
+      "sha256": "e9150a013bb41fb04d980432b6675bb9dbf821582340b249e988167542f33b61",
+      "size": 45505404
+    }
+  },
+  "census": {
+    "whole_game_coverage_pct": 100.0,
+    "total_unique_records": 32569,
+    "total_translated_records": 32569,
+    "total_binary_pointers": 247750,
+    "modules": {
+      "ExeFS_UI_System": {
+        "unique_records": 1867,
+        "translated": 1867,
+        "coverage_pct": 100.0
+      },
+      "Menu_Tutorial_DB": {
+        "unique_records": 2691,
+        "translated": 2691,
+        "coverage_pct": 100.0
+      },
+      "Skits_SB7": {
+        "unique_records": 5591,
+        "translated": 5591,
+        "coverage_pct": 100.0
+      },
+      "Field_SB7": {
+        "unique_records": 659,
+        "translated": 659,
+        "coverage_pct": 100.0
+      },
+      "Town_PKB_SB7": {
+        "unique_records": 21761,
+        "translated": 21761,
+        "coverage_pct": 100.0
+      }
+    }
+  },
+  "hardware_status": "hardware-verified",
+  "verification": {
+    "anti_freeze_firewall": "PASSED (CRITICAL_FREEZE=0, ERROR=0, WARNING=0)",
+    "readback_1to1": "PASSED (32569/32569 bit-for-bit matched)",
+    "ivfc_hash_tree": "PASSED (NCCH RomFS Superblock SHA-256 bit-identical)",
+    "zip_compatibility": "PASSED (100% pure ASCII, MS-DOS attrs, explicit directories)"
+  }
+}
