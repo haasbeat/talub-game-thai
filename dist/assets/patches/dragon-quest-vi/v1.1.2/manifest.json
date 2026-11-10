@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "game_slug": "dragon-quest-vi",
+  "game_title": "Dragon Quest VI: Realms of Revelation",
+  "platform": "NDS",
+  "region": "USA",
+  "game_code": "YV6E",
+  "patch_version": "v1.1.2",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Dragon Quest VI - Realms of Revelation .nds",
+      "size": 134217728,
+      "sha256": "66b9f6d3c7eb1f2bbbf09b3004d46b86b08f87d3c1674a37f8246d2d544a3f33"
+    }
+  ],
+  "patch": {
+    "filename": "Dragon_Quest_VI_Thai_v1.1.2.xdelta",
+    "size": 2606434,
+    "sha256": "d7e084d761cb250b3624366ed562c45733452997cbdc8a4a3aecdf4f8a499faf",
+    "release_date": "2026-11-11",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/dragon-quest-vi/v1.1.2/Dragon_Quest_VI_Thai_v1.1.2.xdelta"
+  },
+  "output": {
+    "filename": "Dragon_Quest_VI_Thai_v1.1.2.nds",
+    "size": 134217728,
+    "sha256": "f1a364c8be91246ad3dd28cee57e09f1cf679f86a021ae871d8376946975c4a4"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก+ระบบอาชีพดาร์มา+ระบบสนทนาปาร์ตี้ 100%",
+    "whole_game_census": "41,488/41,488 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}

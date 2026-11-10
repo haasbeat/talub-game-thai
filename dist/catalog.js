@@ -1578,21 +1578,21 @@ window.GAME_CATALOG = [
     "platform": "nds",
     "platformLabel": "NDS",
     "index": "NDS | 003 / 011",
-    "version": "v1.1.1",
-    "patchDate": "2026-11-10",
+    "version": "v1.1.2",
+    "patchDate": "2026-11-11",
     "addedDate": "2026-11-04",
     "addedOrder": 29,
     "addedAt": "2026-11-04T21:10:11+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/dragon-quest-vi.jpg",
-    "manifest": "./assets/patches/dragon-quest-vi/v1.1.1/manifest.json",
+    "manifest": "./assets/patches/dragon-quest-vi/v1.1.2/manifest.json",
     "accept": ".nds",
     "fileTypes": "CLEAN USA NDS · 128 MB",
     "region": "USA",
     "gameCode": "YV6E",
     "sourceName": "Dragon Quest VI - Realms of Revelation .nds · 134,217,728 bytes",
     "sourceHash": "66b9f6d3c7eb1f2bbbf09b3004d46b86b08f87d3c1674a37f8246d2d544a3f33",
-    "outputHash": "5936b837735ea6e00ac89e1de8a6e7b42597ffc4e5135e014cd3504a6a87bbb8",
+    "outputHash": "f1a364c8be91246ad3dd28cee57e09f1cf679f86a021ae871d8376946975c4a4",
     "moduleStatus": "เนื้อเรื่องหลัก+ระบบอาชีพดาร์มา+ระบบสนทนาปาร์ตี้ 100%",
     "wholeGameCensus": "41,488/41,488 บรรทัด = 100.00%",
     "details": null,
@@ -2360,6 +2360,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "dragon-quest-vi",
+    "title": "Dragon Quest VI: Realms of Revelation",
+    "platform": "NDS",
+    "version": "v1.1.2",
+    "type": "update",
+    "timestamp": "2026-11-11T00:30:00+07:00",
+    "note": "อัปเดตแพตช์ v1.1.2 แก้ไขปัญหาการแสดงผลในหน้าข้อมูลอาชีพวิหารดาร์มา (ปรับความกว้างและบรรทัดของลักษณะเด่น 18 อาชีพ และเงื่อนไขเปลี่ยนอาชีพไม่ให้ล้นขอบหรือซ้อนทับหัวข้อถัดไป), แก้ไขกล่องคุณสมบัติด้านล่างของจอบนไม่ให้บรรทัดที่ 3 โดนขอบล่างตัด, ปรับหัวตารางมุมขวาบนเป็น \"ทักษะ\" ไม่ให้ตกขอบ, และปรับปรุงคำแปลชื่อท่าของนักเที่ยวตามต้นฉบับภาษาญี่ปุ่น (สำรวจทั้งเกม In-ROM Census ครบ 41,488 บรรทัด 100.00%)"
+  },
   {
     "slug": "dragon-quest-v",
     "title": "Dragon Quest V: Hand of the Heavenly Bride",
