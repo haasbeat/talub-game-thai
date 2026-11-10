@@ -530,18 +530,19 @@ body.has-inapp-banner main { padding-top: 60px; }
   transform: translateX(3px);
   color: var(--ink);
 }
-.detail-actions { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(210px, .6fr); gap: 8px; margin-top: 20px; }
-.detail-cta { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 13px 18px; color: #fff; background: var(--ink); border: 1px solid var(--ink); transition: color 500ms var(--ease), background 500ms var(--ease); }
-.detail-cta:hover { color: var(--ink); background: transparent; }
+.detail-actions { display: flex; align-items: center; gap: 12px; margin-top: 20px; }
 .detail-support-cta {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
-  padding: 13px 20px;
+  gap: 18px;
+  min-width: 240px;
+  padding: 13px 22px;
   color: #fff;
   background: linear-gradient(135deg, #ff2a5f 0%, #ff6b35 100%);
   border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: -0.01em;
   box-shadow: 0 4px 18px rgba(255, 42, 95, 0.32);
@@ -824,7 +825,8 @@ body.has-inapp-banner main { padding-top: 60px; }
   .detail-cover-wrap { width: min(72vw, 260px); }
   .detail-breadcrumb { margin-bottom: 14px; }
   .detail-copy h1 { font-size: clamp(21px, 5.8vw, 27px); }
-  .detail-actions { grid-template-columns: 1fr; }
+  .detail-actions { width: 100%; }
+  .detail-support-cta { width: 100%; }
   .detail-view-switch { gap: 4px; }
   .detail-view-tab { min-height: 52px; padding: 10px 12px; }
   .game-overview { padding-top: 28px; padding-bottom: 40px; }
