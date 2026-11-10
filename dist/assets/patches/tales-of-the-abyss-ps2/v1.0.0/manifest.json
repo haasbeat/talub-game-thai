@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "game_slug": "tales-of-the-abyss-ps2",
+  "game_title": "Tales of the Abyss (PS2)",
+  "platform": "PS2",
+  "region": "USA",
+  "game_code": "SLUS-21386",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Tales of the Abyss (USA).iso",
+      "size": 4048191488,
+      "sha256": "e6c2feaa1c3808ca73bac77d7347e7a7effb83bf8843d079437d45981ce00ae3"
+    }
+  ],
+  "patch": {
+    "filename": "Tales_of_the_Abyss_PS2_USA_TH_v1.0.0.xdelta",
+    "size": 689721522,
+    "sha256": "17192d2d09b9e9db1f4adcf01a0ada23755243572b4d5ace4b2d2026d4fdaa3e",
+    "release_date": "2026-11-10",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/tales-of-the-abyss-ps2/v1.0.0/Tales_of_the_Abyss_PS2_USA_TH_v1.0.0.xdelta",
+    "parts": [
+      {
+        "filename": "Tales_of_the_Abyss_PS2_USA_TH_v1.0.0.xdelta.part01",
+        "size": 94371840,
+        "sha256": "82701e6ed77c96880df4718edfe4cc255b9fcce32fe8718728b584b6666a89b5",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/tales-of-the-abyss-ps2/v1.0.0/Tales_of_the_Abyss_PS2_USA_TH_v1.0.0.xdelta.part01"
+      },
+      {
+        "filename": "Tales_of_the_Abyss_PS2_USA_TH_v1.0.0.xdelta.part02",
+        "size": 94371840,
+        "sha256": "9fcfe3c59dba5583ce370594d63085ba358b9da7f8cf396b5a32c3da3247d3b8",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/tales-of-the-abyss-ps2/v1.0.0/Tales_of_the_Abyss_PS2_USA_TH_v1.0.0.xdelta.part02"
+      },
+      {
+        "filename": "Tales_of_the_Abyss_PS2_USA_TH_v1.0.0.xdelta.part03",
+        "size": 94371840,
+        "sha256": "48614bd153209fd21592ab360e19648debe68eb4ac3344023f868433dfaa22e6",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/tales-of-the-abyss-ps2/v1.0.0/Tales_of_the_Abyss_PS2_USA_TH_v1.0.0.xdelta.part03"
+      },
+      {
+        "filename": "Tales_of_the_Abyss_PS2_USA_TH_v1.0.0.xdelta.part04",
+        "size": 94371840,
+        "sha256": "1ce04c4e6a0c41864131711857ab366ae4b2efa033f4b3b8480c0a4ac149a161",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/tales-of-the-abyss-ps2/v1.0.0/Tales_of_the_Abyss_PS2_USA_TH_v1.0.0.xdelta.part04"
+      },
+      {
+        "filename": "Tales_of_the_Abyss_PS2_USA_TH_v1.0.0.xdelta.part05",
+        "size": 94371840,
+        "sha256": "3dd01f8db1571a1153d97c1730cd19de138d8dd82320b0c7b302a4c53034abbe",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/tales-of-the-abyss-ps2/v1.0.0/Tales_of_the_Abyss_PS2_USA_TH_v1.0.0.xdelta.part05"
+      },
+      {
+        "filename": "Tales_of_the_Abyss_PS2_USA_TH_v1.0.0.xdelta.part06",
+        "size": 94371840,
+        "sha256": "ee9b3857e8bfc3808b8576a770e9dfbce3d1fcc6b0c61947452be37c362c06bb",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/tales-of-the-abyss-ps2/v1.0.0/Tales_of_the_Abyss_PS2_USA_TH_v1.0.0.xdelta.part06"
+      },
+      {
+        "filename": "Tales_of_the_Abyss_PS2_USA_TH_v1.0.0.xdelta.part07",
+        "size": 94371840,
+        "sha256": "7e924d74f86c4970bfe15dcbd840d840266a723790ab1f8cc06798b5cb52d7ef",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/tales-of-the-abyss-ps2/v1.0.0/Tales_of_the_Abyss_PS2_USA_TH_v1.0.0.xdelta.part07"
+      },
+      {
+        "filename": "Tales_of_the_Abyss_PS2_USA_TH_v1.0.0.xdelta.part08",
+        "size": 29118642,
+        "sha256": "89d3f89287497cef75934d46bbfaa148d11db97c967ca407f3670dab22e93020",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/tales-of-the-abyss-ps2/v1.0.0/Tales_of_the_Abyss_PS2_USA_TH_v1.0.0.xdelta.part08"
+      }
+    ]
+  },
+  "output": {
+    "filename": "Tales of the Abyss (USA) (Thai v1.0.0).iso",
+    "size": 4048191488,
+    "sha256": "05d12bc86807594fff9f694d0d87038842a8ec2754a12bbd51e1abc6886c8cff"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก+สก็ต+เควสต์+ระบบต่อสู้+เมนู+สารานุกรม+คัทซีนอนิเมะ 100%",
+    "whole_game_census": "สำรวจทั้งเกม In-ROM Census 100.0% (32,374/32,374 รายการ)",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-10T10:26:00+07:00",
+    "method": "clean_source_xdelta3_roundtrip",
+    "note": "Clean 4.05 GB USA PS2 ISO (SLUS-21386) verified with clean-source roundtrip; repacked all 593 town/dungeon PKBs (TO7MAP.CVM) and 518 skits (TO7SE.CVM) via comptoe Type 3 LZSS without outer LBA shift; 6 voiced .SFD cutscenes hardsubbed with CRI SUD/MPS SCR-pacing; In-ROM binary census passed with 32,374/32,374 records (100.00%) and 4-tier watermark audit passed.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true,
+    "patcher_test_passed": true,
+    "binary_readback_verified": true
+  }
+}

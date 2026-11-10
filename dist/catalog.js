@@ -1880,7 +1880,7 @@ window.GAME_CATALOG = [
     "title": "Mana Khemia: Alchemists of Al-Revis",
     "platform": "ps2",
     "platformLabel": "PS2",
-    "index": "PS2 | 001 / 001",
+    "index": "PS2 | 001 / 002",
     "version": "v1.0.0",
     "patchDate": "2026-11-08",
     "addedDate": "2026-11-08",
@@ -1923,6 +1923,53 @@ window.GAME_CATALOG = [
   },
   {
     "order": 48,
+    "slug": "tales-of-the-abyss-ps2",
+    "title": "Tales of the Abyss (PS2)",
+    "platform": "ps2",
+    "platformLabel": "PS2",
+    "index": "PS2 | 002 / 002",
+    "version": "v1.0.0",
+    "patchDate": "2026-11-10",
+    "addedDate": "2026-11-10",
+    "addedOrder": 57,
+    "addedAt": "2026-11-10T10:26:00+07:00",
+    "format": "xdelta3",
+    "cover": "./assets/covers/web/tales-of-the-abyss-ps2.jpg",
+    "manifest": "./assets/patches/tales-of-the-abyss-ps2/v1.0.0/manifest.json",
+    "accept": ".iso",
+    "fileTypes": "CLEAN USA PS2 · 3.77 GB",
+    "region": "USA",
+    "gameCode": "SLUS-21386",
+    "sourceName": "Tales of the Abyss (USA).iso · 4,048,191,488 bytes",
+    "sourceHash": "e6c2feaa1c3808ca73bac77d7347e7a7effb83bf8843d079437d45981ce00ae3",
+    "outputHash": "05d12bc86807594fff9f694d0d87038842a8ec2754a12bbd51e1abc6886c8cff",
+    "moduleStatus": "เนื้อเรื่องหลัก+สก็ต+เควสต์+ระบบต่อสู้+เมนู+สารานุกรม+คัทซีนอนิเมะ 100%",
+    "wholeGameCensus": "สำรวจทั้งเกม In-ROM Census 100.0% (32,374/32,374 รายการ)",
+    "details": {
+      "thaiTitle": "เทลส์ ออฟ ดิ อะบิสส์ ฉบับภาษาไทย (PS2)",
+      "japaneseTitle": "テイルズ オブ ジ アビス",
+      "originalTitle": "Tales of the Abyss (PS2)",
+      "studio": "Bandai Namco Games",
+      "release": "15 ธันวาคม 2005 (JP) / 10 ตุลาคม 2006 (NA)",
+      "genre": "Action Role-playing game",
+      "description": "ม็อดภาษาไทยสำหรับ Tales of the Abyss (PlayStation 2 โซน USA / SLUS-21386) เวอร์ชัน v1.0.0 แปลสมบูรณ์ 100% ทั้งเกม",
+      "overview": "การเดินทางของลุค ฟอน ฟาเบร เพื่อค้นหาความหมายของการมีชีวิตและการชดใช้ความผิดพลาด ท่ามกลางสงครามระหว่างสองมหาอำนาจและการพยากรณ์แห่งลอเรไล ฉบับแปลไทยสมบูรณ์แบบ 100% บนเครื่อง PlayStation 2",
+      "story": "ลุค ฟอน ฟาเบร บุตรชายแห่งดยุคผู้สูญเสียความทรงจำเมื่อ 7 ปีก่อน ถูกกักบริเวณอยู่ในคฤหาสน์ จนกระทั่งเกิดเหตุการณ์ที่เทียร์ เด็กสาวลึกลับบุกเข้ามาและเกิดปรากฏการณ์ไฮเปอร์เรโซแนนซ์ส่งทั้งสองไปยังดินแดนห่างไกล ลุคต้องเผชิญกับโลกภายนอก ความจริงอันโหดร้ายเกี่ยวกับตัวตนของเขา และบทเรียนราคาแพงที่จะเปลี่ยนชีวิตเขาไปตลอดกาล",
+      "localization": "แปลเนื้อเรื่องหลัก สกิตสนทนา 518 ตอน เควสต์ย่อย ระบบต่อสู้ เมนู ไอเทม สารานุกรม ไดอารี่ของลุค และฝังซับไตเติลภาษาไทยในคัทซีนอนิเมะ .SFD ทั้ง 6 เรื่องครบถ้วน 100% (สำมะโนในรอม 32,374/32,374 รายการ จาก 247,098 พอยน์เตอร์) วิศวกรรมฟอนต์ GS TM2 พร้อม MIPS R5900 VWF hooks สระวรรณยุกต์ 3 ระดับ บีบอัดด้วย comptoe Type 3 LZSS ไม่ให้ขยายเกินเซกเตอร์แผ่นเดิม และปรับจังหวะ SCR-paced DTS ป้องกันอาการวิดีโอค้างในฉากน้ำตก 100%",
+      "untranslated": "ไม่มีส่วนค้างแปลตามผลสำรวจในรอม (100.00% In-ROM readback verified)",
+      "features": [
+        "บทสนทนาและข้อความภาษาไทยสมบูรณ์ 32,374 รายการ (100.00%)",
+        "สก็ตสนทนา (Skits) ครบทั้ง 518 ตอน (5,591 ข้อความ)",
+        "ซับไตเติลภาษาไทยในคัทซีนอนิเมชัน .SFD ทั้ง 6 เรื่อง (46 ช่วง) ไร้อาการค้าง",
+        "ฟอนต์ภาษาไทยแท้ Master Font Kit บน Graphic Synthesizer (GS) สระ 3 ระดับสวยงาม",
+        "โครงสร้างเซกเตอร์ ISO9660 + Sony UDF 1.02 ตรงตามต้นฉบับ 100% รองรับ PCSX2 และ PS2 OPL"
+      ]
+    },
+    "verified": true,
+    "gameVersion": "v1.0.0"
+  },
+  {
+    "order": 49,
     "slug": "mini-yonku-wgp2",
     "title": "Mini Yonku Let's & Go!!: Power WGP 2",
     "platform": "snes",
@@ -1968,7 +2015,7 @@ window.GAME_CATALOG = [
     "gameVersion": "v1.0.0"
   },
   {
-    "order": 49,
+    "order": 50,
     "slug": "mana-khemia-student-alliance",
     "title": "Mana Khemia: Student Alliance",
     "platform": "psp",
@@ -2017,7 +2064,7 @@ window.GAME_CATALOG = [
     "gameVersion": "v1.0.0"
   },
   {
-    "order": 50,
+    "order": 51,
     "slug": "popolocrois",
     "title": "PoPoLoCrois",
     "platform": "psp",
@@ -2045,7 +2092,7 @@ window.GAME_CATALOG = [
     "gameVersion": "v1.0.0"
   },
   {
-    "order": 51,
+    "order": 52,
     "slug": "disgaea-5-complete",
     "title": "Disgaea 5 Complete",
     "platform": "switch",
@@ -2078,7 +2125,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "16797cb36b9d5361ccecf8c5dc49578eb7ca3bfd526b0c6d90f93179f26b9c45"
   },
   {
-    "order": 52,
+    "order": 53,
     "slug": "fire-emblem-engage",
     "title": "Fire Emblem Engage",
     "platform": "switch",
@@ -2111,7 +2158,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "0a55df8c842133b7668e281af95cc9cf8060c0563969aca8912cdeefff83cf1e"
   },
   {
-    "order": 53,
+    "order": 54,
     "slug": "fire-emblem-three-houses",
     "title": "Fire Emblem: Three Houses",
     "platform": "switch",
@@ -2144,7 +2191,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "db2c7925d591576c501f831a3efae0273678a0bfdff2c4d32c2b8e182170ef42"
   },
   {
-    "order": 54,
+    "order": 55,
     "slug": "persona-5-royal",
     "title": "Persona 5 Royal",
     "platform": "switch",
@@ -2177,7 +2224,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "ae68cf2866e6fd49d06e4245af0cf64f463bafc15be6885a06d360ea83556f1f"
   },
   {
-    "order": 55,
+    "order": 56,
     "slug": "village-in-the-shade",
     "title": "Village in the Shade",
     "platform": "switch",
@@ -2211,6 +2258,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "tales-of-the-abyss-ps2",
+    "title": "Tales of the Abyss (PS2)",
+    "platform": "PS2",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-10T10:26:00+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0"
+  },
   {
     "slug": "metal-max-4",
     "title": "Metal Max 4: Gekkou no Diva",
