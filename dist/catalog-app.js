@@ -397,6 +397,10 @@ const loadPopularRanking = async () => {
 };
 
 const renderSiteSummaryStats = async () => {
+  const totalGamesEl = document.querySelector('#stat-total-games');
+  if (totalGamesEl && Array.isArray(window.GAME_CATALOG)) {
+    totalGamesEl.textContent = `${window.GAME_CATALOG.length} เกม`;
+  }
   if (!window.PatchStats) return;
   const summary = await window.PatchStats.getSummary();
   const totalActionsEl = document.querySelector('#stat-total-actions');
@@ -500,10 +504,13 @@ const renderDailyUpdates = () => {
   }).format(d);
 
   const groups = new Map();
-  for (const item of updates.slice(0, 16)) {
+  for (const item of updates) {
     const d = new Date(item.timestamp);
     const dateKey = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Bangkok' }).format(d);
-    if (!groups.has(dateKey)) groups.set(dateKey, { date: d, items: [] });
+    if (!groups.has(dateKey)) {
+      if (groups.size >= 3) break;
+      groups.set(dateKey, { date: d, items: [] });
+    }
     groups.get(dateKey).items.push(item);
   }
 
