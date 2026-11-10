@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "inazuma-go-light",
+  "game_title": "Inazuma Eleven GO: Light",
+  "platform": "3DS",
+  "region": "Europe",
+  "game_code": "CTR-P-AE4P",
+  "patch_version": "v1.2.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Inazuma Eleven Go - Light (Europe) (En,Fr,De,Es,It).3ds",
+      "size": 4294967296,
+      "sha256": "fabfd98e5e8b994ebaa0fb8462acd9e706840375c52cd4707b4efbc205d2d7e4"
+    }
+  ],
+  "patch": {
+    "filename": "Inazuma_Eleven_GO_Light_Thai_v1.2.0.xdelta",
+    "size": 25572513,
+    "sha256": "b9fcd8aa39df87bc022dd90fc02fcca676bb0379445e0ba9c8f646c66140136a",
+    "release_date": "2026-11-10",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-go-light/v1.2.0/Inazuma_Eleven_GO_Light_Thai_v1.2.0.xdelta"
+  },
+  "output": {
+    "filename": "Inazuma_Eleven_GO_Light_Thai_v1.2.0.3ds",
+    "size": 4294967296,
+    "sha256": "5fd997dec4447c270d6a0b3ad6f9a4aa95bc47ff44829ed028bb043353196de3"
+  },
+  "release_status": {
+    "module_status": "แปลไทย 100% + ปรับปรุง RomFS IVFC Hash Tree รองรับเครื่องจริง 3DS",
+    "whole_game_census": "แปลไทยสมบูรณ์แบบ 100% ทั้งเกม (23,703 บรรทัด In-ROM)",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "STATE.md / release notes (2026-11-10)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-10T10:38:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean source located by SHA-256 and patched with xdelta3; output matches verified 3DS hardware parity (L1_bad=0, L2_bad=0, L3_bad=0).",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}
