@@ -488,7 +488,7 @@ body.has-inapp-banner main { padding-top: 60px; }
   grid-template-columns: minmax(220px, .62fr) minmax(0, 1.38fr);
   gap: clamp(24px, 4vw, 56px);
   align-items: center;
-  padding-top: 84px;
+  padding-top: 130px;
   padding-bottom: 32px;
 }
 .detail-cover-wrap { position: relative; width: min(100%, 320px); }

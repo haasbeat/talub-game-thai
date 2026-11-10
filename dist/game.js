@@ -643,8 +643,17 @@ const isIOS = (() => {
 
 checkInAppBrowser();
 document.querySelector('#detail-title').textContent = game.title;
-document.querySelector('#detail-japanese-title').textContent = details.japaneseTitle;
-document.querySelector('#detail-description').textContent = game.description;
+const jpTitleEl = document.querySelector('#detail-japanese-title');
+if (details.japaneseTitle && details.japaneseTitle !== game.title) {
+  jpTitleEl.textContent = `${details.japaneseTitle}${details.genre && details.genre !== 'Video game' ? ` • ${details.genre}` : ''}`;
+  jpTitleEl.hidden = false;
+} else if (details.genre && details.genre !== 'Video game') {
+  jpTitleEl.textContent = details.genre;
+  jpTitleEl.hidden = false;
+} else {
+  jpTitleEl.hidden = true;
+}
+document.querySelector('#detail-description').textContent = details.overview || details.description || game.description;
 document.querySelector('#detail-cover').src = game.cover;
 document.querySelector('#detail-cover').alt = `ปกเกม ${game.title} ฉบับภาษาไทย`;
 document.querySelector('#detail-platform').textContent = game.platform;
@@ -705,7 +714,12 @@ if (isExternalDownload) {
   window.PatchStats.get(slug).then(renderPatchCount);
 }
 document.querySelector('#detail-format').textContent = game.format;
-document.querySelector('#detail-status').textContent = game.status;
+const statusText = (game.moduleStatus && game.moduleStatus.length <= 40)
+  ? game.moduleStatus
+  : (game.status === 'ยืนยันข้อมูลชุดดาวน์โหลดแล้ว' || game.status === 'ชุดดาวน์โหลดพร้อมใช้งาน'
+      ? (game.moduleStatus ? game.moduleStatus.slice(0, 32) : 'แปลสมบูรณ์')
+      : game.status);
+document.querySelector('#detail-status').textContent = statusText;
 document.querySelector('#workspace-game').textContent = game.title;
 document.querySelector('#workspace-platform').textContent = game.platform;
 document.querySelector('#workspace-game-version').textContent = details.gameVersion;
@@ -713,7 +727,7 @@ document.querySelector('#file-types').textContent = game.fileTypes;
 document.querySelector('#rom-input').accept = isIOS ? '*/*' : game.accept;
 document.querySelector('#detail-thai-title').textContent = details.thaiTitle;
 document.querySelector('#detail-overview').textContent = details.overview;
-document.querySelector('#detail-original-title').textContent = details.originalTitle;
+document.querySelector('#detail-original-title').textContent = details.japaneseTitle || details.originalTitle;
 document.querySelector('#detail-studio').textContent = details.studio;
 document.querySelector('#detail-release').textContent = details.release;
 document.querySelector('#detail-game-code').textContent = details.gameCode;
@@ -946,7 +960,7 @@ if (game.manifest && !isExternalDownload) {
       distribution.url === game.downloadUrl
     );
     document.querySelector('#detail-status').textContent = identityMatches
-      ? 'ยืนยันข้อมูลชุดดาวน์โหลดแล้ว'
+      ? ((game.moduleStatus && game.moduleStatus.length <= 40) ? game.moduleStatus : 'แปลสมบูรณ์')
       : 'ข้อมูลชุดดาวน์โหลดไม่ตรงกับ manifest';
     workspaceStatus.textContent = identityMatches ? 'DOWNLOAD VERIFIED' : 'MANIFEST MISMATCH';
   }).catch(() => {
