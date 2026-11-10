@@ -530,7 +530,7 @@ body.has-inapp-banner main { padding-top: 60px; }
   transform: translateX(3px);
   color: var(--ink);
 }
-.detail-actions { display: flex; align-items: center; gap: 12px; margin-top: 20px; }
+.detail-actions { display: flex; align-items: center; justify-content: flex-end; gap: 12px; margin-top: 20px; }
 .detail-support-cta {
   display: inline-flex;
   align-items: center;
