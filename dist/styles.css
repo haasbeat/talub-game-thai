@@ -533,8 +533,39 @@ body.has-inapp-banner main { padding-top: 60px; }
 .detail-actions { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(210px, .6fr); gap: 8px; margin-top: 20px; }
 .detail-cta { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 13px 18px; color: #fff; background: var(--ink); border: 1px solid var(--ink); transition: color 500ms var(--ease), background 500ms var(--ease); }
 .detail-cta:hover { color: var(--ink); background: transparent; }
-.detail-support-cta { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 13px 18px; color: var(--ink); background: #fff; border: 1px solid var(--ink); transition: color 500ms var(--ease), background 500ms var(--ease); }
-.detail-support-cta:hover { color: #fff; background: var(--ink); }
+.detail-support-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 13px 20px;
+  color: #fff;
+  background: linear-gradient(135deg, #ff2a5f 0%, #ff6b35 100%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  box-shadow: 0 4px 18px rgba(255, 42, 95, 0.32);
+  transition: transform 250ms var(--ease), box-shadow 250ms var(--ease), filter 250ms var(--ease);
+}
+.detail-support-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 26px rgba(255, 42, 95, 0.45);
+  filter: brightness(1.08);
+  color: #fff;
+}
+.detail-support-cta:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(255, 42, 95, 0.3);
+}
+.detail-support-heart {
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+  transition: transform 250ms var(--ease);
+}
+.detail-support-cta:hover .detail-support-heart {
+  transform: scale(1.3);
+}
 .detail-view-switch { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; padding-top: 0; padding-bottom: 0; }
 .detail-view-tab { display: flex; align-items: center; gap: 16px; min-height: 56px; padding: 10px 18px; color: var(--ink); background: #fff; border: 1px solid var(--line); text-align: left; }
 .detail-view-tab:first-child { border-radius: 999px 10px 10px 999px; }
