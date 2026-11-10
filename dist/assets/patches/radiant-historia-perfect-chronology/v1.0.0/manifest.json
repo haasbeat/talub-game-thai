@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "game_slug": "radiant-historia-perfect-chronology",
+  "game_title": "Radiant Historia: Perfect Chronology",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "CTR-P-BRBE",
+  "title_id": "00040000001C8F00",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Radiant Historia - Perfect Chronology (USA).3ds",
+      "size": 2147483648,
+      "sha256": "3cdc7292a9c88c79cd0150679f7bf1ab082a8226264c1a8fd74bb60f5b0d1931"
+    }
+  ],
+  "patch": {
+    "filename": "Radiant_Historia_PC_Thai_v1.0.0.xdelta",
+    "size": 2460393,
+    "sha256": "58af41e56d12239fdc78e7e8158fc1067a6c6f16c7ba06cdfd7721fb0c985fd1",
+    "release_date": "2026-11-10",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/radiant-historia-perfect-chronology/v1.0.0/Radiant_Historia_PC_Thai_v1.0.0.xdelta"
+  },
+  "output": {
+    "filename": "Radiant_Historia_PC_Thai_v1.0.0.3ds",
+    "size": 2147483648,
+    "sha256": "22292a31d995e993015696fedc0632f0a8f03ccd3939afc90dcf3e67d47dbbf5"
+  },
+  "mod_archive": {
+    "filename": "Radiant_Historia_PC_Thai_v1.0.0_Mod.zip",
+    "size": 5598474,
+    "sha256": "afc33d7b1ae2209da02aec567f9d573854520248a26767ec9f0e2f7cfe6e981d"
+  },
+  "all_in_one_archive": {
+    "filename": "Radiant_Historia_PC_Thai_v1.0.0_AllInOne.zip",
+    "size": 8667387,
+    "sha256": "ca7b431a021d7fff380111cf648122f74c028f1f1f67263d4360451ecea2f42a"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก ทุกเส้นทาง และระบบทั้งหมด 100%",
+    "whole_game_census": "21,831 / 21,831 เรคคอร์ด อ่านกลับจากในรอม (ภาพรวมทั้งเกม 100.0%)",
+    "census_source": "games/3DS/Radiant Historia - Perfect Chronology (USA)/STATE.md + data/census_summary.json",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-10T12:47:30.352473+07:00",
+    "method": "xdelta3_clean_roundtrip",
+    "note": "Clean source verified by SHA-256 and patched with xdelta3; output matches target ROM 100% bit-identical.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}
