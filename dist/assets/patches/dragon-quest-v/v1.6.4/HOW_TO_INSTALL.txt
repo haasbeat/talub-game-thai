@@ -1,0 +1,19 @@
+========================================================================
+HOW TO INSTALL — Dragon Quest V: Hand of the Heavenly Bride Thai Patch (v1.6.4)
+ตลับเกมภาษาไทย v1.6.4 — แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่าย
+========================================================================
+
+1. Supported Clean Source ROM:
+   - File: Dragon Quest V - Hand of the Heavenly Bride (US)(M3)(XenoPhobia).nds
+   - Game Code: YV5E | Size: 134,217,728 bytes
+   - SHA-256: c042d82f33e7b0a8a58f72ff8534a9444cee67bdbd383cf6c6b2942de46dd974
+
+2. Coverage:
+   - 100.00% Complete Game Localization (Whole-Game Census: 28,739 / 28,739 active records)
+   - All 3 Generations Main Story + All 3 Marriage Branches (Bianca, Nera, Debora) + Estark Post-game
+   - 100% Party Chat across all party members, towns, dungeons, and world maps
+   - 100% Menus, Spells, Items, Monsters, Equipment, Casino, and T 'n' T minigames
+
+3. Emulators & Flashcarts:
+   - Run the patched .nds ROM directly in MelonDS, DeSmuME, DraStic, or TwilightMenu++ / NDS Flashcart.
+   - No external LayeredFS mods or cheats required (all NFTR fonts and MPT0 scripts are baked into the ROM).

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "game_slug": "dragon-quest-v",
+  "game_title": "Dragon Quest V: Hand of the Heavenly Bride",
+  "platform": "NDS",
+  "region": "USA",
+  "game_code": "YV5E",
+  "patch_version": "v1.6.4",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Dragon Quest V - Hand of the Heavenly Bride (US)(M3)(XenoPhobia).nds",
+      "size": 134217728,
+      "sha256": "c042d82f33e7b0a8a58f72ff8534a9444cee67bdbd383cf6c6b2942de46dd974"
+    }
+  ],
+  "patch": {
+    "filename": "Dragon_Quest_V_Thai_v1.6.4.xdelta",
+    "size": 2101217,
+    "sha256": "6388f757ddf362cacd1e928ab7f70bc95876f90fda0d9f0ebaaf5f0d7dea8eeb",
+    "release_date": "2026-11-10",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/dragon-quest-v/v1.6.4/Dragon_Quest_V_Thai_v1.6.4.xdelta"
+  },
+  "output": {
+    "filename": "Dragon_Quest_V_Thai_v1.6.4.nds",
+    "size": 134217728,
+    "sha256": "bd91d31ac7870dd495e13151f8cb733afbd0521869ce0d201d890b5ed24525bf"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องไตรวัย (วัยเด็ก-วัยหนุ่ม-รุ่นลูก)+ทางเลือกเจ้าสาว 3 สาย 100%",
+    "whole_game_census": "28,739/28,739 บรรทัด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}
