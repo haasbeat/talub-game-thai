@@ -251,31 +251,52 @@ const createGameCard = (game, index) => {
 
   const meta = document.createElement('div');
   meta.className = 'game-meta';
-  meta.innerHTML = '<h3></h3><span class="mono"></span><span class="mono"></span>';
-  meta.querySelector('h3').textContent = game.title;
-  meta.querySelectorAll('span')[0].textContent = game.version;
-  meta.querySelectorAll('span')[1].textContent = game.platformLabel;
+
+  const title = document.createElement('h3');
+  title.textContent = game.title;
+
+  const tagRow = document.createElement('div');
+  tagRow.className = 'game-tag-row';
+
+  const badgeGroup = document.createElement('div');
+  badgeGroup.className = 'badge-group';
+
+  const platformTag = document.createElement('span');
+  platformTag.className = 'game-platform-tag mono';
+  platformTag.textContent = game.platformLabel;
+
+  const versionBadge = document.createElement('span');
+  versionBadge.className = 'game-version-badge mono';
+  versionBadge.textContent = game.version;
+
+  badgeGroup.append(platformTag, versionBadge);
+  tagRow.append(badgeGroup);
+
+  const infoBlock = document.createElement('div');
+  infoBlock.className = 'game-info-block';
 
   const patchDate = document.createElement('time');
-  patchDate.className = 'game-patch-date mono';
+  patchDate.className = 'game-patch-date';
   patchDate.dateTime = game.patchDate || '';
   patchDate.textContent = `อัปเดตม็อด ${formatPatchDate(game.patchDate)}`;
-  meta.append(patchDate);
+  infoBlock.append(patchDate);
 
   if (window.PatchStats) {
     const isExternalDownload = game.distributionType === 'external-download';
     const stat = document.createElement('p');
-    stat.className = 'game-patch-count mono';
+    stat.className = 'game-patch-count';
     stat.textContent = isExternalDownload ? 'DOWNLOADS —' : 'PATCHED —';
-    meta.append(stat);
+    infoBlock.append(stat);
     const getStat = isExternalDownload ? window.PatchStats.getDownload : window.PatchStats.get;
     getStat(game.slug).then((value) => {
       if (value === null) { stat.remove(); return; }
-      stat.textContent = isExternalDownload
-        ? `ดาวน์โหลด ${window.PatchStats.format(value)} ครั้ง`
-        : `แพตช์แล้ว ${window.PatchStats.format(value)} ครั้ง`;
+      stat.innerHTML = isExternalDownload
+        ? `ดาวน์โหลด <strong>${window.PatchStats.format(value)}</strong> ครั้ง`
+        : `แพตช์แล้ว <strong>${window.PatchStats.format(value)}</strong> ครั้ง`;
     });
   }
+
+  meta.append(title, tagRow, infoBlock);
 
   const openGame = () => {
     window.location.href = `./game.html?game=${encodeURIComponent(game.slug)}`;
