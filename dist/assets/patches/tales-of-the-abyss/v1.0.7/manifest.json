@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "tales-of-the-abyss",
+  "game_title": "Tales of the Abyss",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "AABE",
+  "patch_version": "v1.0.7",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Tales of the Abyss (USA) (decrypted).3ds",
+      "size": 2147483648,
+      "sha256": "b5d96e539bd9d4504e53b5f0d4f1c67c6a2d67928e9602ac87d9fd60cf90a807"
+    }
+  ],
+  "patch": {
+    "filename": "Tales_of_the_Abyss_USA_TH_v1.0.7.xdelta",
+    "size": 45505404,
+    "sha256": "e9150a013bb41fb04d980432b6675bb9dbf821582340b249e988167542f33b61",
+    "release_date": "2026-11-10",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/tales-of-the-abyss/v1.0.7/Tales_of_the_Abyss_USA_TH_v1.0.7.xdelta"
+  },
+  "output": {
+    "filename": "Tales of the Abyss (USA) (Thai v1.0.7).3ds",
+    "size": 2147483648,
+    "sha256": "42c8008baa7ec4ed856b0b7933884baca52bee5ce67b011217fe016162d1613e"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก+สก็ต+เควสต์+ระบบต่อสู้+เมนู+สารานุกรม 100%",
+    "whole_game_census": "สำรวจทั้งเกม In-ROM Census 100.0%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-10T21:50:00+07:00",
+    "method": "clean_source_xdelta3_roundtrip",
+    "note": "Clean 2.0 GB USA Decrypted 3DS cartridge source verified with clean-source roundtrip; repacked DVDDATA_SKIT 100% in-place (0 relocated files); fixed post-battle victory HUD ASCII sprite font (EXP/BONUS/MAX HIT/GALD/TIME/GRADE); fixed (X) Details button and 59 assembly ADR text strings; 89 tail-merged RVCT pointers localized; cutscene-only Kanit Medium font preserved; In-ROM binary census passed with 32,569/32,569 records (100.00%).",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true,
+    "patcher_test_passed": true
+  }
+}
