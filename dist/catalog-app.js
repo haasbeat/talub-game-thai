@@ -300,6 +300,11 @@ const getGameStatusBadges = (game) => {
   return { isNew, isUpdate };
 };
 
+const STAT_ICONS = {
+  patch: '<svg class="stat-icon stat-icon-patch" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="9" height="9" rx="1.5"/><rect x="6" y="6" width="4" height="4" rx="0.5" fill="currentColor" fill-opacity="0.28"/><line x1="6" y1="1" x2="6" y2="3.5"/><line x1="10" y1="1" x2="10" y2="3.5"/><line x1="6" y1="12.5" x2="6" y2="15"/><line x1="10" y1="12.5" x2="10" y2="15"/><line x1="1" y1="6" x2="3.5" y2="6"/><line x1="1" y1="10" x2="3.5" y2="10"/><line x1="12.5" y1="6" x2="15" y2="6"/><line x1="12.5" y1="10" x2="15" y2="10"/></svg>',
+  download: '<svg class="stat-icon stat-icon-download" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2.5v7.5m0 0-2.5-2.5M8 10l2.5-2.5M3 13h10"/></svg>'
+};
+
 const createGameCard = (game, index) => {
   const card = document.createElement('article');
   card.className = 'game-card hover-target';
@@ -380,16 +385,19 @@ const createGameCard = (game, index) => {
 
   if (window.PatchStats) {
     const isExternalDownload = game.distributionType === 'external-download';
+    const icon = isExternalDownload ? STAT_ICONS.download : STAT_ICONS.patch;
     const stat = document.createElement('p');
     stat.className = 'game-patch-count';
-    stat.textContent = isExternalDownload ? 'DOWNLOADS —' : 'PATCHED —';
+    stat.innerHTML = isExternalDownload
+      ? `${icon}<span>DOWNLOADS —</span>`
+      : `${icon}<span>PATCHED —</span>`;
     infoBlock.append(stat);
     const getStat = isExternalDownload ? window.PatchStats.getDownload : window.PatchStats.get;
     getStat(game.slug).then((value) => {
       if (value === null) { stat.remove(); return; }
       stat.innerHTML = isExternalDownload
-        ? `ดาวน์โหลด <strong>${window.PatchStats.format(value)}</strong> ครั้ง`
-        : `แพตช์แล้ว <strong>${window.PatchStats.format(value)}</strong> ครั้ง`;
+        ? `${icon}<span>ดาวน์โหลด <strong>${window.PatchStats.format(value)}</strong> ครั้ง</span>`
+        : `${icon}<span>แพตช์แล้ว <strong>${window.PatchStats.format(value)}</strong> ครั้ง</span>`;
     });
   }
 
@@ -421,6 +429,14 @@ const metricText = (game, value) => {
   return game.distributionType === 'external-download'
     ? `ดาวน์โหลด ${window.PatchStats.format(value)} ครั้ง`
     : `แพตช์แล้ว ${window.PatchStats.format(value)} ครั้ง`;
+};
+const metricHtml = (game, value) => {
+  const isExternalDownload = game.distributionType === 'external-download';
+  const icon = isExternalDownload ? STAT_ICONS.download : STAT_ICONS.patch;
+  if (value === undefined) return `${icon}<span>กำลังโหลดสถิติ</span>`;
+  if (value === null) return `${icon}<span>${isExternalDownload ? 'ดาวน์โหลดโดยตรง' : 'แพตช์ผ่านเว็บ'}</span>`;
+  const actionText = isExternalDownload ? 'ดาวน์โหลด' : 'แพตช์แล้ว';
+  return `${icon}<span>${actionText} <strong>${window.PatchStats.format(value)}</strong> ครั้ง</span>`;
 };
 
 const createPopularCard = (game, rank, value, featured = false) => {
@@ -481,7 +497,7 @@ const createPopularCard = (game, rank, value, featured = false) => {
 
     const statPill = document.createElement('div');
     statPill.className = 'popular-stat-pill mono';
-    statPill.innerHTML = `<span>🔥 ยอดนิยมอันดับ 1</span><span class="stat-sep">•</span><span class="stat-count">${metricText(game, value)}</span>`;
+    statPill.innerHTML = `<span>🔥 ยอดนิยมอันดับ 1</span><span class="stat-sep">•</span><span class="stat-count">${metricHtml(game, value)}</span>`;
 
     copy.append(tagRow, title, detail, statPill);
     inner.append(posterWrap, copy);
@@ -506,7 +522,7 @@ const createPopularCard = (game, rank, value, featured = false) => {
     detail.textContent = secondaryTitle(game);
     const stat = document.createElement('span');
     stat.className = 'popular-small-stat mono';
-    stat.textContent = metricText(game, value);
+    stat.innerHTML = metricHtml(game, value);
 
     copy.append(tagRow, title, detail, stat);
     card.append(poster, copy);
