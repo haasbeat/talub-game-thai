@@ -2262,21 +2262,21 @@ window.GAME_CATALOG = [
     "platform": "switch",
     "platformLabel": "SWITCH",
     "index": "SWITCH | 003 / 005",
-    "version": "v1.3.6",
-    "patchDate": "2026-11-08",
+    "version": "v1.3.7",
+    "patchDate": "2026-11-11",
     "addedDate": "2026-11-06",
     "addedOrder": 44,
     "addedAt": "2026-11-06T14:30:36+07:00",
     "format": "LayeredFS / Atmosphère",
     "cover": "./assets/covers/web/fire-emblem-three-houses.jpg",
-    "manifest": "./assets/patches/fire-emblem-three-houses/v1.3.6/manifest.json",
+    "manifest": "./assets/patches/fire-emblem-three-houses/v1.3.7/manifest.json",
     "accept": "",
-    "fileTypes": "ชุดม็อด LayeredFS · 302.06 MB",
+    "fileTypes": "ชุดม็อด LayeredFS · 29.06 MB",
     "region": "Global",
     "gameCode": "010055D009F78000",
     "sourceName": "Update v1.2.0 (Patch 4)",
     "sourceHash": "010055D009F78000",
-    "outputHash": "db2c7925d591576c501f831a3efae0273678a0bfdff2c4d32c2b8e182170ef42",
+    "outputHash": "fe0590167c7828d2108707a7a84902f4aabea5080c60e382401f69a2f2657c97",
     "moduleStatus": "เนื้อเรื่องและเมนูหลัก 100%",
     "wholeGameCensus": "78,511 / 77,019 บรรทัด In-ROM (101.94% จากรายการที่ฉีดเพิ่ม)",
     "details": {
@@ -2286,7 +2286,7 @@ window.GAME_CATALOG = [
       "studio": "Nintendo / Intelligent Systems / Koei Tecmo",
       "release": "26 กรกฎาคม 2019",
       "genre": "Tactical Role-playing game",
-      "description": "ม็อดภาษาไทยสมบูรณ์แบบสำหรับ Fire Emblem: Three Houses (Nintendo Switch / Title ID: 010055D009F78000) เวอร์ชัน v1.3.6",
+      "description": "ม็อดภาษาไทยสมบูรณ์แบบสำหรับ Fire Emblem: Three Houses (Nintendo Switch / Title ID: 010055D009F78000) เวอร์ชัน v1.3.7 (Clean Packaging 29 MB / 7,200 ไฟล์ โอนไฟล์ลง Switch เสร็จใน 1 นาที)",
       "overview": "รับบทเป็นอาจารย์ประจำสถาบันนายทหาร ณ อารามการ์แรก มัค นำพานักเรียนในบ้านที่คุณเลือกผ่านสมรภูมิสงคราม การเมือง และสายสัมพันธ์ในทวีปโฟดลาน แปลไทยสมบูรณ์ทุกสายรูท",
       "story": "ทวีปโฟดลานถูกแบ่งออกเป็น 3 มหาอำนาจ: จักรวรรดิอาดรัสเทีย, ราชอาณาจักรศักดิ์สิทธิ์แฟร์กัส, และสหพันธรัฐเลสเตอร์ โดยมีศาสนจักรแห่งเซรอสเป็นศูนย์กลาง ไบลธ์ ทหารรับจ้างบุตรแห่งเจรัลต์ ได้รับเชิญมาเป็นอาจารย์ประจำสถาบันนายทหารและต้องเลือกดูแลหนึ่งในสามบ้าน ก่อนที่ไฟสงครามและการเมืองจะปะทุขึ้นจนบีบให้เหล่าลูกศิษย์ต้องหันคมดาบเข้าหากัน",
       "localization": "แปลเนื้อเรื่องหลักและบทพูด 1,616 ไฟล์ (54,669 บรรทัด) ครบ 100% ทุกสายรูท ทั้งเควสต์โรงเรียน ระบบปฏิทิน กิจกรรมดื่มชา ระบบซัพพอร์ต และซับไตเติลมูฟวี่อนิเมชันทั้งหมด พร้อมระบบฟอนต์ Tall-Safe สระไม่ลอยและรักษาระดับภาษาตัวละครตาม 5-Tier Tone Matrix",
@@ -2303,10 +2303,10 @@ window.GAME_CATALOG = [
     "gameVersion": "Update v1.2.0 (Patch 4)",
     "verifiedAt": null,
     "distributionType": "external-download",
-    "downloadUrl": "https://drive.google.com/file/d/1nuVoxJ59j9lBr3wQc1gcGJZAdBr4eKMv/view?usp=sharing",
-    "downloadFilename": "FE16_Thai_v1.3.6_Mod.zip",
-    "downloadSize": 316728585,
-    "downloadSha256": "db2c7925d591576c501f831a3efae0273678a0bfdff2c4d32c2b8e182170ef42"
+    "downloadUrl": "https://drive.google.com/file/d/1Z1fehCX62WIt8--8x1rycGpTXZO9iWrF/view?usp=sharing",
+    "downloadFilename": "FE16_Thai_v1.3.7_Mod.zip",
+    "downloadSize": 30469111,
+    "downloadSha256": "fe0590167c7828d2108707a7a84902f4aabea5080c60e382401f69a2f2657c97"
   },
   {
     "order": 56,
@@ -2378,6 +2378,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "fire-emblem-three-houses",
+    "title": "Fire Emblem: Three Houses",
+    "platform": "SWITCH",
+    "version": "v1.3.7",
+    "type": "update",
+    "timestamp": "2026-11-11T21:41:09+07:00",
+    "note": "อัปเดตชุดม็อด v1.3.7 สถาปัตยกรรม Clean Packaging ตัดไฟล์ขยะและไฟล์จำลองซ้ำซ้อน 92% (ลดเหลือ 7,200 ไฟล์ / ขนาดซิปลดเหลือ 29 MB) โอนไฟล์ลง Switch เสร็จไวใน 1 นาที"
+  },
   {
     "slug": "mana-khemia-student-alliance",
     "title": "Mana Khemia: Student Alliance",
