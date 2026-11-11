@@ -235,44 +235,69 @@ const getBadgeExpiryMs = (type, timestamp) => {
   return EXPIRY_DAYS_STANDARD * MS_PER_DAY;
 };
 
-const latestUpdateInfoMap = new Map();
-const getGameStatusBadge = (game) => {
-  const now = Date.now();
-
-  if (!latestUpdateInfoMap.size && Array.isArray(window.GAME_UPDATES)) {
+const gameUpdateHistory = new Map();
+const ensureUpdateHistory = () => {
+  if (gameUpdateHistory.size > 0) return;
+  if (Array.isArray(window.GAME_UPDATES)) {
     for (const u of window.GAME_UPDATES) {
       const t = new Date(u.timestamp).getTime();
+      if (Number.isNaN(t)) continue;
+      let record = gameUpdateHistory.get(u.slug);
+      if (!record) {
+        record = { newTime: 0, updateTime: 0 };
+        gameUpdateHistory.set(u.slug, record);
+      }
+      if (u.type === 'new' && t > record.newTime) {
+        record.newTime = t;
+      } else if (u.type === 'update' && t > record.updateTime) {
+        record.updateTime = t;
+      }
+    }
+  }
+
+  for (const game of catalog) {
+    if (game.patchDate) {
+      const t = new Date(`${game.patchDate}T00:00:00+07:00`).getTime();
       if (!Number.isNaN(t)) {
-        const existing = latestUpdateInfoMap.get(u.slug);
-        if (!existing || t > existing.time) {
-          latestUpdateInfoMap.set(u.slug, { time: t, type: u.type });
+        const isV1 = !game.version || game.version.startsWith('v1.0.0') || game.version === 'v1.0';
+        let record = gameUpdateHistory.get(game.slug);
+        if (!record) {
+          record = { newTime: 0, updateTime: 0 };
+          gameUpdateHistory.set(game.slug, record);
+        }
+        if (isV1 && (!record.newTime || t > record.newTime)) {
+          record.newTime = t;
+        } else if (!isV1 && (!record.updateTime || t > record.updateTime)) {
+          record.updateTime = t;
+        }
+      }
+    }
+    if (game.addedAt) {
+      const t = new Date(game.addedAt).getTime();
+      if (!Number.isNaN(t)) {
+        let record = gameUpdateHistory.get(game.slug);
+        if (!record) {
+          record = { newTime: 0, updateTime: 0 };
+          gameUpdateHistory.set(game.slug, record);
+        }
+        if (!record.newTime || t > record.newTime) {
+          record.newTime = t;
         }
       }
     }
   }
+};
 
-  const updateInfo = latestUpdateInfoMap.get(game.slug);
-  if (updateInfo && (now - updateInfo.time) <= getBadgeExpiryMs(updateInfo.type, updateInfo.time)) {
-    return updateInfo.type;
-  }
+const getGameStatusBadges = (game) => {
+  ensureUpdateHistory();
+  const now = Date.now();
+  const record = gameUpdateHistory.get(game.slug);
+  if (!record) return { isNew: false, isUpdate: false };
 
-  if (game.patchDate) {
-    const t = new Date(`${game.patchDate}T00:00:00+07:00`).getTime();
-    if (!Number.isNaN(t)) {
-      const isV1 = !game.version || game.version.startsWith('v1.0.0') || game.version === 'v1.0';
-      const type = isV1 ? 'new' : 'update';
-      if ((now - t) <= getBadgeExpiryMs(type, t)) {
-        return type;
-      }
-    }
-  }
-  if (game.addedAt) {
-    const t = new Date(game.addedAt).getTime();
-    if (!Number.isNaN(t) && (now - t) <= getBadgeExpiryMs('new', t)) {
-      return 'new';
-    }
-  }
-  return null;
+  const isNew = record.newTime > 0 && (now - record.newTime) <= getBadgeExpiryMs('new', record.newTime);
+  const isUpdate = record.updateTime > 0 && (now - record.updateTime) <= getBadgeExpiryMs('update', record.updateTime);
+
+  return { isNew, isUpdate };
 };
 
 const createGameCard = (game, index) => {
@@ -324,17 +349,24 @@ const createGameCard = (game, index) => {
   badgeGroup.append(platformTag, versionBadge);
   tagRow.append(badgeGroup);
 
-  const statusType = getGameStatusBadge(game);
-  if (statusType === 'new') {
-    const statusBadge = document.createElement('span');
-    statusBadge.className = 'status-badge is-new mono';
-    statusBadge.innerHTML = '<span class="beacon-dot"></span>NEW';
-    tagRow.append(statusBadge);
-  } else if (statusType === 'update') {
-    const statusBadge = document.createElement('span');
-    statusBadge.className = 'status-badge is-update mono';
-    statusBadge.textContent = 'UPDATE';
-    tagRow.append(statusBadge);
+  const { isNew, isUpdate } = getGameStatusBadges(game);
+  if (isNew || isUpdate) {
+    const statusBadges = document.createElement('div');
+    statusBadges.className = 'status-badges';
+
+    if (isNew) {
+      const statusBadge = document.createElement('span');
+      statusBadge.className = 'status-badge is-new mono';
+      statusBadge.innerHTML = '<span class="beacon-dot"></span>NEW';
+      statusBadges.append(statusBadge);
+    }
+    if (isUpdate) {
+      const statusBadge = document.createElement('span');
+      statusBadge.className = 'status-badge is-update mono';
+      statusBadge.textContent = 'UPDATE';
+      statusBadges.append(statusBadge);
+    }
+    tagRow.append(statusBadges);
   }
 
   const infoBlock = document.createElement('div');
@@ -397,34 +429,89 @@ const createPopularCard = (game, rank, value, featured = false) => {
   card.href = gameHref(game);
   card.setAttribute('aria-label', `ม็อดยอดนิยมอันดับ ${rank} ${displayTitle(game)} — ดูรายละเอียด`);
 
-  const media = document.createElement('div');
-  media.className = 'popular-card-media';
-  const image = document.createElement('img');
-  image.src = game.cover;
-  image.alt = `ปกเกม ${displayTitle(game)} ฉบับภาษาไทย`;
-  image.loading = 'lazy';
-  image.decoding = 'async';
-  const badge = document.createElement('span');
-  badge.className = 'popular-rank mono';
-  badge.textContent = `TOP ${String(rank).padStart(2, '0')}`;
-  media.append(image, badge);
+  const rankBadge = document.createElement('span');
+  let rankClass = 'rank-slate';
+  let rankIcon = '';
+  if (rank === 1) { rankClass = 'rank-gold'; rankIcon = '👑 '; }
+  else if (rank === 2) { rankClass = 'rank-silver'; rankIcon = '🥈 '; }
+  else if (rank === 3) { rankClass = 'rank-bronze'; rankIcon = '🥉 '; }
+  rankBadge.className = `popular-rank-badge ${rankClass} mono`;
+  rankBadge.textContent = `${rankIcon}TOP ${String(rank).padStart(2, '0')}`;
 
-  const copy = document.createElement('div');
-  copy.className = 'popular-card-copy';
-  const meta = document.createElement('p');
-  meta.className = 'popular-card-meta mono';
-  meta.textContent = `${game.platformLabel} / ${game.version}`;
-  const title = document.createElement('h3');
-  title.textContent = displayTitle(game);
-  const detail = document.createElement('p');
-  detail.className = 'popular-card-detail';
-  detail.textContent = secondaryTitle(game);
-  const stat = document.createElement('span');
-  stat.className = 'popular-card-stat mono';
-  stat.textContent = metricText(game, value);
-  copy.append(meta, title, detail, stat);
+  const badgeGroup = document.createElement('div');
+  badgeGroup.className = 'badge-group mono';
+  const platformTag = document.createElement('span');
+  platformTag.className = 'game-platform-tag mono';
+  platformTag.textContent = game.platformLabel;
+  const versionBadge = document.createElement('span');
+  versionBadge.className = 'game-version-badge mono';
+  versionBadge.textContent = game.version;
+  badgeGroup.append(platformTag, versionBadge);
 
-  card.append(media, copy);
+  const tagRow = document.createElement('div');
+  tagRow.className = 'popular-tag-row';
+  tagRow.append(badgeGroup);
+
+  if (featured) {
+    const backdrop = document.createElement('div');
+    backdrop.className = 'popular-backdrop';
+    backdrop.style.backgroundImage = `url("${game.cover}")`;
+    backdrop.setAttribute('aria-hidden', 'true');
+
+    const inner = document.createElement('div');
+    inner.className = 'popular-feature-inner';
+
+    const posterWrap = document.createElement('div');
+    posterWrap.className = 'popular-feature-poster-wrap';
+    const image = document.createElement('img');
+    image.src = game.cover;
+    image.alt = `ปกเกม ${displayTitle(game)} ฉบับภาษาไทย`;
+    image.loading = 'lazy';
+    image.decoding = 'async';
+    posterWrap.append(image, rankBadge);
+
+    const copy = document.createElement('div');
+    copy.className = 'popular-feature-copy';
+    const title = document.createElement('h3');
+    title.className = 'popular-feature-title';
+    title.textContent = displayTitle(game);
+    const detail = document.createElement('p');
+    detail.className = 'popular-feature-subtitle';
+    detail.textContent = secondaryTitle(game);
+
+    const statPill = document.createElement('div');
+    statPill.className = 'popular-stat-pill mono';
+    statPill.innerHTML = `<span>🔥 ยอดนิยมอันดับ 1</span><span class="stat-sep">•</span><span class="stat-count">${metricText(game, value)}</span>`;
+
+    copy.append(tagRow, title, detail, statPill);
+    inner.append(posterWrap, copy);
+    card.append(backdrop, inner);
+  } else {
+    const poster = document.createElement('div');
+    poster.className = 'popular-small-poster';
+    const image = document.createElement('img');
+    image.src = game.cover;
+    image.alt = `ปกเกม ${displayTitle(game)} ฉบับภาษาไทย`;
+    image.loading = 'lazy';
+    image.decoding = 'async';
+    poster.append(image, rankBadge);
+
+    const copy = document.createElement('div');
+    copy.className = 'popular-small-copy';
+    const title = document.createElement('h3');
+    title.className = 'popular-small-title';
+    title.textContent = displayTitle(game);
+    const detail = document.createElement('p');
+    detail.className = 'popular-small-detail';
+    detail.textContent = secondaryTitle(game);
+    const stat = document.createElement('span');
+    stat.className = 'popular-small-stat mono';
+    stat.textContent = metricText(game, value);
+
+    copy.append(tagRow, title, detail, stat);
+    card.append(poster, copy);
+  }
+
   return card;
 };
 
