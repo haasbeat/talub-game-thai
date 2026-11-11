@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "inazuma-go-wildfire",
+  "game_title": "Inazuma Eleven GO: Chrono Stones - Wildfire",
+  "platform": "3DS",
+  "region": "Europe",
+  "game_code": "BG9P",
+  "patch_version": "v1.0.1",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Inazuma Eleven GO - Chrono Stones - Wildfire (Europe) (En,Fr,De,Es,It).3ds",
+      "size": 4294967296,
+      "sha256": "53a7a094f4aa7d0d09c6c2968e21a53a133380468a89f50295976c32af1534e8"
+    }
+  ],
+  "patch": {
+    "filename": "Inazuma_Eleven_GO_Chrono_Stones_Wildfire_Thai_v1.0.1.xdelta",
+    "size": 24608396,
+    "sha256": "4ceb5279e630c400c656f110a70901d30e82988f9e948bb147859e865218c31e",
+    "release_date": "2026-11-11",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-go-wildfire/v1.0.1/Inazuma_Eleven_GO_Chrono_Stones_Wildfire_Thai_v1.0.1.xdelta"
+  },
+  "output": {
+    "filename": "Inazuma_Eleven_GO_Chrono_Stones_Wildfire_Thai_v1.0.1.3ds",
+    "size": 4294967296,
+    "sha256": "c76ac2069d9be25e62e65d6105c9a94304b8f7eae2de927c72b9edcf4a4defdf"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลักทุกบทและระบบเกม 100% (ภาพรวมทั้งเกม 99.5%)",
+    "whole_game_census": "48,662/48,890 ข้อความ (ภาพรวมทั้งเกม 99.53%)",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "In-ROM forensic audit (2026-11-11)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-11T12:00:00+07:00",
+    "method": "ncch_ivfc_rebuild_verified_xdelta_patcher_test",
+    "patcher_test_passed": true,
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}
