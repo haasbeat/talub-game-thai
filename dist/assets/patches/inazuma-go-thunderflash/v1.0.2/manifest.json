@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "inazuma-go-thunderflash",
+  "game_title": "Inazuma Eleven GO: Chrono Stones - Thunderflash",
+  "platform": "3DS",
+  "region": "Europe",
+  "game_code": "BG8P",
+  "patch_version": "v1.0.2",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Inazuma Eleven GO - Chrono Stones - Thunderflash (Europe) (En,Fr,De,Es,It).3ds",
+      "size": 4294967296,
+      "sha256": "cc537be70566e328f90d64ea6eae1ba82a65ab39c0174d25e82ed6f234cd88b7"
+    }
+  ],
+  "patch": {
+    "filename": "Inazuma_Eleven_GO_Chrono_Stones_Thunderflash_Thai_v1.0.2.xdelta",
+    "size": 24557388,
+    "sha256": "090a76f4d7b96433adc43d2eaf1d12dc46c2a582f9d09dc5a708bae1ffefa605",
+    "release_date": "2026-11-11",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-go-thunderflash/v1.0.2/Inazuma_Eleven_GO_Chrono_Stones_Thunderflash_Thai_v1.0.2.xdelta"
+  },
+  "output": {
+    "filename": "Inazuma_Eleven_GO_Chrono_Stones_Thunderflash_Thai_v1.0.2.3ds",
+    "size": 4294967296,
+    "sha256": "41e637922726b904ef32e17334910e73ba207c7c49d8e3d815b7d9b23047c40b"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลักทุกบทและระบบเกม 100% (ภาพรวมทั้งเกม 99.5%)",
+    "whole_game_census": "48,662/48,890 ข้อความ (ภาพรวมทั้งเกม 99.53%)",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "In-ROM forensic audit (2026-11-11)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-11T12:00:00+07:00",
+    "method": "ncch_ivfc_rebuild_verified_xdelta_patcher_test",
+    "patcher_test_passed": true,
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}
