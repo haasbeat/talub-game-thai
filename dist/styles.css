@@ -294,7 +294,7 @@ body.has-inapp-banner main { padding-top: 60px; }
 .game-card[hidden] { display: none; }
 .game-card:focus-visible .poster { border-radius: 8px; box-shadow: 0 0 0 3px var(--ink); }
 .poster { aspect-ratio: 3 / 4; position: relative; overflow: hidden; background: #dededb; transition: transform 700ms var(--ease), border-radius 700ms var(--ease); }
-.poster::after { content: ""; position: absolute; inset: 0; z-index: 2; background: #000; opacity: .08; transition: opacity 700ms var(--ease); pointer-events: none; }
+.poster::after { content: ""; position: absolute; inset: 0; z-index: 2; background: #000; opacity: 0; transition: opacity 700ms var(--ease); pointer-events: none; }
 .poster-a { border-radius: 110px 8px 8px 8px; }
 .poster-b { border-radius: 8px 110px 44px 8px; }
 .poster-c { border-radius: 44px 8px 110px 8px; }
@@ -302,8 +302,8 @@ body.has-inapp-banner main { padding-top: 60px; }
 .poster-e { border-radius: 110px 110px 8px 8px; }
 .game-card:hover .poster { transform: scale(0.985); border-radius: 8px; }
 .game-card:hover .poster::after { opacity: 0; }
-.cover-poster img { width: 100%; height: 100%; display: block; object-fit: cover; filter: grayscale(1) contrast(.9); transform: scale(1.001); transition: filter 700ms var(--ease), transform 700ms var(--ease); }
-.game-card:hover .cover-poster img { filter: grayscale(0) contrast(1); transform: scale(1.045); }
+.cover-poster img { width: 100%; height: 100%; display: block; object-fit: cover; transform: scale(1.001); transition: transform 700ms var(--ease); }
+.game-card:hover .cover-poster img { transform: scale(1.045); }
 .poster-arrow { position: absolute; top: 18px; right: 18px; z-index: 4; width: 48px; height: 48px; display: grid; place-items: center; border-radius: 50%; color: #000; background: #fff; font-size: 24px; opacity: 0; transform: translate(-10px, 10px); transition: 600ms var(--ease); }
 .game-card:hover .poster-arrow { opacity: 1; transform: translate(0, 0); }
 .game-meta { border-top: 1px solid var(--line); margin-top: 12px; padding-top: 12px; display: flex; flex-direction: column; gap: 8px; }
@@ -315,6 +315,19 @@ body.has-inapp-banner main { padding-top: 60px; }
 .game-info-block { display: flex; flex-direction: column; gap: 3px; }
 .game-patch-date, .game-patch-count { margin: 0; font-size: 12px; color: #555; line-height: 1.45; letter-spacing: normal; }
 .game-patch-count strong { color: var(--ink); font-weight: 600; }
+@keyframes shimmerSweep {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+@keyframes pulseRing {
+  0% { transform: scale(0.9); box-shadow: 0 0 0 0 rgba(217, 119, 6, 0.7); }
+  70% { transform: scale(1.05); box-shadow: 0 0 0 5px rgba(217, 119, 6, 0); }
+  100% { transform: scale(0.9); box-shadow: 0 0 0 0 rgba(217, 119, 6, 0); }
+}
+.status-badge { display: inline-flex; align-items: center; gap: 5px; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 700; letter-spacing: 0.04em; line-height: 1.1; text-transform: uppercase; }
+.status-badge.is-new { background: linear-gradient(115deg, #fef3c7 15%, #ffffff 50%, #fef3c7 85%); background-size: 200% 100%; animation: shimmerSweep 3s infinite linear; color: #b45309; border: 1px solid #fde68a; box-shadow: 0 1px 3px rgba(245, 158, 11, 0.15); }
+.status-badge.is-new .beacon-dot { width: 5px; height: 5px; background: #d97706; border-radius: 50%; display: inline-block; animation: pulseRing 1.8s infinite cubic-bezier(0.45, 0, 0.55, 1); }
+.status-badge.is-update { background: #e0f2fe; color: #0284c7; border: 1px solid #bae6fd; }
 .platform-empty { min-height: 380px; display: grid; place-content: center; text-align: center; border: 1px solid var(--line); border-radius: 80px 8px 80px 8px; background: #ecece8; }
 .platform-empty[hidden] { display: none; }
 .platform-empty .mono { color: var(--muted); }
@@ -418,8 +431,8 @@ body.has-inapp-banner main { padding-top: 60px; }
 .popular-layout { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(300px, .85fr); gap: 14px; }
 .popular-feature-card { min-height: 500px; display: grid; grid-template-columns: minmax(220px, .9fr) minmax(0, 1.1fr); overflow: hidden; color: #fff; background: #0a0a0a; border-radius: 8px 64px 8px 8px; }
 .popular-card-media { position: relative; min-height: 0; overflow: hidden; background: #252525; }
-.popular-card-media img { width: 100%; height: 100%; display: block; object-fit: cover; filter: grayscale(.35); transition: filter 600ms var(--ease), transform 700ms var(--ease); }
-.popular-feature-card:hover .popular-card-media img, .popular-small-card:hover .popular-card-media img { filter: grayscale(0); transform: scale(1.035); }
+.popular-card-media img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform 700ms var(--ease); }
+.popular-feature-card:hover .popular-card-media img, .popular-small-card:hover .popular-card-media img { transform: scale(1.035); }
 .popular-rank { position: absolute; top: 14px; left: 14px; z-index: 2; padding: 7px 10px; color: #fff; background: rgba(0,0,0,.76); border-radius: 999px; backdrop-filter: blur(8px); }
 .popular-card-copy { min-width: 0; display: flex; flex-direction: column; justify-content: flex-end; padding: clamp(22px, 3vw, 40px); }
 .popular-card-meta { margin: 0 0 16px; color: #8f8f8f; }
@@ -465,9 +478,9 @@ body.has-inapp-banner main { padding-top: 60px; }
 .latest-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
 .latest-game-card { min-width: 0; display: block; }
 .latest-game-cover { aspect-ratio: 3 / 4; overflow: hidden; background: #dededb; border-radius: 44px 6px 6px 6px; transition: border-radius 500ms var(--ease), transform 500ms var(--ease); }
-.latest-game-cover img { width: 100%; height: 100%; display: block; object-fit: cover; filter: grayscale(.4); transition: filter 500ms var(--ease), transform 600ms var(--ease); }
+.latest-game-cover img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform 600ms var(--ease); }
 .latest-game-card:hover .latest-game-cover { border-radius: 6px; transform: translateY(-3px); }
-.latest-game-card:hover .latest-game-cover img { filter: grayscale(0); transform: scale(1.035); }
+.latest-game-card:hover .latest-game-cover img { transform: scale(1.035); }
 .latest-game-copy { display: grid; gap: 8px; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--line); }
 .latest-game-copy > span, .latest-game-copy > time { color: var(--muted); }
 .latest-game-copy h3 { margin: 0; font-size: 16px; font-weight: 500; line-height: 1.25; overflow-wrap: anywhere; }
@@ -808,6 +821,8 @@ body.has-inapp-banner main { padding-top: 60px; }
   .badge-group { border-radius: 3px; }
   .game-platform-tag { padding: 1.5px 4px; font-size: 8.5px; }
   .game-version-badge { padding: 1.5px 5px; font-size: 9.5px; }
+  .status-badge { padding: 1.5px 5px; font-size: 8.5px; gap: 3.5px; }
+  .status-badge.is-new .beacon-dot { width: 4px; height: 4px; }
   .game-info-block { gap: 1px; }
   .game-patch-date, .game-patch-count { font-size: 9.5px; color: #666; line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .drop-zone { padding-inline: 16px; }

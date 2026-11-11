@@ -223,6 +223,45 @@ const sortedGames = () => {
   });
 };
 
+const latestUpdateInfoMap = new Map();
+const getGameStatusBadge = (game) => {
+  const EXPIRY_DAYS = 7;
+  const EXPIRY_MS = EXPIRY_DAYS * 24 * 60 * 60 * 1000;
+  const now = Date.now();
+
+  if (!latestUpdateInfoMap.size && Array.isArray(window.GAME_UPDATES)) {
+    for (const u of window.GAME_UPDATES) {
+      const t = new Date(u.timestamp).getTime();
+      if (!Number.isNaN(t)) {
+        const existing = latestUpdateInfoMap.get(u.slug);
+        if (!existing || t > existing.time) {
+          latestUpdateInfoMap.set(u.slug, { time: t, type: u.type });
+        }
+      }
+    }
+  }
+
+  const updateInfo = latestUpdateInfoMap.get(game.slug);
+  if (updateInfo && (now - updateInfo.time) <= EXPIRY_MS) {
+    return updateInfo.type;
+  }
+
+  if (game.patchDate) {
+    const t = new Date(`${game.patchDate}T00:00:00+07:00`).getTime();
+    if (!Number.isNaN(t) && (now - t) <= EXPIRY_MS) {
+      const isV1 = !game.version || game.version.startsWith('v1.0.0') || game.version === 'v1.0';
+      return isV1 ? 'new' : 'update';
+    }
+  }
+  if (game.addedAt) {
+    const t = new Date(game.addedAt).getTime();
+    if (!Number.isNaN(t) && (now - t) <= EXPIRY_MS) {
+      return 'new';
+    }
+  }
+  return null;
+};
+
 const createGameCard = (game, index) => {
   const card = document.createElement('article');
   card.className = 'game-card hover-target';
@@ -271,6 +310,19 @@ const createGameCard = (game, index) => {
 
   badgeGroup.append(platformTag, versionBadge);
   tagRow.append(badgeGroup);
+
+  const statusType = getGameStatusBadge(game);
+  if (statusType === 'new') {
+    const statusBadge = document.createElement('span');
+    statusBadge.className = 'status-badge is-new mono';
+    statusBadge.innerHTML = '<span class="beacon-dot"></span>NEW';
+    tagRow.append(statusBadge);
+  } else if (statusType === 'update') {
+    const statusBadge = document.createElement('span');
+    statusBadge.className = 'status-badge is-update mono';
+    statusBadge.textContent = 'UPDATE';
+    tagRow.append(statusBadge);
+  }
 
   const infoBlock = document.createElement('div');
   infoBlock.className = 'game-info-block';
