@@ -223,10 +223,20 @@ const sortedGames = () => {
   });
 };
 
+const MIGRATION_BATCH_CUTOFF = new Date('2026-11-11T18:30:00+07:00').getTime();
+const EXPIRY_DAYS_STANDARD = 7;
+const EXPIRY_DAYS_MIGRATION_NEW = 4;
+const MS_PER_DAY = 24 * 60 * 60 * 1000;
+
+const getBadgeExpiryMs = (type, timestamp) => {
+  if (type === 'new' && timestamp <= MIGRATION_BATCH_CUTOFF) {
+    return EXPIRY_DAYS_MIGRATION_NEW * MS_PER_DAY;
+  }
+  return EXPIRY_DAYS_STANDARD * MS_PER_DAY;
+};
+
 const latestUpdateInfoMap = new Map();
 const getGameStatusBadge = (game) => {
-  const EXPIRY_DAYS = 7;
-  const EXPIRY_MS = EXPIRY_DAYS * 24 * 60 * 60 * 1000;
   const now = Date.now();
 
   if (!latestUpdateInfoMap.size && Array.isArray(window.GAME_UPDATES)) {
@@ -242,20 +252,23 @@ const getGameStatusBadge = (game) => {
   }
 
   const updateInfo = latestUpdateInfoMap.get(game.slug);
-  if (updateInfo && (now - updateInfo.time) <= EXPIRY_MS) {
+  if (updateInfo && (now - updateInfo.time) <= getBadgeExpiryMs(updateInfo.type, updateInfo.time)) {
     return updateInfo.type;
   }
 
   if (game.patchDate) {
     const t = new Date(`${game.patchDate}T00:00:00+07:00`).getTime();
-    if (!Number.isNaN(t) && (now - t) <= EXPIRY_MS) {
+    if (!Number.isNaN(t)) {
       const isV1 = !game.version || game.version.startsWith('v1.0.0') || game.version === 'v1.0';
-      return isV1 ? 'new' : 'update';
+      const type = isV1 ? 'new' : 'update';
+      if ((now - t) <= getBadgeExpiryMs(type, t)) {
+        return type;
+      }
     }
   }
   if (game.addedAt) {
     const t = new Date(game.addedAt).getTime();
-    if (!Number.isNaN(t) && (now - t) <= EXPIRY_MS) {
+    if (!Number.isNaN(t) && (now - t) <= getBadgeExpiryMs('new', t)) {
       return 'new';
     }
   }

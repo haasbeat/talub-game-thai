@@ -308,7 +308,7 @@ body.has-inapp-banner main { padding-top: 60px; }
 .game-card:hover .poster-arrow { opacity: 1; transform: translate(0, 0); }
 .game-meta { border-top: 1px solid var(--line); margin-top: 12px; padding-top: 12px; display: flex; flex-direction: column; gap: 8px; }
 .game-meta h3 { margin: 0; font-size: 15px; font-weight: 600; line-height: 1.3; color: var(--ink); }
-.game-tag-row { display: flex; align-items: center; justify-content: flex-start; }
+.game-tag-row { display: flex; align-items: center; justify-content: space-between; gap: 6px; }
 .badge-group { display: inline-flex; align-items: stretch; border: 1px solid #111; border-radius: 4px; overflow: hidden; line-height: 1; }
 .game-platform-tag { padding: 3px 7px; background: #f0f0ed; color: #222; font-size: 10.5px; font-weight: 700; letter-spacing: 0.04em; display: flex; align-items: center; border-right: 1px solid #111; }
 .game-version-badge { padding: 3px 8px; background: #050505; color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.03em; display: flex; align-items: center; }
@@ -324,7 +324,7 @@ body.has-inapp-banner main { padding-top: 60px; }
   70% { transform: scale(1.05); box-shadow: 0 0 0 5px rgba(217, 119, 6, 0); }
   100% { transform: scale(0.9); box-shadow: 0 0 0 0 rgba(217, 119, 6, 0); }
 }
-.status-badge { display: inline-flex; align-items: center; gap: 5px; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 700; letter-spacing: 0.04em; line-height: 1.1; text-transform: uppercase; }
+.status-badge { display: inline-flex; align-items: center; gap: 5px; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 700; letter-spacing: 0.04em; line-height: 1.1; text-transform: uppercase; margin-left: auto; }
 .status-badge.is-new { background: linear-gradient(115deg, #fef3c7 15%, #ffffff 50%, #fef3c7 85%); background-size: 200% 100%; animation: shimmerSweep 3s infinite linear; color: #b45309; border: 1px solid #fde68a; box-shadow: 0 1px 3px rgba(245, 158, 11, 0.15); }
 .status-badge.is-new .beacon-dot { width: 5px; height: 5px; background: #d97706; border-radius: 50%; display: inline-block; animation: pulseRing 1.8s infinite cubic-bezier(0.45, 0, 0.55, 1); }
 .status-badge.is-update { background: #e0f2fe; color: #0284c7; border: 1px solid #bae6fd; }
