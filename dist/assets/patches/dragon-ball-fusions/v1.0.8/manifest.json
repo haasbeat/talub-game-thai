@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "game_slug": "dragon-ball-fusions",
+  "game_title": "Dragon Ball Fusions",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "BNEE",
+  "patch_version": "v1.0.8",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Dragon Ball Fusions (USA).3ds",
+      "size": 1073741824,
+      "sha256": "3b0fdf5d9062732dbae97ab71c346bd76c77a0ed4d56c68783f18d3c5a7a532d"
+    }
+  ],
+  "patch": {
+    "filename": "Dragon_Ball_Fusions_Thai_v1.0.8.xdelta",
+    "size": 1532671,
+    "sha256": "04ace4d5d5c3a5366cc824a67ffb9a0cd8f6717fbc2da43fedbb2a15d5b65eff",
+    "release_date": "2026-11-11",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/dragon-ball-fusions/v1.0.8/Dragon_Ball_Fusions_Thai_v1.0.8.xdelta"
+  },
+  "output": {
+    "filename": "Dragon Ball Fusions (Thai).3ds",
+    "size": 1073741824,
+    "sha256": "de0b79c9a0aa17bbdd75d0a07c4d8adabc1a86c74cc3c162349938903666b8c8"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องและภารกิจ 89.9%",
+    "whole_game_census": "13,526/18,100 ข้อความ (74.73%)",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-11T13:52:00+07:00",
+    "method": "owner_reported_xdelta_patcher_test",
+    "patcher_test_passed": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "ivfc_verified": true
+  }
+}

@@ -129,23 +129,23 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 004 / 036",
-    "version": "v1.0.7",
-    "patchDate": "2026-11-08",
+    "version": "v1.0.8",
+    "patchDate": "2026-11-11",
     "addedDate": "2026-11-04",
     "addedOrder": 2,
     "addedAt": "2026-11-04T21:10:11+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/dragon-ball-fusions.jpg",
-    "manifest": "./assets/patches/dragon-ball-fusions/v1.0.7/manifest.json",
+    "manifest": "./assets/patches/dragon-ball-fusions/v1.0.8/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN USA 3DS · 1 GB",
     "region": "USA",
     "gameCode": "BNEE",
     "sourceName": "Dragon Ball Fusions (USA).3ds · 1,073,741,824 bytes",
     "sourceHash": "3b0fdf5d9062732dbae97ab71c346bd76c77a0ed4d56c68783f18d3c5a7a532d",
-    "outputHash": "23989b1e0a65d13e5d007fab368d8e301343c1c16ae2648982340d0aced0c40c",
-    "moduleStatus": "เนื้อเรื่องและภารกิจ 95.0%",
-    "wholeGameCensus": "14,290/18,100 ข้อความ (78.95%)",
+    "outputHash": "de0b79c9a0aa17bbdd75d0a07c4d8adabc1a86c74cc3c162349938903666b8c8",
+    "moduleStatus": "เนื้อเรื่องและภารกิจ 89.9%",
+    "wholeGameCensus": "13,526/18,100 ข้อความ (74.73%)",
     "details": {
       "thaiTitle": "ดราก้อนบอล ฟิวชั่นส์ ฉบับภาษาไทย",
       "japaneseTitle": "ドラゴンボールフュージョンズ",
@@ -153,19 +153,20 @@ window.GAME_CATALOG = [
       "studio": "Bandai Namco / Ganbarion",
       "release": "22 พฤศจิกายน 2016",
       "genre": "Role-playing game",
-      "description": "ม็อดภาษาไทยสำหรับ Dragon Ball Fusions (3DS โซน USA) เวอร์ชัน v1.0.7 แปลเนื้อเรื่องและภารกิจภาษาไทย คำนวณ RomFS IVFC Hash Tree ใหม่หมด ปลอดภัยบนเครื่อง 3DS จริง 100% พร้อมชื่อสกิลภาษาอังกฤษและคำอธิบายภาษาไทย",
+      "description": "ม็อดภาษาไทยสำหรับ Dragon Ball Fusions (3DS โซน USA) เวอร์ชัน v1.0.8 แปลเนื้อเรื่องและภารกิจภาษาไทย คืนค่าชื่อตัวละครและชื่อสกิลเป็นภาษาอังกฤษ ป้องกันเครื่องหมาย ???? และแก้การตกบรรทัดที่ 3 ในบทสนทนา คำนวณ RomFS IVFC Hash Tree ใหม่หมด ปลอดภัยบนเครื่อง 3DS จริง 100%",
       "overview": "สร้างตัวละครและออกฟิวชั่นแบบไร้ขีดจำกัดในศึกประลองยุทธมิติผสมผสาน แปลไทยเต็มระบบ",
       "story": "เทคก้าและพินิชขอพรอัญเชิญเทพเจ้ามังกรเพื่อสร้างศึกประลองยุทธที่ยิ่งใหญ่ที่สุด นำพาเหล่านักสู้จากทุกมิติมารวมตัวกัน",
       "features": [
-        "บทสนทนาและเควสต์เนื้อเรื่อง 14,290 ระเบียน",
-        "มาตรฐานชื่อสกิลภาษาอังกฤษ คำอธิบายเอฟเฟกต์ภาษาไทย",
-        "คำนวณ RomFS IVFC Hash Tree ใหม่หมด ปลอดภัยบนเครื่อง 3DS จริง 100%",
-        "ลายน้ำ ตลับเกมภาษาไทย v1.0.7 ภายในเกม"
+        "บทสนทนาและเควสต์เนื้อเรื่อง 13,526 ระเบียน (เนื้อเรื่องและภารกิจ 89.9%)",
+        "จัดตัดบรรทัดบทสนทนาไม่เกิน 2 บรรทัด ไม่ตกขอบจอ 100%",
+        "ชื่อตัวละครและชื่อสกิลภาษาอังกฤษ ปราศจากเครื่องหมาย ???? บนแถบสถานะและคำสั่งต่อสู้",
+        "คำนวณ RomFS IVFC Hash Tree ใหม่หมด ปลอดภัยบนเครื่อง 3DS จริง 100% ไม่เกิด ErrDisp 0xf96047a2",
+        "ลายน้ำ ตลับเกมภาษาไทย v1.0.8 ภายในเกม"
       ]
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-08T21:20:00+07:00"
+    "verifiedAt": "2026-11-11T13:52:00+07:00"
   },
   {
     "order": 4,
@@ -2376,6 +2377,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "dragon-ball-fusions",
+    "title": "Dragon Ball Fusions",
+    "platform": "3DS",
+    "version": "v1.0.8",
+    "type": "update",
+    "timestamp": "2026-11-11T13:52:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.8 แก้ไขข้อความล้นตกบรรทัดที่ 3 ในบทสนทนา, คืนค่าชื่อตัวละครเป็นภาษาอังกฤษป้องกันเครื่องหมาย ???? บนแถบสถานะและฉากต่อสู้ พร้อมปรับปรุงสำนวนคำบรรยายโปรไฟล์ให้กระชับสวยงาม"
+  },
   {
     "slug": "inazuma-go-thunderflash",
     "title": "Inazuma Eleven GO: Chrono Stones - Thunderflash",
