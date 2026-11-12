@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "metal-max-2-reloaded",
+  "game_title": "Metal Max 2: Reloaded",
+  "platform": "NDS",
+  "region": "Japan",
+  "game_code": "TMXJ",
+  "patch_version": "v1.0.1",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Metal Max 2 - Reloaded (Japan).nds",
+      "size": 67108864,
+      "sha256": "72bc78befd3005901fce222ab10d30171ef0757ed87f05509a16b78823f1c528"
+    }
+  ],
+  "patch": {
+    "filename": "Metal_Max_2_Reloaded_Thai_v1.0.1.xdelta",
+    "size": 2158385,
+    "sha256": "abc32d8a88c1c4d60512de66987a711bd1f03e1e55c7d61afe2ccdc0a805d665",
+    "release_date": "2026-11-12",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/metal-max-2-reloaded/v1.0.1/Metal_Max_2_Reloaded_Thai_v1.0.1.xdelta"
+  },
+  "output": {
+    "filename": "Metal_Max_2_Reloaded_Thai_v1.0.1.nds",
+    "size": 67108864,
+    "sha256": "5cc297df99ae899f8eae77312fcbb87438b30f22a7fa3c264c9fe0fb43ab0673"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก+เควสต์ฮันเตอร์+ฐานข้อมูลรถถังและไอเทม+กราฟิกเมนู 2D/3D และแผนที่เมือง 100% (Hotfix แก้ไขจอแดง Data Abort ในหน้าสารานุกรม)",
+    "whole_game_census": "20,751/20,801 บรรทัด = 99.76%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-12T20:46:00+07:00",
+    "method": "clean_source_xdelta3_roundtrip",
+    "note": "Clean 64MB NDS cartridge source verified with clean-source roundtrip; PreInjectionGate & In-ROM binary census passed with 20,801 records (0 CRITICAL_FREEZE, 0 ERROR); 4-tier watermark verified; SubMenu descriptor pointer table (0x02111D00) recalibrated and verified to prevent Data Abort crash when browsing encyclopedia/monster data; ARM9 line-spacing and NAM LRU cache hooks verified.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true,
+    "patcher_test_passed": true
+  }
+}

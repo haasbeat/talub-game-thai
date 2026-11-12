@@ -1813,22 +1813,22 @@ window.GAME_CATALOG = [
     "platform": "nds",
     "platformLabel": "NDS",
     "index": "NDS | 008 / 012",
-    "version": "v1.0.0",
+    "version": "v1.0.1",
     "patchDate": "2026-11-12",
     "addedDate": "2026-11-12",
     "addedOrder": 59,
     "addedAt": "2026-11-12T12:00:00+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/metal-max-2-reloaded.jpg",
-    "manifest": "./assets/patches/metal-max-2-reloaded/v1.0.0/manifest.json",
+    "manifest": "./assets/patches/metal-max-2-reloaded/v1.0.1/manifest.json",
     "accept": ".nds",
     "fileTypes": "CLEAN Japan NDS · 64 MB",
     "region": "Japan",
     "gameCode": "TMXJ",
     "sourceName": "Metal Max 2 - Reloaded (Japan).nds · 67,108,864 bytes",
     "sourceHash": "72bc78befd3005901fce222ab10d30171ef0757ed87f05509a16b78823f1c528",
-    "outputHash": "74aed3862a8f955ca8d34b6abeab2b8b822dad0605ac0c987e81aff983933b2b",
-    "moduleStatus": "เนื้อเรื่องหลัก+เควสต์ฮันเตอร์+ฐานข้อมูลรถถังและไอเทม+กราฟิกเมนู 2D/3D และแผนที่เมือง 100%",
+    "outputHash": "5cc297df99ae899f8eae77312fcbb87438b30f22a7fa3c264c9fe0fb43ab0673",
+    "moduleStatus": "เนื้อเรื่องหลัก+เควสต์ฮันเตอร์+ฐานข้อมูลรถถังและไอเทม+กราฟิกเมนู 2D/3D และแผนที่เมือง 100% (Hotfix แก้ไขจอแดง Data Abort ในหน้าสารานุกรม)",
     "wholeGameCensus": "20,751/20,801 บรรทัด = 99.76%",
     "details": {
       "thaiTitle": "เมทัลแม็กซ์ 2: รีโหลดเดด ฉบับภาษาไทย",
@@ -1837,7 +1837,7 @@ window.GAME_CATALOG = [
       "studio": "Kadokawa Games / Cattle Call",
       "release": "8 ธันวาคม 2011",
       "genre": "Role-playing game",
-      "description": "ม็อดภาษาไทยสำหรับ Metal Max 2: Reloaded (NDS โซน Japan) เวอร์ชัน v1.0.0 แปลเนื้อเรื่อง เควสต์ล่าค่าหัว ดัดแปลงรถถัง และกราฟิกเมนูภาษาไทยครบ 100%",
+      "description": "ม็อดภาษาไทยสำหรับ Metal Max 2: Reloaded (NDS โซน Japan) เวอร์ชัน v1.0.1 (Hotfix แก้ไขจอแดง Data Abort ในหน้าสารานุกรม) แปลเนื้อเรื่อง เควสต์ล่าค่าหัว ดัดแปลงรถถัง และกราฟิกเมนูภาษาไทยครบ 100%",
       "overview": "มหากาพย์เกมล่าค่าหัวและแต่งรถถังในโลกหลังวันสิ้นโลก ออกเดินทางล้างแค้นองค์กรไบแอสแกรปเปลอร์และเท็ด บรอยเลอร์",
       "story": "หลังจาก 'มหาวิบัติ' (Great Destruction) ที่ทำลายล้างอารยธรรมมนุษยชาติ โลกตกอยู่ใต้การปกครองขององค์กรเถื่อน 'ไบแอสแกรปเปลอร์' เมืองมาโดถูกจตุรเทพเท็ด บรอยเลอร์ บุกทำลายและสังหารมาเรีย แม่บุญธรรมของตัวเอก ผู้รอดชีวิตเพียงหนึ่งเดียวจึงเริ่มต้นการเดินทางในฐานะฮันเตอร์ ล่าค่าหัวมอนสเตอร์ ดัดแปลงรถถังคู่ใจ และรวบรวมพรรคพวกเพื่อกอบกู้ความสงบสุขและล้างแค้นให้แก่มาเรีย",
       "localization": "แปลเนื้อเรื่องหลัก เควสต์ฮันเตอร์ออฟฟิศ ค่าหัว ฐานข้อมูลรถถัง อาวุธ ไอเทม และสารานุกรมมอนสเตอร์ครบ 100% (สำมะโนในรอม 20,751/20,801 บรรทัด = 99.76% ไร้ข้อความค้างแปล) แปลกราฟิก 2D/3D ครบทุกจุดทั้ง Opening Prologue, 3D Menu .TEX 18 ไฟล์, 2D SubMenu .NCGR/.NSCR 24 ไฟล์, และป้ายชื่อเมืองบนแผนที่จอบนครบทั้ง 15 แผนที่ ใช้ฟอนต์ NFTR ภาษาไทยแท้ 4 ชุด พร้อมระบบขยายแคชข้อความและฮุก ARM9 ไร้บั๊กค้าง 100%",
@@ -1852,7 +1852,7 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-12T12:12:00+07:00"
+    "verifiedAt": "2026-11-12T20:46:00+07:00"
   },
   {
     "order": 44,
@@ -2427,6 +2427,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "metal-max-2-reloaded",
+    "title": "Metal Max 2: Reloaded",
+    "platform": "NDS",
+    "version": "v1.0.1",
+    "type": "update",
+    "timestamp": "2026-11-12T20:46:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.1 (เนื้อเรื่องหลัก+เควสต์ฮันเตอร์+ฐานข้อมูลรถถังและไอเทม+กราฟิกเมนู 2D/3D และแผนที่เมือง 100% (Hotfix แก้ไขจอแดง Data Abort ในหน้าสารานุกรม))"
+  },
   {
     "slug": "fire-emblem-three-houses",
     "title": "Fire Emblem: Three Houses",
