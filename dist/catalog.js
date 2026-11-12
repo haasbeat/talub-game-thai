@@ -1596,21 +1596,21 @@ window.GAME_CATALOG = [
     "platform": "nds",
     "platformLabel": "NDS",
     "index": "NDS | 003 / 011",
-    "version": "v1.1.2",
-    "patchDate": "2026-11-11",
+    "version": "v1.1.3",
+    "patchDate": "2026-11-12",
     "addedDate": "2026-11-04",
     "addedOrder": 29,
     "addedAt": "2026-11-04T21:10:11+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/dragon-quest-vi.jpg",
-    "manifest": "./assets/patches/dragon-quest-vi/v1.1.2/manifest.json",
+    "manifest": "./assets/patches/dragon-quest-vi/v1.1.3/manifest.json",
     "accept": ".nds",
     "fileTypes": "CLEAN USA NDS · 128 MB",
     "region": "USA",
     "gameCode": "YV6E",
     "sourceName": "Dragon Quest VI - Realms of Revelation .nds · 134,217,728 bytes",
     "sourceHash": "66b9f6d3c7eb1f2bbbf09b3004d46b86b08f87d3c1674a37f8246d2d544a3f33",
-    "outputHash": "f1a364c8be91246ad3dd28cee57e09f1cf679f86a021ae871d8376946975c4a4",
+    "outputHash": "f2121d8b22a88feafcd2df0cf16692a6071a6d6c161d8e595f58c6766b1239ef",
     "moduleStatus": "เนื้อเรื่องหลัก+ระบบอาชีพดาร์มา+ระบบสนทนาปาร์ตี้ 100%",
     "wholeGameCensus": "41,488/41,488 บรรทัด = 100.00%",
     "details": null,
@@ -2378,6 +2378,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "dragon-quest-vi",
+    "title": "Dragon Quest VI: Realms of Revelation",
+    "platform": "NDS",
+    "version": "v1.1.3",
+    "type": "update",
+    "timestamp": "2026-11-12T09:30:00+07:00",
+    "note": "อัปเดตแพตช์ v1.1.3 แก้ไขปัญหาเกมค้าง (Softlock) ในห้องราชาฮอลเทนแห่งปราสาทโฮลสต็อกเมื่อตอบรับภารกิจ และป้องกันจุดเลือกตอบสำคัญ 13 จุดทั่วทั้งเกมด้วย Choice Prompt Protection โดยกระชับข้อความให้อยู่ในหน้าเดียวไม่เกิน 3 บรรทัด ไม่แทรกแบ่งหน้า เพื่อความเสถียรของสคริปต์คำสั่งเลือกตอบ 100% (สำรวจทั้งเกม In-ROM Census ครบ 41,488 บรรทัด 100.00%)"
+  },
   {
     "slug": "fire-emblem-three-houses",
     "title": "Fire Emblem: Three Houses",

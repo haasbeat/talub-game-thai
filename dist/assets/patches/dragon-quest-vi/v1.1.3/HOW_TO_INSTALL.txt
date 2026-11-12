@@ -1,0 +1,22 @@
+========================================================================
+HOW TO INSTALL — Dragon Quest VI: Realms of Revelation Thai Patch (v1.1.3)
+ตลับเกมภาษาไทย v1.1.3 — แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่าย
+========================================================================
+
+1. Supported Clean Source ROM:
+   - File: Dragon Quest VI - Realms of Revelation .nds
+   - Game Code: YVIE | Size: 134,217,728 bytes
+   - SHA-256: 66b9f6d3c7eb1f2bbbf09b3004d46b86b08f87d3c1674a37f8246d2d544a3f33
+
+2. Coverage & Untranslated Modules Disclosure:
+   - Whole-Game In-ROM Census: 41,488 / 41,488 active records (100.00%)
+   - Menu & UI (menulist): 2,648 / 2,648 (100.00%)
+   - System & Battle (system_battle): 2,887 / 2,887 (100.00%)
+   - Main Story (story): 12,483 / 12,483 (100.00%)
+   - Party Chat (party_chat): 23,470 / 23,470 (100.00%)
+   - 100.00% Complete Localization: All story chapters, Party Chat dialogues, battle texts, and menus fully localized in Thai (v1.1.3).
+
+3. Emulators & Flashcarts:
+   - Apply `01_Patch_XDELTA/Dragon_Quest_VI_Thai_v1.1.3.xdelta` to your clean `.nds` ROM using xdelta3 / Delta Patcher / Rom Patcher JS.
+   - Run the patched `.nds` ROM directly in MelonDS, DeSmuME, DraStic, or TwilightMenu++ / NDS Flashcart.
+   - No external LayeredFS mods or cheats required (all NFTR fonts, ARM9 hooks, and LZ10/MPT0 scripts are baked into the ROM).
