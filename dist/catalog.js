@@ -1519,7 +1519,7 @@ window.GAME_CATALOG = [
     "title": "Dragon Quest IV: Chapters of the Chosen",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 001 / 011",
+    "index": "NDS | 001 / 012",
     "version": "v2.5.1",
     "patchDate": "2026-11-02",
     "addedDate": "2026-11-04",
@@ -1566,7 +1566,7 @@ window.GAME_CATALOG = [
     "title": "Dragon Quest V: Hand of the Heavenly Bride",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 002 / 011",
+    "index": "NDS | 002 / 012",
     "version": "v1.6.4",
     "patchDate": "2026-11-10",
     "addedDate": "2026-11-04",
@@ -1595,7 +1595,7 @@ window.GAME_CATALOG = [
     "title": "Dragon Quest VI: Realms of Revelation",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 003 / 011",
+    "index": "NDS | 003 / 012",
     "version": "v1.1.3",
     "patchDate": "2026-11-12",
     "addedDate": "2026-11-04",
@@ -1624,7 +1624,7 @@ window.GAME_CATALOG = [
     "title": "Front Mission 2089: Border of Madness",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 004 / 011",
+    "index": "NDS | 004 / 012",
     "version": "v1.1.1",
     "patchDate": "2026-10-31",
     "addedDate": "2026-11-04",
@@ -1671,7 +1671,7 @@ window.GAME_CATALOG = [
     "title": "Kingdom Hearts: 358/2 Days",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 005 / 011",
+    "index": "NDS | 005 / 012",
     "version": "v1.0.0",
     "patchDate": "2026-11-07",
     "addedDate": "2026-11-07",
@@ -1718,7 +1718,7 @@ window.GAME_CATALOG = [
     "title": "Lost in Blue 2",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 006 / 011",
+    "index": "NDS | 006 / 012",
     "version": "v2.0.2",
     "patchDate": "2026-11-01",
     "addedDate": "2026-11-05",
@@ -1765,7 +1765,7 @@ window.GAME_CATALOG = [
     "title": "Love Plus+",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 007 / 011",
+    "index": "NDS | 007 / 012",
     "version": "v1.0.5",
     "patchDate": "2026-10-31",
     "addedDate": "2026-11-05",
@@ -1808,11 +1808,59 @@ window.GAME_CATALOG = [
   },
   {
     "order": 43,
+    "slug": "metal-max-2-reloaded",
+    "title": "Metal Max 2: Reloaded",
+    "platform": "nds",
+    "platformLabel": "NDS",
+    "index": "NDS | 008 / 012",
+    "version": "v1.0.0",
+    "patchDate": "2026-11-12",
+    "addedDate": "2026-11-12",
+    "addedOrder": 59,
+    "addedAt": "2026-11-12T12:00:00+07:00",
+    "format": "xdelta3",
+    "cover": "./assets/covers/web/metal-max-2-reloaded.jpg",
+    "manifest": "./assets/patches/metal-max-2-reloaded/v1.0.0/manifest.json",
+    "accept": ".nds",
+    "fileTypes": "CLEAN Japan NDS · 64 MB",
+    "region": "Japan",
+    "gameCode": "TMXJ",
+    "sourceName": "Metal Max 2 - Reloaded (Japan).nds · 67,108,864 bytes",
+    "sourceHash": "72bc78befd3005901fce222ab10d30171ef0757ed87f05509a16b78823f1c528",
+    "outputHash": "74aed3862a8f955ca8d34b6abeab2b8b822dad0605ac0c987e81aff983933b2b",
+    "moduleStatus": "เนื้อเรื่องหลัก+เควสต์ฮันเตอร์+ฐานข้อมูลรถถังและไอเทม+กราฟิกเมนู 2D/3D และแผนที่เมือง 100%",
+    "wholeGameCensus": "20,751/20,801 บรรทัด = 99.76%",
+    "details": {
+      "thaiTitle": "เมทัลแม็กซ์ 2: รีโหลดเดด ฉบับภาษาไทย",
+      "japaneseTitle": "メタルマックス2: リローデッド",
+      "originalTitle": "Metal Max 2: Reloaded",
+      "studio": "Kadokawa Games / Cattle Call",
+      "release": "8 ธันวาคม 2011",
+      "genre": "Role-playing game",
+      "description": "ม็อดภาษาไทยสำหรับ Metal Max 2: Reloaded (NDS โซน Japan) เวอร์ชัน v1.0.0 แปลเนื้อเรื่อง เควสต์ล่าค่าหัว ดัดแปลงรถถัง และกราฟิกเมนูภาษาไทยครบ 100%",
+      "overview": "มหากาพย์เกมล่าค่าหัวและแต่งรถถังในโลกหลังวันสิ้นโลก ออกเดินทางล้างแค้นองค์กรไบแอสแกรปเปลอร์และเท็ด บรอยเลอร์",
+      "story": "หลังจาก 'มหาวิบัติ' (Great Destruction) ที่ทำลายล้างอารยธรรมมนุษยชาติ โลกตกอยู่ใต้การปกครองขององค์กรเถื่อน 'ไบแอสแกรปเปลอร์' เมืองมาโดถูกจตุรเทพเท็ด บรอยเลอร์ บุกทำลายและสังหารมาเรีย แม่บุญธรรมของตัวเอก ผู้รอดชีวิตเพียงหนึ่งเดียวจึงเริ่มต้นการเดินทางในฐานะฮันเตอร์ ล่าค่าหัวมอนสเตอร์ ดัดแปลงรถถังคู่ใจ และรวบรวมพรรคพวกเพื่อกอบกู้ความสงบสุขและล้างแค้นให้แก่มาเรีย",
+      "localization": "แปลเนื้อเรื่องหลัก เควสต์ฮันเตอร์ออฟฟิศ ค่าหัว ฐานข้อมูลรถถัง อาวุธ ไอเทม และสารานุกรมมอนสเตอร์ครบ 100% (สำมะโนในรอม 20,751/20,801 บรรทัด = 99.76% ไร้ข้อความค้างแปล) แปลกราฟิก 2D/3D ครบทุกจุดทั้ง Opening Prologue, 3D Menu .TEX 18 ไฟล์, 2D SubMenu .NCGR/.NSCR 24 ไฟล์, และป้ายชื่อเมืองบนแผนที่จอบนครบทั้ง 15 แผนที่ ใช้ฟอนต์ NFTR ภาษาไทยแท้ 4 ชุด พร้อมระบบขยายแคชข้อความและฮุก ARM9 ไร้บั๊กค้าง 100%",
+      "untranslated": "ไม่มีส่วนที่ค้างแปลตามผลสำรวจในรอม (ข้อความที่เหลือ 50 รายการเป็นรหัสคำสั่งเอนจิน ช่องว่างดัมมี่ และตัวเลข/สัญลักษณ์ ASCII ล้วน)",
+      "features": [
+        "เนื้อเรื่องหลัก เควสต์ล่าค่าหัว และบทสนทนาชาวเมืองภาษาไทย 100%",
+        "ฐานข้อมูลรถถัง ปืนใหญ่ ชิ้นส่วนดัดแปลง และสารานุกรมมอนสเตอร์ภาษาไทย 100%",
+        "กราฟิกเมนู 2D/3D และป้ายชื่อเมืองบนแผนที่จอบนภาษาไทยครบทุกจุด",
+        "ระบบฟอนต์ NFTR แท้ 4 ชุด คมชัด ไร้สระลอย ไร้วรรณยุกต์ซ้อนทับ",
+        "วิศวกรรม ARM9 ป้องกันบั๊กค้างและคำนวณ Overlay HMAC-SHA1 ครบ 100%"
+      ]
+    },
+    "verified": true,
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-12T12:12:00+07:00"
+  },
+  {
+    "order": 44,
     "slug": "saga2-hihou-densetsu",
     "title": "SaGa 2: Hihou Densetsu - Goddess of Destiny",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 008 / 011",
+    "index": "NDS | 009 / 012",
     "version": "v1.0.1",
     "patchDate": "2026-11-05",
     "addedDate": "2026-11-04",
@@ -1836,12 +1884,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-04T22:08:37+07:00"
   },
   {
-    "order": 44,
+    "order": 45,
     "slug": "suikoden-tierkreis",
     "title": "Suikoden Tierkreis",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 009 / 011",
+    "index": "NDS | 010 / 012",
     "version": "v1.0.1",
     "patchDate": "2026-11-11",
     "addedDate": "2026-11-04",
@@ -1865,12 +1913,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-11T01:51:00+07:00"
   },
   {
-    "order": 45,
+    "order": 46,
     "slug": "tales-of-hearts",
     "title": "Tales of Hearts",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 010 / 011",
+    "index": "NDS | 011 / 012",
     "version": "v1.0.2",
     "patchDate": "2026-11-09",
     "addedDate": "2026-11-04",
@@ -1894,12 +1942,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-09T19:30:00+07:00"
   },
   {
-    "order": 46,
+    "order": 47,
     "slug": "the-world-ends-with-you",
     "title": "The World Ends with You",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 011 / 011",
+    "index": "NDS | 012 / 012",
     "version": "v1.0.4",
     "patchDate": "2026-11-01",
     "addedDate": "2026-11-04",
@@ -1923,7 +1971,7 @@ window.GAME_CATALOG = [
     "verifiedAt": null
   },
   {
-    "order": 47,
+    "order": 48,
     "slug": "saga-frontier",
     "title": "SaGa Frontier",
     "platform": "ps1",
@@ -1970,7 +2018,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-08T18:55:00+07:00"
   },
   {
-    "order": 48,
+    "order": 49,
     "slug": "mana-khemia",
     "title": "Mana Khemia: Alchemists of Al-Revis",
     "platform": "ps2",
@@ -2017,7 +2065,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-08T08:30:00+07:00"
   },
   {
-    "order": 49,
+    "order": 50,
     "slug": "tales-of-the-abyss-ps2",
     "title": "Tales of the Abyss (PS2)",
     "platform": "ps2",
@@ -2065,7 +2113,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-10T10:26:00+07:00"
   },
   {
-    "order": 50,
+    "order": 51,
     "slug": "mini-yonku-wgp2",
     "title": "Mini Yonku Let's & Go!!: Power WGP 2",
     "platform": "snes",
@@ -2112,7 +2160,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-05T15:00:00+07:00"
   },
   {
-    "order": 51,
+    "order": 52,
     "slug": "mana-khemia-student-alliance",
     "title": "Mana Khemia: Student Alliance",
     "platform": "psp",
@@ -2159,7 +2207,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-11T21:22:30+07:00"
   },
   {
-    "order": 52,
+    "order": 53,
     "slug": "popolocrois",
     "title": "PoPoLoCrois",
     "platform": "psp",
@@ -2188,7 +2236,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-06T18:52:00+07:00"
   },
   {
-    "order": 53,
+    "order": 54,
     "slug": "disgaea-5-complete",
     "title": "Disgaea 5 Complete",
     "platform": "switch",
@@ -2222,7 +2270,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "16797cb36b9d5361ccecf8c5dc49578eb7ca3bfd526b0c6d90f93179f26b9c45"
   },
   {
-    "order": 54,
+    "order": 55,
     "slug": "fire-emblem-engage",
     "title": "Fire Emblem Engage",
     "platform": "switch",
@@ -2256,7 +2304,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "0a55df8c842133b7668e281af95cc9cf8060c0563969aca8912cdeefff83cf1e"
   },
   {
-    "order": 55,
+    "order": 56,
     "slug": "fire-emblem-three-houses",
     "title": "Fire Emblem: Three Houses",
     "platform": "switch",
@@ -2309,7 +2357,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "fe0590167c7828d2108707a7a84902f4aabea5080c60e382401f69a2f2657c97"
   },
   {
-    "order": 56,
+    "order": 57,
     "slug": "persona-5-royal",
     "title": "Persona 5 Royal",
     "platform": "switch",
@@ -2343,7 +2391,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "ae68cf2866e6fd49d06e4245af0cf64f463bafc15be6885a06d360ea83556f1f"
   },
   {
-    "order": 57,
+    "order": 58,
     "slug": "village-in-the-shade",
     "title": "Village in the Shade",
     "platform": "switch",
@@ -2378,6 +2426,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "metal-max-2-reloaded",
+    "title": "Metal Max 2: Reloaded",
+    "platform": "NDS",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-12T12:00:00+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0"
+  },
   {
     "slug": "dragon-quest-vi",
     "title": "Dragon Quest VI: Realms of Revelation",

@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "metal-max-2-reloaded",
+  "game_title": "Metal Max 2: Reloaded",
+  "platform": "NDS",
+  "region": "Japan",
+  "game_code": "TMXJ",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Metal Max 2 - Reloaded (Japan).nds",
+      "size": 67108864,
+      "sha256": "72bc78befd3005901fce222ab10d30171ef0757ed87f05509a16b78823f1c528"
+    }
+  ],
+  "patch": {
+    "filename": "Metal_Max_2_Reloaded_Thai_v1.0.0.xdelta",
+    "size": 2174216,
+    "sha256": "890d4156662317196b44abf9b334ce4930026605d1f30e035ffefb2524aaa60d",
+    "release_date": "2026-11-12",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/metal-max-2-reloaded/v1.0.0/Metal_Max_2_Reloaded_Thai_v1.0.0.xdelta"
+  },
+  "output": {
+    "filename": "Metal_Max_2_Reloaded_Thai_v1.0.0.nds",
+    "size": 67108864,
+    "sha256": "74aed3862a8f955ca8d34b6abeab2b8b822dad0605ac0c987e81aff983933b2b"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก+เควสต์ฮันเตอร์+ฐานข้อมูลรถถังและไอเทม+กราฟิกเมนู 2D/3D และแผนที่เมือง 100%",
+    "whole_game_census": "20,751/20,801 บรรทัด = 99.76%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-12T12:12:00+07:00",
+    "method": "clean_source_xdelta3_roundtrip",
+    "note": "Clean 64MB NDS cartridge source verified with clean-source roundtrip; PreInjectionGate & In-ROM binary census passed with 20,801 records (0 CRITICAL_FREEZE, 0 ERROR); 4-tier watermark verified; all 15 Town Map NCGRs inpainted and rendered with Thai headers; ARM9 line-spacing and NAM LRU cache hooks verified.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true,
+    "patcher_test_passed": true
+  }
+}
