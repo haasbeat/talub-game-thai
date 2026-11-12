@@ -23,7 +23,7 @@ All 45 xdelta patches (including multi-part archives for Inazuma 1-2-3, Ace Atto
 
 The Switch catalog does not run xdelta in the browser. Each game opens a verified release archive supplied by the project owner, and the website does not host or distribute the original game.
 
-- `fire-emblem-three-houses` — `FE16_Thai_v1.3.7_Mod.zip`, 30,469,111 bytes, remote modified date 2026-11-11
+- `fire-emblem-three-houses` — `FE16_Thai_v1.3.8_Mod.zip`, 30,882,007 bytes, remote modified date 2026-11-12
 - `fire-emblem-engage` — `FE17_Thai_v2.0.7_All_In_One.zip`, 107,594,408 bytes, remote modified date 2026-11-09
 - `disgaea-5-complete` — `Disgaea_5_Complete_v1.0.1_Mod.zip`, 970,542,683 bytes, remote modified date 2026-11-06
 - `persona-5-royal` — `P5R_Switch_Thai_v1.0.5_Mod.zip`, 148,516,197 bytes, remote modified date 2026-11-08
