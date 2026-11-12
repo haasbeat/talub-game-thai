@@ -536,6 +536,7 @@ const popularFallbackSlugs = [
   'dragon-quest-vii',
   'saga2-hihou-densetsu',
   'fire-emblem-three-houses',
+  'cardfight-vanguard-g',
 ];
 const popularFallback = popularFallbackSlugs
   .map((slug) => catalog.find((game) => game.slug === slug))
@@ -547,7 +548,7 @@ const renderPopularGames = (games, metrics = new Map()) => {
   const feature = createPopularCard(games[0], 1, metrics.get(games[0].slug), true);
   const side = document.createElement('div');
   side.className = 'popular-side-list';
-  games.slice(1, 4).forEach((game, index) => {
+  games.slice(1, 5).forEach((game, index) => {
     side.append(createPopularCard(game, index + 2, metrics.get(game.slug)));
   });
   popularGames.replaceChildren(feature, side);
@@ -576,7 +577,7 @@ const loadPopularRanking = async () => {
       const rightFallback = fallbackRank.has(right.slug) ? fallbackRank.get(right.slug) : Number.MAX_SAFE_INTEGER;
       if (leftFallback !== rightFallback) return leftFallback - rightFallback;
       return right.order - left.order;
-    }).slice(0, 4);
+    }).slice(0, 5);
     renderPopularGames(ranked, metrics);
   }
 

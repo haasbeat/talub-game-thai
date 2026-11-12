@@ -639,19 +639,19 @@ body.has-inapp-banner main { padding-top: 60px; }
   opacity: 0.5;
 }
 
-/* Side List (TOP 02, 03, 04) */
+/* Side List (TOP 02, 03, 04, 05) */
 .popular-side-list {
   display: grid;
-  grid-template-rows: repeat(3, minmax(0, 1fr));
-  gap: 12px;
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+  gap: 10px;
 }
 .popular-small-card {
   display: flex;
-  gap: 16px;
+  gap: 14px;
   background: #ffffff;
   border: 1px solid var(--line);
   border-radius: 12px;
-  padding: 12px 14px;
+  padding: 10px 14px;
   color: var(--ink);
   text-decoration: none;
   align-items: center;
@@ -663,8 +663,8 @@ body.has-inapp-banner main { padding-top: 60px; }
   border-color: #cbd5e1;
 }
 .popular-small-poster {
-  flex: 0 0 76px;
-  height: 102px;
+  flex: 0 0 68px;
+  height: 90px;
   aspect-ratio: 3 / 4;
   border-radius: 8px;
   overflow: hidden;
@@ -1108,7 +1108,7 @@ body.has-inapp-banner main { padding-top: 60px; }
   .workspace-actions { grid-template-columns: 1fr; }
   .popular-layout { grid-template-columns: 1fr; }
   .popular-feature-card { min-height: 420px; }
-  .popular-side-list { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: none; }
+  .popular-side-list { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: none; gap: 12px; }
   .popular-small-card { min-height: 0; grid-template-columns: 1fr; }
   .popular-small-card .popular-card-media { aspect-ratio: 4 / 3; }
   .latest-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 12px; }
