@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "game_slug": "fire-emblem-three-houses",
+  "game_title": "Fire Emblem: Three Houses",
+  "platform": "Nintendo Switch",
+  "title_id": "010055D009F78000",
+  "patch_version": "v1.4.0",
+  "target_game_version": "Update v1.2.0 (Patch 4)",
+  "distribution": {
+    "type": "external_mod_archive",
+    "filename": "FE16_Thai_v1.4.0_Mod.zip",
+    "url": "https://drive.google.com/file/d/1oeVVrm4_8GFJEreqLpWxQfPxZ2tcH6Ia/view?usp=sharing",
+    "size": 30760370,
+    "sha256": "7af94d0034bd2db70ae538aecb115210e3e8405e624e1881b49a711db8d279be",
+    "release_date": "2026-11-13",
+    "date_source": "user_authorized_release"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก & DLC 100% (แก้ปัญหาตัดคำล้น 4 บรรทัด/ขอบจอ Log ทั้งเกม & AMes/ปุ่มเลือก 1 บรรทัด)",
+    "whole_game_census": "80,395 / 77,019 บรรทัด In-ROM (104.38% จากรายการที่ฉีดเพิ่ม)"
+  },
+  "verification": {
+    "archive_identity_verified": true,
+    "binary_readback_verified": true,
+    "hardware_verified": false
+  }
+}
