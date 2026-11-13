@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "game_slug": "fire-emblem-three-houses",
+  "game_title": "Fire Emblem: Three Houses",
+  "platform": "Nintendo Switch",
+  "title_id": "010055D009F78000",
+  "patch_version": "v1.3.9",
+  "target_game_version": "Update v1.2.0 (Patch 4)",
+  "distribution": {
+    "type": "external_mod_archive",
+    "filename": "FE16_Thai_v1.3.9_Mod.zip",
+    "url": "https://drive.google.com/file/d/12YcwspOWpvEt7WK3cqIQfdwWktYCMYj4/view?usp=sharing",
+    "size": 30880097,
+    "sha256": "b477f094c81971e5a97a20dd10a13a481c16412024cbafdedfadb0f4b3f67bc1",
+    "release_date": "2026-11-13",
+    "date_source": "user_authorized_release"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก & DLC เมืองใต้ดิน Abyss 100% (แก้ไขตัดคำและบทสนทนาตรง 1:1)",
+    "whole_game_census": "80,395 / 77,019 บรรทัด In-ROM (104.38% จากรายการที่ฉีดเพิ่ม)"
+  },
+  "verification": {
+    "archive_identity_verified": true,
+    "binary_readback_verified": true,
+    "hardware_verified": false
+  }
+}

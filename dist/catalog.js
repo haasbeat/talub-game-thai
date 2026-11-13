@@ -2310,23 +2310,23 @@ window.GAME_CATALOG = [
     "platform": "switch",
     "platformLabel": "SWITCH",
     "index": "SWITCH | 003 / 005",
-    "version": "v1.3.8",
-    "patchDate": "2026-11-12",
+    "version": "v1.3.9",
+    "patchDate": "2026-11-13",
     "addedDate": "2026-11-06",
     "addedOrder": 44,
     "addedAt": "2026-11-06T14:30:36+07:00",
     "format": "LayeredFS / Atmosphère",
     "cover": "./assets/covers/web/fire-emblem-three-houses.jpg",
-    "manifest": "./assets/patches/fire-emblem-three-houses/v1.3.8/manifest.json",
+    "manifest": "./assets/patches/fire-emblem-three-houses/v1.3.9/manifest.json",
     "accept": "",
     "fileTypes": "ชุดม็อด LayeredFS · 29.45 MB",
     "region": "Global",
     "gameCode": "010055D009F78000",
     "sourceName": "Update v1.2.0 (Patch 4)",
     "sourceHash": "010055D009F78000",
-    "outputHash": "54d347045fee852d5f62823bbd8cdd5f4cdc9e13ac2371f98ff1ead94e98949d",
-    "moduleStatus": "เนื้อเรื่องหลัก & DLC เมืองใต้ดิน Abyss 100%",
-    "wholeGameCensus": "80,381 / 77,019 บรรทัด In-ROM (104.37% จากรายการที่ฉีดเพิ่ม)",
+    "outputHash": "b477f094c81971e5a97a20dd10a13a481c16412024cbafdedfadb0f4b3f67bc1",
+    "moduleStatus": "เนื้อเรื่องหลัก & DLC เมืองใต้ดิน Abyss 100% (แก้ไขตัดคำและบทสนทนาตรง 1:1)",
+    "wholeGameCensus": "80,395 / 77,019 บรรทัด In-ROM (104.38% จากรายการที่ฉีดเพิ่ม)",
     "details": {
       "thaiTitle": "ไฟร์เอ็มเบลม: ทรีเฮาส์",
       "japaneseTitle": "ファイアーエムブレム 風花雪月",
@@ -2334,10 +2334,10 @@ window.GAME_CATALOG = [
       "studio": "Nintendo / Intelligent Systems / Koei Tecmo",
       "release": "26 กรกฎาคม 2019",
       "genre": "Tactical Role-playing game",
-      "description": "ม็อดภาษาไทยสมบูรณ์แบบสำหรับ Fire Emblem: Three Houses (Nintendo Switch / Title ID: 010055D009F78000) เวอร์ชัน v1.3.8 (แปลบทสำรวจเมืองใต้ดิน Abyss & ชาวบ้าน DLC ครบ 100% / ทะลุ 80,381 บรรทัด In-ROM / Clean Packaging 30 MB)",
+      "description": "ม็อดภาษาไทยสมบูรณ์แบบสำหรับ Fire Emblem: Three Houses (Nintendo Switch / Title ID: 010055D009F78000) เวอร์ชัน v1.3.9 (แก้ไขตัดคำล้นบรรทัดที่ 4 & ปรับแก้บทสำรวจ Abyss LO10–LO12 ตรง 1:1 / ทะลุ 80,395 บรรทัด In-ROM / Clean Packaging 29 MB)",
       "overview": "รับบทเป็นอาจารย์ประจำสถาบันนายทหาร ณ อารามการ์แรก มัค นำพานักเรียนในบ้านที่คุณเลือกผ่านสมรภูมิสงคราม การเมือง และสายสัมพันธ์ในทวีปโฟดลาน แปลไทยสมบูรณ์ทุกสายรูท",
       "story": "ทวีปโฟดลานถูกแบ่งออกเป็น 3 มหาอำนาจ: จักรวรรดิอาดรัสเทีย, ราชอาณาจักรศักดิ์สิทธิ์แฟร์กัส, และสหพันธรัฐเลสเตอร์ โดยมีศาสนจักรแห่งเซรอสเป็นศูนย์กลาง ไบลธ์ ทหารรับจ้างบุตรแห่งเจรัลต์ ได้รับเชิญมาเป็นอาจารย์ประจำสถาบันนายทหารและต้องเลือกดูแลหนึ่งในสามบ้าน ก่อนที่ไฟสงครามและการเมืองจะปะทุขึ้นจนบีบให้เหล่าลูกศิษย์ต้องหันคมดาบเข้าหากัน",
-      "localization": "แปลเนื้อเรื่องหลักและบทพูดครบ 100% ทุกสายรูท ทั้งเควสต์โรงเรียน ระบบปฏิทิน กิจกรรมดื่มชา ระบบซัพพอร์ต ซับไตเติลมูฟวี่ พร้อมเนื้อหา DLC บทเสริม Cindered Shadows, ซัพพอร์ตสี่หมาป่า และบทสำรวจเมืองใต้ดิน Abyss ทุกเดือนและทุกรูท รวม 80,381 บรรทัด In-ROM พร้อมระบบฟอนต์ Tall-Safe 46pt Compact สระไม่ลอย ปลดล็อก 60 FPS Native",
+      "localization": "แปลเนื้อเรื่องหลักและบทพูดครบ 100% ทุกสายรูท ทั้งเควสต์โรงเรียน ระบบปฏิทิน กิจกรรมดื่มชา ระบบซัพพอร์ต ซับไตเติลมูฟวี่ พร้อมเนื้อหา DLC บทเสริม Cindered Shadows, ซัพพอร์ตสี่หมาป่า และบทสำรวจเมืองใต้ดิน Abyss ทุกเดือนและทุกรูท รวม 80,395 บรรทัด In-ROM พร้อมระบบตัดคำ Pixel-Aware ไม่ล้นบรรทัด ฟอนต์ Tall-Safe 46pt Compact สระไม่ลอย ปลดล็อก 60 FPS Native",
       "untranslated": "ไม่มีส่วนที่ค้างแปลในเนื้อเรื่องหลัก เควสต์ และ DLC Abyss (คงชื่อเฉพาะและคำศัพท์ทางการตามมาตรฐาน Fódlan Glossary)",
       "features": [
         "แปลเนื้อเรื่องหลักครบทุกสายรูทภาษาไทย",
@@ -2352,10 +2352,10 @@ window.GAME_CATALOG = [
     "gameVersion": "Update v1.2.0 (Patch 4)",
     "verifiedAt": null,
     "distributionType": "external-download",
-    "downloadUrl": "https://drive.google.com/file/d/1xM_l4wjzyitUu6cQnjApRLvvJlCaxjne/view?usp=sharing",
-    "downloadFilename": "FE16_Thai_v1.3.8_Mod.zip",
-    "downloadSize": 30882007,
-    "downloadSha256": "54d347045fee852d5f62823bbd8cdd5f4cdc9e13ac2371f98ff1ead94e98949d"
+    "downloadUrl": "https://drive.google.com/file/d/12YcwspOWpvEt7WK3cqIQfdwWktYCMYj4/view?usp=sharing",
+    "downloadFilename": "FE16_Thai_v1.3.9_Mod.zip",
+    "downloadSize": 30880097,
+    "downloadSha256": "b477f094c81971e5a97a20dd10a13a481c16412024cbafdedfadb0f4b3f67bc1"
   },
   {
     "order": 57,
@@ -2427,6 +2427,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "fire-emblem-three-houses",
+    "title": "Fire Emblem: Three Houses",
+    "platform": "SWITCH",
+    "version": "v1.3.9",
+    "type": "update",
+    "timestamp": "2026-11-13T07:05:00+07:00",
+    "note": "อัปเดตชุดม็อด v1.3.9 แก้ไขปัญหาข้อความล้นบรรทัดที่ 4 (Pixel-Aware Word Wrap) และปรับแก้บทสนทนาค่ายพักแรม Abyss LO10–LO12 ให้ตรงตามต้นฉบับ 1:1 (สำมะโนทั้งเกมทะลุ 80,395 บรรทัด In-ROM)"
+  },
   {
     "slug": "metal-max-2-reloaded",
     "title": "Metal Max 2: Reloaded",
