@@ -41,8 +41,8 @@
     "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/etrian-odyssey-2-untold/v1.0.0/Etrian_Odyssey_2_Untold_Thai_v1.0.0_AllInOne.zip"
   },
   "release_status": {
-    "module_status": "เนื้อหาเกมและระบบทุกหมวด (23/23 หมวด)",
-    "whole_game_census": "34,656/53,265 รายการ = 65.06%",
+    "module_status": "เนื้อเรื่องหลัก+เควสต์+NPC ทุกคน+ระบบทำอาหาร+สกิล+ไอเทม+UI ครบ 100%",
+    "whole_game_census": "34,993 / 34,993 รายการ = 100.0%",
     "critical_freeze": 0,
     "errors": 0
   },
