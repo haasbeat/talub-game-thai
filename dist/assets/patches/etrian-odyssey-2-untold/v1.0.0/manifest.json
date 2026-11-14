@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "game_slug": "etrian-odyssey-2-untold",
+  "game_title": "Etrian Odyssey 2 Untold: The Fafnir Knight",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "CTR-P-BM9E",
+  "title_id": "000400000015F200",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Etrian Odyssey 2 Untold - The Fafnir Knight (USA).3ds",
+      "size": 1073741824,
+      "sha256": "985d021e8e3b875888ec5eeca8980609dddc008b42b5e861a2beb9fa402a091f"
+    }
+  ],
+  "patch": {
+    "filename": "Etrian_Odyssey_2_Untold_Thai_v1.0.0.xdelta",
+    "size": 4005468,
+    "sha256": "a28b5754645e9a56febf4b9f943f0caa5c13d6bd1330daf5c91b96066c640ce6",
+    "release_date": "2026-11-14",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/etrian-odyssey-2-untold/v1.0.0/Etrian_Odyssey_2_Untold_Thai_v1.0.0.xdelta"
+  },
+  "output": {
+    "filename": "Etrian_Odyssey_2_Untold_Thai_v1.0.0.3ds",
+    "size": 1073741824,
+    "sha256": "af99871e5eab1e27ec4d159d007960f0fb078ec4ce0712dec9d51ac321fb44c7"
+  },
+  "mod_archive": {
+    "filename": "Etrian_Odyssey_2_Untold_Thai_v1.0.0_Mod.zip",
+    "size": 290731812,
+    "sha256": "bd4dcc21766f9175ee023a691f135b0932149255e0ff129912051bb3ceb7b2aa",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/etrian-odyssey-2-untold/v1.0.0/Etrian_Odyssey_2_Untold_Thai_v1.0.0_Mod.zip"
+  },
+  "all_in_one_archive": {
+    "filename": "Etrian_Odyssey_2_Untold_Thai_v1.0.0_AllInOne.zip",
+    "size": 294737009,
+    "sha256": "604dc016a236a0985e5e0a17cac1ba53dae2ae5d017ae418092c00b681734d0c",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/etrian-odyssey-2-untold/v1.0.0/Etrian_Odyssey_2_Untold_Thai_v1.0.0_AllInOne.zip"
+  },
+  "release_status": {
+    "module_status": "เนื้อหาเกมและระบบทุกหมวด (23/23 หมวด)",
+    "whole_game_census": "34,656/53,265 รายการ = 65.06%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-14T16:05:00+07:00",
+    "method": "clean_source_roundtrip_and_in_rom_census",
+    "patcher_test_passed": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true,
+    "binary_readback_verified": true
+  }
+}
