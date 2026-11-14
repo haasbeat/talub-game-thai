@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "game_slug": "bs-koi-ha-balance",
+  "game_title": "BS Koi ha Balance: Battle of Lovers",
+  "platform": "SNES",
+  "region": "Japan",
+  "game_code": "SHVC-AKBJ",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "BS Koi ha Balance - Battle of Lovers (J).smc",
+      "size": 1049088,
+      "sha256": "48ea47fd296cf92608bea00390171453848318588156dc4fd68719b714392c70"
+    },
+    {
+      "filename": "BS Koi ha Balance - Battle of Lovers (Japan).sfc",
+      "size": 1048576,
+      "sha256": "5e9e4eb7d9e11c74e132312cd250c5ec6f22adeb0e4332fd5158d873c90e9705"
+    }
+  ],
+  "patch": {
+    "filename": "BS_Koi_ha_Balance_TH_v1.0.0.xdelta",
+    "size": 43066,
+    "sha256": "26cde6a4cd909cc70713ac363d16cb7957150b696793ce6a9118df6b36713c49",
+    "release_date": "2026-11-14",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/bs-koi-ha-balance/v1.0.0/BS_Koi_ha_Balance_TH_v1.0.0.xdelta"
+  },
+  "output": {
+    "filename": "BS_Koi_ha_Balance_TH_v1.0.0.sfc",
+    "size": 2097152,
+    "sha256": "c9ae023240c894fbc6a5860199f32fadbcfe58c2d2bda79d8af7ee98797c354c"
+  },
+  "release_status": {
+    "module_status": "แปลครบทุกหมวดหมู่ 100%",
+    "whole_game_census": "706/706 เรคคอร์ดในรอม (ภาพรวมทั้งเกม 100.0%)",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "STATE.md / audit_koibal.py (2026-11-14 audit)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-14T10:30:00+07:00",
+    "method": "cli_xdelta3_clean_source_roundtrip",
+    "note": "Applied the exact distributed xdelta to the pinned clean source with xdelta3; reconstructed output size and SHA-256 were measured from that artifact; 1:1 In-ROM readback audit passed 100% (706/706 records); Zero-Mod Mesen2 emulation verified.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}

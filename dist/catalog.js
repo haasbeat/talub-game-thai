@@ -2114,11 +2114,59 @@ window.GAME_CATALOG = [
   },
   {
     "order": 51,
+    "slug": "bs-koi-ha-balance",
+    "title": "BS Koi ha Balance: Battle of Lovers",
+    "platform": "snes",
+    "platformLabel": "SNES",
+    "index": "SNES | 001 / 002",
+    "version": "v1.0.0",
+    "patchDate": "2026-11-14",
+    "addedDate": "2026-11-14",
+    "addedOrder": 60,
+    "addedAt": "2026-11-14T10:33:00+07:00",
+    "format": "xdelta3",
+    "cover": "./assets/covers/web/bs-koi-ha-balance.jpg",
+    "manifest": "./assets/patches/bs-koi-ha-balance/v1.0.0/manifest.json",
+    "accept": ".smc",
+    "fileTypes": "CLEAN Japan SNES · 1 MB",
+    "region": "Japan",
+    "gameCode": "SHVC-AKBJ",
+    "sourceName": "BS Koi ha Balance - Battle of Lovers (J).smc · 1,049,088 bytes",
+    "sourceHash": "48ea47fd296cf92608bea00390171453848318588156dc4fd68719b714392c70",
+    "outputHash": "c9ae023240c894fbc6a5860199f32fadbcfe58c2d2bda79d8af7ee98797c354c",
+    "moduleStatus": "แปลครบทุกหมวดหมู่ 100%",
+    "wholeGameCensus": "706/706 เรคคอร์ดในรอม (ภาพรวมทั้งเกม 100.0%)",
+    "details": {
+      "thaiTitle": "รักหรรษา หนึ่งวันอันแสนวุ่นกับความรักหลากหลาย",
+      "japaneseTitle": "BS 恋はバランス たとえばK君の多忙な一日編",
+      "originalTitle": "BS Koi ha Balance: Battle of Lovers",
+      "studio": "Square / St.GIGA (Satellaview)",
+      "release": "27 มกราคม 1996",
+      "genre": "Board / Dating Strategy",
+      "description": "ม็อดภาษาไทยสมบูรณ์ 100% สำหรับ BS Koi ha Balance: Battle of Lovers (Super Famicom / Satellaview) เวอร์ชัน v1.0.0 ผลงานจากทีมผู้สร้าง Chrono Trigger และ Romancing SaGa",
+      "overview": "เกมกระดานวางแผนจีบสาวสุดแหวกแนวระดับตำนานจากค่าย Square ยุค 1996 เมื่อคุณปู่เก็นโกโร่ มหาเศรษฐีวัย 98 ปี จัดบททดสอบชิงตำแหน่งผู้นำตระกูลคิบาราชิด้วยการจีบสาวชิงแต้มเดต",
+      "story": "คิบาราชิ เก็นโกโร่ วัย 98 ปี ผู้นำตระกูลมหาเศรษฐีอันดับหนึ่งของญี่ปุ่น ประกาศสละตำแหน่งและเรียกตัวลูกชายทั้ง 4 คนมารับบททดสอบคัดเลือกผู้สืบทอดตระกูล ซึ่งไม่ใช่การบริหารธุรกิจ แต่คือ 'การจีบสาว' เพราะ 'ผู้หญิงคือสิ่งลี้ลับที่สุด หากเข้าใจสิ่งลี้ลับนี้ได้ ก็จะเข้าใจทุกสรรพสิ่งในโลก!' สี่หนุ่มจึงต้องออกตะลุยเมืองหลวงยุค 90s เพื่อพิชิตใจสาวทั้ง 12 คน และทำแต้มออกเดตให้ได้สูงสุด",
+      "localization": "แปลไทยสมบูรณ์แบบ 100% ทุกหมวดหมู่ (706/706 รายการ In-ROM Census) ทั้งเนื้อเรื่อง กติกา บทสนทนาการออกเดตของนางเอกทั้ง 13 คน ของขวัญและไอเทมกลั่นแกล้งทั้ง 63 ชนิด พร้อมคำอธิบายสรรพคุณ ใช้ชุดฟอนต์ภาษาไทยแท้มาตรฐานระดับสูงชุดเดียวกับ Tales of the Abyss (2005_iannnnnAMD 15-scanline VWF) รองรับสระวรรณยุกต์ 3 ชั้นโดยไม่ชนสระล่าง พร้อมขยายพื้นที่รอมเป็น 2MB HiROM แบบสแตนด์อโลน ไม่ต้องใช้ BIOS BS-X",
+      "untranslated": "ไม่มีส่วนที่ค้างแปลตามผลสำรวจในรอม (แปลครบ 100.0% ทุกตัวอักษร)",
+      "features": [
+        "เนื้อเรื่อง กติกา และบทสนทนาออกเดตนางเอกทั้ง 13 คนภาษาไทย 100%",
+        "ชื่อของขวัญและไอเทมกระดานทั้ง 63 ชนิด ล็อกคำศัพท์คู่เซ็ตคอมโบตรงตามกติกาจริง",
+        "มุกตลกและไอเทมล้อเลียน Chrono Trigger และ Final Fantasy แปลครบถ้วน",
+        "ฟอนต์ภาษาไทยคมชัด 15 สแกนไลน์ วางสระวรรณยุกต์ 3 ชั้นสวยงามอ่านสบายตา",
+        "ไฟล์รอมสแตนด์อโลน 2MB HiROM เล่นได้ทันทีบนอีมูเลเตอร์และตลับ Flashcart ทุกรุ่น"
+      ]
+    },
+    "verified": true,
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-14T10:30:00+07:00"
+  },
+  {
+    "order": 52,
     "slug": "mini-yonku-wgp2",
     "title": "Mini Yonku Let's & Go!!: Power WGP 2",
     "platform": "snes",
     "platformLabel": "SNES",
-    "index": "SNES | 001 / 001",
+    "index": "SNES | 002 / 002",
     "version": "v1.3.15",
     "patchDate": "2026-10-25",
     "addedDate": "2026-11-04",
@@ -2160,7 +2208,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-05T15:00:00+07:00"
   },
   {
-    "order": 52,
+    "order": 53,
     "slug": "mana-khemia-student-alliance",
     "title": "Mana Khemia: Student Alliance",
     "platform": "psp",
@@ -2207,7 +2255,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-14T09:23:00+07:00"
   },
   {
-    "order": 53,
+    "order": 54,
     "slug": "popolocrois",
     "title": "PoPoLoCrois",
     "platform": "psp",
@@ -2236,7 +2284,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-06T18:52:00+07:00"
   },
   {
-    "order": 54,
+    "order": 55,
     "slug": "disgaea-5-complete",
     "title": "Disgaea 5 Complete",
     "platform": "switch",
@@ -2270,7 +2318,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "16797cb36b9d5361ccecf8c5dc49578eb7ca3bfd526b0c6d90f93179f26b9c45"
   },
   {
-    "order": 55,
+    "order": 56,
     "slug": "fire-emblem-engage",
     "title": "Fire Emblem Engage",
     "platform": "switch",
@@ -2304,7 +2352,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "0a55df8c842133b7668e281af95cc9cf8060c0563969aca8912cdeefff83cf1e"
   },
   {
-    "order": 56,
+    "order": 57,
     "slug": "fire-emblem-three-houses",
     "title": "Fire Emblem: Three Houses",
     "platform": "switch",
@@ -2358,7 +2406,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "7af94d0034bd2db70ae538aecb115210e3e8405e624e1881b49a711db8d279be"
   },
   {
-    "order": 57,
+    "order": 58,
     "slug": "persona-5-royal",
     "title": "Persona 5 Royal",
     "platform": "switch",
@@ -2392,7 +2440,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "ae68cf2866e6fd49d06e4245af0cf64f463bafc15be6885a06d360ea83556f1f"
   },
   {
-    "order": 58,
+    "order": 59,
     "slug": "village-in-the-shade",
     "title": "Village in the Shade",
     "platform": "switch",
@@ -2427,6 +2475,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "bs-koi-ha-balance",
+    "title": "BS Koi ha Balance: Battle of Lovers",
+    "platform": "SNES",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-14T10:33:00+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0"
+  },
   {
     "slug": "mana-khemia-student-alliance",
     "title": "Mana Khemia: Student Alliance",
