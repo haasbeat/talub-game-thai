@@ -2406,23 +2406,23 @@ window.GAME_CATALOG = [
     "platform": "switch",
     "platformLabel": "SWITCH",
     "index": "SWITCH | 003 / 005",
-    "version": "v1.4.0",
-    "patchDate": "2026-11-13",
+    "version": "v1.4.1",
+    "patchDate": "2026-11-14",
     "addedDate": "2026-11-06",
     "addedOrder": 44,
     "addedAt": "2026-11-06T14:30:36+07:00",
     "format": "LayeredFS / Atmosphère",
     "cover": "./assets/covers/web/fire-emblem-three-houses.jpg",
-    "manifest": "./assets/patches/fire-emblem-three-houses/v1.4.0/manifest.json",
+    "manifest": "./assets/patches/fire-emblem-three-houses/v1.4.1/manifest.json",
     "accept": "",
-    "fileTypes": "ชุดม็อด LayeredFS · 29.34 MB",
+    "fileTypes": "ชุดม็อด LayeredFS · 29.58 MB",
     "region": "Global",
     "gameCode": "010055D009F78000",
     "sourceName": "Update v1.2.0 (Patch 4)",
     "sourceHash": "010055D009F78000",
-    "outputHash": "7af94d0034bd2db70ae538aecb115210e3e8405e624e1881b49a711db8d279be",
-    "moduleStatus": "เนื้อเรื่องหลัก & DLC 100% (แก้ปัญหาตัดคำล้น 4 บรรทัด/ขอบจอ Log ทั้งเกม & AMes/ปุ่มเลือก 1 บรรทัด)",
-    "wholeGameCensus": "80,395 / 77,019 บรรทัด In-ROM (104.38% จากรายการที่ฉีดเพิ่ม)",
+    "outputHash": "6f27fe8cc63784f4d17ada3d7822275fbdf46a0fdb3be10da6b499200ebd9efd",
+    "moduleStatus": "เนื้อเรื่องหลัก & DLC 100% (แปลเก็บตกด่านรบ DLC SC05 30 ไฟล์, เควสต์เสริม EV06 6 ไฟล์, ซัพพอร์ตเยริตซา 7 ไฟล์, งานกลุ่ม DLC 189 ข้อความ)",
+    "wholeGameCensus": "82,184 / 77,019 บรรทัด In-ROM (106.71% จากรายการที่ฉีดเพิ่ม)",
     "details": {
       "thaiTitle": "ไฟร์เอ็มเบลม: ทรีเฮาส์",
       "japaneseTitle": "ファイアーエムブレム 風花雪月",
@@ -2430,7 +2430,7 @@ window.GAME_CATALOG = [
       "studio": "Nintendo / Intelligent Systems / Koei Tecmo",
       "release": "26 กรกฎาคม 2019",
       "genre": "Tactical Role-playing game",
-      "description": "ม็อดภาษาไทยสมบูรณ์แบบสำหรับ Fire Emblem: Three Houses (Nintendo Switch / Title ID: 010055D009F78000) เวอร์ชัน v1.4.0 (แก้ปัญหาข้อความล้น 4 บรรทัดและตกขอบจอ Log ทั้งเกมทั้งภาคหลัก + DLC + UI / AMes และปุ่มตัวเลือก 1 บรรทัด / สำมะโนทั้งเกม 80,395 บรรทัด In-ROM / Clean Packaging 29 MB)",
+      "description": "ม็อดภาษาไทยสมบูรณ์แบบสำหรับ Fire Emblem: Three Houses (Nintendo Switch / Title ID: 010055D009F78000) เวอร์ชัน v1.4.1 (แก้ปัญหาข้อความล้น 4 บรรทัดและตกขอบจอ Log ทั้งเกมทั้งภาคหลัก + DLC + UI / AMes และปุ่มตัวเลือก 1 บรรทัด / สำมะโนทั้งเกม 80,395 บรรทัด In-ROM / Clean Packaging 29 MB)",
       "overview": "รับบทเป็นอาจารย์ประจำสถาบันนายทหาร ณ อารามการ์แรก มัค นำพานักเรียนในบ้านที่คุณเลือกผ่านสมรภูมิสงคราม การเมือง และสายสัมพันธ์ในทวีปโฟดลาน แปลไทยสมบูรณ์ทุกสายรูท",
       "story": "ทวีปโฟดลานถูกแบ่งออกเป็น 3 มหาอำนาจ: จักรวรรดิอาดรัสเทีย, ราชอาณาจักรศักดิ์สิทธิ์แฟร์กัส, และสหพันธรัฐเลสเตอร์ โดยมีศาสนจักรแห่งเซรอสเป็นศูนย์กลาง ไบลธ์ ทหารรับจ้างบุตรแห่งเจรัลต์ ได้รับเชิญมาเป็นอาจารย์ประจำสถาบันนายทหารและต้องเลือกดูแลหนึ่งในสามบ้าน ก่อนที่ไฟสงครามและการเมืองจะปะทุขึ้นจนบีบให้เหล่าลูกศิษย์ต้องหันคมดาบเข้าหากัน",
       "localization": "แปลเนื้อเรื่องหลักและบทพูดครบ 100% ทุกสายรูท ทั้งเควสต์โรงเรียน ระบบปฏิทิน กิจกรรมดื่มชา ระบบซัพพอร์ต ซับไตเติลมูฟวี่ พร้อมเนื้อหา DLC บทเสริม Cindered Shadows, ซัพพอร์ตสี่หมาป่า และบทสำรวจเมืองใต้ดิน Abyss ทุกเดือนและทุกรูท รวม 80,395 บรรทัด In-ROM พร้อมระบบตัดคำ Pixel-Aware ไม่ล้นบรรทัด ฟอนต์ Tall-Safe 46pt Compact สระไม่ลอย ปลดล็อก 60 FPS Native",
@@ -2448,10 +2448,10 @@ window.GAME_CATALOG = [
     "gameVersion": "Update v1.2.0 (Patch 4)",
     "verifiedAt": null,
     "distributionType": "external-download",
-    "downloadUrl": "https://drive.google.com/file/d/1oeVVrm4_8GFJEreqLpWxQfPxZ2tcH6Ia/view?usp=sharing",
-    "downloadFilename": "FE16_Thai_v1.4.0_Mod.zip",
-    "downloadSize": 30760370,
-    "downloadSha256": "7af94d0034bd2db70ae538aecb115210e3e8405e624e1881b49a711db8d279be"
+    "downloadUrl": "https://drive.google.com/file/d/1O2JLqsy7YJs7-vn3S-mi-Qs8fu4Teby1/view?usp=sharing",
+    "downloadFilename": "FE16_Thai_v1.4.1_Mod.zip",
+    "downloadSize": 31016361,
+    "downloadSha256": "6f27fe8cc63784f4d17ada3d7822275fbdf46a0fdb3be10da6b499200ebd9efd"
   },
   {
     "order": 59,
@@ -2523,6 +2523,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "fire-emblem-three-houses",
+    "title": "Fire Emblem: Three Houses",
+    "platform": "SWITCH",
+    "version": "v1.4.1",
+    "type": "update",
+    "timestamp": "2026-11-14T18:50:00+07:00",
+    "note": "อัปเดตชุดม็อด v1.4.1 แปลเก็บตกเนื้อหา DLC และอัปเดตครบ 100% (บทสนทนาสนามรบ Cindered Shadows และด่าน Paralogue SC05 30 ไฟล์, เควสต์เสริม EV06 6 ไฟล์, ซัพพอร์ตเยริตซา 7 ไฟล์, งานกลุ่ม DLC scrgwdataDLC 189 ข้อความ) ทะลุ 82,184 บรรทัด In-ROM (106.71%)"
+  },
   {
     "slug": "dragon-quest-xi",
     "title": "Dragon Quest XI: Echoes of an Elusive Age",
