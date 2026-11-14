@@ -2166,21 +2166,21 @@ window.GAME_CATALOG = [
     "platform": "psp",
     "platformLabel": "PSP",
     "index": "PSP | 001 / 002",
-    "version": "v1.0.2",
-    "patchDate": "2026-11-11",
+    "version": "v1.0.3",
+    "patchDate": "2026-11-14",
     "addedDate": "2026-11-09",
     "addedOrder": 56,
     "addedAt": "2026-11-09T13:00:00+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/mana-khemia-student-alliance.jpg",
-    "manifest": "./assets/patches/mana-khemia-student-alliance/v1.0.2/manifest.json",
+    "manifest": "./assets/patches/mana-khemia-student-alliance/v1.0.3/manifest.json",
     "accept": ".iso",
     "fileTypes": "CLEAN USA PSP · 1.01 GB",
     "region": "USA",
     "gameCode": "ULUS-10408",
     "sourceName": "Mana Khemia - Student Alliance (USA).iso · 1,085,833,216 bytes",
     "sourceHash": "e98ed4c8498c3a48e1ec2f04b4a6641e85c57b8245ddf3e51443f7158a882081",
-    "outputHash": "db7c67bdf7931f9473afd38db6ffd5ea0a246724c41fd2ef94e73930db7ec314",
+    "outputHash": "0f1b1ab84ddc7c6e6227d69bcef611cf4664f96695be0d0d748956ad0b7504af",
     "moduleStatus": "เนื้อเรื่องและระบบ 100.0%",
     "wholeGameCensus": "21,896 / 21,896 บรรทัด In-ROM = 100.0%",
     "details": {
@@ -2190,7 +2190,7 @@ window.GAME_CATALOG = [
       "studio": "Gust / NIS America",
       "release": "25 กันยายน 2008 (JP) / 10 มีนาคม 2009 (NA)",
       "genre": "Role-playing game",
-      "description": "ม็อดภาษาไทยสำหรับ Mana Khemia: Student Alliance (PSP โซน USA) เวอร์ชัน v1.0.2 รองรับทั้งเครื่อง PSP จริงและอีมูเลเตอร์",
+      "description": "ม็อดภาษาไทยสำหรับ Mana Khemia: Student Alliance (PSP โซน USA) เวอร์ชัน v1.0.3 รองรับทั้งเครื่อง PSP จริงและอีมูเลเตอร์",
       "overview": "เรื่องราวชีวิตวัยเรียน การปรุงยา และการต่อสู้ในสถาบันอัล-เรวิสบนเครื่อง PSP พร้อมโหมด Multiplayer Arena และระบบ Jump Start แปลไทยสมบูรณ์แบบ 100% ทุกตัวอักษร",
       "story": "เวย์น ออเรอุส เด็กหนุ่มผู้ใช้ชีวิตเงียบสงบในป่าลึกกับซัลเฟอร์ แมวพูดได้ ได้รับคำเชิญให้เข้าเรียนที่โรงเรียนการเล่นแร่แปรธาตุชื่อดังอัล-เรวิส เขาได้พบเพื่อนร่วมชั้นหลากสไตล์ ทำการบ้านภาคปฏิบัติ ร่วมปรุงยา และค้นพบความลับเบื้องหลังชาติกำเนิดและพลังที่แท้จริงของตนเอง",
       "localization": "แปลเนื้อเรื่องหลัก เควสต์ตัวละคร วิชาเรียน บทลงโทษกักบริเวณ ฐานข้อมูลไอเทม สกิล มอนสเตอร์ บทสนทนา NPC ในโรงเรียน (Qv.bin) โหมด Multiplayer Arena และระบบ Jump Start ครบถ้วน 100% (สำมะโนในรอม 21,896/21,896 บรรทัด = 100.00%) วิศวกรรมฟอนต์ Chakra Petch SemiBold 24x24 TrueType Vector Calibrated สระไม่ลอย ไม่ซ้อนทับ ระบบ Subpixel FPU Float ช่องไฟสม่ำเสมอ และฝังซับไตเติลภาษาไทยในวิดีโอเปิดเรื่อง MOVIE/AVAN.PMF พร้อม Single-PT_LOAD ELF Loader และ Uncached GE DMA Coherency สำหรับเครื่องจริง",
@@ -2204,7 +2204,7 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-11T21:22:30+07:00"
+    "verifiedAt": "2026-11-14T09:23:00+07:00"
   },
   {
     "order": 53,
@@ -2427,6 +2427,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "mana-khemia-student-alliance",
+    "title": "Mana Khemia: Student Alliance",
+    "platform": "PSP",
+    "version": "v1.0.3",
+    "type": "update",
+    "timestamp": "2026-11-14T09:23:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.3 แก้ไขเกมค้างหลังจบบอสอาคารเรียนเก่าตอนรับสูตรผสมของ (MIPS Post-Boss Recipe Transition) และขยายฟอนต์กลุ่ม Item Gained 16px พร้อมเพิ่มช่องไฟตัวอักษร +1px"
+  },
   {
     "slug": "fire-emblem-three-houses",
     "title": "Fire Emblem: Three Houses",
