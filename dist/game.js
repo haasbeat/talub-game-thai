@@ -941,7 +941,14 @@ if (game.manifest && !isExternalDownload) {
       : 'XDELTA3 READY · VERIFYING';
 
     const handlesLargeInput = manifest.accepted_sources?.some((source) => source.size >= 512 * 1024 * 1024);
-    if (handlesLargeInput || manifest.patch.size >= 256 * 1024 * 1024 || manifest.output.size >= 512 * 1024 * 1024) {
+    const exceedsIOSLimit = manifest.accepted_sources?.some((source) => source.size > 1.07 * 1024 * 1024 * 1024);
+    if (isIOS && exceedsIOSLimit) {
+      const romSizeStr = formatBytes(manifest.accepted_sources[0].size);
+      workspaceNote.insertAdjacentHTML(
+        'beforeend',
+        `<br /><span style="color:#b45309;font-weight:600;">⚠️ ข้อจำกัด iOS:</span> เกมนี้มีขนาด ROM (~${romSizeStr}) เกิน 1.07 GB ซึ่งเกินขีดจำกัดหน่วยความจำ Safari บน iOS อาจทำให้เบราว์เซอร์รีโหลด แนะนำให้แพตช์บนคอมพิวเตอร์ (PC / Mac) หรือ Android ครับ`,
+      );
+    } else if (handlesLargeInput || manifest.patch.size >= 256 * 1024 * 1024 || manifest.output.size >= 512 * 1024 * 1024) {
       workspaceNote.insertAdjacentHTML(
         'beforeend',
         '<br /><span>ไฟล์ขนาดใหญ่</span> หากพบปัญหาหน่วยความจำหรือเบราว์เซอร์รีโหลด แนะนำให้สลับเป็น <b>โหมดประหยัดแรม</b> ด้านล่าง',
@@ -1062,7 +1069,12 @@ const handleFile = async (file) => {
     patchButton.hidden = false;
     patchButton.disabled = false;
     patchButton.querySelector('span').textContent = `เริ่มแพตช์ ${manifest.patch_version}`;
-    setProgress('ROM ต้นฉบับผ่านการตรวจสอบ — กดปุ่มเริ่มแพตช์ด้านล่าง', 5);
+    if (isIOS && file.size > 1.07 * 1024 * 1024 * 1024) {
+      setProgress('⚠️ ไฟล์มีขนาดเกิน 1.07 GB (เกินขีดจำกัด Safari บน iOS) อาจทำให้เบราว์เซอร์รีโหลด แนะนำให้ใช้ PC/Mac หรือ Android', 5);
+      showToast('⚠️ ไฟล์เกิน 1.07 GB อาจแพตช์ไม่สำเร็จบน iOS แนะนำให้ใช้ PC/Mac');
+    } else {
+      setProgress('ROM ต้นฉบับผ่านการตรวจสอบ — กดปุ่มเริ่มแพตช์ด้านล่าง', 5);
+    }
     setTimeout(() => {
       patchButton.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }, 250);
@@ -1260,8 +1272,13 @@ const applyVerifiedPatch = async () => {
     patchButton.hidden = false;
     patchButton.disabled = false;
     patchButton.querySelector('span').textContent = 'ลองแพตช์อีกครั้ง';
-    if (error.name === 'RangeError' || error.message?.includes('allocation') || error.message?.includes('memory')) {
-      setProgress('หน่วยความจำในเบราว์เซอร์ไม่พอ แนะนำให้เลือก "โหมดประหยัดแรม" ด้านล่าง', 0);
+    if (error.name === 'RangeError' || error.message?.includes('allocation') || error.message?.includes('memory') || error.message?.includes('Out of memory')) {
+      if (isIOS) {
+        setProgress('หน่วยความจำ Safari บน iOS ไม่พอ (iOS รองรับไฟล์ไม่เกิน 1.07 GB แนะนำให้แพตช์บน PC/Mac หรือ Android)', 0);
+        showToast('Safari บน iOS แรมไม่พอสำหรับไฟล์นี้ (จำกัด ~1.07 GB) แนะนำให้ใช้ PC/Mac');
+      } else {
+        setProgress('หน่วยความจำในเบราว์เซอร์ไม่พอ แนะนำให้เลือก "โหมดประหยัดแรม" ด้านล่าง', 0);
+      }
       const lowRamRadio = document.querySelector('input[name="patch-mode"][value="lowram"]');
       if (lowRamRadio) {
         lowRamRadio.checked = true;
