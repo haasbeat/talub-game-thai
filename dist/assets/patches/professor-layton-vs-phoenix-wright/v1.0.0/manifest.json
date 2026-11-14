@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "game_slug": "professor-layton-vs-phoenix-wright",
+  "game_title": "Professor Layton vs. Phoenix Wright: Ace Attorney",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "AVSE",
+  "title_id": "0004000000100700",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Professor Layton vs. Phoenix Wright - Ace Attorney (USA) (En,Fr,Es).3ds",
+      "size": 2147483648,
+      "sha256": "ce08b98df726de16862114d543bb43f9b3f9954ad9998123968ee10fc590431e"
+    }
+  ],
+  "patch": {
+    "filename": "Professor_Layton_vs_Phoenix_Wright_USA_TH_v1.0.0.xdelta",
+    "size": 2386171,
+    "sha256": "c39fc688a795283e32e73874395178a103503e987cf04bad49732e353d5f050e",
+    "release_date": "2026-11-14",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/professor-layton-vs-phoenix-wright/v1.0.0/Professor_Layton_vs_Phoenix_Wright_USA_TH_v1.0.0.xdelta"
+  },
+  "output": {
+    "filename": "Professor_Layton_vs_Phoenix_Wright_USA_TH_v1.0.0.3ds",
+    "size": 2147483648,
+    "sha256": "d931ae8afdb4b5b849ad1d882136a67328a1ee400ef12cc657a3c57cdc6f624e"
+  },
+  "all_in_one_archive": {
+    "filename": "Professor_Layton_vs_Phoenix_Wright_USA_Thai_v1.0.0_Patch.zip",
+    "size": 2388846,
+    "sha256": "677707108f00a4e98fc445c65d96aca8480802d1baad4ff62611f42ea4d1bdb2",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/professor-layton-vs-phoenix-wright/v1.0.0/Professor_Layton_vs_Phoenix_Wright_USA_Thai_v1.0.0_Patch.zip"
+  },
+  "release_status": {
+    "module_status": "ข้อความสคริปต์ทั้งเกมครบ 100% (26,813/26,813 รายการ In-ROM Verified; กราฟิก UI .xi/.xa 1,029 ไฟล์ยังเป็นภาษาอังกฤษ)",
+    "whole_game_census": "26,813 / 26,813 รายการ = 100.0%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-14T20:05:00+07:00",
+    "method": "clean_source_roundtrip_and_in_rom_census",
+    "patcher_test_passed": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true,
+    "binary_readback_verified": true,
+    "ivfc_verified": true
+  }
+}
