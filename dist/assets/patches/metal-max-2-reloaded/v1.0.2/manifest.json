@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "metal-max-2-reloaded",
+  "game_title": "Metal Max 2: Reloaded",
+  "platform": "NDS",
+  "region": "Japan",
+  "game_code": "TMXJ",
+  "patch_version": "v1.0.2",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Metal Max 2 - Reloaded (Japan).nds",
+      "size": 67108864,
+      "sha256": "72bc78befd3005901fce222ab10d30171ef0757ed87f05509a16b78823f1c528"
+    }
+  ],
+  "patch": {
+    "filename": "Metal_Max_2_Reloaded_Thai_v1.0.2.xdelta",
+    "size": 2076037,
+    "sha256": "fec083eef3d2d8c0bf04052c6623c64687b9af2adccca00485775e041cc2b7a7",
+    "release_date": "2026-11-14",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/metal-max-2-reloaded/v1.0.2/Metal_Max_2_Reloaded_Thai_v1.0.2.xdelta"
+  },
+  "output": {
+    "filename": "Metal_Max_2_Reloaded_Thai_v1.0.2.nds",
+    "size": 67108864,
+    "sha256": "e1bb528d24a557df808ad129aede353f562e55924fdf1becafb3ed843244c47b"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก+เควสต์ฮันเตอร์+ฐานข้อมูลรถถังและไอเทม+กราฟิกเมนู 2D/3D และแผนที่เมือง 100% (Hotfix แก้ไขจอดำค้างในร้านเช่ารถถังและจัดสรรหน่วยความจำฟอนต์ Heap 0)",
+    "whole_game_census": "20,751/20,801 บรรทัด = 99.76%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-14T21:10:00+07:00",
+    "method": "clean_source_xdelta3_roundtrip",
+    "note": "Clean 64MB NDS cartridge source verified with clean-source roundtrip; PreInjectionGate & In-ROM binary census passed with 20,801 records (0 CRITICAL_FREEZE, 0 ERROR); 4-tier watermark verified; ARM9 0x02042134 exit sequence recalibrated to teardown 3D tank before HUD re-allocation, preventing Heap 1 exhaustion on Field load; all 4 NFTR fonts stripped of unused CJK/PUA glyphs saving ~322 KB Heap 0 RAM; all 25 vehicle/player init names and 4 default tank nicknames capped to 16B fixed buffers.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true,
+    "patcher_test_passed": true
+  }
+}
