@@ -53,27 +53,27 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 002 / 039",
-    "version": "v1.0.3",
-    "patchDate": "2026-11-09",
+    "version": "v1.0.5",
+    "patchDate": "2026-11-15",
     "addedDate": "2026-11-04",
     "addedOrder": 1,
     "addedAt": "2026-11-04T21:10:11+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/bravely-default.jpg",
-    "manifest": "./assets/patches/bravely-default/v1.0.3/manifest.json",
+    "manifest": "./assets/patches/bravely-default/v1.0.5/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN USA 3DS · 4 GB",
     "region": "USA",
     "gameCode": "BTEE",
     "sourceName": "Bravely Default (USA) (En,Ja,Fr,De,Es,It).3ds · 4,294,967,296 bytes",
     "sourceHash": "6b4a89fa3385e967ab1db282b1616dc58df659c90a0626850d468334c70a0af2",
-    "outputHash": "dac3ce8857b077fa098c1fcf0954cbcdd40ff6a9abcf6162bfa02b204c3c74af",
-    "moduleStatus": "เนื้อเรื่องหลัก+ปาร์ตี้แช็ต+ระบบต่อสู้+เมนู+ไดอารีดี 100% ครบทั้ง 14 หมวดหมู่",
+    "outputHash": "9249a0c7c462b884afa73f0a3de6f62ea1367fa9c3059960789f96635f7abc60",
+    "moduleStatus": "เนื้อเรื่องหลัก+ปาร์ตี้แช็ต+ระบบต่อสู้+เมนู+ไดอารีดี 100% ครบทั้ง 14 หมวดหมู่ (ฟอนต์ Chakra Petch Parity เดียวกับ Monster Hunter Stories)",
     "wholeGameCensus": "39,379/39,379 เรคคอร์ด = 100.00%",
     "details": null,
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-09T00:52:00+07:00"
+    "verifiedAt": "2026-11-15T18:56:00+07:00"
   },
   {
     "order": 2,
@@ -2619,6 +2619,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "bravely-default",
+    "title": "Bravely Default",
+    "platform": "3DS",
+    "version": "v1.0.5",
+    "type": "update",
+    "timestamp": "2026-11-15T18:56:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.5 (เนื้อเรื่องหลัก+ปาร์ตี้แช็ต+ระบบต่อสู้+เมนู+ไดอารีดี 100% ครบทั้ง 14 หมวดหมู่ (ฟอนต์ Chakra Petch Parity เดียวกับ Monster Hunter Stories))"
+  },
   {
     "slug": "inazuma-go-galaxy-supernova",
     "title": "Inazuma Eleven GO Galaxy: Supernova",
