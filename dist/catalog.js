@@ -6,7 +6,7 @@ window.GAME_CATALOG = [
     "title": "7th Dragon III Code: VFD",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 001 / 038",
+    "index": "3DS | 001 / 039",
     "version": "v1.0.5",
     "patchDate": "2026-11-09",
     "addedDate": "2026-11-05",
@@ -52,7 +52,7 @@ window.GAME_CATALOG = [
     "title": "Bravely Default",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 002 / 038",
+    "index": "3DS | 002 / 039",
     "version": "v1.0.3",
     "patchDate": "2026-11-09",
     "addedDate": "2026-11-04",
@@ -81,7 +81,7 @@ window.GAME_CATALOG = [
     "title": "CardFight!! Vanguard G: Stride to Victory!!",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 003 / 038",
+    "index": "3DS | 003 / 039",
     "version": "v2.0.0",
     "patchDate": "2026-11-09",
     "addedDate": "2026-11-09",
@@ -128,7 +128,7 @@ window.GAME_CATALOG = [
     "title": "Dragon Ball Fusions",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 004 / 038",
+    "index": "3DS | 004 / 039",
     "version": "v1.1.0",
     "patchDate": "2026-11-11",
     "addedDate": "2026-11-04",
@@ -175,7 +175,7 @@ window.GAME_CATALOG = [
     "title": "Dragon Quest Monsters: Joker 3 Professional",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 005 / 038",
+    "index": "3DS | 005 / 039",
     "version": "v1.0.6",
     "patchDate": "2026-11-09",
     "addedDate": "2026-11-05",
@@ -222,7 +222,7 @@ window.GAME_CATALOG = [
     "title": "Dragon Quest VII: Fragments of the Forgotten Past",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 006 / 038",
+    "index": "3DS | 006 / 039",
     "version": "v1.6.6",
     "patchDate": "2026-11-02",
     "addedDate": "2026-11-04",
@@ -269,7 +269,7 @@ window.GAME_CATALOG = [
     "title": "Dragon Quest VII: Fragments of the Forgotten Past (Isan Edition)",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 007 / 038",
+    "index": "3DS | 007 / 039",
     "version": "v1.6.0",
     "patchDate": "2026-10-13",
     "addedDate": "2026-11-04",
@@ -298,7 +298,7 @@ window.GAME_CATALOG = [
     "title": "Dragon Quest VIII: Journey of the Cursed King",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 008 / 038",
+    "index": "3DS | 008 / 039",
     "version": "v1.5.0",
     "patchDate": "2026-11-08",
     "addedDate": "2026-11-04",
@@ -345,7 +345,7 @@ window.GAME_CATALOG = [
     "title": "Dragon Quest XI: Echoes of an Elusive Age",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 009 / 038",
+    "index": "3DS | 009 / 039",
     "version": "v2.4.6",
     "patchDate": "2026-11-14",
     "addedDate": "2026-11-04",
@@ -392,7 +392,7 @@ window.GAME_CATALOG = [
     "title": "E.X. Troopers",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 010 / 038",
+    "index": "3DS | 010 / 039",
     "version": "v1.0.4",
     "patchDate": "2026-11-09",
     "addedDate": "2026-11-07",
@@ -421,7 +421,7 @@ window.GAME_CATALOG = [
     "title": "Etrian Odyssey 2 Untold: The Fafnir Knight",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 011 / 038",
+    "index": "3DS | 011 / 039",
     "version": "v1.0.0",
     "patchDate": "2026-11-14",
     "addedDate": "2026-11-14",
@@ -469,7 +469,7 @@ window.GAME_CATALOG = [
     "title": "Etrian Odyssey IV: Legends of the Titan",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 012 / 038",
+    "index": "3DS | 012 / 039",
     "version": "v1.0.1",
     "patchDate": "2026-11-07",
     "addedDate": "2026-11-07",
@@ -516,7 +516,7 @@ window.GAME_CATALOG = [
     "title": "Etrian Odyssey Untold: The Millennium Girl",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 013 / 038",
+    "index": "3DS | 013 / 039",
     "version": "v1.0.1",
     "patchDate": "2026-11-09",
     "addedDate": "2026-11-04",
@@ -545,7 +545,7 @@ window.GAME_CATALOG = [
     "title": "Ever Oasis",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 014 / 038",
+    "index": "3DS | 014 / 039",
     "version": "v1.0.4",
     "patchDate": "2026-11-10",
     "addedDate": "2026-11-04",
@@ -592,7 +592,7 @@ window.GAME_CATALOG = [
     "title": "Final Fantasy Explorers",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 015 / 038",
+    "index": "3DS | 015 / 039",
     "version": "v1.0.1",
     "patchDate": "2026-11-09",
     "addedDate": "2026-11-04",
@@ -621,7 +621,7 @@ window.GAME_CATALOG = [
     "title": "Inazuma Eleven 1-2-3!! - Endou Mamoru Densetsu",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 016 / 038",
+    "index": "3DS | 016 / 039",
     "version": "v1.0.1",
     "patchDate": "2026-11-08",
     "addedDate": "2026-11-04",
@@ -646,11 +646,58 @@ window.GAME_CATALOG = [
   },
   {
     "order": 16,
+    "slug": "inazuma-go-galaxy-supernova",
+    "title": "Inazuma Eleven GO Galaxy: Supernova",
+    "platform": "3ds",
+    "platformLabel": "3DS",
+    "index": "3DS | 017 / 039",
+    "version": "v1.0.0",
+    "patchDate": "2026-11-15",
+    "addedDate": "2026-11-15",
+    "addedOrder": 63,
+    "addedAt": "2026-11-15T10:20:00+07:00",
+    "format": "xdelta3",
+    "cover": "./assets/covers/web/inazuma-go-galaxy-supernova.jpg",
+    "manifest": "./assets/patches/inazuma-go-galaxy-supernova/v1.0.0/manifest.json",
+    "accept": ".3ds",
+    "fileTypes": "CLEAN Japan 3DS · 4 GB",
+    "region": "Japan",
+    "gameCode": "BGSJ",
+    "sourceName": "Inazuma Eleven Go Galaxy - Supernova (Japan).3ds · 4,294,967,296 bytes",
+    "sourceHash": "e30d9eecca109e3d2a16dd57fae9ba3560e4bcb6b93c73676495cfb59717d451",
+    "outputHash": "f9a094ffc058964b43052a7c267d2cb7d78af88a9f1f4b8876db6d1a669538ab",
+    "moduleStatus": "เนื้อเรื่องหลักทุกบทและระบบเกม 100% (ภาพรวมทั้งเกม 99.63%)",
+    "wholeGameCensus": "63,104/63,339 รายการ (ภาพรวมทั้งเกม 99.63%)",
+    "details": {
+      "thaiTitle": "นักเตะแข้งสายฟ้า GO กาแล็กซี่: ซูเปอร์โนวา",
+      "japaneseTitle": "イナズマイレブンGO ギャラクシー スーパーノヴァ",
+      "originalTitle": "Inazuma Eleven GO Galaxy: Supernova",
+      "studio": "Level-5 / Nintendo",
+      "release": "2013-12-05",
+      "genre": "Sports role-playing game",
+      "description": "ม็อดภาษาไทยสำหรับ Inazuma Eleven GO Galaxy: Supernova (Nintendo 3DS โซนญี่ปุ่น) เวอร์ชัน v1.0.0",
+      "overview": "มัตสึคาเซะ เทนมะ นำทัพอินาสึมะเจแปนรุ่นใหม่และทีมตัวแทนโลก ชินเซย์อินาสึมะเจแปน ทะยานสู่ศึกฟุตบอลระดับจักรวาล แกรนด์เซเลสต้ากาแล็กซี่ เพื่อกอบกู้ชะตากรรมของดวงดาว",
+      "story": "หลังเสร็จสิ้นศึกในภาคโครโน สโตน การแข่งขันฟุตบอลเยาวชนระดับโลก ฟุตบอลฟรอนเทียร์อินเตอร์เนชันแนล V2 (FFIV2) กำลังจะเปิดฉากขึ้น แต่สมาชิกทีมชาติอินาสึมะเจแปนรุ่นใหม่ที่ถูกคัดเลือกโดยโค้ช คุโรอิวะ ริวเซย์ กลับมีเพียง เทนมะ ชินโด และสึรุกิ ที่เป็นนักเตะมากประสบการณ์ ส่วนสมาชิกอีก 8 คนที่เหลือล้วนเป็นเด็กหน้าใหม่ที่ไม่เคยเล่นฟุตบอลมาก่อน! ทว่าแท้จริงแล้ว การแข่งขันระดับโลกครั้งนี้เป็นเพียงฉากบังหน้าของ แกรนด์เซเลสต้ากาแล็กซี่ ทัวร์นาเมนต์ฟุตบอลระดับจักรวาลที่เดิมพันด้วยชะตากรรมของโลกมนุษย์ เพื่อต่อต้านการรุกรานของจักรวรรดิฟารัม ดิท สำหรับภาค Supernova ผู้เล่นจะได้เผชิญหน้ากับทีมคู่ปรับอย่าง ชิเท็นโน และทีมบอสประจำภาค ซิลวาเลส สตรีท พร้อมระบบแปลงร่าง โซล (Soul) สัตว์วิญญาณประจำตัวนักเตะ",
+      "localization": "แปลเนื้อเรื่องหลักบทที่ 1–10 ฉากเสริม แข่งขันฟุตบอล เควสต์ และชาวเมืองทุกดวงดาวครบ 100% (แซนโดเรียส, ซาซานาระ, เกอร์ดอน, ราโธนิก, ฟารัม ออร์เบียส) เมนูระบบ ข้อมูลตัวละคร ท่าไม้ตายฮิสซัตสึ ร่างอวตาร/โซล ไอเทม และบทสนทนาระหว่างแมตช์แข่ง สำมะโนใน ROM 63,104 / 63,339 รายการ (99.63% ของทั้ง ROM — เนื้อหาที่แปลได้ 100.0%) กราฟิก UI และสไปรต์ในแมตช์ 1,244 คอนเทนเนอร์ ใช้ฟอนต์ Chakra Petch SemiBold พร้อม ExeFS ARM hook จัดกึ่งกลางข้อความ",
+      "untranslated": "ไม่มีบทสนทนาเนื้อเรื่องหรือระบบเกมที่ค้างแปล ช่องที่คงไว้เป็นภาษาญี่ปุ่น 235 ช่อง (0.37%) เป็นปุ่มแป้นพิมพ์คานะ/สัญลักษณ์ในเมนูตั้งชื่อ (strinputmenu_text_ja) 231 ช่อง และคำสั่งระบบ InfoOn/InfoOff ในเพลงเปิด 4 ช่อง และสไปรต์ชื่อภาษาอังกฤษ/ต้นฉบับบางส่วน (เช่น ท่าไม้ตาย 16 จาก 588 ชื่อ)",
+      "features": [
+        "เนื้อเรื่องหลักบทที่ 1–10 และการแข่งขันฟุตบอลฉบับภาษาไทยสมบูรณ์แบบ",
+        "ชื่อนักเตะ ท่าไม้ตายฮิสซัตสึ และระบบแปลงร่างโซล (Soul) ภาษาไทย",
+        "บทสนทนาคัตซีนระหว่างแข่ง และบทพูดชาวเมืองทุกดวงดาวในกาแล็กซี่",
+        "เมนูคำสั่ง สเตตัส แผนการเล่น และการฝึกซ้อมภาษาไทยพร้อมจัดตำแหน่งป้ายสวยงาม"
+      ]
+    },
+    "verified": true,
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-15T10:00:00+07:00"
+  },
+  {
+    "order": 17,
     "slug": "inazuma-go-thunderflash",
     "title": "Inazuma Eleven GO: Chrono Stones - Thunderflash",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 017 / 038",
+    "index": "3DS | 018 / 039",
     "version": "v1.0.2",
     "patchDate": "2026-11-11",
     "addedDate": "2026-11-04",
@@ -692,12 +739,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-11T12:00:00+07:00"
   },
   {
-    "order": 17,
+    "order": 18,
     "slug": "inazuma-go-wildfire",
     "title": "Inazuma Eleven GO: Chrono Stones - Wildfire",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 018 / 038",
+    "index": "3DS | 019 / 039",
     "version": "v1.0.1",
     "patchDate": "2026-11-11",
     "addedDate": "2026-11-04",
@@ -721,12 +768,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-11T12:00:00+07:00"
   },
   {
-    "order": 18,
+    "order": 19,
     "slug": "inazuma-go-light",
     "title": "Inazuma Eleven GO: Light",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 019 / 038",
+    "index": "3DS | 020 / 039",
     "version": "v1.2.0",
     "patchDate": "2026-11-10",
     "addedDate": "2026-11-04",
@@ -768,12 +815,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-10T10:38:00+07:00"
   },
   {
-    "order": 19,
+    "order": 20,
     "slug": "inazuma-go-shadow",
     "title": "Inazuma Eleven GO: Shadow",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 020 / 038",
+    "index": "3DS | 021 / 039",
     "version": "v1.0.0",
     "patchDate": "2026-10-12",
     "addedDate": "2026-11-04",
@@ -815,12 +862,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-05T15:00:00+07:00"
   },
   {
-    "order": 20,
+    "order": 21,
     "slug": "lost-heroes",
     "title": "Lost Heroes",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 021 / 038",
+    "index": "3DS | 022 / 039",
     "version": "v1.0.2",
     "patchDate": "2026-11-09",
     "addedDate": "2026-11-04",
@@ -862,12 +909,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-09T02:45:00+07:00"
   },
   {
-    "order": 21,
+    "order": 22,
     "slug": "metal-max-4",
     "title": "Metal Max 4: Gekkou no Diva",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 022 / 038",
+    "index": "3DS | 023 / 039",
     "version": "v1.3.6",
     "patchDate": "2026-11-10",
     "addedDate": "2026-11-07",
@@ -891,12 +938,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-10T01:09:30+07:00"
   },
   {
-    "order": 22,
+    "order": 23,
     "slug": "monster-hunter-stories",
     "title": "Monster Hunter Stories",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 023 / 038",
+    "index": "3DS | 024 / 039",
     "version": "v1.0.1",
     "patchDate": "2026-11-09",
     "addedDate": "2026-11-05",
@@ -938,12 +985,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-09T03:10:00+07:00"
   },
   {
-    "order": 23,
+    "order": 24,
     "slug": "new-love-plus-plus",
     "title": "New Love Plus+",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 024 / 038",
+    "index": "3DS | 025 / 039",
     "version": "v2.0.2",
     "patchDate": "2026-11-08",
     "addedDate": "2026-11-04",
@@ -985,12 +1032,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-08T01:30:00+07:00"
   },
   {
-    "order": 24,
+    "order": 25,
     "slug": "phoenix-wright-trilogy",
     "title": "Phoenix Wright: Ace Attorney Trilogy",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 025 / 038",
+    "index": "3DS | 026 / 039",
     "version": "v1.2.5",
     "patchDate": "2026-11-09",
     "addedDate": "2026-11-04",
@@ -1032,12 +1079,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-09T19:40:00+07:00"
   },
   {
-    "order": 25,
+    "order": 26,
     "slug": "professor-layton-miracle-mask",
     "title": "Professor Layton and the Miracle Mask",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 026 / 038",
+    "index": "3DS | 027 / 039",
     "version": "v1.3.3",
     "patchDate": "2026-11-08",
     "addedDate": "2026-11-04",
@@ -1079,12 +1126,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-08T23:05:00+07:00"
   },
   {
-    "order": 26,
+    "order": 27,
     "slug": "professor-layton-vs-phoenix-wright",
     "title": "Professor Layton vs. Phoenix Wright: Ace Attorney",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 027 / 038",
+    "index": "3DS | 028 / 039",
     "version": "v1.0.0",
     "patchDate": "2026-11-14",
     "addedDate": "2026-11-14",
@@ -1128,12 +1175,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-14T20:05:00+07:00"
   },
   {
-    "order": 27,
+    "order": 28,
     "slug": "radiant-historia-perfect-chronology",
     "title": "Radiant Historia: Perfect Chronology",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 028 / 038",
+    "index": "3DS | 029 / 039",
     "version": "v1.0.0",
     "patchDate": "2026-11-10",
     "addedDate": "2026-11-10",
@@ -1176,12 +1223,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-10T12:47:30.352473+07:00"
   },
   {
-    "order": 28,
+    "order": 29,
     "slug": "rune-factory-4",
     "title": "Rune Factory 4",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 029 / 038",
+    "index": "3DS | 030 / 039",
     "version": "v1.0.5",
     "patchDate": "2026-11-08",
     "addedDate": "2026-11-04",
@@ -1223,12 +1270,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-08T20:55:00+07:00"
   },
   {
-    "order": 29,
+    "order": 30,
     "slug": "shin-megami-tensei-iv",
     "title": "Shin Megami Tensei IV",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 030 / 038",
+    "index": "3DS | 031 / 039",
     "version": "v1.3.5",
     "patchDate": "2026-11-09",
     "addedDate": "2026-11-04",
@@ -1252,12 +1299,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-09T00:36:00+07:00"
   },
   {
-    "order": 30,
+    "order": 31,
     "slug": "smt-strange-journey-redux",
     "title": "Shin Megami Tensei: Strange Journey Redux",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 031 / 038",
+    "index": "3DS | 032 / 039",
     "version": "v1.0.5",
     "patchDate": "2026-11-09",
     "addedDate": "2026-11-04",
@@ -1299,12 +1346,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-09T02:05:00+07:00"
   },
   {
-    "order": 31,
+    "order": 32,
     "slug": "tales-of-the-abyss",
     "title": "Tales of the Abyss",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 032 / 038",
+    "index": "3DS | 033 / 039",
     "version": "v1.0.7",
     "patchDate": "2026-11-10",
     "addedDate": "2026-11-08",
@@ -1347,12 +1394,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-10T21:50:00+07:00"
   },
   {
-    "order": 32,
+    "order": 33,
     "slug": "theatrhythm-dragon-quest",
     "title": "Theatrhythm Dragon Quest",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 033 / 038",
+    "index": "3DS | 034 / 039",
     "version": "v1.2.2",
     "patchDate": "2026-11-08",
     "addedDate": "2026-11-05",
@@ -1393,12 +1440,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-08T20:52:00+07:00"
   },
   {
-    "order": 33,
+    "order": 34,
     "slug": "time-travelers",
     "title": "Time Travelers",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 034 / 038",
+    "index": "3DS | 035 / 039",
     "version": "v1.0.3",
     "patchDate": "2026-11-09",
     "addedDate": "2026-11-04",
@@ -1441,12 +1488,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-09T00:45:00+07:00"
   },
   {
-    "order": 34,
+    "order": 35,
     "slug": "xenoblade-chronicles-3d",
     "title": "Xenoblade Chronicles 3D",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 035 / 038",
+    "index": "3DS | 036 / 039",
     "version": "v1.0.8",
     "patchDate": "2026-11-09",
     "addedDate": "2026-11-04",
@@ -1488,12 +1535,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-09T00:51:00+07:00"
   },
   {
-    "order": 35,
+    "order": 36,
     "slug": "yo-kai-watch",
     "title": "Yo-kai Watch",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 036 / 038",
+    "index": "3DS | 037 / 039",
     "version": "v2.8.2",
     "patchDate": "2026-11-08",
     "addedDate": "2026-11-04",
@@ -1517,12 +1564,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-08T01:40:00+07:00"
   },
   {
-    "order": 36,
+    "order": 37,
     "slug": "yo-kai-watch-2",
     "title": "Yo-kai Watch 2: Psychic Specters",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 037 / 038",
+    "index": "3DS | 038 / 039",
     "version": "v1.2.1",
     "patchDate": "2026-11-09",
     "addedDate": "2026-11-04",
@@ -1564,12 +1611,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-09T00:34:00+07:00"
   },
   {
-    "order": 37,
+    "order": 38,
     "slug": "yo-kai-watch-3",
     "title": "Yo-kai Watch 3",
     "platform": "3ds",
     "platformLabel": "3DS",
-    "index": "3DS | 038 / 038",
+    "index": "3DS | 039 / 039",
     "version": "v1.0.5",
     "patchDate": "2026-11-08",
     "addedDate": "2026-11-04",
@@ -1611,7 +1658,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-08T01:36:49+07:00"
   },
   {
-    "order": 38,
+    "order": 39,
     "slug": "dragon-quest-iv",
     "title": "Dragon Quest IV: Chapters of the Chosen",
     "platform": "nds",
@@ -1658,7 +1705,7 @@ window.GAME_CATALOG = [
     "verifiedAt": null
   },
   {
-    "order": 39,
+    "order": 40,
     "slug": "dragon-quest-v",
     "title": "Dragon Quest V: Hand of the Heavenly Bride",
     "platform": "nds",
@@ -1687,7 +1734,7 @@ window.GAME_CATALOG = [
     "verifiedAt": null
   },
   {
-    "order": 40,
+    "order": 41,
     "slug": "dragon-quest-vi",
     "title": "Dragon Quest VI: Realms of Revelation",
     "platform": "nds",
@@ -1716,7 +1763,7 @@ window.GAME_CATALOG = [
     "verifiedAt": null
   },
   {
-    "order": 41,
+    "order": 42,
     "slug": "front-mission-2089",
     "title": "Front Mission 2089: Border of Madness",
     "platform": "nds",
@@ -1763,7 +1810,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-10-31T21:25:59+07:00"
   },
   {
-    "order": 42,
+    "order": 43,
     "slug": "kingdom-hearts-358-2-days",
     "title": "Kingdom Hearts: 358/2 Days",
     "platform": "nds",
@@ -1810,7 +1857,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-07T18:32:00+07:00"
   },
   {
-    "order": 43,
+    "order": 44,
     "slug": "lost-in-blue-2",
     "title": "Lost in Blue 2",
     "platform": "nds",
@@ -1857,7 +1904,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-05T15:05:00+07:00"
   },
   {
-    "order": 44,
+    "order": 45,
     "slug": "love-plus-plus",
     "title": "Love Plus+",
     "platform": "nds",
@@ -1904,7 +1951,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-05T15:07:00+07:00"
   },
   {
-    "order": 45,
+    "order": 46,
     "slug": "metal-max-2-reloaded",
     "title": "Metal Max 2: Reloaded",
     "platform": "nds",
@@ -1952,7 +1999,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-14T21:10:00+07:00"
   },
   {
-    "order": 46,
+    "order": 47,
     "slug": "saga2-hihou-densetsu",
     "title": "SaGa 2: Hihou Densetsu - Goddess of Destiny",
     "platform": "nds",
@@ -1981,7 +2028,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-04T22:08:37+07:00"
   },
   {
-    "order": 47,
+    "order": 48,
     "slug": "suikoden-tierkreis",
     "title": "Suikoden Tierkreis",
     "platform": "nds",
@@ -2010,7 +2057,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-11T01:51:00+07:00"
   },
   {
-    "order": 48,
+    "order": 49,
     "slug": "tales-of-hearts",
     "title": "Tales of Hearts",
     "platform": "nds",
@@ -2039,7 +2086,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-09T19:30:00+07:00"
   },
   {
-    "order": 49,
+    "order": 50,
     "slug": "the-world-ends-with-you",
     "title": "The World Ends with You",
     "platform": "nds",
@@ -2068,7 +2115,7 @@ window.GAME_CATALOG = [
     "verifiedAt": null
   },
   {
-    "order": 50,
+    "order": 51,
     "slug": "saga-frontier",
     "title": "SaGa Frontier",
     "platform": "ps1",
@@ -2115,7 +2162,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-08T18:55:00+07:00"
   },
   {
-    "order": 51,
+    "order": 52,
     "slug": "mana-khemia",
     "title": "Mana Khemia: Alchemists of Al-Revis",
     "platform": "ps2",
@@ -2162,7 +2209,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-08T08:30:00+07:00"
   },
   {
-    "order": 52,
+    "order": 53,
     "slug": "tales-of-the-abyss-ps2",
     "title": "Tales of the Abyss (PS2)",
     "platform": "ps2",
@@ -2210,7 +2257,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-10T10:26:00+07:00"
   },
   {
-    "order": 53,
+    "order": 54,
     "slug": "bs-koi-ha-balance",
     "title": "BS Koi ha Balance: Battle of Lovers",
     "platform": "snes",
@@ -2258,7 +2305,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-14T10:30:00+07:00"
   },
   {
-    "order": 54,
+    "order": 55,
     "slug": "mini-yonku-wgp2",
     "title": "Mini Yonku Let's & Go!!: Power WGP 2",
     "platform": "snes",
@@ -2305,7 +2352,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-05T15:00:00+07:00"
   },
   {
-    "order": 55,
+    "order": 56,
     "slug": "mana-khemia-student-alliance",
     "title": "Mana Khemia: Student Alliance",
     "platform": "psp",
@@ -2352,7 +2399,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-14T09:23:00+07:00"
   },
   {
-    "order": 56,
+    "order": 57,
     "slug": "popolocrois",
     "title": "PoPoLoCrois",
     "platform": "psp",
@@ -2381,7 +2428,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-06T18:52:00+07:00"
   },
   {
-    "order": 57,
+    "order": 58,
     "slug": "disgaea-5-complete",
     "title": "Disgaea 5 Complete",
     "platform": "switch",
@@ -2415,7 +2462,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "16797cb36b9d5361ccecf8c5dc49578eb7ca3bfd526b0c6d90f93179f26b9c45"
   },
   {
-    "order": 58,
+    "order": 59,
     "slug": "fire-emblem-engage",
     "title": "Fire Emblem Engage",
     "platform": "switch",
@@ -2449,7 +2496,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "0a55df8c842133b7668e281af95cc9cf8060c0563969aca8912cdeefff83cf1e"
   },
   {
-    "order": 59,
+    "order": 60,
     "slug": "fire-emblem-three-houses",
     "title": "Fire Emblem: Three Houses",
     "platform": "switch",
@@ -2503,7 +2550,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "6f27fe8cc63784f4d17ada3d7822275fbdf46a0fdb3be10da6b499200ebd9efd"
   },
   {
-    "order": 60,
+    "order": 61,
     "slug": "persona-5-royal",
     "title": "Persona 5 Royal",
     "platform": "switch",
@@ -2537,7 +2584,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "ae68cf2866e6fd49d06e4245af0cf64f463bafc15be6885a06d360ea83556f1f"
   },
   {
-    "order": 61,
+    "order": 62,
     "slug": "village-in-the-shade",
     "title": "Village in the Shade",
     "platform": "switch",
@@ -2572,6 +2619,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "inazuma-go-galaxy-supernova",
+    "title": "Inazuma Eleven GO Galaxy: Supernova",
+    "platform": "3DS",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-15T10:20:00+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0"
+  },
   {
     "slug": "metal-max-2-reloaded",
     "title": "Metal Max 2: Reloaded",

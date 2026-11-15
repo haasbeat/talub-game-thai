@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "game_slug": "inazuma-go-galaxy-supernova",
+  "game_title": "Inazuma Eleven GO Galaxy: Supernova",
+  "platform": "3DS",
+  "region": "Japan",
+  "game_code": "BGSJ",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Inazuma Eleven Go Galaxy - Supernova (Japan).3ds",
+      "size": 4294967296,
+      "sha256": "e30d9eecca109e3d2a16dd57fae9ba3560e4bcb6b93c73676495cfb59717d451"
+    }
+  ],
+  "patch": {
+    "filename": "Inazuma_Eleven_GO_Galaxy_Supernova_Thai_v1.0.0.xdelta",
+    "size": 775323805,
+    "sha256": "31f564f2c1b798fb9a47580f873808edb8d1f31f8910b05186824c1fd45e0ab7",
+    "release_date": "2026-11-15",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-go-galaxy-supernova/v1.0.0/Inazuma_Eleven_GO_Galaxy_Supernova_Thai_v1.0.0.xdelta",
+    "parts": [
+      {
+        "filename": "Inazuma_Eleven_GO_Galaxy_Supernova_Thai_v1.0.0.xdelta.part01",
+        "size": 94371840,
+        "sha256": "5264c16163b2a9775bd33b98acccdc10e25fe19e2e0b1102aa89f70c29fecc13",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-go-galaxy-supernova/v1.0.0/Inazuma_Eleven_GO_Galaxy_Supernova_Thai_v1.0.0.xdelta.part01"
+      },
+      {
+        "filename": "Inazuma_Eleven_GO_Galaxy_Supernova_Thai_v1.0.0.xdelta.part02",
+        "size": 94371840,
+        "sha256": "3fa4451c39e83882e68c07ac2549fedf791cf9393a488063cf6754d10c529487",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-go-galaxy-supernova/v1.0.0/Inazuma_Eleven_GO_Galaxy_Supernova_Thai_v1.0.0.xdelta.part02"
+      },
+      {
+        "filename": "Inazuma_Eleven_GO_Galaxy_Supernova_Thai_v1.0.0.xdelta.part03",
+        "size": 94371840,
+        "sha256": "445dbf961711a3644ec0035a4dbe788af376d76112e6254e3f2ca5399ce5c437",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-go-galaxy-supernova/v1.0.0/Inazuma_Eleven_GO_Galaxy_Supernova_Thai_v1.0.0.xdelta.part03"
+      },
+      {
+        "filename": "Inazuma_Eleven_GO_Galaxy_Supernova_Thai_v1.0.0.xdelta.part04",
+        "size": 94371840,
+        "sha256": "b61c149ec0e9c433a7d807c8e1e0fa019c857111e4e0d8bd7f07e694db7a27b8",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-go-galaxy-supernova/v1.0.0/Inazuma_Eleven_GO_Galaxy_Supernova_Thai_v1.0.0.xdelta.part04"
+      },
+      {
+        "filename": "Inazuma_Eleven_GO_Galaxy_Supernova_Thai_v1.0.0.xdelta.part05",
+        "size": 94371840,
+        "sha256": "5f467341feae642649e4096450419465b049cec6fe6002b6d384973d731da59a",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-go-galaxy-supernova/v1.0.0/Inazuma_Eleven_GO_Galaxy_Supernova_Thai_v1.0.0.xdelta.part05"
+      },
+      {
+        "filename": "Inazuma_Eleven_GO_Galaxy_Supernova_Thai_v1.0.0.xdelta.part06",
+        "size": 94371840,
+        "sha256": "80bc956293b33ac80db7bd084d5ce08ffb02de162817bd3ca02e561f7bf37c43",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-go-galaxy-supernova/v1.0.0/Inazuma_Eleven_GO_Galaxy_Supernova_Thai_v1.0.0.xdelta.part06"
+      },
+      {
+        "filename": "Inazuma_Eleven_GO_Galaxy_Supernova_Thai_v1.0.0.xdelta.part07",
+        "size": 94371840,
+        "sha256": "6edf2d737df859a1c38a72b284af7795b103eb37a990238d775c4cb8ab96f2de",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-go-galaxy-supernova/v1.0.0/Inazuma_Eleven_GO_Galaxy_Supernova_Thai_v1.0.0.xdelta.part07"
+      },
+      {
+        "filename": "Inazuma_Eleven_GO_Galaxy_Supernova_Thai_v1.0.0.xdelta.part08",
+        "size": 94371840,
+        "sha256": "65d95fd86b8ddec3062dff9d9bca2173771d806d2951e991548620d89b3db0ae",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-go-galaxy-supernova/v1.0.0/Inazuma_Eleven_GO_Galaxy_Supernova_Thai_v1.0.0.xdelta.part08"
+      },
+      {
+        "filename": "Inazuma_Eleven_GO_Galaxy_Supernova_Thai_v1.0.0.xdelta.part09",
+        "size": 20349085,
+        "sha256": "0f315521efc81e53198f54424fa8c32dcc9418250002c70a13a3f1ac94d1282b",
+        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-go-galaxy-supernova/v1.0.0/Inazuma_Eleven_GO_Galaxy_Supernova_Thai_v1.0.0.xdelta.part09"
+      }
+    ]
+  },
+  "output": {
+    "filename": "Inazuma_Eleven_GO_Galaxy_Supernova_Thai_v1.0.0.3ds",
+    "size": 4294967296,
+    "sha256": "f9a094ffc058964b43052a7c267d2cb7d78af88a9f1f4b8876db6d1a669538ab"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลักทุกบทและระบบเกม 100% (ภาพรวมทั้งเกม 99.63%)",
+    "whole_game_census": "63,104/63,339 รายการ (ภาพรวมทั้งเกม 99.63%)",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "In-ROM forensic audit (2026-11-15)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-15T10:00:00+07:00",
+    "method": "clean_source_xdelta3_roundtrip",
+    "note": "Clean 4.0 GB Japan Decrypted 3DS cartridge source verified with clean-source roundtrip via release_guard.py; In-ROM binary census passed with 63,104/63,339 records (99.63% / 100.0% translatable text); 0 critical freeze and 0 errors; IVFC SHA-256 hash tree verified with 0 bad blocks; ExeFS ARM hook & 4-tier watermark parity verified.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true,
+    "patcher_test_passed": true
+  }
+}
