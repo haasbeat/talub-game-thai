@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "game_slug": "front-mission-5",
+  "game_title": "Front Mission 5: Scars of the War",
+  "platform": "PS2",
+  "region": "Japan",
+  "game_code": "SLPM-66205",
+  "patch_version": "v1.0.1",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Front Mission 5 - Scars of the War (Japan).iso",
+      "size": 3918495744,
+      "sha256": "88d8e9f6cc6196cf7c0347439f38d5aae0b865a6ed754d30239e5d9bad5fdc1f"
+    }
+  ],
+  "patch": {
+    "filename": "Front_Mission_5_PS2_JP_TH_v1.0.1.xdelta",
+    "size": 73812033,
+    "sha256": "b22e2081d6c0fca47666ed38ae735600f463b910a1d629d5c340c72ee8d0c8b7",
+    "release_date": "2026-11-15",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/front-mission-5/v1.0.1/Front_Mission_5_PS2_JP_TH_v1.0.1.xdelta"
+  },
+  "output": {
+    "filename": "Front_Mission_5_JP_TH_v1.0.1.iso",
+    "size": 4006313984,
+    "sha256": "5a0afee3643bb90d1babd85fbb5dad278ad5168d5fcb74bd6f2077dd8f7cf371"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก ฐานทัพ อารีนา ซิมูเลเตอร์ เมนู ฐานข้อมูล ซับคัทซีน และ Opening FMV ครบถ้วน",
+    "whole_game_census": "แปลไทย 38,095 / 38,287 รายการ (99.5%) + คงรูปสากล 192 รายการ (In-ROM Readback 1:1 100%)",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "In-ROM forensic audit (audit_fm5.py / 2026-11-15)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-15T22:32:00+07:00",
+    "method": "clean_source_xdelta3_roundtrip",
+    "note": "v1.0.1 terminology refinement (Wanzer operator 'นักบิน' -> 'ไพลอต' across 431 records, retaining 16 helicopter/aircraft pilot entries). Clean 3.92 GB Japan PS2 ISO (SLPM-66205) verified with clean-source roundtrip via release_guard.py; 38,287 records verified 1:1 via readback_guard.py (38,095 Thai + 192 retained = 99.5%); VM scripts (156 chunks), 1,619 non-VM gid=130 chunks, UDF descriptor CRCs, Opening FMV F#9989 (6/6 hardsubbed cards), and 4-tier v1.0.1 watermarks passed. 263 2D TIM2 textures, English HUD labels (Pilot/Machine Status, Not Equipped, HP/AP/EP/Lv./Max), and bonus FMO PV F#9990 remain original; hardware status: hardware-unverified.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true,
+    "patcher_test_passed": true,
+    "binary_readback_verified": true
+  }
+}
