@@ -2211,11 +2211,59 @@ window.GAME_CATALOG = [
   },
   {
     "order": 53,
+    "slug": "front-mission-5",
+    "title": "Front Mission 5: Scars of the War",
+    "platform": "ps2",
+    "platformLabel": "PS2",
+    "index": "PS2 | 001 / 003",
+    "version": "v1.0.0",
+    "patchDate": "2026-11-15",
+    "addedDate": "2026-11-15",
+    "addedOrder": 65,
+    "addedAt": "2026-11-15T21:55:00+07:00",
+    "format": "xdelta3",
+    "cover": "./assets/covers/web/front-mission-5.jpg",
+    "manifest": "./assets/patches/front-mission-5/v1.0.0/manifest.json",
+    "accept": ".iso",
+    "fileTypes": "CLEAN Japan PS2 · 3.65 GB",
+    "region": "Japan",
+    "gameCode": "SLPM-66205",
+    "sourceName": "Front Mission 5 - Scars of the War (Japan).iso · 3,918,495,744 bytes",
+    "sourceHash": "88d8e9f6cc6196cf7c0347439f38d5aae0b865a6ed754d30239e5d9bad5fdc1f",
+    "outputHash": "4226caad26dc5fb9c4667e4fe1f6d41b38e8e44eed686514919a1c8ce5cc6cab",
+    "moduleStatus": "เนื้อเรื่องหลัก ฐานทัพ อารีนา ซิมูเลเตอร์ เมนู ฐานข้อมูล ซับคัทซีน และ Opening FMV ครบถ้วน",
+    "wholeGameCensus": "แปลไทย 38,095 / 38,287 รายการ (99.5%) + คงรูปสากล 192 รายการ (In-ROM Readback 1:1 100%)",
+    "details": {
+      "thaiTitle": "ฟรอนต์มิชชัน 5: สการ์ส ออฟ เดอะ วอร์ (สงครามแห่งเงามืด)",
+      "japaneseTitle": "フロントミッション フィフス スカーズ・オブ・ザ・ウォー",
+      "originalTitle": "Front Mission 5: Scars of the War",
+      "studio": "Square Enix",
+      "release": "2005-12-29",
+      "genre": "Tactical role-playing game",
+      "description": "ม็อดภาษาไทยสำหรับ Front Mission 5: Scars of the War (PlayStation 2 โซนญี่ปุ่น / SLPM-66205) เวอร์ชัน v1.0.0 แปลเนื้อเรื่องหลัก บทสนทนาฐานทัพ ซับคัทซีน อารีนา ซิมูเลเตอร์ เมนูระบบ และข้อมูลหุ่นแวนเซอร์ครบทุกหมวดข้อความ",
+      "overview": "มหากาพย์สงครามแวนเซอร์ตลอด 51 ปี (2070–2121) ผ่านสายตาของ วอลเตอร์ เฟง ทหารหน่วย U.S.N. ที่ต้องเผชิญหน้ากับอดีต สหายร่วมรบ และแผนสมคบคิดลับขององค์กรกริมเนียร์ซึ่งเชื่อมโยงทุกเหตุการณ์ตั้งแต่ Front Mission ภาค 1–4",
+      "story": "ในปี 2070 ณ เมืองฟรีดอมซิตี เกาะฮัฟฟ์แมน วอลเตอร์ เฟง แรนดี โอนีล และ เกลน ดูวาล เพื่อนรักวัยเด็กทั้งสามคนต้องพลัดพรากจากไฟสงครามระหว่างสหภาพ O.C.U. และมหาอำนาจ U.S.N. ก่อนจะได้กลับมาพบกันอีกครั้งในฐานะศัตรูคนละฝั่งสมรภูมิ วอลเตอร์ที่แบกรับบาดแผลในใจจากการสูญเสียเพื่อนรักได้รับคัดเลือกเข้าหน่วยพิเศษ Strike Wyverns และ Barghest เพื่อไล่ล่าองค์กรลับ Grimnir และโครงการทดลองประสาท S-Type จนนำไปสู่บทสรุปชะตากรรมที่ศูนย์วิจัยอาวุธอลาสก้า",
+      "localization": "แปลข้อความเนื้อเรื่องหลักทุกบท (gid=517 + gid=130), บทสนทนาฐานทัพ, ซับไตเติลคัทซีนและวิทยุสนามรบ, อารีนา, ซิมูเลเตอร์, ฐานข้อมูลชิ้นส่วนและสกิล (719/719 ชื่อ), เมนูหลัก ELF และฝังซับไตเติลไทยในวิดีโอ Opening FMV (F#9989) ครบทั้ง 6 ช่วง สำมะโนข้อความใน ROM แปลแล้ว 38,095 / 38,287 รายการ (99.5%) + คงรูปสากล 192 รายการ ตรวจ Readback 1:1 ตรงกัน 100% ใช้ฟอนต์ไทย 14pt คมชัด พร้อมลายน้ำ v1.0.0 ครบ 4 ระดับ",
+      "untranslated": "เท็กซ์เจอร์ภาพ 2D (TIM2) จำนวน 263 ไฟล์ยังเป็นต้นฉบับ, ป้ายหัวข้อ HUD ภาษาอังกฤษจากต้นฉบับญี่ปุ่นบางจุด (เช่น Pilot Status, Machine Status, Not Equipped, HP, AP, EP, Lv., Max) และวิดีโอโบนัส Front Mission Online (F#9990) ยังเป็นภาษาญี่ปุ่น ปัจจุบันผลทดสอบผ่านบนอีมูเลเตอร์ (PCSX2) และรอผลทดสอบบนเครื่อง PS2 จริงผ่าน OPL (hardware-unverified)",
+      "features": [
+        "เนื้อเรื่องหลักตลอด 51 ปี ฐานทัพ อารีนา และซิมูเลเตอร์ภาษาไทยครบถ้วน",
+        "ซับไตเติลคัทซีน 24 แถว พร้อมฝังซับไทยในวิดีโอเปิด Opening FMV ครบ 6 ช่วง",
+        "ฐานข้อมูลชิ้นส่วนหุ่นแวนเซอร์ อาวุธ และสกิลนักบินภาษาไทยครบทั้ง 719 รายการ",
+        "ฟอนต์ไทยขนาด 14pt อ่านง่าย สระวรรณยุกต์ไม่ทับซ้อน ไม่ตัดล้นกรอบ",
+        "ตรวจสอบความเที่ยงตรง VM Script และ Readback 1:1 ครบ 38,287 รายการ (0 Errors)"
+      ]
+    },
+    "verified": true,
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-15T21:44:00+07:00"
+  },
+  {
+    "order": 54,
     "slug": "mana-khemia",
     "title": "Mana Khemia: Alchemists of Al-Revis",
     "platform": "ps2",
     "platformLabel": "PS2",
-    "index": "PS2 | 001 / 002",
+    "index": "PS2 | 002 / 003",
     "version": "v1.0.0",
     "patchDate": "2026-11-08",
     "addedDate": "2026-11-08",
@@ -2257,12 +2305,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-08T08:30:00+07:00"
   },
   {
-    "order": 54,
+    "order": 55,
     "slug": "tales-of-the-abyss-ps2",
     "title": "Tales of the Abyss (PS2)",
     "platform": "ps2",
     "platformLabel": "PS2",
-    "index": "PS2 | 002 / 002",
+    "index": "PS2 | 003 / 003",
     "version": "v1.0.0",
     "patchDate": "2026-11-10",
     "addedDate": "2026-11-10",
@@ -2305,7 +2353,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-10T10:26:00+07:00"
   },
   {
-    "order": 55,
+    "order": 56,
     "slug": "bs-koi-ha-balance",
     "title": "BS Koi ha Balance: Battle of Lovers",
     "platform": "snes",
@@ -2353,7 +2401,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-14T10:30:00+07:00"
   },
   {
-    "order": 56,
+    "order": 57,
     "slug": "mini-yonku-wgp2",
     "title": "Mini Yonku Let's & Go!!: Power WGP 2",
     "platform": "snes",
@@ -2400,7 +2448,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-05T15:00:00+07:00"
   },
   {
-    "order": 57,
+    "order": 58,
     "slug": "mana-khemia-student-alliance",
     "title": "Mana Khemia: Student Alliance",
     "platform": "psp",
@@ -2447,7 +2495,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-14T09:23:00+07:00"
   },
   {
-    "order": 58,
+    "order": 59,
     "slug": "popolocrois",
     "title": "PoPoLoCrois",
     "platform": "psp",
@@ -2476,7 +2524,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-06T18:52:00+07:00"
   },
   {
-    "order": 59,
+    "order": 60,
     "slug": "disgaea-5-complete",
     "title": "Disgaea 5 Complete",
     "platform": "switch",
@@ -2510,7 +2558,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "16797cb36b9d5361ccecf8c5dc49578eb7ca3bfd526b0c6d90f93179f26b9c45"
   },
   {
-    "order": 60,
+    "order": 61,
     "slug": "fire-emblem-engage",
     "title": "Fire Emblem Engage",
     "platform": "switch",
@@ -2544,7 +2592,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "0a55df8c842133b7668e281af95cc9cf8060c0563969aca8912cdeefff83cf1e"
   },
   {
-    "order": 61,
+    "order": 62,
     "slug": "fire-emblem-three-houses",
     "title": "Fire Emblem: Three Houses",
     "platform": "switch",
@@ -2598,7 +2646,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "6f27fe8cc63784f4d17ada3d7822275fbdf46a0fdb3be10da6b499200ebd9efd"
   },
   {
-    "order": 62,
+    "order": 63,
     "slug": "persona-5-royal",
     "title": "Persona 5 Royal",
     "platform": "switch",
@@ -2632,7 +2680,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "ae68cf2866e6fd49d06e4245af0cf64f463bafc15be6885a06d360ea83556f1f"
   },
   {
-    "order": 63,
+    "order": 64,
     "slug": "village-in-the-shade",
     "title": "Village in the Shade",
     "platform": "switch",
@@ -2667,6 +2715,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "front-mission-5",
+    "title": "Front Mission 5: Scars of the War",
+    "platform": "PS2",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-15T21:55:00+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0 (เนื้อเรื่องหลัก ฐานทัพ อารีนา ซิมูเลเตอร์ เมนู ฐานข้อมูล 719 รายการ และซับไทย Opening FMV 6/6 ช่วง — แปลไทย 38,095/38,287 ข้อความ 99.5% In-ROM Readback Verified)"
+  },
   {
     "slug": "chocobo-dungeon-ds-plus",
     "title": "Cid to Chocobo no Fushigi na Dungeon: Toki Wasure no Meikyuu DS+",
