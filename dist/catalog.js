@@ -2234,7 +2234,7 @@ window.GAME_CATALOG = [
     "moduleStatus": "เนื้อเรื่องหลัก ฐานทัพ อารีนา ซิมูเลเตอร์ เมนู ฐานข้อมูล ซับคัทซีน และ Opening FMV ครบถ้วน",
     "wholeGameCensus": "แปลไทย 38,095 / 38,287 รายการ (99.5%) + คงรูปสากล 192 รายการ (In-ROM Readback 1:1 100%)",
     "details": {
-      "thaiTitle": "ฟรอนต์มิชชัน 5: สการ์ส ออฟ เดอะ วอร์ (สงครามแห่งเงามืด)",
+      "thaiTitle": "ฟรอนต์มิชชัน 5: สการ์ส ออฟ เดอะ วอร์ (บาดแผลแห่งสงคราม)",
       "japaneseTitle": "フロントミッション フィフス スカーズ・オブ・ザ・ウォー",
       "originalTitle": "Front Mission 5: Scars of the War",
       "studio": "Square Enix",
