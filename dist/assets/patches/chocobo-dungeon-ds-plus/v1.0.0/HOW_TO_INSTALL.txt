@@ -1,0 +1,58 @@
+====================================================================
+คำชี้แจงด้านลิขสิทธิ์และเจตนารมณ์ (DISCLAIMER & FAIR USE NOTICE)
+====================================================================
+- ผลงานนี้เป็น Fan-made Translation จัดทำขึ้นฟรีเพื่อการศึกษาภาษาไทย
+  และการอนุรักษ์วัฒนธรรมเกมเท่านั้น ไม่แสวงหาผลกำไรและไม่มีส่วนเกี่ยวข้อง
+  หรือได้รับการรับรองจากผู้พัฒนาหรือผู้จัดจำหน่ายอย่างเป็นทางการ
+- ทางทีมงานไม่สนับสนุนการละเมิดลิขสิทธิ์ (Zero-ROM Policy) แพ็กเกจนี้
+  มีเพียงไฟล์แพตช์ข้อความและฟอนต์ไทยที่สร้างขึ้นใหม่ (.xdelta) และคู่มือเท่านั้น
+  ไม่มีไฟล์เกม ต้นฉบับรอม หรือทรัพย์สินมีลิขสิทธิ์ของทางค่ายรวมอยู่ด้วย
+- ขอสนับสนุนให้ผู้เล่นซื้อแผ่น/ตลับเกมแท้ และสกัด Clean ROM จากตลับของตนเอง
+- แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่าย (FREE - DO NOT SELL OR BUNDLE)
+
+[International Notice]
+This non-commercial fan localization distributes ONLY delta translation data
+and newly generated font tables. Zero copyrighted ROM assets are included.
+Please dump a clean Japanese NTR-CCTJ-JPN ROM from your own legal cartridge.
+
+====================================================================
+Cid to Chocobo no Fushigi na Dungeon: Toki Wasure no Meikyuu DS+ (TH)
+เวอร์ชัน v1.0.0 — ตลับเกมภาษาไทย (Nintendo DS)
+====================================================================
+
+[สรุปความคืบหน้าการแปลจริงจาก In-ROM Binary Census]
+  - เนื้อเรื่อง บทสนทนา และอีเวนต์ (Layer 1: EVTMSG0..10 + Cidventure): 4061/4061 non-dummy (100.0%) | เปิดเรื่อง 162/162 (100.0%)
+  - เมนู ไอเทม อาชีพ และการ์ด Pop-Up Duel (Layer 2): 3234/3234 non-dummy (100.0%) | อาชีพหลัก 13/13 (100.0%)
+  - ข้อความระบบในโค้ด ARM9 / OV0 / OV2 (Layer 3): 28/28 (100.0%)
+  - รวมข้อความที่แปลได้ทั้งหมด (Layers 1-3): 7323/7323 บรรทัดจริง (100.0%)
+    (นับรวมแถวโครงสร้างทั้งหมดในคลัง: 7323/7674 = 95.43%)
+  - กราฟิกรูปภาพเมนู UI/ป้าย (Layer 4): 37/770 คอนเทนเนอร์
+
+[ส่วนที่ยังเป็นภาษาญี่ปุ่น / ยังไม่แปลในเวอร์ชันนี้]
+  - กราฟิกป้ายเมนูรูปภาพบางส่วนที่เหลือใน Layer 4 (733/770 คอนเทนเนอร์ เช่น ป้ายชื่อเขตเมืองหรือกราฟิกแบนเนอร์การ์ดย่อย)
+  - แถวโครงสร้าง Dummy ของระบบ (351 แถว "ダミー" ซึ่งไม่แสดงผลในตัวเกม)
+
+[ข้อมูล Clean ROM ต้นฉบับที่รองรับ (Verified Source Identity)]
+  - Game Title : Cid to Chocobo no Fushigi na Dungeon - Toki Wasure no Meikyuu DS+ (Japan)
+  - Product ID : NTR-CCTJ-JPN (Nintendo DS, Decrypted Clean .nds, 134,217,728 Bytes)
+  - Clean SHA-256  : 187f794866c235dac9b9c53d4dbab9a5ce03a956ec10b584afd25280ade3a311
+  - Target SHA-256 : b1892531c570b01fbf4c1e5ea34063f036da61017655b15314ec9a9060fb3365
+  - Patch SHA-256  : 05f0f947aa3f2a28c043aceb6cb29801d708744c48b93ec5d280432d7a1aa270
+
+====================================================================
+วิธีติดตั้งแพตช์ (.xdelta) แบบง่ายทุกอุปกรณ์
+====================================================================
+1) ผ่านเว็บเบราว์เซอร์ (แนะนำ — ใช้ได้ทั้ง PC, Mac, Linux, Android, iOS):
+   - เปิดเว็บ Rom Patcher JS (เช่น https://kotcrab.github.io/xdelta-wasm/ หรือ https://hack64.net/tools/patcher.php)
+   - ช่อง ROM file: เลือกไฟล์ Clean ROM ญี่ปุ่น (.nds) ขนาด 128 MB ของคุณ
+   - ช่อง Patch file: เลือกไฟล์ 01_Patch_XDELTA/Chocobo_Dungeon_DS_Plus_TH_v1.0.0.xdelta
+   - กด Apply patch แล้วนำไฟล์ .nds ที่ได้ไปเปิดเล่นได้ทันที (ไม่มีความจำเป็นต้องใส่โฟลเดอร์ Mod แยก)
+
+2) บน PC แบบออฟไลน์ (Delta Patcher):
+   - วางไฟล์ .nds ต้นฉบับและ .xdelta ไว้ในโฟลเดอร์ชื่อภาษาอังกฤษล้วน (หลีกเลี่ยง path ภาษาไทย)
+   - เปิด Delta Patcher เลือก Original file และ XDelta patch แล้วกด Apply patch
+
+3) การเล่นบน Emulator & เครื่องเล่น:
+   - Emulator ที่รองรับ: DeSmuME 0.9.12+, melonDS, RetroArch (DeSmuME/melonDS), DraStic (Android)
+   - ผลตรวจความเสถียรล่าสุด: ผ่านการรันทดสอบแบบ Zero-Mod บน DeSmuME 0.9.12 แล้ว (ไม่มี Mods/Cheats ซ้อน)
+   - หมายเหตุเครื่องจริง (TWiLight Menu++ บน 3DS/DSi / Flashcart): ยังไม่ได้ทดสอบบนเครื่องจริง (hardware-unverified)
