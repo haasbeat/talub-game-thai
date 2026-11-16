@@ -502,198 +502,78 @@ body.has-inapp-banner main { padding-top: 60px; }
 .external-download-link:hover { color: var(--ink); background: transparent; }
 .external-download-note { margin: 12px 0 0; color: var(--muted); font-size: 12px; line-height: 1.55; }
 
-/* --- Luma3DS LayeredFS Download Panel --- */
+/* --- Luma / LayeredFS Download Panel --- */
 .luma-download-panel {
-  margin: 28px 0 24px;
-  padding: 24px 28px;
+  margin: 20px 0 24px;
+  padding: 18px 24px;
   background: rgba(255, 255, 255, 0.025);
   border: 1px solid var(--line);
-  position: relative;
-  overflow: hidden;
+  border-left: 4px solid #39ff14;
 }
 .luma-download-panel[hidden] {
   display: none !important;
 }
-.luma-download-panel::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 100%;
-  background: #39ff14;
-}
-.luma-panel-top {
+.luma-panel-compact {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 16px;
+  gap: 20px;
   flex-wrap: wrap;
+}
+.luma-compact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 .luma-tag {
-  color: #39ff14;
   font-size: 11px;
-  letter-spacing: 0.08em;
-  font-weight: 600;
-}
-.luma-device-badge {
-  font-size: 12px;
-  color: var(--muted);
-  background: rgba(255, 255, 255, 0.05);
-  padding: 4px 10px;
-  border-radius: 20px;
-  border: 1px solid var(--line);
-}
-.luma-panel-body {
-  display: flex;
-  gap: 32px;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.luma-panel-text {
-  flex: 1 1 380px;
-}
-.luma-panel-text h3 {
-  margin: 0 0 10px;
-  font-size: clamp(20px, 2.5vw, 26px);
-  font-weight: 600;
-  color: var(--ink);
-  line-height: 1.25;
-}
-.luma-panel-text p {
-  margin: 0 0 16px;
-  color: var(--muted);
-  font-size: 13.5px;
-  line-height: 1.6;
-}
-.luma-panel-text code {
+  font-weight: 700;
   color: #39ff14;
-  background: rgba(57, 255, 20, 0.08);
-  padding: 2px 6px;
-  font-size: 12px;
+  letter-spacing: 0.08em;
 }
-.luma-file-meta {
+.luma-file-info {
   display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
-  padding-top: 14px;
-  border-top: 1px solid var(--line);
-}
-.luma-file-meta > div {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.luma-file-meta span {
-  font-size: 10px;
-  color: var(--muted);
-  letter-spacing: 0.05em;
-}
-.luma-file-meta strong {
-  font-size: 13px;
-  color: var(--ink);
-  font-weight: 500;
-}
-.luma-panel-cta {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
   align-items: center;
-  flex: 0 0 auto;
+  gap: 12px;
+  font-size: 14px;
+}
+.luma-file-info strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+.luma-size-badge {
+  font-size: 11px;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 2px 7px;
+  border-radius: 3px;
+  border: 1px solid var(--line);
 }
 .luma-download-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  padding: 16px 28px;
-  background: var(--ink);
-  color: #000;
-  font-size: 15px;
-  font-weight: 600;
+  gap: 10px;
+  padding: 13px 24px;
+  background: #39ff14;
+  color: #05080c;
+  font-size: 14px;
+  font-weight: 700;
   text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+  transition: all 0.2s ease;
   white-space: nowrap;
 }
 .luma-download-btn:hover {
-  background: #39ff14;
+  background: #fff;
   color: #000;
+  box-shadow: 0 0 20px rgba(57, 255, 20, 0.4);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(57, 255, 20, 0.3);
 }
 .luma-download-btn.disabled {
   background: #222;
   color: #666;
   pointer-events: none;
   border: 1px solid #333;
-}
-.luma-subnote {
-  font-size: 10px;
-  color: var(--muted);
-  letter-spacing: 0.04em;
-}
-.luma-divider {
-  margin-top: 24px;
-  padding-top: 20px;
-  border-top: 1px dashed var(--line);
-  text-align: center;
-}
-.luma-divider span {
-  font-size: 12px;
-  color: var(--muted);
-  background: #111;
-  padding: 5px 16px;
-  border-radius: 12px;
-  border: 1px solid var(--line);
-}
-
-/* Luma Hero Action Button */
-.luma-hero-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
-  min-width: 260px;
-  padding: 13px 22px;
-  background: rgba(57, 255, 20, 0.08);
-  border: 1px solid #39ff14;
-  color: #39ff14;
-  font-size: 15px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.25s ease;
-}
-.luma-hero-btn[hidden] {
-  display: none !important;
-}
-.luma-hero-btn:hover {
-  background: #39ff14;
-  color: #05080c;
-  box-shadow: 0 0 24px rgba(57, 255, 20, 0.4);
-  transform: translateY(-2px);
-}
-.luma-hero-btn.disabled {
-  opacity: 0.5;
-  pointer-events: none;
-  border-color: #666;
-  color: #888;
-  background: transparent;
-}
-.luma-hero-badge {
-  padding: 2px 7px;
-  background: rgba(57, 255, 20, 0.15);
-  border: 1px solid rgba(57, 255, 20, 0.4);
-  font-size: 11px;
-  border-radius: 3px;
-  color: inherit;
-  font-family: var(--mono);
-}
-.luma-hero-btn:hover .luma-hero-badge {
-  background: #05080c;
-  color: #39ff14;
-  border-color: #05080c;
 }
 
 /* --- Popular Section (Cinematic Hero Spotlight & Modern Cards) --- */

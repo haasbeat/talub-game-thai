@@ -790,31 +790,6 @@ if (isExternalDownload) {
   externalDownloadLink.addEventListener('click', recordExternalDownload);
 }
 
-const heroLumaBtn = document.querySelector('#hero-luma-btn');
-if (game.luma && heroLumaBtn) {
-  if (game.maintenance) {
-    heroLumaBtn.hidden = false;
-    heroLumaBtn.removeAttribute('href');
-    heroLumaBtn.classList.add('disabled');
-    heroLumaBtn.innerHTML = '<span>กำลังอัปเดตไฟล์ม็อด Luma3DS</span>';
-  } else {
-    heroLumaBtn.hidden = false;
-    heroLumaBtn.href = game.luma.url;
-    heroLumaBtn.addEventListener('click', () => {
-      if (window.PatchStats?.hit) {
-        window.PatchStats.hit(slug).then((value) => {
-          if (value !== null) renderPatchCount(value);
-        });
-      }
-      if (window.PatchStats?.hitDownload) {
-        window.PatchStats.hitDownload(slug);
-      }
-    });
-  }
-} else if (heroLumaBtn) {
-  heroLumaBtn.hidden = true;
-}
-
 const lumaPanel = document.querySelector('#luma-download-panel');
 if (game.luma && lumaPanel) {
   lumaPanel.hidden = false;
@@ -832,6 +807,7 @@ if (game.luma && lumaPanel) {
       lumaLinkEl.innerHTML = '<span>กำลังอัปเดตไฟล์ม็อด</span>';
     } else {
       lumaLinkEl.href = game.luma.url;
+      lumaLinkEl.innerHTML = '<span>ดาวน์โหลดม็อด Luma / LayeredFS</span><span aria-hidden="true">↓</span>';
       lumaLinkEl.addEventListener('click', () => {
         if (window.PatchStats?.hit) {
           window.PatchStats.hit(slug).then((value) => {
