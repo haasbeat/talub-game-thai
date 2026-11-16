@@ -346,22 +346,22 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 009 / 040",
-    "version": "v2.4.7",
+    "version": "v2.4.9",
     "patchDate": "2026-11-16",
     "addedDate": "2026-11-04",
     "addedOrder": 6,
     "addedAt": "2026-11-04T21:10:11+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/dragon-quest-xi.jpg",
-    "manifest": "./assets/patches/dragon-quest-xi/v2.4.7/manifest.json",
+    "manifest": "./assets/patches/dragon-quest-xi/v2.4.9/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN Japan 3DS · 4 GB",
     "region": "Japan",
     "gameCode": "BT3J",
     "sourceName": "Dragon Quest XI - Sugi Sarishi Toki o Motomete (Japan).3ds · 4,294,967,296 bytes",
     "sourceHash": "0f04b51bc6dc145106fb7bc957fa41991cd02d89e0af2c8775db9d12a37a9b74",
-    "outputHash": "2065935dcfa9daea6ed4327fb88cac46d0867c508054610ef7889751d696bc11",
-    "moduleStatus": "เนื้อเรื่องหลัก/ปาร์ตี้ทอล์ก/เมนูหลัก แปลครบทุกหมวด (ฟอนต์ 3D Chakra Petch SemiBold เทียบเท่า MHS + ฟอนต์ 2D Tales of Hearts Pixel)",
+    "outputHash": "23ed747e00ddd4906542286257937f75c90d28453e700692fadfaf57b8f7cbfc",
+    "moduleStatus": "เนื้อเรื่องหลัก/ปาร์ตี้ทอล์ก/เมนูหลัก แปลครบทุกหมวด (ฟอนต์ 3D Chakra Petch SemiBold เทียบเท่า MHS + ฟอนต์ 2D ToH Pixel +1pt & +1px + คีย์บอร์ดชื่อภาษาไทย)",
     "wholeGameCensus": "41,341/41,343 รายการ = 99.995%",
     "details": {
       "thaiTitle": "ดราก้อนเควสต์ XI ฉบับภาษาไทย",
@@ -370,10 +370,10 @@ window.GAME_CATALOG = [
       "studio": null,
       "release": "29 กรกฎาคม 2017",
       "genre": "Role-playing game",
-      "description": "ม็อดภาษาไทยสำหรับ Dragon Quest XI: Sugi Sarishi Toki o Motomete (3DS โซนญี่ปุ่น) เวอร์ชัน v2.4.7",
+      "description": "ม็อดภาษาไทยสำหรับ Dragon Quest XI: Sugi Sarishi Toki o Motomete (3DS โซนญี่ปุ่น) เวอร์ชัน v2.4.9",
       "overview": "ภาคฉลองครบรอบ 30 ปีของซีรีส์ ฉบับ 3DS เล่นได้ทั้งโหมด 3D และโหมด 2D พิกเซลคลาสสิก",
       "story": "โลกโรโตเซทาเซียถูกค้ำจุนด้วยพฤกษาแห่งชีวิต สรรพชีวิตเกิดจากใบของพฤกษาและวิญญาณจะกลับคืนสู่กิ่งก้านเมื่อสิ้นอายุขัย ผู้กล้าคือตัวแทนของพฤกษาที่มีรอยปานบนหลังมือซ้าย ตัวเอกผู้มีรอยปานนี้จึงต้องเผชิญกับตำนานของผู้กล้าโรชและเทพปีศาจที่ถูกผนึกไว้บนฟากฟ้าเป็นดาวผู้กล้า",
-      "localization": "แปลเนื้อเรื่องหลักทั้ง 3 องก์ ปาร์ตี้ทอล์ก เควสต์ย่อย และระบบทั้งโหมด 2D/3D (สถานะโมดูล 100% + สำมะโน 41,341/41,343 รายการ = 99.995% ตามแมนิเฟสต์) ใช้ฟอนต์ 3D Chakra Petch SemiBold เทียบเท่า MHS และฟอนต์ 2D Tales of Hearts Pixel",
+      "localization": "แปลเนื้อเรื่องหลักทั้ง 3 องก์ ปาร์ตี้ทอล์ก เควสต์ย่อย และระบบทั้งโหมด 2D/3D (สถานะโมดูล 100% + สำมะโน 41,341/41,343 รายการ = 99.995% ตามแมนิเฟสต์) ใช้ฟอนต์ 3D Chakra Petch SemiBold เทียบเท่า MHS และฟอนต์ 2D Tales of Hearts Pixel พร้อมขยาย Linear Heap แก้ปัญหาอาการค้างในโหมด 2WAY และระบบคีย์บอร์ดพิมพ์ชื่อภาษาไทยสมบูรณ์",
       "untranslated": "ไม่มีส่วนที่ค้างแปลตามผลสำรวจในรอม",
       "features": [
         "เนื้อเรื่องหลักและบทสนทนารอบกองไฟ (Camp Talk) ภาษาไทย",
@@ -384,10 +384,7 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-16T01:20:00+07:00",
-    "maintenance": true,
-    "maintenanceMessage": "ปิดระบบแพตช์ชั่วคราว อยู่ระหว่างอัปเดตแพตช์ใหม่ ขออภัยในความไม่สะดวกครับ",
-    "status": "กำลังอัปเดต"
+    "verifiedAt": "2026-11-16T19:05:00+07:00"
   },
   {
     "order": 9,
@@ -2819,6 +2816,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "dragon-quest-xi",
+    "title": "Dragon Quest XI: Echoes of an Elusive Age",
+    "platform": "3DS",
+    "version": "v2.4.9",
+    "type": "update",
+    "timestamp": "2026-11-16T19:05:00+07:00",
+    "note": "อัปเดตแพตช์ v2.4.9 (ปลดล็อกขยายหน่วยความจำ NW4C/UI Linear Heap จาก 2.25MB เป็น 5.75MB แก้ปัญหาเกมค้างเปิดเมนู/ของในโหมด 2WAY + อัปเกรดคีย์บอร์ดพิมพ์ชื่อภาษาไทยสมบูรณ์ + ขยายขนาดฟอนต์ 2D และมินิแมพ +1pt + แก้ไขพาร์ติชัน NCSD ติดตั้งบน 3DS เครื่องจริงผ่าน FBI ได้ 100%)"
+  },
   {
     "slug": "unicorn-overlord",
     "title": "Unicorn Overlord",

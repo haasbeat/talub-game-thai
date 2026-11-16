@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "game_slug": "dragon-quest-xi",
+  "game_title": "Dragon Quest XI: Echoes of an Elusive Age",
+  "platform": "3DS",
+  "region": "Japan",
+  "game_code": "BT3J",
+  "patch_version": "v2.4.9",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Dragon Quest XI - Sugi Sarishi Toki o Motomete (Japan).3ds",
+      "size": 4294967296,
+      "sha256": "0f04b51bc6dc145106fb7bc957fa41991cd02d89e0af2c8775db9d12a37a9b74"
+    }
+  ],
+  "patch": {
+    "filename": "Dragon_Quest_XI_Thai_v2.4.9_ChakraPetch_SemiBold.xdelta",
+    "size": 105118664,
+    "sha256": "e034bb6bc8bffdd58326119a808aefedd52cebe2f9ab05c9010c6bd9db08345f",
+    "release_date": "2026-11-16",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/dragon-quest-xi/v2.4.9/Dragon_Quest_XI_Thai_v2.4.9_ChakraPetch_SemiBold.xdelta"
+  },
+  "output": {
+    "filename": "Dragon_Quest_XI_3DS_Thai_v2.4.9.3ds",
+    "size": 4294967296,
+    "sha256": "23ed747e00ddd4906542286257937f75c90d28453e700692fadfaf57b8f7cbfc"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก/ปาร์ตี้ทอล์ก/เมนูหลัก แปลครบทุกหมวด (ฟอนต์ 3D Chakra Petch SemiBold เทียบเท่า MHS + ฟอนต์ 2D ToH Pixel +1pt & +1px + คีย์บอร์ดชื่อภาษาไทย)",
+    "whole_game_census": "41,341/41,343 รายการ = 99.995%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-16T19:05:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "Clean source located by SHA-256 and patched with the site's vendored xdelta3 wasm engine; output matches release checksums and verified with 10/10 hard locks and full IVFC tree.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}
