@@ -649,6 +649,53 @@ body.has-inapp-banner main { padding-top: 60px; }
   border: 1px solid var(--line);
 }
 
+/* Luma Hero Action Button */
+.luma-hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  min-width: 260px;
+  padding: 13px 22px;
+  background: rgba(57, 255, 20, 0.08);
+  border: 1px solid #39ff14;
+  color: #39ff14;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+.luma-hero-btn[hidden] {
+  display: none !important;
+}
+.luma-hero-btn:hover {
+  background: #39ff14;
+  color: #05080c;
+  box-shadow: 0 0 24px rgba(57, 255, 20, 0.4);
+  transform: translateY(-2px);
+}
+.luma-hero-btn.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  border-color: #666;
+  color: #888;
+  background: transparent;
+}
+.luma-hero-badge {
+  padding: 2px 7px;
+  background: rgba(57, 255, 20, 0.15);
+  border: 1px solid rgba(57, 255, 20, 0.4);
+  font-size: 11px;
+  border-radius: 3px;
+  color: inherit;
+  font-family: var(--mono);
+}
+.luma-hero-btn:hover .luma-hero-badge {
+  background: #05080c;
+  color: #39ff14;
+  border-color: #05080c;
+}
+
 /* --- Popular Section (Cinematic Hero Spotlight & Modern Cards) --- */
 .popular-section { padding-top: 52px; padding-bottom: 64px; scroll-margin-top: 96px; }
 .popular-layout { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(320px, 0.95fr); gap: 16px; align-items: stretch; }

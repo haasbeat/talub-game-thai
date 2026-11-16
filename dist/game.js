@@ -504,7 +504,7 @@ for (const item of (window.GAME_CATALOG || [])) {
     gameVersion: item.gameVersion,
     patchDate: item.patchDate,
     format: item.format,
-    status: isExternalDownload ? 'ชุดดาวน์โหลดพร้อมใช้งาน' : item.verified ? 'ผ่านการทดสอบ xdelta' : 'พร้อมทดลอง',
+    status: item.status || (isExternalDownload ? 'ชุดดาวน์โหลดพร้อมใช้งาน' : item.verified ? 'ผ่านการทดสอบ xdelta' : 'พร้อมทดลอง'),
     accept: item.accept,
     fileTypes: item.fileTypes,
     distributionType: item.distributionType || 'browser-patcher',
@@ -512,6 +512,11 @@ for (const item of (window.GAME_CATALOG || [])) {
     downloadFilename: item.downloadFilename,
     downloadSize: item.downloadSize,
     downloadSha256: item.downloadSha256,
+    maintenance: item.maintenance,
+    maintenanceMessage: item.maintenanceMessage,
+    luma: item.luma,
+    moduleStatus: item.moduleStatus,
+    wholeGameCensus: item.wholeGameCensus,
     description: isExternalDownload
       ? `รายละเอียดฉบับภาษาไทยและชุดดาวน์โหลดสำหรับ ${item.title}`
       : `รายละเอียดฉบับภาษาไทยและระบบแพตช์ผ่านเว็บเฉพาะ ${item.title} โดยไฟล์เกมจะประมวลผลภายในอุปกรณ์ของผู้ใช้`,
@@ -783,6 +788,31 @@ if (isExternalDownload) {
   const externalDownloadLink = document.querySelector('#external-download-link');
   externalDownloadLink.href = game.downloadUrl;
   externalDownloadLink.addEventListener('click', recordExternalDownload);
+}
+
+const heroLumaBtn = document.querySelector('#hero-luma-btn');
+if (game.luma && heroLumaBtn) {
+  if (game.maintenance) {
+    heroLumaBtn.hidden = false;
+    heroLumaBtn.removeAttribute('href');
+    heroLumaBtn.classList.add('disabled');
+    heroLumaBtn.innerHTML = '<span>กำลังอัปเดตไฟล์ม็อด Luma3DS</span>';
+  } else {
+    heroLumaBtn.hidden = false;
+    heroLumaBtn.href = game.luma.url;
+    heroLumaBtn.addEventListener('click', () => {
+      if (window.PatchStats?.hit) {
+        window.PatchStats.hit(slug).then((value) => {
+          if (value !== null) renderPatchCount(value);
+        });
+      }
+      if (window.PatchStats?.hitDownload) {
+        window.PatchStats.hitDownload(slug);
+      }
+    });
+  }
+} else if (heroLumaBtn) {
+  heroLumaBtn.hidden = true;
 }
 
 const lumaPanel = document.querySelector('#luma-download-panel');
