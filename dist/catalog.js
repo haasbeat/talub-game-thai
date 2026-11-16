@@ -44,7 +44,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-09T02:30:00+07:00"
+    "verifiedAt": "2026-11-09T02:30:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "01_7th_Dragon_III_Code_VFD_v1.0.5_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1B8Wu8mgviTQWOuuGdmQqXz0O2BrMFM13",
+      "viewUrl": "https://drive.google.com/file/d/1B8Wu8mgviTQWOuuGdmQqXz0O2BrMFM13/view?usp=sharing",
+      "size": 1963124358,
+      "id": "1B8Wu8mgviTQWOuuGdmQqXz0O2BrMFM13"
+    }
   },
   {
     "order": 1,
@@ -73,7 +81,15 @@ window.GAME_CATALOG = [
     "details": null,
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-15T18:56:00+07:00"
+    "verifiedAt": "2026-11-15T18:56:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "02_Bravely_Default_v1.0.5_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1o5p24pIbUMZQIYXZ9iwN-H_fubg2CZws",
+      "viewUrl": "https://drive.google.com/file/d/1o5p24pIbUMZQIYXZ9iwN-H_fubg2CZws/view?usp=sharing",
+      "size": 4006507,
+      "id": "1o5p24pIbUMZQIYXZ9iwN-H_fubg2CZws"
+    }
   },
   {
     "order": 2,
@@ -120,7 +136,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-09T00:30:00+07:00"
+    "verifiedAt": "2026-11-09T00:30:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "03_CardFight_Vanguard_G_v2.0.0_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1jbnl19k5s8SCUE-l5XthLmjAotfv3NS8",
+      "viewUrl": "https://drive.google.com/file/d/1jbnl19k5s8SCUE-l5XthLmjAotfv3NS8/view?usp=sharing",
+      "size": 12654479,
+      "id": "1jbnl19k5s8SCUE-l5XthLmjAotfv3NS8"
+    }
   },
   {
     "order": 3,
@@ -167,7 +191,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-11T17:10:00+07:00"
+    "verifiedAt": "2026-11-11T17:10:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "04_Dragon_Ball_Fusions_v1.1.0_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1kcaY5Q-WBlw875qYYJM-ty5MvX7fTJZL",
+      "viewUrl": "https://drive.google.com/file/d/1kcaY5Q-WBlw875qYYJM-ty5MvX7fTJZL/view?usp=sharing",
+      "size": 1533450,
+      "id": "1kcaY5Q-WBlw875qYYJM-ty5MvX7fTJZL"
+    }
   },
   {
     "order": 4,
@@ -214,7 +246,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-09T00:07:00+07:00"
+    "verifiedAt": "2026-11-09T00:07:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "05_DQ_Monsters_Joker_3_Professional_v1.0.6_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1ngCWjfnHP2k5IjjEpfdE2aPbpvpxUJ3q",
+      "viewUrl": "https://drive.google.com/file/d/1ngCWjfnHP2k5IjjEpfdE2aPbpvpxUJ3q/view?usp=sharing",
+      "size": 6408322,
+      "id": "1ngCWjfnHP2k5IjjEpfdE2aPbpvpxUJ3q"
+    }
   },
   {
     "order": 5,
@@ -261,7 +301,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-04T22:40:00+07:00"
+    "verifiedAt": "2026-11-04T22:40:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "06_Dragon_Quest_VII_v1.6.6_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1kcuORSrcp84-ZDVMZqSVfMR1p04ltulJ",
+      "viewUrl": "https://drive.google.com/file/d/1kcuORSrcp84-ZDVMZqSVfMR1p04ltulJ/view?usp=sharing",
+      "size": 7280882,
+      "id": "1kcuORSrcp84-ZDVMZqSVfMR1p04ltulJ"
+    }
   },
   {
     "order": 6,
@@ -290,7 +338,15 @@ window.GAME_CATALOG = [
     "details": null,
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-04T22:40:00+07:00"
+    "verifiedAt": "2026-11-04T22:40:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "07_Dragon_Quest_VII_Isan_v1.6.0_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1SjBKlocLcEraYPz86DAA6h7MrE_lChjo",
+      "viewUrl": "https://drive.google.com/file/d/1SjBKlocLcEraYPz86DAA6h7MrE_lChjo/view?usp=sharing",
+      "size": 7407966,
+      "id": "1SjBKlocLcEraYPz86DAA6h7MrE_lChjo"
+    }
   },
   {
     "order": 7,
@@ -337,7 +393,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-08T21:45:00+07:00"
+    "verifiedAt": "2026-11-08T21:45:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "08_Dragon_Quest_VIII_v1.5.0_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1iwAhIrgFTWZCN5mXiKUlgqjOscpMesHT",
+      "viewUrl": "https://drive.google.com/file/d/1iwAhIrgFTWZCN5mXiKUlgqjOscpMesHT/view?usp=sharing",
+      "size": 2281994,
+      "id": "1iwAhIrgFTWZCN5mXiKUlgqjOscpMesHT"
+    }
   },
   {
     "order": 8,
@@ -384,7 +448,18 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-16T23:30:00+07:00"
+    "verifiedAt": "2026-11-16T23:30:00+07:00",
+    "maintenance": true,
+    "maintenanceMessage": "ปิดระบบแพตช์ชั่วคราว อยู่ระหว่างอัปเดตแพตช์ใหม่ ขออภัยในความไม่สะดวกครับ",
+    "status": "กำลังอัปเดต",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "09_Dragon_Quest_XI_v2.5.5_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1eiRO-Maf1mMQeFnXLX1RPyUwi3BSWow1",
+      "viewUrl": "https://drive.google.com/file/d/1eiRO-Maf1mMQeFnXLX1RPyUwi3BSWow1/view?usp=sharing",
+      "size": 41550237,
+      "id": "1eiRO-Maf1mMQeFnXLX1RPyUwi3BSWow1"
+    }
   },
   {
     "order": 9,
@@ -413,7 +488,15 @@ window.GAME_CATALOG = [
     "details": null,
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-09T00:33:00+07:00"
+    "verifiedAt": "2026-11-09T00:33:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "10_EX_Troopers_v1.0.4_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1hjuwTHLo2-VEMPcVPaT9OEQ1eufIMtKO",
+      "viewUrl": "https://drive.google.com/file/d/1hjuwTHLo2-VEMPcVPaT9OEQ1eufIMtKO/view?usp=sharing",
+      "size": 81139792,
+      "id": "1hjuwTHLo2-VEMPcVPaT9OEQ1eufIMtKO"
+    }
   },
   {
     "order": 10,
@@ -461,7 +544,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-14T16:05:00+07:00"
+    "verifiedAt": "2026-11-14T16:05:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "11_Etrian_Odyssey_2_Untold_v1.0.0_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1SgOg45x9m-bEFGxaofHZMNs2afe3iM-Z",
+      "viewUrl": "https://drive.google.com/file/d/1SgOg45x9m-bEFGxaofHZMNs2afe3iM-Z/view?usp=sharing",
+      "size": 290731812,
+      "id": "1SgOg45x9m-bEFGxaofHZMNs2afe3iM-Z"
+    }
   },
   {
     "order": 11,
@@ -508,7 +599,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-07T23:03:00+07:00"
+    "verifiedAt": "2026-11-07T23:03:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "12_Etrian_Odyssey_IV_v1.0.1_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1NhJJeF3IdqmxZA_cZAMojn9ZPmXPFyg4",
+      "viewUrl": "https://drive.google.com/file/d/1NhJJeF3IdqmxZA_cZAMojn9ZPmXPFyg4/view?usp=sharing",
+      "size": 909061,
+      "id": "1NhJJeF3IdqmxZA_cZAMojn9ZPmXPFyg4"
+    }
   },
   {
     "order": 12,
@@ -537,7 +636,15 @@ window.GAME_CATALOG = [
     "details": null,
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-09T02:54:00+07:00"
+    "verifiedAt": "2026-11-09T02:54:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "13_Etrian_Odyssey_Untold_v1.0.1_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1AbqWHz_LDlA5DU1MTlj1NRqbRmK8PqQH",
+      "viewUrl": "https://drive.google.com/file/d/1AbqWHz_LDlA5DU1MTlj1NRqbRmK8PqQH/view?usp=sharing",
+      "size": 335163060,
+      "id": "1AbqWHz_LDlA5DU1MTlj1NRqbRmK8PqQH"
+    }
   },
   {
     "order": 13,
@@ -584,7 +691,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-10T00:49:00+07:00"
+    "verifiedAt": "2026-11-10T00:49:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "14_Ever_Oasis_v1.0.4_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1ynPr_dh8KnMLX0-d9aluqa_m-C7KNMtO",
+      "viewUrl": "https://drive.google.com/file/d/1ynPr_dh8KnMLX0-d9aluqa_m-C7KNMtO/view?usp=sharing",
+      "size": 980930,
+      "id": "1ynPr_dh8KnMLX0-d9aluqa_m-C7KNMtO"
+    }
   },
   {
     "order": 14,
@@ -613,7 +728,15 @@ window.GAME_CATALOG = [
     "details": null,
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-09T02:30:00+07:00"
+    "verifiedAt": "2026-11-09T02:30:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "15_Final_Fantasy_Explorers_v1.0.1_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1q5_UFNF7s1bMyi_tRAoUYOEDJya9ZpNR",
+      "viewUrl": "https://drive.google.com/file/d/1q5_UFNF7s1bMyi_tRAoUYOEDJya9ZpNR/view?usp=sharing",
+      "size": 29108804,
+      "id": "1q5_UFNF7s1bMyi_tRAoUYOEDJya9ZpNR"
+    }
   },
   {
     "order": 15,
@@ -642,7 +765,15 @@ window.GAME_CATALOG = [
     "details": null,
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-08T16:00:00+07:00"
+    "verifiedAt": "2026-11-08T16:00:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "16_Inazuma_Eleven_123_v1.0.1_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1-3-4ZRXhXmz1NlgY_ev20VIa7TTI5eGi",
+      "viewUrl": "https://drive.google.com/file/d/1-3-4ZRXhXmz1NlgY_ev20VIa7TTI5eGi/view?usp=sharing",
+      "size": 986042456,
+      "id": "1-3-4ZRXhXmz1NlgY_ev20VIa7TTI5eGi"
+    }
   },
   {
     "order": 16,
@@ -689,7 +820,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-15T10:00:00+07:00"
+    "verifiedAt": "2026-11-15T10:00:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "17_Inazuma_Eleven_GO_Galaxy_Supernova_v1.0.0_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=17FpoiAlzISGd91lC1Bn3OYTOEOFf7ifK",
+      "viewUrl": "https://drive.google.com/file/d/17FpoiAlzISGd91lC1Bn3OYTOEOFf7ifK/view?usp=sharing",
+      "size": 1147202358,
+      "id": "17FpoiAlzISGd91lC1Bn3OYTOEOFf7ifK"
+    }
   },
   {
     "order": 17,
@@ -736,7 +875,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-11T12:00:00+07:00"
+    "verifiedAt": "2026-11-11T12:00:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "18_Inazuma_Eleven_GO_Chrono_Stones_Thunderflash_v1.0.2_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=119IbQ0CAAT-64dJSNYlrxTidMeIBDauT",
+      "viewUrl": "https://drive.google.com/file/d/119IbQ0CAAT-64dJSNYlrxTidMeIBDauT/view?usp=sharing",
+      "size": 694213870,
+      "id": "119IbQ0CAAT-64dJSNYlrxTidMeIBDauT"
+    }
   },
   {
     "order": 18,
@@ -765,7 +912,15 @@ window.GAME_CATALOG = [
     "details": null,
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-11T12:00:00+07:00"
+    "verifiedAt": "2026-11-11T12:00:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "19_Inazuma_Eleven_GO_Chrono_Stones_Wildfire_v1.0.1_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1taHjnIocNz208dTqYuIRJB9m2h0ATg0E",
+      "viewUrl": "https://drive.google.com/file/d/1taHjnIocNz208dTqYuIRJB9m2h0ATg0E/view?usp=sharing",
+      "size": 694298452,
+      "id": "1taHjnIocNz208dTqYuIRJB9m2h0ATg0E"
+    }
   },
   {
     "order": 19,
@@ -812,7 +967,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-10T10:38:00+07:00"
+    "verifiedAt": "2026-11-10T10:38:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "20_Inazuma_Eleven_GO_Light_v1.2.0_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1Z-c1O_lZtTkVHiz0Dl2frXOrTv5u_d_p",
+      "viewUrl": "https://drive.google.com/file/d/1Z-c1O_lZtTkVHiz0Dl2frXOrTv5u_d_p/view?usp=sharing",
+      "size": 658280897,
+      "id": "1Z-c1O_lZtTkVHiz0Dl2frXOrTv5u_d_p"
+    }
   },
   {
     "order": 20,
@@ -859,7 +1022,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-05T15:00:00+07:00"
+    "verifiedAt": "2026-11-05T15:00:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "21_Inazuma_Eleven_GO_Shadow_v1.0.0_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=12JZMkK8SFuiQ8zTekerryIhVZZWOaZVa",
+      "viewUrl": "https://drive.google.com/file/d/12JZMkK8SFuiQ8zTekerryIhVZZWOaZVa/view?usp=sharing",
+      "size": 658270404,
+      "id": "12JZMkK8SFuiQ8zTekerryIhVZZWOaZVa"
+    }
   },
   {
     "order": 21,
@@ -906,7 +1077,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-09T02:45:00+07:00"
+    "verifiedAt": "2026-11-09T02:45:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "22_Lost_Heroes_v1.0.2_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=16xi8GDvFlXk6VEImH7aBsGdIWUn9CIbl",
+      "viewUrl": "https://drive.google.com/file/d/16xi8GDvFlXk6VEImH7aBsGdIWUn9CIbl/view?usp=sharing",
+      "size": 60191387,
+      "id": "16xi8GDvFlXk6VEImH7aBsGdIWUn9CIbl"
+    }
   },
   {
     "order": 22,
@@ -953,7 +1132,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-16T14:32:00+07:00"
+    "verifiedAt": "2026-11-16T14:32:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "23_Lost_Heroes_2_v1.0.0_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=10fkvWA8jHwLzImqz149pnJs5iW8FiZpE",
+      "viewUrl": "https://drive.google.com/file/d/10fkvWA8jHwLzImqz149pnJs5iW8FiZpE/view?usp=sharing",
+      "size": 69260439,
+      "id": "10fkvWA8jHwLzImqz149pnJs5iW8FiZpE"
+    }
   },
   {
     "order": 23,
@@ -982,7 +1169,15 @@ window.GAME_CATALOG = [
     "details": null,
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-10T01:09:30+07:00"
+    "verifiedAt": "2026-11-10T01:09:30+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "24_Metal_Max_4_v1.3.6_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1xw9xySICdjO-oKldIXV1mi7Yvhc9ONpa",
+      "viewUrl": "https://drive.google.com/file/d/1xw9xySICdjO-oKldIXV1mi7Yvhc9ONpa/view?usp=sharing",
+      "size": 117014435,
+      "id": "1xw9xySICdjO-oKldIXV1mi7Yvhc9ONpa"
+    }
   },
   {
     "order": 24,
@@ -1029,7 +1224,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-09T03:10:00+07:00"
+    "verifiedAt": "2026-11-09T03:10:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "25_Monster_Hunter_Stories_v1.0.1_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=161lMHszaYVzf0dr0sXCtmfJN4oIqihks",
+      "viewUrl": "https://drive.google.com/file/d/161lMHszaYVzf0dr0sXCtmfJN4oIqihks/view?usp=sharing",
+      "size": 6277768,
+      "id": "161lMHszaYVzf0dr0sXCtmfJN4oIqihks"
+    }
   },
   {
     "order": 25,
@@ -1076,7 +1279,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-08T01:30:00+07:00"
+    "verifiedAt": "2026-11-08T01:30:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "26_New_Love_Plus_Plus_v2.0.2_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1K0hJBwzthlwzqvAREh-PxESU6cl5qcTW",
+      "viewUrl": "https://drive.google.com/file/d/1K0hJBwzthlwzqvAREh-PxESU6cl5qcTW/view?usp=sharing",
+      "size": 1342340624,
+      "id": "1K0hJBwzthlwzqvAREh-PxESU6cl5qcTW"
+    }
   },
   {
     "order": 26,
@@ -1123,7 +1334,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-09T19:40:00+07:00"
+    "verifiedAt": "2026-11-09T19:40:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "27_Phoenix_Wright_Trilogy_v1.2.5_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1QCApO3OCdT1O5ah2WRvOAe6gYS2fAMPO",
+      "viewUrl": "https://drive.google.com/file/d/1QCApO3OCdT1O5ah2WRvOAe6gYS2fAMPO/view?usp=sharing",
+      "size": 126630562,
+      "id": "1QCApO3OCdT1O5ah2WRvOAe6gYS2fAMPO"
+    }
   },
   {
     "order": 27,
@@ -1170,7 +1389,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-08T23:05:00+07:00"
+    "verifiedAt": "2026-11-08T23:05:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "28_Professor_Layton_Miracle_Mask_v1.3.3_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1pU4Z2wf0NY-Ok1Tjdh-zHIuyw0svEjii",
+      "viewUrl": "https://drive.google.com/file/d/1pU4Z2wf0NY-Ok1Tjdh-zHIuyw0svEjii/view?usp=sharing",
+      "size": 115532468,
+      "id": "1pU4Z2wf0NY-Ok1Tjdh-zHIuyw0svEjii"
+    }
   },
   {
     "order": 28,
@@ -1219,7 +1446,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-14T20:05:00+07:00"
+    "verifiedAt": "2026-11-14T20:05:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "29_Professor_Layton_vs_Phoenix_Wright_v1.0.0_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1WxP5HvjdEj-P3zPUZgqjy_SIY91hFXgy",
+      "viewUrl": "https://drive.google.com/file/d/1WxP5HvjdEj-P3zPUZgqjy_SIY91hFXgy/view?usp=sharing",
+      "size": 341226800,
+      "id": "1WxP5HvjdEj-P3zPUZgqjy_SIY91hFXgy"
+    }
   },
   {
     "order": 29,
@@ -1267,7 +1502,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-10T12:47:30.352473+07:00"
+    "verifiedAt": "2026-11-10T12:47:30.352473+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "30_Radiant_Historia_Perfect_Chronology_v1.0.0_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1_DWbUaebW06yGx0rGG8YuMWXebcKzjyz",
+      "viewUrl": "https://drive.google.com/file/d/1_DWbUaebW06yGx0rGG8YuMWXebcKzjyz/view?usp=sharing",
+      "size": 5598474,
+      "id": "1_DWbUaebW06yGx0rGG8YuMWXebcKzjyz"
+    }
   },
   {
     "order": 30,
@@ -1314,7 +1557,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-08T20:55:00+07:00"
+    "verifiedAt": "2026-11-08T20:55:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "31_Rune_Factory_4_v1.0.5_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1R_PetrTsASTNanfH65tgIXV6yR2KZmrn",
+      "viewUrl": "https://drive.google.com/file/d/1R_PetrTsASTNanfH65tgIXV6yR2KZmrn/view?usp=sharing",
+      "size": 2863348,
+      "id": "1R_PetrTsASTNanfH65tgIXV6yR2KZmrn"
+    }
   },
   {
     "order": 31,
@@ -1343,7 +1594,15 @@ window.GAME_CATALOG = [
     "details": null,
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-09T00:36:00+07:00"
+    "verifiedAt": "2026-11-09T00:36:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "32_Shin_Megami_Tensei_IV_v1.3.5_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1LKYG9IaEAUxhw58oggvWdK4608F4C9oc",
+      "viewUrl": "https://drive.google.com/file/d/1LKYG9IaEAUxhw58oggvWdK4608F4C9oc/view?usp=sharing",
+      "size": 45238499,
+      "id": "1LKYG9IaEAUxhw58oggvWdK4608F4C9oc"
+    }
   },
   {
     "order": 32,
@@ -1390,7 +1649,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-09T02:05:00+07:00"
+    "verifiedAt": "2026-11-09T02:05:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "33_Shin_Megami_Tensei_Strange_Journey_Redux_v1.0.5_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1ikHqmDH0Eprpb7s4hgN7l73OhcL1uznd",
+      "viewUrl": "https://drive.google.com/file/d/1ikHqmDH0Eprpb7s4hgN7l73OhcL1uznd/view?usp=sharing",
+      "size": 36365875,
+      "id": "1ikHqmDH0Eprpb7s4hgN7l73OhcL1uznd"
+    }
   },
   {
     "order": 33,
@@ -1438,7 +1705,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-10T21:50:00+07:00"
+    "verifiedAt": "2026-11-10T21:50:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "34_Tales_of_the_Abyss_v1.0.7_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1dI89RkyU_rL3Em5y3-SxiGrUzezQGHXp",
+      "viewUrl": "https://drive.google.com/file/d/1dI89RkyU_rL3Em5y3-SxiGrUzezQGHXp/view?usp=sharing",
+      "size": 288281824,
+      "id": "1dI89RkyU_rL3Em5y3-SxiGrUzezQGHXp"
+    }
   },
   {
     "order": 34,
@@ -1484,7 +1759,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-08T20:52:00+07:00"
+    "verifiedAt": "2026-11-08T20:52:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "35_Theatrhythm_Dragon_Quest_v1.2.2_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1yF2dHtmr63v0HITEVyQfcVQe-P-Em5Bt",
+      "viewUrl": "https://drive.google.com/file/d/1yF2dHtmr63v0HITEVyQfcVQe-P-Em5Bt/view?usp=sharing",
+      "size": 31281095,
+      "id": "1yF2dHtmr63v0HITEVyQfcVQe-P-Em5Bt"
+    }
   },
   {
     "order": 35,
@@ -1532,7 +1815,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-09T00:45:00+07:00"
+    "verifiedAt": "2026-11-09T00:45:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "36_Time_Travelers_v1.0.3_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1sFzmPh6pDgwQt2Z6-cTRsOv5nhn2DUFY",
+      "viewUrl": "https://drive.google.com/file/d/1sFzmPh6pDgwQt2Z6-cTRsOv5nhn2DUFY/view?usp=sharing",
+      "size": 5595441,
+      "id": "1sFzmPh6pDgwQt2Z6-cTRsOv5nhn2DUFY"
+    }
   },
   {
     "order": 36,
@@ -1579,7 +1870,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-09T00:51:00+07:00"
+    "verifiedAt": "2026-11-09T00:51:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "37_Xenoblade_Chronicles_3D_v1.0.8_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1n4VQ6_grgEf1FxVeu3d9wN07aKCtDHaJ",
+      "viewUrl": "https://drive.google.com/file/d/1n4VQ6_grgEf1FxVeu3d9wN07aKCtDHaJ/view?usp=sharing",
+      "size": 101745164,
+      "id": "1n4VQ6_grgEf1FxVeu3d9wN07aKCtDHaJ"
+    }
   },
   {
     "order": 37,
@@ -1608,7 +1907,15 @@ window.GAME_CATALOG = [
     "details": null,
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-08T01:40:00+07:00"
+    "verifiedAt": "2026-11-08T01:40:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "38_Yo_kai_Watch_v2.8.2_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1zlfQjFMMMO9eVzOo-XjPimUIDXCETnn5",
+      "viewUrl": "https://drive.google.com/file/d/1zlfQjFMMMO9eVzOo-XjPimUIDXCETnn5/view?usp=sharing",
+      "size": 409415657,
+      "id": "1zlfQjFMMMO9eVzOo-XjPimUIDXCETnn5"
+    }
   },
   {
     "order": 38,
@@ -1655,7 +1962,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-09T00:34:00+07:00"
+    "verifiedAt": "2026-11-09T00:34:00+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "39_Yo_kai_Watch_2_Psychic_Specters_v1.2.1_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1pC55Wgf67CyzDdijx8MhYFFbamicA7B_",
+      "viewUrl": "https://drive.google.com/file/d/1pC55Wgf67CyzDdijx8MhYFFbamicA7B_/view?usp=sharing",
+      "size": 2036229632,
+      "id": "1pC55Wgf67CyzDdijx8MhYFFbamicA7B_"
+    }
   },
   {
     "order": 39,
@@ -1702,7 +2017,15 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-08T01:36:49+07:00"
+    "verifiedAt": "2026-11-08T01:36:49+07:00",
+    "luma": {
+      "format": "LayeredFS / Luma3DS",
+      "filename": "40_Yo_kai_Watch_3_v1.0.5_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1gMsUIebZGdZgjh1I4IEk4ZqxKjDQr7I6",
+      "viewUrl": "https://drive.google.com/file/d/1gMsUIebZGdZgjh1I4IEk4ZqxKjDQr7I6/view?usp=sharing",
+      "size": 1645154419,
+      "id": "1gMsUIebZGdZgjh1I4IEk4ZqxKjDQr7I6"
+    }
   },
   {
     "order": 40,

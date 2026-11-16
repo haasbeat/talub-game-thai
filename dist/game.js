@@ -784,6 +784,39 @@ if (isExternalDownload) {
   externalDownloadLink.href = game.downloadUrl;
   externalDownloadLink.addEventListener('click', recordExternalDownload);
 }
+
+const lumaPanel = document.querySelector('#luma-download-panel');
+if (game.luma && lumaPanel) {
+  lumaPanel.hidden = false;
+  const lumaFileEl = document.querySelector('#luma-download-filename');
+  const lumaSizeEl = document.querySelector('#luma-download-size');
+  const lumaVersionEl = document.querySelector('#luma-download-version');
+  const lumaLinkEl = document.querySelector('#luma-download-link');
+  if (lumaFileEl) lumaFileEl.textContent = game.luma.filename;
+  if (lumaSizeEl) lumaSizeEl.textContent = formatBytes(game.luma.size || 0);
+  if (lumaVersionEl) lumaVersionEl.textContent = game.version;
+  if (lumaLinkEl) {
+    if (game.maintenance) {
+      lumaLinkEl.removeAttribute('href');
+      lumaLinkEl.classList.add('disabled');
+      lumaLinkEl.innerHTML = '<span>กำลังอัปเดตไฟล์ม็อด</span>';
+    } else {
+      lumaLinkEl.href = game.luma.url;
+      lumaLinkEl.addEventListener('click', () => {
+        if (window.PatchStats?.hit) {
+          window.PatchStats.hit(slug).then((value) => {
+            if (value !== null) renderPatchCount(value);
+          });
+        }
+        if (window.PatchStats?.hitDownload) {
+          window.PatchStats.hitDownload(slug);
+        }
+      });
+    }
+  }
+} else if (lumaPanel) {
+  lumaPanel.hidden = true;
+}
 document.querySelector('#detail-features').replaceChildren(...details.features.map((feature, index) => {
   const item = document.createElement('li');
   item.innerHTML = `<span class="mono">${String(index + 1).padStart(2, '0')}</span><strong></strong>`;

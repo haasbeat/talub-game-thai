@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=189" />
+    <link rel="stylesheet" href="./styles.css?v=190" />
   </head>
   <body class="detail-page">
     <div class="cursor" aria-hidden="true"></div>
@@ -200,6 +200,35 @@
               <p class="external-download-note">ลิงก์จะเปิดหน้าดาวน์โหลดภายนอก โปรดตรวจชื่อไฟล์และเวอร์ชันก่อนติดตั้ง · สถิตินับเมื่อกดลิงก์ ไม่ได้ยืนยันว่าติดตั้งสำเร็จ</p>
             </div>
 
+            <!-- Luma3DS LayeredFS Download Panel -->
+            <div id="luma-download-panel" class="luma-download-panel" hidden>
+              <div class="luma-panel-top">
+                <span class="luma-tag mono">LUMA3DS MOD / LAYEREDFS</span>
+                <span class="luma-device-badge">🎮 ม็อดสำหรับเครื่อง 3DS และ Citra</span>
+              </div>
+              <div class="luma-panel-body">
+                <div class="luma-panel-text">
+                  <h3>ดาวน์โหลดม็อด Luma3DS สำหรับเกมนี้</h3>
+                  <p>ดาวน์โหลดไฟล์ม็อดเฉพาะเกมนี้ นำไปแตกใส่โฟลเดอร์ <code>/luma/titles/</code> ใน SD Card เล่นบนเครื่อง 3DS ได้ทันที <b>โดยไม่ต้องใช้ไฟล์ ROM ต้นฉบับ</b> (แนะนำเป็นพิเศษสำหรับผู้ใช้ iOS ที่ไฟล์ ROM ใหญ่เกิน 1.07 GB)</p>
+                  <div class="luma-file-meta">
+                    <div><span class="mono">FILE</span><strong id="luma-download-filename">—</strong></div>
+                    <div><span class="mono">SIZE</span><strong id="luma-download-size">—</strong></div>
+                    <div><span class="mono">FORMAT</span><strong>LayeredFS / Luma3DS</strong></div>
+                  </div>
+                </div>
+                <div class="luma-panel-cta">
+                  <a id="luma-download-link" class="luma-download-btn hover-target" href="#" target="_blank" rel="noopener noreferrer">
+                    <span>ดาวน์โหลดม็อด Luma3DS</span>
+                    <span aria-hidden="true">↓</span>
+                  </a>
+                  <span class="luma-subnote mono">DIRECT GOOGLE DRIVE LINK · สถิตินับรวมกับเว็บ</span>
+                </div>
+              </div>
+              <div class="luma-divider">
+                <span>หรือลากไฟล์ ROM ด้านล่างเพื่อแพตช์ผ่านเบราว์เซอร์ (สำหรับ PC / Android)</span>
+              </div>
+            </div>
+
             <div class="patcher-grid" data-xdelta-only>
               <div id="drop-zone" class="drop-zone hover-target" tabindex="0" role="button" aria-label="เลือกไฟล์ ROM สำหรับเกมนี้">
                 <input id="rom-input" type="file" accept=".nds" hidden />
@@ -305,7 +334,7 @@
           <div class="support-note mono"><span>PLAY</span><span>TRANSLATE</span><span>PRESERVE</span></div>
         </div>
         <figure class="support-qr-card">
-          <img src="./assets/support/talub-promptpay-qr.jpg?v=189" alt="QR PromptPay สำหรับสนับสนุนเพจตลับเกมภาษาไทย" />
+          <img src="./assets/support/talub-promptpay-qr.jpg?v=190" alt="QR PromptPay สำหรับสนับสนุนเพจตลับเกมภาษาไทย" />
           <figcaption>
             <strong>สแกน QR เพื่อสนับสนุนผลงาน</strong>
             <span>ขอบคุณที่ช่วยให้โปรเจกต์แปลเกมเก่าเดินหน้าต่อ</span>
@@ -352,9 +381,9 @@
     </footer>
 
     <div id="toast" class="toast" role="status" aria-live="polite">พร้อมประมวลผลภายในอุปกรณ์</div>
-    <script defer src="./catalog.js?v=189"></script>
-    <script defer src="./patch-stats.js?v=189"></script>
+    <script defer src="./catalog.js?v=190"></script>
+    <script defer src="./patch-stats.js?v=190"></script>
     <script defer src="./assets/engine/hash/sha256.js"></script>
-    <script defer src="./game.js?v=189"></script>
+    <script defer src="./game.js?v=190"></script>
   </body>
 </html>
