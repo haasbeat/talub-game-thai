@@ -716,11 +716,13 @@ if (isExternalDownload) {
   window.PatchStats.get(slug).then(renderPatchCount);
 }
 document.querySelector('#detail-format').textContent = game.format;
-const statusText = (game.moduleStatus && game.moduleStatus.length <= 40)
-  ? game.moduleStatus
-  : (game.status === 'ยืนยันข้อมูลชุดดาวน์โหลดแล้ว' || game.status === 'ชุดดาวน์โหลดพร้อมใช้งาน'
-      ? (game.moduleStatus ? game.moduleStatus.slice(0, 32) : 'แปลสมบูรณ์')
-      : game.status);
+const statusText = game.maintenance
+  ? 'กำลังอัปเดต'
+  : (game.moduleStatus && game.moduleStatus.length <= 40)
+    ? game.moduleStatus
+    : (game.status === 'ยืนยันข้อมูลชุดดาวน์โหลดแล้ว' || game.status === 'ชุดดาวน์โหลดพร้อมใช้งาน'
+        ? (game.moduleStatus ? game.moduleStatus.slice(0, 32) : 'แปลสมบูรณ์')
+        : game.status);
 document.querySelector('#detail-status').textContent = statusText;
 document.querySelector('#workspace-game').textContent = game.title;
 document.querySelector('#workspace-platform').textContent = game.platform;
@@ -916,7 +918,35 @@ if (iosWarningBanner && isIOS && !isExternalDownload) {
   iosWarningBanner.hidden = false;
 }
 
-if (game.manifest && !isExternalDownload) {
+if (game.maintenance) {
+  workspaceStatus.textContent = 'UPDATING · กำลังอัปเดต';
+  document.querySelector('#detail-status').textContent = 'กำลังอัปเดต';
+
+  if (dropZone) {
+    dropZone.classList.add('is-disabled');
+    dropZone.style.pointerEvents = 'none';
+    dropZone.style.opacity = '0.75';
+    dropZone.querySelector('h3').textContent = 'ปิดระบบแพตช์ชั่วคราว';
+    dropZone.querySelector('p').innerHTML = '<span style="color:#d97706;font-weight:600;">⚠️ กำลังอัปเดตแพตช์ใหม่</span><br />จะเปิดให้ใช้งานอีกครั้งเร็วๆ นี้ ขออภัยในความไม่สะดวกครับ';
+    const romInput = document.querySelector('#rom-input');
+    if (romInput) romInput.disabled = true;
+  }
+
+  workspaceNote.innerHTML = '<span style="color:#d97706;font-weight:600;">⚠️ กำลังอัปเดต:</span> ระบบแพตช์ของเกมนี้ปิดปรับปรุงชั่วคราวเพื่ออัปเดตแพตช์ใหม่ ขออภัยในความไม่สะดวกครับ';
+
+  if (patchButton) {
+    patchButton.disabled = true;
+    patchButton.style.cursor = 'not-allowed';
+    patchButton.style.opacity = '0.6';
+    patchButton.querySelector('span').textContent = 'ปิดแพตช์ชั่วคราว (กำลังอัปเดต)';
+  }
+
+  const subPanel = document.querySelector('.workspace-sub-panel');
+  if (subPanel) subPanel.hidden = true;
+
+  const iosBanner = document.querySelector('#ios-warning-banner');
+  if (iosBanner) iosBanner.hidden = true;
+} else if (game.manifest && !isExternalDownload) {
   workspaceStatus.textContent = 'XDELTA3 READY';
   workspaceNote.innerHTML = '<span>แพตช์จริง</span> ระบบจะตรวจขนาดและ SHA-256 ของ ROM ต้นฉบับ จากนั้นรัน xdelta3 ภายในเบราว์เซอร์ ไฟล์ ROM จะไม่ถูกอัปโหลดออกจากเครื่อง แนะนำให้ทดสอบบนคอมพิวเตอร์ก่อน';
   void manifestPromise.then((manifest) => {

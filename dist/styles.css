@@ -401,6 +401,8 @@ body.has-inapp-banner main { padding-top: 60px; }
 .status-badge.is-new { background: linear-gradient(115deg, #fef3c7 15%, #ffffff 50%, #fef3c7 85%); background-size: 200% 100%; animation: shimmerSweep 3s infinite linear; color: #b45309; border: 1px solid #fde68a; box-shadow: 0 1px 3px rgba(245, 158, 11, 0.15); }
 .status-badge.is-new .beacon-dot { width: 5px; height: 5px; background: #d97706; border-radius: 50%; display: inline-block; animation: pulseRing 1.8s infinite cubic-bezier(0.45, 0, 0.55, 1); }
 .status-badge.is-update { background: #e0f2fe; color: #0284c7; border: 1px solid #bae6fd; }
+.status-badge.is-updating { background: #fffbeb; color: #b45309; border: 1px solid #fde68a; }
+.status-badge.is-updating .beacon-dot { width: 5px; height: 5px; background: #f59e0b; border-radius: 50%; display: inline-block; animation: pulseRing 1.8s infinite cubic-bezier(0.45, 0, 0.55, 1); }
 .platform-empty { min-height: 380px; display: grid; place-content: center; text-align: center; border: 1px solid var(--line); border-radius: 80px 8px 80px 8px; background: #ecece8; }
 .platform-empty[hidden] { display: none; }
 .platform-empty .mono { color: var(--muted); }

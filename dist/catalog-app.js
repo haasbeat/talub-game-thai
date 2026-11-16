@@ -354,24 +354,34 @@ const createGameCard = (game, index) => {
   badgeGroup.append(platformTag, versionBadge);
   tagRow.append(badgeGroup);
 
-  const { isNew, isUpdate } = getGameStatusBadges(game);
-  if (isNew || isUpdate) {
+  if (game.maintenance) {
     const statusBadges = document.createElement('div');
     statusBadges.className = 'status-badges';
-
-    if (isNew) {
-      const statusBadge = document.createElement('span');
-      statusBadge.className = 'status-badge is-new mono';
-      statusBadge.innerHTML = '<span class="beacon-dot"></span>NEW';
-      statusBadges.append(statusBadge);
-    }
-    if (isUpdate) {
-      const statusBadge = document.createElement('span');
-      statusBadge.className = 'status-badge is-update mono';
-      statusBadge.textContent = 'UPDATE';
-      statusBadges.append(statusBadge);
-    }
+    const statusBadge = document.createElement('span');
+    statusBadge.className = 'status-badge is-updating mono';
+    statusBadge.innerHTML = '<span class="beacon-dot"></span>กำลังอัปเดต';
+    statusBadges.append(statusBadge);
     tagRow.append(statusBadges);
+  } else {
+    const { isNew, isUpdate } = getGameStatusBadges(game);
+    if (isNew || isUpdate) {
+      const statusBadges = document.createElement('div');
+      statusBadges.className = 'status-badges';
+
+      if (isNew) {
+        const statusBadge = document.createElement('span');
+        statusBadge.className = 'status-badge is-new mono';
+        statusBadge.innerHTML = '<span class="beacon-dot"></span>NEW';
+        statusBadges.append(statusBadge);
+      }
+      if (isUpdate) {
+        const statusBadge = document.createElement('span');
+        statusBadge.className = 'status-badge is-update mono';
+        statusBadge.textContent = 'UPDATE';
+        statusBadges.append(statusBadge);
+      }
+      tagRow.append(statusBadges);
+    }
   }
 
   const infoBlock = document.createElement('div');
@@ -431,6 +441,9 @@ const metricText = (game, value) => {
     : `แพตช์แล้ว ${window.PatchStats.format(value)} ครั้ง`;
 };
 const metricHtml = (game, value) => {
+  if (game.maintenance) {
+    return `<span style="color:#b45309;font-weight:600;font-size:11px;">⚠️ ปิดปรับปรุงชั่วคราว (กำลังอัปเดต)</span>`;
+  }
   const isExternalDownload = game.distributionType === 'external-download';
   const icon = isExternalDownload ? STAT_ICONS.download : STAT_ICONS.patch;
   if (value === undefined) return `${icon}<span>กำลังโหลดสถิติ</span>`;

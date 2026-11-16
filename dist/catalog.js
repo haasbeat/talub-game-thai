@@ -384,7 +384,10 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-16T01:20:00+07:00"
+    "verifiedAt": "2026-11-16T01:20:00+07:00",
+    "maintenance": true,
+    "maintenanceMessage": "ปิดระบบแพตช์ชั่วคราว อยู่ระหว่างอัปเดตแพตช์ใหม่ ขออภัยในความไม่สะดวกครับ",
+    "status": "กำลังอัปเดต"
   },
   {
     "order": 9,
