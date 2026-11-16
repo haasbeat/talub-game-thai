@@ -504,7 +504,9 @@ body.has-inapp-banner main { padding-top: 60px; }
 
 /* --- Luma / LayeredFS Download Panel --- */
 .luma-download-panel {
-  margin: 16px 0 24px;
+  margin: 28px 0 0;
+  padding-top: 20px;
+  border-top: 1px dashed var(--line);
 }
 .luma-download-panel[hidden] {
   display: none !important;
