@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "game_slug": "unicorn-overlord",
+  "game_title": "Unicorn Overlord",
+  "platform": "Nintendo Switch",
+  "title_id": "010069401ADB8000",
+  "patch_version": "v1.0.0",
+  "target_game_version": "Base Game (v1.0.0 US/EU 010069401ADB8000)",
+  "distribution": {
+    "type": "external_mod_archive",
+    "filename": "Unicorn_Overlord_Switch_Thai_v1.0.0_AllInOne.zip",
+    "url": "https://drive.google.com/file/d/1iqV8xEouhK1S8_5hbvwtbV-ma5iQMXbZ/view?usp=sharing",
+    "size": 30547600,
+    "sha256": "225bf5398d4e79cff665507e4435a3b071f709ee2608d3ee2be2ee38bbecd82a",
+    "release_date": "2026-11-16",
+    "date_source": "user_authorized_release"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก บทสนทนาสายสัมพันธ์ เมนู ระบบการรบ ครบ 32 โมดูล 100.00%",
+    "whole_game_census": "49,928 / 49,928 ระเบียน In-ROM (100.00%)"
+  },
+  "verification": {
+    "archive_identity_verified": true,
+    "binary_readback_verified": true,
+    "hardware_verified": false
+  }
+}
