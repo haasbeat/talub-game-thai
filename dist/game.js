@@ -793,21 +793,16 @@ if (isExternalDownload) {
 const lumaPanel = document.querySelector('#luma-download-panel');
 if (game.luma && lumaPanel) {
   lumaPanel.hidden = false;
-  const lumaFileEl = document.querySelector('#luma-download-filename');
   const lumaSizeEl = document.querySelector('#luma-download-size');
-  const lumaVersionEl = document.querySelector('#luma-download-version');
   const lumaLinkEl = document.querySelector('#luma-download-link');
-  if (lumaFileEl) lumaFileEl.textContent = game.luma.filename;
   if (lumaSizeEl) lumaSizeEl.textContent = formatBytes(game.luma.size || 0);
-  if (lumaVersionEl) lumaVersionEl.textContent = game.version;
   if (lumaLinkEl) {
     if (game.maintenance) {
       lumaLinkEl.removeAttribute('href');
       lumaLinkEl.classList.add('disabled');
-      lumaLinkEl.innerHTML = '<span>กำลังอัปเดตไฟล์ม็อด</span>';
+      lumaLinkEl.innerHTML = '<span>กำลังอัปเดตม็อด Luma / LayeredFS</span>';
     } else {
       lumaLinkEl.href = game.luma.url;
-      lumaLinkEl.innerHTML = '<span>ดาวน์โหลดม็อด Luma / LayeredFS</span><span aria-hidden="true">↓</span>';
       lumaLinkEl.addEventListener('click', () => {
         if (window.PatchStats?.hit) {
           window.PatchStats.hit(slug).then((value) => {

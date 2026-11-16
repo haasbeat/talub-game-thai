@@ -504,70 +504,44 @@ body.has-inapp-banner main { padding-top: 60px; }
 
 /* --- Luma / LayeredFS Download Panel --- */
 .luma-download-panel {
-  margin: 20px 0 24px;
-  padding: 18px 24px;
-  background: rgba(255, 255, 255, 0.025);
-  border: 1px solid var(--line);
-  border-left: 4px solid #39ff14;
+  margin: 16px 0 24px;
 }
 .luma-download-panel[hidden] {
   display: none !important;
 }
-.luma-panel-compact {
+.luma-download-btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.luma-compact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-.luma-tag {
-  font-size: 11px;
-  font-weight: 700;
+  gap: 16px;
+  padding: 16px 24px;
+  background: rgba(57, 255, 20, 0.08);
+  border: 1px solid #39ff14;
   color: #39ff14;
-  letter-spacing: 0.08em;
-}
-.luma-file-info {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 14px;
-}
-.luma-file-info strong {
-  color: var(--ink);
+  font-size: 15px;
   font-weight: 600;
-}
-.luma-size-badge {
-  font-size: 11px;
-  color: var(--muted);
-  background: rgba(255, 255, 255, 0.06);
-  padding: 2px 7px;
-  border-radius: 3px;
-  border: 1px solid var(--line);
-}
-.luma-download-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 13px 24px;
-  background: #39ff14;
-  color: #05080c;
-  font-size: 14px;
-  font-weight: 700;
   text-decoration: none;
   transition: all 0.2s ease;
-  white-space: nowrap;
 }
 .luma-download-btn:hover {
-  background: #fff;
-  color: #000;
-  box-shadow: 0 0 20px rgba(57, 255, 20, 0.4);
+  background: #39ff14;
+  color: #05080c;
+  box-shadow: 0 0 24px rgba(57, 255, 20, 0.35);
   transform: translateY(-2px);
+}
+.luma-download-btn .luma-size-badge {
+  margin-left: auto;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  background: rgba(57, 255, 20, 0.15);
+  color: #39ff14;
+  border: 1px solid rgba(57, 255, 20, 0.4);
+}
+.luma-download-btn:hover .luma-size-badge {
+  background: #05080c;
+  color: #39ff14;
+  border-color: #05080c;
 }
 .luma-download-btn.disabled {
   background: #222;
