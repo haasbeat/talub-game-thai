@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "game_slug": "lost-heroes-2",
+  "game_title": "Lost Heroes 2",
+  "platform": "3DS",
+  "region": "Japan",
+  "game_code": "BL2J",
+  "title_id": "0004000000146C00",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Lost Heroes 2 (Premium Edition) (Japan).3ds",
+      "size": 1073741824,
+      "sha256": "28c6d18321477ded7712fcd3197dff292a5a052ecf868a90be2a133c9792e771"
+    }
+  ],
+  "patch": {
+    "filename": "Lost_Heroes_2_Thai_v1.0.0.xdelta",
+    "size": 57891166,
+    "sha256": "44055a742461c4779edcad1b3d3ec2b27248c1c1a8cfbea97f68a5c06939ed8a",
+    "release_date": "2026-11-16",
+    "date_source": "user_authorized_release",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/lost-heroes-2/v1.0.0/Lost_Heroes_2_Thai_v1.0.0.xdelta"
+  },
+  "output": {
+    "filename": "Lost_Heroes_2_Thai_v1.0.0.3ds",
+    "size": 1073741824,
+    "sha256": "0acd1a357af2b92339bebdc5b999c533afd00855dceaa761baf3dd85d2231ddc"
+  },
+  "mod_archive": {
+    "filename": "Lost_Heroes_2_Thai_v1.0.0_Mod.zip",
+    "size": 69260439,
+    "sha256": "ba1cb1ee150cc650a4d45e163cbe8ce83ca1d687e0c6e2604cbce49d60645b1b",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/lost-heroes-2/v1.0.0/Lost_Heroes_2_Thai_v1.0.0_Mod.zip"
+  },
+  "all_in_one_archive": {
+    "filename": "Lost_Heroes_2_Thai_v1.0.0_AllInOne.zip",
+    "size": 127229020,
+    "sha256": "a5e331eba531f82ad8e3a609bc6acbc826d2603aacc399c17ea0007994011209",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/lost-heroes-2/v1.0.0/Lost_Heroes_2_Thai_v1.0.0_AllInOne.zip"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก เควสต์เสริม บทสนทนาดันเจี้ยน และระบบทั้งหมด 100%",
+    "whole_game_census": "85,810/85,810 เรคคอร์ดที่แปลได้ (ภาพรวมทั้งคลัง 99.34% ยกเว้น StaffRoll* เข้ารหัส 550 และช่องว่าง 22 รายการ)",
+    "census_source": "games/3DS/Lost Heroes 2 (Premium Edition) (Japan)/STATE.md + release_guard_manifest.json",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-16T14:32:00+07:00",
+    "method": "xdelta3_clean_roundtrip",
+    "note": "Clean source verified by SHA-256 and patched with xdelta3; output matches target ROM 100% bit-identical. In-ROM binary readback 1:1 verified across 85,832 records.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}
