@@ -42,7 +42,5 @@
     "patch_sha256_verified": true,
     "output_sha256_verified": true,
     "output_matches_release_target": true
-  },
-  "maintenance": true,
-  "maintenance_message": "ปิดระบบแพตช์ชั่วคราว อยู่ระหว่างอัปเดตแพตช์ใหม่ ขออภัยในความไม่สะดวกครับ"
+  }
 }

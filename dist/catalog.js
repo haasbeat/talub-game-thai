@@ -449,9 +449,6 @@ window.GAME_CATALOG = [
     "verified": true,
     "gameVersion": "v1.0.0",
     "verifiedAt": "2026-11-16T23:30:00+07:00",
-    "maintenance": true,
-    "maintenanceMessage": "ปิดระบบแพตช์ชั่วคราว อยู่ระหว่างอัปเดตแพตช์ใหม่ ขออภัยในความไม่สะดวกครับ",
-    "status": "กำลังอัปเดต",
     "luma": {
       "format": "LayeredFS / Luma3DS",
       "filename": "09_Dragon_Quest_XI_v2.5.5_Mod.zip",
