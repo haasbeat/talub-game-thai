@@ -452,9 +452,9 @@ window.GAME_CATALOG = [
     "luma": {
       "format": "LayeredFS / Luma3DS",
       "filename": "09_Dragon_Quest_XI_v2.5.8_Mod.zip",
-      "url": "https://drive.google.com/uc?export=download&id=1JS2aWmE6og7tzjIiZGxnRrighBxePMwY",
+      "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/dragon-quest-xi/v2.5.8/09_Dragon_Quest_XI_v2.5.8_Mod.zip",
       "viewUrl": "https://drive.google.com/file/d/1JS2aWmE6og7tzjIiZGxnRrighBxePMwY/view?usp=sharing",
-      "size": 41547003,
+      "size": 41545169,
       "id": "1JS2aWmE6og7tzjIiZGxnRrighBxePMwY"
     }
   },
