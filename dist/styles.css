@@ -1269,6 +1269,127 @@ body.has-inapp-banner main { padding-top: 60px; }
   .requirements { padding-top: 40px; padding-bottom: 48px; }
 }
 
+/* Game Detail Changelog / Update History */
+.game-changelog-card {
+  margin-top: 28px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 8px 28px 8px 8px;
+  display: grid;
+  gap: 18px;
+}
+.changelog-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+.changelog-header-text {
+  display: grid;
+  gap: 4px;
+}
+.changelog-header-text .mono {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+.changelog-header-text h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+.changelog-badge-total {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+.changelog-timeline {
+  display: grid;
+  gap: 12px;
+}
+.changelog-item {
+  padding: 16px 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  display: grid;
+  gap: 8px;
+  transition: border-color 160ms var(--ease), background 160ms var(--ease);
+}
+.changelog-item.is-latest {
+  background: #ffffff;
+  border-color: #1a1a1a;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+.changelog-item-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.changelog-version {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 8px;
+  background: #111;
+  color: #fff;
+  border-radius: 3px;
+  letter-spacing: 0.03em;
+}
+.changelog-tag {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+.changelog-tag.is-current {
+  background: #e6f4ea;
+  color: #137333;
+  border: 1px solid #ceead6;
+}
+.changelog-tag.is-history {
+  background: #f1f3f4;
+  color: #5f6368;
+  border: 1px solid #dadce0;
+}
+.changelog-date {
+  font-size: 12px;
+  color: var(--muted);
+  margin-left: auto;
+}
+.changelog-desc {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #2c3036;
+}
+@media (max-width: 640px) {
+  .game-changelog-card {
+    padding: 18px;
+    border-radius: 8px 20px 8px 8px;
+  }
+  .changelog-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .changelog-date {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
   .hero-line > span, .hero-foot, .reveal-on-scroll { opacity: 1; transform: none; }

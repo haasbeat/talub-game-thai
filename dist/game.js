@@ -825,6 +825,58 @@ document.querySelector('#detail-features').replaceChildren(...details.features.m
   return item;
 }));
 
+// Render Changelog / Update History
+const changelogCard = document.querySelector('#detail-changelog-card');
+const changelogList = document.querySelector('#detail-changelog-list');
+const changelogCount = document.querySelector('#detail-changelog-count');
+
+if (changelogList && changelogCard) {
+  const rawUpdates = (window.GAME_UPDATES || []).filter((u) => u.slug === slug);
+  const updates = rawUpdates.length > 0 ? rawUpdates : [
+    {
+      version: game.version || 'v1.0.0',
+      type: 'new',
+      timestamp: game.patchDate || new Date().toISOString(),
+      note: `เปิดตัวม็อดภาษาไทย ${game.version || 'v1.0.0'}: แปลเนื้อเรื่องและระบบการเล่นครบถ้วน`,
+    },
+  ];
+
+  if (changelogCount) {
+    changelogCount.textContent = `${updates.length} เวอร์ชัน`;
+  }
+
+  const formatThaiDate = (ts) => {
+    try {
+      const d = new Date(ts);
+      if (isNaN(d.getTime())) return ts || '—';
+      return new Intl.DateTimeFormat('th-TH', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Asia/Bangkok' }).format(d);
+    } catch {
+      return ts || '—';
+    }
+  };
+
+  changelogList.replaceChildren(...updates.map((up, idx) => {
+    const isLatest = idx === 0;
+    const item = document.createElement('article');
+    item.className = `changelog-item ${isLatest ? 'is-latest' : ''}`;
+
+    const dateStr = formatThaiDate(up.timestamp);
+    const badgeText = isLatest ? 'เวอร์ชันล่าสุด' : 'เวอร์ชันก่อนหน้า';
+    const badgeClass = isLatest ? 'is-current' : 'is-history';
+
+    item.innerHTML = `
+      <div class="changelog-item-meta">
+        <span class="changelog-version mono">${up.version || game.version}</span>
+        <span class="changelog-tag ${badgeClass} mono">${badgeText}</span>
+        <time class="changelog-date mono">${dateStr}</time>
+      </div>
+      <p class="changelog-desc"></p>
+    `;
+    item.querySelector('.changelog-desc').textContent = up.note || 'ปรับปรุงและพัฒนาความเสถียรของตัวเกม';
+    return item;
+  }));
+}
+
 const detailPanels = {
   about: document.querySelector('#about'),
   patcher: document.querySelector('#patcher'),

@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=200" />
+    <link rel="stylesheet" href="./styles.css?v=201" />
   </head>
   <body class="detail-page">
     <div class="cursor" aria-hidden="true"></div>
@@ -147,6 +147,19 @@
                 <div><span class="mono">VERIFIED OUTPUT SHA-256</span><code id="detail-output-hash">—</code></div>
               </div>
             </div>
+
+            <section class="game-changelog-card" id="detail-changelog-card">
+              <div class="changelog-card-header">
+                <div class="changelog-header-text">
+                  <span class="mono">UPDATE LOG / ประวัติการอัปเดต</span>
+                  <h3>บันทึกการปรับปรุงแต่ละเวอร์ชัน</h3>
+                </div>
+                <span id="detail-changelog-count" class="changelog-badge-total mono">0 เวอร์ชัน</span>
+              </div>
+              <div id="detail-changelog-list" class="changelog-timeline">
+                <!-- Populated dynamically by game.js -->
+              </div>
+            </section>
           </div>
         </details>
       </section>
@@ -314,7 +327,7 @@
           <div class="support-note mono"><span>PLAY</span><span>TRANSLATE</span><span>PRESERVE</span></div>
         </div>
         <figure class="support-qr-card">
-          <img src="./assets/support/talub-promptpay-qr.jpg?v=200" alt="QR PromptPay สำหรับสนับสนุนเพจตลับเกมภาษาไทย" />
+          <img src="./assets/support/talub-promptpay-qr.jpg?v=201" alt="QR PromptPay สำหรับสนับสนุนเพจตลับเกมภาษาไทย" />
           <figcaption>
             <strong>สแกน QR เพื่อสนับสนุนผลงาน</strong>
             <span>ขอบคุณที่ช่วยให้โปรเจกต์แปลเกมเก่าเดินหน้าต่อ</span>
@@ -361,9 +374,9 @@
     </footer>
 
     <div id="toast" class="toast" role="status" aria-live="polite">พร้อมประมวลผลภายในอุปกรณ์</div>
-    <script defer src="./catalog.js?v=200"></script>
-    <script defer src="./patch-stats.js?v=200"></script>
+    <script defer src="./catalog.js?v=201"></script>
+    <script defer src="./patch-stats.js?v=201"></script>
     <script defer src="./assets/engine/hash/sha256.js"></script>
-    <script defer src="./game.js?v=200"></script>
+    <script defer src="./game.js?v=201"></script>
   </body>
 </html>
