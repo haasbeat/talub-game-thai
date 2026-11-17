@@ -515,6 +515,7 @@ for (const item of (window.GAME_CATALOG || [])) {
     maintenance: item.maintenance,
     maintenanceMessage: item.maintenanceMessage,
     luma: item.luma,
+    guide: item.guide || item.details?.guide || null,
     moduleStatus: item.moduleStatus,
     wholeGameCensus: item.wholeGameCensus,
     description: isExternalDownload
@@ -818,6 +819,34 @@ if (game.luma && lumaPanel) {
 } else if (lumaPanel) {
   lumaPanel.hidden = true;
 }
+
+// Guide buttons (Strategy Guide / Walkthrough) - Strictly DO NOT track stats
+const guideData = game.guide || game.details?.guide;
+const guideHeroBtn = document.querySelector('#detail-guide-btn');
+const guideExternalBtn = document.querySelector('#external-guide-link');
+
+if (guideData && guideData.url) {
+  if (guideHeroBtn) {
+    guideHeroBtn.hidden = false;
+    guideHeroBtn.href = guideData.url;
+    const labelSpan = guideHeroBtn.querySelector('span:not(.guide-icon):not(.guide-arrow)');
+    if (labelSpan) {
+      labelSpan.textContent = guideData.size ? `ดาวน์โหลดบทสรุป (PDF · ${guideData.size})` : 'ดาวน์โหลดบทสรุป (PDF)';
+    }
+  }
+  if (guideExternalBtn) {
+    guideExternalBtn.hidden = false;
+    guideExternalBtn.href = guideData.url;
+    const labelEl = document.querySelector('#external-guide-label');
+    if (labelEl) {
+      labelEl.textContent = `ดาวน์โหลดบทสรุปเกมภาษาไทย (${guideData.format || 'PDF'} · ${guideData.size || '3.2 MB'})`;
+    }
+  }
+} else {
+  if (guideHeroBtn) guideHeroBtn.hidden = true;
+  if (guideExternalBtn) guideExternalBtn.hidden = true;
+}
+
 document.querySelector('#detail-features').replaceChildren(...details.features.map((feature, index) => {
   const item = document.createElement('li');
   item.innerHTML = `<span class="mono">${String(index + 1).padStart(2, '0')}</span><strong></strong>`;

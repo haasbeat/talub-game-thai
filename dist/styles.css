@@ -976,6 +976,71 @@ body.has-inapp-banner main { padding-top: 60px; }
 .detail-support-cta:hover .detail-support-heart {
   transform: scale(1.3);
 }
+.detail-guide-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: 200px;
+  padding: 13px 22px;
+  color: var(--ink);
+  background: #ffffff;
+  border: 1.5px solid var(--ink);
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 200ms var(--ease), background 200ms var(--ease), color 200ms var(--ease), box-shadow 200ms var(--ease);
+}
+.detail-guide-cta:hover {
+  background: var(--ink);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.detail-guide-cta:active {
+  transform: translateY(0);
+}
+.detail-guide-cta .guide-icon,
+.external-guide-link .guide-icon {
+  font-size: 16px;
+  line-height: 1;
+}
+.detail-guide-cta .guide-arrow,
+.external-guide-link .guide-arrow {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  transition: transform 200ms var(--ease);
+}
+.detail-guide-cta:hover .guide-arrow,
+.external-guide-link:hover .guide-arrow {
+  transform: translate(2px, -2px);
+}
+.external-guide-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+  width: 100%;
+  padding: 15px 22px;
+  color: var(--ink);
+  background: #ffffff;
+  border: 1.5px solid var(--line);
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 200ms var(--ease), border-color 200ms var(--ease), transform 200ms var(--ease);
+}
+.external-guide-link:hover {
+  background: #f8f8f6;
+  border-color: var(--ink);
+  transform: translateY(-1px);
+}
+.external-guide-link:active {
+  transform: translateY(0);
+}
 .detail-view-switch { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; padding-top: 0; padding-bottom: 0; }
 .detail-view-tab { display: flex; align-items: center; gap: 16px; min-height: 56px; padding: 10px 18px; color: var(--ink); background: #fff; border: 1px solid var(--line); text-align: left; }
 .detail-view-tab:first-child { border-radius: 999px 10px 10px 999px; }
@@ -1249,6 +1314,7 @@ body.has-inapp-banner main { padding-top: 60px; }
   .detail-copy h1 { font-size: clamp(21px, 5.8vw, 27px); }
   .detail-actions { width: 100%; }
   .detail-support-cta { width: 100%; }
+  .detail-guide-cta { width: 100%; }
   .detail-view-switch { gap: 4px; }
   .detail-view-tab { min-height: 52px; padding: 10px 12px; }
   .game-overview { padding-top: 28px; padding-bottom: 40px; }

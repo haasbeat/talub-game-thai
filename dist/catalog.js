@@ -3146,7 +3146,15 @@ window.GAME_CATALOG = [
         "สารานุกรมประวัติศาสตร์เฟฟริธ ข้อมูลภูมิศาสตร์ และประวัติตัวละครครบถ้วน",
         "ฟอนต์ภาษาไทย Vanillaware สไตล์คมชัด สระวรรณยุกต์ไม่ลอย ไม่ซ้อนทับ",
         "รองรับการเล่นทั้งบน Nintendo Switch (CFW Atmosphère) และโปรแกรมจำลอง (Ryujinx/Citron/Astris)"
-      ]
+      ],
+      "guide": {
+        "title": "บทสรุปเกมภาษาไทย (Strategy Guide)",
+        "filename": "Unicorn_Overlord_Thai_Strategy_Guide.pdf",
+        "size": "3.2 MB",
+        "format": "PDF",
+        "url": "https://drive.google.com/uc?export=download&id=1EHdWwFxZg5By-i77T467cL3p_3vv2Ixk",
+        "viewUrl": "https://drive.google.com/file/d/1EHdWwFxZg5By-i77T467cL3p_3vv2Ixk/view?usp=sharing"
+      }
     },
     "verified": true,
     "gameVersion": "Base Game (v1.0.0 US/EU 010069401ADB8000)",
@@ -3155,7 +3163,15 @@ window.GAME_CATALOG = [
     "downloadUrl": "https://drive.google.com/file/d/1iqV8xEouhK1S8_5hbvwtbV-ma5iQMXbZ/view?usp=sharing",
     "downloadFilename": "Unicorn_Overlord_Switch_Thai_v1.0.0_AllInOne.zip",
     "downloadSize": 30547600,
-    "downloadSha256": "225bf5398d4e79cff665507e4435a3b071f709ee2608d3ee2be2ee38bbecd82a"
+    "downloadSha256": "225bf5398d4e79cff665507e4435a3b071f709ee2608d3ee2be2ee38bbecd82a",
+    "guide": {
+      "title": "บทสรุปเกมภาษาไทย (Strategy Guide)",
+      "filename": "Unicorn_Overlord_Thai_Strategy_Guide.pdf",
+      "size": "3.2 MB",
+      "format": "PDF",
+      "url": "https://drive.google.com/uc?export=download&id=1EHdWwFxZg5By-i77T467cL3p_3vv2Ixk",
+      "viewUrl": "https://drive.google.com/file/d/1EHdWwFxZg5By-i77T467cL3p_3vv2Ixk/view?usp=sharing"
+    }
   },
   {
     "order": 67,
