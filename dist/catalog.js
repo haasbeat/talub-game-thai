@@ -451,11 +451,11 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-17T14:15:00+07:00",
     "luma": {
       "format": "LayeredFS / Luma3DS",
-      "filename": "09_Dragon_Quest_XI_v2.5.5_Mod.zip",
-      "url": "https://drive.google.com/uc?export=download&id=1eiRO-Maf1mMQeFnXLX1RPyUwi3BSWow1",
-      "viewUrl": "https://drive.google.com/file/d/1eiRO-Maf1mMQeFnXLX1RPyUwi3BSWow1/view?usp=sharing",
-      "size": 41550237,
-      "id": "1eiRO-Maf1mMQeFnXLX1RPyUwi3BSWow1"
+      "filename": "09_Dragon_Quest_XI_v2.5.8_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1JS2aWmE6og7tzjIiZGxnRrighBxePMwY",
+      "viewUrl": "https://drive.google.com/file/d/1JS2aWmE6og7tzjIiZGxnRrighBxePMwY/view?usp=sharing",
+      "size": 41547003,
+      "id": "1JS2aWmE6og7tzjIiZGxnRrighBxePMwY"
     }
   },
   {
