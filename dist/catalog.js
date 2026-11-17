@@ -61,34 +61,34 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 002 / 041",
-    "version": "v1.0.5",
-    "patchDate": "2026-11-15",
+    "version": "v1.0.9",
+    "patchDate": "2026-11-17",
     "addedDate": "2026-11-04",
     "addedOrder": 1,
     "addedAt": "2026-11-04T21:10:11+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/bravely-default.jpg",
-    "manifest": "./assets/patches/bravely-default/v1.0.5/manifest.json",
+    "manifest": "./assets/patches/bravely-default/v1.0.9/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN USA 3DS · 4 GB",
     "region": "USA",
     "gameCode": "BTEE",
     "sourceName": "Bravely Default (USA) (En,Ja,Fr,De,Es,It).3ds · 4,294,967,296 bytes",
     "sourceHash": "6b4a89fa3385e967ab1db282b1616dc58df659c90a0626850d468334c70a0af2",
-    "outputHash": "9249a0c7c462b884afa73f0a3de6f62ea1367fa9c3059960789f96635f7abc60",
-    "moduleStatus": "เนื้อเรื่องหลัก+ปาร์ตี้แช็ต+ระบบต่อสู้+เมนู+ไดอารีดี 100% ครบทั้ง 14 หมวดหมู่ (ฟอนต์ Chakra Petch Parity เดียวกับ Monster Hunter Stories)",
+    "outputHash": "117a7d3b325c4167c990e916b4d8d55fe17ab167ac3550bcf539b2eb3a98f9a6",
+    "moduleStatus": "เนื้อเรื่องหลัก+ปาร์ตี้แช็ต+ระบบต่อสู้+เมนู+ไดอารีดี 100% ครบทั้ง 14 หมวดหมู่ (ฟอนต์ Chakra Petch 1.5x Hi-Res คมชัดระดับโปร Parity เดียวกับ Dragon Quest XI)",
     "wholeGameCensus": "39,379/39,379 เรคคอร์ด = 100.00%",
     "details": null,
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-15T18:56:00+07:00",
+    "verifiedAt": "2026-11-17T19:54:00+07:00",
     "luma": {
       "format": "LayeredFS / Luma3DS",
-      "filename": "02_Bravely_Default_v1.0.5_Mod.zip",
-      "url": "https://drive.google.com/uc?export=download&id=1o5p24pIbUMZQIYXZ9iwN-H_fubg2CZws",
-      "viewUrl": "https://drive.google.com/file/d/1o5p24pIbUMZQIYXZ9iwN-H_fubg2CZws/view?usp=sharing",
-      "size": 4006507,
-      "id": "1o5p24pIbUMZQIYXZ9iwN-H_fubg2CZws"
+      "filename": "Bravely_Default_USA_TH_v1.0.9_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1PXd46q00vpzO8pvGmttjk45mxXWXU0Uk",
+      "viewUrl": "https://drive.google.com/file/d/1PXd46q00vpzO8pvGmttjk45mxXWXU0Uk/view?usp=sharing",
+      "size": 4007123,
+      "id": "1PXd46q00vpzO8pvGmttjk45mxXWXU0Uk"
     }
   },
   {
@@ -3209,6 +3209,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "bravely-default",
+    "title": "Bravely Default",
+    "platform": "3DS",
+    "version": "v1.0.9",
+    "type": "update",
+    "timestamp": "2026-11-17T20:55:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.9: อัปเกรดฟอนต์ Chakra Petch 1.5x Hi-Res Supersampled คมชัดระดับโปร (Parity เดียวกับ Dragon Quest XI) + จัดช่องไฟตัวอักษรแบบ Sub-pixel สม่ำเสมอสบายตา + อัปเดตลิงก์ม็อด LayeredFS สำหรับเครื่อง 3DS"
+  },
   {
     "slug": "dragon-quest-xi",
     "title": "Dragon Quest XI: Echoes of an Elusive Age",
