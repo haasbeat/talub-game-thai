@@ -824,10 +824,12 @@ if (game.luma && lumaPanel) {
 const guideData = game.guide || game.details?.guide;
 const guideHeroBtn = document.querySelector('#detail-guide-btn');
 const guideExternalBtn = document.querySelector('#external-guide-link');
+const externalNoteEl = document.querySelector('.external-download-note');
 
 if (guideData && guideData.url) {
   if (guideHeroBtn) {
     guideHeroBtn.hidden = false;
+    guideHeroBtn.style.display = '';
     guideHeroBtn.href = guideData.url;
     const labelSpan = guideHeroBtn.querySelector('span:not(.guide-icon):not(.guide-arrow)');
     if (labelSpan) {
@@ -836,15 +838,28 @@ if (guideData && guideData.url) {
   }
   if (guideExternalBtn) {
     guideExternalBtn.hidden = false;
+    guideExternalBtn.style.display = '';
     guideExternalBtn.href = guideData.url;
     const labelEl = document.querySelector('#external-guide-label');
     if (labelEl) {
       labelEl.textContent = `ดาวน์โหลดบทสรุปเกมภาษาไทย (${guideData.format || 'PDF'} · ${guideData.size || '3.2 MB'})`;
     }
   }
+  if (externalNoteEl) {
+    externalNoteEl.textContent = 'ลิงก์จะเปิดหน้าดาวน์โหลดภายนอก โปรดตรวจชื่อไฟล์และเวอร์ชันก่อนติดตั้ง · สถิตินับเมื่อกดลิงก์ม็อด ไม่นับเมื่อโหลดบทสรุป';
+  }
 } else {
-  if (guideHeroBtn) guideHeroBtn.hidden = true;
-  if (guideExternalBtn) guideExternalBtn.hidden = true;
+  if (guideHeroBtn) {
+    guideHeroBtn.hidden = true;
+    guideHeroBtn.style.display = 'none';
+  }
+  if (guideExternalBtn) {
+    guideExternalBtn.hidden = true;
+    guideExternalBtn.style.display = 'none';
+  }
+  if (externalNoteEl) {
+    externalNoteEl.textContent = 'ลิงก์จะเปิดหน้าดาวน์โหลดภายนอก โปรดตรวจชื่อไฟล์และเวอร์ชันก่อนติดตั้ง · สถิตินับเมื่อกดลิงก์ ไม่ได้ยืนยันว่าติดตั้งสำเร็จ';
+  }
 }
 
 document.querySelector('#detail-features').replaceChildren(...details.features.map((feature, index) => {
