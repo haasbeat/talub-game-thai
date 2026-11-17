@@ -2183,21 +2183,21 @@ window.GAME_CATALOG = [
     "platform": "nds",
     "platformLabel": "NDS",
     "index": "NDS | 003 / 013",
-    "version": "v1.6.4",
-    "patchDate": "2026-11-10",
+    "version": "v1.6.5",
+    "patchDate": "2026-11-17",
     "addedDate": "2026-11-04",
     "addedOrder": 28,
     "addedAt": "2026-11-04T21:10:11+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/dragon-quest-v.jpg",
-    "manifest": "./assets/patches/dragon-quest-v/v1.6.4/manifest.json",
+    "manifest": "./assets/patches/dragon-quest-v/v1.6.5/manifest.json",
     "accept": ".nds",
     "fileTypes": "CLEAN USA NDS · 128 MB",
     "region": "USA",
     "gameCode": "YV5E",
-    "sourceName": "Dragon Quest V - Hand of the Heavenly Bride (US)(M3)(XenoPhobia).nds · 134,217,728 bytes",
-    "sourceHash": "c042d82f33e7b0a8a58f72ff8534a9444cee67bdbd383cf6c6b2942de46dd974",
-    "outputHash": "bd91d31ac7870dd495e13151f8cb733afbd0521869ce0d201d890b5ed24525bf",
+    "sourceName": "Dragon Quest V - Hand of the Heavenly Bride (USA) (En,Fr,Es).nds · 134,217,728 bytes",
+    "sourceHash": "8498ffdbe8af66637ce45cd7ee04a4b7c247f6cd1dc66ca65ef1c19dcf3c71d7",
+    "outputHash": "6e024ad4509dd2a1ef82d62b5bcd28b3d4cc7c35583099a01d26eedfa299a391",
     "moduleStatus": "เนื้อเรื่องไตรวัย (วัยเด็ก-วัยหนุ่ม-รุ่นลูก)+ทางเลือกเจ้าสาว 3 สาย 100%",
     "wholeGameCensus": "28,739/28,739 บรรทัด = 100.00%",
     "details": null,
@@ -3209,6 +3209,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "dragon-quest-v",
+    "title": "Dragon Quest V: Hand of the Heavenly Bride",
+    "platform": "NDS",
+    "version": "v1.6.5",
+    "type": "update",
+    "timestamp": "2026-11-17T23:15:00+07:00",
+    "note": "อัปเดตแพตช์ v1.6.5 บิลด์สดใหม่ 100% จาก ROM สะอาดต้นฉบับทางการชุด No-Intro (USA) ตรงตามมาตรฐานการเก็บรักษาประวัติเกมสากล พร้อมปรับแก้การตัดบรรทัดบทสนทนากลุ่มให้กระชับสมบูรณ์ (สำรวจทั้งเกม In-ROM Census ครบ 28,739 รายการ 100.00%)"
+  },
   {
     "slug": "unicorn-overlord",
     "title": "Unicorn Overlord",
