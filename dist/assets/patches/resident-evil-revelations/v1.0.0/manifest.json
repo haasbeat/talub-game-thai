@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "game_slug": "resident-evil-revelations",
+  "game_title": "Resident Evil: Revelations",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "CTR-P-ABRE",
+  "title_id": "0004000000060200",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Resident Evil - Revelations (USA) (En,Ja,Fr,De,Es,It) (Rev 1).3ds",
+      "size": 4294967296,
+      "sha256": "09b7de30df7475db7ffb7a611556161ac04df736ef7f1f8e88754c25f9916011"
+    }
+  ],
+  "patch": {
+    "filename": "Resident_Evil_Revelations_USA_TH_v1.0.0.xdelta",
+    "size": 1466396,
+    "sha256": "185b36e0155af18f11493dae4da6afddcc4a9613913ea81752d29b815c1bc504",
+    "release_date": "2026-11-17",
+    "date_source": "user_authorized_release",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/resident-evil-revelations/v1.0.0/Resident_Evil_Revelations_USA_TH_v1.0.0.xdelta"
+  },
+  "output": {
+    "filename": "Resident_Evil_Revelations_Thai_v1.0.0.3ds",
+    "size": 4294967296,
+    "sha256": "656aca9c8f7b72e30de34cc4f2de65d4d507dbbe81e36b7eb30cf3b0cf32b6bd"
+  },
+  "mod_archive": {
+    "filename": "Resident_Evil_Revelations_USA_Thai_v1.0.0_Mod.zip",
+    "size": 1555865,
+    "sha256": "ae396f1f808f8d66c42c3c43a794be7e4de180b4a39f33caf1925b4383213f4f",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/resident-evil-revelations/v1.0.0/Resident_Evil_Revelations_USA_Thai_v1.0.0_Mod.zip"
+  },
+  "all_in_one_archive": {
+    "filename": "Resident_Evil_Revelations_USA_Thai_v1.0.0_AllInOne.zip",
+    "size": 3005188,
+    "sha256": "d075e2715208a711f8f7ed28cdbba51b5fafd0913e9eef6c90df82a865487e07"
+  },
+  "release_status": {
+    "module_status": "ข้อความบทสนทนา เนื้อเรื่องหลัก เมนู ไอเทม โหมด Raid และเอกสาร 100%",
+    "whole_game_census": "4,188/4,188 เรคคอร์ด (.gmd) แปลไทยครบ 100% (กราฟิกภาพ UI สำเร็จรูป 5 ไฟล์คงต้นฉบับภาษาอังกฤษ)",
+    "census_source": "games/3DS/Resident Evil - Revelations (USA) (EnJaFrDeEsIt) (Rev 1)/STATE.md + release_manifest.json",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-17T12:40:00+07:00",
+    "method": "xdelta3_clean_roundtrip",
+    "note": "Clean source verified by SHA-256 and patched with xdelta3; output matches target ROM 100% bit-identical. In-ROM binary readback 1:1 verified across 4,188 records.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}
