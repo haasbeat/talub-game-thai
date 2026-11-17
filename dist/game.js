@@ -841,8 +841,11 @@ if (changelogList && changelogCard) {
     },
   ];
 
+  // Limit to latest 3 versions per user instruction ("เอาแค่ 3 เวอร์ชั่นย้อนหลังพอ")
+  const visibleUpdates = updates.slice(0, 3);
+
   if (changelogCount) {
-    changelogCount.textContent = `${updates.length} เวอร์ชัน`;
+    changelogCount.textContent = updates.length > 3 ? '3 เวอร์ชันล่าสุด' : `${updates.length} เวอร์ชัน`;
   }
 
   const formatThaiDate = (ts) => {
@@ -855,7 +858,7 @@ if (changelogList && changelogCard) {
     }
   };
 
-  changelogList.replaceChildren(...updates.map((up, idx) => {
+  changelogList.replaceChildren(...visibleUpdates.map((up, idx) => {
     const isLatest = idx === 0;
     const item = document.createElement('article');
     item.className = `changelog-item ${isLatest ? 'is-latest' : ''}`;
