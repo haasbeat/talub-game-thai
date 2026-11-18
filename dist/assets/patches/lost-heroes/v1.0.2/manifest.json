@@ -43,5 +43,12 @@
     "patch_sha256_verified": true,
     "output_sha256_verified": true,
     "output_matches_release_target": true
+  },
+  "mod_archive": {
+    "filename": "Lost_Heroes_Thai_v1.0.2_Mod.zip",
+    "size": 60191387,
+    "sha256": "9086fcb6f21be805ebd4a90bb5ed4dd530d5db8d4572337a683376e2f8e06eee",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/lost-heroes/v1.0.2/Lost_Heroes_Thai_v1.0.2_Mod.zip",
+    "mirror_url": "https://drive.google.com/file/d/16xi8GDvFlXk6VEImH7aBsGdIWUn9CIbl/view?usp=sharing"
   }
 }

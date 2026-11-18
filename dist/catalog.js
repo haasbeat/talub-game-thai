@@ -1091,23 +1091,23 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 023 / 041",
-    "version": "v1.0.0",
-    "patchDate": "2026-11-16",
+    "version": "v1.0.1",
+    "patchDate": "2026-11-18",
     "addedDate": "2026-11-16",
     "addedOrder": 66,
     "addedAt": "2026-11-16T14:32:00+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/lost-heroes-2.jpg",
-    "manifest": "./assets/patches/lost-heroes-2/v1.0.0/manifest.json",
+    "manifest": "./assets/patches/lost-heroes-2/v1.0.1/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN Japan 3DS · 1 GB",
     "region": "Japan",
     "gameCode": "BL2J",
     "sourceName": "Lost Heroes 2 (Premium Edition) (Japan).3ds · 1,073,741,824 bytes",
     "sourceHash": "28c6d18321477ded7712fcd3197dff292a5a052ecf868a90be2a133c9792e771",
-    "outputHash": "0acd1a357af2b92339bebdc5b999c533afd00855dceaa761baf3dd85d2231ddc",
+    "outputHash": "b1e9694ee2f46d767130b357a65f1e6c8074822c7c308e13588065f6fc68d640",
     "moduleStatus": "เนื้อเรื่องหลัก เควสต์เสริม บทสนทนาดันเจี้ยน และระบบทั้งหมด 100%",
-    "wholeGameCensus": "85,810/85,810 เรคคอร์ดที่แปลได้ (ภาพรวมทั้งคลัง 99.34% ยกเว้น StaffRoll* เข้ารหัส 550 และช่องว่าง 22 รายการ)",
+    "wholeGameCensus": "แปลข้อความที่แปลได้ครบ 85,810/85,810 (100.0%) | ภาพรวมทั้งคลัง 99.34% (ยกเว้น StaffRoll* เข้ารหัส 550 และช่องว่าง 22 รายการ)",
     "details": {
       "thaiTitle": "ลอสท์ฮีโร่ส์ 2 ฉบับภาษาไทย",
       "japaneseTitle": "ロストヒーローズ2",
@@ -1115,7 +1115,7 @@ window.GAME_CATALOG = [
       "studio": "Lancarse / Bandai Namco Entertainment (Banpresto)",
       "release": "5 กุมภาพันธ์ 2015",
       "genre": "Dungeon crawler RPG",
-      "description": "ม็อดภาษาไทยสำหรับ Lost Heroes 2 (Premium Edition) (3DS โซนญี่ปุ่น) เวอร์ชัน v1.0.0",
+      "description": "ม็อดภาษาไทยสำหรับ Lost Heroes 2 (Premium Edition) (3DS โซนญี่ปุ่น) เวอร์ชัน v1.0.1",
       "overview": "ภาคต่อเกมดันเจี้ยนครอสโอเวอร์ระดับตำนาน รวมพล 3 จักรวาลหลัก กันดั้ม, คาเมนไรเดอร์ และอุลตร้าแมน พร้อมระบบต่อสู้ กราฟิก และฟอนต์ไทยอัปเกรดใหม่",
       "story": "หลังการล่มสลายของคิวบ์เวิลด์ในภาคแรก ความสงบสุขดำรงอยู่ได้ไม่นาน มิติใหม่ที่บิดเบี้ยวยิ่งกว่าเดิมได้อุบัติขึ้น เหล่าฮีโร่หน้าเก่าและหน้าใหม่—ทั้ง Gundam F91, Unicorn Gundam, 00 Raiser, Kamen Rider Wizard, Fourze, OOO, Ultraman Ginga, Zero, Leo—ต้องกลับมารวมพลังกันอีกครั้งเพื่อต่อกรกับเหล่าวายร้ายระดับบอสที่หวังจะกลืนกินทุกพหุภพเข้าสู่ความมืดมิด",
       "localization": "แปลเนื้อเรื่องหลัก เควสต์เสริม บทสนทนาดันเจี้ยน ทักษะฮีโร่ ไอเทม ฐานบัญชาการ และกราฟิก UI ครบถ้วน (ผ่านการตรวจ Readback 1:1 ในรอม 85,810/85,810 รายการที่แปลได้ คิดเป็น 99.34% ของคลังทั้งหมด โดยยกเว้นเฉพาะ StaffRoll* 550 รายการที่เข้ารหัส และช่องว่าง 22 รายการ) พร้อมอัปเกรดฟอนต์เมนู 13pt คมชัด อ่านง่าย สบายตา",
@@ -1129,7 +1129,7 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-16T14:32:00+07:00",
+    "verifiedAt": "2026-11-18T19:20:00+07:00",
     "luma": {
       "format": "LayeredFS / Luma3DS",
       "filename": "23_Lost_Heroes_2_v1.0.0_Mod.zip",
@@ -3209,6 +3209,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "lost-heroes-2",
+    "title": "Lost Heroes 2",
+    "platform": "3DS",
+    "version": "v1.0.1",
+    "type": "update",
+    "timestamp": "2026-11-18T19:20:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.1 (เนื้อเรื่องหลัก เควสต์เสริม บทสนทนาดันเจี้ยน และระบบทั้งหมด 100%)"
+  },
   {
     "slug": "bravely-default",
     "title": "Bravely Default",
