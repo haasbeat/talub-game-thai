@@ -61,34 +61,34 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 002 / 041",
-    "version": "v1.1.1",
+    "version": "v1.1.2",
     "patchDate": "2026-11-18",
     "addedDate": "2026-11-04",
     "addedOrder": 1,
     "addedAt": "2026-11-04T21:10:11+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/bravely-default.jpg",
-    "manifest": "./assets/patches/bravely-default/v1.1.1/manifest.json",
+    "manifest": "./assets/patches/bravely-default/v1.1.2/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN USA 3DS · 4 GB",
     "region": "USA",
     "gameCode": "BTEE",
     "sourceName": "Bravely Default (USA) (En,Ja,Fr,De,Es,It).3ds · 4,294,967,296 bytes",
     "sourceHash": "6b4a89fa3385e967ab1db282b1616dc58df659c90a0626850d468334c70a0af2",
-    "outputHash": "024ba11328b2e53e59832d9c4451b7e67207241df0d017302b2d4004786ca40a",
+    "outputHash": "122af657ae457329364359635964eb56496ca4a7eaf46557053aaae40ffa882b",
     "moduleStatus": "เนื้อเรื่องหลัก+ปาร์ตี้แช็ต+ระบบต่อสู้+เมนู+ไดอารีดี 100% ครบทั้ง 14 หมวดหมู่ (ฟอนต์ Chakra Petch 1.5x Hi-Res คมชัดระดับโปร Parity เดียวกับ Dragon Quest XI)",
     "wholeGameCensus": "39,379/39,379 เรคคอร์ด = 100.00%",
     "details": null,
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-18T12:12:00+07:00",
+    "verifiedAt": "2026-11-18T17:23:00+07:00",
     "luma": {
       "format": "LayeredFS / Luma3DS",
-      "filename": "Bravely_Default_USA_TH_v1.1.1_Mod.zip",
-      "url": "https://drive.google.com/uc?export=download&id=13DdlDXIWSZzqqMv7HjLaXHP6i7MQGp2T",
-      "viewUrl": "https://drive.google.com/file/d/13DdlDXIWSZzqqMv7HjLaXHP6i7MQGp2T/view?usp=sharing",
-      "size": 1521990,
-      "id": "13DdlDXIWSZzqqMv7HjLaXHP6i7MQGp2T"
+      "filename": "Bravely_Default_USA_TH_v1.1.2_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1notvOV-GV-DbfJAnTzJekMdc5FpjT69L",
+      "viewUrl": "https://drive.google.com/file/d/1notvOV-GV-DbfJAnTzJekMdc5FpjT69L/view?usp=sharing",
+      "size": 1521999,
+      "id": "1notvOV-GV-DbfJAnTzJekMdc5FpjT69L"
     }
   },
   {
@@ -3209,6 +3209,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "bravely-default",
+    "title": "Bravely Default",
+    "platform": "3DS",
+    "version": "v1.1.2",
+    "type": "update",
+    "timestamp": "2026-11-18T17:25:00+07:00",
+    "note": "อัปเดตแพตช์ด่วน v1.1.2: แก้ไขบัคข้อความไม่แสดงผล (กล่องข้อความว่างเปล่า) บน iPhone (Folium) และ Android (Citra MMJ) โดยย้ายคำสั่งคำนวณสเกลฟอนต์เข้ามาไว้ใน Code Caves ภายในเนื้อไฟล์เดิม (.text) ทำให้รองรับทุก Loader และเล่นได้สมบูรณ์แบบ 100% ทุกแพลตฟอร์ม + อัปเดตม็อด LayeredFS v1.1.2"
+  },
   {
     "slug": "front-mission-5",
     "title": "Front Mission 5: Scars of the War",
