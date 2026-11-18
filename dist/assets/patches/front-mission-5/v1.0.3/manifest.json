@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "game_slug": "front-mission-5",
+  "game_title": "Front Mission 5: Scars of the War",
+  "platform": "PS2",
+  "region": "Japan",
+  "game_code": "SLPM-66205",
+  "patch_version": "v1.0.3",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Front Mission 5 - Scars of the War (Japan).iso",
+      "size": 3918495744,
+      "sha256": "88d8e9f6cc6196cf7c0347439f38d5aae0b865a6ed754d30239e5d9bad5fdc1f"
+    }
+  ],
+  "patch": {
+    "filename": "Front_Mission_5_PS2_JP_TH_v1.0.3.xdelta",
+    "size": 73527843,
+    "sha256": "cbc704f677de45593cd264d24580fca1b7f2f9ddf0127f5a5054d2c06c1bb30f",
+    "release_date": "2026-11-18",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/front-mission-5/v1.0.3/Front_Mission_5_PS2_JP_TH_v1.0.3.xdelta"
+  },
+  "output": {
+    "filename": "Front_Mission_5_JP_TH_v1.0.3.iso",
+    "size": 4004610048,
+    "sha256": "6d9c4c2f3d6d8f946f96b01adece7e6578d869d0987eef85aac980a9478ec92d"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก ฐานทัพ อารีนา ซิมูเลเตอร์ เมนู ฐานข้อมูล ซับคัทซีน และ Opening FMV ครบถ้วน",
+    "whole_game_census": "แปลไทย 38,095 / 38,287 รายการ (99.5%) + คงรูปสากล 192 รายการ (In-ROM Readback 1:1 100%)",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "In-ROM forensic audit (audit_fm5.py / 2026-11-18)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-18T14:50:00+07:00",
+    "method": "clean_source_xdelta3_roundtrip",
+    "note": "v1.0.3 bugfix update (Fix Post-Mission 7 ev210.pak Cutscene Asset Arena MPEG-overlay buffer starvation hang / subset EE main-heap cutscene fonts File #251 & #252 saving 1.25 MB vs v1.0.2). Clean 3.92 GB Japan PS2 ISO (SLPM-66205) verified with clean-source roundtrip via release_guard.py; 38,287 records verified 1:1 via readback_guard.py (38,095 Thai + 192 retained = 99.5%); VM scripts (156 chunks, non-pointer preservation verified 100%), 1,619 non-VM gid=130 chunks, cutscene font heap budget verified (+395,128 B saved vs clean ISO), UDF descriptor CRCs, Opening FMV F#9989 (6/6 hardsubbed cards), and 4-tier v1.0.3 watermarks passed. 263 2D TIM2 textures, English HUD labels (Pilot/Machine Status, Not Equipped, HP/AP/EP/Lv./Max), and bonus FMO PV F#9990 remain original; hardware status: hardware-unverified.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true,
+    "patcher_test_passed": true,
+    "binary_readback_verified": true
+  }
+}
