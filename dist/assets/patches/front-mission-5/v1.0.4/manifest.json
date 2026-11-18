@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "game_slug": "front-mission-5",
+  "game_title": "Front Mission 5: Scars of the War",
+  "platform": "PS2",
+  "region": "Japan",
+  "game_code": "SLPM-66205",
+  "patch_version": "v1.0.4",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Front Mission 5 - Scars of the War (Japan).iso",
+      "size": 3918495744,
+      "sha256": "88d8e9f6cc6196cf7c0347439f38d5aae0b865a6ed754d30239e5d9bad5fdc1f"
+    }
+  ],
+  "patch": {
+    "filename": "Front_Mission_5_PS2_JP_TH_v1.0.4.xdelta",
+    "size": 72228062,
+    "sha256": "6bb521f49ffb33b6a38c8c7a43a22dcc64183336b4f66b76d798129bf55a13f9",
+    "release_date": "2026-11-18",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/front-mission-5/v1.0.4/Front_Mission_5_PS2_JP_TH_v1.0.4.xdelta"
+  },
+  "output": {
+    "filename": "Front_Mission_5_JP_TH_v1.0.4.iso",
+    "size": 3973251072,
+    "sha256": "fb0b0ab04e5d8e697d99038c3e80bd7468b8766bc43bc0bf77c492e869389049"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก ฐานทัพ อารีนา ซิมูเลเตอร์ เมนู ฐานข้อมูล ซับคัทซีน และ Opening FMV ครบถ้วน",
+    "whole_game_census": "แปลไทย 38,095 / 38,287 รายการ (99.5%) + คงรูปสากล 192 รายการ (In-ROM Readback 1:1 100%)",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "In-ROM forensic audit (audit_fm5.py / 2026-11-18)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-18T20:33:00+07:00",
+    "method": "clean_source_xdelta3_roundtrip",
+    "note": "v1.0.4 bugfix update (Fix Warship CVN-112: Eclipse base map & briefing cutscene arena EE RAM memory pressure: implemented in-pool dead-string reclamation in patch_vm_block saving 832,256 B across 156 VM scripts, preventing cutscene abort during MPEG-overlay briefings ev260/320/360/430; plus v1.0.3 cutscene font subsetting -395,128 B). Clean 3.92 GB Japan PS2 ISO (SLPM-66205) verified with clean-source roundtrip via release_guard.py; 38,287 records verified 1:1 via readback_guard.py (38,095 Thai + 192 retained = 99.5%); VM scripts (156 chunks, non-pointer preservation verified 100%), 1,619 non-VM gid=130 chunks, cutscene font heap budget verified (+395,128 B saved vs clean ISO), UDF descriptor CRCs, Opening FMV F#9989 (6/6 hardsubbed cards), and 4-tier v1.0.4 watermarks passed. 263 2D TIM2 textures, English HUD labels (Pilot/Machine Status, Not Equipped, HP/AP/EP/Lv./Max), and bonus FMO PV F#9990 remain original; hardware status: hardware-unverified.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true,
+    "patcher_test_passed": true,
+    "binary_readback_verified": true
+  }
+}
