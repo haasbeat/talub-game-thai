@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "game_slug": "chocobo-dungeon-ds-plus",
+  "game_title": "Cid to Chocobo no Fushigi na Dungeon: Toki Wasure no Meikyuu DS+",
+  "platform": "NDS",
+  "region": "Japan",
+  "game_code": "CCTJ",
+  "patch_version": "v1.0.1",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Cid to Chocobo no Fushigi na Dungeon - Toki Wasure no Meikyuu DS+ (Japan).nds",
+      "size": 134217728,
+      "sha256": "187f794866c235dac9b9c53d4dbab9a5ce03a956ec10b584afd25280ade3a311"
+    }
+  ],
+  "patch": {
+    "filename": "Chocobo_Dungeon_DS_Plus_TH_v1.0.1.xdelta",
+    "size": 293458,
+    "sha256": "de84d575c3e203dc5fbaa0d7e516952eedc587f126ea47f8810cc8418d14eb2f",
+    "release_date": "2026-11-18",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/chocobo-dungeon-ds-plus/v1.0.1/Chocobo_Dungeon_DS_Plus_TH_v1.0.1.xdelta"
+  },
+  "output": {
+    "filename": "Chocobo_Dungeon_DS_Plus_TH_v1.0.1.nds",
+    "size": 134217728,
+    "sha256": "ac9e56fcfbb451796bcd55f0a4cfa9b96d2cb6f28cb75fc9672d37ce79d89780"
+  },
+  "release_status": {
+    "module_status": "Hotfix v1.0.1 แก้ไขบัคเปิดตู้จดหมายรับจดหมายฉบับที่ 2 แล้วเกมค้าง | เนื้อเรื่องหลักทุกบท (EVTMSG0..10) และเมนู/อาชีพ/ไอเทม/Pop-Up Duel 100% (ภาพรวมทั้งเกม 95.43%)",
+    "whole_game_census": "7,323/7,674 รายการ = 95.43% (ข้อความจริง Layers 1–3 ครบ 7,323/7,323 = 100.0%)",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "In-ROM forensic audit (2026-11-18)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-18T13:24:00+07:00",
+    "method": "clean_source_xdelta3_roundtrip",
+    "note": "Clean 128 MB Japan Decrypted NDS cartridge source verified with clean-source roundtrip via release_guard.py; In-ROM binary census passed with 7,323 records (0 CRITICAL_FREEZE, 0 ERROR); Dual-Ceiling ARM9/OV0 heap tuned (0x26000 / 0xA000); 4-tier watermark parity verified; Header and Banner CRC16 valid (0x3148 / 0xf655); Mailbox letter 456 freeze resolved.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true,
+    "patcher_test_passed": true
+  }
+}

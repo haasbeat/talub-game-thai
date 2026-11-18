@@ -2088,22 +2088,22 @@ window.GAME_CATALOG = [
     "platform": "nds",
     "platformLabel": "NDS",
     "index": "NDS | 001 / 013",
-    "version": "v1.0.0",
-    "patchDate": "2026-11-15",
+    "version": "v1.0.1",
+    "patchDate": "2026-11-18",
     "addedDate": "2026-11-15",
     "addedOrder": 64,
     "addedAt": "2026-11-15T20:00:00+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/chocobo-dungeon-ds-plus.jpg",
-    "manifest": "./assets/patches/chocobo-dungeon-ds-plus/v1.0.0/manifest.json",
+    "manifest": "./assets/patches/chocobo-dungeon-ds-plus/v1.0.1/manifest.json",
     "accept": ".nds",
     "fileTypes": "CLEAN Japan NDS · 128 MB",
     "region": "Japan",
     "gameCode": "CCTJ",
     "sourceName": "Cid to Chocobo no Fushigi na Dungeon - Toki Wasure no Meikyuu DS+ (Japan).nds · 134,217,728 bytes",
     "sourceHash": "187f794866c235dac9b9c53d4dbab9a5ce03a956ec10b584afd25280ade3a311",
-    "outputHash": "b1892531c570b01fbf4c1e5ea34063f036da61017655b15314ec9a9060fb3365",
-    "moduleStatus": "เนื้อเรื่องหลักทุกบท (EVTMSG0..10) และเมนู/อาชีพ/ไอเทม/Pop-Up Duel 100% (ภาพรวมทั้งเกม 95.43%)",
+    "outputHash": "ac9e56fcfbb451796bcd55f0a4cfa9b96d2cb6f28cb75fc9672d37ce79d89780",
+    "moduleStatus": "Hotfix v1.0.1 แก้ไขบัคเปิดตู้จดหมายรับจดหมายฉบับที่ 2 แล้วเกมค้าง | เนื้อเรื่องหลักทุกบท (EVTMSG0..10) และเมนู/อาชีพ/ไอเทม/Pop-Up Duel 100% (ภาพรวมทั้งเกม 95.43%)",
     "wholeGameCensus": "7,323/7,674 รายการ = 95.43% (ข้อความจริง Layers 1–3 ครบ 7,323/7,323 = 100.0%)",
     "details": {
       "thaiTitle": "ซีดกับช็อกโบะ ตะลุยดันเจียนปริศนา เขาวงกตแห่งกาลเวลา DS+",
@@ -2112,7 +2112,7 @@ window.GAME_CATALOG = [
       "studio": "Square Enix / h.a.n.d.",
       "release": "2008-10-30",
       "genre": "Roguelike / Mystery Dungeon RPG",
-      "description": "ม็อดภาษาไทยสำหรับ Cid to Chocobo no Fushigi na Dungeon: Toki Wasure no Meikyuu DS+ (Nintendo DS โซนญี่ปุ่น) เวอร์ชัน v1.0.0 แปลเนื้อเรื่องหลัก เควสต์ฟื้นความทรงจำชาวเมือง โหมดพิเศษ Cid's Adventure ระบบ 13 อาชีพ และมินิเกมการ์ด Pop-Up Duel ครบทุกบทข้อความ 100%",
+      "description": "ม็อดภาษาไทยสำหรับ Cid to Chocobo no Fushigi na Dungeon: Toki Wasure no Meikyuu DS+ (Nintendo DS โซนญี่ปุ่น) เวอร์ชัน v1.0.1 (Hotfix) แก้ไขบัคเปิดตู้จดหมายรับจดหมายฉบับที่ 2 แล้วเกมค้าง แปลเนื้อเรื่องหลัก เควสต์ฟื้นความทรงจำชาวเมือง โหมดพิเศษ Cid's Adventure ระบบ 13 อาชีพ และมินิเกมการ์ด Pop-Up Duel ครบถ้วนสมบูรณ์",
       "overview": "การผจญภัยของคู่หู ซิด และ โชโคโบะ สู่เมืองทอคคา นครที่ไร้กาลเวลาซึ่งผู้คนสูญเสียความทรงจำทุกครั้งที่เสียงระฆังดัง โชโคโบะต้องดำดิ่งสู่ดันเจียนแห่งความทรงจำเพื่อนำตัวตนของชาวเมืองกลับคืนมา",
       "story": "ซิด นักประดิษฐ์และนักล่าสมบัติ พร้อมด้วยคู่หู โชโคโบะ ถูกวงแหวนเวทมนตร์ลึกลับดูดข้ามมิติมายังเมือง 'ทอคคา' (Lostime) ที่ซึ่งชาวเมืองทุกคนถูก 'ระฆังแห่งการลืมเลือน' ลบความทรงจำจนหมดสิ้น แต่แล้วเด็กชายปริศนา 'ราฟาเอลโล' ก็ได้ปรากฏตัวขึ้น พร้อมมอบพลังให้โชโคโบะสามารถดำดิ่งเข้าไปในเขาวงกตแห่งความทรงจำ เพื่อทวงคืนสิ่งที่ชาวเมืองทำหล่นหาย และเผชิญหน้ากับความลับของโลกและระฆังแห่งการทำลายล้าง",
       "localization": "แปลเนื้อเรื่องหลักทุกบท (EVTMSG0..10), บททดสอบความทรงจำ, เควสต์รอง, โหมดพิเศษ Cid's Adventure, ระบบเมนู, ฐานข้อมูล 13 อาชีพ, คำอธิบายไอเทม, การ์ด Pop-Up Duel และระบบ Wi-Fi/Duel ครบ 100% (สำมะโนข้อความจริง 7,323/7,323 ข้อความ = 100.0% | รวมแถวโครงสร้างระบบ 95.43%) ใช้ฟอนต์ Precomposed 3-Tier PUA อักษรไทยคมชัด 3 ชั้น สระและวรรณยุกต์ไม่ซ้อนทับ ปรับจูน Heap หน่วยความจำแบบ Dual-Ceiling ไร้อาการหลุดค้างหลังคัทซีน พร้อมลายน้ำและคำเตือนห้ามจำหน่ายครบ 4 ระดับ",
@@ -2127,7 +2127,7 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-15T20:00:00+07:00"
+    "verifiedAt": "2026-11-18T13:24:00+07:00"
   },
   {
     "order": 42,
@@ -3209,6 +3209,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "chocobo-dungeon-ds-plus",
+    "title": "Cid to Chocobo no Fushigi na Dungeon: Toki Wasure no Meikyuu DS+",
+    "platform": "NDS",
+    "version": "v1.0.1",
+    "type": "update",
+    "timestamp": "2026-11-18T13:25:00+07:00",
+    "note": "อัปเดตแพตช์ด่วน v1.0.1 (Hotfix): แก้ไขบัคเปิดตู้จดหมายที่หน้าฟาร์มเพื่อรับจดหมายฉบับที่ 2 แล้วเกมค้าง อันเกิดจากการตัดบรรทัดชื่อไอเทมเกินขอบเขตกล่องข้อความ พร้อมจัดระเบียบแท็กสีจดหมายให้อ่านง่ายสบายตายิ่งขึ้น"
+  },
   {
     "slug": "bravely-default",
     "title": "Bravely Default",
