@@ -1132,11 +1132,11 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-18T19:20:00+07:00",
     "luma": {
       "format": "LayeredFS / Luma3DS",
-      "filename": "23_Lost_Heroes_2_v1.0.0_Mod.zip",
-      "url": "https://drive.google.com/uc?export=download&id=10fkvWA8jHwLzImqz149pnJs5iW8FiZpE",
-      "viewUrl": "https://drive.google.com/file/d/10fkvWA8jHwLzImqz149pnJs5iW8FiZpE/view?usp=sharing",
-      "size": 69260439,
-      "id": "10fkvWA8jHwLzImqz149pnJs5iW8FiZpE"
+      "filename": "Lost_Heroes_2_Thai_v1.0.1_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1TYw5aike-Foj0BKN_fZtewYj-l18E8Ah",
+      "viewUrl": "https://drive.google.com/file/d/1TYw5aike-Foj0BKN_fZtewYj-l18E8Ah/view?usp=sharing",
+      "size": 69260459,
+      "id": "1TYw5aike-Foj0BKN_fZtewYj-l18E8Ah"
     }
   },
   {

@@ -28,6 +28,12 @@
     "size": 1073741824,
     "sha256": "b1e9694ee2f46d767130b357a65f1e6c8074822c7c308e13588065f6fc68d640"
   },
+  "mod_archive": {
+    "filename": "Lost_Heroes_2_Thai_v1.0.1_Mod.zip",
+    "size": 69260459,
+    "sha256": "4267ede42b3b71d37efc98208045add03226e3638d45901fd88d6f3319f39442",
+    "url": "https://drive.google.com/file/d/1TYw5aike-Foj0BKN_fZtewYj-l18E8Ah/view?usp=sharing"
+  },
   "release_status": {
     "module_status": "เนื้อเรื่องหลัก เควสต์เสริม บทสนทนาดันเจี้ยน และระบบทั้งหมด 100%",
     "whole_game_census": "แปลข้อความที่แปลได้ครบ 85,810/85,810 (100.0%) | ภาพรวมทั้งคลัง 99.34% (ยกเว้น StaffRoll* เข้ารหัส 550 และช่องว่าง 22 รายการ)",
