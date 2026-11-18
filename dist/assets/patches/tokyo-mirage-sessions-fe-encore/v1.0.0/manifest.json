@@ -8,10 +8,11 @@
   "target_game_version": "Base Game (v0 Asia En/Ja/Fr/Zh 0100A9400C9C2000)",
   "distribution": {
     "type": "external_mod_archive",
-    "filename": "TMS_FE_Encore_Switch_Thai_v1.0.0_AllInOne.zip",
+    "format": "LayeredFS / Atmosphère",
+    "filename": "TMS_FE_Encore_Switch_Thai_v1.0.0_Mod.zip",
     "url": "https://drive.google.com/file/d/1lwamXRdbWq0ZoYs_CTyoDwaKUjUBNbPQ/view?usp=sharing",
-    "size": 121933970,
-    "sha256": "808b45e4859e0d915ed7d1eab50d9daa1722744b65a42f50ffd660b8a7e8e388",
+    "size": 91399958,
+    "sha256": "b0c3af4c09192b54a8d5cc28a0070131d58338926aaf52fc2567514df0b0de9a",
     "release_date": "2026-11-18",
     "date_source": "user_authorized_release"
   },

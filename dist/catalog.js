@@ -3119,12 +3119,12 @@ window.GAME_CATALOG = [
     "cover": "./assets/covers/web/tokyo-mirage-sessions-fe-encore.jpg",
     "manifest": "./assets/patches/tokyo-mirage-sessions-fe-encore/v1.0.0/manifest.json",
     "accept": "",
-    "fileTypes": "ชุดม็อด LayeredFS · 116.29 MB",
+    "fileTypes": "ชุดม็อด LayeredFS · 87.17 MB",
     "region": "Global",
     "gameCode": "0100A9400C9C2000",
     "sourceName": "Base Game (v0 Asia En/Ja/Fr/Zh 0100A9400C9C2000)",
     "sourceHash": "0100A9400C9C2000",
-    "outputHash": "808b45e4859e0d915ed7d1eab50d9daa1722744b65a42f50ffd660b8a7e8e388",
+    "outputHash": "b0c3af4c09192b54a8d5cc28a0070131d58338926aaf52fc2567514df0b0de9a",
     "moduleStatus": "เนื้อเรื่องหลัก ไซด์สตอรี แชท TOPIC เมนู สกิล ไอเทม และระบบต่อสู้ ครบทุกบทสนทนาที่มีเนื้อหา 100%",
     "wholeGameCensus": "29,129 / 29,601 ระเบียน In-ROM (98.41%)",
     "details": {
@@ -3153,9 +3153,9 @@ window.GAME_CATALOG = [
     "verifiedAt": null,
     "distributionType": "external-download",
     "downloadUrl": "https://drive.google.com/file/d/1lwamXRdbWq0ZoYs_CTyoDwaKUjUBNbPQ/view?usp=sharing",
-    "downloadFilename": "TMS_FE_Encore_Switch_Thai_v1.0.0_AllInOne.zip",
-    "downloadSize": 121933970,
-    "downloadSha256": "808b45e4859e0d915ed7d1eab50d9daa1722744b65a42f50ffd660b8a7e8e388"
+    "downloadFilename": "TMS_FE_Encore_Switch_Thai_v1.0.0_Mod.zip",
+    "downloadSize": 91399958,
+    "downloadSha256": "b0c3af4c09192b54a8d5cc28a0070131d58338926aaf52fc2567514df0b0de9a"
   },
   {
     "order": 67,
