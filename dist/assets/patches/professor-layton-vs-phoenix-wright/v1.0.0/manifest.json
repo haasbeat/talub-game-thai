@@ -28,12 +28,6 @@
     "size": 2147483648,
     "sha256": "d931ae8afdb4b5b849ad1d882136a67328a1ee400ef12cc657a3c57cdc6f624e"
   },
-  "all_in_one_archive": {
-    "filename": "Professor_Layton_vs_Phoenix_Wright_USA_Thai_v1.0.0_Patch.zip",
-    "size": 2388846,
-    "sha256": "677707108f00a4e98fc445c65d96aca8480802d1baad4ff62611f42ea4d1bdb2",
-    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/professor-layton-vs-phoenix-wright/v1.0.0/Professor_Layton_vs_Phoenix_Wright_USA_Thai_v1.0.0_Patch.zip"
-  },
   "release_status": {
     "module_status": "ข้อความสคริปต์ทั้งเกมครบ 100% (26,813/26,813 รายการ In-ROM Verified; กราฟิก UI .xi/.xa 1,029 ไฟล์ยังเป็นภาษาอังกฤษ)",
     "whole_game_census": "26,813 / 26,813 รายการ = 100.0%",

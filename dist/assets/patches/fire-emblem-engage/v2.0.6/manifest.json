@@ -8,10 +8,10 @@
   "target_game_version": "Update v2.0.0 + DLC Waves 1-4",
   "distribution": {
     "type": "external_mod_archive",
-    "filename": "FE17_Thai_v2.0.6_All_In_One.zip",
+    "filename": "FE17_Thai_v2.0.7_Mod.zip",
     "url": "https://drive.google.com/file/d/1-QSoibdJ5IXqAdaGblMuHkOj51Hjb1XW/view?usp=sharing",
-    "size": 97534117,
-    "sha256": "e4307cd633f16bee961d86d678bcacf24c1cc0ab3c73140c59f0d94771c39d54",
+    "size": 53901899,
+    "sha256": "8c87316d2eff86c7ef712e88a5276c8c713ee38a345c74e8133b26615e5cb72d",
     "release_date": "2026-11-08",
     "date_source": "remote_file_modified_time"
   },

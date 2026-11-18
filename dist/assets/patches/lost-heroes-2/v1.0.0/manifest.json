@@ -34,12 +34,6 @@
     "sha256": "ba1cb1ee150cc650a4d45e163cbe8ce83ca1d687e0c6e2604cbce49d60645b1b",
     "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/lost-heroes-2/v1.0.0/Lost_Heroes_2_Thai_v1.0.0_Mod.zip"
   },
-  "all_in_one_archive": {
-    "filename": "Lost_Heroes_2_Thai_v1.0.0_AllInOne.zip",
-    "size": 127229020,
-    "sha256": "a5e331eba531f82ad8e3a609bc6acbc826d2603aacc399c17ea0007994011209",
-    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/lost-heroes-2/v1.0.0/Lost_Heroes_2_Thai_v1.0.0_AllInOne.zip"
-  },
   "release_status": {
     "module_status": "เนื้อเรื่องหลัก เควสต์เสริม บทสนทนาดันเจี้ยน และระบบทั้งหมด 100%",
     "whole_game_census": "85,810/85,810 เรคคอร์ดที่แปลได้ (ภาพรวมทั้งคลัง 99.34% ยกเว้น StaffRoll* เข้ารหัส 550 และช่องว่าง 22 รายการ)",

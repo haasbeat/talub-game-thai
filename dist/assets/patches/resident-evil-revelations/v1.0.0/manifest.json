@@ -34,11 +34,6 @@
     "sha256": "ae396f1f808f8d66c42c3c43a794be7e4de180b4a39f33caf1925b4383213f4f",
     "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/resident-evil-revelations/v1.0.0/Resident_Evil_Revelations_USA_Thai_v1.0.0_Mod.zip"
   },
-  "all_in_one_archive": {
-    "filename": "Resident_Evil_Revelations_USA_Thai_v1.0.0_AllInOne.zip",
-    "size": 3005188,
-    "sha256": "d075e2715208a711f8f7ed28cdbba51b5fafd0913e9eef6c90df82a865487e07"
-  },
   "release_status": {
     "module_status": "ข้อความบทสนทนา เนื้อเรื่องหลัก เมนู ไอเทม โหมด Raid และเอกสาร 100%",
     "whole_game_census": "4,188/4,188 เรคคอร์ด (.gmd) แปลไทยครบ 100% (กราฟิกภาพ UI สำเร็จรูป 5 ไฟล์คงต้นฉบับภาษาอังกฤษ)",

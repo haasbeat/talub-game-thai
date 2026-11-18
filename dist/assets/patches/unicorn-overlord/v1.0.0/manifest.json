@@ -8,10 +8,10 @@
   "target_game_version": "Base Game (v1.0.0 US/EU 010069401ADB8000)",
   "distribution": {
     "type": "external_mod_archive",
-    "filename": "Unicorn_Overlord_Switch_Thai_v1.0.0_AllInOne.zip",
+    "filename": "Unicorn_Overlord_Switch_Thai_v1.0.1_Mod.zip",
     "url": "https://drive.google.com/file/d/1iqV8xEouhK1S8_5hbvwtbV-ma5iQMXbZ/view?usp=sharing",
-    "size": 30547600,
-    "sha256": "225bf5398d4e79cff665507e4435a3b071f709ee2608d3ee2be2ee38bbecd82a",
+    "size": 26971676,
+    "sha256": "ead23bf7325bc0e3955b98ca054ae1e26de324be41be16a2b0791ef3bfd4bb25",
     "release_date": "2026-11-16",
     "date_source": "user_authorized_release"
   },
