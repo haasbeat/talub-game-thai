@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "game_slug": "tokyo-mirage-sessions-fe-encore",
+  "game_title": "Tokyo Mirage Sessions #FE Encore",
+  "platform": "Nintendo Switch",
+  "title_id": "0100A9400C9C2000",
+  "patch_version": "v1.0.0",
+  "target_game_version": "Base Game (v0 Asia En/Ja/Fr/Zh 0100A9400C9C2000)",
+  "distribution": {
+    "type": "external_mod_archive",
+    "filename": "TMS_FE_Encore_Switch_Thai_v1.0.0_AllInOne.zip",
+    "url": "https://drive.google.com/file/d/1lwamXRdbWq0ZoYs_CTyoDwaKUjUBNbPQ/view?usp=sharing",
+    "size": 121933970,
+    "sha256": "808b45e4859e0d915ed7d1eab50d9daa1722744b65a42f50ffd660b8a7e8e388",
+    "release_date": "2026-11-18",
+    "date_source": "user_authorized_release"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก ไซด์สตอรี แชท TOPIC เมนู สกิล ไอเทม และระบบต่อสู้ ครบทุกบทสนทนาที่มีเนื้อหา 100%",
+    "whole_game_census": "29,129 / 29,601 ระเบียน In-ROM (98.41%)"
+  },
+  "verification": {
+    "archive_identity_verified": true,
+    "binary_readback_verified": true,
+    "xdelta_roundtrip_verified": true,
+    "hardware_verified": false
+  }
+}
