@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "game_slug": "bravely-default",
+  "game_title": "Bravely Default",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "BTEE",
+  "patch_version": "v1.1.3",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Bravely Default (USA) (En,Ja,Fr,De,Es,It).3ds",
+      "size": 4294967296,
+      "sha256": "6b4a89fa3385e967ab1db282b1616dc58df659c90a0626850d468334c70a0af2"
+    }
+  ],
+  "patch": {
+    "filename": "Bravely_Default_USA_TH_v1.1.3.xdelta",
+    "size": 3511857,
+    "sha256": "18b60d3c4f37fb3a40cf1f407b3f9bc85482bb857718d862b4ba505610149266",
+    "release_date": "2026-11-18",
+    "date_source": "release_build",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/bravely-default/v1.1.3/Bravely_Default_USA_TH_v1.1.3.xdelta"
+  },
+  "output": {
+    "filename": "Bravely_Default_USA_TH_v1.1.3.3ds",
+    "size": 4294967296,
+    "sha256": "a27df2d99f82ce296976de6b2ede25ddaee6c64cab187c08cdb5904842b790a5"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก+ปาร์ตี้แช็ต+ระบบต่อสู้+เมนู+ไดอารีดี 100% ครบทั้ง 14 หมวดหมู่ (ฟอนต์ Chakra Petch 1.5x Hi-Res คมชัดระดับโปร Parity เดียวกับ Dragon Quest XI พร้อมแนบ Shared Font รองรับ Azahar Core)",
+    "whole_game_census": "39,379/39,379 เรคคอร์ด = 100.00%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-18T18:00:00+07:00",
+    "method": "clean_source_xdelta3_roundtrip",
+    "patcher_test_passed": true,
+    "patch_sha256_verified": true
+  }
+}

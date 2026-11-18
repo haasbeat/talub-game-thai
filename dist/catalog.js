@@ -61,34 +61,34 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 002 / 041",
-    "version": "v1.1.2",
+    "version": "v1.1.3",
     "patchDate": "2026-11-18",
     "addedDate": "2026-11-04",
     "addedOrder": 1,
     "addedAt": "2026-11-04T21:10:11+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/bravely-default.jpg",
-    "manifest": "./assets/patches/bravely-default/v1.1.2/manifest.json",
+    "manifest": "./assets/patches/bravely-default/v1.1.3/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN USA 3DS · 4 GB",
     "region": "USA",
     "gameCode": "BTEE",
     "sourceName": "Bravely Default (USA) (En,Ja,Fr,De,Es,It).3ds · 4,294,967,296 bytes",
     "sourceHash": "6b4a89fa3385e967ab1db282b1616dc58df659c90a0626850d468334c70a0af2",
-    "outputHash": "122af657ae457329364359635964eb56496ca4a7eaf46557053aaae40ffa882b",
-    "moduleStatus": "เนื้อเรื่องหลัก+ปาร์ตี้แช็ต+ระบบต่อสู้+เมนู+ไดอารีดี 100% ครบทั้ง 14 หมวดหมู่ (ฟอนต์ Chakra Petch 1.5x Hi-Res คมชัดระดับโปร Parity เดียวกับ Dragon Quest XI)",
+    "outputHash": "a27df2d99f82ce296976de6b2ede25ddaee6c64cab187c08cdb5904842b790a5",
+    "moduleStatus": "เนื้อเรื่องหลัก+ปาร์ตี้แช็ต+ระบบต่อสู้+เมนู+ไดอารีดี 100% ครบทั้ง 14 หมวดหมู่ (ฟอนต์ Chakra Petch 1.5x Hi-Res คมชัดระดับโปร Parity เดียวกับ Dragon Quest XI พร้อมแนบ Shared Font รองรับ Azahar Core)",
     "wholeGameCensus": "39,379/39,379 เรคคอร์ด = 100.00%",
     "details": null,
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-18T17:23:00+07:00",
+    "verifiedAt": "2026-11-18T18:00:00+07:00",
     "luma": {
       "format": "LayeredFS / Luma3DS",
-      "filename": "Bravely_Default_USA_TH_v1.1.2_Mod.zip",
-      "url": "https://drive.google.com/uc?export=download&id=1notvOV-GV-DbfJAnTzJekMdc5FpjT69L",
-      "viewUrl": "https://drive.google.com/file/d/1notvOV-GV-DbfJAnTzJekMdc5FpjT69L/view?usp=sharing",
-      "size": 1521999,
-      "id": "1notvOV-GV-DbfJAnTzJekMdc5FpjT69L"
+      "filename": "Bravely_Default_USA_TH_v1.1.3_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1DMJBWbmL0crARN_NaXEvthPMeCZPUJpE",
+      "viewUrl": "https://drive.google.com/file/d/1DMJBWbmL0crARN_NaXEvthPMeCZPUJpE/view?usp=sharing",
+      "size": 1852756,
+      "id": "1DMJBWbmL0crARN_NaXEvthPMeCZPUJpE"
     }
   },
   {
@@ -3209,6 +3209,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "bravely-default",
+    "title": "Bravely Default",
+    "platform": "3DS",
+    "version": "v1.1.3",
+    "type": "update",
+    "timestamp": "2026-11-18T18:05:00+07:00",
+    "note": "อัปเดตแพตช์ v1.1.3: บรรจุ System Shared Font (shared_font.bin) ลงในแพ็กเกจม็อด LayeredFS พร้อมคู่มือติดตั้งอย่างละเอียด สำหรับผู้เล่นบนมือถือที่ใช้ Azahar Core (Folium บน iOS / RetroArch) เพื่อให้ฟอนต์ระบบแสดงผลครบถ้วน 100% ทันทีโดยไม่ต้องดัมป์เอง + อัปเดตลิงก์ม็อด LayeredFS v1.1.3"
+  },
   {
     "slug": "bravely-default",
     "title": "Bravely Default",
