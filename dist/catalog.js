@@ -61,34 +61,34 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 002 / 041",
-    "version": "v1.0.9",
-    "patchDate": "2026-11-17",
+    "version": "v1.1.1",
+    "patchDate": "2026-11-18",
     "addedDate": "2026-11-04",
     "addedOrder": 1,
     "addedAt": "2026-11-04T21:10:11+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/bravely-default.jpg",
-    "manifest": "./assets/patches/bravely-default/v1.0.9/manifest.json",
+    "manifest": "./assets/patches/bravely-default/v1.1.1/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN USA 3DS · 4 GB",
     "region": "USA",
     "gameCode": "BTEE",
     "sourceName": "Bravely Default (USA) (En,Ja,Fr,De,Es,It).3ds · 4,294,967,296 bytes",
     "sourceHash": "6b4a89fa3385e967ab1db282b1616dc58df659c90a0626850d468334c70a0af2",
-    "outputHash": "117a7d3b325c4167c990e916b4d8d55fe17ab167ac3550bcf539b2eb3a98f9a6",
+    "outputHash": "024ba11328b2e53e59832d9c4451b7e67207241df0d017302b2d4004786ca40a",
     "moduleStatus": "เนื้อเรื่องหลัก+ปาร์ตี้แช็ต+ระบบต่อสู้+เมนู+ไดอารีดี 100% ครบทั้ง 14 หมวดหมู่ (ฟอนต์ Chakra Petch 1.5x Hi-Res คมชัดระดับโปร Parity เดียวกับ Dragon Quest XI)",
     "wholeGameCensus": "39,379/39,379 เรคคอร์ด = 100.00%",
     "details": null,
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-17T19:54:00+07:00",
+    "verifiedAt": "2026-11-18T12:12:00+07:00",
     "luma": {
       "format": "LayeredFS / Luma3DS",
-      "filename": "Bravely_Default_USA_TH_v1.0.9_Mod.zip",
-      "url": "https://drive.google.com/uc?export=download&id=1PXd46q00vpzO8pvGmttjk45mxXWXU0Uk",
-      "viewUrl": "https://drive.google.com/file/d/1PXd46q00vpzO8pvGmttjk45mxXWXU0Uk/view?usp=sharing",
-      "size": 4007123,
-      "id": "1PXd46q00vpzO8pvGmttjk45mxXWXU0Uk"
+      "filename": "Bravely_Default_USA_TH_v1.1.1_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=13DdlDXIWSZzqqMv7HjLaXHP6i7MQGp2T",
+      "viewUrl": "https://drive.google.com/file/d/13DdlDXIWSZzqqMv7HjLaXHP6i7MQGp2T/view?usp=sharing",
+      "size": 1521990,
+      "id": "13DdlDXIWSZzqqMv7HjLaXHP6i7MQGp2T"
     }
   },
   {
@@ -3209,6 +3209,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "bravely-default",
+    "title": "Bravely Default",
+    "platform": "3DS",
+    "version": "v1.1.1",
+    "type": "update",
+    "timestamp": "2026-11-18T12:15:00+07:00",
+    "note": "อัปเดตแพตช์ v1.1.1: แก้ไขข้อผิดพลาดแท็กวงเล็บ [ ... ] ชนกับเอนจินสตรีมมิงข้อความ ทำให้บอลลูนคำพูดและหน้าต่างตัวเลือกของนักผจญภัยแสดงผลถูกต้องสมบูรณ์ 100% พร้อมปรับความกว้างตัวเลือกให้กระชับสบายตา + อัปเดตลิงก์ม็อด LayeredFS v1.1.1"
+  },
   {
     "slug": "dragon-quest-v",
     "title": "Dragon Quest V: Hand of the Heavenly Bride",
