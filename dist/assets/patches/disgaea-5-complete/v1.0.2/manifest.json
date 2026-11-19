@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "game_slug": "disgaea-5-complete",
+  "game_title": "Disgaea 5 Complete",
+  "platform": "Nintendo Switch",
+  "title_id": "01005700031AE000",
+  "patch_version": "v1.0.2",
+  "target_game_version": "Base game v1.0.0 (US / Worldwide)",
+  "distribution": {
+    "type": "external_mod_archive",
+    "format": "LayeredFS / Atmosphère",
+    "filename": "Disgaea_5_Complete_v1.0.2_Mod.zip",
+    "url": "https://drive.google.com/file/d/1uoRzn8WJ76jLBqGAlFmYtZgHJl_OxuBA/view?usp=sharing",
+    "size": 970685635,
+    "sha256": "2e68c19ac9794489b1dd86410fac6b25c3f98d6598bdf09ac058642054b46e58",
+    "release_date": "2026-11-19",
+    "date_source": "user_authorized_release"
+  },
+  "release_status": {
+    "module_status": "เมนู ระบบ ฐานทัพ สกิล ไอเทม เควสต์ เนื้อเรื่องหลัก 1-16 บทเสริม NPC แดนมาร สารานุกรม 100%",
+    "whole_game_census": "63,635 / 84,157 บรรทัด = 75.61%",
+    "untranslated": "แฟล็กดีบักภายในเอนจินและตารางค้นหาไบนารีที่ผู้เล่นไม่พบในการเล่นปกติ"
+  },
+  "verification": {
+    "archive_identity_verified": true,
+    "binary_readback_verified": true,
+    "hardware_verified": false
+  }
+}

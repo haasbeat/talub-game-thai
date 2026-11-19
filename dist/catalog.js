@@ -2954,32 +2954,32 @@ window.GAME_CATALOG = [
     "platform": "switch",
     "platformLabel": "SWITCH",
     "index": "SWITCH | 001 / 007",
-    "version": "v1.0.1",
-    "patchDate": "2026-11-06",
+    "version": "v1.0.2",
+    "patchDate": "2026-11-19",
     "addedDate": "2026-11-06",
     "addedOrder": 42,
     "addedAt": "2026-11-06T14:30:36+07:00",
     "format": "LayeredFS / Atmosphère",
     "cover": "./assets/covers/web/disgaea-5-complete.jpg",
-    "manifest": "./assets/patches/disgaea-5-complete/v1.0.1/manifest.json",
+    "manifest": "./assets/patches/disgaea-5-complete/v1.0.2/manifest.json",
     "accept": "",
-    "fileTypes": "ชุดม็อด LayeredFS · 925.58 MB",
+    "fileTypes": "ชุดม็อด LayeredFS · 925.72 MB",
     "region": "Global",
     "gameCode": "01005700031AE000",
     "sourceName": "Base game v1.0.0 (US / Worldwide)",
     "sourceHash": "01005700031AE000",
-    "outputHash": "16797cb36b9d5361ccecf8c5dc49578eb7ca3bfd526b0c6d90f93179f26b9c45",
-    "moduleStatus": "เมนู ระบบ ฐานทัพ สกิล ไอเทม เควสต์ เนื้อเรื่องหลัก 1-16 และบทเสริม 100%",
+    "outputHash": "2e68c19ac9794489b1dd86410fac6b25c3f98d6598bdf09ac058642054b46e58",
+    "moduleStatus": "เมนู ระบบ ฐานทัพ สกิล ไอเทม เควสต์ เนื้อเรื่องหลัก 1-16 บทเสริม NPC แดนมาร สารานุกรม 100%",
     "wholeGameCensus": "63,635 / 84,157 บรรทัด = 75.61%",
     "details": null,
     "verified": true,
     "gameVersion": "Base game v1.0.0 (US / Worldwide)",
     "verifiedAt": null,
     "distributionType": "external-download",
-    "downloadUrl": "https://drive.google.com/file/d/1NdspdHhafLe8lXd8_zVdL2Q5Kiqlro-v/view?usp=sharing",
-    "downloadFilename": "Disgaea_5_Complete_v1.0.1_Mod.zip",
-    "downloadSize": 970542683,
-    "downloadSha256": "16797cb36b9d5361ccecf8c5dc49578eb7ca3bfd526b0c6d90f93179f26b9c45"
+    "downloadUrl": "https://drive.google.com/file/d/1uoRzn8WJ76jLBqGAlFmYtZgHJl_OxuBA/view?usp=sharing",
+    "downloadFilename": "Disgaea_5_Complete_v1.0.2_Mod.zip",
+    "downloadSize": 970685635,
+    "downloadSha256": "2e68c19ac9794489b1dd86410fac6b25c3f98d6598bdf09ac058642054b46e58"
   },
   {
     "order": 63,
@@ -3263,6 +3263,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "disgaea-5-complete",
+    "title": "Disgaea 5 Complete",
+    "platform": "SWITCH",
+    "version": "v1.0.2",
+    "type": "update",
+    "timestamp": "2026-11-19T10:14:00+07:00",
+    "note": "อัปเดตชุดม็อด v1.0.2: แก้ไขบั๊กห้องพัก Item World (Innocent Town) NPC หาย และ Mystery Room Event ทำงานผิดปกติ พร้อมปรับแก้โครงสร้างตารางฐานข้อมูล Type B ทั้ง 12 ตาราง และซิงค์ฟอนต์มาตรฐานครบ 2,819 พยางค์"
+  },
   {
     "slug": "bravely-default",
     "title": "Bravely Default",
