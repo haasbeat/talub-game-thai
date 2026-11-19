@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "game_slug": "saga3-jikuu-no-hasha",
+  "game_title": "SaGa 3: Jikuu no Hasha - Shadow or Light",
+  "platform": "NDS",
+  "region": "Japan",
+  "game_code": "BZ3J",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "SaGa 3 - Jikuu no Hasha - Shadow or Light (Japan).nds",
+      "size": 134217728,
+      "sha256": "02942885c9acff95fb7b958864d8f304de509b497aadd5932ecd9050effdaf1c"
+    }
+  ],
+  "patch": {
+    "filename": "SaGa_3_Shadow_or_Light_Thai_v1.0.0.xdelta",
+    "size": 1702609,
+    "sha256": "ec63f935842f550f2515efdb0b43c85353a61e52225a6a8fc5d4d66eb84891d9",
+    "release_date": "2026-11-19",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/saga3-jikuu-no-hasha/v1.0.0/SaGa_3_Shadow_or_Light_Thai_v1.0.0.xdelta"
+  },
+  "output": {
+    "filename": "SaGa3_TH_v1.0.0.nds",
+    "size": 134217728,
+    "sha256": "a076614178c6611299c17da1709ce25723f34e9290eb09eea5d085c6d18b93a3"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก-บทสนทนา-เมนู-ไอเทม 100.00%",
+    "whole_game_census": "23,644/23,671 บรรทัด = 99.89%",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "verification": {
+    "verified_at": "2026-11-19T21:40:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น"
+}

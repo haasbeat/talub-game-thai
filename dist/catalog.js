@@ -2144,7 +2144,7 @@ window.GAME_CATALOG = [
     "title": "Cid to Chocobo no Fushigi na Dungeon: Toki Wasure no Meikyuu DS+",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 001 / 013",
+    "index": "NDS | 001 / 014",
     "version": "v1.0.1",
     "patchDate": "2026-11-18",
     "addedDate": "2026-11-15",
@@ -2192,7 +2192,7 @@ window.GAME_CATALOG = [
     "title": "Dragon Quest IV: Chapters of the Chosen",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 002 / 013",
+    "index": "NDS | 002 / 014",
     "version": "v2.5.1",
     "patchDate": "2026-11-02",
     "addedDate": "2026-11-04",
@@ -2239,7 +2239,7 @@ window.GAME_CATALOG = [
     "title": "Dragon Quest V: Hand of the Heavenly Bride",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 003 / 013",
+    "index": "NDS | 003 / 014",
     "version": "v1.6.5",
     "patchDate": "2026-11-17",
     "addedDate": "2026-11-04",
@@ -2268,7 +2268,7 @@ window.GAME_CATALOG = [
     "title": "Dragon Quest VI: Realms of Revelation",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 004 / 013",
+    "index": "NDS | 004 / 014",
     "version": "v1.1.3",
     "patchDate": "2026-11-12",
     "addedDate": "2026-11-04",
@@ -2297,7 +2297,7 @@ window.GAME_CATALOG = [
     "title": "Front Mission 2089: Border of Madness",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 005 / 013",
+    "index": "NDS | 005 / 014",
     "version": "v1.1.1",
     "patchDate": "2026-10-31",
     "addedDate": "2026-11-04",
@@ -2344,7 +2344,7 @@ window.GAME_CATALOG = [
     "title": "Kingdom Hearts: 358/2 Days",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 006 / 013",
+    "index": "NDS | 006 / 014",
     "version": "v1.0.0",
     "patchDate": "2026-11-07",
     "addedDate": "2026-11-07",
@@ -2391,7 +2391,7 @@ window.GAME_CATALOG = [
     "title": "Lost in Blue 2",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 007 / 013",
+    "index": "NDS | 007 / 014",
     "version": "v2.0.2",
     "patchDate": "2026-11-01",
     "addedDate": "2026-11-05",
@@ -2438,7 +2438,7 @@ window.GAME_CATALOG = [
     "title": "Love Plus+",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 008 / 013",
+    "index": "NDS | 008 / 014",
     "version": "v1.0.5",
     "patchDate": "2026-10-31",
     "addedDate": "2026-11-05",
@@ -2485,7 +2485,7 @@ window.GAME_CATALOG = [
     "title": "Metal Max 2: Reloaded",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 009 / 013",
+    "index": "NDS | 009 / 014",
     "version": "v1.0.2",
     "patchDate": "2026-11-14",
     "addedDate": "2026-11-12",
@@ -2533,7 +2533,7 @@ window.GAME_CATALOG = [
     "title": "SaGa 2: Hihou Densetsu - Goddess of Destiny",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 010 / 013",
+    "index": "NDS | 010 / 014",
     "version": "v1.0.1",
     "patchDate": "2026-11-05",
     "addedDate": "2026-11-04",
@@ -2558,11 +2558,59 @@ window.GAME_CATALOG = [
   },
   {
     "order": 52,
+    "slug": "saga3-jikuu-no-hasha",
+    "title": "SaGa 3: Jikuu no Hasha - Shadow or Light",
+    "platform": "nds",
+    "platformLabel": "NDS",
+    "index": "NDS | 011 / 014",
+    "version": "v1.0.0",
+    "patchDate": "2026-11-19",
+    "addedDate": "2026-11-19",
+    "addedOrder": 71,
+    "addedAt": "2026-11-19T21:47:00+07:00",
+    "format": "xdelta3",
+    "cover": "./assets/covers/web/saga3-jikuu-no-hasha.jpg",
+    "manifest": "./assets/patches/saga3-jikuu-no-hasha/v1.0.0/manifest.json",
+    "accept": ".nds",
+    "fileTypes": "CLEAN Japan NDS · 128 MB",
+    "region": "Japan",
+    "gameCode": "BZ3J",
+    "sourceName": "SaGa 3 - Jikuu no Hasha - Shadow or Light (Japan).nds · 134,217,728 bytes",
+    "sourceHash": "02942885c9acff95fb7b958864d8f304de509b497aadd5932ecd9050effdaf1c",
+    "outputHash": "a076614178c6611299c17da1709ce25723f34e9290eb09eea5d085c6d18b93a3",
+    "moduleStatus": "เนื้อเรื่องหลัก-บทสนทนา-เมนู-ไอเทม 100.00%",
+    "wholeGameCensus": "23,644/23,671 บรรทัด = 99.89%",
+    "details": {
+      "thaiTitle": "ซาก้า 3: ผู้อยู่เหนือห้วงเวลา - แสงหรือเงา ฉบับภาษาไทย",
+      "japaneseTitle": "サガ3時空の覇者 Shadow or Light",
+      "originalTitle": "SaGa 3: Jikuu no Hasha - Shadow or Light",
+      "studio": "Square Enix / Racjin",
+      "release": "2011-01-06",
+      "genre": "Role-playing game",
+      "description": "ม็อดภาษาไทยสำหรับ SaGa 3: Jikuu no Hasha - Shadow or Light (Nintendo DS โซนญี่ปุ่น / NTR-BZ3J-JPN) เวอร์ชัน v1.0.0 แปลเนื้อเรื่องหลัก ท่องเวลา 3 ยุคสมัย ระบบ Free Scenario ระบบ Scenario Sync (SSS) ท่าไม้ตาย สารานุกรมไอเทม/สกิล และกราฟิกเมนูภาษาไทยครบถ้วน",
+      "overview": "มหากาพย์การเดินทางข้ามกาลเวลากอบกู้โลกจากหายนะน้ำท่วมใหญ่ ดัดแปลงสายพันธุ์ตัวละคร และเปลี่ยนแปลงประวัติศาสตร์ด้วยระบบ Scenario Sync",
+      "story": "ในอนาคตอันไกลโพ้น วัตถุลึกลับขนาดมหึมา 'หม้อน้ำขนาดยักษ์' (Water Entity) ได้ตกลงมาจากฟากฟ้าและปล่อยน้ำท่วมทะลักพร้อมฝูงมอนสเตอร์กลืนกินโลกจนล่มสลาย เด็กน้อย 3 คน ได้แก่ ดูน (Dune), ปอลนาเรฟ (Polnareff) และ มิลฟี (Milfie) จึงถูกส่งข้ามเวลากลับมายังยุคปัจจุบันเพื่อรับการเลี้ยงดูและฝึกฝน เมื่อเติบโตขึ้นพร้อมด้วย ชีเรอิก (Sireugh) เพื่อนสาวจากยุคปัจจุบัน ทั้งสี่จึงเริ่มต้นการผจญภัยท่องกาลเวลาระหว่างอดีต ปัจจุบัน และอนาคต ด้วยเครื่องจักรกลกาลเวลา 'สเตสลอส' (Stethros) เพื่อค้นหาอดีตที่สาบสูญและยับยั้งหายนะก่อนที่ทุกสิ่งจะสายเกินไป",
+      "localization": "แปลเนื้อเรื่องหลัก ระบบ Free Scenario ระบบ Scenario Sync (SSS) สารานุกรมสกิล มอนสเตอร์ การกลายพันธุ์ สายวิวัฒนาการ ชิ้นส่วนเมคคา-เนื้อสัตว์ ไอเทม และระบบกาลเวลาครบถ้วน (สำมะโนในรอม 23,644/23,671 บรรทัด = 99.89%) แปลกราฟิกข้อความ 2D (.NCGR) ครบ 56 แผ่น (ฉากเปิดเรื่องน้ำตก 12 หน้า, ลูปตัวละคร 4 หน้า, และป้ายเผ่าพันธุ์/ปุ่มเมนู 40 แผ่น) ฝังฟอนต์ไทยแท้ NFTR 2 ชุด คมชัด ไร้สระลอย ไร้วรรณยุกต์ซ้อนทับ ผ่านการตรวจ PreInjectionGate Anti-Freeze และ Readback 1:1 จากรอมจริง 100%",
+      "untranslated": "คงเหลือตัวอักษรทางเทคนิคใน ARM9 ที่ตั้งใจคงไว้ 27 รายการ (ตัวเลข 0-9 กว้างเต็ม 20 ตัว, คำช่วยไวยากรณ์ญี่ปุ่น が/で/を 6 ตัว, และ NULL 1 ตัว) ซึ่งเป็นสัญลักษณ์ทางเทคนิคของระบบ ไม่กระทบการเล่น และไฟล์ DMST/DNGC ภายนอกบางส่วน",
+      "features": [
+        "เนื้อเรื่องหลัก การผจญภัยข้ามเวลา 3 ยุคสมัย และระบบ Free Scenario ภาษาไทย 100%",
+        "ระบบ Scenario Sync (SSS) และทางเลือกชะตากรรมที่ส่งผลต่ออนาคตภาษาไทย 100%",
+        "ฐานข้อมูลวิวัฒนาการ 6 เผ่าพันธุ์ (มนุษย์, เอสเปอร์, สัตว์อสูร, มอนสเตอร์, ไซบอร์ก, เมคคา) ภาษาไทย 100%",
+        "กราฟิกข้อความ 2D (.NCGR) ภาษาไทย 56 แผ่น ทั้งอินโทร แนะนำตัวละคร และป้ายเมนู",
+        "ฟอนต์ไทยคมชัด NFTR 2 ขนาด (13x15px สำหรับบทสนทนา และ 12x14px สำหรับเมนู-ไอเทม) สระไม่จม วรรณยุกต์ไม่ขาด"
+      ]
+    },
+    "verified": true,
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-19T21:40:00+07:00"
+  },
+  {
+    "order": 53,
     "slug": "suikoden-tierkreis",
     "title": "Suikoden Tierkreis",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 011 / 013",
+    "index": "NDS | 012 / 014",
     "version": "v1.0.2",
     "patchDate": "2026-11-19",
     "addedDate": "2026-11-04",
@@ -2586,12 +2634,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-19T10:29:00+07:00"
   },
   {
-    "order": 53,
+    "order": 54,
     "slug": "tales-of-hearts",
     "title": "Tales of Hearts",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 012 / 013",
+    "index": "NDS | 013 / 014",
     "version": "v1.0.2",
     "patchDate": "2026-11-09",
     "addedDate": "2026-11-04",
@@ -2615,12 +2663,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-09T19:30:00+07:00"
   },
   {
-    "order": 54,
+    "order": 55,
     "slug": "the-world-ends-with-you",
     "title": "The World Ends with You",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 013 / 013",
+    "index": "NDS | 014 / 014",
     "version": "v1.0.4",
     "patchDate": "2026-11-01",
     "addedDate": "2026-11-04",
@@ -2644,7 +2692,7 @@ window.GAME_CATALOG = [
     "verifiedAt": null
   },
   {
-    "order": 55,
+    "order": 56,
     "slug": "saga-frontier",
     "title": "SaGa Frontier",
     "platform": "ps1",
@@ -2691,7 +2739,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-08T18:55:00+07:00"
   },
   {
-    "order": 56,
+    "order": 57,
     "slug": "front-mission-5",
     "title": "Front Mission 5: Scars of the War",
     "platform": "ps2",
@@ -2739,7 +2787,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-18T20:33:00+07:00"
   },
   {
-    "order": 57,
+    "order": 58,
     "slug": "mana-khemia",
     "title": "Mana Khemia: Alchemists of Al-Revis",
     "platform": "ps2",
@@ -2786,7 +2834,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-08T08:30:00+07:00"
   },
   {
-    "order": 58,
+    "order": 59,
     "slug": "tales-of-the-abyss-ps2",
     "title": "Tales of the Abyss (PS2)",
     "platform": "ps2",
@@ -2834,7 +2882,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-10T10:26:00+07:00"
   },
   {
-    "order": 59,
+    "order": 60,
     "slug": "bs-koi-ha-balance",
     "title": "BS Koi ha Balance: Battle of Lovers",
     "platform": "snes",
@@ -2882,7 +2930,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-14T10:30:00+07:00"
   },
   {
-    "order": 60,
+    "order": 61,
     "slug": "mini-yonku-wgp2",
     "title": "Mini Yonku Let's & Go!!: Power WGP 2",
     "platform": "snes",
@@ -2929,7 +2977,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-05T15:00:00+07:00"
   },
   {
-    "order": 61,
+    "order": 62,
     "slug": "mana-khemia-student-alliance",
     "title": "Mana Khemia: Student Alliance",
     "platform": "psp",
@@ -2976,7 +3024,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-14T09:23:00+07:00"
   },
   {
-    "order": 62,
+    "order": 63,
     "slug": "popolocrois",
     "title": "PoPoLoCrois",
     "platform": "psp",
@@ -3005,7 +3053,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-19T18:30:00+07:00"
   },
   {
-    "order": 63,
+    "order": 64,
     "slug": "disgaea-5-complete",
     "title": "Disgaea 5 Complete",
     "platform": "switch",
@@ -3039,7 +3087,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "2e68c19ac9794489b1dd86410fac6b25c3f98d6598bdf09ac058642054b46e58"
   },
   {
-    "order": 64,
+    "order": 65,
     "slug": "fire-emblem-engage",
     "title": "Fire Emblem Engage",
     "platform": "switch",
@@ -3073,7 +3121,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "8c87316d2eff86c7ef712e88a5276c8c713ee38a345c74e8133b26615e5cb72d"
   },
   {
-    "order": 65,
+    "order": 66,
     "slug": "fire-emblem-three-houses",
     "title": "Fire Emblem: Three Houses",
     "platform": "switch",
@@ -3127,7 +3175,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "6f27fe8cc63784f4d17ada3d7822275fbdf46a0fdb3be10da6b499200ebd9efd"
   },
   {
-    "order": 66,
+    "order": 67,
     "slug": "persona-5-royal",
     "title": "Persona 5 Royal",
     "platform": "switch",
@@ -3161,7 +3209,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "ae68cf2866e6fd49d06e4245af0cf64f463bafc15be6885a06d360ea83556f1f"
   },
   {
-    "order": 67,
+    "order": 68,
     "slug": "tokyo-mirage-sessions-fe-encore",
     "title": "Tokyo Mirage Sessions #FE Encore",
     "platform": "switch",
@@ -3215,7 +3263,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "b0c3af4c09192b54a8d5cc28a0070131d58338926aaf52fc2567514df0b0de9a"
   },
   {
-    "order": 68,
+    "order": 69,
     "slug": "unicorn-overlord",
     "title": "Unicorn Overlord",
     "platform": "switch",
@@ -3285,7 +3333,7 @@ window.GAME_CATALOG = [
     }
   },
   {
-    "order": 69,
+    "order": 70,
     "slug": "village-in-the-shade",
     "title": "Village in the Shade",
     "platform": "switch",
@@ -3320,6 +3368,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "saga3-jikuu-no-hasha",
+    "title": "SaGa 3: Jikuu no Hasha - Shadow or Light",
+    "platform": "NDS",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-19T21:47:00+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0: แปลเนื้อเรื่องหลัก ท่องเวลา 3 ยุคสมัย ระบบ Free Scenario ระบบ Scenario Sync (SSS) ท่าไม้ตาย สารานุกรม และกราฟิกเมนูภาษาไทยครบ 56 แผ่น"
+  },
   {
     "slug": "popolocrois",
     "title": "PoPoLoCrois",
