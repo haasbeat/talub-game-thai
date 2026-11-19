@@ -1245,10 +1245,11 @@ const handleFile = async (file) => {
       return;
     }
 
-    setProgress('กำลังตรวจ SHA-256 ของ ROM ต้นฉบับ', 2);
+    setProgress('กำลังตรวจ SHA-256 ของ ROM ต้นฉบับ: 0%', 2);
     fileHash.textContent = 'กำลังคำนวณ SHA-256…';
     const sourceHash = await sha256Blob(file, (processed, total) => {
-      setProgress('กำลังตรวจ SHA-256 ของ ROM ต้นฉบับ', 2 + (processed / total) * 3);
+      const hashPct = Math.round((processed / total) * 100);
+      setProgress(`กำลังตรวจ SHA-256 ของ ROM ต้นฉบับ: ${hashPct}%`, 2 + (processed / total) * 3);
     });
     const matchedSource = sizeCandidates.find((source) => source.sha256 === sourceHash);
     if (!matchedSource) {
@@ -1331,58 +1332,132 @@ const applyVerifiedPatch = async () => {
   resetOutput();
 
   try {
-    setProgress('กำลังดาวน์โหลดและตรวจไฟล์ patch', 7);
+    setProgress('กำลังเตรียมดาวน์โหลดไฟล์ patch...', 5);
     const manifestBase = new URL(game.manifest, window.location.href);
-    const fetchFirstOk = async (urls) => {
+
+    const downloadBlobWithProgress = async (urls, expectedSize, baseProgress, progressSpan, labelPrefix = 'กำลังดาวน์โหลด patch') => {
       let lastError = 'Network error';
-      for (const url of urls.filter((u, i, all) => u && all.indexOf(u) === i)) {
+      const cleanUrls = urls.filter((u, i, all) => u && all.indexOf(u) === i);
+
+      for (const url of cleanUrls) {
+        let reader = null;
         try {
-          const res = await fetch(url, { cache: 'no-store' });
-          if (res.ok) return res;
-          lastError = `HTTP ${res.status}`;
-        } catch (e) {
-          lastError = 'Network error';
+          const response = await fetch(url);
+          if (!response.ok) {
+            lastError = `HTTP ${response.status}`;
+            continue;
+          }
+
+          const total = Number(response.headers.get('Content-Length')) || expectedSize || 0;
+          if (!response.body || typeof response.body.getReader !== 'function') {
+            setProgress(`${labelPrefix}...`, baseProgress);
+            const blob = await response.blob();
+            if (expectedSize && blob.size !== expectedSize) {
+              throw new Error(`ขนาดไฟล์ patch (${formatBytes(blob.size)}) ไม่ตรงกับขนาดที่ระบุ (${formatBytes(expectedSize)})`);
+            }
+            return blob;
+          }
+
+          reader = response.body.getReader();
+          const chunks = [];
+          let received = 0;
+          let lastTime = Date.now();
+          let lastReceived = 0;
+          let currentSpeed = 0;
+
+          const initialTotalStr = total > 0 ? ` (0 / ${formatBytes(total)})` : '';
+          setProgress(`${labelPrefix}${initialTotalStr}`, baseProgress);
+
+          while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+            chunks.push(value);
+            received += value.byteLength;
+
+            const now = Date.now();
+            if (now - lastTime >= 250 || (total > 0 && received >= total)) {
+              const deltaSec = Math.max(0.05, (now - lastTime) / 1000);
+              const deltaBytes = received - lastReceived;
+              currentSpeed = deltaBytes / deltaSec;
+              lastTime = now;
+              lastReceived = received;
+
+              const pct = total > 0 ? Math.min(100, Math.round((received / total) * 100)) : 0;
+              const barPct = total > 0 ? baseProgress + (received / total) * progressSpan : baseProgress;
+              const speedText = currentSpeed > 0 ? ` • ${formatBytes(currentSpeed)}/s` : '';
+              const sizeText = total > 0 ? `${formatBytes(received)} / ${formatBytes(total)}` : formatBytes(received);
+              setProgress(`${labelPrefix}: ${sizeText} (${pct}%)${speedText}`, barPct);
+            }
+          }
+
+          const finalBlob = new Blob(chunks, { type: 'application/octet-stream' });
+          if (expectedSize && finalBlob.size !== expectedSize) {
+            throw new Error(`ขนาดไฟล์ patch (${formatBytes(finalBlob.size)}) ไม่ตรงกับขนาดที่ระบุ (${formatBytes(expectedSize)})`);
+          }
+          return finalBlob;
+        } catch (err) {
+          lastError = err.message || 'Network error';
+        } finally {
+          if (reader) {
+            try { reader.releaseLock(); } catch (_) {}
+          }
         }
       }
-      throw new Error(`ดาวน์โหลด patch ไม่สำเร็จ (${lastError}) กรุณาลองใหม่หรือรีเฟรชหน้าเว็บ`);
+
+      throw new Error(`ดาวน์โหลด patch ไม่สำเร็จ (${lastError}) กรุณาตรวจสอบการเชื่อมต่ออินเทอร์เน็ตแล้วลองใหม่อีกครั้ง`);
     };
 
     let patchBlob;
-    let singleFetched = false;
     // Prefer downloading single full .xdelta patch if URL is available on R2 CDN
     if (manifest.patch.url) {
       try {
-        const response = await fetchFirstOk([manifest.patch.url, new URL(manifest.patch.filename, manifestBase).href]);
-        const blob = await response.blob();
-        if (blob.size === manifest.patch.size) {
-          patchBlob = blob;
-          singleFetched = true;
-        }
+        patchBlob = await downloadBlobWithProgress(
+          [manifest.patch.url, new URL(manifest.patch.filename, manifestBase).href],
+          manifest.patch.size,
+          5,
+          35,
+          'กำลังดาวน์โหลด patch'
+        );
       } catch (err) {
-        // Fallback to parts if single file fails
+        if (!Array.isArray(manifest.patch.parts) || !manifest.patch.parts.length) {
+          throw err;
+        }
       }
     }
 
-    if (!singleFetched && Array.isArray(manifest.patch.parts) && manifest.patch.parts.length) {
+    if (!patchBlob && Array.isArray(manifest.patch.parts) && manifest.patch.parts.length) {
       // Patches over GitHub's 100 MB file limit are shipped as same-origin parts.
       const blobs = [];
       const parts = manifest.patch.parts;
+      const partSpan = 35 / parts.length;
       for (let i = 0; i < parts.length; i += 1) {
-        setProgress(`กำลังดาวน์โหลด patch ส่วนที่ ${i + 1}/${parts.length}`, 2 + (i / parts.length) * 5);
-        const res = await fetchFirstOk([parts[i].url, new URL(parts[i].filename, manifestBase).href]);
-        const blob = await res.blob();
-        if (blob.size !== parts[i].size) throw new Error(`ขนาด patch ส่วนที่ ${i + 1} ไม่ตรงกับ manifest`);
-        blobs.push(blob);
+        const partBase = 5 + (i * partSpan);
+        const partBlob = await downloadBlobWithProgress(
+          [parts[i].url, new URL(parts[i].filename, manifestBase).href],
+          parts[i].size,
+          partBase,
+          partSpan,
+          `กำลังดาวน์โหลด patch ส่วนที่ ${i + 1}/${parts.length}`
+        );
+        blobs.push(partBlob);
       }
       patchBlob = new Blob(blobs, { type: 'application/octet-stream' });
-    } else if (!singleFetched) {
+    } else if (!patchBlob) {
       // Prefer Cloudflare R2 CDN for fast, global edge delivery; same-origin is fallback.
-      const response = await fetchFirstOk([manifest.patch.url, new URL(manifest.patch.filename, manifestBase).href]);
-      patchBlob = await response.blob();
+      patchBlob = await downloadBlobWithProgress(
+        [manifest.patch.url, new URL(manifest.patch.filename, manifestBase).href],
+        manifest.patch.size,
+        5,
+        35,
+        'กำลังดาวน์โหลด patch'
+      );
     }
     if (patchBlob.size !== manifest.patch.size) throw new Error('ขนาดไฟล์ patch ไม่ตรงกับ manifest');
+
+    setProgress('กำลังตรวจ SHA-256 ของไฟล์ patch: 0%', 40);
     const patchHash = await sha256Blob(patchBlob, (processed, total) => {
-      setProgress('กำลังตรวจ SHA-256 ของไฟล์ patch', 7 + (processed / total) * 3);
+      const hashPct = Math.round((processed / total) * 100);
+      setProgress(`กำลังตรวจ SHA-256 ของไฟล์ patch: ${hashPct}%`, 40 + (processed / total) * 5);
     });
     if (patchHash !== manifest.patch.sha256) throw new Error('SHA-256 ของไฟล์ patch ไม่ถูกต้อง');
 
@@ -1408,7 +1483,7 @@ const applyVerifiedPatch = async () => {
       }
     }
 
-    setProgress(opfsWritable ? 'กำลังสร้าง ROM ภาษาไทย (โหมดประหยัดแรม)' : 'กำลังสร้าง ROM ภาษาไทยด้วย xdelta3', 10);
+    setProgress(opfsWritable ? 'กำลังสร้าง ROM ภาษาไทย (โหมดประหยัดแรม)' : 'กำลังสร้าง ROM ภาษาไทยด้วย xdelta3', 45);
     const chunks = [];
     let outputSize = 0;
     const worker = new Worker('./assets/engine/xdelta/xdelta3.worker.js', { type: 'module' });
@@ -1430,9 +1505,10 @@ const applyVerifiedPatch = async () => {
             chunks.push(bytes);
           }
           outputSize += bytes.byteLength;
-          const percent = 10 + (outputSize / manifest.output.size) * 78;
+          const percent = 45 + (outputSize / manifest.output.size) * 45;
           const modeTag = opfsWritable ? ' (โหมดประหยัดแรม)' : '';
-          setProgress(`กำลังสร้าง ROM ภาษาไทยด้วย xdelta3${modeTag}`, percent);
+          const patchPct = Math.min(100, Math.round((outputSize / manifest.output.size) * 100));
+          setProgress(`กำลังสร้าง ROM ภาษาไทยด้วย xdelta3${modeTag}: ${patchPct}%`, percent);
           return;
         }
         if (message.final && message.error) {
@@ -1460,9 +1536,10 @@ const applyVerifiedPatch = async () => {
 
     if (outputBlob.size !== manifest.output.size) throw new Error('ขนาด ROM ผลลัพธ์ไม่ตรงกับ manifest');
 
-    setProgress('กำลังตรวจ SHA-256 ของ ROM ผลลัพธ์', 92);
+    setProgress('กำลังตรวจ SHA-256 ของ ROM ผลลัพธ์: 0%', 90);
     const outputHash = await sha256Blob(outputBlob, (processed, total) => {
-      setProgress('กำลังตรวจ SHA-256 ของ ROM ผลลัพธ์', 92 + (processed / total) * 7);
+      const hashPct = Math.round((processed / total) * 100);
+      setProgress(`กำลังตรวจ SHA-256 ของ ROM ผลลัพธ์: ${hashPct}%`, 90 + (processed / total) * 9);
     });
     if (outputHash !== manifest.output.sha256) throw new Error('SHA-256 ของ ROM ผลลัพธ์ไม่ถูกต้อง');
 
