@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "game_slug": "saga3-jikuu-no-hasha",
+  "game_title": "SaGa 3: Jikuu no Hasha - Shadow or Light",
+  "platform": "NDS",
+  "region": "Japan",
+  "game_code": "BZ3J",
+  "patch_version": "v1.0.1",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "SaGa 3 - Jikuu no Hasha - Shadow or Light (Japan).nds",
+      "size": 134217728,
+      "sha256": "02942885c9acff95fb7b958864d8f304de509b497aadd5932ecd9050effdaf1c"
+    }
+  ],
+  "patch": {
+    "filename": "SaGa_3_Shadow_or_Light_Thai_v1.0.1.xdelta",
+    "size": 1699567,
+    "sha256": "ef2b02442af29495cdb33c15fe6a1f5aa5f9d8c79a00af0e858882828557e187",
+    "release_date": "2026-11-19",
+    "date_source": "user_authorized_release",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/saga3-jikuu-no-hasha/v1.0.1/SaGa_3_Shadow_or_Light_Thai_v1.0.1.xdelta"
+  },
+  "output": {
+    "filename": "SaGa3_TH_v1.0.1.nds",
+    "size": 134217728,
+    "sha256": "79af60139c1ae115acbf016df96576449fe27096b965461d54fa0cfc7cbb2ef4"
+  },
+  "mod_archive": {
+    "filename": "SaGa_3_Shadow_or_Light_Thai_v1.0.1_Mod.zip",
+    "size": 10496,
+    "sha256": "298e9b2bd8ef61bdae4d1c978de3e822a102bd2bc191caa35551bff641c49e74",
+    "url": "https://drive.google.com/file/d/1jR2oznMB3vweM9bL63fRhMmxpF9kPgS9/view?usp=sharing"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก-บทสนทนา-เมนู-ไอเทม 100.00% (ภาพรวมคลังข้อความในรอม 99.89% : 23,644 / 23,671 รายการ + กราฟิก UI 2D 55 / 55 แผ่น)",
+    "whole_game_census": "23,644 / 23,671 เรคคอร์ด อ่านกลับจากในรอม (99.89%)",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-19T19:19:00+07:00",
+    "method": "clean_source_xdelta3_roundtrip",
+    "note": "Clean 128MB NDS cartridge source verified with clean-source roundtrip; PreInjectionGate & In-ROM binary census passed with 23,671 records (0 CRITICAL_FREEZE, 0 ERROR); 4-tier watermark verified; 55 localized 2D NCGR plates; embedded Thai NFTR fonts.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true,
+    "patcher_test_passed": true
+  }
+}
