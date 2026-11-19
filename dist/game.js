@@ -1348,7 +1348,22 @@ const applyVerifiedPatch = async () => {
     };
 
     let patchBlob;
-    if (Array.isArray(manifest.patch.parts) && manifest.patch.parts.length) {
+    let singleFetched = false;
+    // Prefer downloading single full .xdelta patch if URL is available on R2 CDN
+    if (manifest.patch.url) {
+      try {
+        const response = await fetchFirstOk([manifest.patch.url, new URL(manifest.patch.filename, manifestBase).href]);
+        const blob = await response.blob();
+        if (blob.size === manifest.patch.size) {
+          patchBlob = blob;
+          singleFetched = true;
+        }
+      } catch (err) {
+        // Fallback to parts if single file fails
+      }
+    }
+
+    if (!singleFetched && Array.isArray(manifest.patch.parts) && manifest.patch.parts.length) {
       // Patches over GitHub's 100 MB file limit are shipped as same-origin parts.
       const blobs = [];
       const parts = manifest.patch.parts;
@@ -1360,7 +1375,7 @@ const applyVerifiedPatch = async () => {
         blobs.push(blob);
       }
       patchBlob = new Blob(blobs, { type: 'application/octet-stream' });
-    } else {
+    } else if (!singleFetched) {
       // Prefer Cloudflare R2 CDN for fast, global edge delivery; same-origin is fallback.
       const response = await fetchFirstOk([manifest.patch.url, new URL(manifest.patch.filename, manifestBase).href]);
       patchBlob = await response.blob();

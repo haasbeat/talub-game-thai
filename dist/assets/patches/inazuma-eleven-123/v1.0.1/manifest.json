@@ -20,33 +20,7 @@
     "sha256": "2f555e9554aed6d2b2e5a7b17c5ac5def47ee262e967dccbb02abe25eab4b552",
     "release_date": "2026-11-08",
     "date_source": "patch_file_mtime",
-    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-eleven-123/v1.0.1/Inazuma_Eleven_123_Thai_v1.0.1.xdelta",
-    "parts": [
-      {
-        "filename": "Inazuma_Eleven_123_Thai_v1.0.1.xdelta.part01",
-        "size": 94371840,
-        "sha256": "d249d5f3c94f9b026aafed08cec1b40cc69cf7e877225dc03c92ed5853112bff",
-        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-eleven-123/v1.0.1/Inazuma_Eleven_123_Thai_v1.0.1.xdelta.part01"
-      },
-      {
-        "filename": "Inazuma_Eleven_123_Thai_v1.0.1.xdelta.part02",
-        "size": 94371840,
-        "sha256": "f57337573573b8dfc15c7ab5c32f6c9bcf122bf13dd44c62d4a7c265c61b186a",
-        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-eleven-123/v1.0.1/Inazuma_Eleven_123_Thai_v1.0.1.xdelta.part02"
-      },
-      {
-        "filename": "Inazuma_Eleven_123_Thai_v1.0.1.xdelta.part03",
-        "size": 94371840,
-        "sha256": "f975a4392293ad3e62748b797be33a6f5c835f7d5db70ede1e60e22162973b7b",
-        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-eleven-123/v1.0.1/Inazuma_Eleven_123_Thai_v1.0.1.xdelta.part03"
-      },
-      {
-        "filename": "Inazuma_Eleven_123_Thai_v1.0.1.xdelta.part04",
-        "size": 16733308,
-        "sha256": "e7eb9a76ee62dda00c107ca9faeb04d6113b0dea0d1b9e2a7a8ddd23206e0c4b",
-        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-eleven-123/v1.0.1/Inazuma_Eleven_123_Thai_v1.0.1.xdelta.part04"
-      }
-    ]
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/inazuma-eleven-123/v1.0.1/Inazuma_Eleven_123_Thai_v1.0.1.xdelta"
   },
   "output": {
     "filename": "ie123_thai_v1.0.1.3ds",

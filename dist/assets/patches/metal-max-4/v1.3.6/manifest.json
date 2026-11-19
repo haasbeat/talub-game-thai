@@ -18,20 +18,6 @@
     "filename": "Metal_Max_4_Thai_v1.3.6.xdelta",
     "size": 149889624,
     "sha256": "684aefe79c5f9adca5e351746a3e2e3ef7d052d260f8e6e3dceb8420a09ba826",
-    "parts": [
-      {
-        "filename": "Metal_Max_4_Thai_v1.3.6.xdelta.part00",
-        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/metal-max-4/v1.3.6/Metal_Max_4_Thai_v1.3.6.xdelta.part00",
-        "size": 94371840,
-        "sha256": "0f05652b50ba0cf38583c103015bc3862d1be2ff6b62d014d3271ef642cfeb5d"
-      },
-      {
-        "filename": "Metal_Max_4_Thai_v1.3.6.xdelta.part01",
-        "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/metal-max-4/v1.3.6/Metal_Max_4_Thai_v1.3.6.xdelta.part01",
-        "size": 55517784,
-        "sha256": "ae21786010a784805031c60f82f530d83da7bd6f1d9f21f4886dfacb9b0bafef"
-      }
-    ],
     "release_date": "2026-11-10",
     "date_source": "patch_file_mtime",
     "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/metal-max-4/v1.3.6/Metal_Max_4_Thai_v1.3.6.xdelta"
