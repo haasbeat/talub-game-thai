@@ -1139,11 +1139,18 @@ if (game.maintenance) {
 
     const handlesLargeInput = manifest.accepted_sources?.some((source) => source.size >= 512 * 1024 * 1024);
     const exceedsIOSLimit = manifest.accepted_sources?.some((source) => source.size > 1.07 * 1024 * 1024 * 1024);
+    const isVeryLargeGame = manifest.output?.size >= 2 * 1024 * 1024 * 1024;
     if (isIOS && exceedsIOSLimit) {
       const romSizeStr = formatBytes(manifest.accepted_sources[0].size);
       workspaceNote.insertAdjacentHTML(
         'beforeend',
         `<br /><span style="color:#b45309;font-weight:600;">⚠️ ข้อจำกัด iOS:</span> เกมนี้มีขนาด ROM (~${romSizeStr}) เกิน 1.07 GB ซึ่งเกินขีดจำกัดหน่วยความจำ Safari บน iOS อาจทำให้เบราว์เซอร์รีโหลด แนะนำให้แพตช์บนคอมพิวเตอร์ (PC / Mac) หรือ Android ครับ`,
+      );
+    } else if (isVeryLargeGame) {
+      const modSuggestion = game.luma ? ' หรือสามารถกด<b>แท็บที่ 2</b> เพื่อดาวน์โหลดไฟล์ Mod ไปลงเครื่องได้ทันทีโดยไม่ต้องแพตช์' : '';
+      workspaceNote.insertAdjacentHTML(
+        'beforeend',
+        `<br /><span style="color:#b45309;font-weight:600;">⚠️ เกมขนาดใหญ่มาก (~${formatBytes(manifest.output.size)}):</span> แนะนำให้แพตช์บนคอมพิวเตอร์ (PC / Mac) ใน <b>โหมดความเร็วสูง (RAM)</b>${modSuggestion}ครับ`,
       );
     } else if (handlesLargeInput || manifest.patch.size >= 256 * 1024 * 1024 || manifest.output.size >= 512 * 1024 * 1024) {
       workspaceNote.insertAdjacentHTML(
@@ -1471,13 +1478,31 @@ const applyVerifiedPatch = async () => {
     if (isLowRamMode) {
       if (typeof navigator !== 'undefined' && navigator.storage && typeof navigator.storage.getDirectory === 'function') {
         try {
+          if (typeof navigator.storage.persist === 'function') {
+            await navigator.storage.persist().catch(() => {});
+          }
+          if (typeof navigator.storage.estimate === 'function') {
+            const estimate = await navigator.storage.estimate().catch(() => null);
+            if (estimate && estimate.quota) {
+              const available = estimate.quota - (estimate.usage || 0);
+              if (available < manifest.output.size) {
+                const reqStr = formatBytes(manifest.output.size);
+                const availStr = formatBytes(available);
+                const modSuggestion = game.luma ? ' หรือดาวน์โหลดไฟล์ Mod ในแท็บที่ 2' : '';
+                throw new Error(`พื้นที่โควตาในเบราว์เซอร์เหลือ ${availStr} ซึ่งไม่พอสำหรับสร้างไฟล์ ${reqStr} แนะนำให้สลับเป็น "โหมดความเร็วสูง (RAM)" ด้านล่าง${modSuggestion}ครับ`);
+              }
+            }
+          }
           const opfsRoot = await navigator.storage.getDirectory();
           opfsTempName = `talub_${Date.now()}_${Math.random().toString(36).slice(2, 7)}.bin`;
           opfsFileHandle = await opfsRoot.getFileHandle(opfsTempName, { create: true });
           opfsWritable = await opfsFileHandle.createWritable();
           activeOpfsTempName = opfsTempName;
         } catch (opfsErr) {
-          console.warn('[OPFS] Not available or permission denied, falling back to RAM mode:', opfsErr);
+          console.warn('[OPFS] Not available or quota insufficient:', opfsErr);
+          if (opfsErr.message?.includes('โควตา')) {
+            throw opfsErr;
+          }
           opfsWritable = null;
         }
       }
