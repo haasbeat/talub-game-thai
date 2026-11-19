@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=231" />
+    <link rel="stylesheet" href="./styles.css?v=232" />
   </head>
   <body class="detail-page">
     <div class="cursor" aria-hidden="true"></div>
@@ -236,15 +236,31 @@
               </div>
 
               <div class="method-tabs" role="tablist" aria-label="เลือกรูปแบบการติดตั้ง">
-                <button type="button" id="tab-method-patcher" class="method-tab is-active hover-target" role="tab" aria-selected="true" aria-controls="patcher-grid">
-                  <span class="method-tab-tag mono">METHOD 01 · RECOMMENDED</span>
-                  <strong class="method-tab-title">⚡ รวมม็อดลงใน ROM ผ่านเว็บ</strong>
-                  <span class="method-tab-desc">จบในไฟล์เดียว · เล่นได้ทันทีทั้งบน Emulator และเครื่องจริง (Zero-Mod)</span>
+                <button type="button" id="tab-method-patcher" class="method-tab method-tab-patcher is-active hover-target" role="tab" aria-selected="true" aria-controls="patcher-grid">
+                  <div class="method-tab-top">
+                    <span class="method-tab-tag mono">METHOD 01 · RECOMMENDED</span>
+                    <span class="method-tab-status" title="สถานะการเลือก"><span class="status-indicator"></span></span>
+                  </div>
+                  <div class="method-tab-body">
+                    <div class="method-tab-icon" aria-hidden="true">⚡</div>
+                    <div class="method-tab-info">
+                      <strong class="method-tab-title">รวมม็อดลงใน ROM ผ่านเว็บ</strong>
+                      <span class="method-tab-desc">จบในไฟล์เดียว · เล่นได้ทันทีทั้งบน Emulator และเครื่องจริง (Zero-Mod)</span>
+                    </div>
+                  </div>
                 </button>
-                <button type="button" id="tab-method-luma" class="method-tab hover-target" role="tab" aria-selected="false" aria-controls="luma-download-panel">
-                  <span class="method-tab-tag mono">METHOD 02 · ALTERNATIVE</span>
-                  <strong class="method-tab-title">📁 ชุดม็อดแยกโฟลเดอร์ (LayeredFS)</strong>
-                  <span class="method-tab-desc">ไม่ต้องดัดแปลง ROM · สำหรับ Luma3DS หรือโฟลเดอร์ Mods บน Emulator</span>
+                <button type="button" id="tab-method-luma" class="method-tab method-tab-luma hover-target" role="tab" aria-selected="false" aria-controls="luma-download-panel">
+                  <div class="method-tab-top">
+                    <span class="method-tab-tag mono">METHOD 02 · ALTERNATIVE</span>
+                    <span class="method-tab-status" title="สถานะการเลือก"><span class="status-indicator"></span></span>
+                  </div>
+                  <div class="method-tab-body">
+                    <div class="method-tab-icon" aria-hidden="true">📁</div>
+                    <div class="method-tab-info">
+                      <strong class="method-tab-title">ชุดม็อดแยกโฟลเดอร์ (LayeredFS)</strong>
+                      <span class="method-tab-desc">ไม่ต้องดัดแปลง ROM · สำหรับ Luma3DS หรือโฟลเดอร์ Mods บน Emulator</span>
+                    </div>
+                  </div>
                 </button>
               </div>
             </div>
@@ -452,9 +468,9 @@
     </footer>
 
     <div id="toast" class="toast" role="status" aria-live="polite">พร้อมประมวลผลภายในอุปกรณ์</div>
-    <script defer src="./catalog.js?v=231"></script>
-    <script defer src="./patch-stats.js?v=231"></script>
+    <script defer src="./catalog.js?v=232"></script>
+    <script defer src="./patch-stats.js?v=232"></script>
     <script defer src="./assets/engine/hash/sha256.js"></script>
-    <script defer src="./game.js?v=231"></script>
+    <script defer src="./game.js?v=232"></script>
   </body>
 </html>
