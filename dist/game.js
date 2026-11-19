@@ -585,7 +585,7 @@ for (const item of (window.GAME_CATALOG || [])) {
 }
 
 const params = new URLSearchParams(window.location.search);
-const requestedSlug = params.get('game');
+const requestedSlug = params.get('game') || params.get('slug');
 const slug = games[requestedSlug] ? requestedSlug : 'the-world-ends-with-you';
 const game = games[slug];
 const isExternalDownload = game.distributionType === 'external-download';
@@ -791,12 +791,24 @@ if (isExternalDownload) {
   externalDownloadLink.addEventListener('click', recordExternalDownload);
 }
 
+const methodSwitcher = document.querySelector('#method-switcher');
+const patcherGrid = document.querySelector('.patcher-grid');
 const lumaPanel = document.querySelector('#luma-download-panel');
-if (game.luma && lumaPanel) {
-  lumaPanel.hidden = false;
+const tabPatcher = document.querySelector('#tab-method-patcher');
+const tabLuma = document.querySelector('#tab-method-luma');
+
+if (game.luma && methodSwitcher && lumaPanel) {
+  methodSwitcher.hidden = false;
+  // Default to Tab 1 (Web Patcher)
+  if (patcherGrid) patcherGrid.hidden = false;
+  lumaPanel.hidden = true;
+
   const lumaSizeEl = document.querySelector('#luma-download-size');
+  const lumaFilenameEl = document.querySelector('#luma-download-filename');
   const lumaLinkEl = document.querySelector('#luma-download-link');
+
   if (lumaSizeEl) lumaSizeEl.textContent = formatBytes(game.luma.size || 0);
+  if (lumaFilenameEl) lumaFilenameEl.textContent = game.luma.filename || 'Mod.zip';
   if (lumaLinkEl) {
     if (game.maintenance) {
       lumaLinkEl.removeAttribute('href');
@@ -816,8 +828,30 @@ if (game.luma && lumaPanel) {
       });
     }
   }
-} else if (lumaPanel) {
-  lumaPanel.hidden = true;
+
+  // Tab switching handlers
+  if (tabPatcher && tabLuma) {
+    tabPatcher.addEventListener('click', () => {
+      tabPatcher.classList.add('is-active');
+      tabPatcher.setAttribute('aria-selected', 'true');
+      tabLuma.classList.remove('is-active');
+      tabLuma.setAttribute('aria-selected', 'false');
+      if (patcherGrid) patcherGrid.hidden = false;
+      lumaPanel.hidden = true;
+    });
+
+    tabLuma.addEventListener('click', () => {
+      tabLuma.classList.add('is-active');
+      tabLuma.setAttribute('aria-selected', 'true');
+      tabPatcher.classList.remove('is-active');
+      tabPatcher.setAttribute('aria-selected', 'false');
+      if (patcherGrid) patcherGrid.hidden = true;
+      lumaPanel.hidden = false;
+    });
+  }
+} else {
+  if (methodSwitcher) methodSwitcher.hidden = true;
+  if (lumaPanel) lumaPanel.hidden = true;
 }
 
 // Guide buttons (Strategy Guide / Walkthrough) - Strictly DO NOT track stats

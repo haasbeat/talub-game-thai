@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=230" />
+    <link rel="stylesheet" href="./styles.css?v=231" />
   </head>
   <body class="detail-page">
     <div class="cursor" aria-hidden="true"></div>
@@ -225,7 +225,31 @@
               <p class="external-download-note">ลิงก์จะเปิดหน้าดาวน์โหลดภายนอก โปรดตรวจชื่อไฟล์และเวอร์ชันก่อนติดตั้ง · สถิตินับเมื่อกดลิงก์ ไม่ได้ยืนยันว่าติดตั้งสำเร็จ</p>
             </div>
 
-            <div class="patcher-grid" data-xdelta-only>
+            <!-- Method Switcher (For 3DS games with Luma / LayeredFS support) -->
+            <div id="method-switcher" class="method-switcher" data-xdelta-only hidden>
+              <div class="method-alert-banner">
+                <span class="alert-icon" aria-hidden="true">⚠️</span>
+                <div class="alert-text">
+                  <strong>เลือกติดตั้งเพียง "วิธีใดวิธีหนึ่งเท่านั้น":</strong>
+                  <span>หากแพตช์ไฟล์ ROM ในวิธีที่ 1 แล้ว <b>ห้ามนำม็อดในวิธีที่ 2 ไปใส่ซ้ำเด็ดขาด</b> เพราะจะทำให้ตัวเกมชนกันจนเกิด Error หรือจอดำ</span>
+                </div>
+              </div>
+
+              <div class="method-tabs" role="tablist" aria-label="เลือกรูปแบบการติดตั้ง">
+                <button type="button" id="tab-method-patcher" class="method-tab is-active hover-target" role="tab" aria-selected="true" aria-controls="patcher-grid">
+                  <span class="method-tab-tag mono">METHOD 01 · RECOMMENDED</span>
+                  <strong class="method-tab-title">⚡ รวมม็อดลงใน ROM ผ่านเว็บ</strong>
+                  <span class="method-tab-desc">จบในไฟล์เดียว · เล่นได้ทันทีทั้งบน Emulator และเครื่องจริง (Zero-Mod)</span>
+                </button>
+                <button type="button" id="tab-method-luma" class="method-tab hover-target" role="tab" aria-selected="false" aria-controls="luma-download-panel">
+                  <span class="method-tab-tag mono">METHOD 02 · ALTERNATIVE</span>
+                  <strong class="method-tab-title">📁 ชุดม็อดแยกโฟลเดอร์ (LayeredFS)</strong>
+                  <span class="method-tab-desc">ไม่ต้องดัดแปลง ROM · สำหรับ Luma3DS หรือโฟลเดอร์ Mods บน Emulator</span>
+                </button>
+              </div>
+            </div>
+
+            <div id="patcher-grid" class="patcher-grid" data-xdelta-only>
               <div id="drop-zone" class="drop-zone hover-target" tabindex="0" role="button" aria-label="เลือกไฟล์ ROM สำหรับเกมนี้">
                 <input id="rom-input" type="file" accept=".nds" hidden />
                 <div class="drop-number mono">STEP 02</div>
@@ -302,13 +326,55 @@
               </div>
             </div>
 
-            <!-- Luma / LayeredFS Download Panel (Bottom Alternative) -->
-            <div id="luma-download-panel" class="luma-download-panel" hidden>
-              <a id="luma-download-link" class="luma-download-btn hover-target" href="#" target="_blank" rel="noopener noreferrer">
-                <span>ดาวน์โหลดม็อด Luma / LayeredFS</span>
-                <span id="luma-download-size" class="luma-size-badge mono"></span>
-                <span aria-hidden="true">↓</span>
-              </a>
+            <!-- Luma / LayeredFS Download Panel (Method 2) -->
+            <div id="luma-download-panel" class="luma-download-panel" data-xdelta-only hidden>
+              <div class="luma-panel-head">
+                <span class="mono luma-panel-badge">METHOD 02 · LAYEREDFS MOD</span>
+                <h3>ชุดม็อดแยกโฟลเดอร์ (LayeredFS)</h3>
+                <p>ดาวน์โหลดไฟล์ม็อด <code>.zip</code> ไปแตกไฟล์แล้ววางในโฟลเดอร์ม็อด โดยใช้ร่วมกับ ROM สะอาดต้นฉบับได้ทันที ไม่ต้องแปลงไฟล์ ROM เหมาะสำหรับผู้ที่เล่นตลับแท้บนเครื่อง 3DS หรือเล่นบน Emulator</p>
+              </div>
+
+              <div class="luma-guide-grid">
+                <div class="luma-guide-card">
+                  <div class="guide-card-icon" aria-hidden="true">💻</div>
+                  <div class="guide-card-content">
+                    <strong>สำหรับโปรแกรมจำลอง (Citra / Lime3DS / Azahar)</strong>
+                    <ol>
+                      <li>ดาวน์โหลดไฟล์ม็อด <code>.zip</code> ด้านล่างแล้วแตกไฟล์</li>
+                      <li>เปิดโปรแกรมจำลอง คลิกขวาที่ชื่อเกม แล้วเลือก <b>Open Mods Location</b> (หรือเปิดโฟลเดอร์ <code>load/mods/&lt;TitleID&gt;/</code>)</li>
+                      <li>นำโฟลเดอร์ <code>romfs</code> และ <code>exefs</code> (ถ้ามี) ไปวางในโฟลเดอร์นั้น แล้วเปิดเล่นได้ทันที</li>
+                    </ol>
+                  </div>
+                </div>
+
+                <div class="luma-guide-card">
+                  <div class="guide-card-icon" aria-hidden="true">🎮</div>
+                  <div class="guide-card-content">
+                    <strong>สำหรับเครื่อง 3DS จริง (Luma3DS Custom Firmware)</strong>
+                    <ol>
+                      <li>นำ SD Card เสียบเข้าคอมพิวเตอร์ แตกไฟล์ม็อด <code>.zip</code></li>
+                      <li>คัดลอกโฟลเดอร์รหัสเกม (เช่น <code>0004000000...</code>) ไปวางใน <code>sdmc:/luma/titles/</code></li>
+                      <li>เปิดเครื่อง 3DS กดปุ่ม <kbd>SELECT</kbd> ค้างขณะเปิดเพื่อเข้าเมนู Luma3DS แล้วเปิดใช้งาน <b>Enable Game Patching</b> (กด <kbd>A</kbd> ให้มีเครื่องหมาย <code>(x)</code> แล้วกด <kbd>START</kbd> เพื่อบันทึก)</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+
+              <div class="luma-download-box">
+                <div class="luma-download-meta">
+                  <div><span class="mono">PACKAGE</span><strong id="luma-download-filename">—</strong></div>
+                  <div><span class="mono">SIZE</span><strong id="luma-download-size" class="mono">—</strong></div>
+                  <div><span class="mono">TYPE</span><strong>LayeredFS Mod (Pure ASCII Zip)</strong></div>
+                </div>
+                <a id="luma-download-link" class="luma-download-btn hover-target" href="#" target="_blank" rel="noopener noreferrer">
+                  <span>ดาวน์โหลดชุดม็อดภาษาไทย (Mod.zip)</span>
+                  <span aria-hidden="true">↓</span>
+                </a>
+              </div>
+
+              <div class="luma-warning-footer">
+                ⚠️ <b>ข้อห้ามสำคัญ:</b> หากท่านใช้ไฟล์ ROM ที่ผ่านการแพตช์จาก <b>วิธีที่ 1</b> แล้ว <b>ห้ามนำชุดม็อดนี้ไปใส่ซ้ำเด็ดขาด</b> เพราะจะทำให้โค้ดและข้อมูลชนกันจนเกมเปิดไม่ติดหรือเกิด Error ทันที (เลือกใช้งานวิธีใดวิธีหนึ่งเท่านั้น)
+              </div>
             </div>
           </div>
         </div>
@@ -386,9 +452,9 @@
     </footer>
 
     <div id="toast" class="toast" role="status" aria-live="polite">พร้อมประมวลผลภายในอุปกรณ์</div>
-    <script defer src="./catalog.js?v=230"></script>
-    <script defer src="./patch-stats.js?v=230"></script>
+    <script defer src="./catalog.js?v=231"></script>
+    <script defer src="./patch-stats.js?v=231"></script>
     <script defer src="./assets/engine/hash/sha256.js"></script>
-    <script defer src="./game.js?v=230"></script>
+    <script defer src="./game.js?v=231"></script>
   </body>
 </html>

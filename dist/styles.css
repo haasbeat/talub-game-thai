@@ -503,54 +503,290 @@ body.has-inapp-banner main { padding-top: 60px; }
 .external-download-link:hover { color: var(--ink); background: transparent; }
 .external-download-note { margin: 12px 0 0; color: var(--muted); font-size: 12px; line-height: 1.55; }
 
+/* --- Method Switcher (Tabs for Web Patcher vs LayeredFS Mod) --- */
+.method-switcher {
+  margin: 24px 0 28px;
+}
+.method-switcher[hidden] {
+  display: none !important;
+}
+.method-alert-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 18px;
+  background: #fff8eb;
+  border: 1px solid #fde68a;
+  border-left: 4px solid #f59e0b;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+.method-alert-banner .alert-icon {
+  font-size: 18px;
+  line-height: 1.3;
+  flex-shrink: 0;
+}
+.method-alert-banner .alert-text {
+  font-size: 13px;
+  line-height: 1.55;
+  color: #92400e;
+}
+.method-alert-banner .alert-text strong {
+  display: inline;
+  color: #78350f;
+  font-weight: 600;
+  margin-right: 4px;
+}
+.method-alert-banner .alert-text b {
+  color: #b45309;
+  font-weight: 600;
+}
+.method-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.method-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 18px 22px;
+  background: #fafaf8;
+  border: 2px solid var(--line);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 200ms var(--ease);
+  color: var(--ink);
+  font-family: inherit;
+}
+.method-tab:hover {
+  background: #f4f4f2;
+  border-color: rgba(0, 0, 0, 0.28);
+}
+.method-tab.is-active {
+  background: #fff;
+  border-color: var(--ink);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+.method-tab-tag {
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 0.12em;
+  margin-bottom: 8px;
+  transition: color 200ms ease;
+}
+.method-tab.is-active .method-tab-tag {
+  color: #059669;
+  font-weight: 600;
+}
+.method-tab-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+.method-tab-desc {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.45;
+}
+@media (max-width: 680px) {
+  .method-tabs {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .method-tab {
+    padding: 14px 16px;
+  }
+}
+
 /* --- Luma / LayeredFS Download Panel --- */
 .luma-download-panel {
-  margin: 28px 0 0;
-  padding-top: 20px;
-  border-top: 1px dashed var(--line);
+  margin: 12px 0 0;
+  padding: 8px 0 0;
 }
 .luma-download-panel[hidden] {
   display: none !important;
+}
+.luma-panel-head {
+  margin-bottom: 24px;
+}
+.luma-panel-badge {
+  color: var(--muted);
+  font-size: 11px;
+}
+.luma-panel-head h3 {
+  margin: 8px 0 10px;
+  font-size: clamp(22px, 3vw, 34px);
+  line-height: 1.2;
+  letter-spacing: -.03em;
+  font-weight: 600;
+}
+.luma-panel-head p {
+  max-width: 760px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 13.5px;
+  line-height: 1.65;
+}
+.luma-panel-head code {
+  font-size: 12px;
+  padding: 1px 4px;
+  background: #eee;
+  border-radius: 3px;
+  font-family: ui-monospace, monospace;
+}
+.luma-guide-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin: 24px 0 28px;
+}
+@media (max-width: 768px) {
+  .luma-guide-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.luma-guide-card {
+  display: flex;
+  gap: 14px;
+  padding: 20px 22px;
+  background: #fafaf8;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.luma-guide-card .guide-card-icon {
+  font-size: 26px;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.luma-guide-card .guide-card-content {
+  min-width: 0;
+}
+.luma-guide-card strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--ink);
+}
+.luma-guide-card ol {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 12.5px;
+  line-height: 1.7;
+  color: #444;
+}
+.luma-guide-card li {
+  margin-bottom: 8px;
+}
+.luma-guide-card li:last-child {
+  margin-bottom: 0;
+}
+.luma-guide-card code,
+.luma-guide-card kbd {
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: #f0f0ee;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: ui-monospace, monospace;
+}
+.luma-download-box {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 24px;
+  background: #fff;
+}
+.luma-download-meta {
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(0, 0.9fr) minmax(0, 1.3fr);
+  border-bottom: 1px solid var(--line);
+  background: #fcfcfb;
+}
+@media (max-width: 640px) {
+  .luma-download-meta {
+    grid-template-columns: 1fr;
+  }
+}
+.luma-download-meta > div {
+  padding: 16px 20px;
+  border-right: 1px solid var(--line);
+  min-width: 0;
+}
+.luma-download-meta > div:last-child {
+  border-right: none;
+}
+.luma-download-meta span {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  margin-bottom: 4px;
+}
+.luma-download-meta strong {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  color: var(--ink);
 }
 .luma-download-btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 16px 24px;
-  background: rgba(57, 255, 20, 0.08);
-  border: 1px solid #39ff14;
-  color: #39ff14;
+  padding: 18px 24px;
+  background: var(--ink);
+  border: 1px solid var(--ink);
+  color: #fff;
   font-size: 15px;
   font-weight: 600;
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: all 200ms var(--ease);
 }
 .luma-download-btn:hover {
-  background: #39ff14;
-  color: #05080c;
-  box-shadow: 0 0 24px rgba(57, 255, 20, 0.35);
-  transform: translateY(-2px);
+  background: transparent;
+  color: var(--ink);
 }
 .luma-download-btn .luma-size-badge {
   margin-left: auto;
-  font-size: 12px;
-  padding: 3px 8px;
-  border-radius: 3px;
-  background: rgba(57, 255, 20, 0.15);
-  color: #39ff14;
-  border: 1px solid rgba(57, 255, 20, 0.4);
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transition: all 200ms ease;
 }
 .luma-download-btn:hover .luma-size-badge {
-  background: #05080c;
-  color: #39ff14;
-  border-color: #05080c;
+  background: rgba(0, 0, 0, 0.08);
+  color: var(--ink);
 }
 .luma-download-btn.disabled {
-  background: #222;
-  color: #666;
+  background: #eee;
+  color: #888;
   pointer-events: none;
-  border: 1px solid #333;
+  border-color: #ddd;
+}
+.luma-warning-footer {
+  margin-top: 18px;
+  padding: 14px 18px;
+  background: #fff5f5;
+  border: 1px solid #fecaca;
+  border-left: 4px solid #ef4444;
+  border-radius: 6px;
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: #991b1b;
+}
+.luma-warning-footer b {
+  color: #7f1d1d;
+  font-weight: 600;
 }
 
 /* --- Popular Section (Cinematic Hero Spotlight & Modern Cards) --- */
