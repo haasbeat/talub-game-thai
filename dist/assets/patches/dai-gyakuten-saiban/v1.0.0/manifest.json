@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "game_slug": "dai-gyakuten-saiban",
+  "game_title": "Dai Gyakuten Saiban: Naruhodou Ryuunosuke no Bouken",
+  "platform": "3DS",
+  "region": "Japan",
+  "game_code": "CTR-P-BDGJ",
+  "title_id": "000400000014AD00",
+  "target_game_version": "v1.0.0",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Dai Gyakuten Saiban - Naruhodou Ryuunosuke no Bouken (Japan).3ds",
+      "size": 1073741824,
+      "sha256": "934b01cef62199b2018dce23cae8d7d9d750e5464fe533d0abca66ff50cc9e5e"
+    }
+  ],
+  "patch": {
+    "filename": "Dai_Gyakuten_Saiban_Thai_v1.0.0.xdelta",
+    "size": 2884518,
+    "sha256": "f32bd3b8d60c13b120b0d412fac3a0a18c3d6c17a1d173e940a42796e0f64266",
+    "release_date": "2026-11-19",
+    "date_source": "release_build",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/dai-gyakuten-saiban/v1.0.0/Dai_Gyakuten_Saiban_Thai_v1.0.0.xdelta"
+  },
+  "output": {
+    "filename": "Dai_Gyakuten_Saiban_Thai_v1.0.0.3ds",
+    "size": 1073741824,
+    "sha256": "e1037b44a8c5782244a01280ef67ab7a4b5c7748d2997dc7277353dc9617d6fd"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลักทั้ง 5 บท + บทสนทนาสืบสวน/ว่าความ/ร่วมสืบสวน + บันทึกของศาล + เมนูและป้ายกราฟิกแบนเนอร์ในศาล 20 รายการ แปลและขัดเกลาครบ 100% + จัดระยะห่าง GUI แบบ Proportional 15 ไฟล์ (กราฟิกตกแต่งและป้ายแอนิเมชัน 3D บางส่วนคงต้นฉบับญี่ปุ่น)",
+    "whole_game_census": "33,685 / 33,685 ระเบียนข้อความ GMD (454/606 ไฟล์ GMD = 100.00%) + ป้ายกราฟิก UI (.tex) 20 ไฟล์ + GUI 15 ไฟล์",
+    "hardware_verification": "hardware-unverified (ผ่านการทดสอบบนอีมูเลเตอร์และตรวจสอบไบนารี 1:1 ครบถ้วน ยังไม่ยืนยันผลบนเครื่อง 3DS จริง)",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-19T10:24:00+07:00",
+    "method": "clean_source_xdelta3_roundtrip_and_binary_readback",
+    "patcher_test_passed": true,
+    "binary_readback_verified": true,
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}
