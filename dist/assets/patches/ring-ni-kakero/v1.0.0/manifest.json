@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "ring-ni-kakero",
+  "game_title": "Ring ni Kakero",
+  "platform": "SNES",
+  "region": "Japan",
+  "game_code": "SHVC-ARKJ",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Ring ni Kakero (Japan) (NP).sfc",
+      "size": 2621440,
+      "sha256": "564dd5e2131218053bdde4428a45fd0d18d3bd28a92bf1b1b46b8461b1b72196"
+    }
+  ],
+  "patch": {
+    "filename": "Ring_ni_Kakero_TH_v1.0.0.xdelta",
+    "size": 46312,
+    "sha256": "637d7cc48bd2518c6242d3a78ef15a7863009387c12c7e23ca2ade082845dc4c",
+    "release_date": "2026-11-20",
+    "date_source": "release_gate",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/ring-ni-kakero/v1.0.0/Ring_ni_Kakero_TH_v1.0.0.xdelta"
+  },
+  "output": {
+    "filename": "Ring_ni_Kakero_TH_v1.0.0.sfc",
+    "size": 4194304,
+    "sha256": "688bc0b519d9c3f64bb39dd9674d0e55a7d75d9aaa27c9d664863e074de9a607"
+  },
+  "release_status": {
+    "module_status": "แปลครบทุกหมวดหมู่ 100%",
+    "whole_game_census": "1,652/1,652 เรคคอร์ดในรอม (ภาพรวมทั้งเกม 100.0%)",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "STATE.md / audit_rnk.py (2026-11-20 audit)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-20T01:15:00+07:00",
+    "method": "cli_xdelta3_clean_source_roundtrip",
+    "note": "Applied the exact distributed xdelta to the pinned clean source with xdelta3; reconstructed output size and SHA-256 were measured from that artifact; 1:1 In-ROM readback audit passed 100% (1,652/1,652 records); Zero-Mod Mesen-S/Snes9x emulation verified.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}

@@ -2887,7 +2887,7 @@ window.GAME_CATALOG = [
     "title": "BS Koi ha Balance: Battle of Lovers",
     "platform": "snes",
     "platformLabel": "SNES",
-    "index": "SNES | 001 / 002",
+    "index": "SNES | 001 / 003",
     "version": "v1.0.0",
     "patchDate": "2026-11-14",
     "addedDate": "2026-11-14",
@@ -2935,7 +2935,7 @@ window.GAME_CATALOG = [
     "title": "Mini Yonku Let's & Go!!: Power WGP 2",
     "platform": "snes",
     "platformLabel": "SNES",
-    "index": "SNES | 002 / 002",
+    "index": "SNES | 002 / 003",
     "version": "v1.3.15",
     "patchDate": "2026-10-25",
     "addedDate": "2026-11-04",
@@ -2978,6 +2978,54 @@ window.GAME_CATALOG = [
   },
   {
     "order": 62,
+    "slug": "ring-ni-kakero",
+    "title": "Ring ni Kakero",
+    "platform": "snes",
+    "platformLabel": "SNES",
+    "index": "SNES | 003 / 003",
+    "version": "v1.0.0",
+    "patchDate": "2026-11-20",
+    "addedDate": "2026-11-20",
+    "addedOrder": 72,
+    "addedAt": "2026-11-20T01:30:00+07:00",
+    "format": "xdelta3",
+    "cover": "./assets/covers/web/ring-ni-kakero.jpg",
+    "manifest": "./assets/patches/ring-ni-kakero/v1.0.0/manifest.json",
+    "accept": ".sfc",
+    "fileTypes": "CLEAN Japan SNES · 3 MB",
+    "region": "Japan",
+    "gameCode": "SHVC-ARKJ",
+    "sourceName": "Ring ni Kakero (Japan) (NP).sfc · 2,621,440 bytes",
+    "sourceHash": "564dd5e2131218053bdde4428a45fd0d18d3bd28a92bf1b1b46b8461b1b72196",
+    "outputHash": "688bc0b519d9c3f64bb39dd9674d0e55a7d75d9aaa27c9d664863e074de9a607",
+    "moduleStatus": "แปลครบทุกหมวดหมู่ 100%",
+    "wholeGameCensus": "1,652/1,652 เรคคอร์ดในรอม (ภาพรวมทั้งเกม 100.0%)",
+    "details": {
+      "thaiTitle": "ริงนิ คาเคโระ สังเวียนเลือดลูกผู้ชาย",
+      "japaneseTitle": "リングにかけろ",
+      "originalTitle": "Ring ni Kakero",
+      "studio": "NCS / Masami Kurumada (Nintendo Power)",
+      "release": "1 มิถุนายน 1998",
+      "genre": "Boxing Strategy / Action",
+      "description": "ม็อดภาษาไทยสมบูรณ์ 100% สำหรับ Ring ni Kakero (Super Famicom / SNES) เวอร์ชัน v1.0.0 ผลงานมวยสากลเลือดร้อนระดับตำนานของ อ.คุรุมาดะ มาซามิ ผู้เขียน Saint Seiya",
+      "overview": "เกมมวยสากลวางแผนและแอ็กชันจากมังงะโชเน็นยอดฮิตยุคบุกเบิกของนิตยสาร Shonen Jump นำทัพโดย ทาคามิเนะ ริวจิ และยอดนักชกแดนอาทิตย์อุทัยในศึกแชมเปี้ยนคาร์นิวัล สู่เวทีระดับโลกและศึกท้าดวลสำนักเงาทมิฬ",
+      "story": "เรื่องราวการต่อสู้ของสองพี่น้อง ทาคามิเนะ ริวจิ และ คิคุ ผู้เดินทางจากบ้านเกิดมุ่งสู่โตเกียวเพื่อฝึกฝนมวยสากลตามปณิธานของคุณพ่อผู้ล่วงลับ ด้วยการเคี่ยวกรำศาสตร์มวยของพี่สาวและหัวใจที่ไม่ยอมแพ้ ริวจิจึงก้าวขึ้นสู่สังเวียนเพื่อประลองกับยอดฝีมืออย่าง เคนซากิ จุน, คาโทริ อิชิมัตสึ, ชินาโทระ คาสึกิ และ คาวาอิ ทาเคชิ จนกระทั่งรวมพลังกันในนามตัวแทนเยาวชนญี่ปุ่นเพื่อฟาดฟันกับนักชกไร้พ่ายจากทั่วโลกและศัตรูในเงามืด",
+      "localization": "แปลไทยสมบูรณ์แบบ 100% ครบทุกหมวดหมู่ (1,652/1,652 รายการ In-ROM Census) ทั้งเนื้อเรื่องศึกแชมเปี้ยนคาร์นิวัล ศึกเงาทมิฬ ฉากจบทุกแบบ สตาฟฟ์โรล เมนู ระบบ ไอเทม และคำขานท่าไม้ตายบนสังเวียนครบทั้ง 14 นักชก ใช้ฟอนต์ไทยแบบ Proportional VWF ความละเอียดสูง 11x14 พิกเซล สระวรรณยุกต์วางตำแหน่งแม่นยำไม่ชนสระล่าง พร้อมวิศวกรรมขยายรอมเป็น 4MB LoROM สแตนด์อโลน เล่นได้ทันทีบนอีมูเลเตอร์และตลับ Flashcart ทุกรุ่น",
+      "untranslated": "ไม่มีส่วนที่ค้างแปลตามผลสำรวจในรอม (แปลครบ 100.0% ทุกตัวอักษร)",
+      "features": [
+        "เนื้อเรื่องหลักทุกภาค (ศึกชิงแชมป์, ศึกเงาทมิฬ, ทุกฉากจบ) ภาษาไทย 100%",
+        "คำพูดบนสังเวียนและคำขานท่าไม้ตาย บูมเมอแรงฮุค, กาแล็กติกาแฟนทอม ครบทั้ง 14 นักชก",
+        "ระบบคำสั่งมุมพักยก วางแผนการชก เมนู และสารานุกรมภาษาไทยเต็มรูปแบบ",
+        "ฟอนต์ภาษาไทย 11x14 VWF คมชัด สระวรรณยุกต์ 3 ชั้นสวยงามอ่านสบายตา",
+        "ผ่านการตรวจ Readback 1:1 ในรอมจริง 1,652 รายการ ปราศจากอาการเกมค้าง 100%"
+      ]
+    },
+    "verified": true,
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-20T01:15:00+07:00"
+  },
+  {
+    "order": 63,
     "slug": "mana-khemia-student-alliance",
     "title": "Mana Khemia: Student Alliance",
     "platform": "psp",
@@ -3024,7 +3072,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-14T09:23:00+07:00"
   },
   {
-    "order": 63,
+    "order": 64,
     "slug": "popolocrois",
     "title": "PoPoLoCrois",
     "platform": "psp",
@@ -3053,7 +3101,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-19T18:30:00+07:00"
   },
   {
-    "order": 64,
+    "order": 65,
     "slug": "disgaea-5-complete",
     "title": "Disgaea 5 Complete",
     "platform": "switch",
@@ -3087,7 +3135,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "2e68c19ac9794489b1dd86410fac6b25c3f98d6598bdf09ac058642054b46e58"
   },
   {
-    "order": 65,
+    "order": 66,
     "slug": "fire-emblem-engage",
     "title": "Fire Emblem Engage",
     "platform": "switch",
@@ -3121,7 +3169,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "8c87316d2eff86c7ef712e88a5276c8c713ee38a345c74e8133b26615e5cb72d"
   },
   {
-    "order": 66,
+    "order": 67,
     "slug": "fire-emblem-three-houses",
     "title": "Fire Emblem: Three Houses",
     "platform": "switch",
@@ -3175,7 +3223,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "6f27fe8cc63784f4d17ada3d7822275fbdf46a0fdb3be10da6b499200ebd9efd"
   },
   {
-    "order": 67,
+    "order": 68,
     "slug": "persona-5-royal",
     "title": "Persona 5 Royal",
     "platform": "switch",
@@ -3209,7 +3257,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "ae68cf2866e6fd49d06e4245af0cf64f463bafc15be6885a06d360ea83556f1f"
   },
   {
-    "order": 68,
+    "order": 69,
     "slug": "tokyo-mirage-sessions-fe-encore",
     "title": "Tokyo Mirage Sessions #FE Encore",
     "platform": "switch",
@@ -3263,7 +3311,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "b0c3af4c09192b54a8d5cc28a0070131d58338926aaf52fc2567514df0b0de9a"
   },
   {
-    "order": 69,
+    "order": 70,
     "slug": "unicorn-overlord",
     "title": "Unicorn Overlord",
     "platform": "switch",
@@ -3333,7 +3381,7 @@ window.GAME_CATALOG = [
     }
   },
   {
-    "order": 70,
+    "order": 71,
     "slug": "village-in-the-shade",
     "title": "Village in the Shade",
     "platform": "switch",
@@ -3368,6 +3416,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "ring-ni-kakero",
+    "title": "Ring ni Kakero",
+    "platform": "SNES",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-20T01:30:00+07:00",
+    "note": "เปิดตัวม็อดแปลไทย v1.0.0 เต็มรูปแบบ 100%: แปลครบทุกเนื้อเรื่อง คำพูดบนสังเวียน เมนู ระบบ พร้อมฟอนต์ไทยคมชัด 11x14 VWF และผ่านการตรวจ Readback 1:1 ในรอมจริงสมบูรณ์แบบ"
+  },
   {
     "slug": "metal-max-4",
     "title": "Metal Max 4: Gekkou no Diva",
