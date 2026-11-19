@@ -1498,7 +1498,8 @@ const applyVerifiedPatch = async () => {
             try {
               await opfsWritable.write(bytes);
             } catch (writeErr) {
-              reject(new Error(writeErr.name === 'QuotaExceededError' ? 'พื้นที่จัดเก็บในเครื่องไม่เพียงพอ กรุณาเคลียร์พื้นที่ว่างในเครื่องแล้วลองใหม่อีกครั้ง' : writeErr.message));
+              const isQuota = writeErr.name === 'QuotaExceededError' || writeErr.message?.toLowerCase().includes('quota') || writeErr.message?.toLowerCase().includes('storage');
+              reject(new Error(isQuota ? 'พื้นที่จัดเก็บในเบราว์เซอร์ไม่พอ (Storage Quota) แนะนำให้สลับเป็น "โหมดปกติ (RAM)" ด้านล่าง หรือปิดแท็บส่วนตัว (Private)' : writeErr.message));
               return;
             }
           } else {
@@ -1561,7 +1562,11 @@ const applyVerifiedPatch = async () => {
     patchButton.hidden = false;
     patchButton.disabled = false;
     patchButton.querySelector('span').textContent = 'ลองแพตช์อีกครั้ง';
-    if (error.name === 'RangeError' || error.message?.includes('allocation') || error.message?.includes('memory') || error.message?.includes('Out of memory')) {
+    const isQuotaError = error.name === 'QuotaExceededError' || error.message?.toLowerCase().includes('quota') || error.message?.toLowerCase().includes('storage');
+    if (isQuotaError) {
+      setProgress('พื้นที่จัดเก็บในเบราว์เซอร์ไม่พอ (Storage Quota) แนะนำให้สลับเป็น "โหมดปกติ (RAM)" ด้านล่าง หรือปิดแท็บส่วนตัว (Private)', 0);
+      showToast('พื้นที่เบราว์เซอร์ไม่พอ แนะนำให้สลับเป็น "โหมดปกติ (RAM)" หรือเคลียร์พื้นที่เครื่อง');
+    } else if (error.name === 'RangeError' || error.message?.includes('allocation') || error.message?.includes('memory') || error.message?.includes('Out of memory')) {
       if (isIOS) {
         setProgress('หน่วยความจำ Safari บน iOS ไม่พอ (iOS รองรับไฟล์ไม่เกิน 1.07 GB แนะนำให้แพตช์บน PC/Mac หรือ Android)', 0);
         showToast('Safari บน iOS แรมไม่พอสำหรับไฟล์นี้ (จำกัด ~1.07 GB) แนะนำให้ใช้ PC/Mac');
