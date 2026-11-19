@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "popolocrois",
+  "game_title": "PoPoLoCrois",
+  "platform": "PSP",
+  "region": "USA",
+  "game_code": "ULUS-10018",
+  "patch_version": "v1.1.6",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "PoPoLoCrois (USA).iso",
+      "size": 1259372544,
+      "sha256": "10a8bd3275d716736a70b63ee308070c52f3b79403d146765dc2e6d50ce89222"
+    }
+  ],
+  "patch": {
+    "filename": "PoPoLoCrois_Thai_v1.1.6_[talubgamethai].xdelta",
+    "size": 4994647,
+    "sha256": "66841ac8356093dd9011f6ebe77b4b076d40a91dbf1bddf473b7576607b4fefa",
+    "release_date": "2026-11-19",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/popolocrois/v1.1.6/PoPoLoCrois_Thai_v1.1.6_%5Btalubgamethai%5D.xdelta"
+  },
+  "output": {
+    "filename": "PoPoLoCrois_Thai_v1.1.6.iso",
+    "size": 1259372544,
+    "sha256": "1c56922db3ee59a73e8d29bd1fb7c00ff7dd3ac54513c5fa95740c740b522b91"
+  },
+  "release_status": {
+    "module_status": "บทสนทนาเนื้อเรื่อง & NPC (.p00/.p01) 100% + เมนู/ระบบ/ไอเทม/สกิล/มอนสเตอร์ 100%",
+    "whole_game_census": "48,904 / 50,673 รายการ/บรรทัด = 96.5% (ยังเหลือซับไตเติลอนิเมะ data/telop 60/64 ไฟล์ [1,769 บรรทัด] และกราฟิกป้าย .tm2)",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "In-ROM Gatekeeper Audit v1.1.6"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ISO ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-19T18:30:00+07:00",
+    "method": "clean_source_xdelta3_roundtrip",
+    "note": "Clean USA UMD ISO verified by SHA-256 and patched via tools/release_guard.py; output bit-identical to target ISO; 1:1 In-ROM readback 48,571 records 0 critical freeze 0 errors; 4-tier watermark verified; Tales of Rebirth Style A VWF font + menu unsquish + Seg 0 .rodata string allocation.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}

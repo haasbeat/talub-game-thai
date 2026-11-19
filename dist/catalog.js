@@ -2982,27 +2982,27 @@ window.GAME_CATALOG = [
     "platform": "psp",
     "platformLabel": "PSP",
     "index": "PSP | 002 / 002",
-    "version": "v1.1.0",
-    "patchDate": "2026-09-18",
+    "version": "v1.1.6",
+    "patchDate": "2026-11-19",
     "addedDate": "2026-11-06",
     "addedOrder": 47,
     "addedAt": "2026-11-06T19:21:05+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/popolocrois.jpg",
-    "manifest": "./assets/patches/popolocrois/v1.1.0/manifest.json",
+    "manifest": "./assets/patches/popolocrois/v1.1.6/manifest.json",
     "accept": ".iso",
     "fileTypes": "CLEAN USA PSP · 1.17 GB",
     "region": "USA",
     "gameCode": "ULUS-10018",
     "sourceName": "PoPoLoCrois (USA).iso · 1,259,372,544 bytes",
     "sourceHash": "10a8bd3275d716736a70b63ee308070c52f3b79403d146765dc2e6d50ce89222",
-    "outputHash": "b8098eec36322efbb0552163b887cffc16d7f267ec68629d7fbddeaf865d50f7",
-    "moduleStatus": "เนื้อเรื่องหลักและระบบทั้งหมด 100%",
-    "wholeGameCensus": "48,199 / 48,199 บรรทัด In-ROM = 100.0%",
+    "outputHash": "1c56922db3ee59a73e8d29bd1fb7c00ff7dd3ac54513c5fa95740c740b522b91",
+    "moduleStatus": "บทสนทนาเนื้อเรื่อง & NPC (.p00/.p01) 100% + เมนู/ระบบ/ไอเทม/สกิล/มอนสเตอร์ 100%",
+    "wholeGameCensus": "48,904 / 50,673 รายการ/บรรทัด = 96.5% (ยังเหลือซับไตเติลอนิเมะ data/telop 60/64 ไฟล์ [1,769 บรรทัด] และกราฟิกป้าย .tm2)",
     "details": null,
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-06T18:52:00+07:00"
+    "verifiedAt": "2026-11-19T18:30:00+07:00"
   },
   {
     "order": 63,
@@ -3320,6 +3320,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "popolocrois",
+    "title": "PoPoLoCrois",
+    "platform": "PSP",
+    "version": "v1.1.6",
+    "type": "update",
+    "timestamp": "2026-11-19T18:30:00+07:00",
+    "note": "อัปเดตแพตช์ v1.1.6: ฟอนต์สไตล์ Tales of Rebirth คมชัด 1:1 VWF, แก้ตัวอักษร 'บ' และชื่ออุปกรณ์ขาด ('ตราเจ้าชาย'), ปลดล็อกเมนูกว้างไม่บีบ และซิงก์คำแปล 48,991 รายการครบถ้วน"
+  },
   {
     "slug": "dai-gyakuten-saiban",
     "title": "Dai Gyakuten Saiban: Naruhodou Ryuunosuke no Bouken",
