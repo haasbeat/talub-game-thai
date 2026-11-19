@@ -4,16 +4,16 @@
   "game_title": "Tokyo Mirage Sessions #FE Encore",
   "platform": "Nintendo Switch",
   "title_id": "0100A9400C9C2000",
-  "patch_version": "v1.0.0",
+  "patch_version": "v1.0.1",
   "target_game_version": "Base Game (v0 Asia En/Ja/Fr/Zh 0100A9400C9C2000)",
   "distribution": {
     "type": "external_mod_archive",
     "format": "LayeredFS / Atmosphère",
-    "filename": "TMS_FE_Encore_Switch_Thai_v1.0.0_Mod.zip",
-    "url": "https://drive.google.com/file/d/1lwamXRdbWq0ZoYs_CTyoDwaKUjUBNbPQ/view?usp=sharing",
-    "size": 91399958,
-    "sha256": "b0c3af4c09192b54a8d5cc28a0070131d58338926aaf52fc2567514df0b0de9a",
-    "release_date": "2026-11-18",
+    "filename": "TMS_FE_Encore_Switch_Thai_v1.0.1_Mod.zip",
+    "url": "https://drive.google.com/file/d/1Pw3sJnGD9lEZbQ7VLFuzx2RBpeVBjQcy/view?usp=sharing",
+    "size": 91441432,
+    "sha256": "92c3598099ce809a1671aa4ca0d2e7442301eda42c1d46460d991d71cf16841d",
+    "release_date": "2026-11-20",
     "date_source": "user_authorized_release"
   },
   "release_status": {
@@ -24,6 +24,7 @@
     "archive_identity_verified": true,
     "binary_readback_verified": true,
     "xdelta_roundtrip_verified": true,
+    "cpk_toc_bsearch_verified": true,
     "hardware_verified": false
   }
 }

@@ -3263,21 +3263,21 @@ window.GAME_CATALOG = [
     "platform": "switch",
     "platformLabel": "SWITCH",
     "index": "SWITCH | 005 / 007",
-    "version": "v1.0.0",
-    "patchDate": "2026-11-18",
+    "version": "v1.0.1",
+    "patchDate": "2026-11-20",
     "addedDate": "2026-11-18",
     "addedOrder": 69,
     "addedAt": "2026-11-18T20:09:01+07:00",
     "format": "LayeredFS / Atmosphère",
     "cover": "./assets/covers/web/tokyo-mirage-sessions-fe-encore.jpg",
-    "manifest": "./assets/patches/tokyo-mirage-sessions-fe-encore/v1.0.0/manifest.json",
+    "manifest": "./assets/patches/tokyo-mirage-sessions-fe-encore/v1.0.1/manifest.json",
     "accept": "",
-    "fileTypes": "ชุดม็อด LayeredFS · 87.17 MB",
+    "fileTypes": "ชุดม็อด LayeredFS · 87.21 MB",
     "region": "Global",
     "gameCode": "0100A9400C9C2000",
     "sourceName": "Base Game (v0 Asia En/Ja/Fr/Zh 0100A9400C9C2000)",
     "sourceHash": "0100A9400C9C2000",
-    "outputHash": "b0c3af4c09192b54a8d5cc28a0070131d58338926aaf52fc2567514df0b0de9a",
+    "outputHash": "92c3598099ce809a1671aa4ca0d2e7442301eda42c1d46460d991d71cf16841d",
     "moduleStatus": "เนื้อเรื่องหลัก ไซด์สตอรี แชท TOPIC เมนู สกิล ไอเทม และระบบต่อสู้ ครบทุกบทสนทนาที่มีเนื้อหา 100%",
     "wholeGameCensus": "29,129 / 29,601 ระเบียน In-ROM (98.41%)",
     "details": {
@@ -3287,7 +3287,7 @@ window.GAME_CATALOG = [
       "studio": "ATLUS / Intelligent Systems / Nintendo",
       "release": "2020-01-17",
       "genre": "Role-playing game",
-      "description": "ม็อดภาษาไทยสำหรับ Tokyo Mirage Sessions #FE Encore (Nintendo Switch / Title ID: 0100A9400C9C2000) เวอร์ชัน v1.0.0 แปลครบทุกบทสนทนาที่มีเนื้อหาในเนื้อเรื่องหลัก ไซด์สตอรี แชท TOPIC เควสต์ สกิล ไอเทม และระบบต่อสู้ สำมะโน 29,129 / 29,601 ระเบียน In-ROM (98.41%)",
+      "description": "ม็อดภาษาไทยสำหรับ Tokyo Mirage Sessions #FE Encore (Nintendo Switch / Title ID: 0100A9400C9C2000) เวอร์ชัน v1.0.1 แปลครบทุกบทสนทนาที่มีเนื้อหาในเนื้อเรื่องหลัก ไซด์สตอรี แชท TOPIC เควสต์ สกิล ไอเทม และระบบต่อสู้ สำมะโน 29,129 / 29,601 ระเบียน In-ROM (98.41%)",
       "overview": "เกม Turn-Based RPG สุดคัลท์จาก ATLUS x Intelligent Systems ที่ผสานจักรวาล Shin Megami Tensei เข้ากับ Fire Emblem ท่ามกลางฉากหลังวงการบันเทิงญี่ปุ่นยุคใหม่ ก้าวสู่เวทีไอดอลควบคู่การต่อสู้ด้วยระบบ Session Combo และคลาสอาวุธ Mirages",
       "story": "อิสึกิ อาโออิ และสึบาสะ โอริเบะ หนุ่มสาวที่ก้าวเข้าสู่เอเจนซีบันเทิงฟอร์ทูนาได้ปลุกพลัง 'มิราจมาสเตอร์' ทำสัญญากับเหล่าวีรชนจากต่างโลกอย่างโครม และชีดา เพื่อต่อกรกับมิราจร้ายที่แฝงตัวเข้าดูดกลืนพลังแห่งการสร้างสรรค์ (Performa) จากศิลปินและผู้คนในกรุงโตเกียว",
       "localization": "แปลภาษาไทยครบทุกบทสนทนาที่มีเนื้อหาใน 1,048 ไฟล์ MSBT (In-ROM 29,129 / 29,601 ระเบียนที่มีอักษรไทย = 98.41%) เทียบอ้างอิงจากต้นฉบับญี่ปุ่นควบคู่ภาษาอังกฤษ ครอบคลุมเนื้อเรื่องหลัก 6,628 เรคอร์ด ไซด์สตอรีตัวละคร 4,238 เรคอร์ด แชท TOPIC บนสมาร์ตโฟน 1,827 เรคอร์ด เนื้อเรื่องเสริม EX แดนมายา 328 เรคอร์ด คัตซีน 369 เรคอร์ด บทสนทนา NPC 796 เรคอร์ด ข้อมูลสกิล ไอเทม อาวุธ เควสต์ และระบบต่อสู้ครบถ้วน พร้อมฟอนต์ภาษาไทย 6 ขนาดที่ปรับจูนหน้าเมนูให้อ่านชัดสบายตา",
@@ -3305,10 +3305,10 @@ window.GAME_CATALOG = [
     "gameVersion": "Base Game (v0 Asia En/Ja/Fr/Zh 0100A9400C9C2000)",
     "verifiedAt": null,
     "distributionType": "external-download",
-    "downloadUrl": "https://drive.google.com/file/d/1lwamXRdbWq0ZoYs_CTyoDwaKUjUBNbPQ/view?usp=sharing",
-    "downloadFilename": "TMS_FE_Encore_Switch_Thai_v1.0.0_Mod.zip",
-    "downloadSize": 91399958,
-    "downloadSha256": "b0c3af4c09192b54a8d5cc28a0070131d58338926aaf52fc2567514df0b0de9a"
+    "downloadUrl": "https://drive.google.com/file/d/1Pw3sJnGD9lEZbQ7VLFuzx2RBpeVBjQcy/view?usp=sharing",
+    "downloadFilename": "TMS_FE_Encore_Switch_Thai_v1.0.1_Mod.zip",
+    "downloadSize": 91441432,
+    "downloadSha256": "92c3598099ce809a1671aa4ca0d2e7442301eda42c1d46460d991d71cf16841d"
   },
   {
     "order": 70,
@@ -3417,6 +3417,15 @@ window.GAME_CATALOG = [
 ];
 window.GAME_UPDATES = [
   {
+    "slug": "tokyo-mirage-sessions-fe-encore",
+    "title": "Tokyo Mirage Sessions #FE Encore",
+    "platform": "SWITCH",
+    "version": "v1.0.1",
+    "type": "update",
+    "timestamp": "2026-11-20T02:00:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.1: แก้ไขอาการบทสนทนากลางฉากต่อสู้ (Battle Event Dialogue) ตัวหนังสือไม่แสดงและเล่นข้ามอย่างรวดเร็ว (CRI CPK TOC uppercase binary search fix), ขยายขนาดฟอนต์เมนูต่อสู้และหน้าดูข้อมูลสเตตัสให้อ่านชัดเจนสบายตายิ่งขึ้น และแจกจ่ายเฉพาะชุดม็อด LayeredFS มาตรฐาน"
+  },
+  {
     "slug": "ring-ni-kakero",
     "title": "Ring ni Kakero",
     "platform": "SNES",
@@ -3510,10 +3519,10 @@ window.GAME_UPDATES = [
     "slug": "tokyo-mirage-sessions-fe-encore",
     "title": "Tokyo Mirage Sessions #FE Encore",
     "platform": "SWITCH",
-    "version": "v1.0.0",
+    "version": "v1.0.1",
     "type": "new",
     "timestamp": "2026-11-18T20:09:01+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.1"
   },
   {
     "slug": "lost-heroes-2",

@@ -1,5 +1,5 @@
 ================================================================================
-    Tokyo Mirage Sessions #FE Encore (Nintendo Switch) — ม็อดแปลภาษาไทย v1.0.0
+    Tokyo Mirage Sessions #FE Encore (Nintendo Switch) — ม็อดแปลภาษาไทย v1.0.1
                  พัฒนาโดย: ตลับเกมภาษาไทย (talubgamethai)
          *** แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ***
 ================================================================================
@@ -25,10 +25,14 @@
 - Players must use their own legitimately purchased copy of Tokyo Mirage Sessions #FE Encore.
 --------------------------------------------------------------------------------
 
+[บันทึกการอัปเดต v1.0.1 (Changelog)]
+* อัปเดต v1.0.1: แก้ไขบั๊กบทพูดเนื้อเรื่องระหว่างฉากต่อสู้ (Battle Event) ไม่แสดงข้อความและข้ามบทพูดเร็วผิดปกติ (แพ็คสารบัญ CRIWARE CPK แบบรักษาลำดับ toupper() และโครงสร้าง GTOC/Alignment สมบูรณ์)
+* ปรับขนาดฟอนต์หน้าเมนูต่อสู้และหน้าดูข้อมูลใน pack_070_font.cpk ครบ 6 ขนาดให้อ่านชัดสบายตา
+
 [ข้อมูลแพตช์และลายน้ำเวอร์ชัน (In-Game Watermark & Census)]
 * เกม: Tokyo Mirage Sessions #FE Encore (Nintendo Switch, Title ID: 0100A9400C9C2000, Asia Base v0)
-* เวอร์ชันแพตช์: v1.0.0 (ตลับเกมภาษาไทย v1.0.0)
-* ลายน้ำยืนยันเวอร์ชันในเกม: "ตลับเกมภาษาไทย v1.0.0 — แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่าย"
+* เวอร์ชันแพตช์: v1.0.1 (ตลับเกมภาษาไทย v1.0.1)
+* ลายน้ำยืนยันเวอร์ชันในเกม: "ตลับเกมภาษาไทย v1.0.1 — แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่าย"
   - Tier 1: หน้าจอ Title Help Banner (Title/Title.msbt)
   - Tier 2: เมนูแคมป์ / ข้อมูลระบบ (Camp/Camp.msbt)
   - Tier 3: .rodata Metadata ภายใน exefs/main (NSO0 UTF-8 + Thai PUA)
@@ -58,7 +62,7 @@
   - เสียงพากย์ตัวละครในเกมและบทเพลงไอดอล (คงเสียงพากย์ญี่ปุ่นต้นฉบับ + ซับไทยเต็มรูปแบบ)
 
 ================================================================================
-วิธีที่ 1: ติดตั้งม็อดสำเร็จรูป (LayeredFS Mod — แนะนำ ใช้ได้ทั้งเครื่องจริงและอีมูเลเตอร์)
+วิธีที่ 1: ติดตั้งม็อดสำเร็จรูป (TMS_FE_Encore_Switch_Thai_v1.0.1_Mod.zip — LayeredFS Mod แนะนำ ใช้ได้ทั้งเครื่องจริงและอีมูเลเตอร์)
 ================================================================================
 1) สำหรับโปรแกรมจำลอง Astris / Ryujinx (Mac / Windows / Linux):
    - แตกไฟล์ ZIP แล้วนำโฟลเดอร์ `ModThai` ไปวางในโฟลเดอร์ม็อดของเกม Tokyo Mirage Sessions #FE Encore:
@@ -79,16 +83,16 @@
      * sdmc:/atmosphere/contents/0100a9400c9c2000/exefs/main.npdm
 
 ================================================================================
-วิธีที่ 2: แพตช์ด้วยไฟล์ .xdelta สำหรับสร้างไฟล์ CPK & ExeFS main เอง (ในชุด All-in-One)
+วิธีที่ 2: แพตช์ด้วยไฟล์ .xdelta สำหรับสร้างไฟล์ CPK & ExeFS main เอง
 ================================================================================
-* แตกโฟลเดอร์ `01_Patch_XDELTA/` แล้วใช้ xdelta3 หรือเว็บแพตช์กับไฟล์ต้นฉบับที่แยกจากรอมแท้:
-  - TMS_FE_Encore_Thai_v1.0.0_pack_031_message.xdelta -> แพตช์ใส่ `romfs/Pack/pack_031_message.cpk` (Clean SHA-256: 1aa65a441fe0b5f75ad85ca191353df15cbbd0a8ce953c1e57374ad4d509e56a)
-  - TMS_FE_Encore_Thai_v1.0.0_pack_070_font.xdelta -> แพตช์ใส่ `romfs/Pack/pack_070_font.cpk` (Clean SHA-256: c918af5ff0a7be71e56b60241251ff14939e8cca4b181221aa5fffc56fabca5b)
-  - TMS_FE_Encore_Thai_v1.0.0_ExeFS_main.xdelta -> แพตช์ใส่ `exefs/main` (Clean SHA-256: 4f097186eb73edc5fdc9f804393a82c42d35e803f5c59fcddcac002bc77aa113)
+* หากต้องการสร้างไฟล์จากรอมต้นฉบับเอง ใช้ xdelta3 หรือเว็บแพตช์กับไฟล์ที่แยกจากรอมแท้:
+  - TMS_FE_Encore_Thai_v1.0.1_pack_031_message.xdelta -> แพตช์ใส่ `romfs/Pack/pack_031_message.cpk` (Clean SHA-256: 1aa65a441fe0b5f75ad85ca191353df15cbbd0a8ce953c1e57374ad4d509e56a)
+  - TMS_FE_Encore_Thai_v1.0.1_pack_070_font.xdelta -> แพตช์ใส่ `romfs/Pack/pack_070_font.cpk` (Clean SHA-256: c918af5ff0a7be71e56b60241251ff14939e8cca4b181221aa5fffc56fabca5b)
+  - TMS_FE_Encore_Thai_v1.0.1_ExeFS_main.xdelta -> แพตช์ใส่ `exefs/main` (Clean SHA-256: 4f097186eb73edc5fdc9f804393a82c42d35e803f5c59fcddcac002bc77aa113)
 
 ตรวจสอบ SHA-256 เป้าหมาย:
-- romfs/Pack/pack_031_message.cpk : d4084a2aa839694e6cbf0e0e3a0a465b3ab77460d05c3ad4dd72a90b99b7c19b (15,278,912 bytes)
-- romfs/Pack/pack_070_font.cpk    : f298a185fab63dcb7748631f7ca6a999783dc401c8f5a509b11d66eb6ea3c7bd (39,006,208 bytes)
-- exefs/main                      : 94e3c27154a83f4e61a1ed837b134b3cc7fe4152800379cb82817afc5b9a4be7 (3,878,986 bytes)
+- romfs/Pack/pack_031_message.cpk : 11f56027e5d71e67ef787bd3aca7017cda24211feba717d77ea9fe7fd18f7ba5 (15,274,128 bytes)
+- romfs/Pack/pack_070_font.cpk    : 519c52cd33d0584c60303b85bfc20fa14190870366651eb6df64579023e03cdd (39,117,856 bytes)
+- exefs/main                      : a9da6cb4b32e497fe4b337b21fd2367f1a6dd17cc0a8e883752171ca67a32ab2 (3,878,986 bytes)
 ================================================================================
 ขอให้สนุกกับเวทีมิราจและการผจญภัยในโตเกียวครับ! — ตลับเกมภาษาไทย (talubgamethai)
