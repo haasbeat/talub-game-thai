@@ -2506,27 +2506,27 @@ window.GAME_CATALOG = [
     "platform": "nds",
     "platformLabel": "NDS",
     "index": "NDS | 011 / 013",
-    "version": "v1.0.1",
-    "patchDate": "2026-11-11",
+    "version": "v1.0.2",
+    "patchDate": "2026-11-19",
     "addedDate": "2026-11-04",
     "addedOrder": 32,
     "addedAt": "2026-11-04T21:10:11+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/suikoden-tierkreis.jpg",
-    "manifest": "./assets/patches/suikoden-tierkreis/v1.0.1/manifest.json",
+    "manifest": "./assets/patches/suikoden-tierkreis/v1.0.2/manifest.json",
     "accept": ".nds",
     "fileTypes": "CLEAN USA NDS · 244 MB",
     "region": "USA",
     "gameCode": "CSKJ",
     "sourceName": "Suikoden Tierkreis (Undub).nds · 255,426,932 bytes",
     "sourceHash": "cfb25b40e91f6b1fcb3026c6432c1a6b8a73e5d19758bc64b776b0a976edf9dc",
-    "outputHash": "1902b258a15c0ef4c3ae4cb0fe78eb7fef39637a28c9a68c60a9a1b16ddb9cff",
+    "outputHash": "ac27af9edaef07719b2c66b01242b5fd54d0913a0086dacf535b75461aba2006",
     "moduleStatus": "เนื้อเรื่องหลัก+เควสต์เสริม 108 ดวงดารา+เมนูระบบ 100%",
     "wholeGameCensus": "33,787/33,787 บรรทัด = 100.00%",
     "details": null,
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-11T01:51:00+07:00"
+    "verifiedAt": "2026-11-19T10:29:00+07:00"
   },
   {
     "order": 52,
@@ -3263,6 +3263,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "suikoden-tierkreis",
+    "title": "Suikoden Tierkreis",
+    "platform": "NDS",
+    "version": "v1.0.2",
+    "type": "update",
+    "timestamp": "2026-11-19T10:35:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.2: แก้ไขปัญหาเกมเด้งหลุดขณะเข้าแผนที่โลก (ARM9 Heap Buffer Allocation Fix), จัดตำแหน่งหน้าต่างคำอธิบายแผนที่ให้สวยงาม และปรับปรุงขนาดฟอนต์ประหยัดแรมระบบ"
+  },
   {
     "slug": "disgaea-5-complete",
     "title": "Disgaea 5 Complete",
