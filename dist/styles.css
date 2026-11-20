@@ -440,16 +440,16 @@ body.has-inapp-banner main { padding-top: 60px; }
 .select-wrap { position: relative; }
 .select-wrap select { width: 100%; border: 0; border-bottom: 1px solid var(--ink); border-radius: 0; background: transparent; padding: 14px 36px 14px 0; appearance: none; outline: none; }
 .select-wrap span { position: absolute; right: 0; top: 14px; pointer-events: none; }
-.drop-zone { position: relative; text-align: center; margin-top: 42px; padding: 64px 24px 44px; border: 1px dashed #999; transition: background 600ms var(--ease), border-radius 600ms var(--ease), border-color 600ms var(--ease); outline: none; }
-.drop-zone:hover, .drop-zone.is-dragging, .drop-zone:focus-visible { background: #f0f0ed; border-color: var(--ink); border-radius: 80px 8px 80px 8px; }
+.drop-zone { position: relative; text-align: center; margin-top: 24px; padding: 32px 20px 24px; border: 1px dashed #999; border-radius: 14px; transition: background 400ms var(--ease), border-color 400ms var(--ease); outline: none; }
+.drop-zone:hover, .drop-zone.is-dragging, .drop-zone:focus-visible { background: #f0f0ed; border-color: var(--ink); }
 .drop-zone.is-valid { border-color: #188b4b; background: #eef9f2; }
 .drop-zone.is-invalid { border-color: #b33131; background: #fff1f1; }
-.drop-number { position: absolute; top: 18px; left: 20px; color: var(--muted); }
-.drop-icon { width: 60px; height: 60px; margin: 0 auto 20px; border: 1px solid var(--ink); border-radius: 50%; display: grid; place-items: center; }
-.drop-icon svg { width: 24px; fill: none; stroke: currentColor; stroke-width: 1.4; }
-.drop-zone h3 { margin: 0 0 10px; font-size: clamp(22px, 2.4vw, 36px); letter-spacing: -0.04em; }
-.drop-zone p { margin: 0; color: var(--muted); line-height: 1.55; }
-.file-types { display: block; margin-top: 24px; }
+.drop-number { position: absolute; top: 14px; left: 16px; color: var(--muted); font-size: 9.5px; }
+.drop-icon { width: 42px; height: 42px; margin: 0 auto 12px; border: 1px solid var(--ink); border-radius: 50%; display: grid; place-items: center; }
+.drop-icon svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.5; }
+.drop-zone h3 { margin: 0 0 6px; font-size: clamp(18px, 1.8vw, 22px); letter-spacing: -0.03em; }
+.drop-zone p { margin: 0; color: var(--muted); font-size: 12.5px; line-height: 1.45; }
+.file-types { display: block; margin-top: 14px; font-size: 10px; }
 .file-summary { display: grid; grid-template-columns: 1.3fr .5fr 1.2fr; gap: 20px; padding: 24px 0; border-bottom: 1px solid var(--line); }
 .file-summary > div { min-width: 0; }
 .summary-label { display: block; color: var(--muted); margin-bottom: 9px; }
@@ -1458,15 +1458,30 @@ body.has-inapp-banner main { padding-top: 60px; }
 .selected-counter { display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px; border: 1px solid var(--line); border-radius: 999px; }
 .selected-counter .mono { color: var(--muted); font-size: 9px; }
 .selected-counter b { font-size: 11px; font-weight: 600; white-space: nowrap; }
-.patcher-grid { display: grid; grid-template-columns: minmax(280px, .82fr) minmax(0, 1.18fr); gap: clamp(20px, 3vw, 40px); align-items: stretch; margin-top: 24px; }
-.patcher-side { min-width: 0; display: flex; flex-direction: column; padding: 2px 0 0; }
+.patcher-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 320px) minmax(0, 1fr);
+  grid-template-areas:
+    "drop side"
+    "coffee side";
+  gap: 16px clamp(20px, 3vw, 36px);
+  align-items: start;
+  margin-top: 24px;
+}
+#drop-zone { grid-area: drop; }
+#patch-success-coffee { grid-area: coffee; margin-top: 0; }
+.patcher-side { grid-area: side; }
 .detail-page .detail-patcher .patcher-intro { display: none; }
 .detail-page .detail-patcher .workspace-wrap { padding-top: 32px; padding-bottom: 48px; }
 .detail-page .detail-patcher .workspace { padding: clamp(18px, 2.5vw, 36px); }
 .detail-page .detail-patcher .selected-game-row { padding: 18px 0; }
-.detail-page .detail-patcher .drop-zone { min-height: 300px; height: 100%; margin-top: 0; padding: 54px 22px 28px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
-.detail-page .detail-patcher .drop-icon { width: 48px; height: 48px; margin-bottom: 14px; }
-.detail-page .detail-patcher .file-types { margin-top: 16px; }
+.detail-page .detail-patcher .drop-zone { min-height: 160px; height: auto; margin-top: 0; padding: 24px 18px 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 14px; }
+.detail-page .detail-patcher .drop-icon { width: 36px; height: 36px; margin-bottom: 8px; }
+.detail-page .detail-patcher .drop-icon svg { width: 16px; height: 16px; }
+.detail-page .detail-patcher .drop-zone h3 { font-size: 16px; margin: 0 0 4px; }
+.detail-page .detail-patcher .drop-zone p { font-size: 12px; line-height: 1.45; }
+.detail-page .detail-patcher .file-types { margin-top: 8px; font-size: 9.5px; }
+.detail-page .detail-patcher .drop-number { top: 10px; left: 12px; font-size: 9px; }
 .detail-page .detail-patcher .file-summary { grid-template-columns: 1fr; gap: 0; padding: 0; border-top: 1px solid var(--line); }
 .detail-page .detail-patcher .file-summary > div { padding: 14px 0; border-bottom: 1px solid var(--line); }
 .detail-page .detail-patcher .workspace-actions { grid-template-columns: 1fr; gap: 18px; margin-top: auto; padding-top: 20px; }
@@ -1601,8 +1616,29 @@ body.has-inapp-banner main { padding-top: 60px; }
   .selected-game-row { grid-template-columns: 1fr auto; gap: 12px 20px; }
   .selected-game-row > .mono:first-child { grid-column: 1 / -1; }
   .selected-game-tags { grid-column: 1 / -1; justify-content: flex-start; }
-  .patcher-grid { grid-template-columns: 1fr; }
-  .detail-page .detail-patcher .drop-zone { min-height: 240px; }
+  .patcher-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "drop"
+      "side"
+      "coffee";
+    gap: 20px;
+  }
+  .detail-page .detail-patcher .drop-zone { min-height: 140px; padding: 22px 16px 18px; }
+  .patch-success-coffee .coffee-card-inner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    text-align: left;
+    align-items: center;
+    gap: 18px;
+  }
+  .patch-success-coffee .coffee-card-copy h4 {
+    justify-content: flex-start;
+  }
+  .patch-success-coffee .coffee-qr-wrap {
+    width: 124px;
+    margin: 0;
+  }
   .external-file-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .external-file-hash { grid-column: 1 / -1; }
   .requirement-grid { grid-template-columns: 1fr; }
@@ -1686,7 +1722,20 @@ body.has-inapp-banner main { padding-top: 60px; }
   .selected-game-row > .mono:first-child { grid-column: auto; }
   .selected-game-tags { grid-column: auto; }
   .selected-platform { justify-self: start; }
-  .detail-page .detail-patcher .drop-zone { min-height: 220px; padding: 48px 16px 24px; }
+  .detail-page .detail-patcher .drop-zone { min-height: 130px; padding: 20px 14px 16px; }
+  .patch-success-coffee .coffee-card-inner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 12px;
+  }
+  .patch-success-coffee .coffee-card-copy h4 {
+    justify-content: center;
+  }
+  .patch-success-coffee .coffee-qr-wrap {
+    margin: 0 auto;
+  }
   .external-file-grid { grid-template-columns: 1fr; }
   .external-file-hash { grid-column: auto; }
   .external-download-link { padding: 16px 18px; }
@@ -1880,11 +1929,10 @@ body.has-inapp-banner main { padding-top: 60px; }
 
 /* Cute & Cozy Coffee / PromptPay Support Cards */
 .patch-success-coffee {
-  margin-top: 24px;
   background: #181715;
   border: 1px solid rgba(245, 158, 11, 0.28);
-  border-radius: 20px;
-  padding: 24px 26px;
+  border-radius: 18px;
+  padding: 18px 18px;
   position: relative;
   overflow: hidden;
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18), 0 0 16px rgba(245, 158, 11, 0.06);
@@ -1907,6 +1955,33 @@ body.has-inapp-banner main { padding-top: 60px; }
 @keyframes fadeInCoffee {
   from { opacity: 0; transform: translateY(10px) scale(0.99); }
   to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.patch-success-coffee .coffee-card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  position: relative;
+  z-index: 1;
+}
+.patch-success-coffee .coffee-badge {
+  margin-bottom: 4px;
+}
+.patch-success-coffee .coffee-card-copy h4 {
+  font-size: 15px;
+  justify-content: center;
+  margin: 0 0 4px;
+}
+.patch-success-coffee .coffee-card-copy p {
+  font-size: 11.5px;
+  line-height: 1.45;
+  color: #b8b8b2;
+}
+.patch-success-coffee .coffee-qr-wrap {
+  width: 128px;
+  padding: 9px 9px 7px;
+  margin: 0 auto;
 }
 .coffee-card-inner {
   display: grid;

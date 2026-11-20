@@ -835,6 +835,7 @@ if (game.luma && methodSwitcher && lumaPanel) {
   }
 
   // Tab switching handlers
+  const patchSuccessCoffeeEl = document.querySelector('#patch-success-coffee');
   if (tabPatcher && tabLuma) {
     tabPatcher.addEventListener('click', () => {
       tabPatcher.classList.add('is-active');
@@ -842,6 +843,7 @@ if (game.luma && methodSwitcher && lumaPanel) {
       tabLuma.classList.remove('is-active');
       tabLuma.setAttribute('aria-selected', 'false');
       if (patcherGrid) patcherGrid.hidden = false;
+      if (patchSuccessCoffeeEl) patchSuccessCoffeeEl.hidden = false;
       lumaPanel.hidden = true;
     });
 
@@ -851,6 +853,7 @@ if (game.luma && methodSwitcher && lumaPanel) {
       tabPatcher.classList.remove('is-active');
       tabPatcher.setAttribute('aria-selected', 'false');
       if (patcherGrid) patcherGrid.hidden = true;
+      if (patchSuccessCoffeeEl) patchSuccessCoffeeEl.hidden = true;
       lumaPanel.hidden = false;
     });
   }
