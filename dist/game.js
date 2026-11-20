@@ -937,7 +937,17 @@ const changelogCount = document.querySelector('#detail-changelog-count');
 
 if (changelogList && changelogCard) {
   const rawUpdates = (window.GAME_UPDATES || []).filter((u) => u.slug === slug);
-  const updates = rawUpdates.length > 0 ? rawUpdates : [
+  // Defensive deduplication by version: keep the newest entry for each unique version
+  const seenVersions = new Set();
+  const dedupedUpdates = [];
+  for (const u of rawUpdates) {
+    const v = u.version || 'v1.0.0';
+    if (!seenVersions.has(v)) {
+      seenVersions.add(v);
+      dedupedUpdates.push(u);
+    }
+  }
+  const updates = dedupedUpdates.length > 0 ? dedupedUpdates : [
     {
       version: game.version || 'v1.0.0',
       type: 'new',
