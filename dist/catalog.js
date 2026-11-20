@@ -3107,21 +3107,21 @@ window.GAME_CATALOG = [
     "platform": "psp",
     "platformLabel": "PSP",
     "index": "PSP | 003 / 003",
-    "version": "v1.0.0",
+    "version": "v1.0.1",
     "patchDate": "2026-11-20",
     "addedDate": "2026-11-20",
     "addedOrder": 73,
     "addedAt": "2026-11-20T08:37:00+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/tales-of-rebirth.jpg",
-    "manifest": "./assets/patches/tales-of-rebirth/v1.0.0/manifest.json",
+    "manifest": "./assets/patches/tales-of-rebirth/v1.0.1/manifest.json",
     "accept": ".iso",
     "fileTypes": "CLEAN Japan PSP · 1.53 GB",
     "region": "Japan",
     "gameCode": "ULJS-00132",
     "sourceName": "Tales of Rebirth (Japan).iso · 1,644,199,936 bytes",
     "sourceHash": "530792021adbe647b8558cbd16e85b2cc8a9a60be43247c9354c43c9a8029eb5",
-    "outputHash": "e9aac6e8114a8de7996d8035dc011b1542425ca6aba49fc431aea1d6bd85ed88",
+    "outputHash": "fb9bddbad38696971b48b3257578ef985eaf3e2b9e1b430cce79b01481c66bc1",
     "moduleStatus": "เนื้อเรื่องหลัก สกิต เนื้อเรื่องย่อ และเมนูระบบ 99.38%",
     "wholeGameCensus": "45,227 / 45,510 เรคอร์ดในรอม (ภาพรวมทั้งเกม 97.8% นับเฉพาะข้อความต่างจากต้นฉบับ)",
     "details": {
@@ -3131,7 +3131,7 @@ window.GAME_CATALOG = [
       "studio": "Namco Tales Studio / Bandai Namco Games",
       "release": "19 มีนาคม 2008 (PSP JP)",
       "genre": "Action Role-playing game (君が生まれ変わるRPG)",
-      "description": "ม็อดภาษาไทยสำหรับ Tales of Rebirth (PSP โซนญี่ปุ่น / ULJS-00132) เวอร์ชัน v1.0.0 แปลครบสมบูรณ์ทุกเนื้อเรื่องและระบบเกม รองรับทั้งเครื่อง PSP จริงและอีมูเลเตอร์",
+      "description": "ม็อดภาษาไทยสำหรับ Tales of Rebirth (PSP โซนญี่ปุ่น / ULJS-00132) เวอร์ชัน v1.0.1 แปลครบสมบูรณ์ทุกเนื้อเรื่องและระบบเกม รองรับทั้งเครื่อง PSP จริงและอีมูเลเตอร์",
       "overview": "มหากาพย์ JRPG เรื่องราวความขัดแย้งและอคติระหว่างสองเผ่าพันธุ์ ฮิวมา และ กาจูมา ในราชอาณาจักรคาเรเกีย พร้อมระบบต่อสู้ 3-Line Linear Motion Battle System และเสียงตะโกนในตำนาน \"แคลร์รรรร!!!\" แปลไทยสมบูรณ์แบบ",
       "story": "เวก ลุงก์เบิร์ก เด็กหนุ่มผู้ตื่นรู้ \"ฟอร์ซแห่งน้ำแข็ง\" ในวันอาทิตย์อัสดงแห่งโลก จนเผลอแช่แข็ง แคลร์ เบนเนตต์ เพื่อนสมัยเด็กไว้ในผลึกน้ำแข็งนานหนึ่งปี เมื่อเธอได้รับการช่วยเหลือโดยเมาและยูจีน กองทหารราชองครักษ์กลับบุกมาลักพาตัวแคลร์ไป เวกจึงต้องออกเดินทางข้ามดินแดนคาเรเกียเพื่อชิงตัวเธอกลับคืนมา และเผชิญหน้ากับความจริงเบื้องหลังอคติทางชาติพันธุ์และพลังอำนาจมืดแห่งยูริส",
       "localization": "แปลบทสนทนาเนื้อเรื่องหลัก ชาวเมือง เควสต์เสริม สกิต สารานุกรมไอเทม ฟอร์ซ เมนูระบบ แผนที่โลก และโอเวอร์เลย์ฉากต่อสู้ ครบ 45,227 เรคอร์ด (99.38% ของทั้งเกม สำมะโนในรอม 45,510 เรคอร์ด) วิศวกรรมฟอนต์ Prompt Medium 24x24 Dual-Style VWF คมชัดระดับเวกเตอร์ สระไม่ลอย วรรณยุกต์ไม่ซ้อนทับ ไร้กล่องเต้าหู้ ผ่านการตรวจสอบ 1:1 In-ROM Readback Audit ปลอดภัย ไม่หลุด ไม่ค้าง",
@@ -3145,7 +3145,7 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-20T08:37:00+07:00"
+    "verifiedAt": "2026-11-20T12:35:00+07:00"
   },
   {
     "order": 66,
@@ -3463,6 +3463,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "tales-of-rebirth",
+    "title": "Tales of Rebirth",
+    "platform": "PSP",
+    "version": "v1.0.1",
+    "type": "update",
+    "timestamp": "2026-11-20T12:45:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.1: แก้ไขปัญหาเกมค้างบนฮาร์ดแวร์ PSP เครื่องจริงช่วงหลังจบฉากชวนไปกินข้าว/เข้าสู่หมู่บ้านซูลซ์ (ปรับสถาปัตยกรรม Single-PT_LOAD ET_EXEC, เพิ่ม LoadHighRamBank MIPS hook และรีบาลานซ์ heap เป็น 17,121 KB ให้ Partition 2 ไม่ทับซ้อน High-RAM) รองรับการเล่นบนเครื่อง PSP จริงทุกรุ่นอย่างสมบูรณ์แบบ"
+  },
   {
     "slug": "front-mission-5",
     "title": "Front Mission 5: Scars of the War",
