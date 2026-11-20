@@ -1,0 +1,45 @@
+*** แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ***
+========================================================================
+Final Fantasy III (USA) (NDS / AFFE) — Thai Patch v1.0.0
+========================================================================
+
+[วิธีติดตั้งแพตช์ .xdelta]
+วิธีที่ 1: เว็บแพตเชอร์ (แนะนำ - ใช้ได้ทั้ง PC, Mac และมือถือ Android/iOS)
+  1. เตรียมรอมแท้ภาษาอังกฤษสะอาด: Final Fantasy III (USA).nds
+     (ขนาด 134,217,728 bytes | SHA-256: 1ed4a5e438a513ee6fd6748eee88fc7f196118128607a419e69a2226893806bd)
+  2. เปิดเว็บแพตเชอร์ของเพจ ตลับเกมภาษาไทย หรือ https://kotcrab.github.io/xdelta-wasm/
+  3. ช่อง Source / ROM File เลือกรอม Clean USA ของคุณ
+  4. ช่อง Patch File เลือกไฟล์ Final_Fantasy_III_USA_Thai_v1.0.0.xdelta
+  5. กด Apply patch จะได้ไฟล์เกมภาษาไทย SHA-256: 6a9ab7710163b64eed3d611769506f5e431db872a3a29983c95af390a476f5c2
+  6. เปิดเล่นบน melonDS, DraStic, DeSmuME หรือ Flashcart / TWiLight Menu++ (ปิดโหลดม็อดภายนอกอื่นทั้งหมด)
+
+วิธีที่ 2: โปรแกรมออฟไลน์
+  - Windows: ใช้ DeltaPatcher หรือ xdelta UI
+  - Android: ใช้ UniPatcher
+  - macOS / Linux: xdelta3 -d -s "CleanROM.nds" "Final_Fantasy_III_USA_Thai_v1.0.0.xdelta" "Final_Fantasy_III_TH_v1.0.0.nds"
+
+[สัดส่วนความคืบหน้า & ขอบเขตที่ยังเป็นภาษาต้นฉบับ (Dual-Status Binary Census)]
+- ตัวชี้วัดหลัก: เนื้อเรื่องหลัก-บทสนทนา-เมนู-ไอเทม-มอนสเตอร์-ม็อกเน็ต 100.00% (5,677 / 5,677 รายการข้อความภาษาอังกฤษที่ใช้งานจริง | ภาพรวมคลังไบนารีทั้งรอม 81.64% : 5,677 / 6,954 รายการ)
+- บทสนทนา เนื้อเรื่องหลัก ดันเจี้ยน เมือง & แผนที่โลก (dlg): 3,786 / 3,786 (100.0%)
+- ไอเทม อาวุธ เกราะ เวทมนตร์ และคำอธิบาย (item): 1,023 / 1,023 (100.0%)
+- เมนูหลัก อาชีพทั้ง 23 อาชีพ สารานุกรม ร้านค้า และตั้งค่า (menu): 214 / 214 (100.0%)
+- คำสั่งต่อสู้ ชื่อมอนสเตอร์ อสูร และแจ้งเตือนฉากสู้ (battle): 395 / 395 (100.0%)
+- จดหมายม็อกเน็ต ระบบม็อกเน็ต และป้อนชื่อ (mognet): 259 / 259 (100.0%)
+- ส่วนที่ยังคงเป็นภาษาต้นฉบับในแพตช์ v1.0.0 (เปิดเผยเพื่อความโปร่งใส):
+  * กราฟิกข้อความ 2D (.NCGR/.NCBR — Layer 4): 0 / 253 แผ่น (เช่น หน้าจอ New Game/Continue, ปุ่มเมนูสัมผัส, สไลด์อินโทร/เครดิต ยังเป็นภาษาอังกฤษ)
+  * ชื่อตัวละครเริ่มต้นใน ARM9 (Layer 3): 0 / 4 ช่อง (Luneth, Arc, Refia, Ingus คงภาษาอังกฤษตามขีดจำกัดความยาว 4-8 ไบต์)
+  * อักษรย่อค่าพลัง RPG ตัวแปรล้วน และตารางโค้ด ASCII: 58 รายการ (HP, MP, LV, %shuyaku1% ฯลฯ)
+  * ข้อความภาษาญี่ปุ่น Shift-JIS ตกค้างในไฟล์ .msd ที่รอมโซน USA ไม่ได้ใช้งาน: 1,215 รายการ
+- สถานะ QA: readback-verified (6,954/6,954); xdelta-roundtrip-verified; v1.0.0 gameplay emu-unverified / hardware-unverified
+
+[ค่าตรวจสอบความถูกต้องของไฟล์ / Verification SHA-256 Checksums]
+- Clean Source ROM (Final Fantasy III (USA).nds): 1ed4a5e438a513ee6fd6748eee88fc7f196118128607a419e69a2226893806bd
+- Patched Target ROM (Final_Fantasy_III_TH_v1.0.0.nds): 6a9ab7710163b64eed3d611769506f5e431db872a3a29983c95af390a476f5c2
+- Distribution Patch (Final_Fantasy_III_USA_Thai_v1.0.0.xdelta, 152,893 bytes): b3a44de3bcd7e197909a82b499db87d40bc7effbb33e45683b6a1c3f31b9499d
+
+[คำชี้แจงลิขสิทธิ์และการใช้งานที่เหมาะสม / Fair Use & Zero-ROM Notice]
+1. แพตช์นี้ (Final_Fantasy_III_USA_Thai_v1.0.0.xdelta) บรรจุเฉพาะไฟล์ข้อความภาษาไทย ฟอนต์ไทย EUREKA10/EUREKA8
+   และแพตช์จัดระเบียบพิกัด UI บน ARM9/OV1 เท่านั้น ไม่มีไฟล์ตัวเกม (ROM) ของ Square Enix แนบมาด้วย
+   (This patch contains localization text, Thai fonts, and layout hook data only; NO copyrighted ROM data is distributed.)
+2. จัดทำขึ้นเพื่อการศึกษาภาษาและความบันเทิงสำหรับผู้ถือครองตลับ/รอมแท้เท่านั้น
+3. แจกฟรี 100% ห้ามจำหน่าย แนบขายพร้อมไฟล์รอม หรือใส่ตลับ Flashcart ขายโดยเด็ดขาด

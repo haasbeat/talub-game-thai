@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "game_slug": "final-fantasy-iii",
+  "game_title": "Final Fantasy III",
+  "platform": "NDS",
+  "region": "USA",
+  "game_code": "AFFE",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Final Fantasy III (USA).nds",
+      "size": 134217728,
+      "sha256": "1ed4a5e438a513ee6fd6748eee88fc7f196118128607a419e69a2226893806bd"
+    }
+  ],
+  "patch": {
+    "filename": "Final_Fantasy_III_USA_Thai_v1.0.0.xdelta",
+    "size": 152893,
+    "sha256": "b3a44de3bcd7e197909a82b499db87d40bc7effbb33e45683b6a1c3f31b9499d",
+    "release_date": "2026-11-20",
+    "date_source": "release_build",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/final-fantasy-iii/v1.0.0/Final_Fantasy_III_USA_Thai_v1.0.0.xdelta"
+  },
+  "output": {
+    "filename": "Final Fantasy III (USA) (Thai v1.0.0).nds",
+    "size": 134217728,
+    "sha256": "6a9ab7710163b64eed3d611769506f5e431db872a3a29983c95af390a476f5c2"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก บทสนทนา เมนู 23 อาชีพ อบิลิตี้ ไอเทม มอนสเตอร์ และม็อกเน็ต 100.00% (5,677 / 5,677 รายการ)",
+    "whole_game_census": "5,677 / 6,954 รายการในรอม (ภาพรวมคลังไบนารีทั้งรอม 81.64% โดย 1,277 รายการที่เหลือคือข้อความญี่ปุ่นตกค้างที่ไม่ได้ใช้งานและตัวแปรระบบ)",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "audit_ff3.py / In-ROM Binary Audit v1.0.0"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-20T17:40:00+07:00",
+    "method": "cli_xdelta3_clean_source_roundtrip",
+    "note": "Clean 128 MB USA Decrypted NDS cartridge source verified with clean-source roundtrip via release_guard.py; 1:1 In-ROM binary readback audit passed 100% (6,954/6,954 records, 0 violations); 4-tier watermark parity verified; Header and Banner CRC16 valid (0xFFC8 / 0x3FA9); EUREKA10 and EUREKA8 hybrid fonts with +0.5 size tuning and zero collision.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true,
+    "patcher_test_passed": true
+  }
+}
