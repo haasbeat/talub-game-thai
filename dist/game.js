@@ -1275,6 +1275,8 @@ const resetOutput = () => {
   downloadButton.hidden = true;
   downloadButton.removeAttribute('href');
   patchButton.hidden = false;
+  const successCoffee = document.querySelector('#patch-success-coffee');
+  if (successCoffee) successCoffee.hidden = true;
   if (activeOpfsTempName) void cleanupOpfsTemp();
 };
 
@@ -1630,6 +1632,8 @@ const applyVerifiedPatch = async () => {
     downloadButton.download = manifest.output.filename;
     downloadButton.hidden = false;
     patchButton.hidden = true;
+    const successCoffee = document.querySelector('#patch-success-coffee');
+    if (successCoffee) successCoffee.hidden = false;
     fileHash.textContent = `${outputHash.slice(0, 16)}… — ผลลัพธ์ถูกต้อง`;
     setProgress('แพตช์สำเร็จ 100% — กดปุ่มดาวน์โหลดด้านล่าง', 100);
     showToast(`แพตช์สำเร็จและ SHA-256 ตรงกับ release ${manifest.patch_version}`);

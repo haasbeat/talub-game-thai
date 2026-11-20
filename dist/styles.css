@@ -1878,6 +1878,153 @@ body.has-inapp-banner main { padding-top: 60px; }
   }
 }
 
+/* Cute & Cozy Coffee / PromptPay Support Cards */
+.patch-success-coffee {
+  margin-top: 24px;
+  background: #181715;
+  border: 1px solid rgba(245, 158, 11, 0.28);
+  border-radius: 20px;
+  padding: 24px 26px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18), 0 0 16px rgba(245, 158, 11, 0.06);
+  animation: fadeInCoffee 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.patch-success-coffee::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+  border-radius: 50%;
+}
+.patch-success-coffee[hidden] {
+  display: none;
+}
+@keyframes fadeInCoffee {
+  from { opacity: 0; transform: translateY(10px) scale(0.99); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.coffee-card-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.coffee-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #fbbf24;
+  background: rgba(245, 158, 11, 0.16);
+  border: 1px solid rgba(245, 158, 11, 0.32);
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+.coffee-card-copy h4 {
+  margin: 0 0 8px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.coffee-card-copy p {
+  margin: 0;
+  font-size: 13.5px;
+  color: #b8b8b2;
+  line-height: 1.6;
+  max-width: 520px;
+}
+.coffee-qr-wrap {
+  margin: 0;
+  padding: 12px 12px 10px;
+  background: #ffffff;
+  border: 2px solid rgba(254, 243, 199, 0.95);
+  border-radius: 18px;
+  width: 144px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+.coffee-qr-wrap:hover {
+  transform: scale(1.02) rotate(-0.5deg);
+}
+.coffee-qr-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+.coffee-qr-wrap figcaption {
+  font-size: 9.5px;
+  color: #4b5563;
+  margin-top: 7px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+.luma-coffee-card, .external-coffee-card {
+  margin-top: 22px;
+  background: #181715;
+  border: 1px solid rgba(245, 158, 11, 0.28);
+  border-radius: 20px;
+  padding: 24px 26px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18), 0 0 16px rgba(245, 158, 11, 0.06);
+}
+.support-coffee-tiers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+.support-coffee-tiers span {
+  font-size: 11.5px;
+  padding: 6px 13px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  color: #f3f3f1;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.2s ease;
+}
+.support-coffee-tiers span:hover {
+  background: rgba(245, 158, 11, 0.16);
+  border-color: rgba(245, 158, 11, 0.4);
+  color: #fde68a;
+}
+@media (max-width: 680px) {
+  .coffee-card-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+    gap: 18px;
+  }
+  .coffee-card-copy p {
+    margin-inline: auto;
+  }
+  .coffee-tiers {
+    justify-content: center;
+  }
+  .coffee-qr-wrap {
+    width: 160px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
   .hero-line > span, .hero-foot, .reveal-on-scroll { opacity: 1; transform: none; }
