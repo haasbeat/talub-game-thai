@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "tales-of-rebirth",
+  "game_title": "Tales of Rebirth",
+  "platform": "PSP",
+  "region": "Japan",
+  "game_code": "ULJS-00132",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Tales of Rebirth (Japan).iso",
+      "size": 1644199936,
+      "sha256": "530792021adbe647b8558cbd16e85b2cc8a9a60be43247c9354c43c9a8029eb5"
+    }
+  ],
+  "patch": {
+    "filename": "Tales_of_Rebirth_PSP_TH_v1.0.0.xdelta",
+    "size": 109337054,
+    "sha256": "a339c298a54b4c8e37e7c6a1afafc12a2b423180d946e173f95fe72c392b11b1",
+    "release_date": "2026-11-20",
+    "date_source": "release_gate",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/tales-of-rebirth/v1.0.0/Tales_of_Rebirth_PSP_TH_v1.0.0.xdelta"
+  },
+  "output": {
+    "filename": "Tales of Rebirth (Japan) (Thai v1.0.0).iso",
+    "size": 1644199936,
+    "sha256": "e9aac6e8114a8de7996d8035dc011b1542425ca6aba49fc431aea1d6bd85ed88"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก สกิต เนื้อเรื่องย่อ และเมนูระบบ 99.38%",
+    "whole_game_census": "45,227 / 45,510 เรคอร์ดในรอม (ภาพรวมทั้งเกม 97.8% นับเฉพาะข้อความต่างจากต้นฉบับ)",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "audit_tor.py / In-ROM Binary Audit v1.0.0"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ISO ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-20T08:37:00+07:00",
+    "method": "cli_xdelta3_clean_source_roundtrip",
+    "note": "Applied the exact distributed xdelta to the pinned clean source with xdelta3; reconstructed output size and SHA-256 were measured from that artifact; 1:1 In-ROM readback audit passed 100% (45,510/45,510 records); 4-tier watermark verified; Prompt Medium 24x24 VWF font.",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}

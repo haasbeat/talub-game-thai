@@ -3030,7 +3030,7 @@ window.GAME_CATALOG = [
     "title": "Mana Khemia: Student Alliance",
     "platform": "psp",
     "platformLabel": "PSP",
-    "index": "PSP | 001 / 002",
+    "index": "PSP | 001 / 003",
     "version": "v1.0.3",
     "patchDate": "2026-11-14",
     "addedDate": "2026-11-09",
@@ -3077,7 +3077,7 @@ window.GAME_CATALOG = [
     "title": "PoPoLoCrois",
     "platform": "psp",
     "platformLabel": "PSP",
-    "index": "PSP | 002 / 002",
+    "index": "PSP | 002 / 003",
     "version": "v1.1.6",
     "patchDate": "2026-11-19",
     "addedDate": "2026-11-06",
@@ -3102,6 +3102,53 @@ window.GAME_CATALOG = [
   },
   {
     "order": 65,
+    "slug": "tales-of-rebirth",
+    "title": "Tales of Rebirth",
+    "platform": "psp",
+    "platformLabel": "PSP",
+    "index": "PSP | 003 / 003",
+    "version": "v1.0.0",
+    "patchDate": "2026-11-20",
+    "addedDate": "2026-11-20",
+    "addedOrder": 73,
+    "addedAt": "2026-11-20T08:37:00+07:00",
+    "format": "xdelta3",
+    "cover": "./assets/covers/web/tales-of-rebirth.jpg",
+    "manifest": "./assets/patches/tales-of-rebirth/v1.0.0/manifest.json",
+    "accept": ".iso",
+    "fileTypes": "CLEAN Japan PSP · 1.53 GB",
+    "region": "Japan",
+    "gameCode": "ULJS-00132",
+    "sourceName": "Tales of Rebirth (Japan).iso · 1,644,199,936 bytes",
+    "sourceHash": "530792021adbe647b8558cbd16e85b2cc8a9a60be43247c9354c43c9a8029eb5",
+    "outputHash": "e9aac6e8114a8de7996d8035dc011b1542425ca6aba49fc431aea1d6bd85ed88",
+    "moduleStatus": "เนื้อเรื่องหลัก สกิต เนื้อเรื่องย่อ และเมนูระบบ 99.38%",
+    "wholeGameCensus": "45,227 / 45,510 เรคอร์ดในรอม (ภาพรวมทั้งเกม 97.8% นับเฉพาะข้อความต่างจากต้นฉบับ)",
+    "details": {
+      "thaiTitle": "เทลส์ ออฟ รีเบิร์ธ ฉบับภาษาไทย",
+      "japaneseTitle": "テイルズ オブ リバース",
+      "originalTitle": "Tales of Rebirth",
+      "studio": "Namco Tales Studio / Bandai Namco Games",
+      "release": "19 มีนาคม 2008 (PSP JP)",
+      "genre": "Action Role-playing game (君が生まれ変わるRPG)",
+      "description": "ม็อดภาษาไทยสำหรับ Tales of Rebirth (PSP โซนญี่ปุ่น / ULJS-00132) เวอร์ชัน v1.0.0 แปลครบสมบูรณ์ทุกเนื้อเรื่องและระบบเกม รองรับทั้งเครื่อง PSP จริงและอีมูเลเตอร์",
+      "overview": "มหากาพย์ JRPG เรื่องราวความขัดแย้งและอคติระหว่างสองเผ่าพันธุ์ ฮิวมา และ กาจูมา ในราชอาณาจักรคาเรเกีย พร้อมระบบต่อสู้ 3-Line Linear Motion Battle System และเสียงตะโกนในตำนาน \"แคลร์รรรร!!!\" แปลไทยสมบูรณ์แบบ",
+      "story": "เวก ลุงก์เบิร์ก เด็กหนุ่มผู้ตื่นรู้ \"ฟอร์ซแห่งน้ำแข็ง\" ในวันอาทิตย์อัสดงแห่งโลก จนเผลอแช่แข็ง แคลร์ เบนเนตต์ เพื่อนสมัยเด็กไว้ในผลึกน้ำแข็งนานหนึ่งปี เมื่อเธอได้รับการช่วยเหลือโดยเมาและยูจีน กองทหารราชองครักษ์กลับบุกมาลักพาตัวแคลร์ไป เวกจึงต้องออกเดินทางข้ามดินแดนคาเรเกียเพื่อชิงตัวเธอกลับคืนมา และเผชิญหน้ากับความจริงเบื้องหลังอคติทางชาติพันธุ์และพลังอำนาจมืดแห่งยูริส",
+      "localization": "แปลบทสนทนาเนื้อเรื่องหลัก ชาวเมือง เควสต์เสริม สกิต สารานุกรมไอเทม ฟอร์ซ เมนูระบบ แผนที่โลก และโอเวอร์เลย์ฉากต่อสู้ ครบ 45,227 เรคอร์ด (99.38% ของทั้งเกม สำมะโนในรอม 45,510 เรคอร์ด) วิศวกรรมฟอนต์ Prompt Medium 24x24 Dual-Style VWF คมชัดระดับเวกเตอร์ สระไม่ลอย วรรณยุกต์ไม่ซ้อนทับ ไร้กล่องเต้าหู้ ผ่านการตรวจสอบ 1:1 In-ROM Readback Audit ปลอดภัย ไม่หลุด ไม่ค้าง",
+      "untranslated": "คงคำตอบปริศนาคีย์บอร์ด 280 รายการเป็นอักษรฮิรางานะ/คาตาคานะต้นฉบับเพื่อให้ระบบตรวจคำตอบในเกมทำงานได้ถูกต้องโดยไม่ค้าง (มีคำใบ้และเสียงอ่านภาษาไทยกำกับในบทสนทนาครบถ้วน), ข้อความ format ระบบใน BOOT.BIN 3 รายการ และป้ายภาพ UI กราฟิก TIM2/PNG 146 ไฟล์",
+      "features": [
+        "เนื้อเรื่องหลัก บทสนทนาชาวเมือง และภารกิจย่อยภาษาไทยครบถ้วน",
+        "บทสนทนาสกิต (Skit) และหน้าจอเนื้อเรื่องย่อ (Synopsis) ครบ 100%",
+        "ระบบต่อสู้ 3-Line LMBS ท่าไม้ตาย ฟอร์ซ ไอเทม และเมนูระบบภาษาไทย",
+        "ฟอนต์ภาษาไทย Prompt คมชัด สระวรรณยุกต์ 3 ระดับ ช่องไฟสม่ำเสมอ 1:1 VWF"
+      ]
+    },
+    "verified": true,
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-20T08:37:00+07:00"
+  },
+  {
+    "order": 66,
     "slug": "disgaea-5-complete",
     "title": "Disgaea 5 Complete",
     "platform": "switch",
@@ -3135,7 +3182,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "2e68c19ac9794489b1dd86410fac6b25c3f98d6598bdf09ac058642054b46e58"
   },
   {
-    "order": 66,
+    "order": 67,
     "slug": "fire-emblem-engage",
     "title": "Fire Emblem Engage",
     "platform": "switch",
@@ -3169,7 +3216,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "8c87316d2eff86c7ef712e88a5276c8c713ee38a345c74e8133b26615e5cb72d"
   },
   {
-    "order": 67,
+    "order": 68,
     "slug": "fire-emblem-three-houses",
     "title": "Fire Emblem: Three Houses",
     "platform": "switch",
@@ -3223,7 +3270,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "6f27fe8cc63784f4d17ada3d7822275fbdf46a0fdb3be10da6b499200ebd9efd"
   },
   {
-    "order": 68,
+    "order": 69,
     "slug": "persona-5-royal",
     "title": "Persona 5 Royal",
     "platform": "switch",
@@ -3257,7 +3304,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "ae68cf2866e6fd49d06e4245af0cf64f463bafc15be6885a06d360ea83556f1f"
   },
   {
-    "order": 69,
+    "order": 70,
     "slug": "tokyo-mirage-sessions-fe-encore",
     "title": "Tokyo Mirage Sessions #FE Encore",
     "platform": "switch",
@@ -3311,7 +3358,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "92c3598099ce809a1671aa4ca0d2e7442301eda42c1d46460d991d71cf16841d"
   },
   {
-    "order": 70,
+    "order": 71,
     "slug": "unicorn-overlord",
     "title": "Unicorn Overlord",
     "platform": "switch",
@@ -3381,7 +3428,7 @@ window.GAME_CATALOG = [
     }
   },
   {
-    "order": 71,
+    "order": 72,
     "slug": "village-in-the-shade",
     "title": "Village in the Shade",
     "platform": "switch",
@@ -3416,6 +3463,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "tales-of-rebirth",
+    "title": "Tales of Rebirth",
+    "platform": "PSP",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-20T08:37:00+07:00",
+    "note": "เปิดตัวแพตช์แปลไทย v1.0.0 เต็มรูปแบบ: เนื้อเรื่องหลัก สกิต เนื้อเรื่องย่อ เมนูระบบ และโอเวอร์เลย์ต่อสู้ 45,227 เรคอร์ด (99.38%) พร้อมฟอนต์ Prompt Medium 24x24 VWF คมชัด และผ่านการตรวจ Readback 1:1 ในรอมจริง ปราศจากบั๊กค้าง 100%"
+  },
   {
     "slug": "tokyo-mirage-sessions-fe-encore",
     "title": "Tokyo Mirage Sessions #FE Encore",
