@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game_slug": "metal-max-4",
+  "game_title": "Metal Max 4: Gekkou no Diva",
+  "platform": "3DS",
+  "region": "Japan",
+  "game_code": "AX4J",
+  "patch_version": "v1.3.10",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Metal Max 4 - Gekkou no Diva (Japan).3ds",
+      "size": 1073741824,
+      "sha256": "c815bff9d8a41bde58bd98a08c698ea0d7a573c06a59c0d8af1144b8ad5b697f"
+    }
+  ],
+  "patch": {
+    "filename": "Metal_Max_4_Thai_v1.3.10.xdelta",
+    "size": 152250654,
+    "sha256": "1dfe79e2e5b3b15e2a26f90ef415d3a97a7a15ceaaf8d873a4d807c9828eb717",
+    "release_date": "2026-11-20",
+    "date_source": "patch_file_mtime",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/metal-max-4/v1.3.10/Metal_Max_4_Thai_v1.3.10.xdelta"
+  },
+  "output": {
+    "filename": "Metal Max 4 - Gekkou no Diva (Thai v1.3.10).3ds",
+    "size": 1073741824,
+    "sha256": "44c67e4b06629dc90efa5fd1106f68a0954da09bceb760d995fe5febabc41a16"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลักและระบบเกม 100% (คำอธิบายไอเทมเต็มความยาว 504B, สระอู-อุ กระชับสวยงาม, คืนฉายาบอดี้การ์ดคนสวย, ปรับปุ่ม ON/OFF ไม่ล้นขอบ)",
+    "whole_game_census": "47,078/81,067 สล็อตไบนารี (58.1%); ข้อความที่ใช้งานจริง 47,078/47,078",
+    "critical_freeze": 0,
+    "errors": 0,
+    "census_source": "STATE.md และ audit_mm4.py (2026-11-20)"
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-20T09:22:00+07:00",
+    "method": "browser_xdelta3_wasm_roundtrip",
+    "note": "ผ่านการตรวจสอบ Roundtrip บิตต่อบิต 100% ด้วย tools/release_guard.py และ audit_mm4.py จาก clean source c815bff9… ได้ผลลัพธ์ 44c67e4b… ตรงกับ release target, พาร์ทิชันเสริม NCSD (P1 Manual CFA & P7 Update CFA) ครบสมบูรณ์ พร้อมตารางแฮช IVFC (L1_bad=0, L2_bad=0, L3_bad=0, partitions_valid=True, PASS=True) และ In-ROM Readback 1:1 ปราศจากพอยน์เตอร์ตกกลางอักษรไทย UTF-8",
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}

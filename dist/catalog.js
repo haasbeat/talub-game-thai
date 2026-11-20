@@ -1203,34 +1203,34 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 025 / 042",
-    "version": "v1.3.7",
-    "patchDate": "2026-11-19",
+    "version": "v1.3.10",
+    "patchDate": "2026-11-20",
     "addedDate": "2026-11-07",
     "addedOrder": 49,
     "addedAt": "2026-11-07T07:29:45+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/metal-max-4.jpg",
-    "manifest": "./assets/patches/metal-max-4/v1.3.7/manifest.json",
+    "manifest": "./assets/patches/metal-max-4/v1.3.10/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN Japan 3DS · 1 GB",
     "region": "Japan",
     "gameCode": "AX4J",
     "sourceName": "Metal Max 4 - Gekkou no Diva (Japan).3ds · 1,073,741,824 bytes",
     "sourceHash": "c815bff9d8a41bde58bd98a08c698ea0d7a573c06a59c0d8af1144b8ad5b697f",
-    "outputHash": "cbf5cef8d79639c6e77ba291eaac7ff42899c9eb07999f9bed87c9dabead0983",
-    "moduleStatus": "เนื้อเรื่องหลักและระบบเกม 100% (ฉบับเกลาสำนวนเนื้อเรื่อง + ซับคัทซีนขยาย 15% ตรงปากเสียงพากย์)",
+    "outputHash": "44c67e4b06629dc90efa5fd1106f68a0954da09bceb760d995fe5febabc41a16",
+    "moduleStatus": "เนื้อเรื่องหลักและระบบเกม 100% (คำอธิบายไอเทมเต็มความยาว 504B, สระอู-อุ กระชับสวยงาม, คืนฉายาบอดี้การ์ดคนสวย, ปรับปุ่ม ON/OFF ไม่ล้นขอบ)",
     "wholeGameCensus": "47,078/81,067 สล็อตไบนารี (58.1%); ข้อความที่ใช้งานจริง 47,078/47,078",
     "details": null,
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-19T23:14:00+07:00",
+    "verifiedAt": "2026-11-20T09:22:00+07:00",
     "luma": {
       "format": "LayeredFS / Luma3DS",
-      "filename": "24_Metal_Max_4_v1.3.6_Mod.zip",
-      "url": "https://drive.google.com/uc?export=download&id=1xw9xySICdjO-oKldIXV1mi7Yvhc9ONpa",
-      "viewUrl": "https://drive.google.com/file/d/1xw9xySICdjO-oKldIXV1mi7Yvhc9ONpa/view?usp=sharing",
-      "size": 117014435,
-      "id": "1xw9xySICdjO-oKldIXV1mi7Yvhc9ONpa"
+      "filename": "Metal_Max_4_Thai_v1.3.10_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1N6mRSuR4HmwHJIvBOnCP_pwpJ-iFEl8z",
+      "viewUrl": "https://drive.google.com/file/d/1N6mRSuR4HmwHJIvBOnCP_pwpJ-iFEl8z/view?usp=sharing",
+      "size": 119692710,
+      "id": "1N6mRSuR4HmwHJIvBOnCP_pwpJ-iFEl8z"
     }
   },
   {
@@ -3463,6 +3463,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "metal-max-4",
+    "title": "Metal Max 4: Gekkou no Diva",
+    "platform": "3DS",
+    "version": "v1.3.10",
+    "type": "update",
+    "timestamp": "2026-11-20T09:22:00+07:00",
+    "note": "อัปเดตแพตช์ v1.3.10 (เนื้อเรื่องหลักและระบบเกม 100% (คำอธิบายไอเทมเต็มความยาว 504B, สระอู-อุ กระชับสวยงาม, คืนฉายาบอดี้การ์ดคนสวย, ปรับปุ่ม ON/OFF ไม่ล้นขอบ))"
+  },
   {
     "slug": "tales-of-rebirth",
     "title": "Tales of Rebirth",
