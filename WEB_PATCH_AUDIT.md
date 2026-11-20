@@ -214,13 +214,13 @@ The web patch targets the full 1,085,833,216-byte PlayStation Portable UMD USA i
 
 ## Dragon Quest Monsters: Joker 3 Professional
 
-The `v1.0.6` web patch targets the 2 GiB decrypted Japanese cartridge image (`CTR-P-BDQJ`). This release recalculates the full RomFS IVFC hash tree (Level 3 -> Level 2 -> Level 1 -> Master Hash) and NCCH RomFS Superblock SHA-256 in-place, eliminating the real Nintendo 3DS hardware ErrDisp `0xf96047a2` / `0xD9004587` crash on `nn::fs::MountRom` / `GetRomRequiredMemorySize`. Furthermore, `v1.0.6` drops overwritten auxiliary partitions in the NCSD partition table, resolving the FBI installation crash `0xD8E08025` (`Result code: 0xD8E08025 / Level: Permanent (27) / Summary: Invalid argument (7) / Module: AM (32) / Desc: Invalid NCCH (37)`) when converting the `.3ds` to `.cia` using GodMode9.
+The `v1.0.7` web patch targets the 2 GiB decrypted Japanese cartridge image (`CTR-P-BDQJ`). This release provides surgical quality remediation across all 14 shards (0 defects, 0 collisions), patches ExeFS .code to expand item name stack buffer (`0x10` -> `0x20` wchar_t) fixing colored icon item name truncation (e.g. `ตราประทับ: การเพิ่มสติปัญญา`), expands accessory UI layout frames, bakes 4-tier watermarks (`ตลับเกมภาษาไทย v1.0.7`), bundles the print-ready 16-page Skill Synthesis Guide PDF (131 skills TH/JP), and preserves 100% RomFS IVFC hash tree recalculation (Level 3 -> Level 2 -> Level 1 -> Master Hash) and clean NCSD single-partition table, eliminating real Nintendo 3DS hardware ErrDisp `0xf96047a2` / `0xD9004587` and FBI installation crash `0xD8E08025` (`Invalid NCCH`).
 
 - Accepted source: `Dragon Quest Monsters - Joker 3 Professional (Japan).3ds`, 2,147,483,648 bytes
 - Source SHA-256: `e3e70991c268571d1f4558a4fbc14e72d6ba047a89f98511fb47db0b559cddbb`
-- Patch SHA-256: `ccae77105f74491d352d249f49ddd27944b04ddbfd816fc9d657fb7950267986`
-- Expected output SHA-256: `43f64bad09332105356cdf1aaa053dd40dc50c0d04a7ab3b88da69c6156d11f9`
-- Verification: clean-source xdelta3 roundtrip tested and confirmed 100% bit-identical match; physical 3DS hardware IVFC hash tree and NCSD partition audit passed (`tools/ncch_ivfc_rebuild.py --check --full`: `L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`). In-ROM binary audit passed with 18,439/20,479 entries (90.04% In-ROM, 100% of real translatable text, 0 Kana, 0 dummies).
+- Patch SHA-256: `59120da47676df5080ccd0682fa7b45c20b472c7fcd5b359bcad2f920a584bb8`
+- Expected output SHA-256: `d607072ff58d105bb1f7f6eacbdc2c4991cd200cf8d70ca02dc1083f0c9cac9a`
+- Verification: clean-source xdelta3 roundtrip tested and confirmed 100% bit-identical match; physical 3DS hardware IVFC hash tree and NCSD partition audit passed (`tools/ncch_ivfc_rebuild.py --check --full`: `L1_bad=0, L2_bad=0, L3_bad=0, romfs_sb=True, layout=True, partitions_valid=True, PASS=True`). In-ROM binary audit passed with 18,443/20,479 entries (90.06% In-ROM, 100% of real translatable text, 0 Kana, 0 dummies).
 
 ## Tales of the Abyss (USA)
 

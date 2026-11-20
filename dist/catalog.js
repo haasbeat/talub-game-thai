@@ -265,23 +265,23 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 006 / 042",
-    "version": "v1.0.6",
-    "patchDate": "2026-11-09",
+    "version": "v1.0.7",
+    "patchDate": "2026-11-20",
     "addedDate": "2026-11-05",
     "addedOrder": 40,
     "addedAt": "2026-11-05T16:31:19+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/dqm-joker-3-professional.jpg",
-    "manifest": "./assets/patches/dqm-joker-3-professional/v1.0.6/manifest.json",
+    "manifest": "./assets/patches/dqm-joker-3-professional/v1.0.7/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN Japan 3DS · 2 GB",
     "region": "Japan",
     "gameCode": "BDQJ",
     "sourceName": "Dragon Quest Monsters - Joker 3 Professional (Japan).3ds · 2,147,483,648 bytes",
     "sourceHash": "e3e70991c268571d1f4558a4fbc14e72d6ba047a89f98511fb47db0b559cddbb",
-    "outputHash": "43f64bad09332105356cdf1aaa053dd40dc50c0d04a7ab3b88da69c6156d11f9",
-    "moduleStatus": "เนื้อเรื่องหลัก + Post-Game + เควสต์ + สกิล + ไอเทม + เนวิแมป 26 แอเรีย 100% (แก้จอแดง ErrDisp 0xf96047a2 และแก้ FBI Error 0xD8E08025 Invalid NCCH)",
-    "wholeGameCensus": "18,439/20,479 รายการ (ภาพรวมทั้งเกม 90.04% In-ROM)",
+    "outputHash": "d607072ff58d105bb1f7f6eacbdc2c4991cd200cf8d70ca02dc1083f0c9cac9a",
+    "moduleStatus": "เนื้อเรื่องหลัก + Post-Game + เควสต์ + สกิล + ไอเทม + เนวิแมป 26 แอเรีย 100% (ผ่าตัดแก้บั๊กชื่อไอเทมขาดหาย, ขยายกรอบ UI สร้างเครื่องประดับ, ฝังลายน้ำไตเติล, แถมฟรีคู่มือผสมสกิล 131 สกิล PDF)",
+    "wholeGameCensus": "18,443/20,479 รายการ (ภาพรวมทั้งเกม 90.06% In-ROM)",
     "details": {
       "thaiTitle": "ดราก้อนเควสต์ มอนสเตอร์ส โจ๊กเกอร์ 3 โปรเฟสชันนัล",
       "japaneseTitle": "ドラゴンクエストモンスターズ ジョーカー3 プロフェッショナル",
@@ -289,29 +289,31 @@ window.GAME_CATALOG = [
       "studio": "Square Enix",
       "release": null,
       "genre": "Role-playing game",
-      "description": "ม็อดภาษาไทยสำหรับ Dragon Quest Monsters: Joker 3 Professional (3DS โซนญี่ปุ่น) เวอร์ชัน v1.0.6 แก้ไขจอแดง ErrDisp และข้อผิดพลาด FBI Error 0xD8E08025 บนเครื่อง 3DS จริง พร้อมแปลเนื้อเรื่องหลัก เมนู และฐานข้อมูลครบถ้วน",
-      "overview": "เกมสะสมและผสมมอนสเตอร์ของซีรีส์ดราก้อนเควสต์ ฉบับ Professional ที่มีเนื้อหา Post-Game เพิ่มเติม",
+      "description": "ม็อดภาษาไทยสำหรับ Dragon Quest Monsters: Joker 3 Professional (3DS โซนญี่ปุ่น) เวอร์ชัน v1.0.7 ผ่าตัดซ่อมแซมคุณภาพเฉพาะจุด แก้ไขบั๊กชื่อไอเทมและตราประทับขาดหาย ปรับขยายกรอบ UI พร้อมแนบฟรีคู่มือผสมสกิลฉบับสมบูรณ์ครบ 131 สกิล (DQMJ3P_Skill_Synthesis_Guide_TH_JP.pdf 16 หน้า) ในชุดม็อด และแปลเนื้อเรื่องหลัก เมนู และฐานข้อมูลครบถ้วน 100%",
+      "overview": "เกมสะสมและผสมมอนสเตอร์ของซีรีส์ดราก้อนเควสต์ ฉบับ Professional ที่มีเนื้อหา Post-Game เพิ่มเติม พร้อมระบบผสมสกิลขั้นสูง",
       "story": null,
-      "localization": "แปลคัตซีนเนื้อเรื่องหลักและ Post-Game (บทที่ 1–8 และดินแดนสัตว์ศักดิ์สิทธิ์) เมนูคำสั่ง HUD ต่อสู้ เนวิแมป 26 แอเรีย ฐานข้อมูลมอนสเตอร์ สกิล ไอเทม ทริเวีย และเกียรติยศ (สถานะโมดูล 100% + In-ROM Census 90.04% รวม 18,439 ข้อความ จาก 20,479 รายการ โดย 2,040 รายการที่เหลือคือค่าคงที่ไอคอนและโค้ดของเอนจินเกม) ใช้ฟอนต์ Chakra Petch SemiBold 13/15px ปรับปรุงความเสถียรป้องกันเกมเด้งหลุด และรองรับการติดตั้งเล่นผ่าน FBI บนเครื่อง 3DS จริงได้ 100%",
+      "guide": "แนบคู่มือ DQMJ3P_Skill_Synthesis_Guide_TH_JP.pdf (16 หน้า) รวบรวมสูตรผสมสกิลครบทั้ง 131 สกิล พร้อมชื่อภาษาไทยและภาษาญี่ปุ่นกำกับ ไว้ในชุดม็อดเรียบร้อยแล้ว",
+      "localization": "แปลคัตซีนเนื้อเรื่องหลักและ Post-Game (บทที่ 1–8 และดินแดนสัตว์ศักดิ์สิทธิ์) เมนูคำสั่ง HUD ต่อสู้ เนวิแมป 26 แอเรีย ฐานข้อมูลมอนสเตอร์ สกิล ไอเทม ทริเวีย และเกียรติยศ (สถานะโมดูล 100% + In-ROM Census 90.06% รวม 18,443 ข้อความ จาก 20,479 รายการ โดย 2,036 รายการที่เหลือคือค่าคงที่ไอคอนและโค้ดของเอนจินเกม) ใช้ฟอนต์ Chakra Petch SemiBold 13/15px ปรับปรุงความเสถียรป้องกันเกมเด้งหลุด รองรับการติดตั้งเล่นผ่าน FBI และตลับแท้บนเครื่อง 3DS จริงได้ 100% พร้อมฝังลายน้ำเวอร์ชันและลายเซ็นดิจิทัลครบ 4 ระดับ",
       "untranslated": "ไม่มีส่วนเนื้อหาที่ค้างแปล แปลสมบูรณ์ 100% ของข้อความภาษาญี่ปุ่นที่เล่นได้ทั้งหมด (0 Kana หลงเหลือ, 0 ข้อความหลอก)",
       "features": [
         "เนื้อเรื่องหลักและบทสนทนาฉบับมืออาชีพ (Professional) ภาษาไทย",
         "สารานุกรมมอนสเตอร์ รายชื่อสกิล และคำอธิบายไอเทมภาษาไทย",
-        "ซับไตเติลภาษาไทยในฉากคัตซีนและอีเวนต์เนื้อเรื่อง",
+        "คู่มือสูตรผสมสกิลฉบับสมบูรณ์ (PDF 16 หน้า 131 สกิล TH/JP)",
         "ฟอนต์ภาษาไทยคมชัด สระวรรณยุกต์อ่านสบายตา"
       ]
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-09T00:07:00+07:00",
+    "verifiedAt": "2026-11-20T19:16:00+07:00",
     "luma": {
       "format": "LayeredFS / Luma3DS",
-      "filename": "05_DQ_Monsters_Joker_3_Professional_v1.0.6_Mod.zip",
-      "url": "https://drive.google.com/uc?export=download&id=1ngCWjfnHP2k5IjjEpfdE2aPbpvpxUJ3q",
-      "viewUrl": "https://drive.google.com/file/d/1ngCWjfnHP2k5IjjEpfdE2aPbpvpxUJ3q/view?usp=sharing",
-      "size": 6408322,
-      "id": "1ngCWjfnHP2k5IjjEpfdE2aPbpvpxUJ3q"
-    }
+      "filename": "DQMJ3P_Thai_v1.0.7_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1gc7d-9uiut3QGI0x8wS1rxc_386Wm6mR",
+      "viewUrl": "https://drive.google.com/file/d/1gc7d-9uiut3QGI0x8wS1rxc_386Wm6mR/view?usp=sharing",
+      "size": 8354234,
+      "id": "1gc7d-9uiut3QGI0x8wS1rxc_386Wm6mR"
+    },
+    "guide": "แนบคู่มือ DQMJ3P_Skill_Synthesis_Guide_TH_JP.pdf (16 หน้า) รวบรวมสูตรผสมสกิลครบทั้ง 131 สกิล พร้อมชื่อภาษาไทยและภาษาญี่ปุ่นกำกับ ไว้ในชุดม็อดเรียบร้อยแล้ว"
   },
   {
     "order": 6,
@@ -3512,6 +3514,15 @@ window.GAME_CATALOG = [
 ];
 window.GAME_UPDATES = [
   {
+    "slug": "dqm-joker-3-professional",
+    "title": "Dragon Quest Monsters: Joker 3 Professional",
+    "platform": "3DS",
+    "version": "v1.0.7",
+    "type": "update",
+    "timestamp": "2026-11-20T19:25:00+07:00",
+    "note": "อัปเดตแพตช์ v1.0.7 (เนื้อเรื่อง เมนู และฐานข้อมูล 100% — ภาพรวมทั้งเกม 90.06% รวม 18,443 / 20,479 รายการ In-ROM): ผ่าตัดซ่อมแซมคุณภาพเฉพาะจุด (Surgical Quality Polish) แก้ไขบั๊กตัดบรรทัดและสระวรรณยุกต์ซ้อนทับครบทั้ง 14 Shards, แพตช์โค้ด ExeFS ขยาย Stack Buffer การจัดรูปแบบชื่อไอเทมติดไอคอนสี (0x10 -> 0x20 wchar_t) แก้ไขปัญหาชื่อไอเทมและตราประทับขาดหาย (เช่น 'ตราประทับ: การเพิ่มสติปัญญา') สมบูรณ์แบบ 100%, ขยายพาเนล UI เครื่องประดับพอดีกรอบ, ฝังลายน้ำ 'ตลับเกมภาษาไทย v1.0.7' บนหน้าจอไตเติล (Tier 1) และ Binary Metadata (Tier 3), คำนวณ RomFS IVFC Hash Tree ใหม่ป้องกันจอแดง 0xf96047a2 และ 0xD8E08025 บนเครื่อง 3DS จริง พร้อมแนบฟรีคู่มือสูตรผสมสกิลฉบับสมบูรณ์ครบ 131 สกิล (DQMJ3P_Skill_Synthesis_Guide_TH_JP.pdf 16 หน้า) ในชุดดาวน์โหลดม็อด"
+  },
+  {
     "slug": "final-fantasy-iii",
     "title": "Final Fantasy III",
     "platform": "NDS",
@@ -4595,10 +4606,10 @@ window.GAME_UPDATES = [
     "slug": "dqm-joker-3-professional",
     "title": "Dragon Quest Monsters: Joker 3 Professional",
     "platform": "3DS",
-    "version": "v1.0.6",
+    "version": "v1.0.7",
     "type": "new",
     "timestamp": "2026-11-05T16:31:19+07:00",
-    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.6"
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.7"
   },
   {
     "slug": "theatrhythm-dragon-quest",
