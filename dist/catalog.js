@@ -2144,7 +2144,7 @@ window.GAME_CATALOG = [
     "title": "Cid to Chocobo no Fushigi na Dungeon: Toki Wasure no Meikyuu DS+",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 001 / 014",
+    "index": "NDS | 001 / 015",
     "version": "v1.0.1",
     "patchDate": "2026-11-18",
     "addedDate": "2026-11-15",
@@ -2192,7 +2192,7 @@ window.GAME_CATALOG = [
     "title": "Dragon Quest IV: Chapters of the Chosen",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 002 / 014",
+    "index": "NDS | 002 / 015",
     "version": "v2.5.1",
     "patchDate": "2026-11-02",
     "addedDate": "2026-11-04",
@@ -2239,7 +2239,7 @@ window.GAME_CATALOG = [
     "title": "Dragon Quest V: Hand of the Heavenly Bride",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 003 / 014",
+    "index": "NDS | 003 / 015",
     "version": "v1.6.5",
     "patchDate": "2026-11-17",
     "addedDate": "2026-11-04",
@@ -2268,7 +2268,7 @@ window.GAME_CATALOG = [
     "title": "Dragon Quest VI: Realms of Revelation",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 004 / 014",
+    "index": "NDS | 004 / 015",
     "version": "v1.1.3",
     "patchDate": "2026-11-12",
     "addedDate": "2026-11-04",
@@ -2293,11 +2293,59 @@ window.GAME_CATALOG = [
   },
   {
     "order": 46,
+    "slug": "final-fantasy-iii",
+    "title": "Final Fantasy III",
+    "platform": "nds",
+    "platformLabel": "NDS",
+    "index": "NDS | 005 / 015",
+    "version": "v1.0.0",
+    "patchDate": "2026-11-20",
+    "addedDate": "2026-11-20",
+    "addedOrder": 74,
+    "addedAt": "2026-11-20T18:51:00+07:00",
+    "format": "xdelta3",
+    "cover": "./assets/covers/web/final-fantasy-iii.jpg",
+    "manifest": "./assets/patches/final-fantasy-iii/v1.0.0/manifest.json",
+    "accept": ".nds",
+    "fileTypes": "CLEAN USA NDS · 128 MB",
+    "region": "USA",
+    "gameCode": "AFFE",
+    "sourceName": "Final Fantasy III (USA).nds · 134,217,728 bytes",
+    "sourceHash": "1ed4a5e438a513ee6fd6748eee88fc7f196118128607a419e69a2226893806bd",
+    "outputHash": "3d752b92692132fbaefe079776350c243dfeb800d24c81ec16b8c4781041e4e5",
+    "moduleStatus": "เนื้อเรื่องหลัก บทสนทนา เมนู 23 อาชีพ อบิลิตี้ ไอเทม มอนสเตอร์ และม็อกเน็ต 100.00% (5,677 / 5,677 รายการ)",
+    "wholeGameCensus": "5,677 / 6,954 รายการในรอม (ภาพรวมคลังไบนารีทั้งรอม 81.64% โดย 1,277 รายการที่เหลือคือข้อความญี่ปุ่นตกค้างที่ไม่ได้ใช้งานและตัวแปรระบบ)",
+    "details": {
+      "thaiTitle": "ไฟนอลแฟนตาซี III: ตำนานนักรบแห่งแสง (3D Remake)",
+      "japaneseTitle": "ファイナルファンタジーIII",
+      "originalTitle": "Final Fantasy III (USA)",
+      "studio": "Square Enix / Matrix Software",
+      "release": "24 สิงหาคม 2006 (NDS)",
+      "genre": "RPG / Turn-based",
+      "description": "ม็อดภาษาไทยสมบูรณ์แบบ 100% สำหรับ Final Fantasy III (Nintendo DS / AFFE) เวอร์ชัน v1.0.0 ผลงานรีเมก 3D เต็มรูปแบบครั้งแรกของตำนานนักรบแห่งแสงและระบบสับเปลี่ยนอาชีพ 23 สาย",
+      "overview": "มหากาพย์เกม RPG ระดับตำนานที่ถือกำเนิดระบบ Job System อันเลื่องชื่อ นำกลับมารีเมกใหม่หมดจดด้วยกราฟิก 3 มิติ และปรับปรุงบทตัวละครทั้งสี่ให้มีมิติและเอกลักษณ์เฉพาะตัว",
+      "story": "เมื่อเกิดแผ่นดินไหวครั้งใหญ่ในหมู่บ้านอูล ลูเน็ธ เด็กหนุ่มกำพร้าได้พลัดตกลงไปในถ้ำลึกลับและได้พบกับคริสตัลแห่งสายลม ซึ่งได้มอบพลังและชี้นำชะตากรรมให้เขาออกเดินทางตามหาสหายร่วมชะตากรรมอีกสามคน ได้แก่ อาร์ค เรเฟีย และอิงกัส เพื่อกอบกู้สมดุลระหว่างแสงสว่างและความมืดที่กำลังถูกเงามืดกลืนกิน",
+      "localization": "แปลภาษาไทยสมบูรณ์ 100% ทุกหมวดหมู่ที่ใช้งานจริง (5,677 / 5,677 รายการ) ครอบคลุมเนื้อเรื่องหลัก ดันเจี้ยน เมือง แผนที่โลก 23 อาชีพ อบิลิตี้ เวทมนตร์ ไอเทม อาวุธ เกราะ มอนสเตอร์ มนต์อสูร ระบบจดหมายม็อกเน็ต และเมนูตั้งค่า พัฒนาชุดฟอนต์ Shift-JIS 3 ชั้น EUREKA10 (11x16 bl=13/lf=11) และ EUREKA8 (11x14 Uniform BASE_10) ไร้ปัญหาสระวรรณยุกต์ชนหรือตัดขาด 100%",
+      "untranslated": "ภาพ 2D บางส่วน (Layer 4 NCGR), ตัวแปรระบบ/รหัส ASCII โครงสร้าง 58 รายการ และข้อความภาษาญี่ปุ่นตกค้างที่ไม่ได้ถูกเรียกใช้งานในรอม USA (1,215 รายการ)",
+      "features": [
+        "เนื้อเรื่องหลัก ดันเจี้ยน บทสนทนา และคัตซีนภาษาไทยครบถ้วน 100%",
+        "ระบบอาชีพทั้ง 23 อาชีพ แปลชื่ออาชีพและคำอธิบายอบิลิตี้ตรงตามมาตรฐาน FF",
+        "ไอเทม อาวุธ เครื่องป้องกัน และเวทมนตร์ทุกระดับแปลคำอธิบายละเอียดครบถ้วน",
+        "ระบบจดหมายม็อกเน็ต แปลจดหมายจากเพื่อนและตัวละครในเรื่องครบทุกฉบับ",
+        "ระบบฟอนต์ภาษาไทยแท้ 3 ชั้น สระวรรณยุกต์คมชัด สวยงาม จัดช่องไฟสมดุลทั้งบทพูดและเมนู"
+      ]
+    },
+    "verified": true,
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-20T18:51:00+07:00"
+  },
+  {
+    "order": 47,
     "slug": "front-mission-2089",
     "title": "Front Mission 2089: Border of Madness",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 005 / 014",
+    "index": "NDS | 006 / 015",
     "version": "v1.1.1",
     "patchDate": "2026-10-31",
     "addedDate": "2026-11-04",
@@ -2339,12 +2387,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-10-31T21:25:59+07:00"
   },
   {
-    "order": 47,
+    "order": 48,
     "slug": "kingdom-hearts-358-2-days",
     "title": "Kingdom Hearts: 358/2 Days",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 006 / 014",
+    "index": "NDS | 007 / 015",
     "version": "v1.0.0",
     "patchDate": "2026-11-07",
     "addedDate": "2026-11-07",
@@ -2386,12 +2434,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-07T18:32:00+07:00"
   },
   {
-    "order": 48,
+    "order": 49,
     "slug": "lost-in-blue-2",
     "title": "Lost in Blue 2",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 007 / 014",
+    "index": "NDS | 008 / 015",
     "version": "v2.0.2",
     "patchDate": "2026-11-01",
     "addedDate": "2026-11-05",
@@ -2433,12 +2481,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-05T15:05:00+07:00"
   },
   {
-    "order": 49,
+    "order": 50,
     "slug": "love-plus-plus",
     "title": "Love Plus+",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 008 / 014",
+    "index": "NDS | 009 / 015",
     "version": "v1.0.5",
     "patchDate": "2026-10-31",
     "addedDate": "2026-11-05",
@@ -2480,12 +2528,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-05T15:07:00+07:00"
   },
   {
-    "order": 50,
+    "order": 51,
     "slug": "metal-max-2-reloaded",
     "title": "Metal Max 2: Reloaded",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 009 / 014",
+    "index": "NDS | 010 / 015",
     "version": "v1.0.2",
     "patchDate": "2026-11-14",
     "addedDate": "2026-11-12",
@@ -2528,12 +2576,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-14T21:10:00+07:00"
   },
   {
-    "order": 51,
+    "order": 52,
     "slug": "saga2-hihou-densetsu",
     "title": "SaGa 2: Hihou Densetsu - Goddess of Destiny",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 010 / 014",
+    "index": "NDS | 011 / 015",
     "version": "v1.0.1",
     "patchDate": "2026-11-05",
     "addedDate": "2026-11-04",
@@ -2557,12 +2605,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-04T22:08:37+07:00"
   },
   {
-    "order": 52,
+    "order": 53,
     "slug": "saga3-jikuu-no-hasha",
     "title": "SaGa 3: Jikuu no Hasha - Shadow or Light",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 011 / 014",
+    "index": "NDS | 012 / 015",
     "version": "v1.0.0",
     "patchDate": "2026-11-19",
     "addedDate": "2026-11-19",
@@ -2605,12 +2653,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-19T21:40:00+07:00"
   },
   {
-    "order": 53,
+    "order": 54,
     "slug": "suikoden-tierkreis",
     "title": "Suikoden Tierkreis",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 012 / 014",
+    "index": "NDS | 013 / 015",
     "version": "v1.0.2",
     "patchDate": "2026-11-19",
     "addedDate": "2026-11-04",
@@ -2634,12 +2682,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-19T10:29:00+07:00"
   },
   {
-    "order": 54,
+    "order": 55,
     "slug": "tales-of-hearts",
     "title": "Tales of Hearts",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 013 / 014",
+    "index": "NDS | 014 / 015",
     "version": "v1.0.2",
     "patchDate": "2026-11-09",
     "addedDate": "2026-11-04",
@@ -2663,12 +2711,12 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-09T19:30:00+07:00"
   },
   {
-    "order": 55,
+    "order": 56,
     "slug": "the-world-ends-with-you",
     "title": "The World Ends with You",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 014 / 014",
+    "index": "NDS | 015 / 015",
     "version": "v1.0.4",
     "patchDate": "2026-11-01",
     "addedDate": "2026-11-04",
@@ -2692,7 +2740,7 @@ window.GAME_CATALOG = [
     "verifiedAt": null
   },
   {
-    "order": 56,
+    "order": 57,
     "slug": "saga-frontier",
     "title": "SaGa Frontier",
     "platform": "ps1",
@@ -2739,7 +2787,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-08T18:55:00+07:00"
   },
   {
-    "order": 57,
+    "order": 58,
     "slug": "front-mission-5",
     "title": "Front Mission 5: Scars of the War",
     "platform": "ps2",
@@ -2787,7 +2835,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-20T11:14:00+07:00"
   },
   {
-    "order": 58,
+    "order": 59,
     "slug": "mana-khemia",
     "title": "Mana Khemia: Alchemists of Al-Revis",
     "platform": "ps2",
@@ -2834,7 +2882,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-08T08:30:00+07:00"
   },
   {
-    "order": 59,
+    "order": 60,
     "slug": "tales-of-the-abyss-ps2",
     "title": "Tales of the Abyss (PS2)",
     "platform": "ps2",
@@ -2882,7 +2930,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-10T10:26:00+07:00"
   },
   {
-    "order": 60,
+    "order": 61,
     "slug": "bs-koi-ha-balance",
     "title": "BS Koi ha Balance: Battle of Lovers",
     "platform": "snes",
@@ -2930,7 +2978,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-14T10:30:00+07:00"
   },
   {
-    "order": 61,
+    "order": 62,
     "slug": "mini-yonku-wgp2",
     "title": "Mini Yonku Let's & Go!!: Power WGP 2",
     "platform": "snes",
@@ -2977,7 +3025,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-05T15:00:00+07:00"
   },
   {
-    "order": 62,
+    "order": 63,
     "slug": "ring-ni-kakero",
     "title": "Ring ni Kakero",
     "platform": "snes",
@@ -3025,7 +3073,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-20T01:15:00+07:00"
   },
   {
-    "order": 63,
+    "order": 64,
     "slug": "mana-khemia-student-alliance",
     "title": "Mana Khemia: Student Alliance",
     "platform": "psp",
@@ -3072,7 +3120,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-14T09:23:00+07:00"
   },
   {
-    "order": 64,
+    "order": 65,
     "slug": "popolocrois",
     "title": "PoPoLoCrois",
     "platform": "psp",
@@ -3101,7 +3149,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-19T18:30:00+07:00"
   },
   {
-    "order": 65,
+    "order": 66,
     "slug": "tales-of-rebirth",
     "title": "Tales of Rebirth",
     "platform": "psp",
@@ -3148,7 +3196,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-20T12:35:00+07:00"
   },
   {
-    "order": 66,
+    "order": 67,
     "slug": "disgaea-5-complete",
     "title": "Disgaea 5 Complete",
     "platform": "switch",
@@ -3182,7 +3230,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "2e68c19ac9794489b1dd86410fac6b25c3f98d6598bdf09ac058642054b46e58"
   },
   {
-    "order": 67,
+    "order": 68,
     "slug": "fire-emblem-engage",
     "title": "Fire Emblem Engage",
     "platform": "switch",
@@ -3216,7 +3264,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "8c87316d2eff86c7ef712e88a5276c8c713ee38a345c74e8133b26615e5cb72d"
   },
   {
-    "order": 68,
+    "order": 69,
     "slug": "fire-emblem-three-houses",
     "title": "Fire Emblem: Three Houses",
     "platform": "switch",
@@ -3270,7 +3318,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "6bebba89ddc181f3c0ca457a7438be59f629cc90ff21d4faa6835c67cbe72c8b"
   },
   {
-    "order": 69,
+    "order": 70,
     "slug": "persona-5-royal",
     "title": "Persona 5 Royal",
     "platform": "switch",
@@ -3304,7 +3352,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "ae68cf2866e6fd49d06e4245af0cf64f463bafc15be6885a06d360ea83556f1f"
   },
   {
-    "order": 70,
+    "order": 71,
     "slug": "tokyo-mirage-sessions-fe-encore",
     "title": "Tokyo Mirage Sessions #FE Encore",
     "platform": "switch",
@@ -3358,7 +3406,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "92c3598099ce809a1671aa4ca0d2e7442301eda42c1d46460d991d71cf16841d"
   },
   {
-    "order": 71,
+    "order": 72,
     "slug": "unicorn-overlord",
     "title": "Unicorn Overlord",
     "platform": "switch",
@@ -3428,7 +3476,7 @@ window.GAME_CATALOG = [
     }
   },
   {
-    "order": 72,
+    "order": 73,
     "slug": "village-in-the-shade",
     "title": "Village in the Shade",
     "platform": "switch",
@@ -3463,6 +3511,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "final-fantasy-iii",
+    "title": "Final Fantasy III",
+    "platform": "NDS",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-20T18:51:00+07:00",
+    "note": "เปิดตัวแพตช์ภาษาไทย v1.0.0 (เนื้อเรื่องหลัก บทสนทนา เมนู 23 อาชีพ อบิลิตี้ ไอเทม มอนสเตอร์ และม็อกเน็ต 100.00% — 5,677 / 5,677 รายการ In-ROM): ฉบับรีเมก 3D เต็มรูปแบบบน Nintendo DS แปลไทยสมบูรณ์แบบทุกหมวดหมู่ที่ใช้งานจริง พร้อมชุดฟอนต์ Shift-JIS 3 ชั้น EUREKA10 (11x16 bl=13/lf=11) และ EUREKA8 (11x14 Uniform BASE_10) จัดช่องไฟสมดุล สระวรรณยุกต์ไม่ชนกัน 100% เล่นได้ลื่นไหลทั้งบนเครื่องจริง NDS/3DS และอีมูเลเตอร์"
+  },
   {
     "slug": "fire-emblem-three-houses",
     "title": "Fire Emblem: Three Houses",
