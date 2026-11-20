@@ -3222,22 +3222,22 @@ window.GAME_CATALOG = [
     "platform": "switch",
     "platformLabel": "SWITCH",
     "index": "SWITCH | 003 / 007",
-    "version": "v1.4.1",
-    "patchDate": "2026-11-14",
+    "version": "v1.4.2",
+    "patchDate": "2026-11-20",
     "addedDate": "2026-11-06",
     "addedOrder": 44,
     "addedAt": "2026-11-06T14:30:36+07:00",
     "format": "LayeredFS / Atmosphère",
     "cover": "./assets/covers/web/fire-emblem-three-houses.jpg",
-    "manifest": "./assets/patches/fire-emblem-three-houses/v1.4.1/manifest.json",
+    "manifest": "./assets/patches/fire-emblem-three-houses/v1.4.2/manifest.json",
     "accept": "",
-    "fileTypes": "ชุดม็อด LayeredFS · 29.58 MB",
+    "fileTypes": "ชุดม็อด LayeredFS · 36.23 MB",
     "region": "Global",
     "gameCode": "010055D009F78000",
     "sourceName": "Update v1.2.0 (Patch 4)",
     "sourceHash": "010055D009F78000",
-    "outputHash": "6f27fe8cc63784f4d17ada3d7822275fbdf46a0fdb3be10da6b499200ebd9efd",
-    "moduleStatus": "เนื้อเรื่องหลัก & DLC 100% (แปลเก็บตกด่านรบ DLC SC05 30 ไฟล์, เควสต์เสริม EV06 6 ไฟล์, ซัพพอร์ตเยริตซา 7 ไฟล์, งานกลุ่ม DLC 189 ข้อความ)",
+    "outputHash": "6bebba89ddc181f3c0ca457a7438be59f629cc90ff21d4faa6835c67cbe72c8b",
+    "moduleStatus": "เนื้อเรื่องหลัก & DLC 100% (ถอดโค้ด 60 FPS ออกจากม็อดภาษาไทยหลัก คืนความเร็วปกติ Native 30 FPS 100% และแนบซิป 60 FPS เสริมแยกให้เลือกเอง)",
     "wholeGameCensus": "82,184 / 77,019 บรรทัด In-ROM (106.71% จากรายการที่ฉีดเพิ่ม)",
     "details": {
       "thaiTitle": "ไฟร์เอ็มเบลม: ทรีเฮาส์",
@@ -3246,7 +3246,7 @@ window.GAME_CATALOG = [
       "studio": "Nintendo / Intelligent Systems / Koei Tecmo",
       "release": "26 กรกฎาคม 2019",
       "genre": "Tactical Role-playing game",
-      "description": "ม็อดภาษาไทยสมบูรณ์แบบสำหรับ Fire Emblem: Three Houses (Nintendo Switch / Title ID: 010055D009F78000) เวอร์ชัน v1.4.1 (แก้ปัญหาข้อความล้น 4 บรรทัดและตกขอบจอ Log ทั้งเกมทั้งภาคหลัก + DLC + UI / AMes และปุ่มตัวเลือก 1 บรรทัด / สำมะโนทั้งเกม 80,395 บรรทัด In-ROM / Clean Packaging 29 MB)",
+      "description": "ม็อดภาษาไทยสมบูรณ์แบบสำหรับ Fire Emblem: Three Houses (Nintendo Switch / Title ID: 010055D009F78000) เวอร์ชัน v1.4.2 (แก้ปัญหาข้อความล้น 4 บรรทัดและตกขอบจอ Log ทั้งเกมทั้งภาคหลัก + DLC + UI / AMes และปุ่มตัวเลือก 1 บรรทัด / สำมะโนทั้งเกม 80,395 บรรทัด In-ROM / Clean Packaging 29 MB)",
       "overview": "รับบทเป็นอาจารย์ประจำสถาบันนายทหาร ณ อารามการ์แรก มัค นำพานักเรียนในบ้านที่คุณเลือกผ่านสมรภูมิสงคราม การเมือง และสายสัมพันธ์ในทวีปโฟดลาน แปลไทยสมบูรณ์ทุกสายรูท",
       "story": "ทวีปโฟดลานถูกแบ่งออกเป็น 3 มหาอำนาจ: จักรวรรดิอาดรัสเทีย, ราชอาณาจักรศักดิ์สิทธิ์แฟร์กัส, และสหพันธรัฐเลสเตอร์ โดยมีศาสนจักรแห่งเซรอสเป็นศูนย์กลาง ไบลธ์ ทหารรับจ้างบุตรแห่งเจรัลต์ ได้รับเชิญมาเป็นอาจารย์ประจำสถาบันนายทหารและต้องเลือกดูแลหนึ่งในสามบ้าน ก่อนที่ไฟสงครามและการเมืองจะปะทุขึ้นจนบีบให้เหล่าลูกศิษย์ต้องหันคมดาบเข้าหากัน",
       "localization": "แปลเนื้อเรื่องหลักและบทพูดครบ 100% ทุกสายรูท ทั้งเควสต์โรงเรียน ระบบปฏิทิน กิจกรรมดื่มชา ระบบซัพพอร์ต ซับไตเติลมูฟวี่ พร้อมเนื้อหา DLC บทเสริม Cindered Shadows, ซัพพอร์ตสี่หมาป่า และบทสำรวจเมืองใต้ดิน Abyss ทุกเดือนและทุกรูท รวม 80,395 บรรทัด In-ROM พร้อมระบบตัดคำ Pixel-Aware ไม่ล้นบรรทัด ฟอนต์ Tall-Safe 46pt Compact สระไม่ลอย ปลดล็อก 60 FPS Native",
@@ -3264,10 +3264,10 @@ window.GAME_CATALOG = [
     "gameVersion": "Update v1.2.0 (Patch 4)",
     "verifiedAt": null,
     "distributionType": "external-download",
-    "downloadUrl": "https://drive.google.com/file/d/1O2JLqsy7YJs7-vn3S-mi-Qs8fu4Teby1/view?usp=sharing",
-    "downloadFilename": "FE16_Thai_v1.4.1_Mod.zip",
-    "downloadSize": 31016361,
-    "downloadSha256": "6f27fe8cc63784f4d17ada3d7822275fbdf46a0fdb3be10da6b499200ebd9efd"
+    "downloadUrl": "https://drive.google.com/file/d/1l3K1rZHbU2iZA4JfLYw8ZFEJI_CqSs2u/view?usp=sharing",
+    "downloadFilename": "FE16_Thai_v1.4.2_Mod.zip",
+    "downloadSize": 37988852,
+    "downloadSha256": "6bebba89ddc181f3c0ca457a7438be59f629cc90ff21d4faa6835c67cbe72c8b"
   },
   {
     "order": 69,
@@ -3463,6 +3463,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "fire-emblem-three-houses",
+    "title": "Fire Emblem: Three Houses",
+    "platform": "SWITCH",
+    "version": "v1.4.2",
+    "type": "update",
+    "timestamp": "2026-11-20T15:10:00+07:00",
+    "note": "อัปเดตแพตช์ v1.4.2 (เนื้อเรื่องหลักและ DLC 100% — 82,184 บรรทัด In-ROM): ถอดโค้ดปลดล็อก 60 FPS ออกจากม็อดภาษาไทยหลัก (atmosphere/) เพื่อแก้ปัญหาตัวเกมวิ่งเร็ว x2-x4 ให้กลับสู่ความเร็วปกติ Native 30 FPS 100% พร้อมแนบซิป FE16_60FPS_Optional_Mod.zip แยกไว้ต่างหากในชุดดาวน์โหลดสำหรับผู้ที่ต้องการเลือกใช้งานเอง"
+  },
   {
     "slug": "tales-of-rebirth",
     "title": "Tales of Rebirth",

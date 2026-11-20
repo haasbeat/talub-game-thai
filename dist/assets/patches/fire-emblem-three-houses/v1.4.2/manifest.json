@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "game_slug": "fire-emblem-three-houses",
+  "game_title": "Fire Emblem: Three Houses",
+  "platform": "Nintendo Switch",
+  "title_id": "010055D009F78000",
+  "patch_version": "v1.4.2",
+  "target_game_version": "Update v1.2.0 (Patch 4)",
+  "distribution": {
+    "type": "external_mod_archive",
+    "filename": "FE16_Thai_v1.4.2_Mod.zip",
+    "url": "https://drive.google.com/file/d/1l3K1rZHbU2iZA4JfLYw8ZFEJI_CqSs2u/view?usp=sharing",
+    "size": 37988852,
+    "sha256": "6bebba89ddc181f3c0ca457a7438be59f629cc90ff21d4faa6835c67cbe72c8b",
+    "release_date": "2026-11-20",
+    "date_source": "user_authorized_release"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก & DLC 100% (ถอดโค้ด 60 FPS ออกจากม็อดภาษาไทยหลัก คืนความเร็วปกติ Native 30 FPS 100% และแนบซิป 60 FPS เสริมแยกให้เลือกเอง)",
+    "whole_game_census": "82,184 / 77,019 บรรทัด In-ROM (106.71% จากรายการที่ฉีดเพิ่ม)"
+  },
+  "verification": {
+    "archive_identity_verified": true,
+    "binary_readback_verified": true,
+    "hardware_verified": false
+  }
+}
