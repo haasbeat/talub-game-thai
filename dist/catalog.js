@@ -292,16 +292,6 @@ window.GAME_CATALOG = [
       "description": "ม็อดภาษาไทยสำหรับ Dragon Quest Monsters: Joker 3 Professional (3DS โซนญี่ปุ่น) เวอร์ชัน v1.0.8 ผ่าตัดซ่อมแซมคุณภาพ ปรับปรุงคำทับศัพท์คาตาคานะชื่อสกิลและไอเทมตราประทับให้เป็นภาษาไทยสละสลวย 201 สกิลและ 417 ไอเทม พร้อมแนบฟรีคู่มือผสมสกิลฉบับสมบูรณ์ครบ 131 สกิล (DQMJ3P_Skill_Synthesis_Guide_TH_JP.pdf 16 หน้า) ในชุดม็อด และแปลเนื้อเรื่องหลัก เมนู และฐานข้อมูลครบถ้วน 100%",
       "overview": "เกมสะสมและผสมมอนสเตอร์ของซีรีส์ดราก้อนเควสต์ ฉบับ Professional ที่มีเนื้อหา Post-Game เพิ่มเติม พร้อมระบบผสมสกิลขั้นสูง",
       "story": null,
-      "guide": {
-        "title": "คู่มือสูตรผสมสกิลฉบับสมบูรณ์ 131 สกิล (Skill Synthesis Guide TH/JP)",
-        "shortTitle": "คู่มือผสมสกิล 131 สกิล",
-        "buttonLabel": "ดาวน์โหลดคู่มือผสมสกิล 131 สกิล (PDF 16 หน้า)",
-        "filename": "DQMJ3P_Skill_Synthesis_Guide_TH_JP.pdf",
-        "size": "1.8 MB",
-        "format": "PDF",
-        "url": "./assets/guides/DQMJ3P_Skill_Synthesis_Guide_TH_JP.pdf",
-        "viewUrl": "./assets/guides/DQMJ3P_Skill_Synthesis_Guide_TH_JP.pdf"
-      },
       "localization": "แปลคัตซีนเนื้อเรื่องหลักและ Post-Game (บทที่ 1–8 และดินแดนสัตว์ศักดิ์สิทธิ์) เมนูคำสั่ง HUD ต่อสู้ เนวิแมป 26 แอเรีย ฐานข้อมูลมอนสเตอร์ สกิล ไอเทม ทริเวีย และเกียรติยศ (สถานะโมดูล 100% + In-ROM Census 90.06% รวม 18,443 ข้อความ จาก 20,479 รายการ โดย 2,036 รายการที่เหลือคือค่าคงที่ไอคอนและโค้ดของเอนจินเกม) ใช้ฟอนต์ Chakra Petch SemiBold 13/15px ปรับปรุงความเสถียรป้องกันเกมเด้งหลุด รองรับการติดตั้งเล่นผ่าน FBI และตลับแท้บนเครื่อง 3DS จริงได้ 100% พร้อมฝังลายน้ำเวอร์ชันและลายเซ็นดิจิทัลครบ 4 ระดับ",
       "untranslated": "ไม่มีส่วนเนื้อหาที่ค้างแปล แปลสมบูรณ์ 100% ของข้อความภาษาญี่ปุ่นที่เล่นได้ทั้งหมด (0 Kana หลงเหลือ, 0 ข้อความหลอก)",
       "features": [
@@ -321,16 +311,6 @@ window.GAME_CATALOG = [
       "viewUrl": "https://drive.google.com/file/d/1YDCZ_Dq2o4MXwCSGH3DdKg7nHK1XF1qZ/view?usp=sharing",
       "size": 8351648,
       "id": "1YDCZ_Dq2o4MXwCSGH3DdKg7nHK1XF1qZ"
-    },
-    "guide": {
-      "title": "คู่มือสูตรผสมสกิลฉบับสมบูรณ์ 131 สกิล (Skill Synthesis Guide TH/JP)",
-      "shortTitle": "คู่มือผสมสกิล 131 สกิล",
-      "buttonLabel": "ดาวน์โหลดคู่มือผสมสกิล 131 สกิล (PDF 16 หน้า)",
-      "filename": "DQMJ3P_Skill_Synthesis_Guide_TH_JP.pdf",
-      "size": "1.8 MB",
-      "format": "PDF",
-      "url": "./assets/guides/DQMJ3P_Skill_Synthesis_Guide_TH_JP.pdf",
-      "viewUrl": "./assets/guides/DQMJ3P_Skill_Synthesis_Guide_TH_JP.pdf"
     }
   },
   {
