@@ -3146,27 +3146,27 @@ window.GAME_CATALOG = [
     "platform": "psp",
     "platformLabel": "PSP",
     "index": "PSP | 002 / 003",
-    "version": "v1.1.6",
-    "patchDate": "2026-11-19",
+    "version": "v1.1.7",
+    "patchDate": "2026-11-20",
     "addedDate": "2026-11-06",
     "addedOrder": 47,
     "addedAt": "2026-11-06T19:21:05+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/popolocrois.jpg",
-    "manifest": "./assets/patches/popolocrois/v1.1.6/manifest.json",
+    "manifest": "./assets/patches/popolocrois/v1.1.7/manifest.json",
     "accept": ".iso",
     "fileTypes": "CLEAN USA PSP · 1.17 GB",
     "region": "USA",
     "gameCode": "ULUS-10018",
     "sourceName": "PoPoLoCrois (USA).iso · 1,259,372,544 bytes",
     "sourceHash": "10a8bd3275d716736a70b63ee308070c52f3b79403d146765dc2e6d50ce89222",
-    "outputHash": "1c56922db3ee59a73e8d29bd1fb7c00ff7dd3ac54513c5fa95740c740b522b91",
+    "outputHash": "adaa6eb075416edef06b10f81e0ebd39bea5ff57daf97be01739370ea2d88d1e",
     "moduleStatus": "บทสนทนาเนื้อเรื่อง & NPC (.p00/.p01) 100% + เมนู/ระบบ/ไอเทม/สกิล/มอนสเตอร์ 100%",
     "wholeGameCensus": "48,904 / 50,673 รายการ/บรรทัด = 96.5% (ยังเหลือซับไตเติลอนิเมะ data/telop 60/64 ไฟล์ [1,769 บรรทัด] และกราฟิกป้าย .tm2)",
     "details": null,
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-19T18:30:00+07:00"
+    "verifiedAt": "2026-11-20T21:00:00+07:00"
   },
   {
     "order": 66,
@@ -3532,6 +3532,15 @@ window.GAME_CATALOG = [
 ];
 window.GAME_UPDATES = [
   {
+    "slug": "popolocrois",
+    "title": "PoPoLoCrois",
+    "platform": "PSP",
+    "version": "v1.1.7",
+    "type": "update",
+    "timestamp": "2026-11-20T21:00:00+07:00",
+    "note": "อัปเดตแพตช์ v1.1.7: แก้ไขบั๊กเปิดเข้าเกม/โหลดแผนที่ไม่ได้ใน v1.1.6 (ป้องกันสตริง path แผนที่ BOOT.BIN+0x100B24 ไม่ให้ถูกเขียนทับ), คืนค่าตัวแบ่งหน้าข้อความ {PAGE} ครบทุกบทสนทนาหลายหน้า, ฟอนต์สไตล์ Tales of Rebirth คมชัดอ่านง่าย แก้สระ/เมนูบีบ และฝังลายน้ำครบ 4 ระดับ (บทสนทนาเนื้อเรื่อง & NPC 100% + เมนู/ไอเทม/สกิล/มอนสเตอร์ 100% | ภาพรวมทั้งเกม 96.5%)"
+  },
+  {
     "slug": "dqm-joker-3-professional",
     "title": "Dragon Quest Monsters: Joker 3 Professional",
     "platform": "3DS",
@@ -3629,15 +3638,6 @@ window.GAME_UPDATES = [
     "type": "new",
     "timestamp": "2026-11-19T21:47:00+07:00",
     "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0: แปลเนื้อเรื่องหลัก ท่องเวลา 3 ยุคสมัย ระบบ Free Scenario ระบบ Scenario Sync (SSS) ท่าไม้ตาย สารานุกรม และกราฟิกเมนูภาษาไทยครบ 56 แผ่น"
-  },
-  {
-    "slug": "popolocrois",
-    "title": "PoPoLoCrois",
-    "platform": "PSP",
-    "version": "v1.1.6",
-    "type": "update",
-    "timestamp": "2026-11-19T18:30:00+07:00",
-    "note": "อัปเดตแพตช์ v1.1.6: ฟอนต์สไตล์ Tales of Rebirth คมชัด 1:1 VWF, แก้ตัวอักษร 'บ' และชื่ออุปกรณ์ขาด ('ตราเจ้าชาย'), ปลดล็อกเมนูกว้างไม่บีบ และซิงก์คำแปล 48,991 รายการครบถ้วน"
   },
   {
     "slug": "tokyo-mirage-sessions-fe-encore",
