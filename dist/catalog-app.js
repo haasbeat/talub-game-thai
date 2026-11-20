@@ -781,7 +781,15 @@ const renderDailyUpdates = () => {
 
       const descEl = document.createElement('span');
       descEl.className = 'update-desc';
-      descEl.textContent = item.note;
+      const match = item.note ? item.note.match(/^([🔥✨⭐\s]*\[(.*?)\])\s*(.*)$/) : null;
+      if (match) {
+        const badgeSpan = document.createElement('span');
+        badgeSpan.className = 'update-guide-badge';
+        badgeSpan.textContent = `${match[1]} `;
+        descEl.append(badgeSpan, match[3]);
+      } else {
+        descEl.textContent = item.note;
+      }
 
       infoEl.append(gameTitle, descEl);
 

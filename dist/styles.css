@@ -1803,6 +1803,65 @@ body.has-inapp-banner main { padding-top: 60px; }
   line-height: 1.6;
   color: #2c3036;
 }
+.changelog-highlight-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  margin-bottom: 8px;
+  background: #fff8e1;
+  color: #b76e00;
+  border: 1.5px solid #f59e0b;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.changelog-highlight-badge .badge-icon {
+  font-size: 15px;
+}
+.changelog-main-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #2c3036;
+}
+.update-guide-badge {
+  display: inline-block;
+  font-weight: 700;
+  color: #d97706;
+  margin-right: 4px;
+}
+.luma-guide-bonus {
+  background: #fffdf5 !important;
+  border: 1.5px solid #f59e0b !important;
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.12) !important;
+}
+.luma-guide-bonus .guide-card-icon {
+  font-size: 26px;
+}
+.luma-guide-bonus strong {
+  color: #b45309;
+  font-size: 15px;
+}
+.luma-guide-bonus-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 8px 16px;
+  background: #f59e0b;
+  color: #ffffff !important;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: transform 160ms var(--ease), background 160ms var(--ease);
+}
+.luma-guide-bonus-btn:hover {
+  background: #d97706;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
 @media (max-width: 640px) {
   .game-changelog-card {
     padding: 18px;

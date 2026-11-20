@@ -816,6 +816,11 @@ if (game.luma && methodSwitcher && lumaPanel) {
       lumaLinkEl.innerHTML = '<span>กำลังอัปเดตม็อด Luma / LayeredFS</span>';
     } else {
       lumaLinkEl.href = game.luma.url;
+      const textSpan = lumaLinkEl.querySelector('span:first-child');
+      const activeGuide = game.guide || game.details?.guide;
+      if (textSpan && activeGuide) {
+        textSpan.textContent = `ดาวน์โหลดชุดม็อดภาษาไทย + ${activeGuide.shortTitle || 'คู่มือในชุด'} (Mod.zip + ${activeGuide.format || 'PDF'})`;
+      }
       lumaLinkEl.addEventListener('click', () => {
         if (window.PatchStats?.hit) {
           window.PatchStats.hit(slug).then((value) => {
@@ -859,24 +864,42 @@ const guideData = game.guide || game.details?.guide;
 const guideHeroBtn = document.querySelector('#detail-guide-btn');
 const guideExternalBtn = document.querySelector('#external-guide-link');
 const externalNoteEl = document.querySelector('.external-download-note');
+const lumaBonusCard = document.querySelector('#luma-guide-bonus-card');
 
-if (guideData && guideData.url) {
+if (guideData && (guideData.url || guideData.viewUrl)) {
+  const guideHref = guideData.viewUrl || guideData.url;
   if (guideHeroBtn) {
     guideHeroBtn.hidden = false;
     guideHeroBtn.style.display = '';
-    guideHeroBtn.href = guideData.url;
+    guideHeroBtn.href = guideHref;
     const labelSpan = guideHeroBtn.querySelector('span:not(.guide-icon):not(.guide-arrow)');
     if (labelSpan) {
-      labelSpan.textContent = guideData.size ? `ดาวน์โหลดบทสรุป (PDF · ${guideData.size})` : 'ดาวน์โหลดบทสรุป (PDF)';
+      labelSpan.textContent = guideData.buttonLabel || (guideData.size ? `ดาวน์โหลดคู่มือผสมสกิล (PDF · ${guideData.size})` : 'ดาวน์โหลดคู่มือผสมสกิล (PDF)');
     }
   }
   if (guideExternalBtn) {
     guideExternalBtn.hidden = false;
     guideExternalBtn.style.display = '';
-    guideExternalBtn.href = guideData.url;
+    guideExternalBtn.href = guideHref;
     const labelEl = document.querySelector('#external-guide-label');
     if (labelEl) {
-      labelEl.textContent = `ดาวน์โหลดบทสรุปเกมภาษาไทย (${guideData.format || 'PDF'} · ${guideData.size || '3.2 MB'})`;
+      labelEl.textContent = `ดาวน์โหลด${guideData.shortTitle || 'คู่มือเกมภาษาไทย'} (${guideData.format || 'PDF'} · ${guideData.size || '1.8 MB'})`;
+    }
+  }
+  if (lumaBonusCard) {
+    lumaBonusCard.hidden = false;
+    lumaBonusCard.style.display = '';
+    const lumaBonusTitle = document.querySelector('#luma-guide-bonus-title');
+    if (lumaBonusTitle) {
+      lumaBonusTitle.textContent = `แถมฟรีในชุดม็อด: ${guideData.title || 'คู่มือผสมสกิลฉบับสมบูรณ์ 131 สกิล (PDF 16 หน้า)'}`;
+    }
+    const lumaBonusLink = document.querySelector('#luma-guide-bonus-link');
+    if (lumaBonusLink) {
+      lumaBonusLink.href = guideHref;
+      const bonusSpan = lumaBonusLink.querySelector('span:first-child');
+      if (bonusSpan) {
+        bonusSpan.textContent = `เปิดอ่าน${guideData.shortTitle || 'คู่มือ'} (${guideData.format || 'PDF'} · ${guideData.size || '1.8 MB'})`;
+      }
     }
   }
   if (externalNoteEl) {
@@ -890,6 +913,10 @@ if (guideData && guideData.url) {
   if (guideExternalBtn) {
     guideExternalBtn.hidden = true;
     guideExternalBtn.style.display = 'none';
+  }
+  if (lumaBonusCard) {
+    lumaBonusCard.hidden = true;
+    lumaBonusCard.style.display = 'none';
   }
   if (externalNoteEl) {
     externalNoteEl.textContent = 'ลิงก์จะเปิดหน้าดาวน์โหลดภายนอก โปรดตรวจชื่อไฟล์และเวอร์ชันก่อนติดตั้ง · สถิตินับเมื่อกดลิงก์ ไม่ได้ยืนยันว่าติดตั้งสำเร็จ';
@@ -951,9 +978,28 @@ if (changelogList && changelogCard) {
         <span class="changelog-tag ${badgeClass} mono">${badgeText}</span>
         <time class="changelog-date mono">${dateStr}</time>
       </div>
-      <p class="changelog-desc"></p>
+      <div class="changelog-desc"></div>
     `;
-    item.querySelector('.changelog-desc').textContent = up.note || 'ปรับปรุงและพัฒนาความเสถียรของตัวเกม';
+    const descEl = item.querySelector('.changelog-desc');
+    const noteText = up.note || 'ปรับปรุงและพัฒนาความเสถียรของตัวเกม';
+    const match = noteText.match(/^([🔥✨⭐\s]*\[(.*?)\])\s*(.*)$/);
+    if (match) {
+      const icon = (match[1].match(/[🔥✨⭐]/) || ['🔥'])[0];
+      const badgeText = match[2];
+      const bodyText = match[3];
+
+      const badgeDiv = document.createElement('div');
+      badgeDiv.className = 'changelog-highlight-badge';
+      badgeDiv.innerHTML = `<span class="badge-icon">${icon}</span><span>${badgeText}</span>`;
+
+      const textDiv = document.createElement('div');
+      textDiv.className = 'changelog-main-text';
+      textDiv.textContent = bodyText;
+
+      descEl.replaceChildren(badgeDiv, textDiv);
+    } else {
+      descEl.textContent = noteText;
+    }
     return item;
   }));
 }
