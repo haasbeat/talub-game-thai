@@ -265,22 +265,22 @@ window.GAME_CATALOG = [
     "platform": "3ds",
     "platformLabel": "3DS",
     "index": "3DS | 006 / 042",
-    "version": "v1.0.7",
+    "version": "v1.0.8",
     "patchDate": "2026-11-20",
     "addedDate": "2026-11-05",
     "addedOrder": 40,
     "addedAt": "2026-11-05T16:31:19+07:00",
     "format": "xdelta3",
     "cover": "./assets/covers/web/dqm-joker-3-professional.jpg",
-    "manifest": "./assets/patches/dqm-joker-3-professional/v1.0.7/manifest.json",
+    "manifest": "./assets/patches/dqm-joker-3-professional/v1.0.8/manifest.json",
     "accept": ".3ds",
     "fileTypes": "CLEAN Japan 3DS · 2 GB",
     "region": "Japan",
     "gameCode": "BDQJ",
     "sourceName": "Dragon Quest Monsters - Joker 3 Professional (Japan).3ds · 2,147,483,648 bytes",
     "sourceHash": "e3e70991c268571d1f4558a4fbc14e72d6ba047a89f98511fb47db0b559cddbb",
-    "outputHash": "d607072ff58d105bb1f7f6eacbdc2c4991cd200cf8d70ca02dc1083f0c9cac9a",
-    "moduleStatus": "เนื้อเรื่องหลัก + Post-Game + เควสต์ + สกิล + ไอเทม + เนวิแมป 26 แอเรีย 100% (ผ่าตัดแก้บั๊กชื่อไอเทมขาดหาย, ขยายกรอบ UI สร้างเครื่องประดับ, ฝังลายน้ำไตเติล, แถมฟรีคู่มือผสมสกิล 131 สกิล PDF)",
+    "outputHash": "25ffd2a1493c504875cf266af2d47cc2da608213aecdcacee1594933c77d5388",
+    "moduleStatus": "เนื้อเรื่องหลัก + Post-Game + เควสต์ + สกิล + ไอเทม + เนวิแมป 26 แอเรีย 100% (ปรับปรุงคำทับศัพท์คาตาคานะชื่อสกิลและไอเทมตราประทับให้เป็นภาษาไทยสละสลวย 201 สกิลและ 417 ไอเทม, แก้ไขสกิลเฉพาะตกหล่น 73 สกิล, อัปเดตคู่มือผสมสกิล PDF v1.0.8)",
     "wholeGameCensus": "18,443/20,479 รายการ (ภาพรวมทั้งเกม 90.06% In-ROM)",
     "details": {
       "thaiTitle": "ดราก้อนเควสต์ มอนสเตอร์ส โจ๊กเกอร์ 3 โปรเฟสชันนัล",
@@ -289,7 +289,7 @@ window.GAME_CATALOG = [
       "studio": "Square Enix",
       "release": null,
       "genre": "Role-playing game",
-      "description": "ม็อดภาษาไทยสำหรับ Dragon Quest Monsters: Joker 3 Professional (3DS โซนญี่ปุ่น) เวอร์ชัน v1.0.7 ผ่าตัดซ่อมแซมคุณภาพเฉพาะจุด แก้ไขบั๊กชื่อไอเทมและตราประทับขาดหาย ปรับขยายกรอบ UI พร้อมแนบฟรีคู่มือผสมสกิลฉบับสมบูรณ์ครบ 131 สกิล (DQMJ3P_Skill_Synthesis_Guide_TH_JP.pdf 16 หน้า) ในชุดม็อด และแปลเนื้อเรื่องหลัก เมนู และฐานข้อมูลครบถ้วน 100%",
+      "description": "ม็อดภาษาไทยสำหรับ Dragon Quest Monsters: Joker 3 Professional (3DS โซนญี่ปุ่น) เวอร์ชัน v1.0.8 ผ่าตัดซ่อมแซมคุณภาพ ปรับปรุงคำทับศัพท์คาตาคานะชื่อสกิลและไอเทมตราประทับให้เป็นภาษาไทยสละสลวย 201 สกิลและ 417 ไอเทม พร้อมแนบฟรีคู่มือผสมสกิลฉบับสมบูรณ์ครบ 131 สกิล (DQMJ3P_Skill_Synthesis_Guide_TH_JP.pdf 16 หน้า) ในชุดม็อด และแปลเนื้อเรื่องหลัก เมนู และฐานข้อมูลครบถ้วน 100%",
       "overview": "เกมสะสมและผสมมอนสเตอร์ของซีรีส์ดราก้อนเควสต์ ฉบับ Professional ที่มีเนื้อหา Post-Game เพิ่มเติม พร้อมระบบผสมสกิลขั้นสูง",
       "story": null,
       "guide": {
@@ -313,14 +313,14 @@ window.GAME_CATALOG = [
     },
     "verified": true,
     "gameVersion": "v1.0.0",
-    "verifiedAt": "2026-11-20T19:16:00+07:00",
+    "verifiedAt": "2026-11-20T21:04:00+07:00",
     "luma": {
       "format": "LayeredFS / Luma3DS",
-      "filename": "DQMJ3P_Thai_v1.0.7_Mod.zip",
-      "url": "https://drive.google.com/uc?export=download&id=1gc7d-9uiut3QGI0x8wS1rxc_386Wm6mR",
-      "viewUrl": "https://drive.google.com/file/d/1gc7d-9uiut3QGI0x8wS1rxc_386Wm6mR/view?usp=sharing",
-      "size": 8354234,
-      "id": "1gc7d-9uiut3QGI0x8wS1rxc_386Wm6mR"
+      "filename": "DQMJ3P_Thai_v1.0.8_Mod.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1YDCZ_Dq2o4MXwCSGH3DdKg7nHK1XF1qZ",
+      "viewUrl": "https://drive.google.com/file/d/1YDCZ_Dq2o4MXwCSGH3DdKg7nHK1XF1qZ/view?usp=sharing",
+      "size": 8351648,
+      "id": "1YDCZ_Dq2o4MXwCSGH3DdKg7nHK1XF1qZ"
     },
     "guide": {
       "title": "คู่มือสูตรผสมสกิลฉบับสมบูรณ์ 131 สกิล (Skill Synthesis Guide TH/JP)",
@@ -3539,6 +3539,15 @@ window.GAME_UPDATES = [
     "type": "update",
     "timestamp": "2026-11-20T21:00:00+07:00",
     "note": "อัปเดตแพตช์ v1.1.7: แก้ไขบั๊กเปิดเข้าเกม/โหลดแผนที่ไม่ได้ใน v1.1.6 (ป้องกันสตริง path แผนที่ BOOT.BIN+0x100B24 ไม่ให้ถูกเขียนทับ), คืนค่าตัวแบ่งหน้าข้อความ {PAGE} ครบทุกบทสนทนาหลายหน้า, ฟอนต์สไตล์ Tales of Rebirth คมชัดอ่านง่าย แก้สระ/เมนูบีบ และฝังลายน้ำครบ 4 ระดับ (บทสนทนาเนื้อเรื่อง & NPC 100% + เมนู/ไอเทม/สกิล/มอนสเตอร์ 100% | ภาพรวมทั้งเกม 96.5%)"
+  },
+  {
+    "slug": "dqm-joker-3-professional",
+    "title": "Dragon Quest Monsters: Joker 3 Professional",
+    "platform": "3DS",
+    "version": "v1.0.8",
+    "type": "update",
+    "timestamp": "2026-11-20T20:42:00+07:00",
+    "note": "🔥 [อัปเดตภาษาไทยสละสลวย & คู่มือผสมสกิล PDF v1.0.8] อัปเดตแพตช์ v1.0.8: ปรับปรุงคำทับศัพท์คาตาคานะชื่อสกิลและไอเทมตราประทับให้เป็นภาษาไทยสละสลวยตามหลักสากล (แก้ปัญหาอ่านตรงตัวแบบญี่ปุ่น เช่น 'โนมารูปาวา' -> 'นอร์มัลพาวเวอร์', 'สโมรูปาวา' -> 'สมอลล์พาวเวอร์', 'วาอิรูโดโฟส' -> 'ไวลด์ฟอร์ซ', 'เดบิรูโฟส' -> 'เดวิลฟอร์ซ') ครอบคลุม 201 สกิลและ 417 ไอเทม, แก้ไขสกิลเฉพาะที่ติดคำว่า 'สกิลเฉพาะ' ตกหล่น 73 สกิล, อัปเดตคู่มือสูตรผสมสกิลฉบับสมบูรณ์ (DQMJ3P_Skill_Synthesis_Guide_TH_JP.pdf 16 หน้า) ให้สอดคล้องกับชื่อสกิลใหม่ล่าสุดในตัวเกม 100%, อัปเดตลายน้ำ 'ตลับเกมภาษาไทย v1.0.8' บนหน้าจอไตเติล (Tier 1) และ Binary Metadata (Tier 3) พร้อมตรวจสอบความเข้ากันได้ของ ROM และ Mod.zip ผ่านเกณฑ์ 100%"
   },
   {
     "slug": "dqm-joker-3-professional",

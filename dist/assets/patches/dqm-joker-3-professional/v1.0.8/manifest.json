@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "game_slug": "dqm-joker-3-professional",
+  "game_title": "Dragon Quest Monsters: Joker 3 Professional",
+  "platform": "3DS",
+  "region": "Japan",
+  "game_code": "BDQJ",
+  "patch_version": "v1.0.8",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Dragon Quest Monsters - Joker 3 Professional (Japan).3ds",
+      "size": 2147483648,
+      "sha256": "e3e70991c268571d1f4558a4fbc14e72d6ba047a89f98511fb47db0b559cddbb"
+    }
+  ],
+  "patch": {
+    "filename": "DQMJ3P_Thai_v1.0.8.xdelta",
+    "size": 10881473,
+    "sha256": "2bb1e0ca6f9231116d44b82b7fd2025cb56cf1fef2f5215966d9252ff9006289",
+    "release_date": "2026-11-20",
+    "date_source": "release_build",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/dqm-joker-3-professional/v1.0.8/DQMJ3P_Thai_v1.0.8.xdelta"
+  },
+  "output": {
+    "filename": "Dragon Quest Monsters - Joker 3 Professional (Thai v1.0.8).3ds",
+    "size": 2147483648,
+    "sha256": "25ffd2a1493c504875cf266af2d47cc2da608213aecdcacee1594933c77d5388"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลัก + Post-Game + เควสต์ + สกิล + ไอเทม + เนวิแมป 26 แอเรีย 100% (ปรับปรุงคำทับศัพท์คาตาคานะชื่อสกิลและไอเทมตราประทับให้เป็นภาษาไทยสละสลวย 201 สกิลและ 417 ไอเทม, แก้ไขสกิลเฉพาะตกหล่น 73 สกิล, อัปเดตคู่มือผสมสกิล PDF v1.0.8)",
+    "whole_game_census": "18,443/20,479 รายการ (ภาพรวมทั้งเกม 90.06% In-ROM)",
+    "census_source": "STATE.md / audit_dqmj3p.py (2026-11-20 audit)",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-20T21:04:00+07:00",
+    "method": "browser_xdelta3_wasm_apply",
+    "note": "Patch applies to clean Japan 2GB ROM with browser xdelta3 wasm engine bit-identically matching target SHA-256 with 100% valid IVFC hash tree (L1_bad=0, L2_bad=0, L3_bad=0) and expanded ExeFS item name stack buffers.",
+    "patcher_test_passed": true,
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}
