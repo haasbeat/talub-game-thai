@@ -1275,8 +1275,6 @@ const resetOutput = () => {
   downloadButton.hidden = true;
   downloadButton.removeAttribute('href');
   patchButton.hidden = false;
-  const successCoffee = document.querySelector('#patch-success-coffee');
-  if (successCoffee) successCoffee.hidden = true;
   if (activeOpfsTempName) void cleanupOpfsTemp();
 };
 
