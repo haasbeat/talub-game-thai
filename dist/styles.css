@@ -1570,8 +1570,6 @@ body.has-inapp-banner main { padding-top: 60px; }
   .notice-list { grid-template-columns: 1fr; }
   .section-head { display: block; }
   .section-note { margin-top: 20px; }
-  .support-section { grid-template-columns: 1fr; gap: 28px; }
-  .support-qr-card { justify-self: center; width: min(100%, 180px); }
   .platform-filter {
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -1912,6 +1910,8 @@ body.has-inapp-banner main { padding-top: 60px; }
   transform: translateY(-1px);
 }
 @media (max-width: 640px) {
+  .support-section { grid-template-columns: 1fr; gap: 28px; }
+  .support-qr-card { justify-self: center; width: min(100%, 180px); }
   .game-changelog-card {
     padding: 18px;
     border-radius: 8px 20px 8px 8px;
