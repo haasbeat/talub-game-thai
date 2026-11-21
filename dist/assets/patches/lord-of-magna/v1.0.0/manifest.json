@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "game_slug": "lord-of-magna",
+  "game_title": "Lord of Magna: Maiden Heaven",
+  "platform": "3DS",
+  "region": "USA",
+  "game_code": "BKKE",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Lord of Magna - Maiden Heaven (USA).3ds",
+      "size": 2147483648,
+      "sha256": "e8e834917c6905704158a11aaec07077fd8edc7f43e86465102d650d35f09f0d"
+    }
+  ],
+  "patch": {
+    "filename": "LordOfMagna_Thai_v1.0.0.xdelta",
+    "size": 1233111,
+    "sha256": "3b15ff6f99384de30527e485ba879bb3fb55925a467ebcd8fe99c60e9429f005",
+    "release_date": "2026-11-22",
+    "date_source": "release_build",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/lord-of-magna/v1.0.0/LordOfMagna_Thai_v1.0.0.xdelta"
+  },
+  "output": {
+    "filename": "Lord of Magna - Maiden Heaven (USA) (Thai v1.0.0).3ds",
+    "size": 2147483648,
+    "sha256": "78f77d1af27fae2f5b677d6d8275a6aa34ef76f59bebaa55418879f54e51acfa"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลักและบทสนทนา 100% (7,636/7,636 ข้อความ) + สกิล ไอเทม เควสต์ และระบบครบถ้วน",
+    "whole_game_census": "10,392/13,014 ข้อความ (ภาพรวมทั้งเกม 79.85% In-ROM)",
+    "census_source": "STATE.md / build_and_readback.py (2026-11-22 audit)",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-22T01:00:00+07:00",
+    "method": "browser_xdelta3_wasm_apply",
+    "note": "Patch applies to clean USA 2GB ROM with browser xdelta3 wasm engine bit-identically matching target SHA-256 with 100% valid IVFC/NCCH hash tree, embedded Thai BCFNT fonts, and ExeFS code hooks.",
+    "patcher_test_passed": true,
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}
