@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "game_slug": "dragon-quest-monsters-2",
+  "game_title": "Dragon Quest Monsters 2: Iru to Ruka no Fushigi na Fushigi na Kagi",
+  "platform": "3DS",
+  "region": "Japan",
+  "game_code": "BDMJ",
+  "patch_version": "v1.0.0",
+  "engine": "xdelta3",
+  "accepted_sources": [
+    {
+      "filename": "Dragon Quest Monsters 2 - Iru to Ruka no Fushigi na Fushigi na Kagi (Japan).3ds",
+      "size": 2147483648,
+      "sha256": "6ea488d2ae08fbe8cc505329bb412ec460101eb9e3acb706a35392fca05e036b"
+    }
+  ],
+  "patch": {
+    "filename": "DQM2_IruRuka_Thai_v1.0.0.xdelta",
+    "size": 2192701,
+    "sha256": "edeca846352dc4ba3a8f4cbc8c4c5f45747abfea42756eed4822d770bd60826f",
+    "release_date": "2026-11-21",
+    "date_source": "release_build",
+    "url": "https://talub-game-thai-cdn.talub-game-thai-cdn.workers.dev/patches/dragon-quest-monsters-2/v1.0.0/DQM2_IruRuka_Thai_v1.0.0.xdelta"
+  },
+  "output": {
+    "filename": "Dragon Quest Monsters 2 - Iru to Ruka (Thai v1.0.0).3ds",
+    "size": 2147483648,
+    "sha256": "98822e5f958e0a3df76cba6a2bd8a4cdb6436429b125cbe20871e28a095f6ea8"
+  },
+  "release_status": {
+    "module_status": "เนื้อเรื่องหลักและบทสนทนา 100% (12,189/12,189 ข้อความ) + สกิล คาถา ผสมพันธุ์ มอนเนอร์ และสารานุกรมครบถ้วน",
+    "whole_game_census": "23,673/24,852 ข้อความ (ภาพรวมทั้งเกม 95.26% In-ROM)",
+    "census_source": "STATE.md / build_and_readback.py (2026-11-21 audit)",
+    "critical_freeze": 0,
+    "errors": 0
+  },
+  "notice": "แจกฟรี ที่เพจ ตลับเกมภาษาไทย ห้ามจำหน่ายโดยเด็ดขาด ใช้กับ ROM ต้นฉบับที่ผู้เล่นเป็นเจ้าของเท่านั้น",
+  "verification": {
+    "verified_at": "2026-11-21T15:06:00+07:00",
+    "method": "browser_xdelta3_wasm_apply",
+    "note": "Patch applies to clean Japan 2GB ROM with browser xdelta3 wasm engine bit-identically matching target SHA-256 with 100% valid IVFC/NCCH hash tree, embedded Thai BCFNT fonts, and ExeFS code hooks.",
+    "patcher_test_passed": true,
+    "source_sha256_verified": true,
+    "patch_sha256_verified": true,
+    "output_sha256_verified": true,
+    "output_matches_release_target": true
+  }
+}
