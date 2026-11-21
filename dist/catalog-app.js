@@ -38,24 +38,24 @@ document.querySelectorAll('.reveal-on-scroll').forEach((element) => observer.obs
 
 const platformDefinitions = [
   { key: 'all', eyebrow: 'ALL', label: 'รวมทั้งหมด' },
-  { key: '3ds', eyebrow: 'NINTENDO', label: '3DS' },
+  { key: 'snes', eyebrow: 'NINTENDO', label: 'SNES' },
   { key: 'nds', eyebrow: 'NINTENDO', label: 'DS' },
+  { key: '3ds', eyebrow: 'NINTENDO', label: '3DS' },
+  { key: 'switch', eyebrow: 'NINTENDO', label: 'SWITCH' },
   { key: 'ps1', eyebrow: 'SONY', label: 'PS1' },
   { key: 'ps2', eyebrow: 'SONY', label: 'PS2' },
-  { key: 'snes', eyebrow: 'NINTENDO', label: 'SNES' },
   { key: 'psp', eyebrow: 'SONY', label: 'PSP' },
-  { key: 'switch', eyebrow: 'NINTENDO', label: 'SWITCH' },
 ];
 
 const platformLabels = {
   all: 'รวมทุกเครื่อง',
-  '3ds': 'Nintendo 3DS',
+  snes: 'Super Nintendo',
   nds: 'Nintendo DS',
+  '3ds': 'Nintendo 3DS',
+  switch: 'Nintendo Switch',
   ps1: 'PlayStation 1',
   ps2: 'PlayStation 2',
-  snes: 'Super Nintendo',
   psp: 'PSP',
-  switch: 'Nintendo Switch',
 };
 
 const platformFilter = document.querySelector('.platform-filter');
