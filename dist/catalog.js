@@ -2202,7 +2202,7 @@ window.GAME_CATALOG = [
     "title": "Cid to Chocobo no Fushigi na Dungeon: Toki Wasure no Meikyuu DS+",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 001 / 015",
+    "index": "NDS | 001 / 016",
     "version": "v1.0.1",
     "patchDate": "2026-11-18",
     "addedDate": "2026-11-15",
@@ -2250,7 +2250,7 @@ window.GAME_CATALOG = [
     "title": "Dragon Quest IV: Chapters of the Chosen",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 002 / 015",
+    "index": "NDS | 002 / 016",
     "version": "v2.5.1",
     "patchDate": "2026-11-02",
     "addedDate": "2026-11-04",
@@ -2297,7 +2297,7 @@ window.GAME_CATALOG = [
     "title": "Dragon Quest V: Hand of the Heavenly Bride",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 003 / 015",
+    "index": "NDS | 003 / 016",
     "version": "v1.6.5",
     "patchDate": "2026-11-17",
     "addedDate": "2026-11-04",
@@ -2326,7 +2326,7 @@ window.GAME_CATALOG = [
     "title": "Dragon Quest VI: Realms of Revelation",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 004 / 015",
+    "index": "NDS | 004 / 016",
     "version": "v1.1.3",
     "patchDate": "2026-11-12",
     "addedDate": "2026-11-04",
@@ -2355,7 +2355,7 @@ window.GAME_CATALOG = [
     "title": "Final Fantasy III",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 005 / 015",
+    "index": "NDS | 005 / 016",
     "version": "v1.0.0",
     "patchDate": "2026-11-20",
     "addedDate": "2026-11-20",
@@ -2403,7 +2403,7 @@ window.GAME_CATALOG = [
     "title": "Front Mission 2089: Border of Madness",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 006 / 015",
+    "index": "NDS | 006 / 016",
     "version": "v1.1.1",
     "patchDate": "2026-10-31",
     "addedDate": "2026-11-04",
@@ -2450,7 +2450,7 @@ window.GAME_CATALOG = [
     "title": "Kingdom Hearts: 358/2 Days",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 007 / 015",
+    "index": "NDS | 007 / 016",
     "version": "v1.0.0",
     "patchDate": "2026-11-07",
     "addedDate": "2026-11-07",
@@ -2497,7 +2497,7 @@ window.GAME_CATALOG = [
     "title": "Lost in Blue 2",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 008 / 015",
+    "index": "NDS | 008 / 016",
     "version": "v2.0.2",
     "patchDate": "2026-11-01",
     "addedDate": "2026-11-05",
@@ -2544,7 +2544,7 @@ window.GAME_CATALOG = [
     "title": "Love Plus+",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 009 / 015",
+    "index": "NDS | 009 / 016",
     "version": "v1.0.5",
     "patchDate": "2026-10-31",
     "addedDate": "2026-11-05",
@@ -2591,7 +2591,7 @@ window.GAME_CATALOG = [
     "title": "Metal Max 2: Reloaded",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 010 / 015",
+    "index": "NDS | 010 / 016",
     "version": "v1.0.2",
     "patchDate": "2026-11-14",
     "addedDate": "2026-11-12",
@@ -2639,7 +2639,7 @@ window.GAME_CATALOG = [
     "title": "SaGa 2: Hihou Densetsu - Goddess of Destiny",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 011 / 015",
+    "index": "NDS | 011 / 016",
     "version": "v1.0.1",
     "patchDate": "2026-11-05",
     "addedDate": "2026-11-04",
@@ -2668,7 +2668,7 @@ window.GAME_CATALOG = [
     "title": "SaGa 3: Jikuu no Hasha - Shadow or Light",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 012 / 015",
+    "index": "NDS | 012 / 016",
     "version": "v1.0.0",
     "patchDate": "2026-11-19",
     "addedDate": "2026-11-19",
@@ -2716,7 +2716,7 @@ window.GAME_CATALOG = [
     "title": "Suikoden Tierkreis",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 013 / 015",
+    "index": "NDS | 013 / 016",
     "version": "v1.0.2",
     "patchDate": "2026-11-19",
     "addedDate": "2026-11-04",
@@ -2745,7 +2745,7 @@ window.GAME_CATALOG = [
     "title": "Tales of Hearts",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 014 / 015",
+    "index": "NDS | 014 / 016",
     "version": "v1.0.2",
     "patchDate": "2026-11-09",
     "addedDate": "2026-11-04",
@@ -2774,7 +2774,7 @@ window.GAME_CATALOG = [
     "title": "The World Ends with You",
     "platform": "nds",
     "platformLabel": "NDS",
-    "index": "NDS | 015 / 015",
+    "index": "NDS | 015 / 016",
     "version": "v1.0.4",
     "patchDate": "2026-11-01",
     "addedDate": "2026-11-04",
@@ -2799,6 +2799,54 @@ window.GAME_CATALOG = [
   },
   {
     "order": 58,
+    "slug": "yugioh-wc2007",
+    "title": "Yu-Gi-Oh! World Championship 2007",
+    "platform": "nds",
+    "platformLabel": "NDS",
+    "index": "NDS | 016 / 016",
+    "version": "v1.0.0",
+    "patchDate": "2026-11-21",
+    "addedDate": "2026-11-21",
+    "addedOrder": 76,
+    "addedAt": "2026-11-21T22:34:00+07:00",
+    "format": "xdelta3",
+    "cover": "./assets/covers/web/yugioh-wc2007.jpg",
+    "manifest": "./assets/patches/yugioh-wc2007/v1.0.0/manifest.json",
+    "accept": ".nds",
+    "fileTypes": "CLEAN USA NDS · 128 MB",
+    "region": "USA",
+    "gameCode": "AY7E",
+    "sourceName": "Yu-Gi-Oh! - World Championship 2007 (USA) (En,Ja).nds · 134,217,728 bytes",
+    "sourceHash": "1e961465aac4255b0406364ec4c3c619b6f7cf137bca244d5e5af555bfdeadce",
+    "outputHash": "f64439b66b3f5e7c57dfc2bd5bdc56024db296fde28215753cb908c020050db5",
+    "moduleStatus": "ข้อความบทสนทนา เอฟเฟกต์การ์ด บทเรียนดูเอล พจนานุกรม และเมนูทุกหมวด 100.00% (6,488 / 6,488 รายการที่แปลไทย)",
+    "wholeGameCensus": "6,488 / 8,260 รายการในรอม (ภาพรวมคลังไบนารีทั้งรอม 78.55% โดยคงชื่อการ์ดภาษาอังกฤษมาตรฐาน TCG 1,662 ใบ + หัวข้อพจนานุกรมชื่อการ์ด 71 คำ + สัญลักษณ์ระบบ 39 รายการอย่างตั้งใจ)",
+    "details": {
+      "thaiTitle": "ยูกิโอ! เวิลด์แชมเปียนชิพ 2007",
+      "japaneseTitle": "遊☆戯☆王デュエルモンスターズ WORLD CHAMPIONSHIP 2007",
+      "originalTitle": "Yu-Gi-Oh! World Championship 2007",
+      "studio": "Konami",
+      "release": "20 มีนาคม 2007 (NDS)",
+      "genre": "Trading Card Game / Strategy",
+      "description": "ม็อดภาษาไทยสำหรับ Yu-Gi-Oh! - World Championship 2007 (Nintendo DS โซน USA รหัส AY7E) เวอร์ชัน v1.0.0 แปลเอฟเฟกต์การ์ดกว่า 1,662 ใบ บทเรียนดูเอล พจนานุกรม Duel Words โหมดชาเลนจ์ และบทพากย์วิญญาณ 80 ตัวครบถ้วน",
+      "overview": "ภาคแข่งขันชิงแชมป์โลก Yu-Gi-Oh! ระดับคลาสสิกบน Nintendo DS รวบรวมการ์ดกว่า 1,600 ใบจากยุค GX พร้อมโหมด Duel Disk ชาเลนจ์กติกาพิเศษ ปริศนาดูเอล และศึกประลองกับวิญญาณการ์ดทั้งในโหมดเดี่ยวและมัลติเพลเยอร์",
+      "story": "ก้าวเข้าสู่เวที World Championship เพื่อไต่อันดับดูเอลลิสต์ระดับโลก ฝึกฝนพื้นฐานจนถึงคอมโบระดับสูงผ่านบทเรียนดูเอล 15 บท ท้าดวลกับวิญญาณมอนสเตอร์และคู่ปรับกว่า 80 แบบ สะสมซองการ์ดและคะแนน Duel Points เพื่อปลดล็อกการ์ดระดับตำนานและชาเลนจ์ลับ",
+      "localization": "แปลภาษาไทยครบทุกหมวดหมู่ที่แปลไทย (6,488 / 8,260 รายการไบนารี = 78.55% ของทั้งรอม, 100% ของข้อความบทสนทนาและคำอธิบายทั้งหมด) ครอบคลุมเอฟเฟกต์การ์ด 1,662 ใบ, บทเรียนดูเอล 15 บท, ข้อความระหว่างดูเอล, บทพากย์วิญญาณ 80 ตัว, พจนานุกรม Duel Words 231 หัวข้อ, ร้านค้าซองการ์ด 67 ซอง และเมนูจัดเด็ค/ชาเลนจ์ พัฒนาฟอนต์ไทย 3 ระดับมาตรฐาน Cid to Chocobo 14 แถว Regular 1px คมชัด 0 การซ้อนทับสระ-วรรณยุกต์ พร้อมระบบ Word-Wrap 2 ชั้นทั้งแบบ Static และ ARM9 Runtime 0x1F ผ่าน Readback 1:1 ครบ 8,260/8,260 รายการ",
+      "untranslated": "คงชื่อการ์ด Yu-Gi-Oh! ภาษาอังกฤษมาตรฐาน TCG ทั้ง 1,662 ใบ (item:05_card_name) และหัวข้อพจนานุกรมชื่อการ์ด 71 คำ (item:03_dw_name) ไว้ตามต้นฉบับอย่างตั้งใจเพื่อให้ค้นหาและเทียบกติกาจริงได้สะดวก รวมถึงสัญลักษณ์ Row 0x81/ปุ่มระบบ 39 รายการ และกราฟิกภาพ 2D .pac บางจุด",
+      "features": [
+        "คำอธิบายเอฟเฟกต์การ์ดครบทั้ง 1,662 ใบ พร้อมคงชื่อการ์ดอ้างอิงเป็นภาษาอังกฤษให้อ่านเชื่อมคอมโบง่าย",
+        "บทสอนเล่น 15 บท, ข้อความระหว่างดูเอล และบทพากย์วิญญาณการ์ด 80 ตัวครบทุกโหมด",
+        "พจนานุกรม Duel Words 231 หัวข้อ, ซองบูสเตอร์ร้านค้า 67 ซอง และชาเลนจ์ Theme Duel ครบถ้วน",
+        "ฟอนต์ไทย Cid to Chocobo 14 แถว Regular 1px สระ-วรรณยุกต์ครบ 3 ชั้น อ่านชัดเจนทุกขนาด",
+        "ระบบตัดคำ 2 ชั้น (Static + ARM9 Runtime 0x1F) ไม่ทับขอบกรอบคำอธิบายการ์ด และผ่าน Readback 1:1 เต็ม 8,260 รายการ"
+      ]
+    },
+    "verified": true,
+    "gameVersion": "v1.0.0",
+    "verifiedAt": "2026-11-21T22:22:00+07:00"
+  },
+  {
+    "order": 59,
     "slug": "saga-frontier",
     "title": "SaGa Frontier",
     "platform": "ps1",
@@ -2845,7 +2893,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-08T18:55:00+07:00"
   },
   {
-    "order": 59,
+    "order": 60,
     "slug": "front-mission-5",
     "title": "Front Mission 5: Scars of the War",
     "platform": "ps2",
@@ -2893,7 +2941,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-20T11:14:00+07:00"
   },
   {
-    "order": 60,
+    "order": 61,
     "slug": "mana-khemia",
     "title": "Mana Khemia: Alchemists of Al-Revis",
     "platform": "ps2",
@@ -2940,7 +2988,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-08T08:30:00+07:00"
   },
   {
-    "order": 61,
+    "order": 62,
     "slug": "tales-of-the-abyss-ps2",
     "title": "Tales of the Abyss (PS2)",
     "platform": "ps2",
@@ -2988,7 +3036,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-10T10:26:00+07:00"
   },
   {
-    "order": 62,
+    "order": 63,
     "slug": "bs-koi-ha-balance",
     "title": "BS Koi ha Balance: Battle of Lovers",
     "platform": "snes",
@@ -3036,7 +3084,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-14T10:30:00+07:00"
   },
   {
-    "order": 63,
+    "order": 64,
     "slug": "mini-yonku-wgp2",
     "title": "Mini Yonku Let's & Go!!: Power WGP 2",
     "platform": "snes",
@@ -3083,7 +3131,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-05T15:00:00+07:00"
   },
   {
-    "order": 64,
+    "order": 65,
     "slug": "ring-ni-kakero",
     "title": "Ring ni Kakero",
     "platform": "snes",
@@ -3131,7 +3179,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-20T01:15:00+07:00"
   },
   {
-    "order": 65,
+    "order": 66,
     "slug": "mana-khemia-student-alliance",
     "title": "Mana Khemia: Student Alliance",
     "platform": "psp",
@@ -3178,7 +3226,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-14T09:23:00+07:00"
   },
   {
-    "order": 66,
+    "order": 67,
     "slug": "popolocrois",
     "title": "PoPoLoCrois",
     "platform": "psp",
@@ -3207,7 +3255,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-20T21:00:00+07:00"
   },
   {
-    "order": 67,
+    "order": 68,
     "slug": "tales-of-rebirth",
     "title": "Tales of Rebirth",
     "platform": "psp",
@@ -3254,7 +3302,7 @@ window.GAME_CATALOG = [
     "verifiedAt": "2026-11-20T12:35:00+07:00"
   },
   {
-    "order": 68,
+    "order": 69,
     "slug": "disgaea-5-complete",
     "title": "Disgaea 5 Complete",
     "platform": "switch",
@@ -3288,7 +3336,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "2e68c19ac9794489b1dd86410fac6b25c3f98d6598bdf09ac058642054b46e58"
   },
   {
-    "order": 69,
+    "order": 70,
     "slug": "fire-emblem-engage",
     "title": "Fire Emblem Engage",
     "platform": "switch",
@@ -3322,7 +3370,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "8c87316d2eff86c7ef712e88a5276c8c713ee38a345c74e8133b26615e5cb72d"
   },
   {
-    "order": 70,
+    "order": 71,
     "slug": "fire-emblem-three-houses",
     "title": "Fire Emblem: Three Houses",
     "platform": "switch",
@@ -3376,7 +3424,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "6bebba89ddc181f3c0ca457a7438be59f629cc90ff21d4faa6835c67cbe72c8b"
   },
   {
-    "order": 71,
+    "order": 72,
     "slug": "persona-5-royal",
     "title": "Persona 5 Royal",
     "platform": "switch",
@@ -3410,7 +3458,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "ae68cf2866e6fd49d06e4245af0cf64f463bafc15be6885a06d360ea83556f1f"
   },
   {
-    "order": 72,
+    "order": 73,
     "slug": "tokyo-mirage-sessions-fe-encore",
     "title": "Tokyo Mirage Sessions #FE Encore",
     "platform": "switch",
@@ -3464,7 +3512,7 @@ window.GAME_CATALOG = [
     "downloadSha256": "92c3598099ce809a1671aa4ca0d2e7442301eda42c1d46460d991d71cf16841d"
   },
   {
-    "order": 73,
+    "order": 74,
     "slug": "unicorn-overlord",
     "title": "Unicorn Overlord",
     "platform": "switch",
@@ -3534,7 +3582,7 @@ window.GAME_CATALOG = [
     }
   },
   {
-    "order": 74,
+    "order": 75,
     "slug": "village-in-the-shade",
     "title": "Village in the Shade",
     "platform": "switch",
@@ -3569,6 +3617,15 @@ window.GAME_CATALOG = [
   }
 ];
 window.GAME_UPDATES = [
+  {
+    "slug": "yugioh-wc2007",
+    "title": "Yu-Gi-Oh! World Championship 2007",
+    "platform": "NDS",
+    "version": "v1.0.0",
+    "type": "new",
+    "timestamp": "2026-11-21T22:34:00+07:00",
+    "note": "เพิ่มเข้าคลังม็อดภาษาไทย v1.0.0"
+  },
   {
     "slug": "dragon-quest-monsters-2",
     "title": "Dragon Quest Monsters 2: Iru to Ruka no Fushigi na Fushigi na Kagi",
